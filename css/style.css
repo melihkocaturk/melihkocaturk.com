@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+  background-color: #151515;
+}
+
+body {
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+}
+
+.cover {
+  max-width: 50em;
+}
+
+a {
+  color: #a3a3a3;
+  border-bottom: 1px solid transparent;
+}
+
+a:hover {
+  color: #fff;
+  border-bottom: 1px solid #ddc225;
+  text-decoration: none;
+}
+
+.lead {
+  line-height: 2em;
+}
