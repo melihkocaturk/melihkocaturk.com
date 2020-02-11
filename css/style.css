@@ -5,7 +5,7 @@ body {
 }
 
 body {
-  border-bottom: 5px solid #246d6c;
+  border-top: 5px solid #246d6c;
   color: #666;
   display: -ms-flexbox;
   display: flex;
