@@ -1,0 +1,30 @@
+$backgroundColor: #fff;
+$bodyColor: #333;
+
+body {
+  background-color: $backgroundColor;
+  color: $bodyColor;
+  border-top: 5px solid #246d6c;
+}
+
+.container {
+  max-width: 800px;
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+
+a {
+  color: #246d6c;
+}
+
+a:hover {
+  color: #000;
+}
+
+pre {
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+}

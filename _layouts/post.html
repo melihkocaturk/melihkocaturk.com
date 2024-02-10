@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " tr-TR" }}" class="h-100">
+{% include head.html %}
+
+<body class="d-flex flex-column h-100">
+    {% include header.html %}
+    
+    <main class="flex-shrink-0 mb-5">
+        <div class="container">
+            <h1 class="text-center mb-5">{{ page.title | escape }}</h1>
+            <p class="text-center text-uppercase mb-5">
+                <small class="text-muted">{{ site.author.name }} / {{ page.date | date: "%d.%m.%Y" }}</small>
+            </p>
+            <p>{{ content }}</p>
+        </div>
+    </main>
+
+    {% include footer.html %}
+</body>
+
+</html>

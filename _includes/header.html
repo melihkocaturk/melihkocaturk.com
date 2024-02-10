@@ -1,0 +1,21 @@
+<div class="container-fluid py-5">
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="d-flex flex-row">
+                <div class="p-2">
+                    <img src="{{ site.avatar }}" alt="{{ site.title }}" class="rounded-circle" width="60" height="60">
+                </div>
+                <div class="p-2">
+                    <h1 class="h4 mb-0">{{ site.author.name }}</h1>
+                    {{ site.author.title }}
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+            </ul>
+        </div>
+    </div>
+</div>

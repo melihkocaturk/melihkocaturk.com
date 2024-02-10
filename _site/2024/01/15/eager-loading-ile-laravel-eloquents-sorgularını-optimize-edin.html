@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang=" tr-TR" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Eager Loading ile Laravel Eloquent Sorgularını Optimize Edin - Melih Kocatürk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/%20/assets/css/main.css">
+    <link href="/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D81YCKRVTX"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D81YCKRVTX');
+</script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div class="container-fluid py-5">
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="d-flex flex-row">
+                <div class="p-2">
+                    <img src="/assets/images/avatar.jpg" alt="Melih Kocatürk" class="rounded-circle" width="60" height="60">
+                </div>
+                <div class="p-2">
+                    <h1 class="h4 mb-0">Melih Kocatürk</h1>
+                    Code Ninja
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    <main class="flex-shrink-0 mb-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Eager Loading ile Laravel Eloquent Sorgularını Optimize Edin</h1>
+            <p class="text-center text-uppercase mb-5">
+                <small class="text-muted">Melih Kocatürk / 15.01.2024</small>
+            </p>
+            <p><p>Object Relational Mapping (ORM), veritabanlarıyla çalışmayı şaşırtıcı derecede basit hale getirir. Veritabanı ilişkilerini nesne yönelimli bir şekilde tanımlamak, ilgili model verilerini sorgulamayı kolaylaştırırken, geliştiriciler temeldeki veritabanı çağrılarına dikkat etmeyebilir.</p>
+
+<h2 id="eager-loading-nedir">Eager Loading Nedir?</h2>
+
+<p>Özünde eager loading, Eloquent’e, ihtiyacınız olan verileri alırken daha performanslı bir sorgu üretmesi için belirli ilişkilere sahip bir modeli yakalamak istediğinizi söylemektir. Eager loading ile birçok sorguyu yalnızca bir veya ikiye indirebilirsiniz.</p>
+
+<p>Bu yazıda, bazı örnek ilişkiler kuracağız ve ardından eager loading ile ve eager loading olmadan sorguların nasıl değiştiğini inceleyeceğiz. Doğrudan koda el atmayı ve bir şeyler denemeyi seviyorum, sorgularınızı nasıl optimize edeceğinizi anlamanıza yardımcı olacak bazı örneklerle eager loading’in nasıl çalıştığını göstermeyi umuyorum.</p>
+
+<h2 id="giriş">Giriş</h2>
+
+<p>Temel düzeyde, ORM’ler model verilerini “lazy” yükler. Ne de olsa, ORM niyetinizi nasıl bilecek? Belki de modeli sorguladıktan sonra ilgili modelin verilerini aslında hiçbir zaman kullanmayacaksınız. Sorgunun optimize edilmemesi “N+1” sorunu olarak bilinir. Sorguları temsil etmek için nesneleri kullandığınızda, farkında bile olmadan sorgular yapıyor olabilirsiniz.</p>
+
+<pre>
+$posts = Post::published()-&gt;get(); // one query
+ 
+$authors = array_map(function($post) {
+    // Produces a query on the author model
+    return $post-&gt;author-&gt;name;
+}, $posts);
+</pre>
+
+<p>Modele tüm yazarlara ihtiyacımız olduğunu söylemiyoruz, bu nedenle yazarın adını Post model örneklerinden her aldığımızda ayrı bir sorgu gerçekleşir.</p>
+
+<h2 id="eager-loading">Eager Loading</h2>
+
+<p>Bahsettiğim gibi, ORM’ler tembeldir. İlişkili model verilerini kullanmayı düşünüyorsanız, eager loading kullanarak toplam 101 sorguyu 2 sorguya indirebilirsiniz. Modele, yüklemek için neye ihtiyacınız olduğunu söylemeniz yeterlidir.</p>
+
+<p>İşte eager loading kullanımı hakkında Rails Active Record kılavuzundan bir örnek. Gördüğünüz gibi konsept, Laravel’in eager loading konseptine oldukça benziyor.</p>
+
+<pre>
+# Rails
+posts = Post.includes(:author).limit(100)
+ 
+# Laravel
+$posts = Post::with('author')-&gt;limit(100)-&gt;get();
+</pre>
+
+<p>Fikirleri daha geniş bir perspektiften keşfederek daha iyi anladığımı görüyorum. Active Record dökümantasyonu, fikrin yankı bulmasına yardımcı olabilecek bazı örnekleri içerir.</p>
+
+<h2 id="laravel-eloquent-orm">Laravel Eloquent ORM</h2>
+
+<p>Laravel’in Eloquent adlı ORM’i, eager loading modellerini ve hatta iç içe geçmiş ilişkileri yüklemeyi önemsiz hale getirir. Post model örneğini geliştirelim ve bir Laravel projesinde eager loading ile nasıl çalışılacağını öğrenelim.</p>
+
+<p>Proje kurulumu üzerinde çalışacağız ve ardından toparlamak için bazı eager loading örneklerini daha derinlemesine inceleyeceğiz.</p>
+
+<h3 id="kurulum">Kurulum</h3>
+
+<p>Eager loading’i denemek için bazı migration, model ve seeder’lar ayarlayalım. Devam etmek istiyorsanız, bir veritabanına erişiminiz olduğunu ve temel Laravel kurulumundan geçebileceğinizi varsayıyorum.</p>
+
+<p>Laravel installer kullanarak projeyi oluşturalım:</p>
+
+<pre>
+laravel new blog-example
+</pre>
+
+<p>.env değerlerinizi veritabanınıza veya seçiminize uyacak şekilde düzenleyin.</p>
+
+<p>Daha sonra, eager loading iç içe ilişkileri deneyebilmek için üç model oluşturacağız. Örnek basit, böylece eager loading’e odaklanabiliriz. Index ve foreign key kısıtlamaları gibi kullanabileceğiniz şeyleri atladım.</p>
+
+<pre>
+php artisan make:model -m Post
+php artisan make:model -m Author
+php artisan make:model -m Profile
+</pre>
+
+<p>-m flag’i, tablo şemasını oluşturmak için kullanacağınız modele uygun bir migration oluşturur.</p>
+
+<p>Veri modelleri aşağıdaki ilişkilelere sahip olacaktır:</p>
+
+<pre>
+Post -&gt; belongsTo -&gt; Author
+Author -&gt; hasMany -&gt; Post
+Author -&gt; hasOne -&gt; Profile
+</pre>
+
+<h3 id="migration">Migration</h3>
+
+<p>Her tablo için basit bir şema oluşturalım; Yalnızca up() metodunu oluşturdum çünkü Laravel, yeni tablolar için down() metodunu otomatik olarak oluşturacaktır. Migration dosyaları database/migrations/ klasöründedir:</p>
+
+<pre>
+&lt;?php
+ 
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+ 
+class CreatePostsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('posts', function (Blueprint $table) {
+            $table-&gt;increments('id');
+            $table-&gt;unsignedInteger('author_id');
+            $table-&gt;string('title');
+            $table-&gt;text('body');
+            $table-&gt;timestamps();
+        });
+    }
+ 
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('posts');
+    }
+}
+</pre>
+
+<pre>
+&lt;?php
+ 
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+ 
+class CreateAuthorsTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('authors', function (Blueprint $table) {
+            $table-&gt;increments('id');
+            $table-&gt;string('name');
+            $table-&gt;text('bio');
+            $table-&gt;timestamps();
+        });
+    }
+ 
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('authors');
+    }
+}
+</pre>
+
+<pre>
+&lt;?php
+ 
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+ 
+class CreateProfilesTable extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {
+        Schema::create('profiles', function (Blueprint $table) {
+            $table-&gt;increments('id');
+            $table-&gt;unsignedInteger('author_id');
+            $table-&gt;date('birthday');
+            $table-&gt;string('city');
+            $table-&gt;string('state');
+            $table-&gt;string('website');
+            $table-&gt;timestamps();
+        });
+    }
+ 
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('profiles');
+    }
+}
+</pre>
+
+<h3 id="model">Model</h3>
+
+<p>Eager loading ile daha fazla deneme yapmak için model ilişkilendirmeleri tanımlamanız gerekir. php artisan make:model komutunu çalıştırdığınızda, sizin için model dosyalarını oluşturmuştur.</p>
+
+<p>İlk model app/Post.php’dir:</p>
+
+<pre>
+&lt;?php
+ 
+namespace App;
+ 
+use Illuminate\Database\Eloquent\Model;
+ 
+class Post extends Model
+{
+    public function author()
+    {
+        return $this-&gt;belongsTo(Author::class);
+    }
+}
+</pre>
+
+<p>Ardından, app\Author.php iki ilişkilendirmeye sahiptir:</p>
+
+<pre>
+&lt;?php
+ 
+namespace App;
+ 
+use Illuminate\Database\Eloquent\Model;
+ 
+class Author extends Model
+{
+    public function profile()
+    {
+        return $this-&gt;hasOne(Profile::class);
+    }
+ 
+    public function posts()
+    {
+        return $this-&gt;hasMany(Post::class);
+    }
+}
+</pre>
+
+<p>Model ve migration’lar hazır olduğunda, migration’ları çalıştırabilir ve ardından seed (tohum) verileriyle eager loading denemelerine geçebilirsiniz.</p>
+
+<pre>
+php artisan migrate
+Migration table created successfully.
+Migrating: 2014_10_12_000000_create_users_table
+Migrated:  2014_10_12_000000_create_users_table
+Migrating: 2014_10_12_100000_create_password_resets_table
+Migrated:  2014_10_12_100000_create_password_resets_table
+Migrating: 2017_08_04_042509_create_posts_table
+Migrated:  2017_08_04_042509_create_posts_table
+Migrating: 2017_08_04_042516_create_authors_table
+Migrated:  2017_08_04_042516_create_authors_table
+Migrating: 2017_08_04_044554_create_profiles_table
+Migrated:  2017_08_04_044554_create_profiles_table
+</pre>
+
+<p>Veritabanını kontrol ettiğinizde, oluşturulan tüm tabloları görmelisiniz!</p>
+
+<h3 id="model-factory">Model Factory</h3>
+
+<p>Sorgu çalıştırabileceğimiz fake veriler oluşturmak için, veritabanını test verileriyle tohumlayacak birkaç model factory ekleyelim.</p>
+
+<p>database/factories/ModelFactory.php dosyasını açın ve aşağıdaki üç factory’i mevcut User factory’nin altına ekleyin:</p>
+
+<pre>
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+$factory-&gt;define(App\Post::class, function (Faker\Generator $faker) {
+    return [
+        'title' =&gt; $faker-&gt;sentence,
+        'author_id' =&gt; function () {
+            return factory(App\Author::class)-&gt;create()-&gt;id;
+        },
+        'body' =&gt; $faker-&gt;paragraphs(rand(3,10), true),
+    ];
+});
+ 
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+$factory-&gt;define(App\Author::class, function (Faker\Generator $faker) {
+    return [
+        'name' =&gt; $faker-&gt;name,
+        'bio' =&gt; $faker-&gt;paragraph,
+    ];
+});
+ 
+$factory-&gt;define(App\Profile::class, function (Faker\Generator $faker) {
+    return [
+        'birthday' =&gt; $faker-&gt;dateTimeBetween('-100 years', '-18 years'),
+        'author_id' =&gt; function () {
+            return factory(App\Author::class)-&gt;create()-&gt;id;
+        },
+        'city' =&gt; $faker-&gt;city,
+        'state' =&gt; $faker-&gt;state,
+        'website' =&gt; $faker-&gt;domainName,
+    ];
+});
+</pre>
+
+<p>Factory’ler, sorgulayabileceğimiz bir dizi gönderiyi oluşturmayı kolaylaştıracak; bunları veritabanı tohumlaması ile ilişkili model verileri oluşturmak için kullanabiliriz.</p>
+
+<p>database/seeds/DatabaseSeeder.php dosyasını açın ve DatabaseSeeder::run() metoduna şunu ekleyin:</p>
+
+<pre>
+public function run()
+{
+    $authors = factory(App\Author::class, 5)-&gt;create();
+    $authors-&gt;each(function ($author) {
+        $author
+            -&gt;profile()
+            -&gt;save(factory(App\Profile::class)-&gt;make());
+        $author
+            -&gt;posts()
+            -&gt;saveMany(
+                factory(App\Post::class, rand(20,30))-&gt;make()
+            );
+    });
+}
+</pre>
+
+<p>Beş yazar oluşturdunuz ve ardından yazarlar arasında dolaşıp ilişkili bir profili ve birçok gönderiyi (yazar başına 20 ila 30 gönderi) kaydettiniz.</p>
+
+<p>Migration, model, model factory ve seeder oluşturmayı bitirdik. Hepsini birleştirebilir ve tekrarlanabilir bir şekilde yeniden çalıştırabiliriz:</p>
+
+<pre>
+php artisan migrate:refresh
+php artisan db:seed
+</pre>
+
+<p>Artık bir sonraki bölümde oynayabileceğiniz verilere sahip olmalısınız. Laravel 5.5’in, migration’ları geri alıp yeniden uygulamak yerine tabloları silen migration:fresh komutu içerdiğini unutmayın.</p>
+
+<h2 id="eager-loadingi-denemek">Eager Loading’i Denemek</h2>
+
+<p>Sonunda eager loading’i çalışırken görmeye hazırız. Bence, eager loading’i görselleştirmenin en iyi yolu, storage/logs/laravel.log dosyasına sorguları kaydetmektir.</p>
+
+<p>Veritabanı sorgularını log’a kaydetmek için MySQL log’unu etkinleştirebilir veya Eloquent’ten gelen veritabanı çağrılarını dinleyebilirsiniz. Eloquent aracılığıyla sorguları log’a kaydetmek için, app/Providers/AppServiceProvider.php boot() metoduna aşağıdaki kodu ekleyin:</p>
+
+<pre>
+namespace App\Providers;
+ 
+use DB;
+use Log;
+use Illuminate\Support\ServiceProvider;
+ 
+class AppServiceProvider extends ServiceProvider
+{
+    /**
+     * Bootstrap any application services.
+     *
+     * @return void
+     */
+    public function boot()
+    {
+        DB::listen(function($query) {
+            Log::info(
+                $query-&gt;sql,
+                $query-&gt;bindings,
+                $query-&gt;time
+            );
+        });
+    }
+ 
+    // ...
+}
+</pre>
+
+<p>Bu bilgiyi Laravel Debugbar’dan da alabilirsiniz.</p>
+
+<p>Bakalım model ilişkilerinde eager loading kullanmadığımızda ne olacak. storage/log/laravel.log dosyanızı temizleyin ve “tinker” komutunu çalıştırın.</p>
+
+<pre>
+php artisan tinker
+ 
+&gt;&gt;&gt; $posts = App\Post::all();
+&gt;&gt;&gt; $posts-&gt;map(function ($post) {
+...     return $post-&gt;author;
+... });
+&gt;&gt;&gt; ...
+</pre>
+
+<p>laravel.log dosyanızı kontrol ederseniz, ilişkili yazarı almak için bir dizi sorgu görmelisiniz:</p>
+
+<pre>
+[2017-08-04 06:21:58] local.INFO: select * from `posts`
+[2017-08-04 06:22:06] local.INFO: select * from `authors` where `authors`.`id` = ? limit 1 [1]
+[2017-08-04 06:22:06] local.INFO: select * from `authors` where `authors`.`id` = ? limit 1 [1]
+[2017-08-04 06:22:06] local.INFO: select * from `authors` where `authors`.`id` = ? limit 1 [1]
+....
+</pre>
+
+<p>laravel.log dosyanızı tekrar boşaltın ve bu sefer yazar kayıtlarını eager loading ile yüklemek için with() kullanın:</p>
+
+<pre>
+php artisan tinker
+ 
+&gt;&gt;&gt; $posts = App\Post::with('author')-&gt;get();
+&gt;&gt;&gt; $posts-&gt;map(function ($post) {
+...     return $post-&gt;author;
+... });
+...
+</pre>
+
+<p>Bu sefer log dosyasında yalnızca iki sorgu görmelisiniz. Tüm gönderiler için ilk sorgu ve ilişkili tüm yazarlar için ikinci sorgu.</p>
+
+<pre>
+[2017-08-04 07:18:02] local.INFO: select * from `posts`
+[2017-08-04 07:18:02] local.INFO: select * from `authors` where `authors`.`id` in (?, ?, ?, ?, ?) [1,2,3,4,5]
+</pre>
+
+<p>Birden fazla ilgili ilişkilendirmeniz varsa, bunları bir dizi ile isteyerek yükleyebilirsiniz:</p>
+
+<pre>
+$posts = App\Post::with(['author', 'comments'])-&gt;get();
+</pre>
+
+<h2 id="eloquentte-i̇ç-i̇çe-eager-loading">Eloquent’te İç İçe Eager Loading</h2>
+
+<p>İç içe eager loading aynı şekilde çalışır. Örneğimizde Author modelinin bir profili vardır. Böylece her profil için bir sorgu yürütülecektir.</p>
+
+<p>laravel.log dosyasını boşaltın ve deneyin:</p>
+
+<pre>
+php artisan tinker
+ 
+&gt;&gt;&gt; $posts = App\Post::with('author')-&gt;get();
+&gt;&gt;&gt; $posts-&gt;map(function ($post) {
+...     return $post-&gt;author-&gt;profile;
+... });
+...
+</pre>
+
+<p>Şimdi yedi sorgunuz olacak. İlk ikisi eager yüklenir ve ardından her yeni yazar profili için bir sorgu gerekir.</p>
+
+<p>Eager loading ile iç içe ilişkilerdeki fazladan sorgulardan kaçınabiliriz. laravel.log dosyanızı son bir kez temizleyin ve aşağıdakileri çalıştırın:</p>
+
+<pre>
+&gt;&gt;&gt; $posts = App\Post::with('author.profile')-&gt;get();
+&gt;&gt;&gt; $posts-&gt;map(function ($post) {
+...     return $post-&gt;author-&gt;profile;
+... });
+</pre>
+
+<p>Şimdi, toplamda yalnızca 3 sorgunuz olmalıdır:</p>
+
+<pre>
+[2017-08-04 07:27:27] local.INFO: select * from `posts`
+[2017-08-04 07:27:27] local.INFO: select * from `authors` where `authors`.`id` in (?, ?, ?, ?, ?) [1,2,3,4,5]
+[2017-08-04 07:27:27] local.INFO: select * from `profiles` where `profiles`.`author_id` in (?, ?, ?, ?, ?) [1,2,3,4,5]
+</pre>
+
+<h2 id="lazy-eager-loading">Lazy Eager Loading</h2>
+
+<p>İlişkili modelleri yalnızca bir koşula dayalı olarak toplamanız gerekebilir. Bu durumda, ilgili veriler için tembelce ek sorgular başlatabilirsiniz:</p>
+
+<pre>
+php artisan tinker
+ 
+&gt;&gt;&gt; $posts = App\Post::all();
+...
+&gt;&gt;&gt; $posts-&gt;load('author.profile');
+&gt;&gt;&gt; $posts-&gt;first()-&gt;author-&gt;profile;
+...
+</pre>
+
+<p>Toplamda üç sorgu görmelisiniz, ancak yalnızca $posts-&gt;load() çağrılırsa.</p>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Umarız eager loading hakkında biraz daha fazla şey öğrenmiş ve daha derin bir düzeyde nasıl çalıştığını anlamışsınızdır. Eager loading belgeleri kapsamlıdır ve ek olarak uygulamalı alıştırmanın, sorgularınızı optimize etme konusunda kendinize daha fazla güvenmenize yardımcı olacağını umuyorum.</p>
+
+<p><strong>Kaynak:</strong> https://laravel-news.com/eloquent-eager-loading</p>
+</p>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                    <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <a href="/feed.xml" class="text-decoration-none" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss-fill" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/melihkocaturk" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="text-center">
+            <small><a href="mailto:melih.kocaturk@icloud.com" class="text-decoration-none text-secondary">melih.kocaturk@icloud.com</a></small>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+---
+layout: default
+title: Code Ninja
+---
+
+{% for post in paginator.posts %}
+    <div class="mb-5">
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.excerpt }}</p>
+        <p><a href="{{ post.url }}">Devamını Oku</a></p>
+    </div>
+{% endfor %}
+
+<div class="d-flex">
+    <ul class="list-inline mx-auto justify-content-center">
+        {% if paginator.previous_page %}
+            <li class="list-inline-item"><a href="{{ paginator.previous_page_path }}">&laquo; Önceki</a></li>
+        {% else %}
+            <li class="list-inline-item"><a href="#">&laquo; Önceki</a></li>
+        {% endif %}
+            <li class="list-inline-item">Sayfa: {{ paginator.page }} - {{ paginator.total_pages }}</li>
+        {% if paginator.next_page %}
+            <li class="list-inline-item"><a href="{{ paginator.next_page_path }}">Sonraki &raquo;</a></li>
+        {% else %}
+            <li class="list-inline-item"><a href="#">Sonraki &raquo;</a></li>
+        {% endif %}
+    </ul>
+</div>

@@ -1,0 +1,21 @@
+url: "http://www.melihkocaturk.com/"
+baseurl: ""
+avatar: "/assets/images/avatar.jpg" 
+title: Melih Kocatürk
+subtitle: Code Ninja / (Ethical) Hacker
+description: > 
+  10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi, 
+  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı 
+  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
+linkedin_user: melihkocaturk
+github_user: melihkocaturk
+author:
+  name: Melih Kocatürk
+  title: Code Ninja
+  email: melih.kocaturk@icloud.com
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+paginate: 5
+paginate_path: "/blog/page:num/"
+google_analytics: "G-D81YCKRVTX"
