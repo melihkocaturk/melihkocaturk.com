@@ -1,5 +1,768 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-10T23:32:36+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
-</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Eager Loading ile Laravel Eloquent Sorgularını Optimize Edin</title><link href="http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin.html" rel="alternate" type="text/html" title="Eager Loading ile Laravel Eloquent Sorgularını Optimize Edin" /><published>2024-01-15T00:00:00+03:00</published><updated>2024-01-15T00:00:00+03:00</updated><id>http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin</id><content type="html" xml:base="http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin.html"><![CDATA[<p>Object Relational Mapping (ORM), veritabanlarıyla çalışmayı şaşırtıcı derecede basit hale getirir. Veritabanı ilişkilerini nesne yönelimli bir şekilde tanımlamak, ilgili model verilerini sorgulamayı kolaylaştırırken, geliştiriciler temeldeki veritabanı çağrılarına dikkat etmeyebilir.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-12T00:55:11+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
+</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">WSL Nedir ve Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html" rel="alternate" type="text/html" title="WSL Nedir ve Nasıl Kullanılır?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html"><![CDATA[<p>Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.</p>
+
+<h2 id="sadece-bir-sanal-makine-değil">Sadece Bir Sanal Makine Değil</h2>
+
+<p>WSL’nin ne olmadığıyla başlayalım; örneğin, Ubuntu’yu VirtualBox’ta çalıştırarak elde edebileceğiniz tam bir Linux masaüstü deneyimi değildir. Performans nedenleriyle teknik olarak sanallaştırmayı kullanır, ancak tam bir VM çalıştırmaktan çok farklıdır. Her şey sizin için yönetilir ve işinizi yapmanız ve git, ssh gibi tanıdık bash komutlarını kullanmanız için basit bir shell ve environment sağlar.</p>
+
+<p>Temel olarak WSL, app store’dan bir uygulama olarak tam bir Linux dağıtımı kurmanıza olanak tanır. Ubuntu’yu (veya tercih ettiğiniz dağıtımı) indirebilir, kurabilir ve başlatabileceğiniz bir uygulama veya terminalinizde CMD veya Powershell ile birlikte çalışacak bir profil olarak kullanıma sunabilirsiniz.</p>
+
+<p>En basit açıklaması “Windows’ta bash çalıştırmanıza izin vermesi” olsa da, bir kabuktan daha fazlasıdır; apt kullanarak programları yükleyebilir ve normal bir Linux örneği gibi özelleştirebilirsiniz.</p>
+
+<p>WSL, geliştiricilere ve bash kullanıcılarına, Windows’u birincil işletim sistemi olarak kullanmak zorunda kalmalarına rağmen Linux shell deneyimi sunmayı amaçlamaktadır. Daha kolay komut satırı erişimi için bir Linux shell’inin yanı sıra Visual Studio gibi Windows uygulamalarını çalıştırmanıza izin vererek her iki dünyanın da en iyisini sunar.</p>
+
+<p>Microsoft, WSL’nin iki sürümünü sunmaktadır: sürüm 1 ve sürüm 2. WSL 2, sanal makine kullanır ve Windows ile oluşturulup gönderilen tam bir Linux çekirdeğine sahiptir. WSL 1 daha eskidir ve genellikle çok daha yavaştır ancak dosya sistemleri arasında çalışırken daha iyi performansa sahiptir. Daha hızlı olduğundan ve Docker gibi araçlarla çok daha iyi çalıştığından çoğu işlem için WSL 2’yi öneriyoruz.</p>
+
+<h2 id="wsl-kurulumu">WSL Kurulumu</h2>
+
+<p>WSL isteğe bağlı bir Windows özelliğidir, dolayısıyla onu açmanız gerekir. Powershell’i başlat menüsünden Administrator olarak açın:</p>
+
+<p><img src="/assets/images/2024/02/powershell-run-as-administrator.png" alt="Powershell'i yönetici olarak çalıştır" title="Powershell'i yönetici olarak çalıştır" class="img-fluid" /></p>
+
+<p>Ardından açın:</p>
+
+<pre>
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+</pre>
+
+<p>Değişiklikleri uygulamak için makinenizi yeniden başlatmanız gerekecektir. Bundan sonra Windows Store’u açabilir ve mevcut dağıtımları görüntülemek için “WSL”yi arayabilirsiniz:</p>
+
+<p><img src="/assets/images/2024/02/wsl-windows-store.png" alt="WSL Windows Store" title="WSL Windows Store" class="img-fluid" /></p>
+
+<p>İlk kez çalıştırdığınızda, örnek için kullanıcı adınızı ve şifrenizi ayarlamanız istenecektir. Bunlar yalnızca Linux içindir ve Windows parolanızla eşleşmesi gerekmez.</p>
+
+<p>İlk yüklediğiniz varsayılan olarak ayarlanmalıdır, ancak birden fazla yükleme yaparsanız varsayılanı manuel olarak ayarlamanız gerekecektir. WSL’yi Powershell’deki wsl komutu aracılığıyla yönetebilirsiniz. Örneğin, şu anda yüklü olan tüm sürümlerin listesi:</p>
+
+<pre>
+PS C:\&gt; wsl --list
+Windows Subsystem for Linux Distributions:
+Ubuntu-20.04 (Default)
+docker-desktop
+docker-desktop-data
+</pre>
+
+<p>Ardından, WSL 1 ve 2 arasında geçiş yapmak için de kullanılabilen aşağıdaki komutla varsayılan WSL dağıtımınızı ayarlayabilirsiniz.</p>
+
+<pre>
+wsl --set-version Ubuntu-20.04 2
+</pre>
+
+<p>Gelecekteki tüm kurulumlar için tercih edilen bir WSL sürümünü de ayarlayabilirsiniz:</p>
+
+<pre>
+wsl --set-default-version 2
+</pre>
+
+<h2 id="wsli-kullanmak">WSL’i Kullanmak</h2>
+
+<p>WSL’yi birkaç farklı şekilde açabilirsiniz. En kolayı, Windows’a basıp “wsl” yazmaktır; bu, otomatik olarak wsl.exe’yi çalıştıracak ve varsayılan dağıtımınızı açacaktır.</p>
+
+<p><img src="/assets/images/2024/02/wsl-start-menu.png" alt="WSL Start Menu" title="WSL Start Menu" class="img-fluid" /></p>
+
+<p><img src="/assets/images/2024/02/wsl-windows-terminal.png" alt="WSL Windows Terminal" title="WSL Windows Terminal" class="img-fluid" /></p>
+
+<p>Bu sadece temel bir terminal penceresidir; Microsoft’un yeni Terminal Uygulamasını kullanıyorsanız - ki bunu kesinlikle öneriyoruz - WSL sürümlerinize açılır menü aracılığıyla erişilebilir (ayarlamış olabileceğiniz SSH profillerinin yanı sıra):</p>
+
+<p><img src="/assets/images/2024/02/wsl-windows-terminal-menu.png" alt="WSL Windows Terminal Menu" title="WSL Windows Terminal Menu" class="img-fluid" /></p>
+
+<h2 id="dosya-sistemleri-üzerine-bir-not">Dosya Sistemleri Üzerine Bir Not</h2>
+
+<p>Linux dosya sisteminiz her zamanki gibi / konumuna monte edilmiştir. Windows, /mnt/c/ konumunda veya varsayılan sürücü harfiniz hangisiyse orada bulunur.</p>
+
+<p>Bunların hepsi sanal olduğundan, Linux dosyalarınız elbette sürücünün kendisinde depolanır. WSL 1 için bunlar basit bir klasörde saklanır. WSL 2 bazı şeyleri değiştirir ve dosyaları sanal sabit disk imajı veya VHDX olarak saklar.</p>
+
+<p>Bu imajları aşağıdaki yolda bulabilirsiniz ve dağıtım kayıtlı değilken de monte edilebilseler de, Windows tarafında onları karıştırmanızı önermiyoruz.</p>
+
+<pre>
+%USERPROFILE%AppDataLocalPackagesCanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgscLocalState
+</pre>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.]]></summary></entry><entry><title type="html">Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın</title><link href="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html" rel="alternate" type="text/html" title="Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin</id><content type="html" xml:base="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html"><![CDATA[<p>Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.</p>
+
+<p>Son birkaç yılda Konteynerizasyon (veya Docker) konusunu İnternet’in her yerinde duyabilirsiniz. VM’nin tamamını sanallaştırmak yerine kodu ve tüm bağımlılıklarını bir “Konteyner” olarak paketler. Konteynerler hakkında daha fazla bilgiyi buradan edinebilirsiniz… Hala Laradock kullanıyor olabilirsiniz… Son olarak, Aralık 2020’de Taylor Otwell, Laravel Sail’i piyasaya sürdü!</p>
+
+<p><em>Laravel Sail, Laravel’in varsayılan Docker geliştirme ortamıyla etkileşime geçmek için kullanılan hafif bir komut satırı arayüzüdür. Sail, önceden Docker deneyimi gerektirmeden PHP, MySQL ve Redis kullanarak bir Laravel uygulaması oluşturmak için harika bir başlangıç noktası sağlar.</em></p>
+
+<p><em>Kaynak: Laravel Belgeleri</em></p>
+
+<p>Bu eğitimde WSL 2 kullanarak Windows üzerinde yepyeni bir Laravel projesi başlatacaksınız. WSL, Windows Subsystem for Linux anlamına gelir ve geliştiricilerin herhangi bir “gerçek” VM host olmadan Linux ortamlarını doğrudan Windows üzerinde çalıştırmasına olanak tanır. WSL 2 büyük bir revizyondur ve daha iyi dosya IO performansıyla (20 kat daha hızlı) WSL 1’in avantajlarını sağlar. Önyüklemesi yavaş, kaynak yükü büyük ve tamamen yalıtılmış olan geleneksel VM’e benzemez.</p>
+
+<p>Windows makinenizde WSL 2’yi açalım!</p>
+
+<h2 id="wsl-2yi-yükleyin">WSL 2’yi Yükleyin</h2>
+
+<h3 id="basitleştirilmiş-kurulum-windows-11windows-10-sürüm-2004-veya-üzeri">Basitleştirilmiş Kurulum (Windows 11/Windows 10 sürüm 2004 veya üzeri)</h3>
+
+<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve wsl –install komutunu çalıştırın, yeniden başlattıktan sonra WSL’yi kullanmaya hazır olacaksınız.</p>
+
+<p>Komut Windows 10’da mevcut değilse aşağıdaki manuel kurulumu deneyin. Alternatif olarak daha fazla ayrıntı için KB5004296’yı arayabilirsiniz.</p>
+
+<h3 id="manuel-kurulum-windows-10-build-18362-veya-üzeri-home-edition-dahil">Manuel Kurulum (Windows 10 Build 18362 veya üzeri, Home Edition dahil)</h3>
+
+<p><strong>1. WSL’yi etkinleştirin</strong></p>
+
+<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki komutu çalıştırın.</p>
+
+<pre>
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</pre>
+
+<p>DISM hakkında daha fazla bilgi için <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11">buraya</a> tıklayın.</p>
+
+<p><strong>2. Sanal Makine özelliğini etkinleştirin</strong></p>
+
+<p>WSL 2 için sanallaştırma yetenekleri hala gereklidir. Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki çalıştırın.</p>
+
+<pre>
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+</pre>
+
+<p><strong>3. Linux çekirdeği güncelleme paketini indirin</strong></p>
+
+<p><a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">wsl_update_x64.msi</a> paketini indirin ve yükleyin. Daha sonra bilgisayarınızı yeniden başlatın.</p>
+
+<p><strong>4. WSL 2’yi varsayılan sürümünüz olarak ayarlayın</strong></p>
+
+<pre>
+wsl --set-default-version 2
+</pre>
+
+<p><strong>5. Ubuntu’yu (veya seçtiğiniz Linux dağıtımını) yükleyin</strong></p>
+
+<ul>
+  <li>Microsoft Mağazasını açın ve ardından Ubuntu’yu arayın ve seçin.</li>
+  <li>Dağıtım sayfasından “Al”ı ve ardından “Yükle”yi seçin.</li>
+  <li>Hazır olduğunda “Başlat”a tıklayın.</li>
+  <li>Ubuntu için kullanıcı adınızı ve şifrenizi oluşturun.</li>
+</ul>
+
+<p><strong>6. Kurulumunuzu doğrulamak için wsl –list –verbose komutunu kullanın.</strong></p>
+
+<p><img src="/assets/images/2024/02/wsl-list-verbose.png" alt="wsl --list --verbose" title="wsl --list --verbose" class="img-fluid" /></p>
+
+<p>Herhangi bir sorunla karşılaşırsanız <a href="https://docs.microsoft.com/en-my/windows/wsl/install-win10#troubleshooting-installation">buradaki</a> sorun giderme ipuçlarına başvurabilirsiniz.</p>
+
+<h2 id="dockerı-yükleyin">Docker’ı Yükleyin</h2>
+
+<p><strong>1. İndirin</strong></p>
+
+<p>Docker <a href="https://docs.docker.com/desktop/install/windows-install/">Desktop Stable</a> sürümünü indirin.</p>
+
+<p><strong>2. Kurulum</strong></p>
+
+<p>Docker Masaüstünü kurmak için kurulum sihirbazını takip edin. WSL 2’niz düzgün yapılandırılmışsa kurulum sırasında WSL 2’yi etkinleştirmeniz istenecektir.</p>
+
+<p><img src="/assets/images/2024/02/docker-use-wsl2-based-engine.png" alt="Docker WSL2 engine kullanıyor" title="Docker WSL2 engine kullanıyor" class="img-fluid" /></p>
+
+<p><strong>3. WSL Entegrasyonunu Yapılandırın</strong></p>
+
+<p>Doğru Linux dağıtımlarını açtığınızdan emin olun.</p>
+
+<p><img src="/assets/images/2024/02/docker-wsl-integration-settings.png" alt="Docker WSL entegrasyon ayarları" title="Docker WSL entegrasyon ayarları" class="img-fluid" /></p>
+
+<h2 id="haydi-yelken-açalım">Haydi Yelken Açalım</h2>
+
+<p>Windows Terminalini başlatın ve wsl’yi girin.</p>
+
+<p><img src="/assets/images/2024/02/terminal-wsl-command.png" alt="Terminal wsl komutu" title="Terminal wsl komutu" class="img-fluid" /></p>
+
+<p>İşte püf noktası… Yolun, Windows kullanıcı dizininiz olduğunu fark edebilirsiniz.</p>
+
+<p>Resmi Microsoft WSL belgelerinde <a href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions#comparing-features">WSL özellikleri</a> karşılaştırıldı. WSL 2 mimarisi, işletim sistemi dosya sistemlerindeki performans dışında, WSL 1’den birkaç açıdan daha iyi performans gösterir.</p>
+
+<p><img src="/assets/images/2024/02/wsl-comparing-features.png" alt="WSL özelliklerinin karşılaştırılması" title="WSL özelliklerinin karşılaştırılması" class="img-fluid" /></p>
+
+<p>cd ~ komutunu kullanarak Linux ana dizininize gidebiliriz.</p>
+
+<p>Aşağıdaki komutu kullanarak test-project adında yeni bir Laravel projesi oluşturalım:</p>
+
+<pre>
+curl -s https://laravel.build/test-project | bash
+</pre>
+
+<p>Daha sonra kurulumu bekleyin.</p>
+
+<p><img src="/assets/images/2024/02/wsl-laravel-installation.png" alt="WSL Laravel kurulumu" title="WSL Laravel kurulumu" class="img-fluid" /></p>
+
+<p>WSL storage’in gerçek konumu (vhdx formatında) şu adreste bulunur:</p>
+
+<pre>
+C:\Users\user_name\AppData\Local\Packages\
+CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState
+</pre>
+
+<p>Artık cd test-project ile dizine girebilir ve Sail’i başlatabiliriz!</p>
+
+<pre>
+./vendor/bin/sail up
+</pre>
+
+<p>Sail’i ilk kez çalıştırdığınızda, docker imajlarını indirmek ve konteynerinizi oluşturmak biraz zaman alır ancak bir sonraki çalıştırma için çok hızlı olacaktır.</p>
+
+<p>Herhangi bir sorunla karşılaşırsanız suçlu Antivirüs yazılımınız olabilir. Lütfen “C:\ProgramData\DockerDesktop\vm-data\” yolunu hariç tutun.</p>
+
+<p><img src="/assets/images/2024/02/container-up-and-running.png" alt="Docker container çalışıyor" title="Docker container çalışıyor" class="img-fluid" /></p>
+
+<p>Container başlatıldıktan sonra yepyeni Laravel projenize erişmek için http://localhost adresine gidebilirsiniz.</p>
+
+<h3 id="sail-stackinizi-seçin">Sail Stack’inizi Seçin</h3>
+
+<p>Varsayılan stack mysql, redis, meilisearch, mailhog ve selenium’u içeriyor. Mevcut servisler arasında mysql, pgsql, mariadb, redis, memcached, meilisearch, selenium ve mailhog bulunmaktadır.</p>
+
+<p>Query kullanarak favori stack’inizi seçebilirsiniz:</p>
+
+<pre>
+curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
+</pre>
+
+<p>docker-compose.yml dosyanız buna göre yapılandıracaktır.</p>
+
+<h3 id="günlük-sail-rutini">Günlük Sail Rutini</h3>
+
+<p><strong>Sail’i detached modda başlatın</strong></p>
+
+<pre>
+./vendor/bin/sail up -d
+</pre>
+
+<p><strong>Sail’i durdurun</strong></p>
+
+<p>“Detached” modu kullanmıyorsanız Control+C, aksi halde,</p>
+
+<pre>
+./vendor/bin/sail down
+</pre>
+
+<p><strong>Takma ad</strong></p>
+
+<p>Uzun bir yol adı yazmak yerine, sail’e doğrudan ulaşmanıza olanak tanıyan bir Bash takma adı yapılandırın.</p>
+
+<pre>
+alias sail='bash vendor/bin/sail'
+</pre>
+
+<p>Bir takma ad oluşturabilir ve takma adı kalıcı olarak .bashrc dosyanıza kaydedebilirsiniz. nano ~/.bashrc komutunu kullanıp daha sonra alt tarafa alias sail=’bash vendor/bin/sail’ ekleyip çalıştırabilirsiniz.</p>
+
+<h2 id="kodlamaya-başlayın">Kodlamaya Başlayın</h2>
+
+<p><strong>Visual Studio Code</strong></p>
+
+<p><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote-WSL extension</a> yükleyin ve proje klasöründe olduğunuzdan emin olun.</p>
+
+<pre>
+cd ~/test-project/
+</pre>
+
+<p>Sonra aşağıdaki kodu çalıştırın.</p>
+
+<pre>
+code .
+</pre>
+
+<p>VS Code’un başlatıldığını ve proje klasörünüzdeki dosyaları görebilmeniz gerekir.</p>
+
+<p><img src="/assets/images/2024/02/vs-code-explorer.png" alt="VS Code Explorer" title="VS Code Explorer" class="img-fluid" /></p>
+
+<p>Artık http://localhost adresinde kodlamaya başlayabilir ve değişikliklerinizi izleyebilirsiniz.</p>
+
+<p><strong>PhpStorm</strong></p>
+
+<p>Projeyi \wsl$\Ubuntu\home&lt;user&gt;\test-project kullanarak açabilirsiniz.</p>
+
+<p><strong>İpucu:</strong> sail artisan <command /> komutunu kullanarak artisan komutunu çağırabilirsiniz.</p>
+
+<p>Okuduğunuz için teşekkürler. İyi kodlamalar!</p>
+
+<p><strong>Kaynak:</strong> https://blog.devgenius.io/kickstart-your-laravel-web-app-using-laravel-sail-30276265e588</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.]]></summary></entry><entry><title type="html">API Gateway nedir?</title><link href="http://localhost:4000/2024/02/11/api-gateway-nedir.html" rel="alternate" type="text/html" title="API Gateway nedir?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/api-gateway-nedir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/api-gateway-nedir.html"><![CDATA[<p>Yazılım için bu devrim niteliğindeki çağda, yeni mimari pattern’lerin ortaya çıkma hızı, işletmelerin artık hizmetleri oluşturma, devreye alma ve tüketme yöntemlerini önemli ölçüde etkiledi. Bu değişiklikler aynı zamanda proje iş akışlarına yönelik yenilikçi yaklaşımları memnuniyetle karşılayarak DevOps ve mühendislik ekiplerine API yaşam döngülerinin temel alanlarını otomatikleştirme ve karmaşıklığı genel olarak basitleştirme kapılarını açtı. Çözüm? API Gateway.</p>
+
+<p>API Gateway, mikroservis mimarisinde istemci uygulamaları ile backend servisleri arasında aracı görevi görür. İstek oluşturma, yönlendirme ve protokol çevirisi gibi görevleri yerine getiren çeşitli API’ler için tek bir endpoint işlevi gören bir yazılım katmanıdır. API Gateway, güvenlik politikalarını uygularken API’lerin trafiğini yöneterek istekleri ve yanıtları kontrol eder. Bu, geliştiricilerin karmaşık API ağları tarafından engellenmek yerine bireysel hizmetler oluşturmaya odaklanmalarına yardımcı olan tek bir merkezi kontrol noktası sağlayarak API yönetimini basitleştirir.</p>
+
+<p><img src="/assets/images/2024/02/why-do-microservices-need-an-api-gateway.png" alt="API Gateway" title="Mikroservislerin neden bir API Gateway'e ihtiyacı var?" class="img-fluid" /></p>
+
+<h2 id="api-gateway-nasıl-çalışır">API Gateway Nasıl Çalışır?</h2>
+
+<p>Günümüzün yazılım sistemlerinin güzelliği, karmaşık işlemleri kolaylıkla gerçekleştirme yeteneklerinde yatmaktadır.</p>
+
+<p>Bu yenilikçi teknoloji, istemciler ve backend servisleri arasında bir tampon görevi görerek tüm hata algılama prosedürlerini yerine getirirken aynı zamanda gerektiğinde erişim denetimi sağlar. Bunun temelinde, istek yoluna ve diğer ilgili faktörlere dayalı olarak uygun yönlendirmeyi sağlayan iyi yapılandırılmış bir mimari yer alır. Mikroservis mimarisinin temel özelliği, birden çok bağımsız servisten oluşan bir ekosistem içindeki verimli iletişim yönteminde yatar. İsteğin alınması üzerine, backend servisi, işlemi tamamlandıktan sonra API Gateway aracılığıyla yanıtları geri gönderir. Bu adımdan sonra, Api Gateway, bu çıktıları ilgili tarafa geri aktarmadan önce analiz ederek ve tek bir bileşik endpoint kullanarak işi devralır. Ayrıca, API Gateway yalnızca güvenilir bir cluster sağlamakla kalmaz, aynı zamanda istekleri kabul eden ve eylemleri buna göre yönlendiren bir proxy sunucu olarak çalışma gibi seçeneklere de sahiptir.</p>
+
+<p>Günümüzün yüksek tempolu dijital geliştirme dünyasında verimlilik her şeydir - bu nedenle API Gateway modern yazılım projelerinde çok önemli hale gelmiştir. Mikroservis mimarilerinde API’ler için merkezi bir kontrol noktası görevi gören bu temel araç, cache ve load balancing gibi akıllı görev yönetimi sayesinde gelişmiş performans sunar.</p>
+
+<h3 id="api-gateway-ve-mikroservisler">API Gateway ve Mikroservisler</h3>
+
+<p>Organizasyonlar mikro hizmet mimarisini benimserken, API Gateway’ler giderek daha popüler hale geliyor. API Gateway, tüm backend servisleri için tek bir entry point işlevi görür ve geliştiriciler için sistemin geliştirilmesini, devreye alınmasını ve yönetilmesini basitleştirir. Mikroservisler benzersiz zorluklar sunar, ancak iyi uygulanmış bir API ağ geçidi, bu sorunların ele alınmasına yardımcı olabilir.</p>
+
+<p>Her bir backend servisi, client isteklerini doğru bir şekilde yönlendirmeyi veya birden çok hizmeti tek bir yanıtta birleştirmeyi zorlaştıran bir mikroservis mimarisinde bağımsız bir uygulama olarak çalışacak şekilde tasarlanmıştır. Modern uygulamalar oluşturmak, genellikle benzersiz bir şekilde ele alınması gereken ayrı rotalara veya arayüzlere sahip olabilecek çok sayıda servisle uğraşmayı gerektirir. API Gateway kullanın - birden çok servis arasında tek bir arabirim olarak işlev görerek bu zorluğun üstesinden gelir ve geliştiricilerin istek işleme akışını sorunsuz bir şekilde yönetmesine olanak tanır.</p>
+
+<p><img src="/assets/images/2024/02/api-infrastructure-esb-versus-api-gateway.jpg" alt="API altyapısı" title="API altyapısı" class="img-fluid" /></p>
+
+<h2 id="api-gateway-özellikleri">API Gateway Özellikleri</h2>
+
+<p>API Gateway teknolojisi, gelen istekleri kolayca ilgili backend servislerine yönlendiren verimli yönetim gibi bir dizi avantaj sunar. Ayrıca, istemcilerin servisle zahmetsizce etkileşim kurabilmeleri için protokolleri otomatik olarak çevirebilir.</p>
+
+<ul>
+  <li><strong>API Trafik Yönetimi:</strong> İşletmeler artık sorunsuz kullanıcı deneyimleri sağlamak için karmaşık backend servislerini basitleştirebilir. API Gatewayi, gelen istekleri yönetir ve diğerlerinin yanı sıra istek rotası, başlıklar ve sorgu parametreleri gibi temel faktörlere göre yönlendirir. Trafiğin verimli bir şekilde dağıtılmasına izin verir ve hedef servisler arasında uygun yük dengeleme sağlar.</li>
+  <li><strong>Protokol Çevirisi:</strong> API Gateway kullanırken, farklılaşma, bir protokolü diğerine dönüştürme yeteneği aracılığıyla çözülür. API Gateway, veri aktarım modlarını kolaylıkla çevirerek, istemciler ve backend servisleri arasındaki etkileşimi çok daha kolay hale getirir.</li>
+  <li><strong>Önbelleğe Alma (Cache):</strong> Bu, servis optimum performans seviyelerine ulaşırken daha az trafiği işlemesi için yaygın olarak kullanılan verilerin sık sık depolanmasını sağlayarak kritik bir rol oynayan önemli bir özelliktir.</li>
+  <li><strong>Yük Dengeleme (Load Balancing):</strong> API Gateway aracılığıyla, gelen istekler, bu hizmetin hem ölçeklenebilirliğini hem de kullanılabilirliğini iyileştirmek için bir servisin  birden çok örneği arasında etkili bir şekilde paylaşılabilir.</li>
+  <li><strong>Geliştirici Portalı:</strong> Geliştiriciler, API Gateway uygulanmasıyla kullanıma sunulan kapsamlı bir geliştirici portalından tam olarak yararlanabilir. Bu platformun yardımıyla,  API’leri kolayca keşfedebilirler.</li>
+</ul>
+
+<h2 id="api-gateway-kullanmanın-faydaları-nelerdir">API Gateway Kullanmanın Faydaları Nelerdir?</h2>
+
+<p>Günümüzün yazılım geliştirme dünyasında API Gateway’ler, yeterli güvenlik önlemlerinin alınmasını sağlarken yönetimi basitleştirme, ölçeklenebilirliği ve kullanılabilirliği geliştirme yetenekleri açısından çok önemlidir. Protokol çevirilerini kolaylaştırmak ve analiz desteği sağlamak, kuruluşları günümüzün sürekli gelişen ekosisteminde müşterilerin taleplerini karşılayan güçlü uygulamalar oluşturma konusunda benzersiz bir şekilde güçlendirir.</p>
+
+<h3 id="basitleştirilmiş-api-yönetimi">Basitleştirilmiş API Yönetimi</h3>
+
+<p>Bir API Gateway kullanmıyorsanız, her uygulamanın kendi arayüzleri ve endpointleri varmış gibi göründüğü bir dünyada API’leri yönetmek zaman alan bir görev olabilir. API kontrollerinizi merkezileştirmek, tüm farklı yazılım arayüzlerinizi daha fazla esneklik ve verimlilik sunan tek bir çatı çözümü altında birleştirerek size çok fazla zaman ve emek tasarrufu sağlar. İstekleri tek bir entry point üzerinden yönlendirmek, özellikle birden çok servisle uğraşırken, sisteminizi basitleştirmede harikalar yaratabilir. Arayüzü uygulamanızla birleştirerek ve birden çok isteği tek bir istekte gruplayarak veya bunları backend sistemleriniz tarafından daha basit bir şekilde işlenecek şekilde dönüştürerek, uygulamayı geliştirme ve kullanma konusunda çok fazla yükten kurtulursunuz.</p>
+
+<h3 id="gelişmiş-api-güvenliği">Gelişmiş API Güvenliği</h3>
+
+<p>Herhangi bir işletmenin yazılımı veya uygulamaları için olası bir zayıf nokta, client verilerinin işlenmesidir. DoS (Denial of Service) veya DDos (Distributed Denial of Service) gibi saldırılar, sunucuları aşırı yükleyerek etkin bir şekilde çalışamayacak hale getirir. API Gateway, gelen trafiği nihai hedefine ulaşmadan önce işleyerek bu siber tehditlere karşı korunmak için etkili bir araç görevi görür. Şüpheli istekleri hızlı bir şekilde belirlemede ve potansiyel hasara karşı ek güvenlik için API kimlik doğrulama kontrolleri sağlamada özellikle yararlıdırlar.</p>
+
+<h3 id="geliştirilmiş-ölçeklenebilirlik-ve-kullanılabilirlik">Geliştirilmiş Ölçeklenebilirlik ve Kullanılabilirlik</h3>
+
+<p>Bir API yönetiyorsanız, API Gateway iş yükünü verimli bir şekilde dağıtmanıza yardımcı olabilir. API’nin çeşitli örneklerinde dağıtılmış gelen isteklerle, kolayca aşırı yüklenmez ve ölçeklenebilirliği ve kullanılabilirliği artırır. Özünde bu, tutarlı ve güvenilir hizmet sağlayarak kullanıcı deneyimini geliştirir.</p>
+
+<h3 id="api-analizi">API Analizi</h3>
+
+<p>API Gateway’ler, API’leri izlemek isteyen işletmeler için başvurulacak teknoloji haline geldi. API trafik analizi ve yakalama yetenekleriyle bu çok yönlü gateway’ler, müşterilerin API’leri nasıl kullandıkları, hangi hizmetlerin en popüler olduğu ve sorunların ortaya çıkabileceği yerler hakkında değerli bilgiler sağlayabilir.</p>
+
+<h2 id="api-gateway-gelecek-trendleri">API Gateway Gelecek Trendleri</h2>
+
+<p>API Gateway teknolojisindeki yenilik, performans, güvenlik ve ölçeklenebilirlikte önemli bir gelime sağladı. Bu nedenle, modern yazılım geliştirmeye devam ederken bu çok önemli bileşeni gözden kaçırmak ihmalkarlık olur. Kong, en hızlı API Gateway ve API Yönetim Platformu olup, işletmelerin en güvenilir ve yüksek performanslı cloud native API platformuyla daha hızlı ölçeklendirme yapmasına ve geliştirici üretkenliğini serbest bırakmasına olanak tanır.</p>
+
+<h3 id="cloud-native">Cloud Native</h3>
+
+<p>API dünyası giderek daha karmaşık hale geliyor - bu nedenle pek çok şirket destek için cloud-native gateway’lere yöneliyor. Üst düzeyde ölçeklenebilir ve baskı altında dayanıklı olan bu ağ geçitleri, birden fazla alanda güvenilir bağlantıya ihtiyaç duyan modern işletmelerin ihtiyaçlarını karşılamak için özel olarak tasarlanmıştır. Sofistike mikroservis mimarileri, çok sayıda bulut tabanlı hizmetle sorunsuz entegrasyonun yanı sıra çeşitli bileşenler arasında kolaylaştırılmış iletişim sağlar.</p>
+
+<h3 id="sunucusuz-gatewayler">Sunucusuz Gateway’ler</h3>
+
+<p>Sunucusuz API Gateway’lerin ortaya çıkışı daha belirgin hale geliyor. Bu, Gateway altyapısını yönetme ve ölçeklendirme ihtiyacını ortadan kaldıran bir hizmet olarak API Gateway özelliklerinin sağlanmasını içerir. Bu yeni yaklaşımın önemli avantajlarından biri, hızlı devreye alma ve iyileştirilmiş ölçeklenebilirliği içerir, böylece büyük ölçekli API ekosistemlerini yönetmeyi kolaylaştırır.</p>
+
+<h3 id="yapay-zeka-makine-öğrenimi-güvenliği">Yapay Zeka Makine Öğrenimi Güvenliği</h3>
+
+<p>Siber tehditler giderek daha karmaşık ve sofistike hale geldikçe, API Gateway güvenliğinde makine öğrenimi ve yapay zeka tabanlı güvenliğin rolünün artması bekleniyor. Bu teknolojiler, siber saldırıları gerçek zamanlı olarak tanımlayıp önleyerek API ortamlarını daha güvenli hale getirebilir.</p>
+
+<h2 id="özet">Özet</h2>
+
+<p>API Gateway, tüm API isteklerini işlemek için tek bir entry point görevi görür. API’lerin etkin yönetimine, optimizasyonuna ve korunmasına olanak tanıyan trafik yönetimi, güvenlik protokolleri, cache ve izleme özelliklerine sahip olduğu için işlevselliği çok önemlidir. Doğru isteklerin doğru bir şekilde işlenmesini ve uygun backend servislerine yönlendirilmesini sağlamak için tutarlı bir şekilde çalışan rotalar, kurallar ve endpointler gibi bileşenlerle; API Gateway, ölçeklenebilirlik, performans iyileştirme ve API’lerin basitleştirilmiş yönetimi dahil olmak üzere bir dizi avantaj sağlar. Gelecekte, native cloud ve sunucusuz API Gateway’lerin giderek daha popüler hale geleceği ve yapay zeka teknolojisinin yanı sıra makine öğrenimi tabanlı güvenliğin gelecekte önemli trendler olarak ortaya çıkacağı tahmin edilmektedir. Başarılı yazılım geliştirmede önemli bir faktör, API’lerin etkin bir şekilde yönetilmesini içerir.</p>
+
+<p>Organizasyonların bunu başarabilmesinin bir yolu, API yönetim platformlarıyla entegre olmaktır. Ortaya çıkan kapsamlı çözüm, gelişmiş performans ve güvenlik geliştirmeleri dahil olmak üzere API Gateway tarafından sağlanan çeşitli avantajlardan yararlanırken operasyonları optimize etmelerini sağlar. Geliştiriciler bu hayati aracın yeteneklerini daha da geliştirmenin yollarını aradıkça, şüphesiz yeni ilerlemeler gerçekleşecektir.</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Yazılım için bu devrim niteliğindeki çağda, yeni mimari pattern’lerin ortaya çıkma hızı, işletmelerin artık hizmetleri oluşturma, devreye alma ve tüketme yöntemlerini önemli ölçüde etkiledi. Bu değişiklikler aynı zamanda proje iş akışlarına yönelik yenilikçi yaklaşımları memnuniyetle karşılayarak DevOps ve mühendislik ekiplerine API yaşam döngülerinin temel alanlarını otomatikleştirme ve karmaşıklığı genel olarak basitleştirme kapılarını açtı. Çözüm? API Gateway.]]></summary></entry><entry><title type="html">Laravel Facades Nasıl Çalışır ve Başka Yerlerde Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/11/laravel-facades-nasil-calisir-ve-baska-yerlerde-nasil-kullanilir.html" rel="alternate" type="text/html" title="Laravel Facades Nasıl Çalışır ve Başka Yerlerde Nasıl Kullanılır?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/laravel-facades-nasil-calisir-ve-baska-yerlerde-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/laravel-facades-nasil-calisir-ve-baska-yerlerde-nasil-kullanilir.html"><![CDATA[<p>Facade pattern, nesne yönelimli programlamada sıklıkla kullanılan bir design pattern’dir. Facade aslında karmaşık bir kütüphaneyi daha basit ve daha okunabilir bir arayüz sağlamak için saran bir sınıftır. Facade pattern’i aynı zamanda bir grup karmaşık ve kötü tasarlanmış API’ye birleşik ve iyi tasarlanmış bir API sağlamak için de kullanılabilir.</p>
+
+<p><img src="/assets/images/2024/02/facade-pattern.jpg" alt="Facade Pattern" title="Facade Pattern" class="img-fluid" /></p>
+
+<p>Laravel framework, Facades olarak da adlandırılan bu pattern’e benzer bir özelliğe sahiptir. Bu eğitimde Laravel “Facades”i diğer frameworklere nasıl taşıyacağımızı öğreneceğiz. Devam etmeden önce IoC (Inversion Of Control) container hakkında temel bir anlayışa sahip olmanız gerekir.</p>
+
+<p>Öncelikle Laravel facades içeride nasıl çalıştığını inceleyelim, ardından bu özelliği diğer ortamlara nasıl uyarlayabileceğimizi tartışacağız.</p>
+
+<h2 id="laravelde-facades">Laravel’de Facades</h2>
+
+<p>Laravel facade, container içindeki servislere static benzeri arayüz sağlayan bir sınıftır. Dokümantasyona göre facades, container servislerinin temel uygulamasına erişim için bir vekil görevi görüyor.</p>
+
+<p>Ancak PHP topluluğunda bu adlandırmayla ilgili pek çok tartışma var. Bazıları, Facade pattern’i tam olarak uygulamadığından, geliştiricilerin kafa karışıklığını önlemek için terimin değiştirilmesi gerektiğini savundu. Bu adlandırma kafanızı karıştırıyorsa, size uygun olanı söylemekten çekinmeyin, ancak kullanacağımız temel sınıfın Laravel framework’te Facade olarak adlandırıldığını lütfen unutmayın.</p>
+
+<h3 id="laravelde-facades-nasıl-uygulanır">Laravel’de Facades Nasıl Uygulanır?</h3>
+
+<p>Muhtemelen bildiğiniz gibi container içindeki her servisin benzersiz bir adı vardır. Laravel uygulamasında, bir servise doğrudan container’dan erişmek için App::make() metodunu veya app() helper fonksiyonunu kullanabiliriz.</p>
+
+<pre>
+&lt;?php
+
+App::make('some_service')-&gt;methodName();
+</pre>
+
+<p>Daha önce de belirtildiği gibi Laravel, servisleri geliştiricinin kullanımına daha okunaklı bir şekilde sunmak için facade sınıflarını kullanır. Facade sınıfı kullanarak aynı şeyi yapmak için yalnızca aşağıdaki kodu yazmamız gerekir:</p>
+
+<pre>
+// ...
+someService::methodName();
+// ...
+</pre>
+
+<p>Laravel’de tüm servislerin bir facade sınıfı vardır. Bu facade sınıfları, Illuminate/Support paketinin bir parçası olan base Facade sınıfını genişletir. Uygulamaları gereken tek şey, container içindeki servis adını döndüren getFacadeAccessor metodudur.</p>
+
+<p>Yukarıdaki sözdiziminde someService facade sınıfını ifade eder. methodName aslında container’daki orjinal servisin bir metodudur. Bu sözdizimine Laravel bağlamı dışında bakarsak, someService adında bir sınıfın methodName() adında static bir metodu çağırdığı anlamına gelir, ancak Laravel bu arayüzü bu şekilde uygulamaz. Bir sonraki bölümde Laravel’in base Facade sınıfının perde arkasında nasıl çalıştığını göreceğiz.</p>
+
+<h3 id="base-facade">Base Facade</h3>
+
+<p>Facade sınıfı, servis container’a referans saklayan $app adında bir private property’e sahiptir. Laravel dışında facades kullanmanız gerekiyorsa, setFacadeApplication() metodunu kullanarak container’i açıkça ayarlamamız gerekir. Bunu kısa süre içinde inceleyeceğiz.</p>
+
+<p>Base facade sınıfının içinde, gerçekte var olmayan static metotların çağrılmasını yönetmek için __callStatic sihirli metodu uygulandı. Laravel facade sınıfından static bir metot çağırdığımızda, facade sınıfı bu metodu uygulamadığından __callStatic metodu çağrılır. Sonuç olarak, __callStatic ilgili servisi container’dan alır ve bu metodu çağırır.</p>
+
+<p>Base facade sınıfında __callStatic metodunun uygulanması:</p>
+
+<pre>
+&lt;?php
+// ...
+    /**
+     * Handle dynamic, static calls to the object.
+     *
+     * @param  string  $method
+     * @param  array   $args
+     * @return mixed
+     */
+    public static function __callStatic($method, $args)
+    {
+        $instance = static::getFacadeRoot();
+
+        switch (count($args)) {
+            case 0:
+                return $instance-&gt;$method();
+
+            case 1:
+                return $instance-&gt;$method($args[0]);
+
+            case 2:
+                return $instance-&gt;$method($args[0], $args[1]);
+
+            case 3:
+                return $instance-&gt;$method($args[0], $args[1], $args[2]);
+
+            case 4:
+                return $instance-&gt;$method($args[0], $args[1], $args[2], $args[3]);
+
+            default:
+                return call_user_func_array([$instance, $method], $args);
+        }
+    }
+</pre>
+
+<p>Yukarıdaki metotta getFacadeRoot() servisi container’dan alır.</p>
+
+<h3 id="facade-sınıfının-anatomisi">Facade Sınıfının Anatomisi</h3>
+
+<p>Her facade sınıfı base sınıfı genişletir. Uygulamamız gereken tek şey getFacadeAccessor() metodudur. Bu metot, servisin adını container’a döndürmekten başka bir şey yapmaz.</p>
+
+<pre>
+&lt;?php
+
+namespace App\Facades;
+
+use Illuminate\Support\Facades\Facade as BaseFacade;
+
+class SomeServiceFacade extends BaseFacade
+{
+
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return 'some.service';
+    }
+}
+</pre>
+
+<h3 id="takma-adlar">Takma adlar</h3>
+
+<p>Laravel facades PHP sınıfları olduğundan, kullanmadan önce bunları içe aktarmamız gerekir. PHP’deki namespace ve autoloading desteği sayesinde, tüm sınıflara tam adlarıyla eriştiğimizde otomatik olarak yüklenirler. PHP ayrıca use ifadesini kullanarak sınıf takma adlarını da destekler:</p>
+
+<pre>
+use App\Facades\SomeServiceFacade
+
+SomeServiceFacade:SomeMethod();
+</pre>
+
+<p>Ancak bunu, söz konusu facade sınıfına ihtiyaç duyduğumuz her senaryoda yapmak zorundayız. Laravel, bir alias loader kullanarak facade’lerin takma adlarını kendi yöntemiyle ele alır.</p>
+
+<h3 id="facadeler-nasıl-takma-adlandırır">Facade’ler Nasıl Takma Adlandırır?</h3>
+
+<p>Tüm takma adlar, /config dizininde bulunan app.php yapılandırma dosyası içindeki aliases dizisinde tutulur.</p>
+
+<p>Diziye göz attığımızda her bir takma adın tam nitelikli bir sınıf adıyla eşlendiğini görebiliriz. Bu, facade sınıfı için istediğimiz herhangi bir adı kullanabileceğimiz anlamına gelir:</p>
+
+<pre>
+// ..
+'aliases' =&gt; [
+    // ...
+    'FancyName' =&gt; 'App\Facades\SomeServiceFacade',
+],
+</pre>
+
+<p>Şimdi Laravel’in bu diziyi nasıl kullandığını görelim. Önyükleme aşamasında Laravel, Illuminate\Foundation paketinin parçası olan AliasLoader adlı bir servisi kullanır. AliasLoader alias dizisini alır, tüm öğeleri yineler ve PHP’nin spl_autoload_register’ını kullanarak __autoload fonksiyonlarından oluşan bir kuyruk oluşturur. Her __autoload fonksiyonu, PHP’nin class_alias fonksiyonunu kullanarak ilgili facade sınıfı için bir takma ad oluşturmaktan sorumludur.</p>
+
+<p>Sonuç olarak, normalde use ifadesi ile yaptığımız gibi, sınıfları kullanmadan önce içe aktarmamız ve takma ad vermemiz gerekmeyecek. Yani ne zaman var olmayan bir sınıfa erişmeye çalışsak, PHP uygun autoloader’ı bulmak için __autoload kuyruğunu kontrol edecektir. O zamana kadar AliasLoader zaten tüm __autoload fonksiyonlarını kaydetmiştir. Her autoloader süslü bir sınıf adı alır ve onu alias dizisine göre orijinal sınıf adına çözümler. Son olarak o sınıf için bir takma ad oluşturur. Aşağıdaki metot çağrısını göz önünde bulundurun:</p>
+
+<pre>
+&lt;?php
+
+// FancyName is resolved to App\Facades\SomeServiceFacade according to the aliases array
+
+FancyName::someMethod()
+</pre>
+
+<p>Perde arkasında FancyName, App\Facades\SomeServiceFacade olarak çözümlendi.</p>
+
+<h2 id="diğer-frameworklerde-facade-kullanımı">Diğer Framework’lerde Facade Kullanımı</h2>
+
+<p>Artık Laravel’in facade’leri ve takma adlarını nasıl ele aldığına dair iyi bir anlayışa sahip olduğumuza göre, Laravel’in facade yaklaşımını diğer ortamlara uyarlayabiliriz. Bu yazımızda Silex framework’te facade’leri kullanacağız. Ancak aynı konsepti takip ederek bu özelliği diğer framework lere de uyarlayabilirsiniz.</p>
+
+<p>Silex’in kendi container’ı vardır. Container içindeki bir servise erişmek için $app nesnesini şu şekilde kullanabiliriz:</p>
+
+<pre>
+&lt;?php
+
+$app['some.service']-&gt;someMethod()
+</pre>
+
+<p>Facade sınıfları yardımıyla Silex servislerimize de static benzeri bir arayüz sağlayabiliriz. Ayrıca bu facade’lere anlamlı takma adlar oluşturmak için AliasLoader servisini kullanabiliriz. Sonuç olarak yukarıdaki kodu şu şekilde yeniden düzenleyebiliriz:</p>
+
+<pre>
+&lt;?php
+
+SomeService::someMethod();
+</pre>
+
+<h3 id="gereksinimler">Gereksinimler</h3>
+
+<p>Temel facade sınıfını kullanmak için, composer kullanarak Illuminate\Support paketini yüklemeniz gerekir:</p>
+
+<p>Bu paket başka servisleri de içeriyor ancak şimdilik sadece base Facade sınıfına ihtiyacımız var.</p>
+
+<h3 id="facade-oluşturmak">Facade Oluşturmak</h3>
+
+<p>Bir servise yönelik facade oluşturmak için base Facade sınıfını genişletmemiz ve getFacadeAccessor metodunu uygulamamız yeterlidir.</p>
+
+<p>Bu eğitim için tüm facade’leri src/Facades altında tutalım. Örnek olarak some.service isimli bir servis için facade sınıfı şu şekilde olacaktır:</p>
+
+<pre>
+&lt;?php
+
+namespace App\Facades
+
+use Illuminate\Support\Facades\Facade;
+
+class SomeServiceFacade extends Facade {
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return 'some.service';
+    }
+}
+
+</pre>
+
+<p>Lütfen sınıfı app\facades altına namespace ile yerleştirdiğimizi unutmayın.</p>
+
+<p>Geriye kalan tek şey uygulama container’ını facade sınıfına ayarlamaktır. Daha önce de belirtildiği gibi, facade sınıfı ile static bağlamda bir metot çağırdığımızda, __callStatic tetiklenir. _callStatic, container içindeki servisi tanımlamak için getFacadeAccessor() tarafından döndürülen verileri kullanır ve onu almaya çalışır. Laravel dışında base Facade sınıfını kullandığımızda container nesnesi otomatik olarak ayarlanmaz, dolayısıyla bunu manuel olarak yapmamız gerekecek.</p>
+
+<p>Bunu yapmak için base facade sınıfı, o facade sınıfı için uygulama container’ını ayarlayan setFacadeApplication adlı bir metodu kullanır.</p>
+
+<p>app.php dosyamıza aşağıdaki kodu eklememiz gerekiyor:</p>
+
+<pre>
+&lt;?php
+
+Illumiante\Support\Facade::setFacadeApplication($app);
+</pre>
+
+<p>Bu, base facade sınıfını genişleten tüm facade’ler için container’ı ayarlayacaktır.</p>
+
+<p>Artık servise container’dan erişmek yerine, az önce oluşturduğumuz facade sınıfını kullanabiliriz, bu da tüm metotları static bağlamda çağırmamıza olanak tanır.</p>
+
+<h3 id="takma-adların-uygulanması">Takma Adların Uygulanması</h3>
+
+<p>Facade sınıflarına takma ad vermek için daha önce tanıttığımız AliasLoader’ı kullanacağız. AliasLoader, illuminate\foundation paketinin bir parçasıdır. Paketin tamamını indirebilir veya kodu ödünç alıp dosya olarak saklayabiliriz.</p>
+
+<p>Eğer sadece kaynak dosyayı kopyalamak istiyorsanız onu src/Facades altında saklamanızı öneririm. AliasLoader sınıfını projenizin mimarisine göre adlandırabilirsiniz.</p>
+
+<p>Bu örnek için, kodu ve namespace’i app/facades altına kopyalayalım.</p>
+
+<h3 id="alias-dizisini-oluşturma">Alias Dizisini Oluşturma</h3>
+
+<p>config dizinimizde aliases.php adında bir dosya oluşturalım ve alias-facade bağlantısını yapalım:</p>
+
+<pre>
+&lt;?php
+
+return [
+    'FancyName' =&gt; 'App\Facades\SomeService',
+];
+</pre>
+
+<p>FancyName, App\Facades\SomeService yerine kullanmak istediğimiz addır.</p>
+
+<p><strong>Takma Adların Kaydedilmesi</strong></p>
+
+<p>AliasLoader singleton bir servistir. Alias yükleyicisinin örneğini oluşturmak veya almak için, alias dizisini parametre olarak kullanarak getInstance metodunu çağırmamız gerekir. Son olarak tüm takma adları kaydetmek için register metodunu çağırmamız gerekir.</p>
+
+<p>Yine app.php dosyasına aşağıdaki kodu ekleyin:</p>
+
+<pre>
+&lt;?php
+
+// ...
+
+$aliases = require __DIR__ . '/../../config/aliases.php';
+App\Facades\AliasLoader::getInstance($aliases)-&gt;register();
+</pre>
+
+<p>Ve hepsi bu kadar! Artık servisi şu şekilde kullanabiliriz:</p>
+
+<pre>
+&lt;?php
+
+FancyName::methodName();
+</pre>
+
+<p>Okuduğunuz için teşekkürler!</p>
+
+<p><strong>Kaynak:</strong> https://www.sitepoint.com/how-laravel-facades-work-and-how-to-use-them-elsewhere/</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Facade pattern, nesne yönelimli programlamada sıklıkla kullanılan bir design pattern’dir. Facade aslında karmaşık bir kütüphaneyi daha basit ve daha okunabilir bir arayüz sağlamak için saran bir sınıftır. Facade pattern’i aynı zamanda bir grup karmaşık ve kötü tasarlanmış API’ye birleşik ve iyi tasarlanmış bir API sağlamak için de kullanılabilir.]]></summary></entry><entry><title type="html">Nginx ve PHP-FPM’in Gizemini Çözmek</title><link href="http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html" rel="alternate" type="text/html" title="Nginx ve PHP-FPM’in Gizemini Çözmek" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek</id><content type="html" xml:base="http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html"><![CDATA[<p>Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.</p>
+
+<p><strong>Not:</strong> Hem Nginx hem de PHP-FPM için, uygulamanızın performansını artırmanıza yardımcı olabilecek, bu yazıda ele alınmayan daha birçok yapılandırma seçeneği vardır.</p>
+
+<h2 id="php-web-mimarisi">PHP Web Mimarisi</h2>
+
+<p>PHP çekirdeği, local environment’ta çalışırken geliştirme amacıyla kullanabileceğiniz yerleşik bir sunucu içermesine rağmen, tek seferde tek bir istek yürütmesini sınırlayan tek iş parçacıklı yapısı nedeniyle production ortamları için uygun değildir. Diğerlerinin yanı sıra güvenlik, önbelleğe alma, ölçekleme vb. ile ilgili yeteneklerden yoksundur. Sonuç olarak PHP, birden çok işlemi yönetmek için ek bir bileşen olan PHP-FPM’e ve nihayetinde web uygulamalarını verimli bir şekilde sunmak için Nginx’e güvenir.</p>
+
+<p><img src="/assets/images/2024/02/php-web-architecture.jpg" alt="PHP web mimarisi" title="PHP web mimarisi" class="img-fluid" /></p>
+
+<h2 id="php-fpm-fastcgi-process-manager">PHP-FPM: FastCGI Process Manager</h2>
+
+<p>PHP-FPM veya “PHP FastCGI Process Manager”, PHP için gelişmiş, yüksek performanslı bir FastCGI proses yöneticisidir. Aynı anda birden çok isteği işleyebilen birden çok worker oluşturarak PHP’nin yerleşik sunucusunun eşzamanlılık sorununu çözer. Ancak PHP-FPM, gelen HTTP trafiğini doğrudan yönetemez ve bu da bir web sunucusunun ters proxy gibi davranmasını gerektirir.</p>
+
+<h2 id="nginx-yüksek-performanslı-web-sunucusu-ve-ters-proxy">Nginx: Yüksek Performanslı Web Sunucusu ve Ters Proxy</h2>
+
+<p>Nginx, gelen HTTP trafiğini yönetmede mükemmel olan güçlü, açık kaynaklı bir web sunucusudur. client isteklerini PHP-FPM’ye ileten ve işlenen yanıtları client’lara geri döndüren bir ters proxy işlevi görür. Ek olarak Nginx, web uygulamalarınızın genel performansını ve güvenilirliğini artıran yük dengeleme, SSL termination ve statik dosyalar sunma gibi çeşitli avantajlar sağlar.</p>
+
+<p>Sonuç olarak, Nginx ve PHP-FPM arasındaki ilişkiyi anlamak, PHP uygulamanızın mimarisi ve dağıtımı hakkında bilinçli kararlar vermenizi sağlayacaktır. Bu güçlü bileşenlerden yararlanarak, uygulamalarınızın zorlu production ortamlarında bile verimli ve güvenilir bir şekilde çalışmasını sağlayabilirsiniz.</p>
+
+<h2 id="php-fpmi-ayarlamak">PHP-FPM’i Ayarlamak</h2>
+
+<h3 id="process-manager-stratejileri-on-demand-statik-ve-dinamik">Process Manager Stratejileri: On-Demand, Statik ve Dinamik</h3>
+
+<p>Her bir stratejiye dalmadan önce, process manager, worker ve bir isteğin (request) yaşam döngüsü ile ilgili bazı temel kavramları anlamak önemlidir.</p>
+
+<p>Bir isteğin yaşam döngüsü, web sunucusuna (Nginx) ulaştığında başlar. Web sunucusu, isteği işlemek için uygun bir worker atayan PHP-FPM’e iletir. Worker, PHP scriptini yürüterek isteği işler ve web sunucusu aracılığıyla client’a döndürülen bir yanıt oluşturur. Worker farklı durumlarda olabilir:</p>
+
+<ul>
+  <li><strong>Idle:</strong> Bu durumda, worker herhangi bir isteği işlemez ve yeni isteklerin gelmesini bekler. Worker yeni görevler almaya hazırdır.</li>
+  <li><strong>Active:</strong> Bu durumda worker, istekle ilişkili PHP scriptini yürütür.</li>
+  <li><strong>Terminated:</strong> Worker, process manager stratejisine ve yapılandırma ayarlarına göre sonlandırılabilir. Sunucunuzun kaynak kullanımını optimize etmek için PHP-FPM yapılandırma dosyasında ayarlayabileceğiniz bazı temel direktiflere göz atın:
+    <ul>
+      <li><strong>process_idle_timeout:</strong> on-demand ve dinamik stratejilerde, boşta kalan worker belirli bir boşta kalma zaman aşımından sonra sonlandırılır.</li>
+      <li><strong>max_requests:</strong> maksimum istek sayısına ulaşıldığında worker değiştirilir; bu, potansiyel bellek sızıntılarını önlemenin anahtarıdır.</li>
+      <li><strong>request_terminate_timeout:</strong> aktif bir worker, talebi işlemek için maksimum süreye ulaşılırsa process manager tarafından sonlandırılabilir; bu, her zaman zamanında yanıt veren bir sistem sağlamak için özellikle önemlidir.</li>
+      <li><strong>php_value[memory_limit]:</strong> worker’ın ayırabileceği maksimum bellek miktarını belirler. Bellek kullanımını sınırlandırarak, tek bir worker veya havuzun tamamının mevcut tüm sistem kaynaklarını tüketmesini ve sunucunuzun genel performansını etkilemesini önleyebilirsiniz.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Process manager, worker havuzunu kontrol etmekten sorumludur. Seçilen strateji ve yapılandırma ayarlarına göre bu worker’ların nasıl oluşturulacağını, sürdürüleceğini ve sonlandırılacağını belirler. Aynı anda birden çok istek geldiğinde, process manager bu istekleri uygun worker’lara dağıtarak sunucunun gelen trafiği işleme kapasitesini artırır.</p>
+
+<p>Process manager stratejisi, CPU, bellek ve bant genişliği gibi sunucu kaynaklarının potansiyel kullanımını etkiler. Yanıt verebilirlik ve verimlilik arasında dengeyi korurken mevcut kaynakları en iyi şekilde kullanan bir strateji seçmek çok önemlidir.</p>
+
+<p>Şimdi mevcut farklı stratejilerin her birini inceleyelim:</p>
+
+<h3 id="on-demand-i̇stek-üzerine-strateji">On-Demand (İstek Üzerine) Strateji</h3>
+
+<p>On-demand strateji, boş bir worker havuzuyla başlar ve yalnızca ihtiyaç duyulduğunda worker prosesleri oluşturur. İstek işlendikten sonra boştaki worker sonlandırılır.</p>
+
+<p><img src="/assets/images/2024/02/on-demand-strategy.jpg" alt="On-Demand Strateji" title="On-Demand Strateji" class="img-fluid" /></p>
+
+<p><strong>Yapılandırma</strong></p>
+
+<ul>
+  <li><strong>pm:</strong> On-demand stratejisini etkinleştirmek için bu parametreyi ondemand olarak ayarlayın.</li>
+  <li><strong>pm.max_children:</strong> Oluşturulabilecek maksimum worker proses sayısını tanımlar. PHP-FPM, bu sınırdan daha fazla worker üretmeyecek.</li>
+  <li><strong>pm.process_idle_timeout:</strong> Boşta kalan worker’ların sonlandırılacağı saniye cinsinden süreyi belirtir.</li>
+</ul>
+
+<p>On-demand strateji kaynak açısından verimli olsa da worker proseslerini oluşturmak ve sonlandırmak için gereken süre nedeniyle ek gecikmeye neden olabilir.</p>
+
+<h3 id="statik-strateji">Statik Strateji</h3>
+
+<p>Statik strateji, sabit sayıda worker ile başlar ve sürdürerek, gelen istekleri işlemeye her zaman hazır olan sabit bir worker havuzu sağlar.</p>
+
+<p><img src="/assets/images/2024/02/static-strategy.jpg" alt="Statik Strateji" title="Statik Strateji" class="img-fluid" /></p>
+
+<p><strong>Yapılandırma</strong></p>
+
+<ul>
+  <li><strong>pm:</strong> Statik stratejiyi etkinleştirmek için bu parametreyi static olarak ayarlayın.</li>
+  <li><strong>pm.max_children:</strong> Sürdürülecek sabit worker sayısını belirler.</li>
+</ul>
+
+<p>Statik strateji, tutarlı performans ve öngörülebilir kaynak tahsisi sağlar. Boştaki prosesler bellek ve CPU açısından çok düşük kaynak tükettiği için kaynak israfı marjinaldir. Sunucunun performansı, her zaman hazır olan sabit sayıda worker nedeniyle hem yüksek hem de düşük trafik senaryolarında daha kararlı ve öngörülebilirdir.</p>
+
+<p>max_requests yönergesi, statik stratejide worker proseslerin düzenli olarak yeniden başlatılmasını sağlamak ve dolayısıyla olası bellek sızıntılarını önlemek için gereklidir.</p>
+
+<h3 id="dinamik-strateji">Dinamik Strateji</h3>
+
+<p>Dinamik strateji, on-demand ve statik stratejiler arasında bir denge sağlar. Minimum boş worker sayısını belirler ve talebe göre havuz boyutunu ayarlar. Kaynak kullanımı ve yanıt verebilirlik arasında bir uzlaşma sunar.</p>
+
+<p><img src="/assets/images/2024/02/dynamic-strategy.jpg" alt="Dinamik Strateji" title="Dinamik Strateji" class="img-fluid" /></p>
+
+<p><strong>Yapılandırma</strong></p>
+
+<ul>
+  <li><strong>pm:</strong> Dinamik stratejiyi etkinleştirmek için bu parametreyi dynamic olarak ayarlayın.</li>
+  <li><strong>pm.start_servers:</strong> Başlangıçta oluşturulacak worker proses ilk sayısını belirler.</li>
+  <li><strong>pm.max_children:</strong> Oluşturulabilecek maksimum worker proses sayısını tanımlar.</li>
+  <li><strong>pm.min_spare_servers:</strong> Her zaman sürdürülmesi gereken minimum boş worker sayısını ayarlar. Boştaki worker sayısı bu değerin altına düşerse, PHP-FPM ek prosesler oluşturacaktır.</li>
+  <li><strong>pm.max_spare_servers:</strong> İzin verilen maksimum boş worker proses sayısını belirtir. Boştaki worker sayısı bu değeri aşarsa, PHP-FPM fazla işlemleri sonlandırır.</li>
+  <li><strong>pm.process_idle_timeout:</strong> Boştaki worker proseslerin ne kadar süre sonra sonlandırılacağını belirtir. Bu, kaynak kullanımını ve yanıt verebilirliği dengeleyerek optimum sayıda boş proses’in sürdürülmesine yardımcı olur.</li>
+</ul>
+
+<p>Dinamik strateji duruma göre uyarlanabilir ve çok çeşitli senaryolar için uygun olabilir. Ancak, yapılandırma parametrelerinde ince ayar yapılması optimum performans için çok önemlidir ve hataya açık olabilir. Boştaki worker sayısını sistem kaynaklarına ve trafik seviyelerine göre dengelemek önemlidir, ancak trafiğin yoğun olduğu zamanlarda yanlış veya optimal olmayan bir yapılandırma nedeniyle olumsuz durumlarla karşılaşabilirsiniz. Bu gibi durumlarda, statik strateji daha istikrarlı ve öngörülebilir bir performans sağladığı için daha uygun bir seçim olabilir.</p>
+
+<h2 id="nginxi-ayarlamak">Nginx’i Ayarlamak</h2>
+
+<p>Nginx’in HTTP isteklerini nasıl ele aldığını, worker ve bağlantıları (connection) nasıl yönettiğini anlamak, web sunucunuzun performansını optimize etmek için çok önemlidir.</p>
+
+<p>Nginx, client’lardan gelen HTTP isteklerini işler, bu istekleri PHP-FPM’ye iletir ve uygun yanıtları client’a geri döndürür. Bu istekleri verimli bir şekilde yönetmek için Nginx, worker ve bağlantıları kullanır.</p>
+
+<p>Nginx’teki bir worker, gelen bağlantıları ve istekleri işlemekten sorumlu ayrı bir prosestir. Her worker proses, birden çok bağlantıyı yöneterek, Nginx’in nispeten az sayıda worker proses ile aynı anda birçok isteği işlemesine olanak tanır.</p>
+
+<p>Nginx’teki bir bağlantı, sunucuya bireysel bir client bağlantısını ifade eder. Her bağlantı, web uygulamanıza istekte bulunan tek bir client’ı temsil eder. Nginx, olay odaklı mimarisi sayesinde çok sayıda bağlantıyı verimli bir şekilde işlemek için tasarlanmıştır.</p>
+
+<h3 id="worker-process">Worker Process</h3>
+
+<p>worker_processes yönergesi bağlantı havuzunu işlemek için oluşturulacak Nginx worker proseslerinin sayısını belirtir. Genel olarak, bu değeri sunucunuzda bulunan CPU çekirdeği sayısına eşit olarak ayarlamanız önerilir. Bu ayar, mevcut CPU kaynaklarının kullanımını en üst düzeye çıkararak en iyi performansı sağlar. Değerin otomatik olarak ayarlanması, Nginx’in mevcut CPU çekirdeği sayısına göre en uygun sayıda worker proses otomatik olarak algılamasına ve kullanmasına olanak tanır.</p>
+
+<h3 id="worker-connection">Worker Connection</h3>
+
+<p>worker_connections yönergesi, her bir worker proses tarafından yönetilebilecek maksimum eşzamanlı connection sayısını belirler. Bu değer, sunucunuzun aynı anda hizmet verebileceği toplam client sayısını doğrudan etkiler. Değeri ayarlamak için sunucunuzun kapasitesini ve beklenen eşzamanlı bağlantı sayısını göz önünde bulundurun.</p>
+
+<p>Nginx’te worker ve connection’ların rollerini anlayarak ve worker_processes ile worker_connections yönergelerinde ince ayar yaparak web sunucunuzun performansını optimize edebilirsiniz. Nginx’in performansı ve sistem davranışını geliştirmek için bu yazıda ele alınmayan ancak web uygulamaları için çok önemli olan birçok başka yeteneğe sahip olduğunu unutmayın — bu konuşmada Nginx optimizasyon teknikleri hakkında daha fazla bilgi edinebilirsiniz.</p>
+
+<h2 id="i̇zleme-ve-sorun-giderme">İzleme ve Sorun Giderme</h2>
+
+<p>PHP uygulamalarınızın performansını ve kararlılığını korumak için, sunucuda ortaya çıkabilecek sorunları izlemek ve gidermek çok önemlidir.</p>
+
+<p><strong>PHP-FPM’i İzlemek</strong></p>
+
+<p>PHP-FPM, havuzlarınızın performansını ve sağlığını izlemenize yardımcı olabilecek yerleşik bir status sayfası sağlar. PHP-FPM yapılandırmanızda status sayfasını etkinleştirerek, PHP-FPM havuzlarınız hakkında aktif proses sayısı, boştaki proses ve kuyruktaki istekler gibi gerçek zamanlı bilgilere erişebilirsiniz.</p>
+
+<p><strong>Nginx’i İzlemek</strong></p>
+
+<p>Nginx ayrıca, Nginx sunucunuzun performansını ve sağlığını izlemenize yardımcı olabilecek yerleşik bir status modülü içerir. Nginx yapılandırmanızda status modülünü etkinleştirerek, Nginx sunucunuz hakkında aktif bağlantı sayısı, kabul edilen bağlantılar ve işlenen istekler gibi gerçek zamanlı bilgilere erişebilirsiniz.</p>
+
+<h3 id="sorun-giderme">Sorun giderme</h3>
+
+<p>Sorunlar ortaya çıktığında, ilgili bilgileri nerede arayacağınızı bilmek önemlidir. Hem PHP-FPM hem de Nginx, sorunları belirlemenize ve çözmenize yardımcı olabilecek log dosyaları oluşturur.</p>
+
+<p><strong>PHP-FPM Log Dosyaları</strong></p>
+
+<p>PHP-FPM log dosyaları, PHP uygulamalarınızla ilgili hatalar ve uyarılar hakkında değerli bilgiler içerir. PHP-FPM logları varsayılan olarak /var/log/php-fpm dizininde bulunabilir veya PHP-FPM yapılandırma dosyanızda belirtilebilir. Bu logları incelemek, PHP kodunuz veya yapılandırma ayarlarınızla ilgili sorunları belirlemenize yardımcı olabilir.</p>
+
+<p><strong>Nginx Log Dosyaları</strong></p>
+
+<p>Erişim ve hata logları dahil olmak üzere Nginx log dosyaları, /var/log/nginx dizininde bulunabilir veya Nginx yapılandırma dosyanızda belirtilebilir. Erişim logları, gelen tüm istekleri kaydederken hata logları, Nginx sunucusuyla ilgili sorunlar hakkında bilgiler içerir. Bu logları analiz etmek, sunucu yapılandırmanız, kaynak kullanımınız veya performans darboğazlarınız ile ilgili sorunları belirlemenize yardımcı olabilir.</p>
+
+<p>PHP-FPM ve Nginx yapılandırmalarınızı izleyerek ve sorun gidererek, PHP uygulamalarınızın sorunsuz çalışmasını sağlayabilir ve yüksek performanslı bir sunucu ortamı sağlayabilirsiniz.</p>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Bir geliştirici olarak, kodunuzun nasıl yürütüldüğü ve production ortamında ortaya çıkan zorluklar hakkında belirli bir düzeyde farkındalığa sahip olmak önemlidir. Yapılandırmaları ve yönetim stratejileriyle birlikte Nginx ve PHP-FPM’nin rollerini anlamak, web uygulamalarınızı optimize etmenize, kararlılık, yanıt verebilirlik ve verimlilik sağlamanıza yardımcı olabilir.</p>
+
+<p>Sunucu tarafı bileşenlerinin derinliklerine inenerek ve nasıl ince ayar yapacağınızı öğrenerek, kullanıcılarınız için daha iyi bir deneyim oluşturabilir ve yüksek performanslı bir sunucu ortamı sağlayabilirsiniz. Bu bilgi, yalnızca olası sorunları daha etkin bir şekilde ele almanıza olanak sağlamakla kalmaz, aynı zamanda Ürün ve SRE ekipleri arasında işbirliğini teşvik eder ve sonuç olarak daha sağlam ve ölçeklenebilir uygulamalara yol açar.</p>
+
+<p><strong>Kaynak:</strong> https://medium.com/@mgonzalezbaile/demystifying-nginx-and-php-fpm-for-php-developers-bba548dd38f9</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.]]></summary></entry><entry><title type="html">Eager Loading ile Laravel Eloquent Sorgularını Optimize Edin</title><link href="http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin.html" rel="alternate" type="text/html" title="Eager Loading ile Laravel Eloquent Sorgularını Optimize Edin" /><published>2024-01-15T00:00:00+03:00</published><updated>2024-01-15T00:00:00+03:00</updated><id>http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin</id><content type="html" xml:base="http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin.html"><![CDATA[<p>Object Relational Mapping (ORM), veritabanlarıyla çalışmayı şaşırtıcı derecede basit hale getirir. Veritabanı ilişkilerini nesne yönelimli bir şekilde tanımlamak, ilgili model verilerini sorgulamayı kolaylaştırırken, geliştiriciler temeldeki veritabanı çağrılarına dikkat etmeyebilir.</p>
 
 <h2 id="eager-loading-nedir">Eager Loading Nedir?</h2>
 

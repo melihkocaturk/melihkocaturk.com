@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang=" tr-TR" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nginx ve PHP-FPM'in Gizemini Çözmek - Melih Kocatürk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D81YCKRVTX"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D81YCKRVTX');
+</script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div class="container-fluid py-5">
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="d-flex flex-row">
+                <div class="p-2">
+                    <img src="/assets/images/avatar.jpg" alt="Melih Kocatürk" class="rounded-circle" width="60" height="60">
+                </div>
+                <div class="p-2">
+                    <h1 class="h4 mb-0">Melih Kocatürk</h1>
+                    Code Ninja
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    <main class="flex-shrink-0 mb-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Nginx ve PHP-FPM&#39;in Gizemini Çözmek</h1>
+            <p class="text-center text-uppercase mb-5">
+                <small class="text-muted">Melih Kocatürk / 11.02.2024</small>
+            </p>
+            <p><p>Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.</p>
+
+<p><strong>Not:</strong> Hem Nginx hem de PHP-FPM için, uygulamanızın performansını artırmanıza yardımcı olabilecek, bu yazıda ele alınmayan daha birçok yapılandırma seçeneği vardır.</p>
+
+<h2 id="php-web-mimarisi">PHP Web Mimarisi</h2>
+
+<p>PHP çekirdeği, local environment’ta çalışırken geliştirme amacıyla kullanabileceğiniz yerleşik bir sunucu içermesine rağmen, tek seferde tek bir istek yürütmesini sınırlayan tek iş parçacıklı yapısı nedeniyle production ortamları için uygun değildir. Diğerlerinin yanı sıra güvenlik, önbelleğe alma, ölçekleme vb. ile ilgili yeteneklerden yoksundur. Sonuç olarak PHP, birden çok işlemi yönetmek için ek bir bileşen olan PHP-FPM’e ve nihayetinde web uygulamalarını verimli bir şekilde sunmak için Nginx’e güvenir.</p>
+
+<p><img src="/assets/images/2024/02/php-web-architecture.jpg" alt="PHP web mimarisi" title="PHP web mimarisi" class="img-fluid" /></p>
+
+<h2 id="php-fpm-fastcgi-process-manager">PHP-FPM: FastCGI Process Manager</h2>
+
+<p>PHP-FPM veya “PHP FastCGI Process Manager”, PHP için gelişmiş, yüksek performanslı bir FastCGI proses yöneticisidir. Aynı anda birden çok isteği işleyebilen birden çok worker oluşturarak PHP’nin yerleşik sunucusunun eşzamanlılık sorununu çözer. Ancak PHP-FPM, gelen HTTP trafiğini doğrudan yönetemez ve bu da bir web sunucusunun ters proxy gibi davranmasını gerektirir.</p>
+
+<h2 id="nginx-yüksek-performanslı-web-sunucusu-ve-ters-proxy">Nginx: Yüksek Performanslı Web Sunucusu ve Ters Proxy</h2>
+
+<p>Nginx, gelen HTTP trafiğini yönetmede mükemmel olan güçlü, açık kaynaklı bir web sunucusudur. client isteklerini PHP-FPM’ye ileten ve işlenen yanıtları client’lara geri döndüren bir ters proxy işlevi görür. Ek olarak Nginx, web uygulamalarınızın genel performansını ve güvenilirliğini artıran yük dengeleme, SSL termination ve statik dosyalar sunma gibi çeşitli avantajlar sağlar.</p>
+
+<p>Sonuç olarak, Nginx ve PHP-FPM arasındaki ilişkiyi anlamak, PHP uygulamanızın mimarisi ve dağıtımı hakkında bilinçli kararlar vermenizi sağlayacaktır. Bu güçlü bileşenlerden yararlanarak, uygulamalarınızın zorlu production ortamlarında bile verimli ve güvenilir bir şekilde çalışmasını sağlayabilirsiniz.</p>
+
+<h2 id="php-fpmi-ayarlamak">PHP-FPM’i Ayarlamak</h2>
+
+<h3 id="process-manager-stratejileri-on-demand-statik-ve-dinamik">Process Manager Stratejileri: On-Demand, Statik ve Dinamik</h3>
+
+<p>Her bir stratejiye dalmadan önce, process manager, worker ve bir isteğin (request) yaşam döngüsü ile ilgili bazı temel kavramları anlamak önemlidir.</p>
+
+<p>Bir isteğin yaşam döngüsü, web sunucusuna (Nginx) ulaştığında başlar. Web sunucusu, isteği işlemek için uygun bir worker atayan PHP-FPM’e iletir. Worker, PHP scriptini yürüterek isteği işler ve web sunucusu aracılığıyla client’a döndürülen bir yanıt oluşturur. Worker farklı durumlarda olabilir:</p>
+
+<ul>
+  <li><strong>Idle:</strong> Bu durumda, worker herhangi bir isteği işlemez ve yeni isteklerin gelmesini bekler. Worker yeni görevler almaya hazırdır.</li>
+  <li><strong>Active:</strong> Bu durumda worker, istekle ilişkili PHP scriptini yürütür.</li>
+  <li><strong>Terminated:</strong> Worker, process manager stratejisine ve yapılandırma ayarlarına göre sonlandırılabilir. Sunucunuzun kaynak kullanımını optimize etmek için PHP-FPM yapılandırma dosyasında ayarlayabileceğiniz bazı temel direktiflere göz atın:
+    <ul>
+      <li><strong>process_idle_timeout:</strong> on-demand ve dinamik stratejilerde, boşta kalan worker belirli bir boşta kalma zaman aşımından sonra sonlandırılır.</li>
+      <li><strong>max_requests:</strong> maksimum istek sayısına ulaşıldığında worker değiştirilir; bu, potansiyel bellek sızıntılarını önlemenin anahtarıdır.</li>
+      <li><strong>request_terminate_timeout:</strong> aktif bir worker, talebi işlemek için maksimum süreye ulaşılırsa process manager tarafından sonlandırılabilir; bu, her zaman zamanında yanıt veren bir sistem sağlamak için özellikle önemlidir.</li>
+      <li><strong>php_value[memory_limit]:</strong> worker’ın ayırabileceği maksimum bellek miktarını belirler. Bellek kullanımını sınırlandırarak, tek bir worker veya havuzun tamamının mevcut tüm sistem kaynaklarını tüketmesini ve sunucunuzun genel performansını etkilemesini önleyebilirsiniz.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Process manager, worker havuzunu kontrol etmekten sorumludur. Seçilen strateji ve yapılandırma ayarlarına göre bu worker’ların nasıl oluşturulacağını, sürdürüleceğini ve sonlandırılacağını belirler. Aynı anda birden çok istek geldiğinde, process manager bu istekleri uygun worker’lara dağıtarak sunucunun gelen trafiği işleme kapasitesini artırır.</p>
+
+<p>Process manager stratejisi, CPU, bellek ve bant genişliği gibi sunucu kaynaklarının potansiyel kullanımını etkiler. Yanıt verebilirlik ve verimlilik arasında dengeyi korurken mevcut kaynakları en iyi şekilde kullanan bir strateji seçmek çok önemlidir.</p>
+
+<p>Şimdi mevcut farklı stratejilerin her birini inceleyelim:</p>
+
+<h3 id="on-demand-i̇stek-üzerine-strateji">On-Demand (İstek Üzerine) Strateji</h3>
+
+<p>On-demand strateji, boş bir worker havuzuyla başlar ve yalnızca ihtiyaç duyulduğunda worker prosesleri oluşturur. İstek işlendikten sonra boştaki worker sonlandırılır.</p>
+
+<p><img src="/assets/images/2024/02/on-demand-strategy.jpg" alt="On-Demand Strateji" title="On-Demand Strateji" class="img-fluid" /></p>
+
+<p><strong>Yapılandırma</strong></p>
+
+<ul>
+  <li><strong>pm:</strong> On-demand stratejisini etkinleştirmek için bu parametreyi ondemand olarak ayarlayın.</li>
+  <li><strong>pm.max_children:</strong> Oluşturulabilecek maksimum worker proses sayısını tanımlar. PHP-FPM, bu sınırdan daha fazla worker üretmeyecek.</li>
+  <li><strong>pm.process_idle_timeout:</strong> Boşta kalan worker’ların sonlandırılacağı saniye cinsinden süreyi belirtir.</li>
+</ul>
+
+<p>On-demand strateji kaynak açısından verimli olsa da worker proseslerini oluşturmak ve sonlandırmak için gereken süre nedeniyle ek gecikmeye neden olabilir.</p>
+
+<h3 id="statik-strateji">Statik Strateji</h3>
+
+<p>Statik strateji, sabit sayıda worker ile başlar ve sürdürerek, gelen istekleri işlemeye her zaman hazır olan sabit bir worker havuzu sağlar.</p>
+
+<p><img src="/assets/images/2024/02/static-strategy.jpg" alt="Statik Strateji" title="Statik Strateji" class="img-fluid" /></p>
+
+<p><strong>Yapılandırma</strong></p>
+
+<ul>
+  <li><strong>pm:</strong> Statik stratejiyi etkinleştirmek için bu parametreyi static olarak ayarlayın.</li>
+  <li><strong>pm.max_children:</strong> Sürdürülecek sabit worker sayısını belirler.</li>
+</ul>
+
+<p>Statik strateji, tutarlı performans ve öngörülebilir kaynak tahsisi sağlar. Boştaki prosesler bellek ve CPU açısından çok düşük kaynak tükettiği için kaynak israfı marjinaldir. Sunucunun performansı, her zaman hazır olan sabit sayıda worker nedeniyle hem yüksek hem de düşük trafik senaryolarında daha kararlı ve öngörülebilirdir.</p>
+
+<p>max_requests yönergesi, statik stratejide worker proseslerin düzenli olarak yeniden başlatılmasını sağlamak ve dolayısıyla olası bellek sızıntılarını önlemek için gereklidir.</p>
+
+<h3 id="dinamik-strateji">Dinamik Strateji</h3>
+
+<p>Dinamik strateji, on-demand ve statik stratejiler arasında bir denge sağlar. Minimum boş worker sayısını belirler ve talebe göre havuz boyutunu ayarlar. Kaynak kullanımı ve yanıt verebilirlik arasında bir uzlaşma sunar.</p>
+
+<p><img src="/assets/images/2024/02/dynamic-strategy.jpg" alt="Dinamik Strateji" title="Dinamik Strateji" class="img-fluid" /></p>
+
+<p><strong>Yapılandırma</strong></p>
+
+<ul>
+  <li><strong>pm:</strong> Dinamik stratejiyi etkinleştirmek için bu parametreyi dynamic olarak ayarlayın.</li>
+  <li><strong>pm.start_servers:</strong> Başlangıçta oluşturulacak worker proses ilk sayısını belirler.</li>
+  <li><strong>pm.max_children:</strong> Oluşturulabilecek maksimum worker proses sayısını tanımlar.</li>
+  <li><strong>pm.min_spare_servers:</strong> Her zaman sürdürülmesi gereken minimum boş worker sayısını ayarlar. Boştaki worker sayısı bu değerin altına düşerse, PHP-FPM ek prosesler oluşturacaktır.</li>
+  <li><strong>pm.max_spare_servers:</strong> İzin verilen maksimum boş worker proses sayısını belirtir. Boştaki worker sayısı bu değeri aşarsa, PHP-FPM fazla işlemleri sonlandırır.</li>
+  <li><strong>pm.process_idle_timeout:</strong> Boştaki worker proseslerin ne kadar süre sonra sonlandırılacağını belirtir. Bu, kaynak kullanımını ve yanıt verebilirliği dengeleyerek optimum sayıda boş proses’in sürdürülmesine yardımcı olur.</li>
+</ul>
+
+<p>Dinamik strateji duruma göre uyarlanabilir ve çok çeşitli senaryolar için uygun olabilir. Ancak, yapılandırma parametrelerinde ince ayar yapılması optimum performans için çok önemlidir ve hataya açık olabilir. Boştaki worker sayısını sistem kaynaklarına ve trafik seviyelerine göre dengelemek önemlidir, ancak trafiğin yoğun olduğu zamanlarda yanlış veya optimal olmayan bir yapılandırma nedeniyle olumsuz durumlarla karşılaşabilirsiniz. Bu gibi durumlarda, statik strateji daha istikrarlı ve öngörülebilir bir performans sağladığı için daha uygun bir seçim olabilir.</p>
+
+<h2 id="nginxi-ayarlamak">Nginx’i Ayarlamak</h2>
+
+<p>Nginx’in HTTP isteklerini nasıl ele aldığını, worker ve bağlantıları (connection) nasıl yönettiğini anlamak, web sunucunuzun performansını optimize etmek için çok önemlidir.</p>
+
+<p>Nginx, client’lardan gelen HTTP isteklerini işler, bu istekleri PHP-FPM’ye iletir ve uygun yanıtları client’a geri döndürür. Bu istekleri verimli bir şekilde yönetmek için Nginx, worker ve bağlantıları kullanır.</p>
+
+<p>Nginx’teki bir worker, gelen bağlantıları ve istekleri işlemekten sorumlu ayrı bir prosestir. Her worker proses, birden çok bağlantıyı yöneterek, Nginx’in nispeten az sayıda worker proses ile aynı anda birçok isteği işlemesine olanak tanır.</p>
+
+<p>Nginx’teki bir bağlantı, sunucuya bireysel bir client bağlantısını ifade eder. Her bağlantı, web uygulamanıza istekte bulunan tek bir client’ı temsil eder. Nginx, olay odaklı mimarisi sayesinde çok sayıda bağlantıyı verimli bir şekilde işlemek için tasarlanmıştır.</p>
+
+<h3 id="worker-process">Worker Process</h3>
+
+<p>worker_processes yönergesi bağlantı havuzunu işlemek için oluşturulacak Nginx worker proseslerinin sayısını belirtir. Genel olarak, bu değeri sunucunuzda bulunan CPU çekirdeği sayısına eşit olarak ayarlamanız önerilir. Bu ayar, mevcut CPU kaynaklarının kullanımını en üst düzeye çıkararak en iyi performansı sağlar. Değerin otomatik olarak ayarlanması, Nginx’in mevcut CPU çekirdeği sayısına göre en uygun sayıda worker proses otomatik olarak algılamasına ve kullanmasına olanak tanır.</p>
+
+<h3 id="worker-connection">Worker Connection</h3>
+
+<p>worker_connections yönergesi, her bir worker proses tarafından yönetilebilecek maksimum eşzamanlı connection sayısını belirler. Bu değer, sunucunuzun aynı anda hizmet verebileceği toplam client sayısını doğrudan etkiler. Değeri ayarlamak için sunucunuzun kapasitesini ve beklenen eşzamanlı bağlantı sayısını göz önünde bulundurun.</p>
+
+<p>Nginx’te worker ve connection’ların rollerini anlayarak ve worker_processes ile worker_connections yönergelerinde ince ayar yaparak web sunucunuzun performansını optimize edebilirsiniz. Nginx’in performansı ve sistem davranışını geliştirmek için bu yazıda ele alınmayan ancak web uygulamaları için çok önemli olan birçok başka yeteneğe sahip olduğunu unutmayın — bu konuşmada Nginx optimizasyon teknikleri hakkında daha fazla bilgi edinebilirsiniz.</p>
+
+<h2 id="i̇zleme-ve-sorun-giderme">İzleme ve Sorun Giderme</h2>
+
+<p>PHP uygulamalarınızın performansını ve kararlılığını korumak için, sunucuda ortaya çıkabilecek sorunları izlemek ve gidermek çok önemlidir.</p>
+
+<p><strong>PHP-FPM’i İzlemek</strong></p>
+
+<p>PHP-FPM, havuzlarınızın performansını ve sağlığını izlemenize yardımcı olabilecek yerleşik bir status sayfası sağlar. PHP-FPM yapılandırmanızda status sayfasını etkinleştirerek, PHP-FPM havuzlarınız hakkında aktif proses sayısı, boştaki proses ve kuyruktaki istekler gibi gerçek zamanlı bilgilere erişebilirsiniz.</p>
+
+<p><strong>Nginx’i İzlemek</strong></p>
+
+<p>Nginx ayrıca, Nginx sunucunuzun performansını ve sağlığını izlemenize yardımcı olabilecek yerleşik bir status modülü içerir. Nginx yapılandırmanızda status modülünü etkinleştirerek, Nginx sunucunuz hakkında aktif bağlantı sayısı, kabul edilen bağlantılar ve işlenen istekler gibi gerçek zamanlı bilgilere erişebilirsiniz.</p>
+
+<h3 id="sorun-giderme">Sorun giderme</h3>
+
+<p>Sorunlar ortaya çıktığında, ilgili bilgileri nerede arayacağınızı bilmek önemlidir. Hem PHP-FPM hem de Nginx, sorunları belirlemenize ve çözmenize yardımcı olabilecek log dosyaları oluşturur.</p>
+
+<p><strong>PHP-FPM Log Dosyaları</strong></p>
+
+<p>PHP-FPM log dosyaları, PHP uygulamalarınızla ilgili hatalar ve uyarılar hakkında değerli bilgiler içerir. PHP-FPM logları varsayılan olarak /var/log/php-fpm dizininde bulunabilir veya PHP-FPM yapılandırma dosyanızda belirtilebilir. Bu logları incelemek, PHP kodunuz veya yapılandırma ayarlarınızla ilgili sorunları belirlemenize yardımcı olabilir.</p>
+
+<p><strong>Nginx Log Dosyaları</strong></p>
+
+<p>Erişim ve hata logları dahil olmak üzere Nginx log dosyaları, /var/log/nginx dizininde bulunabilir veya Nginx yapılandırma dosyanızda belirtilebilir. Erişim logları, gelen tüm istekleri kaydederken hata logları, Nginx sunucusuyla ilgili sorunlar hakkında bilgiler içerir. Bu logları analiz etmek, sunucu yapılandırmanız, kaynak kullanımınız veya performans darboğazlarınız ile ilgili sorunları belirlemenize yardımcı olabilir.</p>
+
+<p>PHP-FPM ve Nginx yapılandırmalarınızı izleyerek ve sorun gidererek, PHP uygulamalarınızın sorunsuz çalışmasını sağlayabilir ve yüksek performanslı bir sunucu ortamı sağlayabilirsiniz.</p>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Bir geliştirici olarak, kodunuzun nasıl yürütüldüğü ve production ortamında ortaya çıkan zorluklar hakkında belirli bir düzeyde farkındalığa sahip olmak önemlidir. Yapılandırmaları ve yönetim stratejileriyle birlikte Nginx ve PHP-FPM’nin rollerini anlamak, web uygulamalarınızı optimize etmenize, kararlılık, yanıt verebilirlik ve verimlilik sağlamanıza yardımcı olabilir.</p>
+
+<p>Sunucu tarafı bileşenlerinin derinliklerine inenerek ve nasıl ince ayar yapacağınızı öğrenerek, kullanıcılarınız için daha iyi bir deneyim oluşturabilir ve yüksek performanslı bir sunucu ortamı sağlayabilirsiniz. Bu bilgi, yalnızca olası sorunları daha etkin bir şekilde ele almanıza olanak sağlamakla kalmaz, aynı zamanda Ürün ve SRE ekipleri arasında işbirliğini teşvik eder ve sonuç olarak daha sağlam ve ölçeklenebilir uygulamalara yol açar.</p>
+
+<p><strong>Kaynak:</strong> https://medium.com/@mgonzalezbaile/demystifying-nginx-and-php-fpm-for-php-developers-bba548dd38f9</p>
+</p>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                    <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <a href="/feed.xml" class="text-decoration-none" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss-fill" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/melihkocaturk" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="text-center">
+            <small><a href="mailto:melih.kocaturk@icloud.com" class="text-decoration-none text-secondary">melih.kocaturk@icloud.com</a></small>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

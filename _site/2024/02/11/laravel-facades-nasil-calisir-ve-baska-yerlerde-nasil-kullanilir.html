@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang=" tr-TR" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laravel Facades Nasıl Çalışır ve Başka Yerlerde Nasıl Kullanılır? - Melih Kocatürk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D81YCKRVTX"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D81YCKRVTX');
+</script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div class="container-fluid py-5">
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="d-flex flex-row">
+                <div class="p-2">
+                    <img src="/assets/images/avatar.jpg" alt="Melih Kocatürk" class="rounded-circle" width="60" height="60">
+                </div>
+                <div class="p-2">
+                    <h1 class="h4 mb-0">Melih Kocatürk</h1>
+                    Code Ninja
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    <main class="flex-shrink-0 mb-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Laravel Facades Nasıl Çalışır ve Başka Yerlerde Nasıl Kullanılır?</h1>
+            <p class="text-center text-uppercase mb-5">
+                <small class="text-muted">Melih Kocatürk / 11.02.2024</small>
+            </p>
+            <p><p>Facade pattern, nesne yönelimli programlamada sıklıkla kullanılan bir design pattern’dir. Facade aslında karmaşık bir kütüphaneyi daha basit ve daha okunabilir bir arayüz sağlamak için saran bir sınıftır. Facade pattern’i aynı zamanda bir grup karmaşık ve kötü tasarlanmış API’ye birleşik ve iyi tasarlanmış bir API sağlamak için de kullanılabilir.</p>
+
+<p><img src="/assets/images/2024/02/facade-pattern.jpg" alt="Facade Pattern" title="Facade Pattern" class="img-fluid" /></p>
+
+<p>Laravel framework, Facades olarak da adlandırılan bu pattern’e benzer bir özelliğe sahiptir. Bu eğitimde Laravel “Facades”i diğer frameworklere nasıl taşıyacağımızı öğreneceğiz. Devam etmeden önce IoC (Inversion Of Control) container hakkında temel bir anlayışa sahip olmanız gerekir.</p>
+
+<p>Öncelikle Laravel facades içeride nasıl çalıştığını inceleyelim, ardından bu özelliği diğer ortamlara nasıl uyarlayabileceğimizi tartışacağız.</p>
+
+<h2 id="laravelde-facades">Laravel’de Facades</h2>
+
+<p>Laravel facade, container içindeki servislere static benzeri arayüz sağlayan bir sınıftır. Dokümantasyona göre facades, container servislerinin temel uygulamasına erişim için bir vekil görevi görüyor.</p>
+
+<p>Ancak PHP topluluğunda bu adlandırmayla ilgili pek çok tartışma var. Bazıları, Facade pattern’i tam olarak uygulamadığından, geliştiricilerin kafa karışıklığını önlemek için terimin değiştirilmesi gerektiğini savundu. Bu adlandırma kafanızı karıştırıyorsa, size uygun olanı söylemekten çekinmeyin, ancak kullanacağımız temel sınıfın Laravel framework’te Facade olarak adlandırıldığını lütfen unutmayın.</p>
+
+<h3 id="laravelde-facades-nasıl-uygulanır">Laravel’de Facades Nasıl Uygulanır?</h3>
+
+<p>Muhtemelen bildiğiniz gibi container içindeki her servisin benzersiz bir adı vardır. Laravel uygulamasında, bir servise doğrudan container’dan erişmek için App::make() metodunu veya app() helper fonksiyonunu kullanabiliriz.</p>
+
+<pre>
+&lt;?php
+
+App::make('some_service')-&gt;methodName();
+</pre>
+
+<p>Daha önce de belirtildiği gibi Laravel, servisleri geliştiricinin kullanımına daha okunaklı bir şekilde sunmak için facade sınıflarını kullanır. Facade sınıfı kullanarak aynı şeyi yapmak için yalnızca aşağıdaki kodu yazmamız gerekir:</p>
+
+<pre>
+// ...
+someService::methodName();
+// ...
+</pre>
+
+<p>Laravel’de tüm servislerin bir facade sınıfı vardır. Bu facade sınıfları, Illuminate/Support paketinin bir parçası olan base Facade sınıfını genişletir. Uygulamaları gereken tek şey, container içindeki servis adını döndüren getFacadeAccessor metodudur.</p>
+
+<p>Yukarıdaki sözdiziminde someService facade sınıfını ifade eder. methodName aslında container’daki orjinal servisin bir metodudur. Bu sözdizimine Laravel bağlamı dışında bakarsak, someService adında bir sınıfın methodName() adında static bir metodu çağırdığı anlamına gelir, ancak Laravel bu arayüzü bu şekilde uygulamaz. Bir sonraki bölümde Laravel’in base Facade sınıfının perde arkasında nasıl çalıştığını göreceğiz.</p>
+
+<h3 id="base-facade">Base Facade</h3>
+
+<p>Facade sınıfı, servis container’a referans saklayan $app adında bir private property’e sahiptir. Laravel dışında facades kullanmanız gerekiyorsa, setFacadeApplication() metodunu kullanarak container’i açıkça ayarlamamız gerekir. Bunu kısa süre içinde inceleyeceğiz.</p>
+
+<p>Base facade sınıfının içinde, gerçekte var olmayan static metotların çağrılmasını yönetmek için __callStatic sihirli metodu uygulandı. Laravel facade sınıfından static bir metot çağırdığımızda, facade sınıfı bu metodu uygulamadığından __callStatic metodu çağrılır. Sonuç olarak, __callStatic ilgili servisi container’dan alır ve bu metodu çağırır.</p>
+
+<p>Base facade sınıfında __callStatic metodunun uygulanması:</p>
+
+<pre>
+&lt;?php
+// ...
+    /**
+     * Handle dynamic, static calls to the object.
+     *
+     * @param  string  $method
+     * @param  array   $args
+     * @return mixed
+     */
+    public static function __callStatic($method, $args)
+    {
+        $instance = static::getFacadeRoot();
+
+        switch (count($args)) {
+            case 0:
+                return $instance-&gt;$method();
+
+            case 1:
+                return $instance-&gt;$method($args[0]);
+
+            case 2:
+                return $instance-&gt;$method($args[0], $args[1]);
+
+            case 3:
+                return $instance-&gt;$method($args[0], $args[1], $args[2]);
+
+            case 4:
+                return $instance-&gt;$method($args[0], $args[1], $args[2], $args[3]);
+
+            default:
+                return call_user_func_array([$instance, $method], $args);
+        }
+    }
+</pre>
+
+<p>Yukarıdaki metotta getFacadeRoot() servisi container’dan alır.</p>
+
+<h3 id="facade-sınıfının-anatomisi">Facade Sınıfının Anatomisi</h3>
+
+<p>Her facade sınıfı base sınıfı genişletir. Uygulamamız gereken tek şey getFacadeAccessor() metodudur. Bu metot, servisin adını container’a döndürmekten başka bir şey yapmaz.</p>
+
+<pre>
+&lt;?php
+
+namespace App\Facades;
+
+use Illuminate\Support\Facades\Facade as BaseFacade;
+
+class SomeServiceFacade extends BaseFacade
+{
+
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return 'some.service';
+    }
+}
+</pre>
+
+<h3 id="takma-adlar">Takma adlar</h3>
+
+<p>Laravel facades PHP sınıfları olduğundan, kullanmadan önce bunları içe aktarmamız gerekir. PHP’deki namespace ve autoloading desteği sayesinde, tüm sınıflara tam adlarıyla eriştiğimizde otomatik olarak yüklenirler. PHP ayrıca use ifadesini kullanarak sınıf takma adlarını da destekler:</p>
+
+<pre>
+use App\Facades\SomeServiceFacade
+
+SomeServiceFacade:SomeMethod();
+</pre>
+
+<p>Ancak bunu, söz konusu facade sınıfına ihtiyaç duyduğumuz her senaryoda yapmak zorundayız. Laravel, bir alias loader kullanarak facade’lerin takma adlarını kendi yöntemiyle ele alır.</p>
+
+<h3 id="facadeler-nasıl-takma-adlandırır">Facade’ler Nasıl Takma Adlandırır?</h3>
+
+<p>Tüm takma adlar, /config dizininde bulunan app.php yapılandırma dosyası içindeki aliases dizisinde tutulur.</p>
+
+<p>Diziye göz attığımızda her bir takma adın tam nitelikli bir sınıf adıyla eşlendiğini görebiliriz. Bu, facade sınıfı için istediğimiz herhangi bir adı kullanabileceğimiz anlamına gelir:</p>
+
+<pre>
+// ..
+'aliases' =&gt; [
+    // ...
+    'FancyName' =&gt; 'App\Facades\SomeServiceFacade',
+],
+</pre>
+
+<p>Şimdi Laravel’in bu diziyi nasıl kullandığını görelim. Önyükleme aşamasında Laravel, Illuminate\Foundation paketinin parçası olan AliasLoader adlı bir servisi kullanır. AliasLoader alias dizisini alır, tüm öğeleri yineler ve PHP’nin spl_autoload_register’ını kullanarak __autoload fonksiyonlarından oluşan bir kuyruk oluşturur. Her __autoload fonksiyonu, PHP’nin class_alias fonksiyonunu kullanarak ilgili facade sınıfı için bir takma ad oluşturmaktan sorumludur.</p>
+
+<p>Sonuç olarak, normalde use ifadesi ile yaptığımız gibi, sınıfları kullanmadan önce içe aktarmamız ve takma ad vermemiz gerekmeyecek. Yani ne zaman var olmayan bir sınıfa erişmeye çalışsak, PHP uygun autoloader’ı bulmak için __autoload kuyruğunu kontrol edecektir. O zamana kadar AliasLoader zaten tüm __autoload fonksiyonlarını kaydetmiştir. Her autoloader süslü bir sınıf adı alır ve onu alias dizisine göre orijinal sınıf adına çözümler. Son olarak o sınıf için bir takma ad oluşturur. Aşağıdaki metot çağrısını göz önünde bulundurun:</p>
+
+<pre>
+&lt;?php
+
+// FancyName is resolved to App\Facades\SomeServiceFacade according to the aliases array
+
+FancyName::someMethod()
+</pre>
+
+<p>Perde arkasında FancyName, App\Facades\SomeServiceFacade olarak çözümlendi.</p>
+
+<h2 id="diğer-frameworklerde-facade-kullanımı">Diğer Framework’lerde Facade Kullanımı</h2>
+
+<p>Artık Laravel’in facade’leri ve takma adlarını nasıl ele aldığına dair iyi bir anlayışa sahip olduğumuza göre, Laravel’in facade yaklaşımını diğer ortamlara uyarlayabiliriz. Bu yazımızda Silex framework’te facade’leri kullanacağız. Ancak aynı konsepti takip ederek bu özelliği diğer framework lere de uyarlayabilirsiniz.</p>
+
+<p>Silex’in kendi container’ı vardır. Container içindeki bir servise erişmek için $app nesnesini şu şekilde kullanabiliriz:</p>
+
+<pre>
+&lt;?php
+
+$app['some.service']-&gt;someMethod()
+</pre>
+
+<p>Facade sınıfları yardımıyla Silex servislerimize de static benzeri bir arayüz sağlayabiliriz. Ayrıca bu facade’lere anlamlı takma adlar oluşturmak için AliasLoader servisini kullanabiliriz. Sonuç olarak yukarıdaki kodu şu şekilde yeniden düzenleyebiliriz:</p>
+
+<pre>
+&lt;?php
+
+SomeService::someMethod();
+</pre>
+
+<h3 id="gereksinimler">Gereksinimler</h3>
+
+<p>Temel facade sınıfını kullanmak için, composer kullanarak Illuminate\Support paketini yüklemeniz gerekir:</p>
+
+<p>Bu paket başka servisleri de içeriyor ancak şimdilik sadece base Facade sınıfına ihtiyacımız var.</p>
+
+<h3 id="facade-oluşturmak">Facade Oluşturmak</h3>
+
+<p>Bir servise yönelik facade oluşturmak için base Facade sınıfını genişletmemiz ve getFacadeAccessor metodunu uygulamamız yeterlidir.</p>
+
+<p>Bu eğitim için tüm facade’leri src/Facades altında tutalım. Örnek olarak some.service isimli bir servis için facade sınıfı şu şekilde olacaktır:</p>
+
+<pre>
+&lt;?php
+
+namespace App\Facades
+
+use Illuminate\Support\Facades\Facade;
+
+class SomeServiceFacade extends Facade {
+    /**
+     * Get the registered name of the component.
+     *
+     * @return string
+     */
+    protected static function getFacadeAccessor()
+    {
+        return 'some.service';
+    }
+}
+
+</pre>
+
+<p>Lütfen sınıfı app\facades altına namespace ile yerleştirdiğimizi unutmayın.</p>
+
+<p>Geriye kalan tek şey uygulama container’ını facade sınıfına ayarlamaktır. Daha önce de belirtildiği gibi, facade sınıfı ile static bağlamda bir metot çağırdığımızda, __callStatic tetiklenir. _callStatic, container içindeki servisi tanımlamak için getFacadeAccessor() tarafından döndürülen verileri kullanır ve onu almaya çalışır. Laravel dışında base Facade sınıfını kullandığımızda container nesnesi otomatik olarak ayarlanmaz, dolayısıyla bunu manuel olarak yapmamız gerekecek.</p>
+
+<p>Bunu yapmak için base facade sınıfı, o facade sınıfı için uygulama container’ını ayarlayan setFacadeApplication adlı bir metodu kullanır.</p>
+
+<p>app.php dosyamıza aşağıdaki kodu eklememiz gerekiyor:</p>
+
+<pre>
+&lt;?php
+
+Illumiante\Support\Facade::setFacadeApplication($app);
+</pre>
+
+<p>Bu, base facade sınıfını genişleten tüm facade’ler için container’ı ayarlayacaktır.</p>
+
+<p>Artık servise container’dan erişmek yerine, az önce oluşturduğumuz facade sınıfını kullanabiliriz, bu da tüm metotları static bağlamda çağırmamıza olanak tanır.</p>
+
+<h3 id="takma-adların-uygulanması">Takma Adların Uygulanması</h3>
+
+<p>Facade sınıflarına takma ad vermek için daha önce tanıttığımız AliasLoader’ı kullanacağız. AliasLoader, illuminate\foundation paketinin bir parçasıdır. Paketin tamamını indirebilir veya kodu ödünç alıp dosya olarak saklayabiliriz.</p>
+
+<p>Eğer sadece kaynak dosyayı kopyalamak istiyorsanız onu src/Facades altında saklamanızı öneririm. AliasLoader sınıfını projenizin mimarisine göre adlandırabilirsiniz.</p>
+
+<p>Bu örnek için, kodu ve namespace’i app/facades altına kopyalayalım.</p>
+
+<h3 id="alias-dizisini-oluşturma">Alias Dizisini Oluşturma</h3>
+
+<p>config dizinimizde aliases.php adında bir dosya oluşturalım ve alias-facade bağlantısını yapalım:</p>
+
+<pre>
+&lt;?php
+
+return [
+    'FancyName' =&gt; 'App\Facades\SomeService',
+];
+</pre>
+
+<p>FancyName, App\Facades\SomeService yerine kullanmak istediğimiz addır.</p>
+
+<p><strong>Takma Adların Kaydedilmesi</strong></p>
+
+<p>AliasLoader singleton bir servistir. Alias yükleyicisinin örneğini oluşturmak veya almak için, alias dizisini parametre olarak kullanarak getInstance metodunu çağırmamız gerekir. Son olarak tüm takma adları kaydetmek için register metodunu çağırmamız gerekir.</p>
+
+<p>Yine app.php dosyasına aşağıdaki kodu ekleyin:</p>
+
+<pre>
+&lt;?php
+
+// ...
+
+$aliases = require __DIR__ . '/../../config/aliases.php';
+App\Facades\AliasLoader::getInstance($aliases)-&gt;register();
+</pre>
+
+<p>Ve hepsi bu kadar! Artık servisi şu şekilde kullanabiliriz:</p>
+
+<pre>
+&lt;?php
+
+FancyName::methodName();
+</pre>
+
+<p>Okuduğunuz için teşekkürler!</p>
+
+<p><strong>Kaynak:</strong> https://www.sitepoint.com/how-laravel-facades-work-and-how-to-use-them-elsewhere/</p>
+</p>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                    <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <a href="/feed.xml" class="text-decoration-none" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss-fill" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/melihkocaturk" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="text-center">
+            <small><a href="mailto:melih.kocaturk@icloud.com" class="text-decoration-none text-secondary">melih.kocaturk@icloud.com</a></small>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

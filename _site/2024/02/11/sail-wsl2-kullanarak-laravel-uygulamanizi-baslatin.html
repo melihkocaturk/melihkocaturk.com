@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang=" tr-TR" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın - Melih Kocatürk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D81YCKRVTX"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D81YCKRVTX');
+</script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div class="container-fluid py-5">
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="d-flex flex-row">
+                <div class="p-2">
+                    <img src="/assets/images/avatar.jpg" alt="Melih Kocatürk" class="rounded-circle" width="60" height="60">
+                </div>
+                <div class="p-2">
+                    <h1 class="h4 mb-0">Melih Kocatürk</h1>
+                    Code Ninja
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    <main class="flex-shrink-0 mb-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın</h1>
+            <p class="text-center text-uppercase mb-5">
+                <small class="text-muted">Melih Kocatürk / 11.02.2024</small>
+            </p>
+            <p><p>Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.</p>
+
+<p>Son birkaç yılda Konteynerizasyon (veya Docker) konusunu İnternet’in her yerinde duyabilirsiniz. VM’nin tamamını sanallaştırmak yerine kodu ve tüm bağımlılıklarını bir “Konteyner” olarak paketler. Konteynerler hakkında daha fazla bilgiyi buradan edinebilirsiniz… Hala Laradock kullanıyor olabilirsiniz… Son olarak, Aralık 2020’de Taylor Otwell, Laravel Sail’i piyasaya sürdü!</p>
+
+<p><em>Laravel Sail, Laravel’in varsayılan Docker geliştirme ortamıyla etkileşime geçmek için kullanılan hafif bir komut satırı arayüzüdür. Sail, önceden Docker deneyimi gerektirmeden PHP, MySQL ve Redis kullanarak bir Laravel uygulaması oluşturmak için harika bir başlangıç noktası sağlar.</em></p>
+
+<p><em>Kaynak: Laravel Belgeleri</em></p>
+
+<p>Bu eğitimde WSL 2 kullanarak Windows üzerinde yepyeni bir Laravel projesi başlatacaksınız. WSL, Windows Subsystem for Linux anlamına gelir ve geliştiricilerin herhangi bir “gerçek” VM host olmadan Linux ortamlarını doğrudan Windows üzerinde çalıştırmasına olanak tanır. WSL 2 büyük bir revizyondur ve daha iyi dosya IO performansıyla (20 kat daha hızlı) WSL 1’in avantajlarını sağlar. Önyüklemesi yavaş, kaynak yükü büyük ve tamamen yalıtılmış olan geleneksel VM’e benzemez.</p>
+
+<p>Windows makinenizde WSL 2’yi açalım!</p>
+
+<h2 id="wsl-2yi-yükleyin">WSL 2’yi Yükleyin</h2>
+
+<h3 id="basitleştirilmiş-kurulum-windows-11windows-10-sürüm-2004-veya-üzeri">Basitleştirilmiş Kurulum (Windows 11/Windows 10 sürüm 2004 veya üzeri)</h3>
+
+<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve wsl –install komutunu çalıştırın, yeniden başlattıktan sonra WSL’yi kullanmaya hazır olacaksınız.</p>
+
+<p>Komut Windows 10’da mevcut değilse aşağıdaki manuel kurulumu deneyin. Alternatif olarak daha fazla ayrıntı için KB5004296’yı arayabilirsiniz.</p>
+
+<h3 id="manuel-kurulum-windows-10-build-18362-veya-üzeri-home-edition-dahil">Manuel Kurulum (Windows 10 Build 18362 veya üzeri, Home Edition dahil)</h3>
+
+<p><strong>1. WSL’yi etkinleştirin</strong></p>
+
+<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki komutu çalıştırın.</p>
+
+<pre>
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</pre>
+
+<p>DISM hakkında daha fazla bilgi için <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11">buraya</a> tıklayın.</p>
+
+<p><strong>2. Sanal Makine özelliğini etkinleştirin</strong></p>
+
+<p>WSL 2 için sanallaştırma yetenekleri hala gereklidir. Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki çalıştırın.</p>
+
+<pre>
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+</pre>
+
+<p><strong>3. Linux çekirdeği güncelleme paketini indirin</strong></p>
+
+<p><a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">wsl_update_x64.msi</a> paketini indirin ve yükleyin. Daha sonra bilgisayarınızı yeniden başlatın.</p>
+
+<p><strong>4. WSL 2’yi varsayılan sürümünüz olarak ayarlayın</strong></p>
+
+<pre>
+wsl --set-default-version 2
+</pre>
+
+<p><strong>5. Ubuntu’yu (veya seçtiğiniz Linux dağıtımını) yükleyin</strong></p>
+
+<ul>
+  <li>Microsoft Mağazasını açın ve ardından Ubuntu’yu arayın ve seçin.</li>
+  <li>Dağıtım sayfasından “Al”ı ve ardından “Yükle”yi seçin.</li>
+  <li>Hazır olduğunda “Başlat”a tıklayın.</li>
+  <li>Ubuntu için kullanıcı adınızı ve şifrenizi oluşturun.</li>
+</ul>
+
+<p><strong>6. Kurulumunuzu doğrulamak için wsl –list –verbose komutunu kullanın.</strong></p>
+
+<p><img src="/assets/images/2024/02/wsl-list-verbose.png" alt="wsl --list --verbose" title="wsl --list --verbose" class="img-fluid" /></p>
+
+<p>Herhangi bir sorunla karşılaşırsanız <a href="https://docs.microsoft.com/en-my/windows/wsl/install-win10#troubleshooting-installation">buradaki</a> sorun giderme ipuçlarına başvurabilirsiniz.</p>
+
+<h2 id="dockerı-yükleyin">Docker’ı Yükleyin</h2>
+
+<p><strong>1. İndirin</strong></p>
+
+<p>Docker <a href="https://docs.docker.com/desktop/install/windows-install/">Desktop Stable</a> sürümünü indirin.</p>
+
+<p><strong>2. Kurulum</strong></p>
+
+<p>Docker Masaüstünü kurmak için kurulum sihirbazını takip edin. WSL 2’niz düzgün yapılandırılmışsa kurulum sırasında WSL 2’yi etkinleştirmeniz istenecektir.</p>
+
+<p><img src="/assets/images/2024/02/docker-use-wsl2-based-engine.png" alt="Docker WSL2 engine kullanıyor" title="Docker WSL2 engine kullanıyor" class="img-fluid" /></p>
+
+<p><strong>3. WSL Entegrasyonunu Yapılandırın</strong></p>
+
+<p>Doğru Linux dağıtımlarını açtığınızdan emin olun.</p>
+
+<p><img src="/assets/images/2024/02/docker-wsl-integration-settings.png" alt="Docker WSL entegrasyon ayarları" title="Docker WSL entegrasyon ayarları" class="img-fluid" /></p>
+
+<h2 id="haydi-yelken-açalım">Haydi Yelken Açalım</h2>
+
+<p>Windows Terminalini başlatın ve wsl’yi girin.</p>
+
+<p><img src="/assets/images/2024/02/terminal-wsl-command.png" alt="Terminal wsl komutu" title="Terminal wsl komutu" class="img-fluid" /></p>
+
+<p>İşte püf noktası… Yolun, Windows kullanıcı dizininiz olduğunu fark edebilirsiniz.</p>
+
+<p>Resmi Microsoft WSL belgelerinde <a href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions#comparing-features">WSL özellikleri</a> karşılaştırıldı. WSL 2 mimarisi, işletim sistemi dosya sistemlerindeki performans dışında, WSL 1’den birkaç açıdan daha iyi performans gösterir.</p>
+
+<p><img src="/assets/images/2024/02/wsl-comparing-features.png" alt="WSL özelliklerinin karşılaştırılması" title="WSL özelliklerinin karşılaştırılması" class="img-fluid" /></p>
+
+<p>cd ~ komutunu kullanarak Linux ana dizininize gidebiliriz.</p>
+
+<p>Aşağıdaki komutu kullanarak test-project adında yeni bir Laravel projesi oluşturalım:</p>
+
+<pre>
+curl -s https://laravel.build/test-project | bash
+</pre>
+
+<p>Daha sonra kurulumu bekleyin.</p>
+
+<p><img src="/assets/images/2024/02/wsl-laravel-installation.png" alt="WSL Laravel kurulumu" title="WSL Laravel kurulumu" class="img-fluid" /></p>
+
+<p>WSL storage’in gerçek konumu (vhdx formatında) şu adreste bulunur:</p>
+
+<pre>
+C:\Users\user_name\AppData\Local\Packages\
+CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState
+</pre>
+
+<p>Artık cd test-project ile dizine girebilir ve Sail’i başlatabiliriz!</p>
+
+<pre>
+./vendor/bin/sail up
+</pre>
+
+<p>Sail’i ilk kez çalıştırdığınızda, docker imajlarını indirmek ve konteynerinizi oluşturmak biraz zaman alır ancak bir sonraki çalıştırma için çok hızlı olacaktır.</p>
+
+<p>Herhangi bir sorunla karşılaşırsanız suçlu Antivirüs yazılımınız olabilir. Lütfen “C:\ProgramData\DockerDesktop\vm-data\” yolunu hariç tutun.</p>
+
+<p><img src="/assets/images/2024/02/container-up-and-running.png" alt="Docker container çalışıyor" title="Docker container çalışıyor" class="img-fluid" /></p>
+
+<p>Container başlatıldıktan sonra yepyeni Laravel projenize erişmek için http://localhost adresine gidebilirsiniz.</p>
+
+<h3 id="sail-stackinizi-seçin">Sail Stack’inizi Seçin</h3>
+
+<p>Varsayılan stack mysql, redis, meilisearch, mailhog ve selenium’u içeriyor. Mevcut servisler arasında mysql, pgsql, mariadb, redis, memcached, meilisearch, selenium ve mailhog bulunmaktadır.</p>
+
+<p>Query kullanarak favori stack’inizi seçebilirsiniz:</p>
+
+<pre>
+curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
+</pre>
+
+<p>docker-compose.yml dosyanız buna göre yapılandıracaktır.</p>
+
+<h3 id="günlük-sail-rutini">Günlük Sail Rutini</h3>
+
+<p><strong>Sail’i detached modda başlatın</strong></p>
+
+<pre>
+./vendor/bin/sail up -d
+</pre>
+
+<p><strong>Sail’i durdurun</strong></p>
+
+<p>“Detached” modu kullanmıyorsanız Control+C, aksi halde,</p>
+
+<pre>
+./vendor/bin/sail down
+</pre>
+
+<p><strong>Takma ad</strong></p>
+
+<p>Uzun bir yol adı yazmak yerine, sail’e doğrudan ulaşmanıza olanak tanıyan bir Bash takma adı yapılandırın.</p>
+
+<pre>
+alias sail='bash vendor/bin/sail'
+</pre>
+
+<p>Bir takma ad oluşturabilir ve takma adı kalıcı olarak .bashrc dosyanıza kaydedebilirsiniz. nano ~/.bashrc komutunu kullanıp daha sonra alt tarafa alias sail=’bash vendor/bin/sail’ ekleyip çalıştırabilirsiniz.</p>
+
+<h2 id="kodlamaya-başlayın">Kodlamaya Başlayın</h2>
+
+<p><strong>Visual Studio Code</strong></p>
+
+<p><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote-WSL extension</a> yükleyin ve proje klasöründe olduğunuzdan emin olun.</p>
+
+<pre>
+cd ~/test-project/
+</pre>
+
+<p>Sonra aşağıdaki kodu çalıştırın.</p>
+
+<pre>
+code .
+</pre>
+
+<p>VS Code’un başlatıldığını ve proje klasörünüzdeki dosyaları görebilmeniz gerekir.</p>
+
+<p><img src="/assets/images/2024/02/vs-code-explorer.png" alt="VS Code Explorer" title="VS Code Explorer" class="img-fluid" /></p>
+
+<p>Artık http://localhost adresinde kodlamaya başlayabilir ve değişikliklerinizi izleyebilirsiniz.</p>
+
+<p><strong>PhpStorm</strong></p>
+
+<p>Projeyi \wsl$\Ubuntu\home&lt;user&gt;\test-project kullanarak açabilirsiniz.</p>
+
+<p><strong>İpucu:</strong> sail artisan <command /> komutunu kullanarak artisan komutunu çağırabilirsiniz.</p>
+
+<p>Okuduğunuz için teşekkürler. İyi kodlamalar!</p>
+
+<p><strong>Kaynak:</strong> https://blog.devgenius.io/kickstart-your-laravel-web-app-using-laravel-sail-30276265e588</p>
+</p>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                    <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <a href="/feed.xml" class="text-decoration-none" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss-fill" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/melihkocaturk" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="text-center">
+            <small><a href="mailto:melih.kocaturk@icloud.com" class="text-decoration-none text-secondary">melih.kocaturk@icloud.com</a></small>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
