@@ -1,277 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-12T00:55:11+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
-</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">WSL Nedir ve Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html" rel="alternate" type="text/html" title="WSL Nedir ve Nasıl Kullanılır?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html"><![CDATA[<p>Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-19T17:23:35+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
+</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Heroku’da Vite Uygulaması Nasıl Deploy Edilir?</title><link href="http://localhost:4000/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir.html" rel="alternate" type="text/html" title="Heroku’da Vite Uygulaması Nasıl Deploy Edilir?" /><published>2024-02-19T00:00:00+03:00</published><updated>2024-02-19T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir</id><content type="html" xml:base="http://localhost:4000/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir.html"><![CDATA[<p>Eğer benim gibi yakın zamanda Laravel’in yeni bir kopyasını indirdiyseniz, muhtemelen Mix’in yerini Vite’ın aldığını fark etmişsinizdir.</p>
 
-<h2 id="sadece-bir-sanal-makine-değil">Sadece Bir Sanal Makine Değil</h2>
+<p>Jetstream’in yeni sürümünü yüklediğimde bu bende kafa karışıklığına neden oldu, çünkü hem localde hem de Heroku’ya deploy ettiğimde her şey hizasız görünüyordu.</p>
 
-<p>WSL’nin ne olmadığıyla başlayalım; örneğin, Ubuntu’yu VirtualBox’ta çalıştırarak elde edebileceğiniz tam bir Linux masaüstü deneyimi değildir. Performans nedenleriyle teknik olarak sanallaştırmayı kullanır, ancak tam bir VM çalıştırmaktan çok farklıdır. Her şey sizin için yönetilir ve işinizi yapmanız ve git, ssh gibi tanıdık bash komutlarını kullanmanız için basit bir shell ve environment sağlar.</p>
+<p>Localde, <code>npm run dev</code>‘i çalıştırmanız gerekiyor ve bu, <code>npm run watch</code>‘ın yerini alacak gibi görünüyor.</p>
 
-<p>Temel olarak WSL, app store’dan bir uygulama olarak tam bir Linux dağıtımı kurmanıza olanak tanır. Ubuntu’yu (veya tercih ettiğiniz dağıtımı) indirebilir, kurabilir ve başlatabileceğiniz bir uygulama veya terminalinizde CMD veya Powershell ile birlikte çalışacak bir profil olarak kullanıma sunabilirsiniz.</p>
+<p>Ancak Heroku için birkaç değişiklik yapmalısınız.</p>
 
-<p>En basit açıklaması “Windows’ta bash çalıştırmanıza izin vermesi” olsa da, bir kabuktan daha fazlasıdır; apt kullanarak programları yükleyebilir ve normal bir Linux örneği gibi özelleştirebilirsiniz.</p>
+<p>Nodejs buildpack’i ekleyin ve PHP buildpack’in sonrasına yerleştirin. Bunu PHP’nin önüne koymak ilk hatamdı.</p>
 
-<p>WSL, geliştiricilere ve bash kullanıcılarına, Windows’u birincil işletim sistemi olarak kullanmak zorunda kalmalarına rağmen Linux shell deneyimi sunmayı amaçlamaktadır. Daha kolay komut satırı erişimi için bir Linux shell’inin yanı sıra Visual Studio gibi Windows uygulamalarını çalıştırmanıza izin vererek her iki dünyanın da en iyisini sunar.</p>
+<p><img src="/assets/images/2024/02/heroku-nodejs-buildpack.png" alt="Heroku Nodejs Buildpack" title="Heroku Nodejs Buildpack" class="img-fluid" /></p>
 
-<p>Microsoft, WSL’nin iki sürümünü sunmaktadır: sürüm 1 ve sürüm 2. WSL 2, sanal makine kullanır ve Windows ile oluşturulup gönderilen tam bir Linux çekirdeğine sahiptir. WSL 1 daha eskidir ve genellikle çok daha yavaştır ancak dosya sistemleri arasında çalışırken daha iyi performansa sahiptir. Daha hızlı olduğundan ve Docker gibi araçlarla çok daha iyi çalıştığından çoğu işlem için WSL 2’yi öneriyoruz.</p>
+<p><em>package.json</em> dosyanızda “scripts” altında “build” için bir giriş olup olmadığını kontrol edin. Bu, deploy sırasında Heroku tarafından otomatik olarak bulunacak ve çalıştırılacaktır. Daha önce Heroku’ya özgü bir girişe ihtiyacınız vardı ancak son bir yıldır Heroku, varsa build’i kullanacak.</p>
 
-<h2 id="wsl-kurulumu">WSL Kurulumu</h2>
-
-<p>WSL isteğe bağlı bir Windows özelliğidir, dolayısıyla onu açmanız gerekir. Powershell’i başlat menüsünden Administrator olarak açın:</p>
-
-<p><img src="/assets/images/2024/02/powershell-run-as-administrator.png" alt="Powershell'i yönetici olarak çalıştır" title="Powershell'i yönetici olarak çalıştır" class="img-fluid" /></p>
-
-<p>Ardından açın:</p>
+<p><em>package.json</em> dosyanız şöyle görünmelidir:</p>
 
 <pre>
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.2",
+        "alpinejs": "^3.4.2",
+        "autoprefixer": "^10.4.2",,
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.8.0",
+        "postcss": "^8.4.6",
+        "tailwindcss": "^3.1.0",
+        "vite": "^4.0.0"
+    }
+}
 </pre>
 
-<p>Değişiklikleri uygulamak için makinenizi yeniden başlatmanız gerekecektir. Bundan sonra Windows Store’u açabilir ve mevcut dağıtımları görüntülemek için “WSL”yi arayabilirsiniz:</p>
+<p>Kodunuzu yeniden deploy edin (buildpack eklediyseniz bu gereklidir) ve build loglarını kontrol edin.</p>
 
-<p><img src="/assets/images/2024/02/wsl-windows-store.png" alt="WSL Windows Store" title="WSL Windows Store" class="img-fluid" /></p>
+<p>Uygulamanızı yeniden yüklediğinizde CSS artık doğru olmalıdır. Yeni CSS’i yüklemeye zorlamak için browser önbelleğini temizlemeyi unutmayın.</p>
 
-<p>İlk kez çalıştırdığınızda, örnek için kullanıcı adınızı ve şifrenizi ayarlamanız istenecektir. Bunlar yalnızca Linux içindir ve Windows parolanızla eşleşmesi gerekmez.</p>
+<p><strong>Kaynak:</strong> https://colinlongworth.medium.com/deploying-compiling-laravel-vite-on-heroku-4816dbcd14f5</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Eğer benim gibi yakın zamanda Laravel’in yeni bir kopyasını indirdiyseniz, muhtemelen Mix’in yerini Vite’ın aldığını fark etmişsinizdir.]]></summary></entry><entry><title type="html">Heroku’da Laravel Loglarını Nasıl Görüntüleyebilirim?</title><link href="http://localhost:4000/2024/02/18/herokuda-laravel-loglarini-nasil-goruntuleyebilirim.html" rel="alternate" type="text/html" title="Heroku’da Laravel Loglarını Nasıl Görüntüleyebilirim?" /><published>2024-02-18T00:00:00+03:00</published><updated>2024-02-18T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/18/herokuda-laravel-loglarini-nasil-goruntuleyebilirim</id><content type="html" xml:base="http://localhost:4000/2024/02/18/herokuda-laravel-loglarini-nasil-goruntuleyebilirim.html"><![CDATA[<p>Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.</p>
 
-<p>İlk yüklediğiniz varsayılan olarak ayarlanmalıdır, ancak birden fazla yükleme yaparsanız varsayılanı manuel olarak ayarlamanız gerekecektir. WSL’yi Powershell’deki wsl komutu aracılığıyla yönetebilirsiniz. Örneğin, şu anda yüklü olan tüm sürümlerin listesi:</p>
+<p>app/config/logging.php dosyasında çeşitli log kanallarını yapılandırabilirsiniz. Varsayılan olarak, yapılandırma dosyası “errorlog” kanalı için bir tanım içerir; bu, PHP’nin mesajları log’a kaydetmek için kendi hata yönetimini kullanmasına neden olur. Bunlar daha sonra otomatik olarak heroku loglarına gönderilir.</p>
+
+<p>Dosyanın üst kısmında, varsayılan kanal LOG_CHANNEL environment değişkeninden okunacak şekilde ayarlanmıştır:</p>
 
 <pre>
-PS C:\&gt; wsl --list
-Windows Subsystem for Linux Distributions:
-Ubuntu-20.04 (Default)
-docker-desktop
-docker-desktop-data
+'default' =&gt; env('LOG_CHANNEL', 'stack'),
 </pre>
 
-<p>Ardından, WSL 1 ve 2 arasında geçiş yapmak için de kullanılabilen aşağıdaki komutla varsayılan WSL dağıtımınızı ayarlayabilirsiniz.</p>
+<p>Bu, Heroku’da doğru şekilde log tutmak için LOG_CHANNEL environment değişkenini “errorlog” olarak ayarlayabileceğiniz anlamına gelir:</p>
 
 <pre>
-wsl --set-version Ubuntu-20.04 2
+heroku config:set LOG_CHANNEL=errorlog
 </pre>
 
-<p>Gelecekteki tüm kurulumlar için tercih edilen bir WSL sürümünü de ayarlayabilirsiniz:</p>
+<p><img src="/assets/images/2024/02/heroku-env-log-channel-errorlog.png" alt="Log Channel Config Var" title="Heroku'da Laravel Loglarını Nasıl Görüntüleyebilirim?" class="img-fluid" /></p>
 
-<pre>
-wsl --set-default-version 2
-</pre>
+<p>Artık logları canlı olarak takip edebilirsiniz:</p>
 
-<h2 id="wsli-kullanmak">WSL’i Kullanmak</h2>
+<pre>heroku logs -t</pre>
 
-<p>WSL’yi birkaç farklı şekilde açabilirsiniz. En kolayı, Windows’a basıp “wsl” yazmaktır; bu, otomatik olarak wsl.exe’yi çalıştıracak ve varsayılan dağıtımınızı açacaktır.</p>
-
-<p><img src="/assets/images/2024/02/wsl-start-menu.png" alt="WSL Start Menu" title="WSL Start Menu" class="img-fluid" /></p>
-
-<p><img src="/assets/images/2024/02/wsl-windows-terminal.png" alt="WSL Windows Terminal" title="WSL Windows Terminal" class="img-fluid" /></p>
-
-<p>Bu sadece temel bir terminal penceresidir; Microsoft’un yeni Terminal Uygulamasını kullanıyorsanız - ki bunu kesinlikle öneriyoruz - WSL sürümlerinize açılır menü aracılığıyla erişilebilir (ayarlamış olabileceğiniz SSH profillerinin yanı sıra):</p>
-
-<p><img src="/assets/images/2024/02/wsl-windows-terminal-menu.png" alt="WSL Windows Terminal Menu" title="WSL Windows Terminal Menu" class="img-fluid" /></p>
-
-<h2 id="dosya-sistemleri-üzerine-bir-not">Dosya Sistemleri Üzerine Bir Not</h2>
-
-<p>Linux dosya sisteminiz her zamanki gibi / konumuna monte edilmiştir. Windows, /mnt/c/ konumunda veya varsayılan sürücü harfiniz hangisiyse orada bulunur.</p>
-
-<p>Bunların hepsi sanal olduğundan, Linux dosyalarınız elbette sürücünün kendisinde depolanır. WSL 1 için bunlar basit bir klasörde saklanır. WSL 2 bazı şeyleri değiştirir ve dosyaları sanal sabit disk imajı veya VHDX olarak saklar.</p>
-
-<p>Bu imajları aşağıdaki yolda bulabilirsiniz ve dağıtım kayıtlı değilken de monte edilebilseler de, Windows tarafında onları karıştırmanızı önermiyoruz.</p>
-
-<pre>
-%USERPROFILE%AppDataLocalPackagesCanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgscLocalState
-</pre>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.]]></summary></entry><entry><title type="html">Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın</title><link href="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html" rel="alternate" type="text/html" title="Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin</id><content type="html" xml:base="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html"><![CDATA[<p>Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.</p>
-
-<p>Son birkaç yılda Konteynerizasyon (veya Docker) konusunu İnternet’in her yerinde duyabilirsiniz. VM’nin tamamını sanallaştırmak yerine kodu ve tüm bağımlılıklarını bir “Konteyner” olarak paketler. Konteynerler hakkında daha fazla bilgiyi buradan edinebilirsiniz… Hala Laradock kullanıyor olabilirsiniz… Son olarak, Aralık 2020’de Taylor Otwell, Laravel Sail’i piyasaya sürdü!</p>
-
-<p><em>Laravel Sail, Laravel’in varsayılan Docker geliştirme ortamıyla etkileşime geçmek için kullanılan hafif bir komut satırı arayüzüdür. Sail, önceden Docker deneyimi gerektirmeden PHP, MySQL ve Redis kullanarak bir Laravel uygulaması oluşturmak için harika bir başlangıç noktası sağlar.</em></p>
-
-<p><em>Kaynak: Laravel Belgeleri</em></p>
-
-<p>Bu eğitimde WSL 2 kullanarak Windows üzerinde yepyeni bir Laravel projesi başlatacaksınız. WSL, Windows Subsystem for Linux anlamına gelir ve geliştiricilerin herhangi bir “gerçek” VM host olmadan Linux ortamlarını doğrudan Windows üzerinde çalıştırmasına olanak tanır. WSL 2 büyük bir revizyondur ve daha iyi dosya IO performansıyla (20 kat daha hızlı) WSL 1’in avantajlarını sağlar. Önyüklemesi yavaş, kaynak yükü büyük ve tamamen yalıtılmış olan geleneksel VM’e benzemez.</p>
-
-<p>Windows makinenizde WSL 2’yi açalım!</p>
-
-<h2 id="wsl-2yi-yükleyin">WSL 2’yi Yükleyin</h2>
-
-<h3 id="basitleştirilmiş-kurulum-windows-11windows-10-sürüm-2004-veya-üzeri">Basitleştirilmiş Kurulum (Windows 11/Windows 10 sürüm 2004 veya üzeri)</h3>
-
-<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve wsl –install komutunu çalıştırın, yeniden başlattıktan sonra WSL’yi kullanmaya hazır olacaksınız.</p>
-
-<p>Komut Windows 10’da mevcut değilse aşağıdaki manuel kurulumu deneyin. Alternatif olarak daha fazla ayrıntı için KB5004296’yı arayabilirsiniz.</p>
-
-<h3 id="manuel-kurulum-windows-10-build-18362-veya-üzeri-home-edition-dahil">Manuel Kurulum (Windows 10 Build 18362 veya üzeri, Home Edition dahil)</h3>
-
-<p><strong>1. WSL’yi etkinleştirin</strong></p>
-
-<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki komutu çalıştırın.</p>
-
-<pre>
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-</pre>
-
-<p>DISM hakkında daha fazla bilgi için <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11">buraya</a> tıklayın.</p>
-
-<p><strong>2. Sanal Makine özelliğini etkinleştirin</strong></p>
-
-<p>WSL 2 için sanallaştırma yetenekleri hala gereklidir. Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki çalıştırın.</p>
-
-<pre>
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-</pre>
-
-<p><strong>3. Linux çekirdeği güncelleme paketini indirin</strong></p>
-
-<p><a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">wsl_update_x64.msi</a> paketini indirin ve yükleyin. Daha sonra bilgisayarınızı yeniden başlatın.</p>
-
-<p><strong>4. WSL 2’yi varsayılan sürümünüz olarak ayarlayın</strong></p>
-
-<pre>
-wsl --set-default-version 2
-</pre>
-
-<p><strong>5. Ubuntu’yu (veya seçtiğiniz Linux dağıtımını) yükleyin</strong></p>
-
-<ul>
-  <li>Microsoft Mağazasını açın ve ardından Ubuntu’yu arayın ve seçin.</li>
-  <li>Dağıtım sayfasından “Al”ı ve ardından “Yükle”yi seçin.</li>
-  <li>Hazır olduğunda “Başlat”a tıklayın.</li>
-  <li>Ubuntu için kullanıcı adınızı ve şifrenizi oluşturun.</li>
-</ul>
-
-<p><strong>6. Kurulumunuzu doğrulamak için wsl –list –verbose komutunu kullanın.</strong></p>
-
-<p><img src="/assets/images/2024/02/wsl-list-verbose.png" alt="wsl --list --verbose" title="wsl --list --verbose" class="img-fluid" /></p>
-
-<p>Herhangi bir sorunla karşılaşırsanız <a href="https://docs.microsoft.com/en-my/windows/wsl/install-win10#troubleshooting-installation">buradaki</a> sorun giderme ipuçlarına başvurabilirsiniz.</p>
-
-<h2 id="dockerı-yükleyin">Docker’ı Yükleyin</h2>
-
-<p><strong>1. İndirin</strong></p>
-
-<p>Docker <a href="https://docs.docker.com/desktop/install/windows-install/">Desktop Stable</a> sürümünü indirin.</p>
-
-<p><strong>2. Kurulum</strong></p>
-
-<p>Docker Masaüstünü kurmak için kurulum sihirbazını takip edin. WSL 2’niz düzgün yapılandırılmışsa kurulum sırasında WSL 2’yi etkinleştirmeniz istenecektir.</p>
-
-<p><img src="/assets/images/2024/02/docker-use-wsl2-based-engine.png" alt="Docker WSL2 engine kullanıyor" title="Docker WSL2 engine kullanıyor" class="img-fluid" /></p>
-
-<p><strong>3. WSL Entegrasyonunu Yapılandırın</strong></p>
-
-<p>Doğru Linux dağıtımlarını açtığınızdan emin olun.</p>
-
-<p><img src="/assets/images/2024/02/docker-wsl-integration-settings.png" alt="Docker WSL entegrasyon ayarları" title="Docker WSL entegrasyon ayarları" class="img-fluid" /></p>
-
-<h2 id="haydi-yelken-açalım">Haydi Yelken Açalım</h2>
-
-<p>Windows Terminalini başlatın ve wsl’yi girin.</p>
-
-<p><img src="/assets/images/2024/02/terminal-wsl-command.png" alt="Terminal wsl komutu" title="Terminal wsl komutu" class="img-fluid" /></p>
-
-<p>İşte püf noktası… Yolun, Windows kullanıcı dizininiz olduğunu fark edebilirsiniz.</p>
-
-<p>Resmi Microsoft WSL belgelerinde <a href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions#comparing-features">WSL özellikleri</a> karşılaştırıldı. WSL 2 mimarisi, işletim sistemi dosya sistemlerindeki performans dışında, WSL 1’den birkaç açıdan daha iyi performans gösterir.</p>
-
-<p><img src="/assets/images/2024/02/wsl-comparing-features.png" alt="WSL özelliklerinin karşılaştırılması" title="WSL özelliklerinin karşılaştırılması" class="img-fluid" /></p>
-
-<p>cd ~ komutunu kullanarak Linux ana dizininize gidebiliriz.</p>
-
-<p>Aşağıdaki komutu kullanarak test-project adında yeni bir Laravel projesi oluşturalım:</p>
-
-<pre>
-curl -s https://laravel.build/test-project | bash
-</pre>
-
-<p>Daha sonra kurulumu bekleyin.</p>
-
-<p><img src="/assets/images/2024/02/wsl-laravel-installation.png" alt="WSL Laravel kurulumu" title="WSL Laravel kurulumu" class="img-fluid" /></p>
-
-<p>WSL storage’in gerçek konumu (vhdx formatında) şu adreste bulunur:</p>
-
-<pre>
-C:\Users\user_name\AppData\Local\Packages\
-CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState
-</pre>
-
-<p>Artık cd test-project ile dizine girebilir ve Sail’i başlatabiliriz!</p>
-
-<pre>
-./vendor/bin/sail up
-</pre>
-
-<p>Sail’i ilk kez çalıştırdığınızda, docker imajlarını indirmek ve konteynerinizi oluşturmak biraz zaman alır ancak bir sonraki çalıştırma için çok hızlı olacaktır.</p>
-
-<p>Herhangi bir sorunla karşılaşırsanız suçlu Antivirüs yazılımınız olabilir. Lütfen “C:\ProgramData\DockerDesktop\vm-data\” yolunu hariç tutun.</p>
-
-<p><img src="/assets/images/2024/02/container-up-and-running.png" alt="Docker container çalışıyor" title="Docker container çalışıyor" class="img-fluid" /></p>
-
-<p>Container başlatıldıktan sonra yepyeni Laravel projenize erişmek için http://localhost adresine gidebilirsiniz.</p>
-
-<h3 id="sail-stackinizi-seçin">Sail Stack’inizi Seçin</h3>
-
-<p>Varsayılan stack mysql, redis, meilisearch, mailhog ve selenium’u içeriyor. Mevcut servisler arasında mysql, pgsql, mariadb, redis, memcached, meilisearch, selenium ve mailhog bulunmaktadır.</p>
-
-<p>Query kullanarak favori stack’inizi seçebilirsiniz:</p>
-
-<pre>
-curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
-</pre>
-
-<p>docker-compose.yml dosyanız buna göre yapılandıracaktır.</p>
-
-<h3 id="günlük-sail-rutini">Günlük Sail Rutini</h3>
-
-<p><strong>Sail’i detached modda başlatın</strong></p>
-
-<pre>
-./vendor/bin/sail up -d
-</pre>
-
-<p><strong>Sail’i durdurun</strong></p>
-
-<p>“Detached” modu kullanmıyorsanız Control+C, aksi halde,</p>
-
-<pre>
-./vendor/bin/sail down
-</pre>
-
-<p><strong>Takma ad</strong></p>
-
-<p>Uzun bir yol adı yazmak yerine, sail’e doğrudan ulaşmanıza olanak tanıyan bir Bash takma adı yapılandırın.</p>
-
-<pre>
-alias sail='bash vendor/bin/sail'
-</pre>
-
-<p>Bir takma ad oluşturabilir ve takma adı kalıcı olarak .bashrc dosyanıza kaydedebilirsiniz. nano ~/.bashrc komutunu kullanıp daha sonra alt tarafa alias sail=’bash vendor/bin/sail’ ekleyip çalıştırabilirsiniz.</p>
-
-<h2 id="kodlamaya-başlayın">Kodlamaya Başlayın</h2>
-
-<p><strong>Visual Studio Code</strong></p>
-
-<p><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote-WSL extension</a> yükleyin ve proje klasöründe olduğunuzdan emin olun.</p>
-
-<pre>
-cd ~/test-project/
-</pre>
-
-<p>Sonra aşağıdaki kodu çalıştırın.</p>
-
-<pre>
-code .
-</pre>
-
-<p>VS Code’un başlatıldığını ve proje klasörünüzdeki dosyaları görebilmeniz gerekir.</p>
-
-<p><img src="/assets/images/2024/02/vs-code-explorer.png" alt="VS Code Explorer" title="VS Code Explorer" class="img-fluid" /></p>
-
-<p>Artık http://localhost adresinde kodlamaya başlayabilir ve değişikliklerinizi izleyebilirsiniz.</p>
-
-<p><strong>PhpStorm</strong></p>
-
-<p>Projeyi \wsl$\Ubuntu\home&lt;user&gt;\test-project kullanarak açabilirsiniz.</p>
-
-<p><strong>İpucu:</strong> sail artisan <command /> komutunu kullanarak artisan komutunu çağırabilirsiniz.</p>
-
-<p>Okuduğunuz için teşekkürler. İyi kodlamalar!</p>
-
-<p><strong>Kaynak:</strong> https://blog.devgenius.io/kickstart-your-laravel-web-app-using-laravel-sail-30276265e588</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.]]></summary></entry><entry><title type="html">API Gateway nedir?</title><link href="http://localhost:4000/2024/02/11/api-gateway-nedir.html" rel="alternate" type="text/html" title="API Gateway nedir?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/api-gateway-nedir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/api-gateway-nedir.html"><![CDATA[<p>Yazılım için bu devrim niteliğindeki çağda, yeni mimari pattern’lerin ortaya çıkma hızı, işletmelerin artık hizmetleri oluşturma, devreye alma ve tüketme yöntemlerini önemli ölçüde etkiledi. Bu değişiklikler aynı zamanda proje iş akışlarına yönelik yenilikçi yaklaşımları memnuniyetle karşılayarak DevOps ve mühendislik ekiplerine API yaşam döngülerinin temel alanlarını otomatikleştirme ve karmaşıklığı genel olarak basitleştirme kapılarını açtı. Çözüm? API Gateway.</p>
+<p>Okuduğunuz için teşekkürler.</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.]]></summary></entry><entry><title type="html">API Gateway Nedir?</title><link href="http://localhost:4000/2024/02/11/api-gateway-nedir.html" rel="alternate" type="text/html" title="API Gateway Nedir?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/api-gateway-nedir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/api-gateway-nedir.html"><![CDATA[<p>Yazılım için bu devrim niteliğindeki çağda, yeni mimari pattern’lerin ortaya çıkma hızı, işletmelerin artık hizmetleri oluşturma, devreye alma ve tüketme yöntemlerini önemli ölçüde etkiledi. Bu değişiklikler aynı zamanda proje iş akışlarına yönelik yenilikçi yaklaşımları memnuniyetle karşılayarak DevOps ve mühendislik ekiplerine API yaşam döngülerinin temel alanlarını otomatikleştirme ve karmaşıklığı genel olarak basitleştirme kapılarını açtı. Çözüm? API Gateway.</p>
 
 <p>API Gateway, mikroservis mimarisinde istemci uygulamaları ile backend servisleri arasında aracı görevi görür. İstek oluşturma, yönlendirme ve protokol çevirisi gibi görevleri yerine getiren çeşitli API’ler için tek bir endpoint işlevi gören bir yazılım katmanıdır. API Gateway, güvenlik politikalarını uygularken API’lerin trafiğini yöneterek istekleri ve yanıtları kontrol eder. Bu, geliştiricilerin karmaşık API ağları tarafından engellenmek yerine bireysel hizmetler oluşturmaya odaklanmalarına yardımcı olan tek bir merkezi kontrol noktası sağlayarak API yönetimini basitleştirir.</p>
 
@@ -762,7 +553,279 @@ FancyName::methodName();
 
 <p>Sunucu tarafı bileşenlerinin derinliklerine inenerek ve nasıl ince ayar yapacağınızı öğrenerek, kullanıcılarınız için daha iyi bir deneyim oluşturabilir ve yüksek performanslı bir sunucu ortamı sağlayabilirsiniz. Bu bilgi, yalnızca olası sorunları daha etkin bir şekilde ele almanıza olanak sağlamakla kalmaz, aynı zamanda Ürün ve SRE ekipleri arasında işbirliğini teşvik eder ve sonuç olarak daha sağlam ve ölçeklenebilir uygulamalara yol açar.</p>
 
-<p><strong>Kaynak:</strong> https://medium.com/@mgonzalezbaile/demystifying-nginx-and-php-fpm-for-php-developers-bba548dd38f9</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.]]></summary></entry><entry><title type="html">Eager Loading ile Laravel Eloquent Sorgularını Optimize Edin</title><link href="http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin.html" rel="alternate" type="text/html" title="Eager Loading ile Laravel Eloquent Sorgularını Optimize Edin" /><published>2024-01-15T00:00:00+03:00</published><updated>2024-01-15T00:00:00+03:00</updated><id>http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin</id><content type="html" xml:base="http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin.html"><![CDATA[<p>Object Relational Mapping (ORM), veritabanlarıyla çalışmayı şaşırtıcı derecede basit hale getirir. Veritabanı ilişkilerini nesne yönelimli bir şekilde tanımlamak, ilgili model verilerini sorgulamayı kolaylaştırırken, geliştiriciler temeldeki veritabanı çağrılarına dikkat etmeyebilir.</p>
+<p><strong>Kaynak:</strong> https://medium.com/@mgonzalezbaile/demystifying-nginx-and-php-fpm-for-php-developers-bba548dd38f9</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.]]></summary></entry><entry><title type="html">Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın</title><link href="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html" rel="alternate" type="text/html" title="Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin</id><content type="html" xml:base="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html"><![CDATA[<p>Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.</p>
+
+<p>Son birkaç yılda Konteynerizasyon (veya Docker) konusunu İnternet’in her yerinde duyabilirsiniz. VM’nin tamamını sanallaştırmak yerine kodu ve tüm bağımlılıklarını bir “Konteyner” olarak paketler. Konteynerler hakkında daha fazla bilgiyi buradan edinebilirsiniz… Hala Laradock kullanıyor olabilirsiniz… Son olarak, Aralık 2020’de Taylor Otwell, Laravel Sail’i piyasaya sürdü!</p>
+
+<p><em>Laravel Sail, Laravel’in varsayılan Docker geliştirme ortamıyla etkileşime geçmek için kullanılan hafif bir komut satırı arayüzüdür. Sail, önceden Docker deneyimi gerektirmeden PHP, MySQL ve Redis kullanarak bir Laravel uygulaması oluşturmak için harika bir başlangıç noktası sağlar.</em></p>
+
+<p><em>Kaynak: Laravel Belgeleri</em></p>
+
+<p>Bu eğitimde WSL 2 kullanarak Windows üzerinde yepyeni bir Laravel projesi başlatacaksınız. WSL, Windows Subsystem for Linux anlamına gelir ve geliştiricilerin herhangi bir “gerçek” VM host olmadan Linux ortamlarını doğrudan Windows üzerinde çalıştırmasına olanak tanır. WSL 2 büyük bir revizyondur ve daha iyi dosya IO performansıyla (20 kat daha hızlı) WSL 1’in avantajlarını sağlar. Önyüklemesi yavaş, kaynak yükü büyük ve tamamen yalıtılmış olan geleneksel VM’e benzemez.</p>
+
+<p>Windows makinenizde WSL 2’yi açalım!</p>
+
+<h2 id="wsl-2yi-yükleyin">WSL 2’yi Yükleyin</h2>
+
+<h3 id="basitleştirilmiş-kurulum-windows-11windows-10-sürüm-2004-veya-üzeri">Basitleştirilmiş Kurulum (Windows 11/Windows 10 sürüm 2004 veya üzeri)</h3>
+
+<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve wsl –install komutunu çalıştırın, yeniden başlattıktan sonra WSL’yi kullanmaya hazır olacaksınız.</p>
+
+<p>Komut Windows 10’da mevcut değilse aşağıdaki manuel kurulumu deneyin. Alternatif olarak daha fazla ayrıntı için KB5004296’yı arayabilirsiniz.</p>
+
+<h3 id="manuel-kurulum-windows-10-build-18362-veya-üzeri-home-edition-dahil">Manuel Kurulum (Windows 10 Build 18362 veya üzeri, Home Edition dahil)</h3>
+
+<p><strong>1. WSL’yi etkinleştirin</strong></p>
+
+<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki komutu çalıştırın.</p>
+
+<pre>
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</pre>
+
+<p>DISM hakkında daha fazla bilgi için <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11">buraya</a> tıklayın.</p>
+
+<p><strong>2. Sanal Makine özelliğini etkinleştirin</strong></p>
+
+<p>WSL 2 için sanallaştırma yetenekleri hala gereklidir. Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki çalıştırın.</p>
+
+<pre>
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+</pre>
+
+<p><strong>3. Linux çekirdeği güncelleme paketini indirin</strong></p>
+
+<p><a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">wsl_update_x64.msi</a> paketini indirin ve yükleyin. Daha sonra bilgisayarınızı yeniden başlatın.</p>
+
+<p><strong>4. WSL 2’yi varsayılan sürümünüz olarak ayarlayın</strong></p>
+
+<pre>
+wsl --set-default-version 2
+</pre>
+
+<p><strong>5. Ubuntu’yu (veya seçtiğiniz Linux dağıtımını) yükleyin</strong></p>
+
+<ul>
+  <li>Microsoft Mağazasını açın ve ardından Ubuntu’yu arayın ve seçin.</li>
+  <li>Dağıtım sayfasından “Al”ı ve ardından “Yükle”yi seçin.</li>
+  <li>Hazır olduğunda “Başlat”a tıklayın.</li>
+  <li>Ubuntu için kullanıcı adınızı ve şifrenizi oluşturun.</li>
+</ul>
+
+<p><strong>6. Kurulumunuzu doğrulamak için wsl –list –verbose komutunu kullanın.</strong></p>
+
+<p><img src="/assets/images/2024/02/wsl-list-verbose.png" alt="wsl --list --verbose" title="wsl --list --verbose" class="img-fluid" /></p>
+
+<p>Herhangi bir sorunla karşılaşırsanız <a href="https://docs.microsoft.com/en-my/windows/wsl/install-win10#troubleshooting-installation">buradaki</a> sorun giderme ipuçlarına başvurabilirsiniz.</p>
+
+<h2 id="dockerı-yükleyin">Docker’ı Yükleyin</h2>
+
+<p><strong>1. İndirin</strong></p>
+
+<p>Docker <a href="https://docs.docker.com/desktop/install/windows-install/">Desktop Stable</a> sürümünü indirin.</p>
+
+<p><strong>2. Kurulum</strong></p>
+
+<p>Docker Masaüstünü kurmak için kurulum sihirbazını takip edin. WSL 2’niz düzgün yapılandırılmışsa kurulum sırasında WSL 2’yi etkinleştirmeniz istenecektir.</p>
+
+<p><img src="/assets/images/2024/02/docker-use-wsl2-based-engine.png" alt="Docker WSL2 engine kullanıyor" title="Docker WSL2 engine kullanıyor" class="img-fluid" /></p>
+
+<p><strong>3. WSL Entegrasyonunu Yapılandırın</strong></p>
+
+<p>Doğru Linux dağıtımlarını açtığınızdan emin olun.</p>
+
+<p><img src="/assets/images/2024/02/docker-wsl-integration-settings.png" alt="Docker WSL entegrasyon ayarları" title="Docker WSL entegrasyon ayarları" class="img-fluid" /></p>
+
+<h2 id="haydi-yelken-açalım">Haydi Yelken Açalım</h2>
+
+<p>Windows Terminalini başlatın ve wsl’yi girin.</p>
+
+<p><img src="/assets/images/2024/02/terminal-wsl-command.png" alt="Terminal wsl komutu" title="Terminal wsl komutu" class="img-fluid" /></p>
+
+<p>İşte püf noktası… Yolun, Windows kullanıcı dizininiz olduğunu fark edebilirsiniz.</p>
+
+<p>Resmi Microsoft WSL belgelerinde <a href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions#comparing-features">WSL özellikleri</a> karşılaştırıldı. WSL 2 mimarisi, işletim sistemi dosya sistemlerindeki performans dışında, WSL 1’den birkaç açıdan daha iyi performans gösterir.</p>
+
+<p><img src="/assets/images/2024/02/wsl-comparing-features.png" alt="WSL özelliklerinin karşılaştırılması" title="WSL özelliklerinin karşılaştırılması" class="img-fluid" /></p>
+
+<p>cd ~ komutunu kullanarak Linux ana dizininize gidebiliriz.</p>
+
+<p>Aşağıdaki komutu kullanarak test-project adında yeni bir Laravel projesi oluşturalım:</p>
+
+<pre>
+curl -s https://laravel.build/test-project | bash
+</pre>
+
+<p>Daha sonra kurulumu bekleyin.</p>
+
+<p><img src="/assets/images/2024/02/wsl-laravel-installation.png" alt="WSL Laravel kurulumu" title="WSL Laravel kurulumu" class="img-fluid" /></p>
+
+<p>WSL storage’in gerçek konumu (vhdx formatında) şu adreste bulunur:</p>
+
+<pre>
+C:\Users\user_name\AppData\Local\Packages\
+CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState
+</pre>
+
+<p>Artık cd test-project ile dizine girebilir ve Sail’i başlatabiliriz!</p>
+
+<pre>
+./vendor/bin/sail up
+</pre>
+
+<p>Sail’i ilk kez çalıştırdığınızda, docker imajlarını indirmek ve konteynerinizi oluşturmak biraz zaman alır ancak bir sonraki çalıştırma için çok hızlı olacaktır.</p>
+
+<p>Herhangi bir sorunla karşılaşırsanız suçlu Antivirüs yazılımınız olabilir. Lütfen “C:\ProgramData\DockerDesktop\vm-data\” yolunu hariç tutun.</p>
+
+<p><img src="/assets/images/2024/02/container-up-and-running.png" alt="Docker container çalışıyor" title="Docker container çalışıyor" class="img-fluid" /></p>
+
+<p>Container başlatıldıktan sonra yepyeni Laravel projenize erişmek için http://localhost adresine gidebilirsiniz.</p>
+
+<h3 id="sail-stackinizi-seçin">Sail Stack’inizi Seçin</h3>
+
+<p>Varsayılan stack mysql, redis, meilisearch, mailhog ve selenium’u içeriyor. Mevcut servisler arasında mysql, pgsql, mariadb, redis, memcached, meilisearch, selenium ve mailhog bulunmaktadır.</p>
+
+<p>Query kullanarak favori stack’inizi seçebilirsiniz:</p>
+
+<pre>
+curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
+</pre>
+
+<p>docker-compose.yml dosyanız buna göre yapılandıracaktır.</p>
+
+<h3 id="günlük-sail-rutini">Günlük Sail Rutini</h3>
+
+<p><strong>Sail’i detached modda başlatın</strong></p>
+
+<pre>
+./vendor/bin/sail up -d
+</pre>
+
+<p><strong>Sail’i durdurun</strong></p>
+
+<p>“Detached” modu kullanmıyorsanız Control+C, aksi halde,</p>
+
+<pre>
+./vendor/bin/sail down
+</pre>
+
+<p><strong>Takma ad</strong></p>
+
+<p>Uzun bir yol adı yazmak yerine, sail’e doğrudan ulaşmanıza olanak tanıyan bir Bash takma adı yapılandırın.</p>
+
+<pre>
+alias sail='bash vendor/bin/sail'
+</pre>
+
+<p>Bir takma ad oluşturabilir ve takma adı kalıcı olarak .bashrc dosyanıza kaydedebilirsiniz. nano ~/.bashrc komutunu kullanıp daha sonra alt tarafa alias sail=’bash vendor/bin/sail’ ekleyip çalıştırabilirsiniz.</p>
+
+<h2 id="kodlamaya-başlayın">Kodlamaya Başlayın</h2>
+
+<p><strong>Visual Studio Code</strong></p>
+
+<p><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote-WSL extension</a> yükleyin ve proje klasöründe olduğunuzdan emin olun.</p>
+
+<pre>
+cd ~/test-project/
+</pre>
+
+<p>Sonra aşağıdaki kodu çalıştırın.</p>
+
+<pre>
+code .
+</pre>
+
+<p>VS Code’un başlatıldığını ve proje klasörünüzdeki dosyaları görebilmeniz gerekir.</p>
+
+<p><img src="/assets/images/2024/02/vs-code-explorer.png" alt="VS Code Explorer" title="VS Code Explorer" class="img-fluid" /></p>
+
+<p>Artık http://localhost adresinde kodlamaya başlayabilir ve değişikliklerinizi izleyebilirsiniz.</p>
+
+<p><strong>PhpStorm</strong></p>
+
+<p>Projeyi \wsl$\Ubuntu\home&lt;user&gt;\test-project kullanarak açabilirsiniz.</p>
+
+<p><strong>İpucu:</strong> sail artisan <command /> komutunu kullanarak artisan komutunu çağırabilirsiniz.</p>
+
+<p>Okuduğunuz için teşekkürler. İyi kodlamalar!</p>
+
+<p><strong>Kaynak:</strong> https://blog.devgenius.io/kickstart-your-laravel-web-app-using-laravel-sail-30276265e588</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.]]></summary></entry><entry><title type="html">WSL Nedir ve Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html" rel="alternate" type="text/html" title="WSL Nedir ve Nasıl Kullanılır?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html"><![CDATA[<p>Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.</p>
+
+<h2 id="sadece-bir-sanal-makine-değil">Sadece Bir Sanal Makine Değil</h2>
+
+<p>WSL’nin ne olmadığıyla başlayalım; örneğin, Ubuntu’yu VirtualBox’ta çalıştırarak elde edebileceğiniz tam bir Linux masaüstü deneyimi değildir. Performans nedenleriyle teknik olarak sanallaştırmayı kullanır, ancak tam bir VM çalıştırmaktan çok farklıdır. Her şey sizin için yönetilir ve işinizi yapmanız ve git, ssh gibi tanıdık bash komutlarını kullanmanız için basit bir shell ve environment sağlar.</p>
+
+<p>Temel olarak WSL, app store’dan bir uygulama olarak tam bir Linux dağıtımı kurmanıza olanak tanır. Ubuntu’yu (veya tercih ettiğiniz dağıtımı) indirebilir, kurabilir ve başlatabileceğiniz bir uygulama veya terminalinizde CMD veya Powershell ile birlikte çalışacak bir profil olarak kullanıma sunabilirsiniz.</p>
+
+<p>En basit açıklaması “Windows’ta bash çalıştırmanıza izin vermesi” olsa da, bir kabuktan daha fazlasıdır; apt kullanarak programları yükleyebilir ve normal bir Linux örneği gibi özelleştirebilirsiniz.</p>
+
+<p>WSL, geliştiricilere ve bash kullanıcılarına, Windows’u birincil işletim sistemi olarak kullanmak zorunda kalmalarına rağmen Linux shell deneyimi sunmayı amaçlamaktadır. Daha kolay komut satırı erişimi için bir Linux shell’inin yanı sıra Visual Studio gibi Windows uygulamalarını çalıştırmanıza izin vererek her iki dünyanın da en iyisini sunar.</p>
+
+<p>Microsoft, WSL’nin iki sürümünü sunmaktadır: sürüm 1 ve sürüm 2. WSL 2, sanal makine kullanır ve Windows ile oluşturulup gönderilen tam bir Linux çekirdeğine sahiptir. WSL 1 daha eskidir ve genellikle çok daha yavaştır ancak dosya sistemleri arasında çalışırken daha iyi performansa sahiptir. Daha hızlı olduğundan ve Docker gibi araçlarla çok daha iyi çalıştığından çoğu işlem için WSL 2’yi öneriyoruz.</p>
+
+<h2 id="wsl-kurulumu">WSL Kurulumu</h2>
+
+<p>WSL isteğe bağlı bir Windows özelliğidir, dolayısıyla onu açmanız gerekir. Powershell’i başlat menüsünden Administrator olarak açın:</p>
+
+<p><img src="/assets/images/2024/02/powershell-run-as-administrator.png" alt="Powershell'i yönetici olarak çalıştır" title="Powershell'i yönetici olarak çalıştır" class="img-fluid" /></p>
+
+<p>Ardından açın:</p>
+
+<pre>
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+</pre>
+
+<p>Değişiklikleri uygulamak için makinenizi yeniden başlatmanız gerekecektir. Bundan sonra Windows Store’u açabilir ve mevcut dağıtımları görüntülemek için “WSL”yi arayabilirsiniz:</p>
+
+<p><img src="/assets/images/2024/02/wsl-windows-store.png" alt="WSL Windows Store" title="WSL Windows Store" class="img-fluid" /></p>
+
+<p>İlk kez çalıştırdığınızda, örnek için kullanıcı adınızı ve şifrenizi ayarlamanız istenecektir. Bunlar yalnızca Linux içindir ve Windows parolanızla eşleşmesi gerekmez.</p>
+
+<p>İlk yüklediğiniz varsayılan olarak ayarlanmalıdır, ancak birden fazla yükleme yaparsanız varsayılanı manuel olarak ayarlamanız gerekecektir. WSL’yi Powershell’deki wsl komutu aracılığıyla yönetebilirsiniz. Örneğin, şu anda yüklü olan tüm sürümlerin listesi:</p>
+
+<pre>
+PS C:\&gt; wsl --list
+Windows Subsystem for Linux Distributions:
+Ubuntu-20.04 (Default)
+docker-desktop
+docker-desktop-data
+</pre>
+
+<p>Ardından, WSL 1 ve 2 arasında geçiş yapmak için de kullanılabilen aşağıdaki komutla varsayılan WSL dağıtımınızı ayarlayabilirsiniz.</p>
+
+<pre>
+wsl --set-version Ubuntu-20.04 2
+</pre>
+
+<p>Gelecekteki tüm kurulumlar için tercih edilen bir WSL sürümünü de ayarlayabilirsiniz:</p>
+
+<pre>
+wsl --set-default-version 2
+</pre>
+
+<h2 id="wsli-kullanmak">WSL’i Kullanmak</h2>
+
+<p>WSL’yi birkaç farklı şekilde açabilirsiniz. En kolayı, Windows’a basıp “wsl” yazmaktır; bu, otomatik olarak wsl.exe’yi çalıştıracak ve varsayılan dağıtımınızı açacaktır.</p>
+
+<p><img src="/assets/images/2024/02/wsl-start-menu.png" alt="WSL Start Menu" title="WSL Start Menu" class="img-fluid" /></p>
+
+<p><img src="/assets/images/2024/02/wsl-windows-terminal.png" alt="WSL Windows Terminal" title="WSL Windows Terminal" class="img-fluid" /></p>
+
+<p>Bu sadece temel bir terminal penceresidir; Microsoft’un yeni Terminal Uygulamasını kullanıyorsanız - ki bunu kesinlikle öneriyoruz - WSL sürümlerinize açılır menü aracılığıyla erişilebilir (ayarlamış olabileceğiniz SSH profillerinin yanı sıra):</p>
+
+<p><img src="/assets/images/2024/02/wsl-windows-terminal-menu.png" alt="WSL Windows Terminal Menu" title="WSL Windows Terminal Menu" class="img-fluid" /></p>
+
+<h2 id="dosya-sistemleri-üzerine-bir-not">Dosya Sistemleri Üzerine Bir Not</h2>
+
+<p>Linux dosya sisteminiz her zamanki gibi / konumuna monte edilmiştir. Windows, /mnt/c/ konumunda veya varsayılan sürücü harfiniz hangisiyse orada bulunur.</p>
+
+<p>Bunların hepsi sanal olduğundan, Linux dosyalarınız elbette sürücünün kendisinde depolanır. WSL 1 için bunlar basit bir klasörde saklanır. WSL 2 bazı şeyleri değiştirir ve dosyaları sanal sabit disk imajı veya VHDX olarak saklar.</p>
+
+<p>Bu imajları aşağıdaki yolda bulabilirsiniz ve dağıtım kayıtlı değilken de monte edilebilseler de, Windows tarafında onları karıştırmanızı önermiyoruz.</p>
+
+<pre>
+%USERPROFILE%AppDataLocalPackagesCanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgscLocalState
+</pre>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.]]></summary></entry><entry><title type="html">Eager Loading ile Laravel Eloquent Sorgularını Optimize Edin</title><link href="http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin.html" rel="alternate" type="text/html" title="Eager Loading ile Laravel Eloquent Sorgularını Optimize Edin" /><published>2024-01-15T00:00:00+03:00</published><updated>2024-01-15T00:00:00+03:00</updated><id>http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin</id><content type="html" xml:base="http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin.html"><![CDATA[<p>Object Relational Mapping (ORM), veritabanlarıyla çalışmayı şaşırtıcı derecede basit hale getirir. Veritabanı ilişkilerini nesne yönelimli bir şekilde tanımlamak, ilgili model verilerini sorgulamayı kolaylaştırırken, geliştiriciler temeldeki veritabanı çağrılarına dikkat etmeyebilir.</p>
 
 <h2 id="eager-loading-nedir">Eager Loading Nedir?</h2>
 

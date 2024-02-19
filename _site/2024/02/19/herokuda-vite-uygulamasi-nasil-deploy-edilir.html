@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Code Ninja - Melih Kocatürk</title>
+    <title>Heroku’da Vite Uygulaması Nasıl Deploy Edilir? - Melih Kocatürk</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -40,62 +40,57 @@
         </div>
     </div>
 </div>
-
-    <main class="flex-shrink-0 mt-5">
+    
+    <main class="flex-shrink-0 mb-5">
         <div class="container">
-            
-    <div class="mb-5">
-        <h2>Heroku’da Vite Uygulaması Nasıl Deploy Edilir?</h2>
-        <p><p>Eğer benim gibi yakın zamanda Laravel’in yeni bir kopyasını indirdiyseniz, muhtemelen Mix’in yerini Vite’ın aldığını fark etmişsinizdir.</p>
+            <h1 class="text-center mb-5">Heroku’da Vite Uygulaması Nasıl Deploy Edilir?</h1>
+            <p class="text-center text-uppercase mb-5">
+                <small class="text-muted">Melih Kocatürk / 19.02.2024</small>
+            </p>
+            <p><p>Eğer benim gibi yakın zamanda Laravel’in yeni bir kopyasını indirdiyseniz, muhtemelen Mix’in yerini Vite’ın aldığını fark etmişsinizdir.</p>
+
+<p>Jetstream’in yeni sürümünü yüklediğimde bu bende kafa karışıklığına neden oldu, çünkü hem localde hem de Heroku’ya deploy ettiğimde her şey hizasız görünüyordu.</p>
+
+<p>Localde, <code>npm run dev</code>‘i çalıştırmanız gerekiyor ve bu, <code>npm run watch</code>‘ın yerini alacak gibi görünüyor.</p>
+
+<p>Ancak Heroku için birkaç değişiklik yapmalısınız.</p>
+
+<p>Nodejs buildpack’i ekleyin ve PHP buildpack’in sonrasına yerleştirin. Bunu PHP’nin önüne koymak ilk hatamdı.</p>
+
+<p><img src="/assets/images/2024/02/heroku-nodejs-buildpack.png" alt="Heroku Nodejs Buildpack" title="Heroku Nodejs Buildpack" class="img-fluid" /></p>
+
+<p><em>package.json</em> dosyanızda “scripts” altında “build” için bir giriş olup olmadığını kontrol edin. Bu, deploy sırasında Heroku tarafından otomatik olarak bulunacak ve çalıştırılacaktır. Daha önce Heroku’ya özgü bir girişe ihtiyacınız vardı ancak son bir yıldır Heroku, varsa build’i kullanacak.</p>
+
+<p><em>package.json</em> dosyanız şöyle görünmelidir:</p>
+
+<pre>
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "@tailwindcss/forms": "^0.5.2",
+        "alpinejs": "^3.4.2",
+        "autoprefixer": "^10.4.2",,
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^0.8.0",
+        "postcss": "^8.4.6",
+        "tailwindcss": "^3.1.0",
+        "vite": "^4.0.0"
+    }
+}
+</pre>
+
+<p>Kodunuzu yeniden deploy edin (buildpack eklediyseniz bu gereklidir) ve build loglarını kontrol edin.</p>
+
+<p>Uygulamanızı yeniden yüklediğinizde CSS artık doğru olmalıdır. Yeni CSS’i yüklemeye zorlamak için browser önbelleğini temizlemeyi unutmayın.</p>
+
+<p><strong>Kaynak:</strong> https://colinlongworth.medium.com/deploying-compiling-laravel-vite-on-heroku-4816dbcd14f5</p>
 
 </p>
-        <p><a href="/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir.html">Devamını Oku</a></p>
-    </div>
-
-    <div class="mb-5">
-        <h2>Heroku'da Laravel Loglarını Nasıl Görüntüleyebilirim?</h2>
-        <p><p>Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.</p>
-
-</p>
-        <p><a href="/2024/02/18/herokuda-laravel-loglarini-nasil-goruntuleyebilirim.html">Devamını Oku</a></p>
-    </div>
-
-    <div class="mb-5">
-        <h2>WSL Nedir ve Nasıl Kullanılır?</h2>
-        <p><p>Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.</p>
-
-</p>
-        <p><a href="/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html">Devamını Oku</a></p>
-    </div>
-
-    <div class="mb-5">
-        <h2>Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın</h2>
-        <p><p>Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.</p>
-
-</p>
-        <p><a href="/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html">Devamını Oku</a></p>
-    </div>
-
-    <div class="mb-5">
-        <h2>Nginx ve PHP-FPM'in Gizemini Çözmek</h2>
-        <p><p>Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.</p>
-
-</p>
-        <p><a href="/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html">Devamını Oku</a></p>
-    </div>
-
-
-<div class="d-flex">
-    <ul class="list-inline mx-auto justify-content-center">
-        
-            <li class="list-inline-item"><a href="#">&laquo; Önceki</a></li>
-        
-            <li class="list-inline-item">Sayfa: 1 - 2</li>
-        
-            <li class="list-inline-item"><a href="/blog/page2/">Sonraki &raquo;</a></li>
-        
-    </ul>
-</div>
         </div>
     </main>
 

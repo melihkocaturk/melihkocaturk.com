@@ -1,6 +1,6 @@
 ---
 layout: post
-title: API Gateway nedir?
+title: API Gateway Nedir?
 ---
 
 Yazılım için bu devrim niteliğindeki çağda, yeni mimari pattern’lerin ortaya çıkma hızı, işletmelerin artık hizmetleri oluşturma, devreye alma ve tüketme yöntemlerini önemli ölçüde etkiledi. Bu değişiklikler aynı zamanda proje iş akışlarına yönelik yenilikçi yaklaşımları memnuniyetle karşılayarak DevOps ve mühendislik ekiplerine API yaşam döngülerinin temel alanlarını otomatikleştirme ve karmaşıklığı genel olarak basitleştirme kapılarını açtı. Çözüm? API Gateway.

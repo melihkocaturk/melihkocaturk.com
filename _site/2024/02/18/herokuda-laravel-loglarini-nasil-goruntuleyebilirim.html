@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Code Ninja - Melih Kocatürk</title>
+    <title>Heroku'da Laravel Loglarını Nasıl Görüntüleyebilirim? - Melih Kocatürk</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -40,62 +40,37 @@
         </div>
     </div>
 </div>
-
-    <main class="flex-shrink-0 mt-5">
+    
+    <main class="flex-shrink-0 mb-5">
         <div class="container">
-            
-    <div class="mb-5">
-        <h2>Heroku’da Vite Uygulaması Nasıl Deploy Edilir?</h2>
-        <p><p>Eğer benim gibi yakın zamanda Laravel’in yeni bir kopyasını indirdiyseniz, muhtemelen Mix’in yerini Vite’ın aldığını fark etmişsinizdir.</p>
+            <h1 class="text-center mb-5">Heroku&#39;da Laravel Loglarını Nasıl Görüntüleyebilirim?</h1>
+            <p class="text-center text-uppercase mb-5">
+                <small class="text-muted">Melih Kocatürk / 18.02.2024</small>
+            </p>
+            <p><p>Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.</p>
 
+<p>app/config/logging.php dosyasında çeşitli log kanallarını yapılandırabilirsiniz. Varsayılan olarak, yapılandırma dosyası “errorlog” kanalı için bir tanım içerir; bu, PHP’nin mesajları log’a kaydetmek için kendi hata yönetimini kullanmasına neden olur. Bunlar daha sonra otomatik olarak heroku loglarına gönderilir.</p>
+
+<p>Dosyanın üst kısmında, varsayılan kanal LOG_CHANNEL environment değişkeninden okunacak şekilde ayarlanmıştır:</p>
+
+<pre>
+'default' =&gt; env('LOG_CHANNEL', 'stack'),
+</pre>
+
+<p>Bu, Heroku’da doğru şekilde log tutmak için LOG_CHANNEL environment değişkenini “errorlog” olarak ayarlayabileceğiniz anlamına gelir:</p>
+
+<pre>
+heroku config:set LOG_CHANNEL=errorlog
+</pre>
+
+<p><img src="/assets/images/2024/02/heroku-env-log-channel-errorlog.png" alt="Log Channel Config Var" title="Heroku'da Laravel Loglarını Nasıl Görüntüleyebilirim?" class="img-fluid" /></p>
+
+<p>Artık logları canlı olarak takip edebilirsiniz:</p>
+
+<pre>heroku logs -t</pre>
+
+<p>Okuduğunuz için teşekkürler.</p>
 </p>
-        <p><a href="/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir.html">Devamını Oku</a></p>
-    </div>
-
-    <div class="mb-5">
-        <h2>Heroku'da Laravel Loglarını Nasıl Görüntüleyebilirim?</h2>
-        <p><p>Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.</p>
-
-</p>
-        <p><a href="/2024/02/18/herokuda-laravel-loglarini-nasil-goruntuleyebilirim.html">Devamını Oku</a></p>
-    </div>
-
-    <div class="mb-5">
-        <h2>WSL Nedir ve Nasıl Kullanılır?</h2>
-        <p><p>Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.</p>
-
-</p>
-        <p><a href="/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html">Devamını Oku</a></p>
-    </div>
-
-    <div class="mb-5">
-        <h2>Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın</h2>
-        <p><p>Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.</p>
-
-</p>
-        <p><a href="/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html">Devamını Oku</a></p>
-    </div>
-
-    <div class="mb-5">
-        <h2>Nginx ve PHP-FPM'in Gizemini Çözmek</h2>
-        <p><p>Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.</p>
-
-</p>
-        <p><a href="/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html">Devamını Oku</a></p>
-    </div>
-
-
-<div class="d-flex">
-    <ul class="list-inline mx-auto justify-content-center">
-        
-            <li class="list-inline-item"><a href="#">&laquo; Önceki</a></li>
-        
-            <li class="list-inline-item">Sayfa: 1 - 2</li>
-        
-            <li class="list-inline-item"><a href="/blog/page2/">Sonraki &raquo;</a></li>
-        
-    </ul>
-</div>
         </div>
     </main>
 
