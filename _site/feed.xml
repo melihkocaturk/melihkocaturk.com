@@ -1,5 +1,885 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-19T17:23:35+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
-</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Heroku’da Vite Uygulaması Nasıl Deploy Edilir?</title><link href="http://localhost:4000/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir.html" rel="alternate" type="text/html" title="Heroku’da Vite Uygulaması Nasıl Deploy Edilir?" /><published>2024-02-19T00:00:00+03:00</published><updated>2024-02-19T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir</id><content type="html" xml:base="http://localhost:4000/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir.html"><![CDATA[<p>Eğer benim gibi yakın zamanda Laravel’in yeni bir kopyasını indirdiyseniz, muhtemelen Mix’in yerini Vite’ın aldığını fark etmişsinizdir.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-22T04:03:50+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
+</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">ChatGPT Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir.html" rel="alternate" type="text/html" title="ChatGPT Nasıl Kullanılır?" /><published>2024-02-22T00:00:00+03:00</published><updated>2024-02-22T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir.html"><![CDATA[<p>Artık ChatGPT’yi ve nasıl çalıştığını anladığınıza göre kullanmaya başlamanın zamanı geldi. Bu bölümde ChatGPT’yi tarayıcınız aracılığıyla kullanmaya odaklanacağız ve etkinliğini en üst düzeye çıkarmak için bazı ipuçları ve en iyi uygulamaları sunacağız.</p>
+
+<p><strong>1. Adım:</strong> OpenAI hesabı oluşturun</p>
+
+<p><a href="https://chat.openai.com">https://chat.openai.com</a> adresinde ChatGPT’yi kullanmaya başlamanın ilk adımı OpenAI hesabı oluşturmaktır. Bu web sitesi aracılığıyla ChatGPT ve diğer OpenAI dil modellerine erişebilirsiniz.</p>
+
+<p><img src="/assets/images/2024/02/openai-com.png" alt="openai.com" title="openai.com" class="img-fluid" /></p>
+
+<p>Hesap oluşturmak için OpenAI web sitesini ziyaret edin ve sayfadaki “Sign Up” butonuna tıklayın. Adınız ve e-mail adresiniz gibi bazı temel bilgileri vermeniz ve hizmet şartlarını kabul etmeniz gerekecektir. Kayıt işlemini tamamladıktan sonra yeni hesabınızla giriş yapabileceksiniz.</p>
+
+<p><strong>2. Adım:</strong> ChatGPT modelini keşfedin</p>
+
+<p>Oturum açtığınızda, “Message ChatGPT…” alanına birşeyler yazıp göndererek ChatGPT modelini keşfedebileceksiniz. ChatGPT daha sonra mesajınıza göre bir yanıt oluşturacaktır.</p>
+
+<p>ChatGPT’nin nasıl yanıt verdiğini görmek için farklı mesajlarla denemeler yapabilirsiniz. Örneğin, oluşturulan metnin rastgeleliğini ve yaratıcılığını nasıl etkilediğini görmek için farklı uzunluklar ve tonlar belirtmeyi deneyebilirsiniz.</p>
+
+<p><strong>3. Adım:</strong> ChatGPT iş başında</p>
+
+<p>Aşağıdaki ekran görüntüsü şu soruyu sorduğumu gösteriyor: “Bana senin hakkında 7 ilginç şey söyle”</p>
+
+<p><img src="/assets/images/2024/02/7-interesting-things-about-chatgpt.png" alt="ChatGPT hakkında 7 ilginç şey" title="ChatGPT hakkında 7 ilginç şey" class="img-fluid" /></p>
+
+<p>Bu chatGPT ekranıdır, henüz yapmadıysanız chat.openai.com adresine gidin ve onunla oynamaya başlayın.</p>
+
+<p>Basit bir “Merhaba” ile başlayın, ona sorular sorun, bir şeyler kodlamasını isteyin veya bir şeyleri tercüme etmesini veya analiz etmesini, kitap özetleri oluşturmasını ve kitap önerileri yapmasını isteyin.</p>
+
+<h2 id="chatgptyi-etkili-bir-şekilde-kullanmak-için-birkaç-ipucu">ChatGPT’yi etkili bir şekilde kullanmak için birkaç ipucu:</h2>
+
+<p><strong>Net bir hedef belirleyin:</strong> İçeriğinizle neyi başarmak istediğinizi ve bunun size nasıl fayda sağlayacağını tam olarak bilmelisiniz. Bu, hedefe yönelik ve etkili içerik oluşturmanıza yardımcı olacaktır. “Bileşik faizi hesaplayan bir web sitesi nasıl oluşturulur” diye sormak yerine “Bana bileşik faiz hesaplayıcısı olan index.html sayfasının kodunu ver” diye sorun.</p>
+
+<p><strong>Deneyin:</strong> Farklı mesajları ve ayarları test etmekten korkmayın. Daha önce hiç düşünmediğiniz içerik oluşturma yollarını asla bilemezsiniz. İçerik oluştururken “Bunu esprili, eğlenceli, ilgi çekici bir tonda yaz” diyebilirsiniz veya “Bu podcast tanıtımını Joe Rogan tarzında yaz” gibi bir ifade kullanabilirsiniz.</p>
+
+<p><strong>Gibi davran:</strong> Bu, çok özel durumlar için ChatGPT’den benzersiz, kişiselleştirilmiş ve kullanışlı içerik elde etmenin en iyi tekniğidir; aşağıdaki italik metni kopyalayıp yapıştırarak deneyebilirsiniz:</p>
+
+<p><em>Roman yazarı gibi davranmanı istiyorum. Okuyucuların uzun süre ilgisini çekebilecek yaratıcı ve büyüleyici hikayeler ortaya çıkaracaksın. Fantastik, romantik, tarihi, kurgu vb. herhangi bir türü seçebilirsin; ancak amaç olağanüstü bir olay örgüsüne, ilgi çekici karakterlere ve beklenmedik dönüm noktalarına sahip bir şey yazmaktır. İlk isteğim, “gelecekte geçen bir bilim kurgu romanı yazmam gerekiyor”</em></p>
+
+<p><strong>Yanıtı yeniden oluştur:</strong> ChatGPT’den yanıt aldınız ancak bundan pek memnun değilseniz - “Regenerate” e tıklayabilirsiniz - bu, mevcut çıktıyı kaldıracak ve tamamen yeni bir çıktı oluşturacaktır.</p>
+
+<p><strong>Aynı sorgu için birden fazla yanıt alın:</strong> Bu özellikle e-mail konuları veya video/blog başlıkları gibi şeyler seçmek istiyorsanız kullanışlıdır, ilk denemede seveceğiniz bir yanıt alma olasılığınız düşüktür, bu nedenle ChatGPT’den 5 yanıt oluşturmasını isteyebilirsiniz. Tek seferde 10 hatta 20 yanıt.</p>
+
+<p><u>Örnek:</u> En son iPhone modelinin yeni özellikleriyle ilgili makalem için 10 ilgi çekici blog yazısı başlığı oluştur.</p>
+
+<p><strong>İyileştirin ve düzenleyin:</strong> ChatGPT, yüksek kaliteli içerik oluşturmak için harika bir araç olsa da, insan tarafından yapılan düzenlemenin yerini tutmaz. Hatasız olduğundan ve ihtiyaçlarınızı karşıladığından emin olmak için oluşturulan metni incelemeye ve iyileştirmeye zaman ayırın. Hatta bloglara veya bir kitap bölümüne veya e-mail e herhangi bir metinden ChatGPT’ye girebilir ve “Bunu geliştirmek için bana öneriler ver” diyebilirsiniz ve bunu yapacaktır; netlik, okunabilirlik ve üslup gibi şeylere de odaklanabilirsiniz.</p>
+
+<p><u>Örnek:</u> Okunabilirliği artırmak ve bu e-maili daha profesyonel hale getirmek için önerilerde bulun.</p>
+
+<p>Bu ipuçlarını göz önünde bulundurarak ve deneyerek, hedef kitlenizde gerçekten yankı uyandıran ve başarınızı artıran içerikler oluşturmak için ChatGPT’nin tüm potansiyelinden yararlanabilirsiniz.</p>
+
+<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Artık ChatGPT’yi ve nasıl çalıştığını anladığınıza göre kullanmaya başlamanın zamanı geldi. Bu bölümde ChatGPT’yi tarayıcınız aracılığıyla kullanmaya odaklanacağız ve etkinliğini en üst düzeye çıkarmak için bazı ipuçları ve en iyi uygulamaları sunacağız.]]></summary></entry><entry><title type="html">ChatGPT’yi ne için kullanabilirim?</title><link href="http://localhost:4000/2024/02/22/chatgpt-yi-ne-icin-kullanabilirim.html" rel="alternate" type="text/html" title="ChatGPT’yi ne için kullanabilirim?" /><published>2024-02-22T00:00:00+03:00</published><updated>2024-02-22T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/22/chatgpt-yi-ne-icin-kullanabilirim</id><content type="html" xml:base="http://localhost:4000/2024/02/22/chatgpt-yi-ne-icin-kullanabilirim.html"><![CDATA[<p>Genel olarak, ister işletme sahibi, ister girişimci veya serbest çalışan olun, ChatGPT, operasyonları iyileştirmek ve geliri artırmak için eyleme geçirilebilir bilgi ve öneriler sunarak çok çeşitli alanlarda yardımcı olabilir, aynı zamanda normalden 10 kat daha hızlı, kaliteli, ilgi çekici içerikler oluşturarak uzun süreli müşteri ilişkilerinin korunmasına yardımcı olur.</p>
+
+<p><strong>Potansiyel müşteriler yaratın:</strong> ChatGPT, iletişimi kişiselleştirmenize, çeşitli durumlar için e-mail şablonları oluşturma ve kullanma sürecini kısaltmanıza ve daha fazla potansiyel müşteriye ulaşmanıza olanak tanıyarak dönüşüm şansını artırmanıza yardımcı olabilir.</p>
+
+<p><strong>Çevrimiçi görünürlüğü artırın:</strong> ChatGPT, içeriğinizi SEO için biçimlendirebilir, çevrimiçi varlığınızı artırmak ve tasarruf ederken daha fazla potansiyel müşteriye ulaşmak için minimum çabayla etkili e-mail ve sosyal pazarlama stratejileri oluşturmanıza olanak tanır. İçeriği birden fazla sosyal medya üzerinde yeniden kullanırken özellikle güçlüdür.</p>
+
+<p><strong>Müşterilerinizle kalıcı bağlar oluşturun:</strong> ChatGPT, rakiplerinizden 10 kat daha hızlı, özelleştirilmiş, ilgi çekici ve kaliteli içerik üreterek müşterilerinizle kalıcı ilişkiler kurmanıza yardımcı olabilir.</p>
+
+<p><strong>Yeni gelir akışları oluşturun:</strong> ChatGPT, potansiyel yeni iş fırsatlarını belirlemenize yardımcı olabilir ve daha önce gerekli zaman veya beceri seti nedeniyle ulaşamayacağınız birden fazla yeni ürün oluşturmanıza olanak tanır; bu sınırlamalar artık ChatGPT ile aşılabilir.</p>
+
+<p><strong>En iyi fiyatlandırma yapısını belirleyin:</strong> ChatGPT, fiyatlandırma stratejilerini araştırmak, tüketici satın alma alışkanlıklarını anlamak ve fiyatlandırmayı en iyi sonuçlar için ayarlamak için veriye dayalı bilgiler sağlayabilir.</p>
+
+<p><strong>Yeni araç ve teknolojilerden yararlanın:</strong> ChatGPT, müşteri desteği, pazarlama ve satış da dahil olmak üzere şirketinizin çeşitli yönlerini otomatik hale getiren yeni araç ve teknolojiler önerebilir; bu, işletmelerin zamandan ve paradan tasarruf etmesine yardımcı olurken aynı zamanda genel verimliliği de artırabilir.</p>
+
+<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Genel olarak, ister işletme sahibi, ister girişimci veya serbest çalışan olun, ChatGPT, operasyonları iyileştirmek ve geliri artırmak için eyleme geçirilebilir bilgi ve öneriler sunarak çok çeşitli alanlarda yardımcı olabilir, aynı zamanda normalden 10 kat daha hızlı, kaliteli, ilgi çekici içerikler oluşturarak uzun süreli müşteri ilişkilerinin korunmasına yardımcı olur.]]></summary></entry><entry><title type="html">ChatGPT Verimliliği Nasıl Artırır?</title><link href="http://localhost:4000/2024/02/22/chatgpt-verimliligi-nasil-artirir.html" rel="alternate" type="text/html" title="ChatGPT Verimliliği Nasıl Artırır?" /><published>2024-02-22T00:00:00+03:00</published><updated>2024-02-22T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/22/chatgpt-verimliligi-nasil-artirir</id><content type="html" xml:base="http://localhost:4000/2024/02/22/chatgpt-verimliligi-nasil-artirir.html"><![CDATA[<p>Girişimci, serbest çalışan, startup veya hatta küçük bir kobi iseniz, genellikle birçok farklı şeyin nasıl yapılacağını öğrenmesi gereken tek kişilik bir grupsunuzdur, bu sonsuza kadar sürer ya da işi outsource ederiz. Bu işe yarar ancak pahalıdır ve aynı türden işler tekrar ortaya çıkarsa ve en son kullandığınız freelancer mevcut değilse süreklilik eksikliği söz konusudur.</p>
+
+<p>ChatGPT ile bu sorunlar (çoğunlukla) geçmişte kaldı; metin yazarlığı, kodlama, resim yaratma, reklam oluşturma, blog içeriği oluşturma, kitap yazma, SEO gibi hangi becerileri kullanmak isterseniz isteyin… Bunların hepsi ve daha fazlası ChatGPT tarafından yapılabilir; sadece doğru şeyi istemeniz gerekir.</p>
+
+<p>Bu, işin sıradan yönleri hakkında endişelenerek harcadığınız zamanı büyük ölçüde azaltacak ve odaklanmanız gereken önemli şeylere devam etmenize olanak sağlayacaktır.</p>
+
+<p>Aşağıdaki örneklerde, çıktının isteğinize bağlı olarak ne kadar değişebileceğini göstermek için ChatGPT’den gelen tüm yanıtları göstereceğim.</p>
+
+<h2 id="pazarlama-e-maili">Pazarlama E-maili</h2>
+
+<p>Mükemmel e-maili yazmanız ne kadar sürer? Durumunuza ve sektörünüze uygun mükemmel bir e-mail şablonu arayarak saatler harcadığınız ancak bulamadınız mı?</p>
+
+<p>Bunu kendiniz yazmanız gerekiyor ve şunları yapmalısınız:</p>
+
+<ul>
+  <li><strong>Açık ve net olun:</strong> Hemen konuya girin ve sunduğunuz şeyin değerini ve bunun onlara neden faydalı olabileceğini açıklayın.</li>
+  <li><strong>Taranabilir hale getirin:</strong> E-mailin okunmasını kolaylaştırmak için başlıklar, madde işaretleri ve kısa paragraflar kullanın.</li>
+  <li><strong>Güvenilirlik ekleyin:</strong> Teklifinizi veya fikrinizi desteklemek için kullanılabilecek gerekli tüm bilgileri veya referansları ve istatistikleri sağlayın.</li>
+  <li><strong>Harekete geçirecek net bir mesaj verin:</strong> Alıcının ne yapmasını istediğiniz konusunda doğrudan ve net olun; bu ister bir telefon konuşması yapmak, ister bir web sitesini ziyaret etmek ya da bir ürünü denemek olsun.</li>
+  <li><strong>Düzeltme ve düzenleme:</strong> Mesajınızı dilbilgisi, noktalama işaretleri ve yazım hataları açısından dikkatle inceleyin.</li>
+  <li><strong>Net bir konu satırı ekleyin:</strong> Konu satırının dikkat çekici, spesifik olduğundan ve e-mailin amacını gösterdiğinden emin olun.</li>
+</ul>
+
+<p>Ancak artık bir e-mailin titizlikle hazırlanmasının uzun yıllar alması geçmişte kaldı.</p>
+
+<p>Diyelim ki potansiyel bir müşteriye e-mail  göndermek isteyen bir emlak acentesisiniz, tek yapmanız gereken bunu sormak.</p>
+
+<p><em>Örnek:</em> İşletmeniz için pazarlama e-maili (ör. Emlak acentesi)</p>
+
+<p><strong>Mesaj:</strong> Emlak acentem için potansiyel bir mülk sahibine pazarlama e-maili yaz.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Konu: Yeni Bir Başlangıç için Mükemmel Bir Fırsat</p>
+
+<p>Sayın [Ev Sahibinin Adı],</p>
+
+<p>Evinizi satmayı mı düşünüyorsunuz veya kiralanacak mülkünüzü yönetmek için profesyonel bir destek mi arıyorsunuz? Emlak piyasasında size yardımcı olabileceğimizi bilmenizi isteriz.</p>
+
+<p>Ev sahibi olarak, mülkünüzü en iyi şekilde değerlendirmek ve en iyi getiriyi elde etmek istemeniz gayet doğal. İşte tam bu noktada biz devreye giriyoruz. [Emlak Acentesi Adı], deneyimli ekibi ve etkili pazarlama stratejileriyle size en iyi hizmeti sunmak için burada.</p>
+
+<p>Mülkünüzü satmak, kiralamak veya yönetmek için ihtiyacınız olan her türlü desteği sağlayabiliriz. Sunduğumuz hizmetler arasında:</p>
+
+<ul>
+  <li>Evinizin değerini en üst düzeye çıkarmak için profesyonel fotoğrafçılık ve pazarlama stratejileri</li>
+  <li>Potansiyel kiracıları veya alıcıları hedefleyen kapsamlı pazarlama kampanyaları</li>
+  <li>Kiracı seçimi, kira tahsilatı ve mülk bakımı gibi yönetim hizmetleri</li>
+</ul>
+
+<p>Mülkünüzü değerlendirmek ve ihtiyaçlarınıza uygun çözümlerimizi keşfetmek için bir araya gelmekten mutluluk duyarız. Sizi dinlemek ve size nasıl yardımcı olabileceğimizi öğrenmek için zaman ayırmanızı bekliyoruz.</p>
+
+<p>Bize ulaşın ve mülkünüzle ilgili bir strateji oluşturmak için bugün harekete geçelim!</p>
+
+<p>Saygılarımla,</p>
+
+<p>[Adınız]
+[Emlak Acentesi Adı]
+[Tel. No.]
+[E-posta Adresi]</p>
+
+<hr />
+
+<p>Bu oldukça kullanışlıdır, bazı ince ayarlar yapabilirsiniz ancak ne yazacağınız konusunda zorluk yaşıyorsanız, bu harika bir başlangıç noktasıdır.</p>
+
+<p>Şimdi, yanıtı biraz değiştirmenin ve onu farklı bir iş türüyle alakalı hale getirmenin ne kadar kolay olduğunu göstermek için size başka bir örnek vereceğim.</p>
+
+<p><em>Örnek:</em> İşletmeniz için pazarlama e-maili (ör. FX danışmanlık firması)</p>
+
+<p>Bir arkadaşımın FX danışmanlık firması var ve mailing için şablon bulmakta zorlanıyordu, uzun süre uğraştı ama hem özelleştirilebilir hem de uygun bir tane bulamadı. Bu konu hakkında konuştuğumuzda ChatGPT’yi yeni bulmuştum, onunla bir dakikadan kısa sürede bir şablon oluşturduk ve o bundan o kadar memnun kaldı ki ChatGPT’nin ne kadar faydalı olabileceğine dair bir kitap yazmaya karar verdim.</p>
+
+<p><strong>Mesaj:</strong> FX danışmanlık firmasının potansiyel müsterileri için profesyonel pazarlama e-maili yaz.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Konu: Döviz Piyasalarında Başarıya Giden Yol</p>
+
+<p>Sayın [Potansiyel Müşterinin Adı],</p>
+
+<p>Finansal hedeflerinizi gerçekleştirmenize yardımcı olmak için buradayız. FX danışmanlık firmamız, döviz piyasalarında uzmanlaşmış profesyonel bir ekiple size en iyi hizmeti sunmak için hazır.</p>
+
+<p>Döviz piyasalarında başarılı bir şekilde yatırım yapmak, deneyim, bilgi ve doğru strateji gerektirir. Bu noktada biz devreye giriyoruz. Sunduğumuz hizmetler arasında:</p>
+
+<ul>
+  <li>Bireysel ve kurumsal yatırımcılara özel danışmanlık hizmetleri</li>
+  <li>Kişisel yatırım hedeflerinize uygun özel stratejilerin oluşturulması</li>
+  <li>Döviz piyasalarındaki güncel gelişmeler hakkında analiz ve raporlar</li>
+  <li>Risk yönetimi ve portföy çeşitlendirmesi konusunda uzman tavsiyeler</li>
+</ul>
+
+<p>Finansal hedeflerinize ulaşmanıza yardımcı olmak için size özel bir çözüm sunmak istiyoruz. Sizi ve işinizi anlamak, ihtiyaçlarınıza uygun stratejiler geliştirmek ve başarıya giden yolda sizinle birlikte ilerlemek için sabırsızlanıyoruz.</p>
+
+<p>Lütfen bize ulaşın ve birlikte nasıl çalışabileceğimizi konuşalım. Finansal başarıya giden yolculuğunuzda yanınızda olmayı dört gözle bekliyoruz.</p>
+
+<p>Saygılarımla,</p>
+
+<p>[Adınız]
+[FX Danışmanlık Firması Adı]
+[Tel. No.]
+[E-posta Adresi]</p>
+
+<hr />
+
+<p>Bu yeterli, özellikle de zorlanıyorsanız, ancak bunu geliştirebiliriz.</p>
+
+<p><em>Örnek:</em> Daha ilgi çekici ve kişisel hale getirin.</p>
+
+<p><strong>Mesaj:</strong> Daha ilgi çekici ve kişisel hale getir.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Konu: Finansal Hedeflerinizi Gerçekleştirmenize Yardımcı Olabiliriz</p>
+
+<p>Merhaba [Potansiyel Müşterinin Adı],</p>
+
+<p>Umarım bu e-posta, finansal hedeflerinizi gerçekleştirmenizde size destek olabileceğimizi hatırlatmanın harika bir yolu olur. Ben [Adınız], [FX Danışmanlık Firması Adı]’dan bir danışmanım, ve işte size özel bir teklifimiz var:</p>
+
+<p>Eğer döviz piyasalarında yatırım yaparak gelirinizi artırmak veya risklerinizi yönetmek istiyorsanız, doğru adrestesiniz. [FX Danışmanlık Firması Adı], finansal başarıya ulaşmanıza yardımcı olmak için burada. Bizimle çalışmanın size sağlayacağı faydalar arasında:</p>
+
+<ul>
+  <li>Kişisel finansal hedeflerinize uygun stratejilerin belirlenmesi</li>
+  <li>Güncel piyasa analizleri ve raporlarının sağlanması</li>
+  <li>Portföyünüzü optimize etmek için profesyonel tavsiyelerin alınması</li>
+  <li>Döviz piyasalarında uzman ekibimizle birlikte başarılı bir yatırım yolculuğuna çıkma fırsatı</li>
+</ul>
+
+<p>Finansal başarıya giden yolculuğunuzda size eşlik etmek ve destek olmak için sabırsızlanıyoruz. İhtiyaçlarınızı ve hedeflerinizi anlamak için bir toplantı ayarlamak için hazırız.</p>
+
+<p>Lütfen bize ulaşın ve birlikte finansal hedeflerinize ulaşmanın heyecanını paylaşalım!</p>
+
+<p>Saygılarımla,</p>
+
+<p>[Adınız]
+[FX Danışmanlık Firması Adı]
+[Tel. No.]
+[E-posta Adresi]</p>
+
+<hr />
+
+<p><em>Örnek:</em> Elon Musk tarzında bir pazarlama e-maili yazın.</p>
+
+<p><strong>Mesaj:</strong> Pazarlama e-mailini Elon Musk tarzında yeniden yaz.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Konu: Yeni Bir Yatırım Macerasına Hazır mısınız?</p>
+
+<p>Merhaba [Potansiyel Müşterinin Adı],</p>
+
+<p>Bu e-posta, finansal hedeflerinizi zirveye taşımak için heyecan verici bir fırsat sunuyor. Benim adım Elon ve şirketim, döviz piyasalarında çığır açan bir değişim yaratmak için burada.</p>
+
+<p>Döviz piyasaları, keşfedilmeyi bekleyen sonsuz fırsatlarla doludur. Ancak bu fırsatları en iyi şekilde değerlendirmek için doğru strateji ve uzmanlık gereklidir. İşte bu noktada devreye biz giriyoruz. [FX Danışmanlık Firması Adı], size finansal başarı yolculuğunuzda rehberlik etmek ve en iyi getiriyi elde etmek için burada.</p>
+
+<p>Bizimle çalışmanın size sağlayacağı faydalar arasında:</p>
+
+<ul>
+  <li>Kişisel finansal hedeflerinizi belirleyip bu hedeflere ulaşmanızı sağlayacak özel stratejilerin oluşturulması</li>
+  <li>Döviz piyasalarında uzman ekibimizin size sağlayacağı güncel analizler ve raporlar</li>
+  <li>Portföyünüzü optimize etmek ve riskleri yönetmek için profesyonel tavsiyeler</li>
+  <li>Yatırım dünyasında yeni bir maceraya adım atma fırsatı</li>
+</ul>
+
+<p>Finansal başarıya giden bu heyecan verici yolculuğa sizinle birlikte çıkmak için sabırsızlanıyorum. Hedeflerinizi paylaşın ve nasıl birlikte çalışabileceğimizi keşfedelim.</p>
+
+<p>Geleceğe birlikte yolculuk etmek için hazır mısınız?</p>
+
+<p>Görüşmek üzere,</p>
+
+<p>Elon Musk
+[FX Danışmanlık Firması Adı]
+[Tel. No.]
+[E-posta Adresi]</p>
+
+<hr />
+
+<p><em>Örnek:</em> Müşteri hizmetleri e-mail leri ve şablon oluşturma</p>
+
+<p>Bunu, e-mailleri yanıtlamak için canlı bir araç olarak kullanabileceğiniz gibi, müşteri hizmetlerinizin belirli bir sorgu türü için kullanabileceği şablonlar da oluşturabilirsiniz. Aşağıda, mağaza politikanıza aykırı olan, para iadesi isteyen bir kullanıcının örneğini vereceğim.</p>
+
+<p><strong>Mesaj:</strong> Para iadesi isteyen müşteriye, şirket politikasında para iadesi olmadığını belirten kibar ama kesin bir e-posta yaz.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Sayın [Müşteri],</p>
+
+<p>Öncelikle bize ulaştığınız için teşekkür ederiz. Müşteri memnuniyeti bizim için son derece önemlidir ve sizin geri bildiriminiz değerlidir.</p>
+
+<p>Ancak, üzülerek belirtmek isterim ki, şirketimizin mevcut politikası gereği para iadesi yapılmamaktadır. Bu politika, şirketimizin işleyişini düzenlemekte ve tüm müşterilerimize adil bir şekilde hizmet sunmamıza olanak sağlamaktadır.</p>
+
+<p>Lütfen anlayışınızı ve sabrınızı gösterdiğiniz için teşekkür ederim. Yaşadığınız durumu daha fazla incelemek ve size alternatif çözümler sunabilmek adına elimizden geleni yapacağız. Lütfen, herhangi bir konuda daha fazla yardımcı olabileceğimiz bir şey varsa bize bildirin.</p>
+
+<p>Size tekrar teşekkür eder, anlayışınız için minnettarız.</p>
+
+<p>Saygılarımla,</p>
+
+<p>[Adınız]
+[Müşteri Hizmetleri Temsilcisi]
+[Şirket Adı]
+[Tel. Numarası]
+[E-posta Adresi]</p>
+
+<hr />
+
+<h2 id="blog-yazıları">Blog Yazıları</h2>
+
+<p>Diyelim ki hedef kitleniz için ilgi çekici bir blog yazısı yazmak istiyorsunuz ancak yüksek kaliteli bir blog yazısı oluşturmak oldukça uzun zaman alan zorlu bir iştir; yapmanız gerekenler:</p>
+
+<ul>
+  <li>Hedef kitleniz için hem ilginç hem de alakalı bir konu seçin.</li>
+  <li>Seçtiğiniz konu hakkında saygın kaynakları kullanarak kapsamlı bir araştırma yapın.</li>
+  <li>Başlıkları, alt başlıkları, madde işaretlerini ve listeleri kullanarak topladığınız bilgileri mantıksal bir yapı halinde düzenleyin.</li>
+  <li>Açık ve ilgi çekici bir giriş yazın.</li>
+  <li>Dilbilgisi, yazım ve netlik açısından düzenleyin ve düzeltin ve kaynaklardan doğru şekilde alıntı yaptığınızdan emin olun.</li>
+  <li>Anahtar kelimeleri ve meta etiketlerini kullanarak yazıları arama motorları için optimize edin.</li>
+  <li>Gönderiyi yayınlayın, sosyal medyada ve diğer platformlarda paylaşın ve hedef kitleyle etkileşim oluşturmak için yorumları ve geri bildirimleri teşvik edin.</li>
+</ul>
+
+<p>Ancak artık bu işlerin çoğu tek bir tıklamayla sizin yerinize yapılabilir.</p>
+
+<p><em>Örnek:</em> Arama hacmi yüksek ancak rekabeti düşük anahtar kelimeler kullanan, nişinizdeki bir blog yazısı için fikirler.</p>
+
+<p><strong>Mesaj:</strong> Drone’lar için yüksek arama hacmi ve düşük rekabetli anahtar kelimeler için bana 5 blog yazısı fikri ver.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Tabii ki, işte drone’larla ilgili yüksek arama hacmi olan ve düşük rekabete sahip anahtar kelimelerle ilgili beş blog yazısı fikri:</p>
+
+<ul>
+  <li>“Evde Drone Uçurmanın Keyfini Çıkarın: Başlangıç İçin En İyi Mini Drone Modelleri”</li>
+  <li>“Drone Fotoğrafçılığına Giriş: İpuçları ve Püf Noktaları”</li>
+  <li>“Drone Teknolojisinin Geleceği: Endüstriyel Kullanımlar ve Yenilikler”</li>
+  <li>“Drone ile Tarım: Tarım Endüstrisindeki Gelecek Trendler ve Verimlilik Artışı”</li>
+  <li>“Drone’lar ve Güvenlik: Hava Sahasında Riskleri Azaltmak İçin En İyi Uygulamalar ve Yasal Yönler”</li>
+</ul>
+
+<p>Bu konular arasında gezinirken, seçtiğiniz anahtar kelimelerin arama hacmi ve rekabet seviyelerini dikkate alarak içeriğinizi optimize etmeyi unutmayın!</p>
+
+<hr />
+
+<p><em>Örnek:</em> Blog yazısı taslağı yazmak.</p>
+
+<p>Diyelim ki 4 numarayı beğendiniz ve bir yazı yazmak istiyorsunuz. İşte yapmanız gerekenler, ondan bir taslak oluşturmasını isteyebilirsiniz (bunu daha sonra tüm blogu oluşturmak için kullanabilirsiniz - bir sonraki örnekte göstereceğim).</p>
+
+<p><strong>Mesaj:</strong> “Drone ile Tarım: Tarım Endüstrisindeki Gelecek Trendler ve Verimlilik Artışı” başlıklı bir blog yazısı için 7 paragraflık bir taslak yaz.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Günümüz tarım endüstrisinde, drone teknolojisinin giderek artan bir önemi var. Bu teknolojinin tarım alanında sunduğu olanaklar, gelecek trendler üzerinde belirleyici bir etkiye sahip olabilir. İşte tarım endüstrisindeki drone kullanımının gelecekteki trendleri ve bu trendlerin tarımsal verimlilik üzerindeki etkisi hakkında bir derleme.</p>
+
+<ol>
+  <li><strong>Verimlilik Artışı ve İş Gücü Tasarrufu:</strong> Drone’lar, tarım arazilerini hızlı ve etkili bir şekilde tarayarak verimliliği artırabilir ve iş gücü maliyetlerini düşürebilir. Özellikle büyük çiftliklerde, drone’larla yapılan izleme ve analizler, zaman ve emek tasarrufu sağlayarak çiftçilere daha fazla olanak sunabilir.</li>
+  <li><strong>Hastalık ve Zararlı Tespiti:</strong> Drone’lar, tarım arazilerini havadan tarayarak bitki hastalıkları ve zararlı böceklerin tespit edilmesine yardımcı olabilir. Bu, çiftçilere erken uyarı sağlayarak zararların minimize edilmesine ve verimliliğin artırılmasına olanak tanır.</li>
+  <li><strong>Precise Agriculture ve Veri Analitiği:</strong> Drone’lar, hassas tarım uygulamalarını desteklemek için kullanılabilir. Hassas tarım, tarım arazilerinin ihtiyaçlarına göre daha hassas bir şekilde yönetilmesini sağlar. Drone’lar tarafından sağlanan veriler, çiftçilere toprak verimliliği, bitki büyüme oranları ve sulama gereksinimleri gibi önemli bilgileri sunarak daha akıllı tarım kararları alınmasını sağlar.</li>
+  <li><strong>Sürdürülebilirlik ve Çevresel Etkiler:</strong> Drone teknolojisinin kullanımı, tarım uygulamalarının çevresel etkilerini azaltabilir. Hassas tarım teknikleri sayesinde, su ve kimyasal kullanımı optimize edilebilir, bu da toprak erozyonu ve çevresel kirliliği azaltabilir.</li>
+  <li><strong>Gelecek İnovasyonlar ve Gelişmeler:</strong> Drone teknolojisindeki sürekli gelişmeler, tarım endüstrisinde daha fazla yeniliğin kapılarını açabilir. Örneğin, yapay zeka ve makine öğrenimi gibi teknolojilerin drone’larla entegre edilmesi, tarımın daha da otomatikleşmesine ve verimliliğin artmasına olanak tanır.</li>
+  <li><strong>Regülasyon ve Yasal Uyum:</strong> Gelecekte, drone teknolojisinin tarım endüstrisinde daha yaygın bir şekilde kullanılmasıyla ilgili regülasyonlar ve yasal uyum önem kazanacaktır. Çiftçilerin, drone’larını kullanırken mevzuata uygun hareket etmeleri ve veri gizliliğine dikkat etmeleri gerekecektir.</li>
+  <li><strong>Eğitim ve Bilinçlendirme:</strong> Gelecekte, drone teknolojisinin tarım endüstrisinde daha yaygın bir şekilde benimsenmesi için eğitim ve bilinçlendirme önemli olacaktır. Çiftçilere drone kullanımı konusunda eğitim vermek ve teknolojinin avantajlarını vurgulamak, bu teknolojinin daha geniş bir şekilde benimsenmesini sağlayabilir.</li>
+</ol>
+
+<p>Drone teknolojisinin tarım endüstrisindeki geleceği oldukça heyecan verici görünüyor. Verimlilik artışı, çevresel sürdürülebilirlik ve yenilikçi uygulamaların tarımı daha verimli ve etkili hale getireceği görülüyor. Bu nedenle, çiftçilerin drone teknolojisine yatırım yapmaları ve bu teknolojinin sunduğu fırsatları değerlendirmeleri önemlidir.</p>
+
+<hr />
+
+<p><em>Örnek:</em> Blog yazısı yazmak.</p>
+
+<p>Şimdi yukarıdaki taslağı kullanarak tam bir blog yazısı oluşturabiliriz. Yazıyı tek seferde oluşturmasını istemek yerine bu şekilde yapılandırmak önemlidir çünkü daha sonra yazıyı uygun gördüğünüz şekilde kolayca yeniden yapılandırabilir ve yapay zekanın daha tutarlı bir yapı oluşturmasını sağlayabilirsiniz.</p>
+
+<p><strong>Mesaj:</strong>  SEO’nun uygulandığı ayrıntılı bir blog yazısı oluşturmak için yukarıdaki taslağı kullan.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Günümüzde tarım endüstrisi, teknolojinin sunduğu yeniliklerle sürekli olarak dönüşüyor ve bu dönüşümün merkezinde drone teknolojisi bulunuyor. Tarım sektöründeki drone kullanımı, gelecekteki trendleri belirleyecek ve tarımsal verimliliği artıracak önemli bir rol oynayabilir. Bu yazıda, tarım endüstrisindeki drone kullanımının gelecekteki trendlerini ve bu trendlerin tarım verimliliğine nasıl katkı sağlayabileceğini inceleyeceğiz.</p>
+
+<ol>
+  <li><strong>Verimlilik Artışı ve İş Gücü Tasarrufu:</strong> Drone’lar, tarım arazilerini hızlı ve etkili bir şekilde tarayarak verimliliği artırabilir ve iş gücü maliyetlerini düşürebilir. Özellikle büyük çiftliklerde, drone’larla yapılan izleme ve analizler, zaman ve emek tasarrufu sağlayarak çiftçilere daha fazla olanak sunabilir. Bu nedenle, tarım işletmelerinin drone teknolojisine yatırım yapması, uzun vadede büyük tasarruflar sağlayabilir.</li>
+  <li><strong>Hastalık ve Zararlı Tespiti:</strong> Drone’lar, tarım arazilerini havadan tarayarak bitki hastalıkları ve zararlı böceklerin tespit edilmesine yardımcı olabilir. Bu, çiftçilere erken uyarı sağlayarak zararların minimize edilmesine ve verimliliğin artırılmasına olanak tanır. Bu tür bir erken uyarı sistemi, tarım işletmelerinin kayıplarını azaltabilir ve ürün kalitesini artırabilir, bu da pazar rekabetinde avantaj sağlar.</li>
+  <li><strong>Precise Agriculture ve Veri Analitiği:</strong> Drone’lar, hassas tarım uygulamalarını desteklemek için kullanılabilir. Drone’lar tarafından sağlanan veriler, çiftçilere toprak verimliliği, bitki büyüme oranları ve sulama gereksinimleri gibi önemli bilgileri sunarak daha akıllı tarım kararları alınmasını sağlar. Ayrıca, bu verilerin doğru bir şekilde analiz edilmesi, tarım işletmelerinin verimliliklerini artırmak için stratejik bir avantaj sağlar.</li>
+  <li><strong>Sürdürülebilirlik ve Çevresel Etkiler:</strong> Drone teknolojisinin kullanımı, tarım uygulamalarının çevresel etkilerini azaltabilir. Hassas tarım teknikleri sayesinde, su ve kimyasal kullanımı optimize edilebilir, bu da toprak erozyonu ve çevresel kirliliği azaltabilir. Bu nokta, günümüzde giderek daha fazla önem kazanan çevresel sürdürülebilirlik hedeflerine uyum sağlamak isteyen tarım işletmeleri için önemlidir.</li>
+  <li><strong>Gelecek İnovasyonlar ve Gelişmeler:</strong> Drone teknolojisindeki sürekli gelişmeler, tarım endüstrisinde daha fazla yeniliğin kapılarını açabilir. Örneğin, yapay zeka ve makine öğrenimi gibi teknolojilerin drone’larla entegre edilmesi, tarımın daha da otomatikleşmesine ve verimliliğin artmasına olanak tanır. Bu nedenle, tarım işletmelerinin teknolojiye yatırım yaparak rekabet avantajı elde etmeleri önemlidir.</li>
+  <li><strong>Regülasyon ve Yasal Uyum:</strong> Gelecekte, drone teknolojisinin tarım endüstrisinde daha yaygın bir şekilde kullanılmasıyla ilgili regülasyonlar ve yasal uyum önem kazanacaktır. Çiftçilerin, drone’larını kullanırken mevzuata uygun hareket etmeleri ve veri gizliliğine dikkat etmeleri gerekecektir. Bu, tarım işletmelerinin yasal risklerden kaçınmalarına ve faaliyetlerini güvenli bir şekilde sürdürmelerine yardımcı olabilir.</li>
+  <li><strong>Eğitim ve Bilinçlendirme:</strong> Gelecekte, drone teknolojisinin tarım endüstrisinde daha yaygın bir şekilde benimsenmesi için eğitim ve bilinçlendirme önemli olacaktır. Çiftçilere drone kullanımı konusunda eğitim vermek ve teknolojinin avantajlarını vurgulamak, bu teknolojinin daha geniş bir şekilde benimsenmesini sağlayabilir. Ayrıca, drone kullanımıyla ilgili mevcut yasal düzenlemeler ve en iyi uygulamalar hakkında bilgi sahibi olmaları da önemlidir.</li>
+</ol>
+
+<p>Drone teknolojisinin tarım endüstrisindeki geleceği oldukça heyecan verici görünüyor. Verimlilik artışı, çevresel sürdürülebilirlik ve yenilikçi uygulamaların tarımı daha verimli ve etkili hale getireceği görülüyor. Bu nedenle, tarım işletmelerinin drone teknolojisine yatırım yapmaları ve bu teknolojinin sunduğu fırsatları değerlendirmeleri önemlidir. Unutmayın ki, bu teknolojiyi etkili bir şekilde kullanmak için doğru stratejiyi belirlemek ve uygun eğitimleri almak önemlidir.</p>
+
+<hr />
+
+<p>Blog yazımız hazır ama biraz sıkıcı, bu yüzden bittiğinde başka bir mesaj kullanmaya karar verdim:</p>
+
+<p><strong>Mesaj:</strong> Lütfen bunu daha eğlenceli hale getir ve resmi olmayan ses tonu kullan.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Yahu, tarım dediğin ne ki, dediğinizi duyar gibiyim! Ama bir dakika, havada drone’larla yapılan şeylerle bu işin rengi değişiyor. İşte size tarımın geleceğine dair birkaç cool bilgi!</p>
+
+<ol>
+  <li><strong>Dronelar ile Çiftçilikte Devrim:</strong> Artık çiftlik sahipleri, tarlaları havadan tarayarak işlerini halletmenin yolunu buldu. Drone’lar, bir çırpıda tarlaları tarayıp, işçilerin iş yükünü hafifletiyor. Çoklu çiftlik sahipleri için de işler bu sayede çok daha kolaylaşıyor.</li>
+  <li><strong>Dronelar:</strong> Bitkilerin Doktoru: Eskiden bitkilerle ilgili sorunları anlamak için biraz Sherlock Holmes olmanız gerekiyordu ama şimdi işler değişti. Drone’lar, havadan bitkilerin sağlığını kontrol edip, erken uyarılar vererek çiftçilere yardımcı oluyor. Artık çiftçiler, bitkileri iyileştirmek için biraz James Bond gibi hareket ediyor!</li>
+  <li><strong>Hassas Tarım:</strong> Tam da Adı Üstünde: İşte size biraz da hassas tarım! Drone’larla toprak verimliliğini, bitki büyüme oranlarını ve hatta su ihtiyacını anlamak mümkün. Bu sayede çiftçiler, daha verimli ve akıllıca kararlar alıyor. Eskiden çiftçilik biraz körü körüne yapılan bir işti ama artık biraz daha akıllı hale geldi!</li>
+  <li><strong>Çevreci Tarım:</strong> Doğaya Saygı İlkemiz: Dronelarla tarım yapmak, doğayı da sevindiriyor. Çünkü su ve kimyasal kullanımını daha etkili bir şekilde kontrol edebiliyoruz. Toprak erozyonu ve çevresel kirliliği azaltmak için de bu teknolojiyi kullanıyoruz. Çiftçilik artık biraz daha çevreci bir hale geldi, ne güzel!</li>
+  <li><strong>Dronelar ve Geleceğe Doğru Yolculuk:</strong> Hadi itiraf edelim, gelecekte neler olacağını merak ediyorsunuz değil mi? Dronelarla tarım, sürekli olarak gelişiyor ve yeniliklerle dolu bir geleceğe doğru ilerliyor. Yapay zeka ve makine öğrenimi gibi teknolojilerin de bu işe dahil olmasıyla tarım daha da otomatikleşecek gibi duruyor. Yakında çiftçilerimiz Tom Cruise gibi drone’larla dans edecek!</li>
+  <li><strong>Kurallar ve Eğitim:</strong> Ama unutmayın, bu işin kuralları var! Drone’ları kullanırken yasalara uygun hareket etmek ve veri gizliliğine dikkat etmek önemli. Bir de, drone kullanımıyla ilgili eğitim almak da gerekiyor. Yoksa bir anda havada bir sürü drone uçururken bulabilirsiniz kendinizi!</li>
+</ol>
+
+<p>Dronelarla tarım, gerçekten heyecan verici bir geleceğe doğru ilerliyor. Verimlilik artışı, çevresel sürdürülebilirlik ve daha birçok yenilikçi uygulama, tarımı daha verimli ve eğlenceli bir hale getiriyor. Artık çiftçilerimiz, tarlalarda James Bond gibi hareket ediyorlar ve geleceği şekillendiriyorlar!</p>
+
+<hr />
+
+<p>Bunun çok daha okunaklı ve eğlenceli olduğunu görebilirsiniz.</p>
+
+<h2 id="youtubepodcast-scripti">Youtube/Podcast Scripti</h2>
+
+<p>Daha önce bir youtube videosu veya podcast oluşturduysanız, kayda başlamadan önce bu videoya ne kadar emek harcandığını biliyorsanız, şunları yapmanız gerekir:</p>
+
+<ul>
+  <li>İzleyicinin ilgisini çekecek ilgi çekici bir giriş yazın.</li>
+  <li>Scripti başlıklar ve alt başlıklarla mantıksal bir yapı halinde düzenleyin.</li>
+  <li>Basit ve anlaşılması kolay bir dil kullanın.</li>
+  <li>Videonun sonunda kanalınıza abone olmaları için bir harekete geçirici mesaj oluşturun.</li>
+  <li>Senaryoyu SEO için prova edin, düzenleyin ve optimize edin.</li>
+  <li>Kanalınızın tonu, dili ve mesajıyla tutarlı olmasını sağlayın.</li>
+  <li>Hedef kitlenizde yankı uyandıracak net bir mesajınız olduğundan emin olun.</li>
+</ul>
+
+<p><em>Örnek:</em> Youtube videosu veya podcast’iniz için script oluşturmak.</p>
+
+<p>Blog yazısını kullanmak ve bundan bir video/podcast oluşturmak istediğinizi varsayalım. Blog taslağı için oluşturduğunuz mevcut içeriği kullanabilir ve bunu daha sonra okuyabileceğiniz bir senaryoya dönüştürebilirsiniz!</p>
+
+<p><strong>Mesaj:</strong> “Drone ile Tarım: Tarımın Geleceğini Yükselten Havada Yeni Trendler” başlıklı blog taslağını kullanarak ayrıntılı ve ilgi çekici bir youtube video senaryosu oluştur.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p><strong>Giriş</strong>
+(Müzik ve drone çekimleriyle başlayan enerjik bir intro)
+Seyircilerimiz, bugün tarım dünyasının geleceğini havada yükselten yeni trendlere bir bakış atacağız! Evet, doğru duydunuz, dronelar artık tarım sektöründe büyük bir devrim yaratıyor. Ben [İsim], bu videoda sizleri bu heyecan verici konu hakkında bilgilendireceğim. Hazırsanız, gelin hemen başlayalım!</p>
+
+<p><strong>Tarım Dünyasının Yeni Kahramanları: Dronelar</strong>
+İlk olarak, tarım dünyasının yeni kahramanlarına bir göz atalım: dronelar! Artık tarım arazilerini havadan tarayarak, çiftçilere inanılmaz bir veri sağlıyorlar. Eskiden saatler süren işler, artık birkaç dakika içinde halledilebiliyor. Dronelar, tarım endüstrisini adeta bir bilim kurgu filmine dönüştürüyor!</p>
+
+<p><strong>Hastalık Tespiti ve İyileştirme</strong>
+Dronelar sadece veri toplamakla kalmıyor, aynı zamanda bitkilerdeki hastalıkları ve zararlıları da tespit ediyor. Eskiden, bu tür sorunlarla başa çıkmak gerçek bir kâbus olabilirdi, ama şimdi dronelar sayesinde erken uyarılar alabiliyor ve hasarı minimize edebiliyoruz. Artık çiftçilerimiz, tarlaları daha sağlıklı tutmak için birkaç tıkla bitkilerine müdahale edebiliyorlar!</p>
+
+<p><strong>Hassas Tarımın Gücü</strong>
+Hassas tarım dediğimizde, akla hemen droneların rolü geliyor. Dronelar, tarım arazilerinde toprak verimliliğini, bitki büyüme oranlarını ve sulama gereksinimlerini belirleyerek, çiftçilere daha verimli ve akıllıca kararlar almalarında yardımcı oluyor. Artık her bir bitkiye kişisel bir bakım yapmak mümkün!</p>
+
+<p><strong>Çevresel Sürdürebilirlik</strong>
+Ve tabii ki, dronelarla tarımın çevreye olan katkısını unutmamak gerekiyor. Daha az su ve kimyasal kullanımıyla, dronelar toprak erozyonunu azaltıyor ve doğaya daha az zarar veriyorlar. Tarımın çevreye olan etkisini azaltmak için dronelar gerçekten büyük bir fırsat sunuyor.</p>
+
+<p><strong>Geleceğe Yolculuk</strong>
+Son olarak, geleceğe bir göz atalım. Dronelarla tarımın sürekli olarak geliştiğini ve daha birçok yeniliğin kapıda olduğunu görüyoruz. Yapay zeka ve makine öğrenimi gibi teknolojilerin de dronelarla entegre edilmesi, tarımın daha da otomatikleşmesine ve verimliliğin artmasına olanak tanıyor. Artık tarım dünyası, bilim kurgu filmlerindeki gibi bir geleceğe doğru ilerliyor!</p>
+
+<p><strong>Kapanış</strong>
+Ve işte bu kadar dostlar! “Tarımın Geleceğini Yükselten Havada Yeni Trendler” adlı bu videoyu izlediğiniz için teşekkür ederim. Eğer videoyu beğendiyseniz, beğenmeyi ve kanalıma abone olmayı unutmayın! Bir sonraki videoda görüşmek üzere, hoşça kalın!</p>
+
+<p><strong>Müzik ve Kapanış</strong>
+(Çıkış müziği eşliğinde) Görüşmek üzere dostlar, hoşça kalın!</p>
+
+<hr />
+
+<p>Daha fazla ayrıntıya ihtiyacınız varsa veya oluşturulan senaryo yeterince uzun değilse, mesajı “[konu] hakkında daha fazla ayrıntı içerecek ve daha uzun olacak şekilde yeniden yaz.” şeklinde kullanın.</p>
+
+<h2 id="sosyal-medya-pazarlama">Sosyal Medya Pazarlama</h2>
+
+<p>Günümüzde sosyal medya pazarlaması her girişimci veya işletme sahibi için bir zorunluluktur.</p>
+
+<p>İster sosyal medya pazarlamanızı yönetiyor olun, ister bir ajansta çalışıyor olun, oldukça rekabetçidir.</p>
+
+<p>Bunlar karşılaşacağınız zorluklardan sadece birkaçı:</p>
+
+<ul>
+  <li>Sosyal medya platformlarındaki tüm algoritma değişikliklerine ayak uydurmak gerçek bir baş ağrısı olabilir. Neyin işe yarayıp neyin yaramadığını asla bilemezsiniz, bu yüzden hızlı olmalı ve stratejilerinizi buna göre ayarlamalısınız.</li>
+  <li>Sosyal medya pazarlamasındaki en son trendleri ve yenilikleri takip etmek bir zorunluluktur. Oyun her zaman değişiyor ve geride kalmak istemezsiniz.</li>
+  <li>Hedef kitlenizde yankı uyandıran ilgi çekici içerik bulmak zordur. Paylaşılabilir olduğundan, markaya uygun olduğundan ve amacına ulaştığından emin olmalısınız.</li>
+  <li>Sosyal medya kampanyalarının yatırım getirisini ölçmek gerçekten zor olabilir. Sosyal medya çabalarının bir işletmenin kârı üzerindeki etkisine ilişkin bir rakam vermek zordur.</li>
+  <li>Müşteri beklentilerini yönetmek zor olabilir. Gerçekçi olmayan beklentileri olabilir veya sosyal medya pazarlamasının tüm ayrıntılarını tam olarak anlayamayabilirler.</li>
+  <li>Ajansınız büyüdükçe bir ekibi yönetmek gerçekten zorlayıcı olabilir.</li>
+  <li>Yaratıcılık ve stratejiyi dengelemek çok önemlidir. Müşterinin iş hedeflerini de destekleyen yaratıcı ve ilgi çekici içerikler üretmelisiniz.</li>
+  <li>Müşterileriniz memnun olurken bütçenizi aşabilirsiniz.</li>
+  <li>Olumsuz yorum ve eleştirilerle uğraşmak işin sadece bir parçasıdır, ancak üstesinden gelinmesi zor olabilir.</li>
+</ul>
+
+<p>Örneğin, bir dijital pazarlama ajansı işlettiğinizi ve her zaman müşterilerinizle paylaşacak yeni içerik arayışında olduğunuzu varsayalım.</p>
+
+<p>Profesyonel düzeyde içerik üretmek için ChatGPT’den yararlanarak, müşterileriniz ve nihayetinde işletmemiz için dönüşümleri ve satışları artırabilirsiniz.</p>
+
+<p>Burada birden fazla sosyal medya kanalı için hızlı bir şekilde içerik oluşturmanın yollarına bakacağız.</p>
+
+<p><em>Örnek:</em> Eksiksiz bir pazarlama kampanyası oluşturmak.</p>
+
+<p>Müşterinize spot reklam kampanyası sunmak istiyorsunuz; müşteri yeni bir enerji içeceği piyasaya sürmek istiyor ve kampanyanın nasıl görüneceğine dair bir sunum ve yaklaşık maliyetler istiyor.</p>
+
+<p>Öyleyse “gibi davranarak” bir pazarlama kampanyası oluşturalım.</p>
+
+<p><strong>Mesaj:</strong> Bir reklam ajansı olarak hareket etmeni istiyorum. Seçtiğin bir ürün veya hizmeti tanıtmak için tam ve ayrıntılı bir pazarlama kampanyası oluşturacaksın. Bir hedef kitle belirleyecek, anahtar mesajlar ve sloganlar geliştirecek, tanıtım için medya kanallarını seçecek ve hedeflerine ulaşmak için gereken ek faaliyetlere karar vereceksin. Her sosyal medya kanalındaki reklam maliyetinin yanı sıra CPM ve CPC ücretlerinin en iyi tahminine ilişkin örnekler ver. İlk isteğim “18-30 yaş arası genç yetişkinleri hedef alan yeni bir enerji içeceği türü için reklam kampanyası oluşturma konusunda yardıma ihtiyacım var.”</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p><strong>Hedef Kitle:</strong>
+18-30 yaş arası genç yetişkinler</p>
+
+<p><strong>Anahtar Mesajlar:</strong></p>
+
+<p>Yüksek enerji ve canlılık
+Sağlıklı ve doğal içerikler
+Aktif yaşam tarzını destekleme
+Lezzet ve ferahlık</p>
+
+<p><strong>Slogan:</strong>
+“Canlılık İçin Doğal Güç!”</p>
+
+<p><strong>Tanıtım Stratejisi:</strong></p>
+
+<ol>
+  <li>Sosyal Medya:</li>
+</ol>
+
+<ul>
+  <li>Instagram: Gençlik odaklı içerikler ve görsellerle hedef kitleye ulaşma. Tahmini CPM: $5-10, Tahmini CPC: $0.50-1.50</li>
+  <li>TikTok: Enerjik ve eğlenceli videolarla ürünü tanıtma. Tahmini CPM: $8-15, Tahmini CPC: $0.60-2.00</li>
+  <li>YouTube: Genç yetişkinlere yönelik reklam videoları. Tahmini CPM: $6-12, Tahmini CPC: $0.40-1.50</li>
+</ul>
+
+<ol>
+  <li>Online Platformlar:</li>
+</ol>
+
+<ul>
+  <li>Gençlik odaklı bloglar ve web siteleri: Sponsorlu içerikler ve reklamlar. Tahmini CPM: $7-12, Tahmini CPC: $0.60-1.80</li>
+</ul>
+
+<ol>
+  <li>Etkinlik Sponsorlukları:</li>
+</ol>
+
+<ul>
+  <li>Müzik festivalleri, spor etkinlikleri gibi gençlerin yoğun olduğu etkinliklerde marka tanıtımı yapma.</li>
+</ul>
+
+<ol>
+  <li>Ürün Yerleştirme:</li>
+</ol>
+
+<ul>
+  <li>Popüler gençlik dizileri, filmleri ve YouTube kanallarında ürün yerleştirme.</li>
+</ul>
+
+<p><strong>Ek Faaliyetler:</strong></p>
+
+<ol>
+  <li>İçerik Pazarlaması:</li>
+</ol>
+
+<ul>
+  <li>Blog yazıları, videolar ve infografiklerle enerji içeceğinin faydalarını ve doğal içeriğini vurgulama.</li>
+</ul>
+
+<ol>
+  <li>Kullanıcı Deneyimleri:</li>
+</ol>
+
+<ul>
+  <li>Hedef kitleyle etkileşimi artırmak için online yarışmalar, indirimler ve ücretsiz deneme ürünleri sunma.</li>
+</ul>
+
+<ol>
+  <li>Sürpriz İçerikler:</li>
+</ol>
+
+<ul>
+  <li>Sosyal medya ve dijital platformlarda sürpriz kampanyalar düzenleyerek marka farkındalığını artırma.</li>
+</ul>
+
+<ol>
+  <li>İşbirlikleri:</li>
+</ol>
+
+<ul>
+  <li>Genç ve popüler influencer’larla işbirliği yaparak ürünü tanıtma.</li>
+</ul>
+
+<p>Bu stratejilerle genç yetişkinleri enerji içeceğinizle buluşturabilir ve marka bilinirliğini artırabilirsiniz.</p>
+
+<hr />
+
+<p>Bu oldukça iyi bir başlangıç noktasıdır; size bir slogan, temel mesajların yanı sıra kullanılacak platform ve kanallara genel bir bakış, yaklaşık maliyetler ve faaliyetler hakkında bilgi verir. Timeline istemek ve diğer kanallar için maliyet vermek üzere mesajı değiştirebilir veya hatta en iyi yatırım getirisine dayalı olarak bir bütçe hazırlamasını isteyebilirsiniz.</p>
+
+<p><em>Örnek:</em> Instagram sosyal medya gönderisi.</p>
+
+<p>Müşterinizin her ay özel olarak seçilmiş çevre dostu ve sürdürülebilir ürünler sunan bir abonelik kutusu hizmetini başlattığını hayal edelim. Kutunun içindeki ürünler arasında yeniden kullanılabilen pipetler, balmumu sargıları ve sıfır atık temizlik ürünleri yer alıyor.</p>
+
+<p>Bu hizmete yönelik bir Instagram gönderisi oluşturmak için:</p>
+
+<p><strong>Mesaj:</strong> Bir pazarlama ajansı olarak çevre dostu ve sürdürülebilir abonelik kutusu hizmeti için ilgi çekici bir Instagram gönderisi oluştur.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p><strong>Görsel:</strong> Doğal ve organik temalı bir arka plan üzerinde, geri dönüştürülebilir malzemelerden yapılmış şık bir abonelik kutusu görünüyor. Kutunun üzerinde bitki bazlı mürekkeplerle yazılmış “Doğaya Saygıyla Paketlenmiştir” yazısı bulunuyor.</p>
+
+<p><strong>Açıklama:</strong>
+🌿 Yeşil bir gelecek için adım atın! 🌍 Sürdürülebilirlik bizim için bir yaşam tarzıdır ve her kutumuzda doğaya saygıyla paketlenmiş ürünler sunuyoruz. 🌱 Organik, geri dönüştürülebilir ve çevre dostu içeriklerle dolu abonelik kutularımızla hem kendinize hem de gezegenimize sevgiyle bakın. ♻️
+​
+✔️ Geri dönüştürülebilir ambalajlar
+✔️ Doğal ve organik ürünler
+✔️ Sıfır atık prensibiyle tasarlanmış içerikler</p>
+
+<p>Siz de doğal güzellik ve çevre dostu yaşam tarzını benimsemek için bugün abone olun! 💚 #ÇevreDostu #SürdürülebilirYaşam #DoğayaSaygı #AboneOl</p>
+
+<hr />
+
+<p>Normalde böyle bir şirket tüm sosyal medya platformlarında yer almak ister ve Twitter’da bir gönderi oluşturmak için sıfırdan başlamanız gerekir çünkü ortam çok farklı ve karakter sınırı da var.</p>
+
+<p>Ancak artık ChatGPT’den bunu sizin için yapmasını isteyebilirsiniz. İşte örnek:</p>
+
+<p><em>Örnek:</em> Yeniden tasarlanmış sosyal medya gönderisi - twitter</p>
+
+<p><strong>Mesaj:</strong> Şimdi, bir pazarlama ajansı olarak bunu ilgi çekici bir tweet’e dönüştür.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>🌿 Yeşil bir gelecek için adım atın! 🌍 Sürdürülebilirlik bizim için bir yaşam tarzıdır ve her kutumuzda doğaya saygıyla paketlenmiş ürünler sunuyoruz. ♻️ Organik, geri dönüştürülebilir ve çevre dostu içeriklerle dolu abonelik kutularımızla hem kendinize hem de gezegenimize sevgiyle bakın. 💚 #ÇevreDostu #SürdürülebilirYaşam #DoğayaSaygı #AboneOl</p>
+
+<hr />
+
+<p>Bunu yapmaya devam edebilir, ilk gönderiyi Facebook ve LinkedIn gönderisine veya Pinterest veya TikTok video scripti gibi farklı bir şeye yeniden yönlendirebilirsiniz. Bu, çok fazla zaman tasarrufu sağlayabilir ve aynı zamanda tüm platformlarda minimum çabayla tutarlı bir üslup ve markalamanın kullanılmasını sağlayabilir.</p>
+
+<p>Şimdi el yapımı ürünler satan bir e-ticaret mağazanız olduğunu varsayalım.</p>
+
+<p>Etsy veya mağazanız için ürün açıklamaları oluşturmak amacıyla ChatGPT’yi kullanarak ilgiyi artırabilir ve daha fazla satış sağlayabilirsiniz.</p>
+
+<p>ChatGPT’yi ürünlerinizi tanıtan ve abonelerinize özel indirimler veya promosyonlar sunan e-mail pazarlama kampanyaları oluşturmak için de kullanabilirsiniz.</p>
+
+<p>Pinterest, Twitter ve Instagram gibi platformlar için ilgi çekici paylaşımlar oluşturmak çok daha kolay; daha geniş bir kitleye ulaşabilir ve sadık bir takipçi kitlesine sahip olabilirsiniz.</p>
+
+<p>Bu, özellikle trend olan konulardan ve hashtag’lerden yararlanıyorsanız etkili olabilir; çünkü bu, içeriğinizin viral hale gelmesine ve tonlarca yeni trafik ve gösterim getirmesine yardımcı olabilir.</p>
+
+<p><em>Örnek:</em> Etsy Ürün açıklaması</p>
+
+<p><strong>Mesaj:</strong> El yapımı meşe sandalye için Etsy ürün sayfası oluştur.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p><strong>Ürün Adı:</strong> El Yapımı Meşe Sandalye</p>
+
+<p><strong>Açıklama:</strong></p>
+
+<p>Bu zarif ve sağlam meşe sandalye, ustalıkla el işçiliği ile tasarlanmıştır. Doğal meşe ağacından yapılan sandalye, sıcak ve rustik bir görünüme sahiptir. Her bir detayı özenle işlenmiş olan sandalye, hem estetik hem de dayanıklılık açısından mükemmel bir seçenektir. Yüksek kaliteli malzemeler kullanılarak üretilmiş olup, uzun yıllar boyunca kullanılabilir.</p>
+
+<p><strong>Özellikler:</strong></p>
+
+<p>Malzeme: Doğal meşe ağacı
+Boyutlar: Yükseklik: 90 cm, Genişlik: 45 cm, Derinlik: 50 cm
+Renk: Doğal ahşap tonları
+Stil: Rustik, El yapımı</p>
+
+<p><strong>Özel Talepler:</strong></p>
+
+<p>Özel boyutlar veya renkler için lütfen bizimle iletişime geçin.</p>
+
+<p><strong>Nasıl Bakılır:</strong></p>
+
+<p>Doğal ahşap koruyucu yağı ile düzenli olarak temizleyin ve bakımını yapın.
+Aşırı nem ve doğrudan güneş ışığından koruyun.</p>
+
+<p><strong>Neden Bizi Tercih Etmelisiniz:</strong></p>
+
+<p>El işçiliği ile titizlikle üretilmiştir.
+Yüksek kaliteli malzemeler kullanılmıştır.
+Rustik ve şık tasarımıyla her dekorasyona uyum sağlar.
+Dayanıklı ve uzun ömürlüdür.</p>
+
+<p><strong>Gönderim ve İade Politikası:</strong></p>
+
+<p>Ürün, özel olarak koruyucu ambalaj içinde gönderilecektir.</p>
+
+<p>İade politikamız hakkında detaylı bilgi için lütfen bizimle iletişime geçin.</p>
+
+<p><strong>Not:</strong> Her bir sandalye el yapımı olduğundan, küçük farklılıklar olabilir ve bu da her ürünün benzersizliğini artırır.</p>
+
+<p><strong>Fiyat:</strong> $250</p>
+
+<p><strong>Ürün Fotoğrafları:</strong>
+[Ekleyebileceğiniz ürün fotoğrafları]</p>
+
+<p><strong>Satın Alma Bağlantısı:</strong> [Etsy mağaza linki]</p>
+
+<hr />
+
+<h2 id="diyetbeslenmekişisel-eğitim">Diyet/Beslenme/Kişisel Eğitim</h2>
+
+<p>Bir diyet planına ihtiyacınız varsa ancak araştırma yapacak vaktiniz yoksa ve diyetisyene ödeme yapmak istemiyorsanız, sormanız yeterli. Karbonhidrat, keto, makrolar, kalori açığı veya anlaşılması uzun zaman alabilecek ve hatta size özel uygun bir plan oluşturmak gibi daha da uzun sürebilecek şeyler hakkında okuma yapmanıza gerek kalmayacak!</p>
+
+<p>Aynı şey egzersiz için de geçerli, ya kişisel bir antrenör bulmanız ya da kas gruplarını ve egzersiz isimlerini anlamaya çalışmak için saatler harcamanız gerekiyor.</p>
+
+<p>Burada birey için bir diyet planı oluşturacağız ve ardından chatGPT’nin neden bir diyet planını Google’da aramanızdan çok daha faydalı olduğunu göstereceğiz, çünkü şimdi, diyet planı da dahil olmak üzere her şeyi hesaba katan özel bir egzersiz rejimi oluşturmasını isteyebilirsiniz!</p>
+
+<p><em>Örnek:</em> Kişiye özel diyet planı/planları</p>
+
+<p><strong>Mesaj:</strong> Bir diyetisyen olarak bana, 35 yaşında, 100 kg ağırlığında ve 1.80 boyunda vejetaryen bir erkek için kalori dökümü içeren 2 haftalık bir diyet planı hazırla. Haftada 2 kilo vermek istiyorum. Makroları %50 karbonhidrat, %15 yağ ve %35 protein seviyesinde tut.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p><strong>Diyet Planı: 1. Hafta</strong></p>
+
+<p><strong>Günlük Kalori Hedefi:</strong> 1800 kcal</p>
+
+<p><strong>Kahvaltı:</strong></p>
+
+<p>Yulaf ezmesi: 50g (180 kcal)
+Yarım bardak yaban mersini: (40 kcal)
+Badem sütü: 1 bardak (60 kcal)
+1 dilim tam buğday ekmeği: (70 kcal)
+Toplam: 350 kcal</p>
+
+<p><strong>Ara Öğün:</strong></p>
+
+<p>1 adet elma: (80 kcal)</p>
+
+<p><strong>Öğle:</strong></p>
+
+<p>Izgara tofu: 150g (180 kcal)
+Kinoa salatası (domates, salatalık, biber, yeşillikler): (200 kcal)
+Zeytinyağlı limonlu sos: (50 kcal)
+Toplam: 430 kcal</p>
+
+<p><strong>Ara Öğün:</strong></p>
+
+<p>Tam buğday kraker: 30g (120 kcal)
+Humus: 2 yemek kaşığı (70 kcal)</p>
+
+<p><strong>Akşam Yemeği:</strong></p>
+
+<p>Mercimek köfte: 200g (300 kcal)
+Bulgur pilavı: 1 porsiyon (150 kcal)
+Yeşil salata: (50 kcal)
+Zeytinyağlı limonlu sos: (50 kcal)
+Toplam: 550 kcal</p>
+
+<p><strong>Ara Öğün:</strong></p>
+
+<p>1 adet muz: (100 kcal)
+Toplam Günlük Kalori: 1800 kcal</p>
+
+<p><strong>Diyet Planı: 2. Hafta</strong></p>
+
+<p><strong>Günlük Kalori Hedefi:</strong> 1600 kcal</p>
+
+<p>(Günlük kalori miktarını azaltarak haftalık 2 kilo kaybını hedefliyoruz.)</p>
+
+<p>(Öğünlerin içeriğini hafta boyunca değiştirmek için yukarıdaki örnekleri kullanabilir ve porsiyonları ayarlayabilirsiniz.)</p>
+
+<p>Bu diyet planı, 35 yaşında, 100 kg ağırlığında ve 1.80 boyundaki vejetaryen bir erkeğin haftada 2 kilo kaybetmesine yardımcı olacak şekilde tasarlanmıştır. Ancak, her bireyin metabolizması farklı olduğundan ve sağlık durumları da dikkate alınması gerektiğinden, bu planı uygulamadan önce bir sağlık uzmanına danışmanız önemlidir.</p>
+
+<hr />
+
+<p>Ne kadar süre istediğinize bağlı olarak diyet planınızın bir kısmını oluşturduktan sonra durursa, “devam et” yazmanız yeterli; plan oluşturmaya devam edecektir.</p>
+
+<p><em>Örnek:</em> Kişiye özel egzersiz planı oluşturmak.</p>
+
+<p>Şimdi yapmanız gereken tek şey, chatGPT’nin yukarıdaki bağlamı kullanmasına izin vermek ve yalnızca vücudunuza ve planlarınıza göre uyarlanmış bir şey değil, aynı zamanda diyetinizi de hesaba katan bir şey oluşturmasına izin vermektir.</p>
+
+<p><strong>Mesaj:</strong> Şimdi diyeti aklında tutarak aynı kişi için bir egzersiz planı oluştur.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Tabii, diyeti desteklemek ve haftada 2 kilo kaybını hedefleyen bir kişi için uygun bir egzersiz planı oluşturalım. İşte önerilen egzersiz programı:</p>
+
+<p><strong>Haftalık Egzersiz Planı:</strong></p>
+
+<p><strong>Pazartesi: Kardiyo Egzersizleri</strong></p>
+
+<ul>
+  <li>30 dakika yürüyüş: Orta tempo, düz bir zeminde</li>
+  <li>20 dakika bisiklet: Düşük direnç, hızlı tempo</li>
+</ul>
+
+<p><strong>Salı: Dayanıklılık Egzersizleri</strong></p>
+
+<ul>
+  <li>3 set 12 tekrar squat</li>
+  <li>3 set 12 tekrar lunges (her bacak için)</li>
+  <li>3 set 12 tekrar şınav</li>
+  <li>3 set 12 tekrar plank (30 saniye)</li>
+</ul>
+
+<p><strong>Çarşamba: Dinlenme veya Hafif Aktivite</strong></p>
+
+<ul>
+  <li>Yürüyüş, yoga veya gevşeme egzersizleri gibi hafif aktiviteler</li>
+</ul>
+
+<p><strong>Perşembe: Kardiyo Egzersizleri</strong></p>
+
+<ul>
+  <li>30 dakika koşu: Orta tempo, düz bir zeminde veya koşu bandında</li>
+  <li>20 dakika ip atlama</li>
+</ul>
+
+<p><strong>Cuma: Güç Egzersizleri</strong></p>
+
+<ul>
+  <li>3 set 12 tekrar deadlift</li>
+  <li>3 set 12 tekrar bench press</li>
+  <li>3 set 12 tekrar kettlebell swing</li>
+  <li>3 set 12 tekrar leg press</li>
+</ul>
+
+<p><strong>Cumartesi: Esneklik ve Denge Egzersizleri</strong></p>
+
+<ul>
+  <li>20 dakika yoga veya pilates: Esneklik ve denge egzersizleri</li>
+</ul>
+
+<p><strong>Pazar: Aktif Dinlenme</strong></p>
+
+<ul>
+  <li>Doğa yürüyüşü, bisiklet sürme veya hokey gibi keyifli bir aktiviteyle geçirin.</li>
+</ul>
+
+<p>Bu egzersiz planı, kardiyo, dayanıklılık, güç, esneklik ve denge egzersizlerini kapsayarak genel bir fitness sağlar. Haftada 5 gün egzersiz yapılması, bir günün dinlenmeye ayrılması ve aktif dinlenme günleriyle dengelenmesi, vücudun dinlenmeye ve toparlanmaya ihtiyacı olduğunu unutmamak önemlidir. Egzersiz programını uygularken vücudunuzu dinleyin ve gerektiğinde uygun ayarlamalar yapın.</p>
+
+<hr />
+
+<p>Harika! Ayrıca diyeti tamamlayacağını da belirtiyor ki bu hoş bir dokunuş.</p>
+
+<h2 id="ders-planları">Ders Planları</h2>
+
+<p>Öğretmen olmak zor, az maaş alıyorsunuz, ebeveynler ile uğraşmanız, ödev ve testler hazırlamanız gerekiyor!</p>
+
+<p>İster bir okul öğretmeni, ister özel öğretmen olun, ya da sadece çevrimiçi bir kurs oluşturuyor olun ve ders planları oluşturmak için saatler harcamak mı istiyorsunuz? Artık şunları yapmanıza gerek yok:</p>
+
+<p><em>Örnek:</em> Özel ders planı</p>
+
+<p><strong>Mesaj:</strong> 5. sınıf fen bilimleri dersi için 4 seçenekli 50 çoktan seçmeli soru oluştur.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<ol>
+  <li>
+    <p>Soru: Fotosentez nedir?
+a) Bitkilerin beslenme şekli
+b) Güneş ışığının toprakta depolanması
+c) Bitkilerin oksijen üretmesi
+d) Toprağın suyu emmesi</p>
+  </li>
+  <li>
+    <p>Soru: İnsan vücudu hangi sistemlerden oluşur?
+a) Sindirim ve solunum sistemi
+b) Dolaşım ve sinir sistemi
+c) İskelet ve kas sistemi
+d) Böbrek ve karaciğer sistemi</p>
+  </li>
+  <li>
+    <p>Soru: Hangisi bir doğal afet değildir?
+a) Deprem
+b) Tsunami
+c) Tornado
+d) Yangın</p>
+  </li>
+  <li>
+    <p>Soru: Hangi madde suyu dondurmak için kullanılabilir?
+a) Şeker
+b) Tuz
+c) Yağ
+d) Un</p>
+  </li>
+  <li>
+    <p>Soru: Hangisi çevreye zararlı atıkların geri dönüştürülmesiyle ilgili bir örnektir?
+a) Kâğıt ve kartonların geri dönüştürülmesi
+b) Plastik poşetlerin doğaya atılması
+c) Cam şişelerin doğada çözünmesi
+d) Alüminyum kutuların yakılması</p>
+  </li>
+</ol>
+
+<hr />
+
+<p>Burada yalnızca ilk 5 soruyu listeliyorum, ancak soru sayısını, soru türünü ve karmaşıklık düzeyini belirtebilir ve bunu istediğiniz kadar soru/test oluşturmak için kullanabilirsiniz.</p>
+
+<h2 id="kodlama">Kodlama</h2>
+
+<p>Hiç yazılım fikriniz oldu mu, ancak kodlamayı öğrenmek çok göz korkutucu geldi ve bir geliştiriciyi işe almak çok pahalıydı ya da daha kötüsü fikrinizin çalınacağından endişelendiniz.</p>
+
+<p>Artık ChatGPT ile talimatları takip etmeyi öğrenebilirseniz, hemen hemen istediğiniz her şeyi kodlayabilirsiniz. Bir sonraki bölümde daha karmaşık bir örneğe gireceğiz, ancak bu şimdi üzerinde çalışabileceğiniz bir şey olmalı.</p>
+
+<p>Örnek : Kodlama örneği fizz buzz</p>
+
+<p>Daha önce yazılım geliştirdiyseniz fizz buzz’a aşinasınızdır. Bilmeyenler için bu, yazılım geliştiricilere sorulan klasik bir mülakat sorusudur, oldukça giriş seviyesidir ancak spesifik değilseniz yanlış anlamanız oldukça kolaydır.</p>
+
+<p>Görev, 1’den 100’e kadar olan her rakam için, sayı 3’e bölünüyorsa “fizz”, 5’e bölünüyorsa “buzz” ve her ikisine de bölünüyorsa “fizzbuzz” yazdıran bir program yazmaktır.</p>
+
+<p>Bu yüzden chatGPT’yi fizz buzz testine tabi tutmaya karar verdim - ve python bunu çok kolaylaştırdığı için c++ kullandım.</p>
+
+<p><strong>Mesaj:</strong> C++ dilinde, 1’den 100’e kadar olan her rakam için, sayı 3’e bölünüyorsa “fizz”, 5’e bölünüyorsa “buzz” ve her ikisine de bölünüyorsa “fizzbuzz” yazdıran bir program yaz.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<pre>
+int main() {
+    for (int i = 1; i &lt;= 100; ++i) {
+        if (i % 3 == 0 &amp;&amp; i % 5 == 0) {
+            std::cout &lt;&lt; "FizzBuzz" &lt;&lt; std::endl;
+        } else if (i % 3 == 0) {
+            std::cout &lt;&lt; "Fizz" &lt;&lt; std::endl;
+        } else if (i % 5 == 0) {
+            std::cout &lt;&lt; "Buzz" &lt;&lt; std::endl;
+        } else {
+            std::cout &lt;&lt; i &lt;&lt; std::endl;
+        }
+    }
+    return 0;
+}
+</pre>
+
+<p>Bu program, 1’den 100’e kadar olan her sayı için koşullara göre “Fizz”, “Buzz” veya “FizzBuzz” yazdırır. i değişkeni 1’den başlayarak 100’e kadar artar. Her bir sayı, önce 3 ve 5’e bölünüp bölünmediğine bakılır ve ardından bu koşullara göre ekrana yazdırılır.</p>
+
+<hr />
+
+<p>Programı çalıştırmak istiyor ancak nasıl yapılacağından emin değilseniz, chatGPT’ye “Bunu nasıl çalıştırırım” diye sormanız yeterli.</p>
+
+<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Girişimci, serbest çalışan, startup veya hatta küçük bir kobi iseniz, genellikle birçok farklı şeyin nasıl yapılacağını öğrenmesi gereken tek kişilik bir grupsunuzdur, bu sonsuza kadar sürer ya da işi outsource ederiz. Bu işe yarar ancak pahalıdır ve aynı türden işler tekrar ortaya çıkarsa ve en son kullandığınız freelancer mevcut değilse süreklilik eksikliği söz konusudur.]]></summary></entry><entry><title type="html">Heroku’da Vite Uygulaması Nasıl Deploy Edilir?</title><link href="http://localhost:4000/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir.html" rel="alternate" type="text/html" title="Heroku’da Vite Uygulaması Nasıl Deploy Edilir?" /><published>2024-02-19T00:00:00+03:00</published><updated>2024-02-19T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir</id><content type="html" xml:base="http://localhost:4000/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir.html"><![CDATA[<p>Eğer benim gibi yakın zamanda Laravel’in yeni bir kopyasını indirdiyseniz, muhtemelen Mix’in yerini Vite’ın aldığını fark etmişsinizdir.</p>
 
 <p>Jetstream’in yeni sürümünü yüklediğimde bu bende kafa karışıklığına neden oldu, çünkü hem localde hem de Heroku’ya deploy ettiğimde her şey hizasız görünüyordu.</p>
 
@@ -62,81 +942,430 @@ heroku config:set LOG_CHANNEL=errorlog
 
 <pre>heroku logs -t</pre>
 
-<p>Okuduğunuz için teşekkürler.</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.]]></summary></entry><entry><title type="html">API Gateway Nedir?</title><link href="http://localhost:4000/2024/02/11/api-gateway-nedir.html" rel="alternate" type="text/html" title="API Gateway Nedir?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/api-gateway-nedir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/api-gateway-nedir.html"><![CDATA[<p>Yazılım için bu devrim niteliğindeki çağda, yeni mimari pattern’lerin ortaya çıkma hızı, işletmelerin artık hizmetleri oluşturma, devreye alma ve tüketme yöntemlerini önemli ölçüde etkiledi. Bu değişiklikler aynı zamanda proje iş akışlarına yönelik yenilikçi yaklaşımları memnuniyetle karşılayarak DevOps ve mühendislik ekiplerine API yaşam döngülerinin temel alanlarını otomatikleştirme ve karmaşıklığı genel olarak basitleştirme kapılarını açtı. Çözüm? API Gateway.</p>
+<p>Okuduğunuz için teşekkürler.</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.]]></summary></entry><entry><title type="html">WSL Nedir ve Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html" rel="alternate" type="text/html" title="WSL Nedir ve Nasıl Kullanılır?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html"><![CDATA[<p>Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.</p>
 
-<p>API Gateway, mikroservis mimarisinde istemci uygulamaları ile backend servisleri arasında aracı görevi görür. İstek oluşturma, yönlendirme ve protokol çevirisi gibi görevleri yerine getiren çeşitli API’ler için tek bir endpoint işlevi gören bir yazılım katmanıdır. API Gateway, güvenlik politikalarını uygularken API’lerin trafiğini yöneterek istekleri ve yanıtları kontrol eder. Bu, geliştiricilerin karmaşık API ağları tarafından engellenmek yerine bireysel hizmetler oluşturmaya odaklanmalarına yardımcı olan tek bir merkezi kontrol noktası sağlayarak API yönetimini basitleştirir.</p>
+<h2 id="sadece-bir-sanal-makine-değil">Sadece Bir Sanal Makine Değil</h2>
 
-<p><img src="/assets/images/2024/02/why-do-microservices-need-an-api-gateway.png" alt="API Gateway" title="Mikroservislerin neden bir API Gateway'e ihtiyacı var?" class="img-fluid" /></p>
+<p>WSL’nin ne olmadığıyla başlayalım; örneğin, Ubuntu’yu VirtualBox’ta çalıştırarak elde edebileceğiniz tam bir Linux masaüstü deneyimi değildir. Performans nedenleriyle teknik olarak sanallaştırmayı kullanır, ancak tam bir VM çalıştırmaktan çok farklıdır. Her şey sizin için yönetilir ve işinizi yapmanız ve git, ssh gibi tanıdık bash komutlarını kullanmanız için basit bir shell ve environment sağlar.</p>
 
-<h2 id="api-gateway-nasıl-çalışır">API Gateway Nasıl Çalışır?</h2>
+<p>Temel olarak WSL, app store’dan bir uygulama olarak tam bir Linux dağıtımı kurmanıza olanak tanır. Ubuntu’yu (veya tercih ettiğiniz dağıtımı) indirebilir, kurabilir ve başlatabileceğiniz bir uygulama veya terminalinizde CMD veya Powershell ile birlikte çalışacak bir profil olarak kullanıma sunabilirsiniz.</p>
 
-<p>Günümüzün yazılım sistemlerinin güzelliği, karmaşık işlemleri kolaylıkla gerçekleştirme yeteneklerinde yatmaktadır.</p>
+<p>En basit açıklaması “Windows’ta bash çalıştırmanıza izin vermesi” olsa da, bir kabuktan daha fazlasıdır; apt kullanarak programları yükleyebilir ve normal bir Linux örneği gibi özelleştirebilirsiniz.</p>
 
-<p>Bu yenilikçi teknoloji, istemciler ve backend servisleri arasında bir tampon görevi görerek tüm hata algılama prosedürlerini yerine getirirken aynı zamanda gerektiğinde erişim denetimi sağlar. Bunun temelinde, istek yoluna ve diğer ilgili faktörlere dayalı olarak uygun yönlendirmeyi sağlayan iyi yapılandırılmış bir mimari yer alır. Mikroservis mimarisinin temel özelliği, birden çok bağımsız servisten oluşan bir ekosistem içindeki verimli iletişim yönteminde yatar. İsteğin alınması üzerine, backend servisi, işlemi tamamlandıktan sonra API Gateway aracılığıyla yanıtları geri gönderir. Bu adımdan sonra, Api Gateway, bu çıktıları ilgili tarafa geri aktarmadan önce analiz ederek ve tek bir bileşik endpoint kullanarak işi devralır. Ayrıca, API Gateway yalnızca güvenilir bir cluster sağlamakla kalmaz, aynı zamanda istekleri kabul eden ve eylemleri buna göre yönlendiren bir proxy sunucu olarak çalışma gibi seçeneklere de sahiptir.</p>
+<p>WSL, geliştiricilere ve bash kullanıcılarına, Windows’u birincil işletim sistemi olarak kullanmak zorunda kalmalarına rağmen Linux shell deneyimi sunmayı amaçlamaktadır. Daha kolay komut satırı erişimi için bir Linux shell’inin yanı sıra Visual Studio gibi Windows uygulamalarını çalıştırmanıza izin vererek her iki dünyanın da en iyisini sunar.</p>
 
-<p>Günümüzün yüksek tempolu dijital geliştirme dünyasında verimlilik her şeydir - bu nedenle API Gateway modern yazılım projelerinde çok önemli hale gelmiştir. Mikroservis mimarilerinde API’ler için merkezi bir kontrol noktası görevi gören bu temel araç, cache ve load balancing gibi akıllı görev yönetimi sayesinde gelişmiş performans sunar.</p>
+<p>Microsoft, WSL’nin iki sürümünü sunmaktadır: sürüm 1 ve sürüm 2. WSL 2, sanal makine kullanır ve Windows ile oluşturulup gönderilen tam bir Linux çekirdeğine sahiptir. WSL 1 daha eskidir ve genellikle çok daha yavaştır ancak dosya sistemleri arasında çalışırken daha iyi performansa sahiptir. Daha hızlı olduğundan ve Docker gibi araçlarla çok daha iyi çalıştığından çoğu işlem için WSL 2’yi öneriyoruz.</p>
 
-<h3 id="api-gateway-ve-mikroservisler">API Gateway ve Mikroservisler</h3>
+<h2 id="wsl-kurulumu">WSL Kurulumu</h2>
 
-<p>Organizasyonlar mikro hizmet mimarisini benimserken, API Gateway’ler giderek daha popüler hale geliyor. API Gateway, tüm backend servisleri için tek bir entry point işlevi görür ve geliştiriciler için sistemin geliştirilmesini, devreye alınmasını ve yönetilmesini basitleştirir. Mikroservisler benzersiz zorluklar sunar, ancak iyi uygulanmış bir API ağ geçidi, bu sorunların ele alınmasına yardımcı olabilir.</p>
+<p>WSL isteğe bağlı bir Windows özelliğidir, dolayısıyla onu açmanız gerekir. Powershell’i başlat menüsünden Administrator olarak açın:</p>
 
-<p>Her bir backend servisi, client isteklerini doğru bir şekilde yönlendirmeyi veya birden çok hizmeti tek bir yanıtta birleştirmeyi zorlaştıran bir mikroservis mimarisinde bağımsız bir uygulama olarak çalışacak şekilde tasarlanmıştır. Modern uygulamalar oluşturmak, genellikle benzersiz bir şekilde ele alınması gereken ayrı rotalara veya arayüzlere sahip olabilecek çok sayıda servisle uğraşmayı gerektirir. API Gateway kullanın - birden çok servis arasında tek bir arabirim olarak işlev görerek bu zorluğun üstesinden gelir ve geliştiricilerin istek işleme akışını sorunsuz bir şekilde yönetmesine olanak tanır.</p>
+<p><img src="/assets/images/2024/02/powershell-run-as-administrator.png" alt="Powershell'i yönetici olarak çalıştır" title="Powershell'i yönetici olarak çalıştır" class="img-fluid" /></p>
 
-<p><img src="/assets/images/2024/02/api-infrastructure-esb-versus-api-gateway.jpg" alt="API altyapısı" title="API altyapısı" class="img-fluid" /></p>
+<p>Ardından açın:</p>
 
-<h2 id="api-gateway-özellikleri">API Gateway Özellikleri</h2>
+<pre>
+Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+</pre>
 
-<p>API Gateway teknolojisi, gelen istekleri kolayca ilgili backend servislerine yönlendiren verimli yönetim gibi bir dizi avantaj sunar. Ayrıca, istemcilerin servisle zahmetsizce etkileşim kurabilmeleri için protokolleri otomatik olarak çevirebilir.</p>
+<p>Değişiklikleri uygulamak için makinenizi yeniden başlatmanız gerekecektir. Bundan sonra Windows Store’u açabilir ve mevcut dağıtımları görüntülemek için “WSL”yi arayabilirsiniz:</p>
+
+<p><img src="/assets/images/2024/02/wsl-windows-store.png" alt="WSL Windows Store" title="WSL Windows Store" class="img-fluid" /></p>
+
+<p>İlk kez çalıştırdığınızda, örnek için kullanıcı adınızı ve şifrenizi ayarlamanız istenecektir. Bunlar yalnızca Linux içindir ve Windows parolanızla eşleşmesi gerekmez.</p>
+
+<p>İlk yüklediğiniz varsayılan olarak ayarlanmalıdır, ancak birden fazla yükleme yaparsanız varsayılanı manuel olarak ayarlamanız gerekecektir. WSL’yi Powershell’deki wsl komutu aracılığıyla yönetebilirsiniz. Örneğin, şu anda yüklü olan tüm sürümlerin listesi:</p>
+
+<pre>
+PS C:\&gt; wsl --list
+Windows Subsystem for Linux Distributions:
+Ubuntu-20.04 (Default)
+docker-desktop
+docker-desktop-data
+</pre>
+
+<p>Ardından, WSL 1 ve 2 arasında geçiş yapmak için de kullanılabilen aşağıdaki komutla varsayılan WSL dağıtımınızı ayarlayabilirsiniz.</p>
+
+<pre>
+wsl --set-version Ubuntu-20.04 2
+</pre>
+
+<p>Gelecekteki tüm kurulumlar için tercih edilen bir WSL sürümünü de ayarlayabilirsiniz:</p>
+
+<pre>
+wsl --set-default-version 2
+</pre>
+
+<h2 id="wsli-kullanmak">WSL’i Kullanmak</h2>
+
+<p>WSL’yi birkaç farklı şekilde açabilirsiniz. En kolayı, Windows’a basıp “wsl” yazmaktır; bu, otomatik olarak wsl.exe’yi çalıştıracak ve varsayılan dağıtımınızı açacaktır.</p>
+
+<p><img src="/assets/images/2024/02/wsl-start-menu.png" alt="WSL Start Menu" title="WSL Start Menu" class="img-fluid" /></p>
+
+<p><img src="/assets/images/2024/02/wsl-windows-terminal.png" alt="WSL Windows Terminal" title="WSL Windows Terminal" class="img-fluid" /></p>
+
+<p>Bu sadece temel bir terminal penceresidir; Microsoft’un yeni Terminal Uygulamasını kullanıyorsanız - ki bunu kesinlikle öneriyoruz - WSL sürümlerinize açılır menü aracılığıyla erişilebilir (ayarlamış olabileceğiniz SSH profillerinin yanı sıra):</p>
+
+<p><img src="/assets/images/2024/02/wsl-windows-terminal-menu.png" alt="WSL Windows Terminal Menu" title="WSL Windows Terminal Menu" class="img-fluid" /></p>
+
+<h2 id="dosya-sistemleri-üzerine-bir-not">Dosya Sistemleri Üzerine Bir Not</h2>
+
+<p>Linux dosya sisteminiz her zamanki gibi / konumuna monte edilmiştir. Windows, /mnt/c/ konumunda veya varsayılan sürücü harfiniz hangisiyse orada bulunur.</p>
+
+<p>Bunların hepsi sanal olduğundan, Linux dosyalarınız elbette sürücünün kendisinde depolanır. WSL 1 için bunlar basit bir klasörde saklanır. WSL 2 bazı şeyleri değiştirir ve dosyaları sanal sabit disk imajı veya VHDX olarak saklar.</p>
+
+<p>Bu imajları aşağıdaki yolda bulabilirsiniz ve dağıtım kayıtlı değilken de monte edilebilseler de, Windows tarafında onları karıştırmanızı önermiyoruz.</p>
+
+<pre>
+%USERPROFILE%AppDataLocalPackagesCanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgscLocalState
+</pre>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.]]></summary></entry><entry><title type="html">Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın</title><link href="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html" rel="alternate" type="text/html" title="Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin</id><content type="html" xml:base="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html"><![CDATA[<p>Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.</p>
+
+<p>Son birkaç yılda Konteynerizasyon (veya Docker) konusunu İnternet’in her yerinde duyabilirsiniz. VM’nin tamamını sanallaştırmak yerine kodu ve tüm bağımlılıklarını bir “Konteyner” olarak paketler. Konteynerler hakkında daha fazla bilgiyi buradan edinebilirsiniz… Hala Laradock kullanıyor olabilirsiniz… Son olarak, Aralık 2020’de Taylor Otwell, Laravel Sail’i piyasaya sürdü!</p>
+
+<p><em>Laravel Sail, Laravel’in varsayılan Docker geliştirme ortamıyla etkileşime geçmek için kullanılan hafif bir komut satırı arayüzüdür. Sail, önceden Docker deneyimi gerektirmeden PHP, MySQL ve Redis kullanarak bir Laravel uygulaması oluşturmak için harika bir başlangıç noktası sağlar.</em></p>
+
+<p><em>Kaynak: Laravel Belgeleri</em></p>
+
+<p>Bu eğitimde WSL 2 kullanarak Windows üzerinde yepyeni bir Laravel projesi başlatacaksınız. WSL, Windows Subsystem for Linux anlamına gelir ve geliştiricilerin herhangi bir “gerçek” VM host olmadan Linux ortamlarını doğrudan Windows üzerinde çalıştırmasına olanak tanır. WSL 2 büyük bir revizyondur ve daha iyi dosya IO performansıyla (20 kat daha hızlı) WSL 1’in avantajlarını sağlar. Önyüklemesi yavaş, kaynak yükü büyük ve tamamen yalıtılmış olan geleneksel VM’e benzemez.</p>
+
+<p>Windows makinenizde WSL 2’yi açalım!</p>
+
+<h2 id="wsl-2yi-yükleyin">WSL 2’yi Yükleyin</h2>
+
+<h3 id="basitleştirilmiş-kurulum-windows-11windows-10-sürüm-2004-veya-üzeri">Basitleştirilmiş Kurulum (Windows 11/Windows 10 sürüm 2004 veya üzeri)</h3>
+
+<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve wsl –install komutunu çalıştırın, yeniden başlattıktan sonra WSL’yi kullanmaya hazır olacaksınız.</p>
+
+<p>Komut Windows 10’da mevcut değilse aşağıdaki manuel kurulumu deneyin. Alternatif olarak daha fazla ayrıntı için KB5004296’yı arayabilirsiniz.</p>
+
+<h3 id="manuel-kurulum-windows-10-build-18362-veya-üzeri-home-edition-dahil">Manuel Kurulum (Windows 10 Build 18362 veya üzeri, Home Edition dahil)</h3>
+
+<p><strong>1. WSL’yi etkinleştirin</strong></p>
+
+<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki komutu çalıştırın.</p>
+
+<pre>
+dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</pre>
+
+<p>DISM hakkında daha fazla bilgi için <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11">buraya</a> tıklayın.</p>
+
+<p><strong>2. Sanal Makine özelliğini etkinleştirin</strong></p>
+
+<p>WSL 2 için sanallaştırma yetenekleri hala gereklidir. Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki çalıştırın.</p>
+
+<pre>
+dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+</pre>
+
+<p><strong>3. Linux çekirdeği güncelleme paketini indirin</strong></p>
+
+<p><a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">wsl_update_x64.msi</a> paketini indirin ve yükleyin. Daha sonra bilgisayarınızı yeniden başlatın.</p>
+
+<p><strong>4. WSL 2’yi varsayılan sürümünüz olarak ayarlayın</strong></p>
+
+<pre>
+wsl --set-default-version 2
+</pre>
+
+<p><strong>5. Ubuntu’yu (veya seçtiğiniz Linux dağıtımını) yükleyin</strong></p>
 
 <ul>
-  <li><strong>API Trafik Yönetimi:</strong> İşletmeler artık sorunsuz kullanıcı deneyimleri sağlamak için karmaşık backend servislerini basitleştirebilir. API Gatewayi, gelen istekleri yönetir ve diğerlerinin yanı sıra istek rotası, başlıklar ve sorgu parametreleri gibi temel faktörlere göre yönlendirir. Trafiğin verimli bir şekilde dağıtılmasına izin verir ve hedef servisler arasında uygun yük dengeleme sağlar.</li>
-  <li><strong>Protokol Çevirisi:</strong> API Gateway kullanırken, farklılaşma, bir protokolü diğerine dönüştürme yeteneği aracılığıyla çözülür. API Gateway, veri aktarım modlarını kolaylıkla çevirerek, istemciler ve backend servisleri arasındaki etkileşimi çok daha kolay hale getirir.</li>
-  <li><strong>Önbelleğe Alma (Cache):</strong> Bu, servis optimum performans seviyelerine ulaşırken daha az trafiği işlemesi için yaygın olarak kullanılan verilerin sık sık depolanmasını sağlayarak kritik bir rol oynayan önemli bir özelliktir.</li>
-  <li><strong>Yük Dengeleme (Load Balancing):</strong> API Gateway aracılığıyla, gelen istekler, bu hizmetin hem ölçeklenebilirliğini hem de kullanılabilirliğini iyileştirmek için bir servisin  birden çok örneği arasında etkili bir şekilde paylaşılabilir.</li>
-  <li><strong>Geliştirici Portalı:</strong> Geliştiriciler, API Gateway uygulanmasıyla kullanıma sunulan kapsamlı bir geliştirici portalından tam olarak yararlanabilir. Bu platformun yardımıyla,  API’leri kolayca keşfedebilirler.</li>
+  <li>Microsoft Mağazasını açın ve ardından Ubuntu’yu arayın ve seçin.</li>
+  <li>Dağıtım sayfasından “Al”ı ve ardından “Yükle”yi seçin.</li>
+  <li>Hazır olduğunda “Başlat”a tıklayın.</li>
+  <li>Ubuntu için kullanıcı adınızı ve şifrenizi oluşturun.</li>
 </ul>
 
-<h2 id="api-gateway-kullanmanın-faydaları-nelerdir">API Gateway Kullanmanın Faydaları Nelerdir?</h2>
+<p><strong>6. Kurulumunuzu doğrulamak için wsl –list –verbose komutunu kullanın.</strong></p>
 
-<p>Günümüzün yazılım geliştirme dünyasında API Gateway’ler, yeterli güvenlik önlemlerinin alınmasını sağlarken yönetimi basitleştirme, ölçeklenebilirliği ve kullanılabilirliği geliştirme yetenekleri açısından çok önemlidir. Protokol çevirilerini kolaylaştırmak ve analiz desteği sağlamak, kuruluşları günümüzün sürekli gelişen ekosisteminde müşterilerin taleplerini karşılayan güçlü uygulamalar oluşturma konusunda benzersiz bir şekilde güçlendirir.</p>
+<p><img src="/assets/images/2024/02/wsl-list-verbose.png" alt="wsl --list --verbose" title="wsl --list --verbose" class="img-fluid" /></p>
 
-<h3 id="basitleştirilmiş-api-yönetimi">Basitleştirilmiş API Yönetimi</h3>
+<p>Herhangi bir sorunla karşılaşırsanız <a href="https://docs.microsoft.com/en-my/windows/wsl/install-win10#troubleshooting-installation">buradaki</a> sorun giderme ipuçlarına başvurabilirsiniz.</p>
 
-<p>Bir API Gateway kullanmıyorsanız, her uygulamanın kendi arayüzleri ve endpointleri varmış gibi göründüğü bir dünyada API’leri yönetmek zaman alan bir görev olabilir. API kontrollerinizi merkezileştirmek, tüm farklı yazılım arayüzlerinizi daha fazla esneklik ve verimlilik sunan tek bir çatı çözümü altında birleştirerek size çok fazla zaman ve emek tasarrufu sağlar. İstekleri tek bir entry point üzerinden yönlendirmek, özellikle birden çok servisle uğraşırken, sisteminizi basitleştirmede harikalar yaratabilir. Arayüzü uygulamanızla birleştirerek ve birden çok isteği tek bir istekte gruplayarak veya bunları backend sistemleriniz tarafından daha basit bir şekilde işlenecek şekilde dönüştürerek, uygulamayı geliştirme ve kullanma konusunda çok fazla yükten kurtulursunuz.</p>
+<h2 id="dockerı-yükleyin">Docker’ı Yükleyin</h2>
 
-<h3 id="gelişmiş-api-güvenliği">Gelişmiş API Güvenliği</h3>
+<p><strong>1. İndirin</strong></p>
 
-<p>Herhangi bir işletmenin yazılımı veya uygulamaları için olası bir zayıf nokta, client verilerinin işlenmesidir. DoS (Denial of Service) veya DDos (Distributed Denial of Service) gibi saldırılar, sunucuları aşırı yükleyerek etkin bir şekilde çalışamayacak hale getirir. API Gateway, gelen trafiği nihai hedefine ulaşmadan önce işleyerek bu siber tehditlere karşı korunmak için etkili bir araç görevi görür. Şüpheli istekleri hızlı bir şekilde belirlemede ve potansiyel hasara karşı ek güvenlik için API kimlik doğrulama kontrolleri sağlamada özellikle yararlıdırlar.</p>
+<p>Docker <a href="https://docs.docker.com/desktop/install/windows-install/">Desktop Stable</a> sürümünü indirin.</p>
 
-<h3 id="geliştirilmiş-ölçeklenebilirlik-ve-kullanılabilirlik">Geliştirilmiş Ölçeklenebilirlik ve Kullanılabilirlik</h3>
+<p><strong>2. Kurulum</strong></p>
 
-<p>Bir API yönetiyorsanız, API Gateway iş yükünü verimli bir şekilde dağıtmanıza yardımcı olabilir. API’nin çeşitli örneklerinde dağıtılmış gelen isteklerle, kolayca aşırı yüklenmez ve ölçeklenebilirliği ve kullanılabilirliği artırır. Özünde bu, tutarlı ve güvenilir hizmet sağlayarak kullanıcı deneyimini geliştirir.</p>
+<p>Docker Masaüstünü kurmak için kurulum sihirbazını takip edin. WSL 2’niz düzgün yapılandırılmışsa kurulum sırasında WSL 2’yi etkinleştirmeniz istenecektir.</p>
 
-<h3 id="api-analizi">API Analizi</h3>
+<p><img src="/assets/images/2024/02/docker-use-wsl2-based-engine.png" alt="Docker WSL2 engine kullanıyor" title="Docker WSL2 engine kullanıyor" class="img-fluid" /></p>
 
-<p>API Gateway’ler, API’leri izlemek isteyen işletmeler için başvurulacak teknoloji haline geldi. API trafik analizi ve yakalama yetenekleriyle bu çok yönlü gateway’ler, müşterilerin API’leri nasıl kullandıkları, hangi hizmetlerin en popüler olduğu ve sorunların ortaya çıkabileceği yerler hakkında değerli bilgiler sağlayabilir.</p>
+<p><strong>3. WSL Entegrasyonunu Yapılandırın</strong></p>
 
-<h2 id="api-gateway-gelecek-trendleri">API Gateway Gelecek Trendleri</h2>
+<p>Doğru Linux dağıtımlarını açtığınızdan emin olun.</p>
 
-<p>API Gateway teknolojisindeki yenilik, performans, güvenlik ve ölçeklenebilirlikte önemli bir gelime sağladı. Bu nedenle, modern yazılım geliştirmeye devam ederken bu çok önemli bileşeni gözden kaçırmak ihmalkarlık olur. Kong, en hızlı API Gateway ve API Yönetim Platformu olup, işletmelerin en güvenilir ve yüksek performanslı cloud native API platformuyla daha hızlı ölçeklendirme yapmasına ve geliştirici üretkenliğini serbest bırakmasına olanak tanır.</p>
+<p><img src="/assets/images/2024/02/docker-wsl-integration-settings.png" alt="Docker WSL entegrasyon ayarları" title="Docker WSL entegrasyon ayarları" class="img-fluid" /></p>
 
-<h3 id="cloud-native">Cloud Native</h3>
+<h2 id="haydi-yelken-açalım">Haydi Yelken Açalım</h2>
 
-<p>API dünyası giderek daha karmaşık hale geliyor - bu nedenle pek çok şirket destek için cloud-native gateway’lere yöneliyor. Üst düzeyde ölçeklenebilir ve baskı altında dayanıklı olan bu ağ geçitleri, birden fazla alanda güvenilir bağlantıya ihtiyaç duyan modern işletmelerin ihtiyaçlarını karşılamak için özel olarak tasarlanmıştır. Sofistike mikroservis mimarileri, çok sayıda bulut tabanlı hizmetle sorunsuz entegrasyonun yanı sıra çeşitli bileşenler arasında kolaylaştırılmış iletişim sağlar.</p>
+<p>Windows Terminalini başlatın ve wsl’yi girin.</p>
 
-<h3 id="sunucusuz-gatewayler">Sunucusuz Gateway’ler</h3>
+<p><img src="/assets/images/2024/02/terminal-wsl-command.png" alt="Terminal wsl komutu" title="Terminal wsl komutu" class="img-fluid" /></p>
 
-<p>Sunucusuz API Gateway’lerin ortaya çıkışı daha belirgin hale geliyor. Bu, Gateway altyapısını yönetme ve ölçeklendirme ihtiyacını ortadan kaldıran bir hizmet olarak API Gateway özelliklerinin sağlanmasını içerir. Bu yeni yaklaşımın önemli avantajlarından biri, hızlı devreye alma ve iyileştirilmiş ölçeklenebilirliği içerir, böylece büyük ölçekli API ekosistemlerini yönetmeyi kolaylaştırır.</p>
+<p>İşte püf noktası… Yolun, Windows kullanıcı dizininiz olduğunu fark edebilirsiniz.</p>
 
-<h3 id="yapay-zeka-makine-öğrenimi-güvenliği">Yapay Zeka Makine Öğrenimi Güvenliği</h3>
+<p>Resmi Microsoft WSL belgelerinde <a href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions#comparing-features">WSL özellikleri</a> karşılaştırıldı. WSL 2 mimarisi, işletim sistemi dosya sistemlerindeki performans dışında, WSL 1’den birkaç açıdan daha iyi performans gösterir.</p>
 
-<p>Siber tehditler giderek daha karmaşık ve sofistike hale geldikçe, API Gateway güvenliğinde makine öğrenimi ve yapay zeka tabanlı güvenliğin rolünün artması bekleniyor. Bu teknolojiler, siber saldırıları gerçek zamanlı olarak tanımlayıp önleyerek API ortamlarını daha güvenli hale getirebilir.</p>
+<p><img src="/assets/images/2024/02/wsl-comparing-features.png" alt="WSL özelliklerinin karşılaştırılması" title="WSL özelliklerinin karşılaştırılması" class="img-fluid" /></p>
 
-<h2 id="özet">Özet</h2>
+<p>cd ~ komutunu kullanarak Linux ana dizininize gidebiliriz.</p>
 
-<p>API Gateway, tüm API isteklerini işlemek için tek bir entry point görevi görür. API’lerin etkin yönetimine, optimizasyonuna ve korunmasına olanak tanıyan trafik yönetimi, güvenlik protokolleri, cache ve izleme özelliklerine sahip olduğu için işlevselliği çok önemlidir. Doğru isteklerin doğru bir şekilde işlenmesini ve uygun backend servislerine yönlendirilmesini sağlamak için tutarlı bir şekilde çalışan rotalar, kurallar ve endpointler gibi bileşenlerle; API Gateway, ölçeklenebilirlik, performans iyileştirme ve API’lerin basitleştirilmiş yönetimi dahil olmak üzere bir dizi avantaj sağlar. Gelecekte, native cloud ve sunucusuz API Gateway’lerin giderek daha popüler hale geleceği ve yapay zeka teknolojisinin yanı sıra makine öğrenimi tabanlı güvenliğin gelecekte önemli trendler olarak ortaya çıkacağı tahmin edilmektedir. Başarılı yazılım geliştirmede önemli bir faktör, API’lerin etkin bir şekilde yönetilmesini içerir.</p>
+<p>Aşağıdaki komutu kullanarak test-project adında yeni bir Laravel projesi oluşturalım:</p>
 
-<p>Organizasyonların bunu başarabilmesinin bir yolu, API yönetim platformlarıyla entegre olmaktır. Ortaya çıkan kapsamlı çözüm, gelişmiş performans ve güvenlik geliştirmeleri dahil olmak üzere API Gateway tarafından sağlanan çeşitli avantajlardan yararlanırken operasyonları optimize etmelerini sağlar. Geliştiriciler bu hayati aracın yeteneklerini daha da geliştirmenin yollarını aradıkça, şüphesiz yeni ilerlemeler gerçekleşecektir.</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Yazılım için bu devrim niteliğindeki çağda, yeni mimari pattern’lerin ortaya çıkma hızı, işletmelerin artık hizmetleri oluşturma, devreye alma ve tüketme yöntemlerini önemli ölçüde etkiledi. Bu değişiklikler aynı zamanda proje iş akışlarına yönelik yenilikçi yaklaşımları memnuniyetle karşılayarak DevOps ve mühendislik ekiplerine API yaşam döngülerinin temel alanlarını otomatikleştirme ve karmaşıklığı genel olarak basitleştirme kapılarını açtı. Çözüm? API Gateway.]]></summary></entry><entry><title type="html">Laravel Facades Nasıl Çalışır ve Başka Yerlerde Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/11/laravel-facades-nasil-calisir-ve-baska-yerlerde-nasil-kullanilir.html" rel="alternate" type="text/html" title="Laravel Facades Nasıl Çalışır ve Başka Yerlerde Nasıl Kullanılır?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/laravel-facades-nasil-calisir-ve-baska-yerlerde-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/laravel-facades-nasil-calisir-ve-baska-yerlerde-nasil-kullanilir.html"><![CDATA[<p>Facade pattern, nesne yönelimli programlamada sıklıkla kullanılan bir design pattern’dir. Facade aslında karmaşık bir kütüphaneyi daha basit ve daha okunabilir bir arayüz sağlamak için saran bir sınıftır. Facade pattern’i aynı zamanda bir grup karmaşık ve kötü tasarlanmış API’ye birleşik ve iyi tasarlanmış bir API sağlamak için de kullanılabilir.</p>
+<pre>
+curl -s https://laravel.build/test-project | bash
+</pre>
+
+<p>Daha sonra kurulumu bekleyin.</p>
+
+<p><img src="/assets/images/2024/02/wsl-laravel-installation.png" alt="WSL Laravel kurulumu" title="WSL Laravel kurulumu" class="img-fluid" /></p>
+
+<p>WSL storage’in gerçek konumu (vhdx formatında) şu adreste bulunur:</p>
+
+<pre>
+C:\Users\user_name\AppData\Local\Packages\
+CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState
+</pre>
+
+<p>Artık cd test-project ile dizine girebilir ve Sail’i başlatabiliriz!</p>
+
+<pre>
+./vendor/bin/sail up
+</pre>
+
+<p>Sail’i ilk kez çalıştırdığınızda, docker imajlarını indirmek ve konteynerinizi oluşturmak biraz zaman alır ancak bir sonraki çalıştırma için çok hızlı olacaktır.</p>
+
+<p>Herhangi bir sorunla karşılaşırsanız suçlu Antivirüs yazılımınız olabilir. Lütfen “C:\ProgramData\DockerDesktop\vm-data\” yolunu hariç tutun.</p>
+
+<p><img src="/assets/images/2024/02/container-up-and-running.png" alt="Docker container çalışıyor" title="Docker container çalışıyor" class="img-fluid" /></p>
+
+<p>Container başlatıldıktan sonra yepyeni Laravel projenize erişmek için http://localhost adresine gidebilirsiniz.</p>
+
+<h3 id="sail-stackinizi-seçin">Sail Stack’inizi Seçin</h3>
+
+<p>Varsayılan stack mysql, redis, meilisearch, mailhog ve selenium’u içeriyor. Mevcut servisler arasında mysql, pgsql, mariadb, redis, memcached, meilisearch, selenium ve mailhog bulunmaktadır.</p>
+
+<p>Query kullanarak favori stack’inizi seçebilirsiniz:</p>
+
+<pre>
+curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
+</pre>
+
+<p>docker-compose.yml dosyanız buna göre yapılandıracaktır.</p>
+
+<h3 id="günlük-sail-rutini">Günlük Sail Rutini</h3>
+
+<p><strong>Sail’i detached modda başlatın</strong></p>
+
+<pre>
+./vendor/bin/sail up -d
+</pre>
+
+<p><strong>Sail’i durdurun</strong></p>
+
+<p>“Detached” modu kullanmıyorsanız Control+C, aksi halde,</p>
+
+<pre>
+./vendor/bin/sail down
+</pre>
+
+<p><strong>Takma ad</strong></p>
+
+<p>Uzun bir yol adı yazmak yerine, sail’e doğrudan ulaşmanıza olanak tanıyan bir Bash takma adı yapılandırın.</p>
+
+<pre>
+alias sail='bash vendor/bin/sail'
+</pre>
+
+<p>Bir takma ad oluşturabilir ve takma adı kalıcı olarak .bashrc dosyanıza kaydedebilirsiniz. nano ~/.bashrc komutunu kullanıp daha sonra alt tarafa alias sail=’bash vendor/bin/sail’ ekleyip çalıştırabilirsiniz.</p>
+
+<h2 id="kodlamaya-başlayın">Kodlamaya Başlayın</h2>
+
+<p><strong>Visual Studio Code</strong></p>
+
+<p><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote-WSL extension</a> yükleyin ve proje klasöründe olduğunuzdan emin olun.</p>
+
+<pre>
+cd ~/test-project/
+</pre>
+
+<p>Sonra aşağıdaki kodu çalıştırın.</p>
+
+<pre>
+code .
+</pre>
+
+<p>VS Code’un başlatıldığını ve proje klasörünüzdeki dosyaları görebilmeniz gerekir.</p>
+
+<p><img src="/assets/images/2024/02/vs-code-explorer.png" alt="VS Code Explorer" title="VS Code Explorer" class="img-fluid" /></p>
+
+<p>Artık http://localhost adresinde kodlamaya başlayabilir ve değişikliklerinizi izleyebilirsiniz.</p>
+
+<p><strong>PhpStorm</strong></p>
+
+<p>Projeyi \wsl$\Ubuntu\home&lt;user&gt;\test-project kullanarak açabilirsiniz.</p>
+
+<p><strong>İpucu:</strong> sail artisan <command /> komutunu kullanarak artisan komutunu çağırabilirsiniz.</p>
+
+<p>Okuduğunuz için teşekkürler. İyi kodlamalar!</p>
+
+<p><strong>Kaynak:</strong> https://blog.devgenius.io/kickstart-your-laravel-web-app-using-laravel-sail-30276265e588</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.]]></summary></entry><entry><title type="html">Nginx ve PHP-FPM’in Gizemini Çözmek</title><link href="http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html" rel="alternate" type="text/html" title="Nginx ve PHP-FPM’in Gizemini Çözmek" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek</id><content type="html" xml:base="http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html"><![CDATA[<p>Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.</p>
+
+<p><strong>Not:</strong> Hem Nginx hem de PHP-FPM için, uygulamanızın performansını artırmanıza yardımcı olabilecek, bu yazıda ele alınmayan daha birçok yapılandırma seçeneği vardır.</p>
+
+<h2 id="php-web-mimarisi">PHP Web Mimarisi</h2>
+
+<p>PHP çekirdeği, local environment’ta çalışırken geliştirme amacıyla kullanabileceğiniz yerleşik bir sunucu içermesine rağmen, tek seferde tek bir istek yürütmesini sınırlayan tek iş parçacıklı yapısı nedeniyle production ortamları için uygun değildir. Diğerlerinin yanı sıra güvenlik, önbelleğe alma, ölçekleme vb. ile ilgili yeteneklerden yoksundur. Sonuç olarak PHP, birden çok işlemi yönetmek için ek bir bileşen olan PHP-FPM’e ve nihayetinde web uygulamalarını verimli bir şekilde sunmak için Nginx’e güvenir.</p>
+
+<p><img src="/assets/images/2024/02/php-web-architecture.jpg" alt="PHP web mimarisi" title="PHP web mimarisi" class="img-fluid" /></p>
+
+<h2 id="php-fpm-fastcgi-process-manager">PHP-FPM: FastCGI Process Manager</h2>
+
+<p>PHP-FPM veya “PHP FastCGI Process Manager”, PHP için gelişmiş, yüksek performanslı bir FastCGI proses yöneticisidir. Aynı anda birden çok isteği işleyebilen birden çok worker oluşturarak PHP’nin yerleşik sunucusunun eşzamanlılık sorununu çözer. Ancak PHP-FPM, gelen HTTP trafiğini doğrudan yönetemez ve bu da bir web sunucusunun ters proxy gibi davranmasını gerektirir.</p>
+
+<h2 id="nginx-yüksek-performanslı-web-sunucusu-ve-ters-proxy">Nginx: Yüksek Performanslı Web Sunucusu ve Ters Proxy</h2>
+
+<p>Nginx, gelen HTTP trafiğini yönetmede mükemmel olan güçlü, açık kaynaklı bir web sunucusudur. client isteklerini PHP-FPM’ye ileten ve işlenen yanıtları client’lara geri döndüren bir ters proxy işlevi görür. Ek olarak Nginx, web uygulamalarınızın genel performansını ve güvenilirliğini artıran yük dengeleme, SSL termination ve statik dosyalar sunma gibi çeşitli avantajlar sağlar.</p>
+
+<p>Sonuç olarak, Nginx ve PHP-FPM arasındaki ilişkiyi anlamak, PHP uygulamanızın mimarisi ve dağıtımı hakkında bilinçli kararlar vermenizi sağlayacaktır. Bu güçlü bileşenlerden yararlanarak, uygulamalarınızın zorlu production ortamlarında bile verimli ve güvenilir bir şekilde çalışmasını sağlayabilirsiniz.</p>
+
+<h2 id="php-fpmi-ayarlamak">PHP-FPM’i Ayarlamak</h2>
+
+<h3 id="process-manager-stratejileri-on-demand-statik-ve-dinamik">Process Manager Stratejileri: On-Demand, Statik ve Dinamik</h3>
+
+<p>Her bir stratejiye dalmadan önce, process manager, worker ve bir isteğin (request) yaşam döngüsü ile ilgili bazı temel kavramları anlamak önemlidir.</p>
+
+<p>Bir isteğin yaşam döngüsü, web sunucusuna (Nginx) ulaştığında başlar. Web sunucusu, isteği işlemek için uygun bir worker atayan PHP-FPM’e iletir. Worker, PHP scriptini yürüterek isteği işler ve web sunucusu aracılığıyla client’a döndürülen bir yanıt oluşturur. Worker farklı durumlarda olabilir:</p>
+
+<ul>
+  <li><strong>Idle:</strong> Bu durumda, worker herhangi bir isteği işlemez ve yeni isteklerin gelmesini bekler. Worker yeni görevler almaya hazırdır.</li>
+  <li><strong>Active:</strong> Bu durumda worker, istekle ilişkili PHP scriptini yürütür.</li>
+  <li><strong>Terminated:</strong> Worker, process manager stratejisine ve yapılandırma ayarlarına göre sonlandırılabilir. Sunucunuzun kaynak kullanımını optimize etmek için PHP-FPM yapılandırma dosyasında ayarlayabileceğiniz bazı temel direktiflere göz atın:
+    <ul>
+      <li><strong>process_idle_timeout:</strong> on-demand ve dinamik stratejilerde, boşta kalan worker belirli bir boşta kalma zaman aşımından sonra sonlandırılır.</li>
+      <li><strong>max_requests:</strong> maksimum istek sayısına ulaşıldığında worker değiştirilir; bu, potansiyel bellek sızıntılarını önlemenin anahtarıdır.</li>
+      <li><strong>request_terminate_timeout:</strong> aktif bir worker, talebi işlemek için maksimum süreye ulaşılırsa process manager tarafından sonlandırılabilir; bu, her zaman zamanında yanıt veren bir sistem sağlamak için özellikle önemlidir.</li>
+      <li><strong>php_value[memory_limit]:</strong> worker’ın ayırabileceği maksimum bellek miktarını belirler. Bellek kullanımını sınırlandırarak, tek bir worker veya havuzun tamamının mevcut tüm sistem kaynaklarını tüketmesini ve sunucunuzun genel performansını etkilemesini önleyebilirsiniz.</li>
+    </ul>
+  </li>
+</ul>
+
+<p>Process manager, worker havuzunu kontrol etmekten sorumludur. Seçilen strateji ve yapılandırma ayarlarına göre bu worker’ların nasıl oluşturulacağını, sürdürüleceğini ve sonlandırılacağını belirler. Aynı anda birden çok istek geldiğinde, process manager bu istekleri uygun worker’lara dağıtarak sunucunun gelen trafiği işleme kapasitesini artırır.</p>
+
+<p>Process manager stratejisi, CPU, bellek ve bant genişliği gibi sunucu kaynaklarının potansiyel kullanımını etkiler. Yanıt verebilirlik ve verimlilik arasında dengeyi korurken mevcut kaynakları en iyi şekilde kullanan bir strateji seçmek çok önemlidir.</p>
+
+<p>Şimdi mevcut farklı stratejilerin her birini inceleyelim:</p>
+
+<h3 id="on-demand-i̇stek-üzerine-strateji">On-Demand (İstek Üzerine) Strateji</h3>
+
+<p>On-demand strateji, boş bir worker havuzuyla başlar ve yalnızca ihtiyaç duyulduğunda worker prosesleri oluşturur. İstek işlendikten sonra boştaki worker sonlandırılır.</p>
+
+<p><img src="/assets/images/2024/02/on-demand-strategy.jpg" alt="On-Demand Strateji" title="On-Demand Strateji" class="img-fluid" /></p>
+
+<p><strong>Yapılandırma</strong></p>
+
+<ul>
+  <li><strong>pm:</strong> On-demand stratejisini etkinleştirmek için bu parametreyi ondemand olarak ayarlayın.</li>
+  <li><strong>pm.max_children:</strong> Oluşturulabilecek maksimum worker proses sayısını tanımlar. PHP-FPM, bu sınırdan daha fazla worker üretmeyecek.</li>
+  <li><strong>pm.process_idle_timeout:</strong> Boşta kalan worker’ların sonlandırılacağı saniye cinsinden süreyi belirtir.</li>
+</ul>
+
+<p>On-demand strateji kaynak açısından verimli olsa da worker proseslerini oluşturmak ve sonlandırmak için gereken süre nedeniyle ek gecikmeye neden olabilir.</p>
+
+<h3 id="statik-strateji">Statik Strateji</h3>
+
+<p>Statik strateji, sabit sayıda worker ile başlar ve sürdürerek, gelen istekleri işlemeye her zaman hazır olan sabit bir worker havuzu sağlar.</p>
+
+<p><img src="/assets/images/2024/02/static-strategy.jpg" alt="Statik Strateji" title="Statik Strateji" class="img-fluid" /></p>
+
+<p><strong>Yapılandırma</strong></p>
+
+<ul>
+  <li><strong>pm:</strong> Statik stratejiyi etkinleştirmek için bu parametreyi static olarak ayarlayın.</li>
+  <li><strong>pm.max_children:</strong> Sürdürülecek sabit worker sayısını belirler.</li>
+</ul>
+
+<p>Statik strateji, tutarlı performans ve öngörülebilir kaynak tahsisi sağlar. Boştaki prosesler bellek ve CPU açısından çok düşük kaynak tükettiği için kaynak israfı marjinaldir. Sunucunun performansı, her zaman hazır olan sabit sayıda worker nedeniyle hem yüksek hem de düşük trafik senaryolarında daha kararlı ve öngörülebilirdir.</p>
+
+<p>max_requests yönergesi, statik stratejide worker proseslerin düzenli olarak yeniden başlatılmasını sağlamak ve dolayısıyla olası bellek sızıntılarını önlemek için gereklidir.</p>
+
+<h3 id="dinamik-strateji">Dinamik Strateji</h3>
+
+<p>Dinamik strateji, on-demand ve statik stratejiler arasında bir denge sağlar. Minimum boş worker sayısını belirler ve talebe göre havuz boyutunu ayarlar. Kaynak kullanımı ve yanıt verebilirlik arasında bir uzlaşma sunar.</p>
+
+<p><img src="/assets/images/2024/02/dynamic-strategy.jpg" alt="Dinamik Strateji" title="Dinamik Strateji" class="img-fluid" /></p>
+
+<p><strong>Yapılandırma</strong></p>
+
+<ul>
+  <li><strong>pm:</strong> Dinamik stratejiyi etkinleştirmek için bu parametreyi dynamic olarak ayarlayın.</li>
+  <li><strong>pm.start_servers:</strong> Başlangıçta oluşturulacak worker proses ilk sayısını belirler.</li>
+  <li><strong>pm.max_children:</strong> Oluşturulabilecek maksimum worker proses sayısını tanımlar.</li>
+  <li><strong>pm.min_spare_servers:</strong> Her zaman sürdürülmesi gereken minimum boş worker sayısını ayarlar. Boştaki worker sayısı bu değerin altına düşerse, PHP-FPM ek prosesler oluşturacaktır.</li>
+  <li><strong>pm.max_spare_servers:</strong> İzin verilen maksimum boş worker proses sayısını belirtir. Boştaki worker sayısı bu değeri aşarsa, PHP-FPM fazla işlemleri sonlandırır.</li>
+  <li><strong>pm.process_idle_timeout:</strong> Boştaki worker proseslerin ne kadar süre sonra sonlandırılacağını belirtir. Bu, kaynak kullanımını ve yanıt verebilirliği dengeleyerek optimum sayıda boş proses’in sürdürülmesine yardımcı olur.</li>
+</ul>
+
+<p>Dinamik strateji duruma göre uyarlanabilir ve çok çeşitli senaryolar için uygun olabilir. Ancak, yapılandırma parametrelerinde ince ayar yapılması optimum performans için çok önemlidir ve hataya açık olabilir. Boştaki worker sayısını sistem kaynaklarına ve trafik seviyelerine göre dengelemek önemlidir, ancak trafiğin yoğun olduğu zamanlarda yanlış veya optimal olmayan bir yapılandırma nedeniyle olumsuz durumlarla karşılaşabilirsiniz. Bu gibi durumlarda, statik strateji daha istikrarlı ve öngörülebilir bir performans sağladığı için daha uygun bir seçim olabilir.</p>
+
+<h2 id="nginxi-ayarlamak">Nginx’i Ayarlamak</h2>
+
+<p>Nginx’in HTTP isteklerini nasıl ele aldığını, worker ve bağlantıları (connection) nasıl yönettiğini anlamak, web sunucunuzun performansını optimize etmek için çok önemlidir.</p>
+
+<p>Nginx, client’lardan gelen HTTP isteklerini işler, bu istekleri PHP-FPM’ye iletir ve uygun yanıtları client’a geri döndürür. Bu istekleri verimli bir şekilde yönetmek için Nginx, worker ve bağlantıları kullanır.</p>
+
+<p>Nginx’teki bir worker, gelen bağlantıları ve istekleri işlemekten sorumlu ayrı bir prosestir. Her worker proses, birden çok bağlantıyı yöneterek, Nginx’in nispeten az sayıda worker proses ile aynı anda birçok isteği işlemesine olanak tanır.</p>
+
+<p>Nginx’teki bir bağlantı, sunucuya bireysel bir client bağlantısını ifade eder. Her bağlantı, web uygulamanıza istekte bulunan tek bir client’ı temsil eder. Nginx, olay odaklı mimarisi sayesinde çok sayıda bağlantıyı verimli bir şekilde işlemek için tasarlanmıştır.</p>
+
+<h3 id="worker-process">Worker Process</h3>
+
+<p>worker_processes yönergesi bağlantı havuzunu işlemek için oluşturulacak Nginx worker proseslerinin sayısını belirtir. Genel olarak, bu değeri sunucunuzda bulunan CPU çekirdeği sayısına eşit olarak ayarlamanız önerilir. Bu ayar, mevcut CPU kaynaklarının kullanımını en üst düzeye çıkararak en iyi performansı sağlar. Değerin otomatik olarak ayarlanması, Nginx’in mevcut CPU çekirdeği sayısına göre en uygun sayıda worker proses otomatik olarak algılamasına ve kullanmasına olanak tanır.</p>
+
+<h3 id="worker-connection">Worker Connection</h3>
+
+<p>worker_connections yönergesi, her bir worker proses tarafından yönetilebilecek maksimum eşzamanlı connection sayısını belirler. Bu değer, sunucunuzun aynı anda hizmet verebileceği toplam client sayısını doğrudan etkiler. Değeri ayarlamak için sunucunuzun kapasitesini ve beklenen eşzamanlı bağlantı sayısını göz önünde bulundurun.</p>
+
+<p>Nginx’te worker ve connection’ların rollerini anlayarak ve worker_processes ile worker_connections yönergelerinde ince ayar yaparak web sunucunuzun performansını optimize edebilirsiniz. Nginx’in performansı ve sistem davranışını geliştirmek için bu yazıda ele alınmayan ancak web uygulamaları için çok önemli olan birçok başka yeteneğe sahip olduğunu unutmayın — bu konuşmada Nginx optimizasyon teknikleri hakkında daha fazla bilgi edinebilirsiniz.</p>
+
+<h2 id="i̇zleme-ve-sorun-giderme">İzleme ve Sorun Giderme</h2>
+
+<p>PHP uygulamalarınızın performansını ve kararlılığını korumak için, sunucuda ortaya çıkabilecek sorunları izlemek ve gidermek çok önemlidir.</p>
+
+<p><strong>PHP-FPM’i İzlemek</strong></p>
+
+<p>PHP-FPM, havuzlarınızın performansını ve sağlığını izlemenize yardımcı olabilecek yerleşik bir status sayfası sağlar. PHP-FPM yapılandırmanızda status sayfasını etkinleştirerek, PHP-FPM havuzlarınız hakkında aktif proses sayısı, boştaki proses ve kuyruktaki istekler gibi gerçek zamanlı bilgilere erişebilirsiniz.</p>
+
+<p><strong>Nginx’i İzlemek</strong></p>
+
+<p>Nginx ayrıca, Nginx sunucunuzun performansını ve sağlığını izlemenize yardımcı olabilecek yerleşik bir status modülü içerir. Nginx yapılandırmanızda status modülünü etkinleştirerek, Nginx sunucunuz hakkında aktif bağlantı sayısı, kabul edilen bağlantılar ve işlenen istekler gibi gerçek zamanlı bilgilere erişebilirsiniz.</p>
+
+<h3 id="sorun-giderme">Sorun giderme</h3>
+
+<p>Sorunlar ortaya çıktığında, ilgili bilgileri nerede arayacağınızı bilmek önemlidir. Hem PHP-FPM hem de Nginx, sorunları belirlemenize ve çözmenize yardımcı olabilecek log dosyaları oluşturur.</p>
+
+<p><strong>PHP-FPM Log Dosyaları</strong></p>
+
+<p>PHP-FPM log dosyaları, PHP uygulamalarınızla ilgili hatalar ve uyarılar hakkında değerli bilgiler içerir. PHP-FPM logları varsayılan olarak /var/log/php-fpm dizininde bulunabilir veya PHP-FPM yapılandırma dosyanızda belirtilebilir. Bu logları incelemek, PHP kodunuz veya yapılandırma ayarlarınızla ilgili sorunları belirlemenize yardımcı olabilir.</p>
+
+<p><strong>Nginx Log Dosyaları</strong></p>
+
+<p>Erişim ve hata logları dahil olmak üzere Nginx log dosyaları, /var/log/nginx dizininde bulunabilir veya Nginx yapılandırma dosyanızda belirtilebilir. Erişim logları, gelen tüm istekleri kaydederken hata logları, Nginx sunucusuyla ilgili sorunlar hakkında bilgiler içerir. Bu logları analiz etmek, sunucu yapılandırmanız, kaynak kullanımınız veya performans darboğazlarınız ile ilgili sorunları belirlemenize yardımcı olabilir.</p>
+
+<p>PHP-FPM ve Nginx yapılandırmalarınızı izleyerek ve sorun gidererek, PHP uygulamalarınızın sorunsuz çalışmasını sağlayabilir ve yüksek performanslı bir sunucu ortamı sağlayabilirsiniz.</p>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Bir geliştirici olarak, kodunuzun nasıl yürütüldüğü ve production ortamında ortaya çıkan zorluklar hakkında belirli bir düzeyde farkındalığa sahip olmak önemlidir. Yapılandırmaları ve yönetim stratejileriyle birlikte Nginx ve PHP-FPM’nin rollerini anlamak, web uygulamalarınızı optimize etmenize, kararlılık, yanıt verebilirlik ve verimlilik sağlamanıza yardımcı olabilir.</p>
+
+<p>Sunucu tarafı bileşenlerinin derinliklerine inenerek ve nasıl ince ayar yapacağınızı öğrenerek, kullanıcılarınız için daha iyi bir deneyim oluşturabilir ve yüksek performanslı bir sunucu ortamı sağlayabilirsiniz. Bu bilgi, yalnızca olası sorunları daha etkin bir şekilde ele almanıza olanak sağlamakla kalmaz, aynı zamanda Ürün ve SRE ekipleri arasında işbirliğini teşvik eder ve sonuç olarak daha sağlam ve ölçeklenebilir uygulamalara yol açar.</p>
+
+<p><strong>Kaynak:</strong> https://medium.com/@mgonzalezbaile/demystifying-nginx-and-php-fpm-for-php-developers-bba548dd38f9</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.]]></summary></entry><entry><title type="html">Laravel Facades Nasıl Çalışır ve Başka Yerlerde Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/11/laravel-facades-nasil-calisir-ve-baska-yerlerde-nasil-kullanilir.html" rel="alternate" type="text/html" title="Laravel Facades Nasıl Çalışır ve Başka Yerlerde Nasıl Kullanılır?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/laravel-facades-nasil-calisir-ve-baska-yerlerde-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/laravel-facades-nasil-calisir-ve-baska-yerlerde-nasil-kullanilir.html"><![CDATA[<p>Facade pattern, nesne yönelimli programlamada sıklıkla kullanılan bir design pattern’dir. Facade aslında karmaşık bir kütüphaneyi daha basit ve daha okunabilir bir arayüz sağlamak için saran bir sınıftır. Facade pattern’i aynı zamanda bir grup karmaşık ve kötü tasarlanmış API’ye birleşik ve iyi tasarlanmış bir API sağlamak için de kullanılabilir.</p>
 
 <p><img src="/assets/images/2024/02/facade-pattern.jpg" alt="Facade Pattern" title="Facade Pattern" class="img-fluid" /></p>
 
@@ -402,892 +1631,78 @@ FancyName::methodName();
 
 <p>Okuduğunuz için teşekkürler!</p>
 
-<p><strong>Kaynak:</strong> https://www.sitepoint.com/how-laravel-facades-work-and-how-to-use-them-elsewhere/</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Facade pattern, nesne yönelimli programlamada sıklıkla kullanılan bir design pattern’dir. Facade aslında karmaşık bir kütüphaneyi daha basit ve daha okunabilir bir arayüz sağlamak için saran bir sınıftır. Facade pattern’i aynı zamanda bir grup karmaşık ve kötü tasarlanmış API’ye birleşik ve iyi tasarlanmış bir API sağlamak için de kullanılabilir.]]></summary></entry><entry><title type="html">Nginx ve PHP-FPM’in Gizemini Çözmek</title><link href="http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html" rel="alternate" type="text/html" title="Nginx ve PHP-FPM’in Gizemini Çözmek" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek</id><content type="html" xml:base="http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html"><![CDATA[<p>Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.</p>
+<p><strong>Kaynak:</strong> https://www.sitepoint.com/how-laravel-facades-work-and-how-to-use-them-elsewhere/</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Facade pattern, nesne yönelimli programlamada sıklıkla kullanılan bir design pattern’dir. Facade aslında karmaşık bir kütüphaneyi daha basit ve daha okunabilir bir arayüz sağlamak için saran bir sınıftır. Facade pattern’i aynı zamanda bir grup karmaşık ve kötü tasarlanmış API’ye birleşik ve iyi tasarlanmış bir API sağlamak için de kullanılabilir.]]></summary></entry><entry><title type="html">API Gateway Nedir?</title><link href="http://localhost:4000/2024/02/11/api-gateway-nedir.html" rel="alternate" type="text/html" title="API Gateway Nedir?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/api-gateway-nedir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/api-gateway-nedir.html"><![CDATA[<p>Yazılım için bu devrim niteliğindeki çağda, yeni mimari pattern’lerin ortaya çıkma hızı, işletmelerin artık hizmetleri oluşturma, devreye alma ve tüketme yöntemlerini önemli ölçüde etkiledi. Bu değişiklikler aynı zamanda proje iş akışlarına yönelik yenilikçi yaklaşımları memnuniyetle karşılayarak DevOps ve mühendislik ekiplerine API yaşam döngülerinin temel alanlarını otomatikleştirme ve karmaşıklığı genel olarak basitleştirme kapılarını açtı. Çözüm? API Gateway.</p>
 
-<p><strong>Not:</strong> Hem Nginx hem de PHP-FPM için, uygulamanızın performansını artırmanıza yardımcı olabilecek, bu yazıda ele alınmayan daha birçok yapılandırma seçeneği vardır.</p>
+<p>API Gateway, mikroservis mimarisinde istemci uygulamaları ile backend servisleri arasında aracı görevi görür. İstek oluşturma, yönlendirme ve protokol çevirisi gibi görevleri yerine getiren çeşitli API’ler için tek bir endpoint işlevi gören bir yazılım katmanıdır. API Gateway, güvenlik politikalarını uygularken API’lerin trafiğini yöneterek istekleri ve yanıtları kontrol eder. Bu, geliştiricilerin karmaşık API ağları tarafından engellenmek yerine bireysel hizmetler oluşturmaya odaklanmalarına yardımcı olan tek bir merkezi kontrol noktası sağlayarak API yönetimini basitleştirir.</p>
 
-<h2 id="php-web-mimarisi">PHP Web Mimarisi</h2>
+<p><img src="/assets/images/2024/02/why-do-microservices-need-an-api-gateway.png" alt="API Gateway" title="Mikroservislerin neden bir API Gateway'e ihtiyacı var?" class="img-fluid" /></p>
 
-<p>PHP çekirdeği, local environment’ta çalışırken geliştirme amacıyla kullanabileceğiniz yerleşik bir sunucu içermesine rağmen, tek seferde tek bir istek yürütmesini sınırlayan tek iş parçacıklı yapısı nedeniyle production ortamları için uygun değildir. Diğerlerinin yanı sıra güvenlik, önbelleğe alma, ölçekleme vb. ile ilgili yeteneklerden yoksundur. Sonuç olarak PHP, birden çok işlemi yönetmek için ek bir bileşen olan PHP-FPM’e ve nihayetinde web uygulamalarını verimli bir şekilde sunmak için Nginx’e güvenir.</p>
+<h2 id="api-gateway-nasıl-çalışır">API Gateway Nasıl Çalışır?</h2>
 
-<p><img src="/assets/images/2024/02/php-web-architecture.jpg" alt="PHP web mimarisi" title="PHP web mimarisi" class="img-fluid" /></p>
+<p>Günümüzün yazılım sistemlerinin güzelliği, karmaşık işlemleri kolaylıkla gerçekleştirme yeteneklerinde yatmaktadır.</p>
 
-<h2 id="php-fpm-fastcgi-process-manager">PHP-FPM: FastCGI Process Manager</h2>
+<p>Bu yenilikçi teknoloji, istemciler ve backend servisleri arasında bir tampon görevi görerek tüm hata algılama prosedürlerini yerine getirirken aynı zamanda gerektiğinde erişim denetimi sağlar. Bunun temelinde, istek yoluna ve diğer ilgili faktörlere dayalı olarak uygun yönlendirmeyi sağlayan iyi yapılandırılmış bir mimari yer alır. Mikroservis mimarisinin temel özelliği, birden çok bağımsız servisten oluşan bir ekosistem içindeki verimli iletişim yönteminde yatar. İsteğin alınması üzerine, backend servisi, işlemi tamamlandıktan sonra API Gateway aracılığıyla yanıtları geri gönderir. Bu adımdan sonra, Api Gateway, bu çıktıları ilgili tarafa geri aktarmadan önce analiz ederek ve tek bir bileşik endpoint kullanarak işi devralır. Ayrıca, API Gateway yalnızca güvenilir bir cluster sağlamakla kalmaz, aynı zamanda istekleri kabul eden ve eylemleri buna göre yönlendiren bir proxy sunucu olarak çalışma gibi seçeneklere de sahiptir.</p>
 
-<p>PHP-FPM veya “PHP FastCGI Process Manager”, PHP için gelişmiş, yüksek performanslı bir FastCGI proses yöneticisidir. Aynı anda birden çok isteği işleyebilen birden çok worker oluşturarak PHP’nin yerleşik sunucusunun eşzamanlılık sorununu çözer. Ancak PHP-FPM, gelen HTTP trafiğini doğrudan yönetemez ve bu da bir web sunucusunun ters proxy gibi davranmasını gerektirir.</p>
+<p>Günümüzün yüksek tempolu dijital geliştirme dünyasında verimlilik her şeydir - bu nedenle API Gateway modern yazılım projelerinde çok önemli hale gelmiştir. Mikroservis mimarilerinde API’ler için merkezi bir kontrol noktası görevi gören bu temel araç, cache ve load balancing gibi akıllı görev yönetimi sayesinde gelişmiş performans sunar.</p>
 
-<h2 id="nginx-yüksek-performanslı-web-sunucusu-ve-ters-proxy">Nginx: Yüksek Performanslı Web Sunucusu ve Ters Proxy</h2>
+<h3 id="api-gateway-ve-mikroservisler">API Gateway ve Mikroservisler</h3>
 
-<p>Nginx, gelen HTTP trafiğini yönetmede mükemmel olan güçlü, açık kaynaklı bir web sunucusudur. client isteklerini PHP-FPM’ye ileten ve işlenen yanıtları client’lara geri döndüren bir ters proxy işlevi görür. Ek olarak Nginx, web uygulamalarınızın genel performansını ve güvenilirliğini artıran yük dengeleme, SSL termination ve statik dosyalar sunma gibi çeşitli avantajlar sağlar.</p>
+<p>Organizasyonlar mikro hizmet mimarisini benimserken, API Gateway’ler giderek daha popüler hale geliyor. API Gateway, tüm backend servisleri için tek bir entry point işlevi görür ve geliştiriciler için sistemin geliştirilmesini, devreye alınmasını ve yönetilmesini basitleştirir. Mikroservisler benzersiz zorluklar sunar, ancak iyi uygulanmış bir API ağ geçidi, bu sorunların ele alınmasına yardımcı olabilir.</p>
 
-<p>Sonuç olarak, Nginx ve PHP-FPM arasındaki ilişkiyi anlamak, PHP uygulamanızın mimarisi ve dağıtımı hakkında bilinçli kararlar vermenizi sağlayacaktır. Bu güçlü bileşenlerden yararlanarak, uygulamalarınızın zorlu production ortamlarında bile verimli ve güvenilir bir şekilde çalışmasını sağlayabilirsiniz.</p>
+<p>Her bir backend servisi, client isteklerini doğru bir şekilde yönlendirmeyi veya birden çok hizmeti tek bir yanıtta birleştirmeyi zorlaştıran bir mikroservis mimarisinde bağımsız bir uygulama olarak çalışacak şekilde tasarlanmıştır. Modern uygulamalar oluşturmak, genellikle benzersiz bir şekilde ele alınması gereken ayrı rotalara veya arayüzlere sahip olabilecek çok sayıda servisle uğraşmayı gerektirir. API Gateway kullanın - birden çok servis arasında tek bir arabirim olarak işlev görerek bu zorluğun üstesinden gelir ve geliştiricilerin istek işleme akışını sorunsuz bir şekilde yönetmesine olanak tanır.</p>
 
-<h2 id="php-fpmi-ayarlamak">PHP-FPM’i Ayarlamak</h2>
+<p><img src="/assets/images/2024/02/api-infrastructure-esb-versus-api-gateway.jpg" alt="API altyapısı" title="API altyapısı" class="img-fluid" /></p>
 
-<h3 id="process-manager-stratejileri-on-demand-statik-ve-dinamik">Process Manager Stratejileri: On-Demand, Statik ve Dinamik</h3>
+<h2 id="api-gateway-özellikleri">API Gateway Özellikleri</h2>
 
-<p>Her bir stratejiye dalmadan önce, process manager, worker ve bir isteğin (request) yaşam döngüsü ile ilgili bazı temel kavramları anlamak önemlidir.</p>
-
-<p>Bir isteğin yaşam döngüsü, web sunucusuna (Nginx) ulaştığında başlar. Web sunucusu, isteği işlemek için uygun bir worker atayan PHP-FPM’e iletir. Worker, PHP scriptini yürüterek isteği işler ve web sunucusu aracılığıyla client’a döndürülen bir yanıt oluşturur. Worker farklı durumlarda olabilir:</p>
+<p>API Gateway teknolojisi, gelen istekleri kolayca ilgili backend servislerine yönlendiren verimli yönetim gibi bir dizi avantaj sunar. Ayrıca, istemcilerin servisle zahmetsizce etkileşim kurabilmeleri için protokolleri otomatik olarak çevirebilir.</p>
 
 <ul>
-  <li><strong>Idle:</strong> Bu durumda, worker herhangi bir isteği işlemez ve yeni isteklerin gelmesini bekler. Worker yeni görevler almaya hazırdır.</li>
-  <li><strong>Active:</strong> Bu durumda worker, istekle ilişkili PHP scriptini yürütür.</li>
-  <li><strong>Terminated:</strong> Worker, process manager stratejisine ve yapılandırma ayarlarına göre sonlandırılabilir. Sunucunuzun kaynak kullanımını optimize etmek için PHP-FPM yapılandırma dosyasında ayarlayabileceğiniz bazı temel direktiflere göz atın:
-    <ul>
-      <li><strong>process_idle_timeout:</strong> on-demand ve dinamik stratejilerde, boşta kalan worker belirli bir boşta kalma zaman aşımından sonra sonlandırılır.</li>
-      <li><strong>max_requests:</strong> maksimum istek sayısına ulaşıldığında worker değiştirilir; bu, potansiyel bellek sızıntılarını önlemenin anahtarıdır.</li>
-      <li><strong>request_terminate_timeout:</strong> aktif bir worker, talebi işlemek için maksimum süreye ulaşılırsa process manager tarafından sonlandırılabilir; bu, her zaman zamanında yanıt veren bir sistem sağlamak için özellikle önemlidir.</li>
-      <li><strong>php_value[memory_limit]:</strong> worker’ın ayırabileceği maksimum bellek miktarını belirler. Bellek kullanımını sınırlandırarak, tek bir worker veya havuzun tamamının mevcut tüm sistem kaynaklarını tüketmesini ve sunucunuzun genel performansını etkilemesini önleyebilirsiniz.</li>
-    </ul>
-  </li>
+  <li><strong>API Trafik Yönetimi:</strong> İşletmeler artık sorunsuz kullanıcı deneyimleri sağlamak için karmaşık backend servislerini basitleştirebilir. API Gatewayi, gelen istekleri yönetir ve diğerlerinin yanı sıra istek rotası, başlıklar ve sorgu parametreleri gibi temel faktörlere göre yönlendirir. Trafiğin verimli bir şekilde dağıtılmasına izin verir ve hedef servisler arasında uygun yük dengeleme sağlar.</li>
+  <li><strong>Protokol Çevirisi:</strong> API Gateway kullanırken, farklılaşma, bir protokolü diğerine dönüştürme yeteneği aracılığıyla çözülür. API Gateway, veri aktarım modlarını kolaylıkla çevirerek, istemciler ve backend servisleri arasındaki etkileşimi çok daha kolay hale getirir.</li>
+  <li><strong>Önbelleğe Alma (Cache):</strong> Bu, servis optimum performans seviyelerine ulaşırken daha az trafiği işlemesi için yaygın olarak kullanılan verilerin sık sık depolanmasını sağlayarak kritik bir rol oynayan önemli bir özelliktir.</li>
+  <li><strong>Yük Dengeleme (Load Balancing):</strong> API Gateway aracılığıyla, gelen istekler, bu hizmetin hem ölçeklenebilirliğini hem de kullanılabilirliğini iyileştirmek için bir servisin  birden çok örneği arasında etkili bir şekilde paylaşılabilir.</li>
+  <li><strong>Geliştirici Portalı:</strong> Geliştiriciler, API Gateway uygulanmasıyla kullanıma sunulan kapsamlı bir geliştirici portalından tam olarak yararlanabilir. Bu platformun yardımıyla,  API’leri kolayca keşfedebilirler.</li>
 </ul>
 
-<p>Process manager, worker havuzunu kontrol etmekten sorumludur. Seçilen strateji ve yapılandırma ayarlarına göre bu worker’ların nasıl oluşturulacağını, sürdürüleceğini ve sonlandırılacağını belirler. Aynı anda birden çok istek geldiğinde, process manager bu istekleri uygun worker’lara dağıtarak sunucunun gelen trafiği işleme kapasitesini artırır.</p>
+<h2 id="api-gateway-kullanmanın-faydaları-nelerdir">API Gateway Kullanmanın Faydaları Nelerdir?</h2>
 
-<p>Process manager stratejisi, CPU, bellek ve bant genişliği gibi sunucu kaynaklarının potansiyel kullanımını etkiler. Yanıt verebilirlik ve verimlilik arasında dengeyi korurken mevcut kaynakları en iyi şekilde kullanan bir strateji seçmek çok önemlidir.</p>
+<p>Günümüzün yazılım geliştirme dünyasında API Gateway’ler, yeterli güvenlik önlemlerinin alınmasını sağlarken yönetimi basitleştirme, ölçeklenebilirliği ve kullanılabilirliği geliştirme yetenekleri açısından çok önemlidir. Protokol çevirilerini kolaylaştırmak ve analiz desteği sağlamak, kuruluşları günümüzün sürekli gelişen ekosisteminde müşterilerin taleplerini karşılayan güçlü uygulamalar oluşturma konusunda benzersiz bir şekilde güçlendirir.</p>
 
-<p>Şimdi mevcut farklı stratejilerin her birini inceleyelim:</p>
+<h3 id="basitleştirilmiş-api-yönetimi">Basitleştirilmiş API Yönetimi</h3>
 
-<h3 id="on-demand-i̇stek-üzerine-strateji">On-Demand (İstek Üzerine) Strateji</h3>
+<p>Bir API Gateway kullanmıyorsanız, her uygulamanın kendi arayüzleri ve endpointleri varmış gibi göründüğü bir dünyada API’leri yönetmek zaman alan bir görev olabilir. API kontrollerinizi merkezileştirmek, tüm farklı yazılım arayüzlerinizi daha fazla esneklik ve verimlilik sunan tek bir çatı çözümü altında birleştirerek size çok fazla zaman ve emek tasarrufu sağlar. İstekleri tek bir entry point üzerinden yönlendirmek, özellikle birden çok servisle uğraşırken, sisteminizi basitleştirmede harikalar yaratabilir. Arayüzü uygulamanızla birleştirerek ve birden çok isteği tek bir istekte gruplayarak veya bunları backend sistemleriniz tarafından daha basit bir şekilde işlenecek şekilde dönüştürerek, uygulamayı geliştirme ve kullanma konusunda çok fazla yükten kurtulursunuz.</p>
 
-<p>On-demand strateji, boş bir worker havuzuyla başlar ve yalnızca ihtiyaç duyulduğunda worker prosesleri oluşturur. İstek işlendikten sonra boştaki worker sonlandırılır.</p>
+<h3 id="gelişmiş-api-güvenliği">Gelişmiş API Güvenliği</h3>
 
-<p><img src="/assets/images/2024/02/on-demand-strategy.jpg" alt="On-Demand Strateji" title="On-Demand Strateji" class="img-fluid" /></p>
+<p>Herhangi bir işletmenin yazılımı veya uygulamaları için olası bir zayıf nokta, client verilerinin işlenmesidir. DoS (Denial of Service) veya DDos (Distributed Denial of Service) gibi saldırılar, sunucuları aşırı yükleyerek etkin bir şekilde çalışamayacak hale getirir. API Gateway, gelen trafiği nihai hedefine ulaşmadan önce işleyerek bu siber tehditlere karşı korunmak için etkili bir araç görevi görür. Şüpheli istekleri hızlı bir şekilde belirlemede ve potansiyel hasara karşı ek güvenlik için API kimlik doğrulama kontrolleri sağlamada özellikle yararlıdırlar.</p>
 
-<p><strong>Yapılandırma</strong></p>
+<h3 id="geliştirilmiş-ölçeklenebilirlik-ve-kullanılabilirlik">Geliştirilmiş Ölçeklenebilirlik ve Kullanılabilirlik</h3>
 
-<ul>
-  <li><strong>pm:</strong> On-demand stratejisini etkinleştirmek için bu parametreyi ondemand olarak ayarlayın.</li>
-  <li><strong>pm.max_children:</strong> Oluşturulabilecek maksimum worker proses sayısını tanımlar. PHP-FPM, bu sınırdan daha fazla worker üretmeyecek.</li>
-  <li><strong>pm.process_idle_timeout:</strong> Boşta kalan worker’ların sonlandırılacağı saniye cinsinden süreyi belirtir.</li>
-</ul>
+<p>Bir API yönetiyorsanız, API Gateway iş yükünü verimli bir şekilde dağıtmanıza yardımcı olabilir. API’nin çeşitli örneklerinde dağıtılmış gelen isteklerle, kolayca aşırı yüklenmez ve ölçeklenebilirliği ve kullanılabilirliği artırır. Özünde bu, tutarlı ve güvenilir hizmet sağlayarak kullanıcı deneyimini geliştirir.</p>
 
-<p>On-demand strateji kaynak açısından verimli olsa da worker proseslerini oluşturmak ve sonlandırmak için gereken süre nedeniyle ek gecikmeye neden olabilir.</p>
+<h3 id="api-analizi">API Analizi</h3>
 
-<h3 id="statik-strateji">Statik Strateji</h3>
+<p>API Gateway’ler, API’leri izlemek isteyen işletmeler için başvurulacak teknoloji haline geldi. API trafik analizi ve yakalama yetenekleriyle bu çok yönlü gateway’ler, müşterilerin API’leri nasıl kullandıkları, hangi hizmetlerin en popüler olduğu ve sorunların ortaya çıkabileceği yerler hakkında değerli bilgiler sağlayabilir.</p>
 
-<p>Statik strateji, sabit sayıda worker ile başlar ve sürdürerek, gelen istekleri işlemeye her zaman hazır olan sabit bir worker havuzu sağlar.</p>
+<h2 id="api-gateway-gelecek-trendleri">API Gateway Gelecek Trendleri</h2>
 
-<p><img src="/assets/images/2024/02/static-strategy.jpg" alt="Statik Strateji" title="Statik Strateji" class="img-fluid" /></p>
+<p>API Gateway teknolojisindeki yenilik, performans, güvenlik ve ölçeklenebilirlikte önemli bir gelime sağladı. Bu nedenle, modern yazılım geliştirmeye devam ederken bu çok önemli bileşeni gözden kaçırmak ihmalkarlık olur. Kong, en hızlı API Gateway ve API Yönetim Platformu olup, işletmelerin en güvenilir ve yüksek performanslı cloud native API platformuyla daha hızlı ölçeklendirme yapmasına ve geliştirici üretkenliğini serbest bırakmasına olanak tanır.</p>
 
-<p><strong>Yapılandırma</strong></p>
+<h3 id="cloud-native">Cloud Native</h3>
 
-<ul>
-  <li><strong>pm:</strong> Statik stratejiyi etkinleştirmek için bu parametreyi static olarak ayarlayın.</li>
-  <li><strong>pm.max_children:</strong> Sürdürülecek sabit worker sayısını belirler.</li>
-</ul>
+<p>API dünyası giderek daha karmaşık hale geliyor - bu nedenle pek çok şirket destek için cloud-native gateway’lere yöneliyor. Üst düzeyde ölçeklenebilir ve baskı altında dayanıklı olan bu ağ geçitleri, birden fazla alanda güvenilir bağlantıya ihtiyaç duyan modern işletmelerin ihtiyaçlarını karşılamak için özel olarak tasarlanmıştır. Sofistike mikroservis mimarileri, çok sayıda bulut tabanlı hizmetle sorunsuz entegrasyonun yanı sıra çeşitli bileşenler arasında kolaylaştırılmış iletişim sağlar.</p>
 
-<p>Statik strateji, tutarlı performans ve öngörülebilir kaynak tahsisi sağlar. Boştaki prosesler bellek ve CPU açısından çok düşük kaynak tükettiği için kaynak israfı marjinaldir. Sunucunun performansı, her zaman hazır olan sabit sayıda worker nedeniyle hem yüksek hem de düşük trafik senaryolarında daha kararlı ve öngörülebilirdir.</p>
+<h3 id="sunucusuz-gatewayler">Sunucusuz Gateway’ler</h3>
 
-<p>max_requests yönergesi, statik stratejide worker proseslerin düzenli olarak yeniden başlatılmasını sağlamak ve dolayısıyla olası bellek sızıntılarını önlemek için gereklidir.</p>
+<p>Sunucusuz API Gateway’lerin ortaya çıkışı daha belirgin hale geliyor. Bu, Gateway altyapısını yönetme ve ölçeklendirme ihtiyacını ortadan kaldıran bir hizmet olarak API Gateway özelliklerinin sağlanmasını içerir. Bu yeni yaklaşımın önemli avantajlarından biri, hızlı devreye alma ve iyileştirilmiş ölçeklenebilirliği içerir, böylece büyük ölçekli API ekosistemlerini yönetmeyi kolaylaştırır.</p>
 
-<h3 id="dinamik-strateji">Dinamik Strateji</h3>
+<h3 id="yapay-zeka-makine-öğrenimi-güvenliği">Yapay Zeka Makine Öğrenimi Güvenliği</h3>
 
-<p>Dinamik strateji, on-demand ve statik stratejiler arasında bir denge sağlar. Minimum boş worker sayısını belirler ve talebe göre havuz boyutunu ayarlar. Kaynak kullanımı ve yanıt verebilirlik arasında bir uzlaşma sunar.</p>
+<p>Siber tehditler giderek daha karmaşık ve sofistike hale geldikçe, API Gateway güvenliğinde makine öğrenimi ve yapay zeka tabanlı güvenliğin rolünün artması bekleniyor. Bu teknolojiler, siber saldırıları gerçek zamanlı olarak tanımlayıp önleyerek API ortamlarını daha güvenli hale getirebilir.</p>
 
-<p><img src="/assets/images/2024/02/dynamic-strategy.jpg" alt="Dinamik Strateji" title="Dinamik Strateji" class="img-fluid" /></p>
+<h2 id="özet">Özet</h2>
 
-<p><strong>Yapılandırma</strong></p>
+<p>API Gateway, tüm API isteklerini işlemek için tek bir entry point görevi görür. API’lerin etkin yönetimine, optimizasyonuna ve korunmasına olanak tanıyan trafik yönetimi, güvenlik protokolleri, cache ve izleme özelliklerine sahip olduğu için işlevselliği çok önemlidir. Doğru isteklerin doğru bir şekilde işlenmesini ve uygun backend servislerine yönlendirilmesini sağlamak için tutarlı bir şekilde çalışan rotalar, kurallar ve endpointler gibi bileşenlerle; API Gateway, ölçeklenebilirlik, performans iyileştirme ve API’lerin basitleştirilmiş yönetimi dahil olmak üzere bir dizi avantaj sağlar. Gelecekte, native cloud ve sunucusuz API Gateway’lerin giderek daha popüler hale geleceği ve yapay zeka teknolojisinin yanı sıra makine öğrenimi tabanlı güvenliğin gelecekte önemli trendler olarak ortaya çıkacağı tahmin edilmektedir. Başarılı yazılım geliştirmede önemli bir faktör, API’lerin etkin bir şekilde yönetilmesini içerir.</p>
 
-<ul>
-  <li><strong>pm:</strong> Dinamik stratejiyi etkinleştirmek için bu parametreyi dynamic olarak ayarlayın.</li>
-  <li><strong>pm.start_servers:</strong> Başlangıçta oluşturulacak worker proses ilk sayısını belirler.</li>
-  <li><strong>pm.max_children:</strong> Oluşturulabilecek maksimum worker proses sayısını tanımlar.</li>
-  <li><strong>pm.min_spare_servers:</strong> Her zaman sürdürülmesi gereken minimum boş worker sayısını ayarlar. Boştaki worker sayısı bu değerin altına düşerse, PHP-FPM ek prosesler oluşturacaktır.</li>
-  <li><strong>pm.max_spare_servers:</strong> İzin verilen maksimum boş worker proses sayısını belirtir. Boştaki worker sayısı bu değeri aşarsa, PHP-FPM fazla işlemleri sonlandırır.</li>
-  <li><strong>pm.process_idle_timeout:</strong> Boştaki worker proseslerin ne kadar süre sonra sonlandırılacağını belirtir. Bu, kaynak kullanımını ve yanıt verebilirliği dengeleyerek optimum sayıda boş proses’in sürdürülmesine yardımcı olur.</li>
-</ul>
-
-<p>Dinamik strateji duruma göre uyarlanabilir ve çok çeşitli senaryolar için uygun olabilir. Ancak, yapılandırma parametrelerinde ince ayar yapılması optimum performans için çok önemlidir ve hataya açık olabilir. Boştaki worker sayısını sistem kaynaklarına ve trafik seviyelerine göre dengelemek önemlidir, ancak trafiğin yoğun olduğu zamanlarda yanlış veya optimal olmayan bir yapılandırma nedeniyle olumsuz durumlarla karşılaşabilirsiniz. Bu gibi durumlarda, statik strateji daha istikrarlı ve öngörülebilir bir performans sağladığı için daha uygun bir seçim olabilir.</p>
-
-<h2 id="nginxi-ayarlamak">Nginx’i Ayarlamak</h2>
-
-<p>Nginx’in HTTP isteklerini nasıl ele aldığını, worker ve bağlantıları (connection) nasıl yönettiğini anlamak, web sunucunuzun performansını optimize etmek için çok önemlidir.</p>
-
-<p>Nginx, client’lardan gelen HTTP isteklerini işler, bu istekleri PHP-FPM’ye iletir ve uygun yanıtları client’a geri döndürür. Bu istekleri verimli bir şekilde yönetmek için Nginx, worker ve bağlantıları kullanır.</p>
-
-<p>Nginx’teki bir worker, gelen bağlantıları ve istekleri işlemekten sorumlu ayrı bir prosestir. Her worker proses, birden çok bağlantıyı yöneterek, Nginx’in nispeten az sayıda worker proses ile aynı anda birçok isteği işlemesine olanak tanır.</p>
-
-<p>Nginx’teki bir bağlantı, sunucuya bireysel bir client bağlantısını ifade eder. Her bağlantı, web uygulamanıza istekte bulunan tek bir client’ı temsil eder. Nginx, olay odaklı mimarisi sayesinde çok sayıda bağlantıyı verimli bir şekilde işlemek için tasarlanmıştır.</p>
-
-<h3 id="worker-process">Worker Process</h3>
-
-<p>worker_processes yönergesi bağlantı havuzunu işlemek için oluşturulacak Nginx worker proseslerinin sayısını belirtir. Genel olarak, bu değeri sunucunuzda bulunan CPU çekirdeği sayısına eşit olarak ayarlamanız önerilir. Bu ayar, mevcut CPU kaynaklarının kullanımını en üst düzeye çıkararak en iyi performansı sağlar. Değerin otomatik olarak ayarlanması, Nginx’in mevcut CPU çekirdeği sayısına göre en uygun sayıda worker proses otomatik olarak algılamasına ve kullanmasına olanak tanır.</p>
-
-<h3 id="worker-connection">Worker Connection</h3>
-
-<p>worker_connections yönergesi, her bir worker proses tarafından yönetilebilecek maksimum eşzamanlı connection sayısını belirler. Bu değer, sunucunuzun aynı anda hizmet verebileceği toplam client sayısını doğrudan etkiler. Değeri ayarlamak için sunucunuzun kapasitesini ve beklenen eşzamanlı bağlantı sayısını göz önünde bulundurun.</p>
-
-<p>Nginx’te worker ve connection’ların rollerini anlayarak ve worker_processes ile worker_connections yönergelerinde ince ayar yaparak web sunucunuzun performansını optimize edebilirsiniz. Nginx’in performansı ve sistem davranışını geliştirmek için bu yazıda ele alınmayan ancak web uygulamaları için çok önemli olan birçok başka yeteneğe sahip olduğunu unutmayın — bu konuşmada Nginx optimizasyon teknikleri hakkında daha fazla bilgi edinebilirsiniz.</p>
-
-<h2 id="i̇zleme-ve-sorun-giderme">İzleme ve Sorun Giderme</h2>
-
-<p>PHP uygulamalarınızın performansını ve kararlılığını korumak için, sunucuda ortaya çıkabilecek sorunları izlemek ve gidermek çok önemlidir.</p>
-
-<p><strong>PHP-FPM’i İzlemek</strong></p>
-
-<p>PHP-FPM, havuzlarınızın performansını ve sağlığını izlemenize yardımcı olabilecek yerleşik bir status sayfası sağlar. PHP-FPM yapılandırmanızda status sayfasını etkinleştirerek, PHP-FPM havuzlarınız hakkında aktif proses sayısı, boştaki proses ve kuyruktaki istekler gibi gerçek zamanlı bilgilere erişebilirsiniz.</p>
-
-<p><strong>Nginx’i İzlemek</strong></p>
-
-<p>Nginx ayrıca, Nginx sunucunuzun performansını ve sağlığını izlemenize yardımcı olabilecek yerleşik bir status modülü içerir. Nginx yapılandırmanızda status modülünü etkinleştirerek, Nginx sunucunuz hakkında aktif bağlantı sayısı, kabul edilen bağlantılar ve işlenen istekler gibi gerçek zamanlı bilgilere erişebilirsiniz.</p>
-
-<h3 id="sorun-giderme">Sorun giderme</h3>
-
-<p>Sorunlar ortaya çıktığında, ilgili bilgileri nerede arayacağınızı bilmek önemlidir. Hem PHP-FPM hem de Nginx, sorunları belirlemenize ve çözmenize yardımcı olabilecek log dosyaları oluşturur.</p>
-
-<p><strong>PHP-FPM Log Dosyaları</strong></p>
-
-<p>PHP-FPM log dosyaları, PHP uygulamalarınızla ilgili hatalar ve uyarılar hakkında değerli bilgiler içerir. PHP-FPM logları varsayılan olarak /var/log/php-fpm dizininde bulunabilir veya PHP-FPM yapılandırma dosyanızda belirtilebilir. Bu logları incelemek, PHP kodunuz veya yapılandırma ayarlarınızla ilgili sorunları belirlemenize yardımcı olabilir.</p>
-
-<p><strong>Nginx Log Dosyaları</strong></p>
-
-<p>Erişim ve hata logları dahil olmak üzere Nginx log dosyaları, /var/log/nginx dizininde bulunabilir veya Nginx yapılandırma dosyanızda belirtilebilir. Erişim logları, gelen tüm istekleri kaydederken hata logları, Nginx sunucusuyla ilgili sorunlar hakkında bilgiler içerir. Bu logları analiz etmek, sunucu yapılandırmanız, kaynak kullanımınız veya performans darboğazlarınız ile ilgili sorunları belirlemenize yardımcı olabilir.</p>
-
-<p>PHP-FPM ve Nginx yapılandırmalarınızı izleyerek ve sorun gidererek, PHP uygulamalarınızın sorunsuz çalışmasını sağlayabilir ve yüksek performanslı bir sunucu ortamı sağlayabilirsiniz.</p>
-
-<h2 id="sonuç">Sonuç</h2>
-
-<p>Bir geliştirici olarak, kodunuzun nasıl yürütüldüğü ve production ortamında ortaya çıkan zorluklar hakkında belirli bir düzeyde farkındalığa sahip olmak önemlidir. Yapılandırmaları ve yönetim stratejileriyle birlikte Nginx ve PHP-FPM’nin rollerini anlamak, web uygulamalarınızı optimize etmenize, kararlılık, yanıt verebilirlik ve verimlilik sağlamanıza yardımcı olabilir.</p>
-
-<p>Sunucu tarafı bileşenlerinin derinliklerine inenerek ve nasıl ince ayar yapacağınızı öğrenerek, kullanıcılarınız için daha iyi bir deneyim oluşturabilir ve yüksek performanslı bir sunucu ortamı sağlayabilirsiniz. Bu bilgi, yalnızca olası sorunları daha etkin bir şekilde ele almanıza olanak sağlamakla kalmaz, aynı zamanda Ürün ve SRE ekipleri arasında işbirliğini teşvik eder ve sonuç olarak daha sağlam ve ölçeklenebilir uygulamalara yol açar.</p>
-
-<p><strong>Kaynak:</strong> https://medium.com/@mgonzalezbaile/demystifying-nginx-and-php-fpm-for-php-developers-bba548dd38f9</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.]]></summary></entry><entry><title type="html">Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın</title><link href="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html" rel="alternate" type="text/html" title="Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin</id><content type="html" xml:base="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html"><![CDATA[<p>Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.</p>
-
-<p>Son birkaç yılda Konteynerizasyon (veya Docker) konusunu İnternet’in her yerinde duyabilirsiniz. VM’nin tamamını sanallaştırmak yerine kodu ve tüm bağımlılıklarını bir “Konteyner” olarak paketler. Konteynerler hakkında daha fazla bilgiyi buradan edinebilirsiniz… Hala Laradock kullanıyor olabilirsiniz… Son olarak, Aralık 2020’de Taylor Otwell, Laravel Sail’i piyasaya sürdü!</p>
-
-<p><em>Laravel Sail, Laravel’in varsayılan Docker geliştirme ortamıyla etkileşime geçmek için kullanılan hafif bir komut satırı arayüzüdür. Sail, önceden Docker deneyimi gerektirmeden PHP, MySQL ve Redis kullanarak bir Laravel uygulaması oluşturmak için harika bir başlangıç noktası sağlar.</em></p>
-
-<p><em>Kaynak: Laravel Belgeleri</em></p>
-
-<p>Bu eğitimde WSL 2 kullanarak Windows üzerinde yepyeni bir Laravel projesi başlatacaksınız. WSL, Windows Subsystem for Linux anlamına gelir ve geliştiricilerin herhangi bir “gerçek” VM host olmadan Linux ortamlarını doğrudan Windows üzerinde çalıştırmasına olanak tanır. WSL 2 büyük bir revizyondur ve daha iyi dosya IO performansıyla (20 kat daha hızlı) WSL 1’in avantajlarını sağlar. Önyüklemesi yavaş, kaynak yükü büyük ve tamamen yalıtılmış olan geleneksel VM’e benzemez.</p>
-
-<p>Windows makinenizde WSL 2’yi açalım!</p>
-
-<h2 id="wsl-2yi-yükleyin">WSL 2’yi Yükleyin</h2>
-
-<h3 id="basitleştirilmiş-kurulum-windows-11windows-10-sürüm-2004-veya-üzeri">Basitleştirilmiş Kurulum (Windows 11/Windows 10 sürüm 2004 veya üzeri)</h3>
-
-<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve wsl –install komutunu çalıştırın, yeniden başlattıktan sonra WSL’yi kullanmaya hazır olacaksınız.</p>
-
-<p>Komut Windows 10’da mevcut değilse aşağıdaki manuel kurulumu deneyin. Alternatif olarak daha fazla ayrıntı için KB5004296’yı arayabilirsiniz.</p>
-
-<h3 id="manuel-kurulum-windows-10-build-18362-veya-üzeri-home-edition-dahil">Manuel Kurulum (Windows 10 Build 18362 veya üzeri, Home Edition dahil)</h3>
-
-<p><strong>1. WSL’yi etkinleştirin</strong></p>
-
-<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki komutu çalıştırın.</p>
-
-<pre>
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-</pre>
-
-<p>DISM hakkında daha fazla bilgi için <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11">buraya</a> tıklayın.</p>
-
-<p><strong>2. Sanal Makine özelliğini etkinleştirin</strong></p>
-
-<p>WSL 2 için sanallaştırma yetenekleri hala gereklidir. Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki çalıştırın.</p>
-
-<pre>
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-</pre>
-
-<p><strong>3. Linux çekirdeği güncelleme paketini indirin</strong></p>
-
-<p><a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">wsl_update_x64.msi</a> paketini indirin ve yükleyin. Daha sonra bilgisayarınızı yeniden başlatın.</p>
-
-<p><strong>4. WSL 2’yi varsayılan sürümünüz olarak ayarlayın</strong></p>
-
-<pre>
-wsl --set-default-version 2
-</pre>
-
-<p><strong>5. Ubuntu’yu (veya seçtiğiniz Linux dağıtımını) yükleyin</strong></p>
-
-<ul>
-  <li>Microsoft Mağazasını açın ve ardından Ubuntu’yu arayın ve seçin.</li>
-  <li>Dağıtım sayfasından “Al”ı ve ardından “Yükle”yi seçin.</li>
-  <li>Hazır olduğunda “Başlat”a tıklayın.</li>
-  <li>Ubuntu için kullanıcı adınızı ve şifrenizi oluşturun.</li>
-</ul>
-
-<p><strong>6. Kurulumunuzu doğrulamak için wsl –list –verbose komutunu kullanın.</strong></p>
-
-<p><img src="/assets/images/2024/02/wsl-list-verbose.png" alt="wsl --list --verbose" title="wsl --list --verbose" class="img-fluid" /></p>
-
-<p>Herhangi bir sorunla karşılaşırsanız <a href="https://docs.microsoft.com/en-my/windows/wsl/install-win10#troubleshooting-installation">buradaki</a> sorun giderme ipuçlarına başvurabilirsiniz.</p>
-
-<h2 id="dockerı-yükleyin">Docker’ı Yükleyin</h2>
-
-<p><strong>1. İndirin</strong></p>
-
-<p>Docker <a href="https://docs.docker.com/desktop/install/windows-install/">Desktop Stable</a> sürümünü indirin.</p>
-
-<p><strong>2. Kurulum</strong></p>
-
-<p>Docker Masaüstünü kurmak için kurulum sihirbazını takip edin. WSL 2’niz düzgün yapılandırılmışsa kurulum sırasında WSL 2’yi etkinleştirmeniz istenecektir.</p>
-
-<p><img src="/assets/images/2024/02/docker-use-wsl2-based-engine.png" alt="Docker WSL2 engine kullanıyor" title="Docker WSL2 engine kullanıyor" class="img-fluid" /></p>
-
-<p><strong>3. WSL Entegrasyonunu Yapılandırın</strong></p>
-
-<p>Doğru Linux dağıtımlarını açtığınızdan emin olun.</p>
-
-<p><img src="/assets/images/2024/02/docker-wsl-integration-settings.png" alt="Docker WSL entegrasyon ayarları" title="Docker WSL entegrasyon ayarları" class="img-fluid" /></p>
-
-<h2 id="haydi-yelken-açalım">Haydi Yelken Açalım</h2>
-
-<p>Windows Terminalini başlatın ve wsl’yi girin.</p>
-
-<p><img src="/assets/images/2024/02/terminal-wsl-command.png" alt="Terminal wsl komutu" title="Terminal wsl komutu" class="img-fluid" /></p>
-
-<p>İşte püf noktası… Yolun, Windows kullanıcı dizininiz olduğunu fark edebilirsiniz.</p>
-
-<p>Resmi Microsoft WSL belgelerinde <a href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions#comparing-features">WSL özellikleri</a> karşılaştırıldı. WSL 2 mimarisi, işletim sistemi dosya sistemlerindeki performans dışında, WSL 1’den birkaç açıdan daha iyi performans gösterir.</p>
-
-<p><img src="/assets/images/2024/02/wsl-comparing-features.png" alt="WSL özelliklerinin karşılaştırılması" title="WSL özelliklerinin karşılaştırılması" class="img-fluid" /></p>
-
-<p>cd ~ komutunu kullanarak Linux ana dizininize gidebiliriz.</p>
-
-<p>Aşağıdaki komutu kullanarak test-project adında yeni bir Laravel projesi oluşturalım:</p>
-
-<pre>
-curl -s https://laravel.build/test-project | bash
-</pre>
-
-<p>Daha sonra kurulumu bekleyin.</p>
-
-<p><img src="/assets/images/2024/02/wsl-laravel-installation.png" alt="WSL Laravel kurulumu" title="WSL Laravel kurulumu" class="img-fluid" /></p>
-
-<p>WSL storage’in gerçek konumu (vhdx formatında) şu adreste bulunur:</p>
-
-<pre>
-C:\Users\user_name\AppData\Local\Packages\
-CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState
-</pre>
-
-<p>Artık cd test-project ile dizine girebilir ve Sail’i başlatabiliriz!</p>
-
-<pre>
-./vendor/bin/sail up
-</pre>
-
-<p>Sail’i ilk kez çalıştırdığınızda, docker imajlarını indirmek ve konteynerinizi oluşturmak biraz zaman alır ancak bir sonraki çalıştırma için çok hızlı olacaktır.</p>
-
-<p>Herhangi bir sorunla karşılaşırsanız suçlu Antivirüs yazılımınız olabilir. Lütfen “C:\ProgramData\DockerDesktop\vm-data\” yolunu hariç tutun.</p>
-
-<p><img src="/assets/images/2024/02/container-up-and-running.png" alt="Docker container çalışıyor" title="Docker container çalışıyor" class="img-fluid" /></p>
-
-<p>Container başlatıldıktan sonra yepyeni Laravel projenize erişmek için http://localhost adresine gidebilirsiniz.</p>
-
-<h3 id="sail-stackinizi-seçin">Sail Stack’inizi Seçin</h3>
-
-<p>Varsayılan stack mysql, redis, meilisearch, mailhog ve selenium’u içeriyor. Mevcut servisler arasında mysql, pgsql, mariadb, redis, memcached, meilisearch, selenium ve mailhog bulunmaktadır.</p>
-
-<p>Query kullanarak favori stack’inizi seçebilirsiniz:</p>
-
-<pre>
-curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
-</pre>
-
-<p>docker-compose.yml dosyanız buna göre yapılandıracaktır.</p>
-
-<h3 id="günlük-sail-rutini">Günlük Sail Rutini</h3>
-
-<p><strong>Sail’i detached modda başlatın</strong></p>
-
-<pre>
-./vendor/bin/sail up -d
-</pre>
-
-<p><strong>Sail’i durdurun</strong></p>
-
-<p>“Detached” modu kullanmıyorsanız Control+C, aksi halde,</p>
-
-<pre>
-./vendor/bin/sail down
-</pre>
-
-<p><strong>Takma ad</strong></p>
-
-<p>Uzun bir yol adı yazmak yerine, sail’e doğrudan ulaşmanıza olanak tanıyan bir Bash takma adı yapılandırın.</p>
-
-<pre>
-alias sail='bash vendor/bin/sail'
-</pre>
-
-<p>Bir takma ad oluşturabilir ve takma adı kalıcı olarak .bashrc dosyanıza kaydedebilirsiniz. nano ~/.bashrc komutunu kullanıp daha sonra alt tarafa alias sail=’bash vendor/bin/sail’ ekleyip çalıştırabilirsiniz.</p>
-
-<h2 id="kodlamaya-başlayın">Kodlamaya Başlayın</h2>
-
-<p><strong>Visual Studio Code</strong></p>
-
-<p><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote-WSL extension</a> yükleyin ve proje klasöründe olduğunuzdan emin olun.</p>
-
-<pre>
-cd ~/test-project/
-</pre>
-
-<p>Sonra aşağıdaki kodu çalıştırın.</p>
-
-<pre>
-code .
-</pre>
-
-<p>VS Code’un başlatıldığını ve proje klasörünüzdeki dosyaları görebilmeniz gerekir.</p>
-
-<p><img src="/assets/images/2024/02/vs-code-explorer.png" alt="VS Code Explorer" title="VS Code Explorer" class="img-fluid" /></p>
-
-<p>Artık http://localhost adresinde kodlamaya başlayabilir ve değişikliklerinizi izleyebilirsiniz.</p>
-
-<p><strong>PhpStorm</strong></p>
-
-<p>Projeyi \wsl$\Ubuntu\home&lt;user&gt;\test-project kullanarak açabilirsiniz.</p>
-
-<p><strong>İpucu:</strong> sail artisan <command /> komutunu kullanarak artisan komutunu çağırabilirsiniz.</p>
-
-<p>Okuduğunuz için teşekkürler. İyi kodlamalar!</p>
-
-<p><strong>Kaynak:</strong> https://blog.devgenius.io/kickstart-your-laravel-web-app-using-laravel-sail-30276265e588</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.]]></summary></entry><entry><title type="html">WSL Nedir ve Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html" rel="alternate" type="text/html" title="WSL Nedir ve Nasıl Kullanılır?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html"><![CDATA[<p>Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.</p>
-
-<h2 id="sadece-bir-sanal-makine-değil">Sadece Bir Sanal Makine Değil</h2>
-
-<p>WSL’nin ne olmadığıyla başlayalım; örneğin, Ubuntu’yu VirtualBox’ta çalıştırarak elde edebileceğiniz tam bir Linux masaüstü deneyimi değildir. Performans nedenleriyle teknik olarak sanallaştırmayı kullanır, ancak tam bir VM çalıştırmaktan çok farklıdır. Her şey sizin için yönetilir ve işinizi yapmanız ve git, ssh gibi tanıdık bash komutlarını kullanmanız için basit bir shell ve environment sağlar.</p>
-
-<p>Temel olarak WSL, app store’dan bir uygulama olarak tam bir Linux dağıtımı kurmanıza olanak tanır. Ubuntu’yu (veya tercih ettiğiniz dağıtımı) indirebilir, kurabilir ve başlatabileceğiniz bir uygulama veya terminalinizde CMD veya Powershell ile birlikte çalışacak bir profil olarak kullanıma sunabilirsiniz.</p>
-
-<p>En basit açıklaması “Windows’ta bash çalıştırmanıza izin vermesi” olsa da, bir kabuktan daha fazlasıdır; apt kullanarak programları yükleyebilir ve normal bir Linux örneği gibi özelleştirebilirsiniz.</p>
-
-<p>WSL, geliştiricilere ve bash kullanıcılarına, Windows’u birincil işletim sistemi olarak kullanmak zorunda kalmalarına rağmen Linux shell deneyimi sunmayı amaçlamaktadır. Daha kolay komut satırı erişimi için bir Linux shell’inin yanı sıra Visual Studio gibi Windows uygulamalarını çalıştırmanıza izin vererek her iki dünyanın da en iyisini sunar.</p>
-
-<p>Microsoft, WSL’nin iki sürümünü sunmaktadır: sürüm 1 ve sürüm 2. WSL 2, sanal makine kullanır ve Windows ile oluşturulup gönderilen tam bir Linux çekirdeğine sahiptir. WSL 1 daha eskidir ve genellikle çok daha yavaştır ancak dosya sistemleri arasında çalışırken daha iyi performansa sahiptir. Daha hızlı olduğundan ve Docker gibi araçlarla çok daha iyi çalıştığından çoğu işlem için WSL 2’yi öneriyoruz.</p>
-
-<h2 id="wsl-kurulumu">WSL Kurulumu</h2>
-
-<p>WSL isteğe bağlı bir Windows özelliğidir, dolayısıyla onu açmanız gerekir. Powershell’i başlat menüsünden Administrator olarak açın:</p>
-
-<p><img src="/assets/images/2024/02/powershell-run-as-administrator.png" alt="Powershell'i yönetici olarak çalıştır" title="Powershell'i yönetici olarak çalıştır" class="img-fluid" /></p>
-
-<p>Ardından açın:</p>
-
-<pre>
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-</pre>
-
-<p>Değişiklikleri uygulamak için makinenizi yeniden başlatmanız gerekecektir. Bundan sonra Windows Store’u açabilir ve mevcut dağıtımları görüntülemek için “WSL”yi arayabilirsiniz:</p>
-
-<p><img src="/assets/images/2024/02/wsl-windows-store.png" alt="WSL Windows Store" title="WSL Windows Store" class="img-fluid" /></p>
-
-<p>İlk kez çalıştırdığınızda, örnek için kullanıcı adınızı ve şifrenizi ayarlamanız istenecektir. Bunlar yalnızca Linux içindir ve Windows parolanızla eşleşmesi gerekmez.</p>
-
-<p>İlk yüklediğiniz varsayılan olarak ayarlanmalıdır, ancak birden fazla yükleme yaparsanız varsayılanı manuel olarak ayarlamanız gerekecektir. WSL’yi Powershell’deki wsl komutu aracılığıyla yönetebilirsiniz. Örneğin, şu anda yüklü olan tüm sürümlerin listesi:</p>
-
-<pre>
-PS C:\&gt; wsl --list
-Windows Subsystem for Linux Distributions:
-Ubuntu-20.04 (Default)
-docker-desktop
-docker-desktop-data
-</pre>
-
-<p>Ardından, WSL 1 ve 2 arasında geçiş yapmak için de kullanılabilen aşağıdaki komutla varsayılan WSL dağıtımınızı ayarlayabilirsiniz.</p>
-
-<pre>
-wsl --set-version Ubuntu-20.04 2
-</pre>
-
-<p>Gelecekteki tüm kurulumlar için tercih edilen bir WSL sürümünü de ayarlayabilirsiniz:</p>
-
-<pre>
-wsl --set-default-version 2
-</pre>
-
-<h2 id="wsli-kullanmak">WSL’i Kullanmak</h2>
-
-<p>WSL’yi birkaç farklı şekilde açabilirsiniz. En kolayı, Windows’a basıp “wsl” yazmaktır; bu, otomatik olarak wsl.exe’yi çalıştıracak ve varsayılan dağıtımınızı açacaktır.</p>
-
-<p><img src="/assets/images/2024/02/wsl-start-menu.png" alt="WSL Start Menu" title="WSL Start Menu" class="img-fluid" /></p>
-
-<p><img src="/assets/images/2024/02/wsl-windows-terminal.png" alt="WSL Windows Terminal" title="WSL Windows Terminal" class="img-fluid" /></p>
-
-<p>Bu sadece temel bir terminal penceresidir; Microsoft’un yeni Terminal Uygulamasını kullanıyorsanız - ki bunu kesinlikle öneriyoruz - WSL sürümlerinize açılır menü aracılığıyla erişilebilir (ayarlamış olabileceğiniz SSH profillerinin yanı sıra):</p>
-
-<p><img src="/assets/images/2024/02/wsl-windows-terminal-menu.png" alt="WSL Windows Terminal Menu" title="WSL Windows Terminal Menu" class="img-fluid" /></p>
-
-<h2 id="dosya-sistemleri-üzerine-bir-not">Dosya Sistemleri Üzerine Bir Not</h2>
-
-<p>Linux dosya sisteminiz her zamanki gibi / konumuna monte edilmiştir. Windows, /mnt/c/ konumunda veya varsayılan sürücü harfiniz hangisiyse orada bulunur.</p>
-
-<p>Bunların hepsi sanal olduğundan, Linux dosyalarınız elbette sürücünün kendisinde depolanır. WSL 1 için bunlar basit bir klasörde saklanır. WSL 2 bazı şeyleri değiştirir ve dosyaları sanal sabit disk imajı veya VHDX olarak saklar.</p>
-
-<p>Bu imajları aşağıdaki yolda bulabilirsiniz ve dağıtım kayıtlı değilken de monte edilebilseler de, Windows tarafında onları karıştırmanızı önermiyoruz.</p>
-
-<pre>
-%USERPROFILE%AppDataLocalPackagesCanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgscLocalState
-</pre>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.]]></summary></entry><entry><title type="html">Eager Loading ile Laravel Eloquent Sorgularını Optimize Edin</title><link href="http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin.html" rel="alternate" type="text/html" title="Eager Loading ile Laravel Eloquent Sorgularını Optimize Edin" /><published>2024-01-15T00:00:00+03:00</published><updated>2024-01-15T00:00:00+03:00</updated><id>http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin</id><content type="html" xml:base="http://localhost:4000/2024/01/15/eager-loading-ile-laravel-eloquents-sorgular%C4%B1n%C4%B1-optimize-edin.html"><![CDATA[<p>Object Relational Mapping (ORM), veritabanlarıyla çalışmayı şaşırtıcı derecede basit hale getirir. Veritabanı ilişkilerini nesne yönelimli bir şekilde tanımlamak, ilgili model verilerini sorgulamayı kolaylaştırırken, geliştiriciler temeldeki veritabanı çağrılarına dikkat etmeyebilir.</p>
-
-<h2 id="eager-loading-nedir">Eager Loading Nedir?</h2>
-
-<p>Özünde eager loading, Eloquent’e, ihtiyacınız olan verileri alırken daha performanslı bir sorgu üretmesi için belirli ilişkilere sahip bir modeli yakalamak istediğinizi söylemektir. Eager loading ile birçok sorguyu yalnızca bir veya ikiye indirebilirsiniz.</p>
-
-<p>Bu yazıda, bazı örnek ilişkiler kuracağız ve ardından eager loading ile ve eager loading olmadan sorguların nasıl değiştiğini inceleyeceğiz. Doğrudan koda el atmayı ve bir şeyler denemeyi seviyorum, sorgularınızı nasıl optimize edeceğinizi anlamanıza yardımcı olacak bazı örneklerle eager loading’in nasıl çalıştığını göstermeyi umuyorum.</p>
-
-<h2 id="giriş">Giriş</h2>
-
-<p>Temel düzeyde, ORM’ler model verilerini “lazy” yükler. Ne de olsa, ORM niyetinizi nasıl bilecek? Belki de modeli sorguladıktan sonra ilgili modelin verilerini aslında hiçbir zaman kullanmayacaksınız. Sorgunun optimize edilmemesi “N+1” sorunu olarak bilinir. Sorguları temsil etmek için nesneleri kullandığınızda, farkında bile olmadan sorgular yapıyor olabilirsiniz.</p>
-
-<pre>
-$posts = Post::published()-&gt;get(); // one query
- 
-$authors = array_map(function($post) {
-    // Produces a query on the author model
-    return $post-&gt;author-&gt;name;
-}, $posts);
-</pre>
-
-<p>Modele tüm yazarlara ihtiyacımız olduğunu söylemiyoruz, bu nedenle yazarın adını Post model örneklerinden her aldığımızda ayrı bir sorgu gerçekleşir.</p>
-
-<h2 id="eager-loading">Eager Loading</h2>
-
-<p>Bahsettiğim gibi, ORM’ler tembeldir. İlişkili model verilerini kullanmayı düşünüyorsanız, eager loading kullanarak toplam 101 sorguyu 2 sorguya indirebilirsiniz. Modele, yüklemek için neye ihtiyacınız olduğunu söylemeniz yeterlidir.</p>
-
-<p>İşte eager loading kullanımı hakkında Rails Active Record kılavuzundan bir örnek. Gördüğünüz gibi konsept, Laravel’in eager loading konseptine oldukça benziyor.</p>
-
-<pre>
-# Rails
-posts = Post.includes(:author).limit(100)
- 
-# Laravel
-$posts = Post::with('author')-&gt;limit(100)-&gt;get();
-</pre>
-
-<p>Fikirleri daha geniş bir perspektiften keşfederek daha iyi anladığımı görüyorum. Active Record dökümantasyonu, fikrin yankı bulmasına yardımcı olabilecek bazı örnekleri içerir.</p>
-
-<h2 id="laravel-eloquent-orm">Laravel Eloquent ORM</h2>
-
-<p>Laravel’in Eloquent adlı ORM’i, eager loading modellerini ve hatta iç içe geçmiş ilişkileri yüklemeyi önemsiz hale getirir. Post model örneğini geliştirelim ve bir Laravel projesinde eager loading ile nasıl çalışılacağını öğrenelim.</p>
-
-<p>Proje kurulumu üzerinde çalışacağız ve ardından toparlamak için bazı eager loading örneklerini daha derinlemesine inceleyeceğiz.</p>
-
-<h3 id="kurulum">Kurulum</h3>
-
-<p>Eager loading’i denemek için bazı migration, model ve seeder’lar ayarlayalım. Devam etmek istiyorsanız, bir veritabanına erişiminiz olduğunu ve temel Laravel kurulumundan geçebileceğinizi varsayıyorum.</p>
-
-<p>Laravel installer kullanarak projeyi oluşturalım:</p>
-
-<pre>
-laravel new blog-example
-</pre>
-
-<p>.env değerlerinizi veritabanınıza veya seçiminize uyacak şekilde düzenleyin.</p>
-
-<p>Daha sonra, eager loading iç içe ilişkileri deneyebilmek için üç model oluşturacağız. Örnek basit, böylece eager loading’e odaklanabiliriz. Index ve foreign key kısıtlamaları gibi kullanabileceğiniz şeyleri atladım.</p>
-
-<pre>
-php artisan make:model -m Post
-php artisan make:model -m Author
-php artisan make:model -m Profile
-</pre>
-
-<p>-m flag’i, tablo şemasını oluşturmak için kullanacağınız modele uygun bir migration oluşturur.</p>
-
-<p>Veri modelleri aşağıdaki ilişkilelere sahip olacaktır:</p>
-
-<pre>
-Post -&gt; belongsTo -&gt; Author
-Author -&gt; hasMany -&gt; Post
-Author -&gt; hasOne -&gt; Profile
-</pre>
-
-<h3 id="migration">Migration</h3>
-
-<p>Her tablo için basit bir şema oluşturalım; Yalnızca up() metodunu oluşturdum çünkü Laravel, yeni tablolar için down() metodunu otomatik olarak oluşturacaktır. Migration dosyaları database/migrations/ klasöründedir:</p>
-
-<pre>
-&lt;?php
- 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
- 
-class CreatePostsTable extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('posts', function (Blueprint $table) {
-            $table-&gt;increments('id');
-            $table-&gt;unsignedInteger('author_id');
-            $table-&gt;string('title');
-            $table-&gt;text('body');
-            $table-&gt;timestamps();
-        });
-    }
- 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('posts');
-    }
-}
-</pre>
-
-<pre>
-&lt;?php
- 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
- 
-class CreateAuthorsTable extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('authors', function (Blueprint $table) {
-            $table-&gt;increments('id');
-            $table-&gt;string('name');
-            $table-&gt;text('bio');
-            $table-&gt;timestamps();
-        });
-    }
- 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('authors');
-    }
-}
-</pre>
-
-<pre>
-&lt;?php
- 
-use Illuminate\Support\Facades\Schema;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Database\Migrations\Migration;
- 
-class CreateProfilesTable extends Migration
-{
-    /**
-     * Run the migrations.
-     *
-     * @return void
-     */
-    public function up()
-    {
-        Schema::create('profiles', function (Blueprint $table) {
-            $table-&gt;increments('id');
-            $table-&gt;unsignedInteger('author_id');
-            $table-&gt;date('birthday');
-            $table-&gt;string('city');
-            $table-&gt;string('state');
-            $table-&gt;string('website');
-            $table-&gt;timestamps();
-        });
-    }
- 
-    /**
-     * Reverse the migrations.
-     *
-     * @return void
-     */
-    public function down()
-    {
-        Schema::dropIfExists('profiles');
-    }
-}
-</pre>
-
-<h3 id="model">Model</h3>
-
-<p>Eager loading ile daha fazla deneme yapmak için model ilişkilendirmeleri tanımlamanız gerekir. php artisan make:model komutunu çalıştırdığınızda, sizin için model dosyalarını oluşturmuştur.</p>
-
-<p>İlk model app/Post.php’dir:</p>
-
-<pre>
-&lt;?php
- 
-namespace App;
- 
-use Illuminate\Database\Eloquent\Model;
- 
-class Post extends Model
-{
-    public function author()
-    {
-        return $this-&gt;belongsTo(Author::class);
-    }
-}
-</pre>
-
-<p>Ardından, app\Author.php iki ilişkilendirmeye sahiptir:</p>
-
-<pre>
-&lt;?php
- 
-namespace App;
- 
-use Illuminate\Database\Eloquent\Model;
- 
-class Author extends Model
-{
-    public function profile()
-    {
-        return $this-&gt;hasOne(Profile::class);
-    }
- 
-    public function posts()
-    {
-        return $this-&gt;hasMany(Post::class);
-    }
-}
-</pre>
-
-<p>Model ve migration’lar hazır olduğunda, migration’ları çalıştırabilir ve ardından seed (tohum) verileriyle eager loading denemelerine geçebilirsiniz.</p>
-
-<pre>
-php artisan migrate
-Migration table created successfully.
-Migrating: 2014_10_12_000000_create_users_table
-Migrated:  2014_10_12_000000_create_users_table
-Migrating: 2014_10_12_100000_create_password_resets_table
-Migrated:  2014_10_12_100000_create_password_resets_table
-Migrating: 2017_08_04_042509_create_posts_table
-Migrated:  2017_08_04_042509_create_posts_table
-Migrating: 2017_08_04_042516_create_authors_table
-Migrated:  2017_08_04_042516_create_authors_table
-Migrating: 2017_08_04_044554_create_profiles_table
-Migrated:  2017_08_04_044554_create_profiles_table
-</pre>
-
-<p>Veritabanını kontrol ettiğinizde, oluşturulan tüm tabloları görmelisiniz!</p>
-
-<h3 id="model-factory">Model Factory</h3>
-
-<p>Sorgu çalıştırabileceğimiz fake veriler oluşturmak için, veritabanını test verileriyle tohumlayacak birkaç model factory ekleyelim.</p>
-
-<p>database/factories/ModelFactory.php dosyasını açın ve aşağıdaki üç factory’i mevcut User factory’nin altına ekleyin:</p>
-
-<pre>
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory-&gt;define(App\Post::class, function (Faker\Generator $faker) {
-    return [
-        'title' =&gt; $faker-&gt;sentence,
-        'author_id' =&gt; function () {
-            return factory(App\Author::class)-&gt;create()-&gt;id;
-        },
-        'body' =&gt; $faker-&gt;paragraphs(rand(3,10), true),
-    ];
-});
- 
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
-$factory-&gt;define(App\Author::class, function (Faker\Generator $faker) {
-    return [
-        'name' =&gt; $faker-&gt;name,
-        'bio' =&gt; $faker-&gt;paragraph,
-    ];
-});
- 
-$factory-&gt;define(App\Profile::class, function (Faker\Generator $faker) {
-    return [
-        'birthday' =&gt; $faker-&gt;dateTimeBetween('-100 years', '-18 years'),
-        'author_id' =&gt; function () {
-            return factory(App\Author::class)-&gt;create()-&gt;id;
-        },
-        'city' =&gt; $faker-&gt;city,
-        'state' =&gt; $faker-&gt;state,
-        'website' =&gt; $faker-&gt;domainName,
-    ];
-});
-</pre>
-
-<p>Factory’ler, sorgulayabileceğimiz bir dizi gönderiyi oluşturmayı kolaylaştıracak; bunları veritabanı tohumlaması ile ilişkili model verileri oluşturmak için kullanabiliriz.</p>
-
-<p>database/seeds/DatabaseSeeder.php dosyasını açın ve DatabaseSeeder::run() metoduna şunu ekleyin:</p>
-
-<pre>
-public function run()
-{
-    $authors = factory(App\Author::class, 5)-&gt;create();
-    $authors-&gt;each(function ($author) {
-        $author
-            -&gt;profile()
-            -&gt;save(factory(App\Profile::class)-&gt;make());
-        $author
-            -&gt;posts()
-            -&gt;saveMany(
-                factory(App\Post::class, rand(20,30))-&gt;make()
-            );
-    });
-}
-</pre>
-
-<p>Beş yazar oluşturdunuz ve ardından yazarlar arasında dolaşıp ilişkili bir profili ve birçok gönderiyi (yazar başına 20 ila 30 gönderi) kaydettiniz.</p>
-
-<p>Migration, model, model factory ve seeder oluşturmayı bitirdik. Hepsini birleştirebilir ve tekrarlanabilir bir şekilde yeniden çalıştırabiliriz:</p>
-
-<pre>
-php artisan migrate:refresh
-php artisan db:seed
-</pre>
-
-<p>Artık bir sonraki bölümde oynayabileceğiniz verilere sahip olmalısınız. Laravel 5.5’in, migration’ları geri alıp yeniden uygulamak yerine tabloları silen migration:fresh komutu içerdiğini unutmayın.</p>
-
-<h2 id="eager-loadingi-denemek">Eager Loading’i Denemek</h2>
-
-<p>Sonunda eager loading’i çalışırken görmeye hazırız. Bence, eager loading’i görselleştirmenin en iyi yolu, storage/logs/laravel.log dosyasına sorguları kaydetmektir.</p>
-
-<p>Veritabanı sorgularını log’a kaydetmek için MySQL log’unu etkinleştirebilir veya Eloquent’ten gelen veritabanı çağrılarını dinleyebilirsiniz. Eloquent aracılığıyla sorguları log’a kaydetmek için, app/Providers/AppServiceProvider.php boot() metoduna aşağıdaki kodu ekleyin:</p>
-
-<pre>
-namespace App\Providers;
- 
-use DB;
-use Log;
-use Illuminate\Support\ServiceProvider;
- 
-class AppServiceProvider extends ServiceProvider
-{
-    /**
-     * Bootstrap any application services.
-     *
-     * @return void
-     */
-    public function boot()
-    {
-        DB::listen(function($query) {
-            Log::info(
-                $query-&gt;sql,
-                $query-&gt;bindings,
-                $query-&gt;time
-            );
-        });
-    }
- 
-    // ...
-}
-</pre>
-
-<p>Bu bilgiyi Laravel Debugbar’dan da alabilirsiniz.</p>
-
-<p>Bakalım model ilişkilerinde eager loading kullanmadığımızda ne olacak. storage/log/laravel.log dosyanızı temizleyin ve “tinker” komutunu çalıştırın.</p>
-
-<pre>
-php artisan tinker
- 
-&gt;&gt;&gt; $posts = App\Post::all();
-&gt;&gt;&gt; $posts-&gt;map(function ($post) {
-...     return $post-&gt;author;
-... });
-&gt;&gt;&gt; ...
-</pre>
-
-<p>laravel.log dosyanızı kontrol ederseniz, ilişkili yazarı almak için bir dizi sorgu görmelisiniz:</p>
-
-<pre>
-[2017-08-04 06:21:58] local.INFO: select * from `posts`
-[2017-08-04 06:22:06] local.INFO: select * from `authors` where `authors`.`id` = ? limit 1 [1]
-[2017-08-04 06:22:06] local.INFO: select * from `authors` where `authors`.`id` = ? limit 1 [1]
-[2017-08-04 06:22:06] local.INFO: select * from `authors` where `authors`.`id` = ? limit 1 [1]
-....
-</pre>
-
-<p>laravel.log dosyanızı tekrar boşaltın ve bu sefer yazar kayıtlarını eager loading ile yüklemek için with() kullanın:</p>
-
-<pre>
-php artisan tinker
- 
-&gt;&gt;&gt; $posts = App\Post::with('author')-&gt;get();
-&gt;&gt;&gt; $posts-&gt;map(function ($post) {
-...     return $post-&gt;author;
-... });
-...
-</pre>
-
-<p>Bu sefer log dosyasında yalnızca iki sorgu görmelisiniz. Tüm gönderiler için ilk sorgu ve ilişkili tüm yazarlar için ikinci sorgu.</p>
-
-<pre>
-[2017-08-04 07:18:02] local.INFO: select * from `posts`
-[2017-08-04 07:18:02] local.INFO: select * from `authors` where `authors`.`id` in (?, ?, ?, ?, ?) [1,2,3,4,5]
-</pre>
-
-<p>Birden fazla ilgili ilişkilendirmeniz varsa, bunları bir dizi ile isteyerek yükleyebilirsiniz:</p>
-
-<pre>
-$posts = App\Post::with(['author', 'comments'])-&gt;get();
-</pre>
-
-<h2 id="eloquentte-i̇ç-i̇çe-eager-loading">Eloquent’te İç İçe Eager Loading</h2>
-
-<p>İç içe eager loading aynı şekilde çalışır. Örneğimizde Author modelinin bir profili vardır. Böylece her profil için bir sorgu yürütülecektir.</p>
-
-<p>laravel.log dosyasını boşaltın ve deneyin:</p>
-
-<pre>
-php artisan tinker
- 
-&gt;&gt;&gt; $posts = App\Post::with('author')-&gt;get();
-&gt;&gt;&gt; $posts-&gt;map(function ($post) {
-...     return $post-&gt;author-&gt;profile;
-... });
-...
-</pre>
-
-<p>Şimdi yedi sorgunuz olacak. İlk ikisi eager yüklenir ve ardından her yeni yazar profili için bir sorgu gerekir.</p>
-
-<p>Eager loading ile iç içe ilişkilerdeki fazladan sorgulardan kaçınabiliriz. laravel.log dosyanızı son bir kez temizleyin ve aşağıdakileri çalıştırın:</p>
-
-<pre>
-&gt;&gt;&gt; $posts = App\Post::with('author.profile')-&gt;get();
-&gt;&gt;&gt; $posts-&gt;map(function ($post) {
-...     return $post-&gt;author-&gt;profile;
-... });
-</pre>
-
-<p>Şimdi, toplamda yalnızca 3 sorgunuz olmalıdır:</p>
-
-<pre>
-[2017-08-04 07:27:27] local.INFO: select * from `posts`
-[2017-08-04 07:27:27] local.INFO: select * from `authors` where `authors`.`id` in (?, ?, ?, ?, ?) [1,2,3,4,5]
-[2017-08-04 07:27:27] local.INFO: select * from `profiles` where `profiles`.`author_id` in (?, ?, ?, ?, ?) [1,2,3,4,5]
-</pre>
-
-<h2 id="lazy-eager-loading">Lazy Eager Loading</h2>
-
-<p>İlişkili modelleri yalnızca bir koşula dayalı olarak toplamanız gerekebilir. Bu durumda, ilgili veriler için tembelce ek sorgular başlatabilirsiniz:</p>
-
-<pre>
-php artisan tinker
- 
-&gt;&gt;&gt; $posts = App\Post::all();
-...
-&gt;&gt;&gt; $posts-&gt;load('author.profile');
-&gt;&gt;&gt; $posts-&gt;first()-&gt;author-&gt;profile;
-...
-</pre>
-
-<p>Toplamda üç sorgu görmelisiniz, ancak yalnızca $posts-&gt;load() çağrılırsa.</p>
-
-<h2 id="sonuç">Sonuç</h2>
-
-<p>Umarız eager loading hakkında biraz daha fazla şey öğrenmiş ve daha derin bir düzeyde nasıl çalıştığını anlamışsınızdır. Eager loading belgeleri kapsamlıdır ve ek olarak uygulamalı alıştırmanın, sorgularınızı optimize etme konusunda kendinize daha fazla güvenmenize yardımcı olacağını umuyorum.</p>
-
-<p><strong>Kaynak:</strong> https://laravel-news.com/eloquent-eager-loading</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Object Relational Mapping (ORM), veritabanlarıyla çalışmayı şaşırtıcı derecede basit hale getirir. Veritabanı ilişkilerini nesne yönelimli bir şekilde tanımlamak, ilgili model verilerini sorgulamayı kolaylaştırırken, geliştiriciler temeldeki veritabanı çağrılarına dikkat etmeyebilir.]]></summary></entry></feed>
+<p>Organizasyonların bunu başarabilmesinin bir yolu, API yönetim platformlarıyla entegre olmaktır. Ortaya çıkan kapsamlı çözüm, gelişmiş performans ve güvenlik geliştirmeleri dahil olmak üzere API Gateway tarafından sağlanan çeşitli avantajlardan yararlanırken operasyonları optimize etmelerini sağlar. Geliştiriciler bu hayati aracın yeteneklerini daha da geliştirmenin yollarını aradıkça, şüphesiz yeni ilerlemeler gerçekleşecektir.</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Yazılım için bu devrim niteliğindeki çağda, yeni mimari pattern’lerin ortaya çıkma hızı, işletmelerin artık hizmetleri oluşturma, devreye alma ve tüketme yöntemlerini önemli ölçüde etkiledi. Bu değişiklikler aynı zamanda proje iş akışlarına yönelik yenilikçi yaklaşımları memnuniyetle karşılayarak DevOps ve mühendislik ekiplerine API yaşam döngülerinin temel alanlarını otomatikleştirme ve karmaşıklığı genel olarak basitleştirme kapılarını açtı. Çözüm? API Gateway.]]></summary></entry></feed>
