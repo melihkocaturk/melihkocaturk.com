@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang=" tr-TR" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laminas Framework'e Giriş - Melih Kocatürk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D81YCKRVTX"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D81YCKRVTX');
+</script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div class="container-fluid py-5">
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="d-flex flex-row">
+                <div class="p-2">
+                    <img src="/assets/images/avatar.jpg" alt="Melih Kocatürk" class="rounded-circle" width="60" height="60">
+                </div>
+                <div class="p-2">
+                    <h1 class="h4 mb-0">Melih Kocatürk</h1>
+                    Code Ninja
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    <main class="flex-shrink-0 mb-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Laminas Framework&#39;e Giriş</h1>
+            <p class="text-center text-uppercase mb-5">
+                <small class="text-muted">Melih Kocatürk / 01.01.2024</small>
+            </p>
+            <p><p>Nisan 2019’da Linux Vakfı yeni bir proje başlattığını duyurdu: Laminas. Bu aslında 2006’dan beri var olan Zend Framework projesinin yeni adıydı. O andan itibaren, halihazırda 400 milyon yüklemeye sahip olan Zend Framework, bağımsız bir açık kaynak yazılım haline gelecekti. Ancak Zend Technologies, adını taşıyan bu üründen birkaç yıldır vazgeçmiyor ve kurumsal destek vermeye devam ediyor.</p>
+
+<p>Bu bölüm, Zend Framework mimarisinin Laminas’a geçişine kadarki evrimini sunar. Framework ekibinin neden diğerleri yerine bazı kararları aldığını anlayacaksınız.</p>
+
+<p>Bu bölümde, aşağıdaki konuları ele alacağız:</p>
+
+<ul>
+  <li>Neden framework’lere ihtiyacımız var?</li>
+  <li>Zend Framework’ten Laminas’a</li>
+  <li>Laminas topluluğunun teknik ve sosyal altyapısı</li>
+</ul>
+
+<h2 id="neden-frameworklere-ihtiyacımız-var">Neden framework’lere ihtiyacımız var?</h2>
+
+<p>Bazı insanlar neden framework’e ihtiyacım var diye sorabilir. Bu tür insanlar neden sınıfları kullanmam gerekiyor diye de sorabilir. Sonuçta PHP basittir ve sınıflara ihtiyacı yoktur. Birkaç satır kodla, veritabanından işlenmiş veriler içeren bir sayfa oluşturabilirsiniz. PHP’nin  yaratıcısı Rasmus Lerdorf, konuşmalarında her zaman PHP’nin hızlı olduğunu ve çalışması için ne sınıflara ne de framework’e ihtiyacı olmadığını iddia etti. 2014 yılında Mariano Iglesias, PHP Brezilya Konferansı’nda framework’süz geleceği savunduğu bir ders verdi. Bahsettiğimiz yazılımın karmaşıklığına bağlı olarak hem Rasmus hem de Mariano haklı. Basit bir kişisel web sayfasını kurumsal bir sistemle kıyaslayamayız. Nesne yönelimli programlama (OOP) ve frameworklerden bahsettiğimizde, esas olarak karmaşıklığın kontrolünden bahsediyoruz.</p>
+
+<p>Martin Fowler, çoğu insanın mimarlık terimi için hemfikir olduğu anlamlardan birinin, değiştirilmesi zor olan bir dizi karar olduğunu belirtir. Yazılım projesi için bu kararlar, istenen özelliklerle ilgilidir. Bir yazılım için neyin arzu edildiğini düşündüğünüzde, yazılımın ilk kararlı sürümünün teslim edilmesinin, yalnızca bir kilometre taşı olduğunu unutmamak önemlidir.</p>
+
+<h3 id="sürekli-entegrasyon-ve-sürekli-teslimat">Sürekli entegrasyon ve sürekli teslimat</h3>
+
+<p>Yazılım büyüyen bir organizmadır. Frederick Brooks, The Mythical Man-Month, Addison-Wesley adlı kitabında yazılım için dört karmaşıklık düzeyi olduğunu belirtir:</p>
+
+<ul>
+  <li>Algoritması yalnızca bir insan beyninde saklanabilen <strong>program</strong>; başka bir deyişle, onu yalnızca bir kişi anlayabilir. Çok sınırlı bir görevi olan çok özel bir programdır. Bu tür yazılımlar spesifik ihtiyaçlara hizmet eder ve kısa bir sohbette açıklanabilecek şeylerdir, ancak yalnızca yaratıcısı onu çalıştırabilir ve bakımını yapabilir.</li>
+  <li><strong>Programlama ürünü:</strong> Minimum dökümantasyon ile herkes tarafından çalıştırılabilen ve bakımı yapılabilen ve insanlar tarafından okunabilen bir program.</li>
+  <li><strong>Programlama sistemi:</strong> Daha karmaşık görevleri gerçekleştirmek için bir programın diğer programlarla birleştirildiği bir dizi program.</li>
+  <li><strong>Programlama sistemleri ürünü:</strong> programdan dokuz kat daha karmaşık ve pahalı olan yazılım. Bu yazılımın bakımı için büyük bir ekip gerekir. Tek bir kişinin kafasına sığmaz. Nasıl çalıştığını veya nasıl organize edildiğini açıklamak kolay değildir. Ancak Brooks’a göre, çoğu yazılım geliştirme çabasının amacı budur.</li>
+</ul>
+
+<p><strong>Not:</strong> Mythical Man-Month, yazılım mühendisliği için klasik bir metindir. Çevik yazılım geliştirmenin yükselişinden önce yazılmış olmasına rağmen, yazılım üretmenin karmaşıklığına ve görevleri paralelleştirmenin zorluğuna ilişkin analizi güncelliğini koruyor.</p>
+
+<p>Sürekli değişmesi gereken karmaşık yazılımlar, bazı özelliklerin uzun süre korunmasını gerektirir. Dayanması ve bir hafta sonra çöpe atılmaması için yapılmış yazılımlardan bahsediyoruz. Bazı yazılımlar geçicidir, bu nedenle yapısı hakkında çok fazla endişelenmenize gerek yoktur. Otomatik kod oluşturma araçları, yakında atılacak olan kodu oluşturmak için harikadır. Ancak evrilen yazılımlar, yazılımın nasıl çalıştığına dair derin bir anlayış gerektirir. Aslında, uzun ömürlü olması için yapılan yazılımlar bazı temel özellikler gerektirir: minimum karmaşıklık, gevşek bağlantı, genişletilebilirlik ve yeniden kullanılabilirlik. Bu arzu edilen özelliklerin her biri, kritik bir özellikle ilişkilidir: bakım kolaylığı.</p>
+
+<p>Karmaşık bir sistemin minimum karmaşıklığa sahip olması gerektiğini söylemek çelişkili görünüyor. Aslında bir programlama sistemleri ürününün karmaşık olduğunu söylediğimizde, birçok parçası olan ve büyük olan bir sistemden bahsediyoruz. Minimum karmaşıklık, bu parçaların iç organizasyonuna ve nasıl bağlandıklarına atıfta bulunur. Geliştirme ekibinin her üyesinin tüm sistem hakkında her zaman her şeyi bilmesi beklenmez, ancak ekibin herhangi bir üyesinin gerektiğinde değiştirebilmesi için sistemin bir bölümünü kolayca anlayabilmesi arzu edilir.</p>
+
+<p>Erich Gamma, Bill Venners ile röportaj yaptığında, bugünkü yazılım ortamlarının, mevcut kodu yeniden kullanmadan uygulamalar oluşturmak için çok karmaşık olduğunu belirtti. Gamma, yeniden kullanım için gerekli olan genişletilebilirliği sunduğu için OOP’nin standart geliştirme paradigması olduğunu varsayar. Gamma, OOP’de üç yeniden kullanım seviyesi olduğunu belirtir: sınıfların yeniden kullanımı, pattern’lerin yeniden kullanımı ve frameworkler. Framework’lerin, sorunları çözmek için temel soyutlamaları tanımladıkları ve çeşitli geliştiricilerin bilgi ve deneyimlerini içeren uygulamalar sundukları için en yüksek yeniden kullanım düzeyi olduğunu vurguluyor.</p>
+
+<h3 id="frameworkün-kullanışlılığı">Framework’ün kullanışlılığı</h3>
+
+<p>Yazılım geliştirmek için framework kullandığınızda, kütüphane kullanırken yaptığınız gibi yalnızca sınıfları yeniden kullanmıyorsunuz. Sınıf kütüphaneleri, yazılım geliştirmede taşeron kullanmak gibidir. Sınıf kütüphanelerini kullanırsınız çünkü zaten çözülmüş genel sorunlara değil, asıl işinize odaklanmak istersiniz. Ama siz bir kütüphanenin sınıflarını çağırıyorsunuz. Framework Hollywood Yasası’na bağlı çalışır: Siz bizi aramayın, biz sizi ararız. Framework sınıfları, sınıflarınızı çağırır. Yazılımın genel davranışıyla ilgilenir ve özel davranışlar tanımlamanıza izin verir. Framework kullandığınızda, yazılımınız franchise sahibi gibidir. Yazılımınız, diğer yazılımlarla aynı altyapıyı paylaşır. Framework bir soruna çözüm sunduğunda, onu kullanan tüm uygulamalar için ortak bir sorunu çözmüş olur. Zindan Efendisi’nin dediği gibi, birinin kaderi herkes tarafından paylaşılır.</p>
+
+<p>Yazılımın bakımını kolaylaştırmak için framework kullanıyoruz. Bu nedenle, framework, minimum karmaşıklıkla kod oluşturmamıza ve gevşek bağlı bileşenlerle mevcut kodu yeniden kullanmamıza yardımcı olmalıdır. Framework, design pattern’leri (birbirine benzer sorunları çözmek için geliştirilmiş ve işlerliği kanıtlanmış genel çözüm önerileri) uyguladığında, genel sorunlara çözüm sağlar ve evrilirken genel çözümlerin iyileştirilmesine odaklanır.</p>
+
+<p>Mariano Iglesias gibi harika bir yazılım geliştiricisinin framework’lere karşı konuştuğunu gördüğümüzde, aslında başka bir şeye karşı konuşuyor: frameworkitis (framework hastalığı). Bill Venners’ın Erich Gamma ile yaptığı konuşmada söylediği gibi, bu terim “framework’lerin her şeyi yapmasını isteme hastalığı” anlamına gelir. Erich Gamma, framework olarak adlandırılan bazı yazılımların aslında geliştiriciler için çok fazla şey yapmak istediğini söylüyor. Sorun şu ki, bunu yapmaya çalıştıklarında, bunu tüm geliştiricilerin istemeyeceği bir şekilde ve - daha da kötüsü - geliştiricilerin değiştiremeyeceği bir şekilde yapıyorlar.</p>
+
+<p>Gerçek bir framework, “Endişelenme, uygulamanızı ben kontrol ediyorum ve genel sorunları sizin için halledeceğim” demelidir. Frameworkitis’li bir çerçeve ise, “Merak etmeyin, ben sizin için kod üretiyorum ve her şeyi en iyi şekilde yapıyorum ve benim uygulamamı değiştirmenize gerek yok - aslında değiştiremezsiniz” diyor. Bu davranış, sürekli değişen bir senaryonun tersi yönde ilerliyor. Frameworkitis, geliştiricileri sevgiden nefrete götürür. Önce kendileri için her şeyi yapıyormuş gibi görünen bir aracı severler ve sonra bağlandıkları ve değiştiremedikleri araçtan nefret ederler. Çok şükür ki Laminas öyle değil.</p>
+
+<h2 id="zend-frameworkten-laminasa">Zend Framework’ten Laminas’a</h2>
+
+<p>X-Men (2000) filminin açılışında Profesör Xavier, mutasyonun evrimimizin anahtarı olduğunu söylüyor. Mutasyonla tek hücreli organizmalardan gezegendeki baskın türlere nasıl evrimleştiğimizi de ekliyor. Yazılım yaşayan bir organizma gibidir. Hayatta kalabilmesi için gelişmesi gerekir. Bazen çok değişmesi gerekiyor ve bu bir mutasyon gibi görünüyor. Değişim ihtiyacı, yazılımın değişime izin vermesini gerektirir. Değiştirilmesi zor bir yazılım parçası yok olmaya adaydır.</p>
+
+<p>Yazılımın evrimi, bir bileşeni diğeriyle değiştirmek gibi görünebilir. Ölçeklenebilirliğin, performansın veya güvenliğin sürdürülmesi veya iyileştirilmesi için bir değişim gerekli olabilir.</p>
+
+<p>Ancak, bir yazılım parçasının bir bileşenini değiştirmek zor veya neredeyse imkansızsa, iyileştirmelerin zor bir şekilde, genellikle mevcut kodu yeniden yazarak yapılması gerekecektir.</p>
+
+<p>Örüntüler (nesnelerin düzenli bir biçimde birbirini takip ederek gelişmesi) - bileşenler de aynı örüntüleri paylaştığı için - bileşenlerin değiştirilmesine yardımcı olur. Bir şirketin yazılım geliştirme ekipleri, bileşenler için farklı örüntüler kullanarak yazılım geliştirirse, bileşenlerin paylaşılması zor olacaktır ve bu, uzun ömürlü yazılımlar için arzu edilen bir özellik olan kodun yeniden kullanımı engeller.</p>
+
+<h3 id="zend-framework-ile-tanışmam">Zend Framework ile tanışmam</h3>
+
+<p>2005 yılında, birkaç yazılım geliştirme birimine sahip büyük bir IT şirketine katıldım. Bu şirket devlet için yazılımlar geliştiriyordu ve çeşitli programlama dillerinde binlerce proje geliştirdi. Sorun, her ekibin projeleri için farklı standartlar kullanmasıydı, bu nedenle bileşenler yeniden kullanılamıyordu. Birkaç ekip framework kullandı, ancak her biri aynı dil için farklı frameworkler kullandı. Dolayısıyla, bileşenleri paylaşmanın zorluğu devam etti.</p>
+
+<p>2007’de yeni teknolojiler arayan bir bölümde çalışıyordum ve ekibim şirkette PHP uygulama geliştirmeyi standart hale getirmek için bir framework seçmek zorunda kaldı. Tesadüfen, o yıl São Paulo şehrinde PHP frameworkleri üzerine bir seminer düzenlendi. Bu etkinliğe gittik ve frameworkler ile ilgili üç konuşmaya katıldık: CakePHP, Symfony ve Zend. CakePHP’yi Brezilya’daki ilk PHP Konferansından zaten biliyordum ve şirketimden birkaç meslektaşım zaten Symfony kullanıyordu. Ancak Zend Framework benim için tam bir yenilikti. Bu sürpriz olmamalı çünkü Zend Framework’ün ilk kararlı sürümü o yıl yayınlandı. Ancak 2005’ten beri geliştirme aşamasındaydı.</p>
+
+<p>CakePHP ve Symfony konferanslarına izleyicilerin tepkisi benzerdi. Konuşmacılar, terminalde kod üreten komutları çalıştırdığında, izleyiciler Vay canına! dediler. Ancak Zend’in konuşmasında kod üreteci olmadığını gördüklerinde cesaretleri kırıldı. Konuşmacı şikayetleri dinledi ve Zend’in kod oluşturma araçları olmamasına rağmen oldukça esnek olduğunu söyledi. İzleyicilerden biri, framework mimarisinin, yalnızca uygulamayı oluşturmakla kalmayıp uygulamayı sürdürmekle de ilgilendiğini fark etti.</p>
+
+<p>Etkinlikten çıkarken, birkaç kişinin CakePHP veya Symfony kullanacağını söylediğini, kod oluşturma araçlarına vurgu yaptığını duydum. Bu insanlar muhtemelen yazılım geliştirmede veya daha doğrusu mevcut yazılımların bakımında derinlemesine deneyime sahip değillerdi. IDE gibi kod oluşturmaya yardımcı olabilecek başka araçlar da vardır. Frameworkler, kod oluşturma araçları değil, kodu yeniden kullanma araçlarıdır.</p>
+
+<p>Konuşmacılardan biri, o etkinlikte sunulan frameworkler de dahil olmak üzere 5 framework’ün analizini içeren bir kitap satıyordu. Satın aldım, okudum ve bu frameworkler  için testler yaptım. Analiz edilen frameworkler arasında minimum karmaşıklık, gevşek bağlantı, genişletilebilirlik ve yeniden kullanılabilirlik gibi en iyi özelliklere sahip olan Zend Framework idi. Büyük ölçüde yapılandırılabilirdi ve diğer framework bileşenlerinin kullanılmasını engellemiyordu. O zamanlar PHP Framework Interoperability Group (PHP-FIG) henüz mevcut değildi, ancak birlikte çalışabilirlik sunan araçlara ihtiyacımız vardı.</p>
+
+<p><strong>PHP Framework Interoperability Group</strong></p>
+
+<p>2009’da Brezilya’daki PHP Konferansında bazı PHP konuşmacıları PHP Framewarks adlı bir konferans verdi. Bu “frameworkler savaşına” şaka yollu bir göndermeydi. Konuşmacıların her biri en sevdikleri framework’ü savundu ve diğerlerine saldırdı. Belki tam olarak bir savaş  yoktu, ancak gerçek şu ki, bir framework’ü bir kez benimsediğinizde, diğerlerinin bileşenlerini kullanmak zordu çünkü her biri kendi örüntülerini takip ediyordu. Bu senaryo, aynı yıl, 2009’da, bir grup PHP uzmanının PHP topluluğu için bileşenlerin spesifikasyonlarını (teknik standartlarını) oluşturmak üzere Chicago, ABD’de bir araya gelmesiyle değişmeye başladı. Bu grup ilk olarak PHP Standard Recommendations (PSRs) olarak adlandırıldı. İlk spesifikasyon, Composer’ın ortaya çıkmasına yardımcı olan bir otomatik yükleme standardı hakkındaydı. 2011 yılında grup, adını PHP Framework Interoperability Group (PHP-FIG) olarak değiştirdi. O zamandan beri son derece etkileyici PHP projelerinin yaratıcıları, PHP Standard Recommendations (PSRs) adı verilen özellikleri tartışmak ve yazmak için bir araya geldi. Çeşitli frameworkler ve diğer PHP uygulamaları, PHP-FIG standartlarını benimsemiştir.</p>
+
+<h3 id="zend-framework---php-uygulamaları-için-referans-mimarisi">Zend Framework - PHP uygulamaları için referans mimarisi</h3>
+
+<p>Zend Framework, uygulamaların gelişmesine yardımcı olan referans mimarisi oluşturmamıza imkan verdi. Uygulama, kendi bünyesinde bulunan ve yalnızca kendisine hizmet eden dahili bileşenleri veya diğer uygulamalar tarafından paylaşılan bileşenleri kullanabilir.</p>
+
+<p>Belirli bir sorunu çözmek için, yazılım mimarı önce mevcut bir bileşeni aramalıdır. Varsa, ancak tüm gereksinimleri karşılamıyorsa, genişletilme olasılığı analiz edilmelidir. Yalnızca son çare olarak yeni bir bileşen oluşturulmalıdır. Bu durumda bileşen, belirli bir ihtiyacı karşılamak için dahili bir bileşen olarak doğar. Ancak bileşen mimarisi, daha sonra dağıtılabilmesi, yeniden kullanılabilir bir bileşen haline gelmesi ve iyileştirilebilmesi için genel olarak ele alınmalıdır. Zend Framework bu konuyla ilgili bir yapıya sahiptir.</p>
+
+<p>Zend Framework’ün ilk kararlı sürümü PHP 5.3’ten önce yayınlandı, dolayısıyla ZF1 namespace kullanmıyordu. Henüz Composer yoktu, bu nedenle ZF1’in kendi otomatik yükleyicisi vardı. Ancak Zend Framework’ün yapısında sunduğu tek özellik, bahsettiğim gibi değişme olasılığıydı. Kararsız sürümler şu şekilde yapılandırılabilir kodlar getirdi:</p>
+
+<pre>
+Zend_Controller_Front::run('/path/to/controllers');
+</pre>
+
+<p>Zend Framework, Controller sınıfları için dizin belirlemek yerine, geliştiricinin seçim yapmasına izin verir. Önerilen bir proje yapısı vardır ve bugün bir uygulama oluşturmaya başlamak için Model-View-Controller (MVC) iskeleti kullanılıyor.</p>
+
+<p>Zend Framework’ün bir başka ilginç özelliği de, PHP uygulamalarının zaten var olduğunu ve var olanı geliştirmeniz gerektiğini fark etmesidir. Yeni projeler için her zaman talep olmayacak, ancak kullanılan projelerin sürdürülmesi gerekiyor. Böylece, Zend Framework en başından itibaren MVC’den ayrılmış bileşenlerin kullanımına izin verir. Zend Framework bileşenlerini kullanarak bir uygulamayı yeniden düzenleyebilmek, her şeyi değiştirmek zorunda kalmadan uygulamanın odak noktası olmayan görevleri dışarıdan alabilmek anlamına geliyordu. Değişim gereklidir, ancak yavaş, kademeli ve güvenli bir şekilde yapılabiliyorsa daha iyidir.</p>
+
+<p>Zend Framework, design pattern’lerini ve programlama paradigmalarını dahil ederken, PHP programlama dilinin ve diğer yazılım geliştirme teknolojilerinin gelişimine ayak uydurarak kademeli olarak gelişti. 2008’de Zend Framework’ün 1.5 sürümü, Two-Step View pattern’i Zend_Layout bileşeniyle birleştirdi ve dinamik formlar oluşturmak için Zend_Form adlı bir bileşen geliştirdi. Aynı yıl, 1.6 sürümü PHPUnit’i Zend_Test bileşeni aracılığıyla genişletti. 2009’da Zend Framework, kod oluşturma aracı olan Zend_Tool’u ve IOC bileşeni olan Zend_Application’ı kazandı. Eclipse ve Netbeans gibi IDE’ler çok geçmeden Zend_Tool ile entegrasyon sağladı.</p>
+
+<p>İlk ana sürümünde bile, Zend Framework isteğe bağlı olarak modül oluşturma imkanı sunmaya başladı. Zend Framework terminolojisinde modüller, yeniden kullanılabilen bağımsız birimlerdir. Modül mimarisi, birkaç alt sisteme bölünmesi gereken karmaşık sistemler için çok uygundur. Mikroservis dünyasında modüller, kademeli olarak dağıtılmış bir sisteme dönüştürülebilen, başlangıçta monolitik bir uygulama oluşturmanıza olanak tanır.</p>
+
+<p>Neden mikroservisleri kullanarak bir uygulama oluşturmuyoruz diye sorabilirsiniz. Başka bir soru ile cevaplayalım: Bu gerçekten gerekli mi? Bugün, bulut ortamları ile esnek kaynaklara sahibiz, ancak bu, henüz ihtiyaç duymadığımız kaynakları tahsis etmek için bir sebep değil. Bunu önceden yapmamıza gerek yok, sadece değişime hazırlıklı olmalıyız.</p>
+
+<p>Zend Framework 2.0 sürümünde, modül mimarisini geliştirdi ve bileşenlerin tutarlılığını ve performansını iyileştirdi. Kod, namespace kullanacak şekilde yeniden düzenlendi ve iki yeni bileşen dahil edildi: MVC uygulaması tarafından kullanılan event-driven (olaya dayalı) programlama için çeşitli stratejilerin bir kombinasyonu olan EventManager ve dependency injection (bağımlılık yönetimi) için bir container olan ServiceManager. Bileşenler arasındaki ayrıştırma, sürüm 2.0’dan bu yana önemli ölçüde arttı.</p>
+
+<p>Sürüm 2.5, Zend Framework’e köklü değişiklikler getirdi. Her bileşene kendi reposu verildi ve bağımsız bir yaşam döngüsüne sahip oldu. Ayrıca, sınıfların otomatik yüklenmesi ve bileşenlerin kurulumu artık Composer tarafından yapılıyor. 2.4 sürümüne kadar, Zend Framework her şeyi indiriyordu. 2.5 sürümünden itibaren, yalnızca istediğiniz bileşenleri indirebilir ve kullanabilirsiniz.</p>
+
+<p>Zend Framework’ün 3.0 sürümü, PHP’ye olan minimum bağımlılığı versiyon 7’ye yükseltti. Ek olarak, middleware oluşturmak için özel bir microframework olan Expressive’i getirdi. Bu microframework, kullanılacak bileşenlerden tamamen bağımsız olarak, PSR’ler ile güçlü bir uyum içinde uygulanmıştır.</p>
+
+<p>Ve bu, Zend Framework’ün sonuydu. Evet bu kadardı çünkü bölümün başında da söylediğimiz gibi artık Lasminas olarak adlandırılıyor. Lamina bıçak anlamına gelir. Bu ismin nedeni, framework’ün uygulamaların katmanlar halinde - ancak ince katmanlar halinde, yani gerekli minimum katman boyutuyla - oluşturulmasına izin vermesidir. Profesör X’in dediği gibi, evrim yavaştır. Ancak bazen evrim ileri sıçrar. Zend Framework’ten Laminas’a geçiş, tüm sınıf adlarının yeniden düzenlenmesini gerektirdi. Ayrıca topluluğun teknik ve sosyal altyapısı da değişmektedir. Bu sıçrayış iyi oldu çünkü bunca yıllık deneyime sahip bir framework artık daha açık.</p>
+
+<h3 id="zend-framework-ve-laminas-arasındaki-farklar">Zend Framework ve Laminas arasındaki farklar</h3>
+
+<p>Ekosistem açısından Zend Framework ve Laminas arasında bazı farklılıklar vardır. Zend Framework, açık kaynaklı bir proje olarak kod katkılarını kabul etti. Laminas, kar amacı gütmeyen bir kuruluş olduğu için bağış alabiliyor. Zend Framework, topluluğun tartışabilmesi ve katkıda bulunabilmesi için forumlara ve bir Slack kanalına sahipti. Ayrıca Laminas, aylık olarak herkese açık toplantılar düzenler ve Technical Steering Committee (TSC, projeyi yöneten teknik bilgiye sahip üyelerden oluşan bir gruptur) oylarının kaydını tutar. Diğer bir deyişle Laminas, Zend Framework’e göre daha açık ve şeffaftır. Dilerseniz, web uygulamaları oluşturmanıza yardımcı olan bir ürünün geliştirilmesine aktif olarak katılabilirsiniz.</p>
+
+<p>Steve McConnell, programlama dili seçiminin yazılım projeleri için önemli bir karar olduğunu belirtir. Buna karşılık PHP topluluğu, PHP’nin özellikle web geliştirme için uygun olduğunu belirtir. Ancak programlama dili, endişelenmeniz gereken şeylerden yalnızca biridir. Bu yüzden Laminas’tan bahsediyoruz.</p>
+
+<h2 id="laminas-topluluğunun-teknik-ve-sosyal-altyapısı">Laminas topluluğunun teknik ve sosyal altyapısı</h2>
+
+<p>Laminas’ın birçok özelliğinden bahsedeceğiz ama elbette her şeye değinmeyeceğiz. Laminas için ana referans kaynak, https://docs.laminas.dev adresinde bulunan resmi dökümantasyondur.</p>
+
+<p>Dokümantasyon ana sayfasındaki Components ve MVC seçenekleri bu kitabın içeriği ile doğrudan ilişkilidir. Bununla birlikte Laminas, - daha önce Expressive olarak bilinen - microframework Mezzio’yu ve API Tools’u da içerir.</p>
+
+<p>Tüm bileşenlerin kaynak kodunu https://github.com/laminas adresinden indirilebilir ve katkıda bulunabilirsiniz. Olgunlaşmış bileşenlere sahip 100’den fazla repo bulacaksınız. Bu sayfada, hataları düzeltmek veya yeni özellikler istemek için konular açabilirsiniz - özellikler için alacağınız yanıtın topluluğun ilgisine bağlı olacağını unutmayın. Ücretsiz ve açık kaynak bir projeye katkıda bulunmak, yazılım geliştirme hakkında daha fazla bilgi edinmenin harika bir yoludur ve daha sonra meslektaşlarınız tarafından tanınmanıza yardımcı olabilir.</p>
+
+<p>Roger Pressman, yazılımı bilgisayar programları ve bu programlarla ilgili belgelerin bir kombinasyonu olarak tanımlar. İnsanlar aynı zamanda bir yazılım dokümantasyonunun parçasıdır, çünkü genellikle henüz açık bilgiye dönüştürülmemiş örtülü bilgiye sahiptirler. Dokümantasyon yeterli olmadığında, insanlardan yardım almamız gerekebilir ve kaydedilmiş bir görüşme dokümantasyona dönüşebilir. https://discourse.laminas.dev adresinde bulunan resmi tartışma forumlarında Laminas’a dahil olan veya ilgilenen kişilerle sohbet edebilirsiniz. security@getlaminas.org adresine mesaj göndererek olası güvenlik açıklarını bildirebilirsiniz. Laminas’ın güvenlik politikası hakkında bilgi almak için https://getlaminas.org/security adresini ziyaret edin.</p>
+
+<p>Konu açarak ve sorularınızı forumlara göndererek topluluktan destek alabilirsiniz; hatta bileşenleri genişleterek sorunları kendiniz çözebilirsiniz. Ancak isteğe bağlı danışmanlık desteği veya uzun vadeli destek istiyorsanız, Zend Technologies’in kurumsal desteğini düşünebilirsiniz.</p>
+
+<h2 id="özet">Özet</h2>
+
+<p>Yazılım yaşayan bir organizma gibidir: doğar, büyür ve bir gün ölür. Yazılımımızın erken ölmesini elbette istemiyoruz. Bunun için yazılımlarımıza uzun süre hayatta kalmasını sağlayacak özellikler kazandırmamız gerekiyor. Bu bölümde, yeniden kullanılabilir ve bakımı kolay yazılımlar oluşturmamıza yardımcı olan framework’lerden bahsettik. PHP web uygulamaları oluşturmak için ücretsiz ve açık kaynak bir framework olan Laminas’ın tarihine değindik. Bir sonraki bölümde Laminas ile PHP web uygulamaları geliştirmek için ortamımızı hazırlayacağız.</p>
+
+<p><strong>Kaynak:</strong> PHP Web Development with Laminas, Flávio Gomes da Silva Lisboa</p>
+</p>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                    <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <a href="/feed.xml" class="text-decoration-none" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss-fill" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/melihkocaturk" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="text-center">
+            <small><a href="mailto:melih.kocaturk@icloud.com" class="text-decoration-none text-secondary">melih.kocaturk@icloud.com</a></small>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
