@@ -25,9 +25,9 @@ WSL isteğe bağlı bir Windows özelliğidir, dolayısıyla onu açmanız gerek
 
 Ardından açın:
 
-<pre>
+```
 Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-</pre>
+```
 
 Değişiklikleri uygulamak için makinenizi yeniden başlatmanız gerekecektir. Bundan sonra Windows Store’u açabilir ve mevcut dağıtımları görüntülemek için “WSL”yi arayabilirsiniz:
 
@@ -37,25 +37,25 @@ Değişiklikleri uygulamak için makinenizi yeniden başlatmanız gerekecektir. 
 
 İlk yüklediğiniz varsayılan olarak ayarlanmalıdır, ancak birden fazla yükleme yaparsanız varsayılanı manuel olarak ayarlamanız gerekecektir. WSL'yi Powershell'deki wsl komutu aracılığıyla yönetebilirsiniz. Örneğin, şu anda yüklü olan tüm sürümlerin listesi:
 
-<pre>
+```
 PS C:\> wsl --list
 Windows Subsystem for Linux Distributions:
 Ubuntu-20.04 (Default)
 docker-desktop
 docker-desktop-data
-</pre>
+```
 
 Ardından, WSL 1 ve 2 arasında geçiş yapmak için de kullanılabilen aşağıdaki komutla varsayılan WSL dağıtımınızı ayarlayabilirsiniz.
 
-<pre>
+```
 wsl --set-version Ubuntu-20.04 2
-</pre>
+```
 
 Gelecekteki tüm kurulumlar için tercih edilen bir WSL sürümünü de ayarlayabilirsiniz:
 
-<pre>
+```
 wsl --set-default-version 2
-</pre>
+```
 
 ## WSL’i Kullanmak
 
@@ -77,6 +77,6 @@ Bunların hepsi sanal olduğundan, Linux dosyalarınız elbette sürücünün ke
 
 Bu imajları aşağıdaki yolda bulabilirsiniz ve dağıtım kayıtlı değilken de monte edilebilseler de, Windows tarafında onları karıştırmanızı önermiyoruz.
 
-<pre>
+```
 %USERPROFILE%AppDataLocalPackagesCanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgscLocalState
-</pre>
+```

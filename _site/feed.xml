@@ -1,5 +1,905 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-02-24T01:21:15+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
-</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">ChatGPT Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir.html" rel="alternate" type="text/html" title="ChatGPT Nasıl Kullanılır?" /><published>2024-02-22T00:00:00+03:00</published><updated>2024-02-22T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir.html"><![CDATA[<p>Artık ChatGPT’yi ve nasıl çalıştığını anladığınıza göre kullanmaya başlamanın zamanı geldi. Bu bölümde ChatGPT’yi tarayıcınız aracılığıyla kullanmaya odaklanacağız ve etkinliğini en üst düzeye çıkarmak için bazı ipuçları ve en iyi uygulamaları sunacağız.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-01T15:56:20+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
+</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Pasif Gelir Akışı Oluşturmak İçin ChatGPT’yi Kullanın</title><link href="http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin.html" rel="alternate" type="text/html" title="Pasif Gelir Akışı Oluşturmak İçin ChatGPT’yi Kullanın" /><published>2024-03-01T00:00:00+03:00</published><updated>2024-03-01T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin</id><content type="html" xml:base="http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin.html"><![CDATA[<p>Oyun artık değişti, giriş engeli çok düşük olan pasif gelir kaynakları giderek artıyor çünkü ChatGPT insanların bunu yüzlerce veya binlerce kez tekrarlamasını gerçekten kolaylaştırıyor.</p>
+
+<p>Bu nedenle, Amazon’daki basit içerikli kitaplar (defterler, boyama kitapları veya bulmaca kitapları vb.) gibi veya AI sanatı oluşturmak ve bunu stok fotoğraf sitelerinde satmak (bazı fotoğraf siteleri bunu zaten yasakladı) gibi oluşturulması kolay şeylere odaklanmayacağız.</p>
+
+<p>Bunun yerine, ChatGPT ile bile iyi yapılması zaman alacak, tek bir istekle mükemmel bir şekilde oluşturulamayan şeylere odaklanacağız. Bu piyasada önce çıkmanızı sağlayacaktır.</p>
+
+<p>Şunlara odaklanacağız:</p>
+
+<ul>
+  <li>E-kitaplar</li>
+  <li>Blog yazıları</li>
+  <li>Youtube videoları</li>
+  <li>Online kurslar</li>
+  <li>Yazılım uygulamaları</li>
+</ul>
+
+<h2 id="e-kitap">E-kitap</h2>
+
+<p>E-kitaplar büyük bir pasif gelir kaynağı olabilir, ancak çok fazla ön çalışma gerektirse de, iyi bir e-kitap önümüzdeki yıllarda telif hakkı yaratabilir - ve bugünlerde Amazon yayıncılığı sayesinde, eski tarz yayınevleriyle yapılan anlaşmalar konusunda endişelenmeden kitabınızı basılı olarak da kullanıma sunabilirsiniz.</p>
+
+<p>Ancak iyi bir e-kitap yazmak kolay değildir; neler yapılması gerektiğine bir bakalım:</p>
+
+<ul>
+  <li>Hedeflenecek doğru konuyu ve nişi bulmak.</li>
+  <li>Kitabın iyi çalışılmış ve güvenilir olmasını sağlamak için kapsamlı bir araştırma yapmak.</li>
+  <li>İçeriğin mantıksal ve takip edilmesi kolay bir şekilde düzenlenmesi ve yapılandırılması.</li>
+  <li>Okuyucunun dikkatini çekecek ilgi çekici içerik oluşturmak.</li>
+  <li>Hedef kitleye hitap eden, okunması kolay bir üslupla yazmak.</li>
+  <li>Kitabı farklı okuma cihazları için biçimlendirin ve hepsinde iyi göründüğünden emin olun.</li>
+  <li>Kitabın hatalardan ve yazım hatalarından arınmış olmasını sağlamak için düzeltme ve düzenleme.</li>
+  <li>Piyasada öne çıkacak ve okuyucuların ilgisini çekecek bir kapak tasarlamak.</li>
+  <li>Kitabın hedef kitleye ulaşmasını sağlamak ve pazarlamak.</li>
+  <li>Hedef pazarınıza göre kitabın optimum satışlar için fiyatlandırılması.</li>
+</ul>
+
+<p>Neyse ki ChatGPT size birçok konuda yardımcı olabilir; hadi uygun bir niş bularak başlayalım.</p>
+
+<p><em>Örnek:</em> Niş ve Konu</p>
+
+<p>Yazmak istediğiniz konu hakkında hiçbir fikriniz yoksa beyin fırtınası oturumu düzenleyebilirsiniz.</p>
+
+<p><strong>Mesaj:</strong> Bir e-kitap yazmak için bazı iyi benzersiz nişler nelerdir?</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>E-kitap yazmak için benzersiz nişler bulmak, kitabınızı diğerlerinden ayırmak ve hedef kitlenize ulaşmak için önemlidir. İşte bazı potansiyel niş fikirleri:</p>
+
+<ol>
+  <li><strong>Kültürel Gezi Rehberleri:</strong> Belirli bir şehir veya bölgeyi keşfetmek için interaktif ve derinlemesine rehberler.</li>
+  <li><strong>Yenilikçi Yemek Tarifleri:</strong> Geleneksel tariflerin modern ve sağlıklı yorumları veya nadir bulunan yöresel lezzetlerin tarifleri.</li>
+  <li><strong>Kültürel Öğrenme Kılavuzları:</strong> Az bilinen kültürler, diller veya gelenekler hakkında bilgi veren kılavuzlar.</li>
+  <li><strong>Kişisel Gelişim ve Mindfulness:</strong> Stresle başa çıkmak, kendine şefkat, meditasyon gibi konulara odaklanan rehberler.</li>
+  <li><strong>Yaratıcı Hobi Kılavuzları:</strong> Özgün el sanatları, DIY projeleri veya belirli bir beceriyi öğrenmeye yönelik kılavuzlar.</li>
+  <li><strong>Çocukların Eğitimi ve Gelişimi:</strong> Ebeveynlere yönelik pratik tavsiyeler veya çocukların yaratıcılığını destekleyen aktivite kitapları.</li>
+  <li><strong>Sıra Dışı Seyahat Deneyimleri:</strong> Geleneksel turistik rotalardan farklı seyahat deneyimleri, örneğin evde konaklama, yerel topluluklarla etkileşim vb.</li>
+  <li><strong>Alternatif Tıp ve Doğal Sağlık:</strong> Bitkisel tedaviler, doğal beslenme, alternatif terapiler gibi konulara odaklanan rehberler.</li>
+  <li><strong>Geleceğin Teknolojisi ve İnovasyon:</strong> Yapay zeka, uzay keşfi, biyoteknoloji gibi ilerleyen teknoloji alanlarına odaklanan popüler bilim kitapları.</li>
+  <li><strong>Çevre Dostu Yaşam Tarzı:</strong> Geri dönüşüm, sürdürülebilirlik, minimalizm gibi konuları içeren yaşam tarzı rehberleri.</li>
+</ol>
+
+<p>Bu nişlerin her biri, kendine özgü bir okuyucu kitlesi çekebilir ve e-kitabınızın başarılı olması için ilginç bir içerik sağlayabilir. Ancak, yazarken tutkulu olduğunuz bir konuyu seçmek önemlidir, çünkü bu tutku, okuyuculara daha etkileyici bir şekilde ulaşmanıza yardımcı olabilir.</p>
+
+<hr />
+
+<p><strong>Mesaj:</strong> Bana sıra dışı seyahat deneyimleri alanında yazabileceğim bazı konular ver.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Elbette, işte sıra dışı seyahat deneyimleri konularından bazıları:</p>
+
+<ol>
+  <li><strong>Köy Konaklamaları ve Yerel Topluluklarla Etkileşim:</strong> Geleneksel oteller yerine yerel köylerde konaklama deneyimleri ve yerel halkla etkileşim fırsatları.</li>
+  <li><strong>Doğa Yürüyüşleri ve Kampçılık:</strong> Ulaşılması zor bölgelere yapılan doğa yürüyüşleri, vahşi doğada kamp yapma deneyimleri ve hayatta kalma becerileri.</li>
+  <li><strong>Gastronomik Maceralar ve Yemek Yolculukları:</strong> Dünyanın farklı bölgelerindeki eşsiz yemek deneyimleri, sokak yemekleri turu ve yerel pazarları ziyaret etme.</li>
+  <li><strong>Kültürel Festival ve Etkinliklere Katılım:</strong> Nadir bulunan yerel festivaller, dini törenler veya geleneksel kutlamalara katılma deneyimleri.</li>
+  <li><strong>Yeraltı Şehirleri ve Gizli Tüneller:</strong> Tarihi yeraltı şehirleri veya gizli tünelleri keşfetme deneyimleri, yeraltı dünyasının sırlarını açığa çıkarma.</li>
+  <li><strong>Doğal Harikaların İzinde:</strong> Dünyanın en az bilinen doğal harikalarını keşfetme, gizli kanyonlar, mağaralar veya şelaleler gibi yerleri ziyaret etme.</li>
+  <li><strong>Eski Kentler ve Terk Edilmiş Yerler:</strong> Eski kentleri ve terk edilmiş yerleri keşfetme, hayalet kasabalar, eski kiliseler veya kalesel kalıntıları inceleme.</li>
+  <li><strong>Egzotik Adalara Yolculuk:</strong> Seyahat edilmemiş adalara yapılan keşif gezileri, yerel kültürleri tanıma ve egzotik doğal yaşamı gözlemleme.</li>
+  <li><strong>Maceracı Yolculuklar ve Ekstrem Sporlar:</strong> Dağcılık, dalış, sörf gibi ekstrem sporlarla dolu maceracı yolculuklar, adrenalini yüksek deneyimler.</li>
+  <li><strong>Yeraltı Şehirleri ve Mağara Kampları:</strong> Yeraltı mağaralarda veya terk edilmiş tünellerde kamp yapma deneyimleri, yeraltı yaşamının gizemlerini keşfetme.</li>
+</ol>
+
+<p>Bu konular, seyahat deneyimlerinizi daha ilginç ve benzersiz kılabilecek çeşitli alternatifler sunar. Her biri, farklı ilgi alanlarına ve macera dürtüsüne sahip okuyucuları cezbetme potansiyeline sahiptir.</p>
+
+<hr />
+
+<p><em>Örnek:</em> Kitap taslağı</p>
+
+<p>Artık yazmak istediğiniz konuyu seçebilirsiniz, diyelim ki “Doğa Yürüyüşleri ve Kampçılık”,  kitap taslağı üzerinde çalışmaya başlayabiliriz.</p>
+
+<p><strong>Mesaj:</strong> “Doğa Yürüyüşleri ve Kampçılık” için bir kitap taslağı oluştur.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Tabii, işte bir “Doğa Yürüyüşleri ve Kampçılık” kitabı için bir taslak:</p>
+
+<p><strong>Giriş</strong></p>
+
+<ul>
+  <li>Doğa yürüyüşleri ve kampçılığın önemi</li>
+  <li>Kitapta ele alınacak konuların genel bir özeti</li>
+</ul>
+
+<p><strong>Bölüm 1: Hazırlık ve Planlama</strong></p>
+
+<ul>
+  <li>Doğa yürüyüşü ve kamp için gerekli ekipmanlar</li>
+  <li>Rotanın belirlenmesi ve harita okuma becerileri</li>
+  <li>Hava durumu ve doğa koşullarına hazırlık</li>
+</ul>
+
+<p><strong>Bölüm 2: Temel Kampçılık Becerileri</strong></p>
+
+<ul>
+  <li>Kamp alanı seçimi ve çadır kurma</li>
+  <li>Ateş yakma teknikleri ve güvenliği</li>
+  <li>Yiyecek ve su kaynakları yönetimi</li>
+</ul>
+
+<p><strong>Bölüm 3: Doğada Hayatta Kalma Becerileri</strong></p>
+
+<ul>
+  <li>Yiyecek ve su temini</li>
+  <li>İlkyardım bilgisi ve acil durum müdahaleleri</li>
+  <li>Yön bulma ve izleme becerileri</li>
+</ul>
+
+<p><strong>Bölüm 4: Çevre Bilinci ve Doğa Koruma</strong></p>
+
+<ul>
+  <li>Doğa etiği ve iz bırakmadan iz sürme</li>
+  <li>Doğal yaşamın korunması ve çevre bilinci</li>
+  <li>Geri dönüşüm ve atık yönetimi</li>
+</ul>
+
+<p><strong>Bölüm 5: Zevkli ve Güvenli Yürüyüşler</strong></p>
+
+<ul>
+  <li>Doğa fotoğrafçılığı ve gözlem teknikleri</li>
+  <li>Güvenliğin sağlanması ve risk yönetimi</li>
+  <li>Yürüyüş ve kamp sırasında keyif almanın yolları</li>
+</ul>
+
+<p><strong>Bölüm 6: İleri Düzey Teknikler ve Macera Sporları</strong></p>
+
+<ul>
+  <li>Dağcılık, kaya tırmanışı ve diğer macera sporlarına giriş</li>
+  <li>Uzun mesafe yürüyüş ve maratonlarına hazırlık</li>
+  <li>Yüksek riskli ortamlarda güvenlik ve donanım gereksinimleri</li>
+</ul>
+
+<p><strong>Sonuç</strong></p>
+
+<ul>
+  <li>Doğa yürüyüşleri ve kampçılığın kişisel gelişime etkisi</li>
+  <li>Okuyuculara son tavsiyeler ve teşvikler</li>
+</ul>
+
+<p><strong>Ekler</strong></p>
+
+<ul>
+  <li>İlginç rotalar ve doğa parkurları</li>
+  <li>Faydalı kaynaklar listesi ve okuma önerileri</li>
+  <li>Çeşitli doğa yürüyüşü ve kampçılık organizasyonlarının iletişim bilgileri</li>
+</ul>
+
+<p>Bu taslak, doğa yürüyüşleri ve kampçılıkla ilgili temel bilgileri kapsayan geniş kapsamlı bir kaynak sunmayı amaçlıyor. Kitap, hem acemi hem de deneyimli doğa severler için faydalı olacak pratik bilgilerle dolu olacak.</p>
+
+<hr />
+
+<p>Bunun sadece örnek bir taslak olduğunu ve araştırmanıza ve hedef kitlenize göre birkaç konu eklemeniz veya çıkarmanız gerekebileceğini unutmayın. Ayrıca ihtiyacınıza göre her bölüme daha fazla alt konu ekleyebilirsiniz.</p>
+
+<p><em>Örnek:</em> Bölüm taslağı</p>
+
+<p>Artık kitap taslağını kullanarak bölüm taslakları oluşturabiliriz.</p>
+
+<p><strong>Mesaj:</strong> “Doğa Yürüyüşleri ve Kampçılık” kitap taslağından “Bölüm 1: Hazırlık ve Planlama” için bölüm taslağı oluştur.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Tabii, işte “Bölüm 1: Hazırlık ve Planlama” için bir bölüm taslağı:</p>
+
+<p><strong>Bölüm 1: Hazırlık ve Planlama</strong></p>
+
+<p><strong>1.1 Doğa Yürüyüşleri ve Kampçılık için Temel Ekipmanlar</strong></p>
+
+<ul>
+  <li>Çadır</li>
+  <li>Uyku tulumu ve mat</li>
+  <li>Kamp ocakları ve pişirme ekipmanları</li>
+  <li>Giysi ve ayakkabılar</li>
+  <li>Seyahat için temel malzemeler (sırt çantası, su şişesi, vb.)</li>
+  <li>İlk yardım çantası ve acil durum malzemeleri</li>
+</ul>
+
+<p><strong>1.2 Rotanın Belirlenmesi ve Harita Okuma</strong></p>
+
+<ul>
+  <li>Rotanın seçimi: Zorluk seviyesi, mesafe, hava koşulları, vb.</li>
+  <li>Harita okuma temelleri: Ölçek, yükseklikler, arazi tipleri</li>
+  <li>GPS ve diğer navigasyon araçları</li>
+</ul>
+
+<p><strong>1.3 Hava Durumu ve Doğa Koşullarına Hazırlık</strong></p>
+
+<ul>
+  <li>Hava durumu tahmini ve doğru bilgi kaynakları</li>
+  <li>Soğuk, sıcak, yağmur, rüzgar gibi farklı hava koşullarına karşı hazırlık</li>
+  <li>Doğal afetlere karşı önlemler: Fırtına, sel, yangın vb.</li>
+</ul>
+
+<p><strong>1.4 Beslenme ve Su Yönetimi</strong></p>
+
+<ul>
+  <li>Doğada sağlıklı beslenme: Kuru gıdalar, enerji barları, vb.</li>
+  <li>Su kaynaklarının bulunması ve temizlenmesi</li>
+  <li>Yiyecek ve su miktarının hesaplanması: Planlama ve tasarruf yöntemleri</li>
+</ul>
+
+<p><strong>1.5 Güvenlik ve Acil Durum Planları</strong></p>
+
+<ul>
+  <li>Güvenlik önlemleri: İletişim, bildirim, yalnız yolculuk, grup güvenliği</li>
+  <li>Acil durum planları: Kaybolma, yaralanma, diğer acil durum senaryoları için hazırlık</li>
+  <li>İrtibat kişileri ve yardım çağrısı prosedürleri</li>
+</ul>
+
+<p>Bu bölüm, doğa yürüyüşleri ve kampçılık için gerekli olan temel hazırlık ve planlama becerilerini kapsar. Okuyucular, doğa maceralarına hazırlanırken önemli faktörleri anlamak ve doğru ekipmanları seçmek için bu bilgilerden faydalanabilirler.</p>
+
+<hr />
+
+<p>Oldukça iyi olduğunu düşünüyorum - ve şimdi bunu taslaktaki tüm bölümler için tekrarlayabilirsiniz ve kitabın tamamı için tam bir bölüm taslağınız olur. Buradaki bölüm taslağını kullanarak asıl bölümün içeriğini de oluşturabilirsiniz.</p>
+
+<p><em>Örnek:</em> Bölüm İçeriği</p>
+
+<p><strong>Mesaj:</strong> Yukarıdaki bölüm taslağını kullanarak kitap için “1.1 Doğa Yürüyüşleri ve Kampçılık için Temel Ekipmanlar” bölümünü yaz.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Tabii, işte “1.1 Doğa Yürüyüşleri ve Kampçılık için Temel Ekipmanlar” bölümünün yazılmış hali:</p>
+
+<p><strong>1.1 Doğa Yürüyüşleri ve Kampçılık için Temel Ekipmanlar</strong></p>
+
+<p>Doğa yürüyüşleri ve kampçılık yaparken doğru ekipmanları seçmek, hem konforunuzu artırır hem de güvenliğinizi sağlar. İşte doğa maceralarınız için temel ekipmanların bir listesi:</p>
+
+<p><strong>Çadır:</strong> Uygun bir çadır, geceyi geçireceğiniz yere sığabilecek ve hava koşullarına dayanıklı olmalıdır. Hafif ve kolay kurulan bir çadır tercih edin.</p>
+
+<p><strong>Uyku Tulumu ve Mat:</strong> Sıcak tutan, hafif ve kompakt bir uyku tulumu seçmek önemlidir. Ayrıca, konforunuzu artırmak için uygun bir uyku matı da düşünün.</p>
+
+<p><strong>Kamp Ocakları ve Pişirme Ekipmanları:</strong> Açık havada yemek pişirmek için uygun bir kamp ocağı, tencere, tavalar ve pişirme ekipmanlarına ihtiyacınız olacak. Hafif ve taşınabilir seçenekler tercih edin.</p>
+
+<p><strong>Giysi ve Ayakkabılar:</strong> Hava koşullarına uygun giysiler seçmek çok önemlidir. Su geçirmez ve nefes alabilir malzemeler tercih edin. Ayrıca, doğru ayakkabılar seçmek de ayaklarınızı korur ve konfor sağlar.</p>
+
+<p><strong>Seyahat için Temel Malzemeler:</strong> Sırt çantası, su şişesi, harita ve pusula gibi seyahat için temel malzemeleri unutmayın. Hafif ve dayanıklı seçenekler tercih ederek yükü azaltın.</p>
+
+<p><strong>İlk Yardım Çantası ve Acil Durum Malzemeleri:</strong> Her zaman bir ilk yardım çantası taşıyın ve acil durumlar için gerekli malzemeleri içerdiğinden emin olun. Bandajlar, yara temizleyici, sargı bezi, acil durum battaniyesi gibi malzemeler bulundurun.</p>
+
+<p>Doğru ekipmanı seçmek, doğa maceralarınızı daha keyifli ve güvenli hale getirecektir. İhtiyaçlarınıza ve planladığınız aktivitelere göre ekipmanlarınızı özenle seçin ve her zaman güncel tutun.</p>
+
+<hr />
+
+<p><em>Örnek:</em> Kitap başlığı</p>
+
+<p>Şimdi iyi bir kitap başlığı için beyin fırtınası yapabiliriz:</p>
+
+<p><strong>Mesaj:</strong> Bu kitap için birkaç uygun kitap başlığı önerebilir misin?</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Tabii, işte “Doğa Yürüyüşleri ve Kampçılık” kitabı için uygun kitap başlığı önerileri:</p>
+
+<ul>
+  <li>“Doğada: Yürüyüşler ve Kampçılık Rehberi”</li>
+  <li>“Doğa Maceraları: Kamp ve Yürüyüş Tutkunları İçin Kılavuz”</li>
+  <li>“Doğa Yolculuğu: Yürüyüşler ve Kampçılık Üzerine Bir Başvuru”</li>
+  <li>“Doğanın İzinde: Yürüyüşler ve Kampçılıkta Ustalaşmak”</li>
+  <li>“Açık Hava Rehberi: Yürüyüşler, Kampçılık ve Doğa Hayatı”</li>
+</ul>
+
+<p>Bu başlıklar, doğa yürüyüşleri ve kampçılıkla ilgilenen okuyucular için kitabın içeriğini yansıtan ve ilgi çekici bir şekilde öne çıkan seçeneklerdir.</p>
+
+<hr />
+
+<p><em>Örnek:</em> Satış sayfası için kitap açıklaması</p>
+
+<p>Artık kitabın tüm bağlamlarına ve içeriğine chatGPT penceresinde sahibiz, şimdi Amazon’da veya başka herhangi bir sitede kullanabileceğimiz bir satış sayfası oluşturmasını isteyebiliriz.</p>
+
+<p><strong>Mesaj:</strong> “Doğanın İzinde: Yürüyüşler ve Kampçılıkta Ustalaşmak” kitabı için açıklayıcı ve ilgi çekici bir satış sayfası metni oluştur.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Tabii, işte “Doğanın İzinde: Yürüyüşler ve Kampçılıkta Ustalaşmak” kitabı için bir satış sayfası metni:</p>
+
+<p><strong>Kitap Adı:</strong> Doğanın İzinde: Yürüyüşler ve Kampçılıkta Ustalaşmak</p>
+
+<p><strong>Yazar:</strong> [Yazar Adı]</p>
+
+<p><strong>Açıklama:</strong></p>
+
+<p>Doğanın İzinde adlı bu kapsamlı rehber, doğa tutkunlarına heyecan verici bir maceraya davet ediyor. Yürüyüşler ve kampçılıkla ilgili her yönüyle ele alınan bu kitap, doğa severlerin bilgi ve becerilerini ileri seviyeye taşıyacak pratik ipuçları, güvenlik önlemleri ve ilham verici hikayelerle dolu.</p>
+
+<p><strong>Kitapta Neler Bulacaksınız?</strong></p>
+
+<ul>
+  <li>Temel Ekipmanlar ve Teknikler: Doğa maceralarınız için gerekli olan ekipmanları doğru seçmekten, kamp alanı kurulumuna kadar temel bilgilere erişim sağlayın.</li>
+  <li>Güvenlik ve Acil Durum Hazırlıkları: Doğada güvenliğinizi sağlamanın önemini kavrayın ve her türlü acil duruma hazırlıklı olun.</li>
+  <li>Doğa Hayatının Keyfini Çıkarın: Fotoğrafçılık sırlarını öğrenin, doğal yaşamı gözlemleyin ve doğanın sunduğu benzersiz deneyimlerin tadını çıkarın.</li>
+  <li>Doğa Etiği ve Çevre Bilinci: Doğa koruma bilinciyle donanın, iz bırakmadan doğanın tadını çıkarın ve gelecek nesillere temiz ve sağlıklı bir doğa bırakmanın önemini keşfedin.</li>
+</ul>
+
+<p><strong>Bu Kitap Kimler İçin?</strong></p>
+
+<ul>
+  <li>Doğa severler ve macera tutkunları</li>
+  <li>Yürüyüş ve kampçılıkla ilgilenen herkes</li>
+  <li>Doğayı keşfetmek ve doğal yaşamın tadını çıkarmak isteyenler</li>
+</ul>
+
+<p>Doğanın İzinde, yürüyüşler ve kampçılıkla ilgili bilgi ve deneyimini artırmak isteyen herkes için mükemmel bir kaynaktır. Bu kitapla doğanın büyüleyici dünyasına adım atın ve unutulmaz maceralar yaşayın.</p>
+
+<p><strong>Hemen Sipariş Verin ve Doğa Maceralarına Hazırlanın!</strong></p>
+
+<hr />
+
+<p>Bu gerçekten çok iyi; neredeyse bu kitabı kendim satın alabilirim!</p>
+
+<p><em>Örnek:</em> Fiyatlandırma araştırması</p>
+
+<p>ChatGPT ayrıca satışlarınızı optimize etmeniz için hedef pazarınıza uygun fiyat verebilir.</p>
+
+<p><strong>Mesaj:</strong> Bu e-kitabı Amazon’da listelemek istersem, hedef kitleme uygun olarak satış sayısını en üst düzeye çıkaracak bir fiyat verebilir misin?</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Tabii, hedef kitleye uygun bir fiyat belirlemek için dikkate alabileceğiniz bazı faktörler var. E-kitabınızın içeriği, uzunluğu, benzer kitapların fiyatları, hedef kitlenin alım gücü ve rekabet durumu gibi unsurları göz önünde bulundurarak bir fiyat belirlemek önemlidir.</p>
+
+<p>Genel olarak, yeni başlayan bir yazar veya kendi adını henüz oluşturmamış bir yazar için e-kitaplar genellikle 2,99 ila 9,99 dolar arasında bir fiyatla satılabilir. Ancak, eğer kitabınız çok kapsamlı, benzersiz bir içeriğe sahipse veya alanında otorite kabul ediliyorsanız, fiyatı biraz daha yüksek tutabilirsiniz.</p>
+
+<p>Önerim, hedef kitlenizi ve kitabınızın benzersiz değerini dikkate alarak, 4,99 ila 7,99 dolar arasında bir fiyat belirlemeniz olacaktır. Bu aralık, hem uygun bir fiyat sunarak geniş bir kitleye erişim sağlar, hem de kitabınızın değerini yansıtır.</p>
+
+<p>Ancak, piyasa araştırması yaparak, benzer kitapların fiyatlarını inceleyerek ve Amazon’un kendi önerilerine göz atarak daha kesin bir fiyat belirleyebilirsiniz. Unutmayın ki fiyat, kitabınızın satış potansiyelini etkileyen önemli bir faktördür, bu yüzden dikkatlice düşünmek önemlidir.</p>
+
+<hr />
+
+<h2 id="youtube-videoları">Youtube Videoları</h2>
+
+<p>Youtube videoları pasif gelir için gerçekten uygundur, video kataloğunuz zaman geçtikçe değerlenir, çünkü sizi bulan yeni izleyici kitlesi eski içeriğinize ilgi duyabilir ve yıllar sonra reklam geliri elde etmeye devam edebilirsiniz. Bu, platforma bağlı olarak raf ömrü birkaç saat kadar kısa olabilen sosyal medya gönderileriyle tam bir tezat oluşturuyor.</p>
+
+<p><em>Örnek:</em> Video konusu araştırma</p>
+
+<p>Diyelim ki video konusunda emin değilsiniz, belki bir niş alanınız vardır, belki yoktur.</p>
+
+<p><strong>Mesaj:</strong> Bana youtube videosu için yüksek arama, düşük rekabet için bazı fikirler ver.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Elbette, işte YouTube’da yüksek arama hacmiyle düşük rekabete sahip olabilecek bazı video fikirleri:</p>
+
+<ul>
+  <li>“Evde Bitki Bakımı İpuçları”: Evde bitki yetiştirme, popüler bir konudur ve birçok kişi için ilgi çekici olabilir. Basit ve etkili bitki bakımı ipuçlarını paylaşan bir video, arama hacmi yüksek olabilir.</li>
+  <li>“Hızlı ve Kolay Kahvaltı Tarifleri”: Kahvaltı tarifleri genellikle arama yapılan konulardandır. Hızlı, pratik ve lezzetli kahvaltı tariflerini içeren bir video, geniş bir kitleye ulaşabilir.</li>
+  <li>“Evde Yapılabilecek Doğal Temizlik Malzemeleri”: Çevre dostu ve doğal temizlik malzemeleriyle ilgili içerikler, son zamanlarda popülerlik kazanmıştır. Evde kolayca yapılabilen doğal temizlik malzemelerini gösteren bir video, arama hacmi yüksek olabilir.</li>
+  <li>“Günlük Egzersiz Rutini Nasıl Oluşturulur?”: Egzersiz yapma konusu her zaman ilgi çekicidir. Günlük hayata uyarlanabilir egzersiz rutinlerini içeren bir video, arama hacmi yüksek olabilir.</li>
+  <li>“Evdeki Malzemelerle Cilt Bakım Maskeleri”: Doğal cilt bakım maskeleriyle ilgili içerikler, genellikle aranan konulardandır. Evde bulunan malzemelerle yapılabilecek cilt bakım maskelerini gösteren bir video, ilgi çekebilir.</li>
+  <li>“Minik Ev Dekorasyon Fikirleri”: Küçük alanlarda dekorasyon yapma konusu, özellikle şehirde yaşayanlar için önemlidir. Sınırlı alanlarda nasıl dekorasyon yapılacağına dair ipuçlarını içeren bir video, arama hacmi yüksek olabilir.</li>
+</ul>
+
+<p>Bu fikirlerle başlayarak, arama hacmi yüksek ancak rekabetin düşük olduğu içerikler üreterek YouTube kanalınızı büyütebilirsiniz.</p>
+
+<hr />
+
+<p><em>Örnek:</em> İlgi çekici ve esprili bir senaryo oluşturun.</p>
+
+<p>Diyelim ki “Evde Bitki Bakımı İpuçları” hakkında bir video oluşturmaya karar verdiniz.</p>
+
+<p><strong>Mesaj:</strong> “Evde Bitki Bakımı İpuçları” için ilgi çekici ve esprili bir youtube video senaryosu oluştur.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p><strong>Video Başlangıcı:</strong></p>
+
+<p>Ekran açılır, kanalın logosu belirir ve hafif bir müzik başlar. Ardından kamera, içi yeşil bitkilerle dolu bir odaya dönüşür. Sunucu, enerjik bir şekilde ekrana adım atar.</p>
+
+<p>Sunucu: “Merhaba YouTube ailesi! Bugün sizlere evde bitki bakımıyla ilgili ipuçları vereceğim. Benim gibi çiçekleri suçlayanlardan mısınız? Endişelenmeyin, bu videodan sonra siz de bir bitki uzmanı olacaksınız!”</p>
+
+<p><strong>1. Bölüm: Bitki Bakımının Temel İlkeleri</strong></p>
+
+<p>Sunucu: “Öncelikle, bitki bakımının altın kuralını hatırlayalım: Sevgi ve sabır! Evet, biraz şefkat ve biraz da sabır ile bitkileriniz sağlıklı ve mutlu olacaktır. Ama unutmayın, fazla şefkat de zararlı olabilir, unutulmuş bitkiler hakkında bilgi sahibiyim!”</p>
+
+<p><strong>2. Bölüm: Bitkileri Suda Boğmamak</strong></p>
+
+<p>Sunucu: “Şimdi, bitkilerinizi sulama zamanı geldiğinde, onların ‘suda boğulmadıklarından’ emin olun. Evet, onlara su içirin ama bir havuzda batırma partisi düzenlemeyin! Bitkilerinizin alt tabakasının suyu emdiğinden emin olun ve ardından fazla suyu dökün. Unutmayın, çamurlu sular onları yüzmek için kullanmazlar!”</p>
+
+<p><strong>3. Bölüm: Işık ve Sevgi</strong></p>
+
+<p>Sunucu: “Bitkilerinizin de sevgiye ihtiyacı var! Onları güneş ışığına maruz bırakın ama buzdolabında değil! Evet, güneş ışığı onların en iyi arkadaşıdır. Ancak, güneş yanığına dikkat edin. Bitkilerinizin yandığını fark ettiğinizde, aloe vera özleri yerine sadece su kullanmayı denemeyin!”</p>
+
+<p><strong>4. Bölüm: Zararlılarla Mücadele</strong></p>
+
+<p>Sunucu: “Şimdi, bitkilerinizin düşmanlarına karşı savaşmaya hazır mısınız? Evet, zararlı böcekler! Onları uzak tutmak için doğal yöntemler deneyebilirsiniz. Mesela, bitkilerinizi tütün dumanına maruz bırakmayın, sigara içmeyen bitkiler için değil! Bunun yerine, doğal böcek kovucuları kullanın veya bitkilerinize güvenilir bir dost edinin: birazcık ısırma yeteneği olan küçük bir yılan!”</p>
+
+<p><strong>5. Bölüm: Bitki İsimlerini Unutmak</strong></p>
+
+<p>Sunucu: “Son olarak, bitkilerinize isimler verin! Evet, onları ‘Bob’, ‘Sue’ veya ‘Rex’ gibi isimlerle çağırın. İsimleri sayesinde onlarla daha bağlantılı hissedeceksiniz. Ama unutmayın, onların isimlerini unutmanız durumunda, bitkileriniz ‘isimsizlik depresyonu’ yaşamaya başlayabilir!”</p>
+
+<p><strong>Video Sonu:</strong></p>
+
+<p><strong>Sunucu:</strong> “İşte bu kadar, arkadaşlar! Umarım bu ipuçları evde bitki bakımı konusunda size yardımcı olur. Unutmayın, bitkilerinizi sevin, onlara zaman ayırın ve biraz da mizahla yaklaşın! Bir sonraki videoda görüşmek üzere, bitki dostları!”</p>
+
+<p>Sunucu kamera ile el sallar ve müzik eşliğinde video sona erer.</p>
+
+<hr />
+
+<p>İşte ortaya çıkan şey bu, muhtemelen 10 dakika kadar kısa bir süre ve biraz düzenleme gerektirecek, ancak çok iyi bir başlangıç noktası, özellikle de yazma tıkanıklığıyla karşı karşıyaysanız.</p>
+
+<h2 id="video-kayıt">Video Kayıt</h2>
+
+<p>Normalde bunun için kaydı kendiniz yapmanız gerekir, ancak kamera karşısında olmaktan hoşlanmıyorsanız veya yalnızca sizin için seslendirme yapabileceğiniz bir video oluşturulmasını tercih ediyorsanız, şanslısınız.</p>
+
+<p>Pictory adlı bir araç, bir script ve hatta bir bloga dayalı olarak görseller ve metinler içeren tam bir video oluşturmak için yapay zekayı kullanıyor. Daha sonra yüzünüzü hiç göstermeden okuyabilir veya videonuzu seslendirmek için dahili AI ses karakterlerinden birini kullanmayı tercih edebilirsiniz!</p>
+
+<p>Bununla birlikte, AI içeren YouTube videolarından nadiren para kazanılır; dolayısıyla hedefiniz buysa, videoyu oluşturup seslendirmeyi kendiniz yapabilirsiniz.</p>
+
+<h2 id="affiliate-marketing-odaklı-blog-yazıları">Affiliate Marketing Odaklı Blog Yazıları</h2>
+
+<p>Son bölümde anahtar kelimeler ve başlıklar üzerinde beyin fırtınası yaparak ilgi çekici blog yazıları oluşturmayı başardık, şimdi özellikle affiliate marketing için uyarlanmış blog yazıları oluşturmaya odaklanacağız.</p>
+
+<p>Tıpkı youtube videoları gibi iyi blogların da raf ömrü uzundur ve uzun yıllar boyunca gelir kaynağı olabilir.</p>
+
+<p>Normalde affiliate marketing blog yazıları karşılaştırma incelemelerine odaklanır; diyelim ki niş alanınız drone’lar ve fikir arıyorsunuz.</p>
+
+<p><em>Örnek:</em> Blog yazısı fikirleri</p>
+
+<p><strong>Mesaj:</strong> Drone’larla ilgili bir affiliate marketing blogu için bana 5 fikir ver.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Tabii, işte drone’larla ilgili bir affiliate marketing blogu için beş fikir:</p>
+
+<ol>
+  <li>“En İyi Drone Modelleri ve İncelemeleri”: Bu blog yazısında, farklı amaçlara uygun en iyi drone modellerini ve bunların detaylı incelemelerini sunabilirsiniz. Farklı bütçe ve beceri seviyelerine uygun seçenekler sunarak okuyucularınızın ihtiyaçlarına hitap edebilirsiniz.</li>
+  <li>“Drone Fotoğrafçılığına Başlamanın İpuçları”: Drone’larla fotoğraf ve video çekimine ilgi duyanlar için başlangıç rehberi sunabilirsiniz. Hangi ekipmanın gerektiği, çekim teknikleri, izinler ve güvenlik konuları gibi konuları ele alarak okuyucularınıza değerli bilgiler verebilirsiniz.</li>
+  <li>“Drone’larla İlgili Hukuki Bilgilendirme ve Yasal Konular”: Drone kullanıcılarının sıkça karşılaştığı yasal konuları ele alabilirsiniz. Sınırlı uçuş bölgeleri, izin gereksinimleri, gizlilik endişeleri gibi konuları açıklayarak okuyucularınızın bilinçlenmesini sağlayabilirsiniz.</li>
+  <li>“Drone’larla Tarımın Geleceği: Tarım Sektöründe Dronelerin Rolü”: Tarım sektöründe drone kullanımının artan önemini ve faydalarını ele alan bir içerik hazırlayabilirsiniz. Tarım alanında drone’ların kullanımıyla ilgili verimlilik, izleme ve veri toplama gibi konuları vurgulayarak okuyucularınıza bilgi sunabilirsiniz.</li>
+  <li>“DroNFT’ler: Drone Fotoğraflarınızı NFT’ye Dönüştürme Rehberi”: NFT (Non-Fungible Token) pazarının yükselişiyle birlikte drone fotoğrafçılığının NFT’ye dönüştürülmesi konusunu ele alabilirsiniz. Fotoğrafçılar için drone çekimlerini nasıl NFT’ye dönüştürebileceklerini anlatarak yeni bir gelir kaynağı oluşturmalarına yardımcı olabilirsiniz.</li>
+</ol>
+
+<p>Bu fikirler, drone’larla ilgili farklı yönleri ele alarak geniş bir kitleye hitap eden değerli içerikler oluşturmanıza yardımcı olabilir.</p>
+
+<hr />
+
+<p>Şimdilik basit bir karşılaştırma makalesi ile devam edeceğiz.</p>
+
+<p><em>Örnek:</em> Tam bir blog yazısı oluşturmak</p>
+
+<p><strong>Mesaj:</strong> Piyasadaki en popüler 5 drone hakkında kapsamlı bir karşılaştırma yaparak ilgi çekici bir blog yazısı yaz, fiyatlarını ver ve her birinin kamera, pil ve uçuş deneyimi hakkında bilgi ver.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Tabii, işte piyasadaki en popüler 5 drone hakkında kapsamlı bir karşılaştırma:</p>
+
+<p><strong>1. DJI Mavic Air 2</strong></p>
+
+<ul>
+  <li>Fiyat: Yaklaşık 800-1000 USD arası.</li>
+  <li>Kamera: 48 MP fotoğraf ve 4K video çekim özelliğiyle yüksek kaliteli görüntüler sağlar. Akıllı çekim modları ve HDR desteği ile çeşitli çekim seçenekleri sunar.</li>
+  <li>Pil: 34 dakikaya kadar uçuş süresi sunan güçlü bir bataryaya sahiptir.</li>
+  <li>Uçuş Deneyimi: Hızlı ve istikrarlı uçuş performansıyla dikkat çeker. Hindernisyon teknolojisi ve akıllı uçuş modları ile güvenli ve keyifli bir uçuş deneyimi sunar.</li>
+</ul>
+
+<p><strong>2. DJI Mini 2</strong></p>
+
+<ul>
+  <li>Fiyat: Yaklaşık 400-500 USD arası.</li>
+  <li>Kamera: 12 MP fotoğraf ve 4K video çekim özelliğiyle kompakt boyutuna rağmen yüksek kaliteli görüntüler sağlar. 3 eksenli gimbal stabilizasyonu ile istikrarlı çekimler sunar.</li>
+  <li>Pil: 31 dakikaya kadar uçuş süresi sunan hafif ve taşınabilir bir drone.</li>
+  <li>Uçuş Deneyimi: Kolay kontrol ve stabil uçuş performansıyla öne çıkar. Otomatik kalkış ve iniş özellikleri ile kullanıcı dostu bir deneyim sunar.</li>
+</ul>
+
+<p><strong>3. Autel Robotics EVO II</strong></p>
+
+<ul>
+  <li>Fiyat: Yaklaşık 1500-2000 USD arası.</li>
+  <li>Kamera: 48 MP fotoğraf ve 8K video çekim özelliğiyle profesyonel düzeyde görüntüler sağlar. 6K ve 4K video çözünürlükleri ile çeşitli çekim seçenekleri sunar.</li>
+  <li>Pil: 40 dakikaya kadar uçuş süresi sunan uzun ömürlü bir bataryaya sahiptir.</li>
+  <li>Uçuş Deneyimi: Hassas kontrol ve stabil uçuş performansı ile profesyonel kullanıcılar için idealdir. Gelişmiş uçuş modları ve otomatik pilotlama özellikleri ile güvenli ve verimli bir uçuş deneyimi sunar.</li>
+</ul>
+
+<p><strong>4. Skydio 2</strong></p>
+
+<ul>
+  <li>Fiyat: Yaklaşık 1000-1200 USD arası.</li>
+  <li>Kamera: 12 MP fotoğraf ve 4K video çekim özelliğiyle yüksek kaliteli görüntüler sağlar. 3 eksenli gimbal stabilizasyonu ile istikrarlı çekimler sunar.</li>
+  <li>Pil: 23 dakikaya kadar uçuş süresi sunan hafif ve taşınabilir bir drone.</li>
+  <li>Uçuş Deneyimi: Otonom uçuş modları ve engelleri otomatik algılama özellikleri ile öne çıkar. Akıllı güvenlik özellikleri ve stabil uçuş performansıyla kullanıcıların beğenisini kazanır.</li>
+</ul>
+
+<p><strong>5. Parrot Anafi</strong></p>
+
+<ul>
+  <li>Fiyat: Yaklaşık 600-700 USD arası.</li>
+  <li>Kamera: 21 MP fotoğraf ve 4K video çekim özelliğiyle kaliteli görüntüler sağlar. 180 derece dönebilen kamera gimbalı ile çeşitli çekim açıları sunar.</li>
+  <li>Pil: 25 dakikaya kadar uçuş süresi sunan hafif ve taşınabilir bir drone.</li>
+  <li>Uçuş Deneyimi: Kolay taşınabilirlik ve hızlı kurulum ile kullanıcı dostu bir deneyim sunar. Otomatik uçuş modları ve stabilizasyon özellikleri ile güvenli ve keyifli bir uçuş deneyimi sağlar.</li>
+</ul>
+
+<p>Bu kapsamlı karşılaştırma, her bir drone’un öne çıkan özelliklerini vurgulayarak okuyuculara detaylı bir inceleme sunar ve karar vermelerine yardımcı olur.</p>
+
+<hr />
+
+<p>Bu mükemmel olmasa da, özellikle konu hakkında deneyiminiz olduğunda ekleyebileceğiniz iyi bir başlangıç noktası görevi görüyor. Uçuş deneyimi aynı zamanda kullanılan drone’larla ilgili videolarınızı eklemek için de mükemmel bir bölümdür.</p>
+
+<h2 id="online-kurs-oluşturmak">Online Kurs Oluşturmak</h2>
+
+<p>Bilginizi ve uzmanlığınızı dünyayla paylaşmaya hazır mısınız? Online kurs oluşturmak hiç bu kadar kolay olmamıştı. Bu bölümde, çevrimiçi bir kurs oluşturmak için ChatGPT’yi kullanma sürecine derinlemesine bakacağız.</p>
+
+<p>Öncelikle konu seçimi hakkında konuşalım. İster belirli bir alanda uzman olun ister belirli bir konu hakkında tutkulu olun, ChatGPT kursunuz için beyin fırtınası yapmanıza ve odaklanmanıza yardımcı olabilir.</p>
+
+<p>Örneğin kişisel gelişim koçu olduğunuzu ve özgüvenin nasıl geliştirilebileceğine dair bir kurs oluşturmak istediğinizi varsayalım. ChatGPT’yi kullanarak, öz güveni artıracak egzersizler, olumsuz düşüncelerin üstesinden gelmeye yönelik stratejiler, hedef belirleme ve ulaşmaya yönelik ipuçları gibi fikirler için beyin fırtınası yapabilirsiniz.</p>
+
+<p><em>Örnek:</em> Kurs fikirleri</p>
+
+<p><strong>Mesaj:</strong> Kişisel finans alanında bir kurs oluşturmak için bazı fikirler ver.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Kişisel finans alanında bir kurs oluşturmak harika bir fikir! İşte kurs içeriği için bazı fikirler:</p>
+
+<ul>
+  <li>Temel Finansal Kavramlar: Bu bölümde, bütçeleme, tasarruf, borç yönetimi, yatırım ve emeklilik gibi temel finans kavramlarını öğretebilirsiniz. Katılımcılar, finansal terimleri anlamak ve temel finansal stratejileri uygulamak için gerekli bilgiyi edinirler.</li>
+  <li>Bütçe Oluşturma ve Yönetme: Katılımcılara, bütçe oluşturma sürecini öğretebilir ve günlük harcamalarını izlemek ve kontrol etmek için pratik yöntemler sunabilirsiniz. Ayrıca, bütçeyi ayarlamak ve hedeflere ulaşmak için stratejiler geliştirmelerine yardımcı olabilirsiniz.</li>
+  <li>Tasarruf ve Borç Yönetimi: Bu bölümde, tasarruf etme alışkanlıklarını geliştirmenin önemi üzerinde durabilir ve katılımcılara borçları yönetme ve azaltma stratejileri sunabilirsiniz. Borçları ödeme planları oluşturma ve faiz maliyetlerini azaltma konularına da değinebilirsiniz.</li>
+  <li>Yatırım Temelleri: Katılımcılara, yatırımın önemi hakkında bilgi verebilir ve farklı yatırım araçlarını (hisse senetleri, tahviller, emlak, vs.) tanıtabilirsiniz. Ayrıca, risk yönetimi ve portföy çeşitlendirmesi gibi temel yatırım prensiplerini de öğretebilirsiniz.</li>
+  <li>Emeklilik Planlama: Bu bölümde, katılımcılara erken dönemden itibaren emeklilik için tasarruf etme stratejileri sunabilir ve emeklilik fonlarını yönetme ve büyütme konularında bilgi verebilirsiniz. Ayrıca, sosyal güvenlik, emeklilik hesapları ve emeklilik planlarının vergi avantajları gibi konuları da ele alabilirsiniz.</li>
+  <li>Vergi Planlama ve Mali Planlama: Katılımcılara, vergi yasalarını anlamak ve vergi açısından avantajlı finansal kararlar almak için stratejiler sunabilirsiniz. Ayrıca, mali hedefler belirleme, acil durum fonları oluşturma ve finansal bağımsızlık için adım atma konularına da değinebilirsiniz.</li>
+</ul>
+
+<p>Bu fikirler, kişisel finans alanında bir kurs oluştururken içeriği çeşitlendirmenize ve katılımcıların geniş bir konu yelpazesi hakkında bilgi sahibi olmalarını sağlamanıza yardımcı olabilir.</p>
+
+<hr />
+
+<p>Daha sonra kursunuzun yapısını ele alalım. ChatGPT ile kursunuz için bölümler, dersler ve sınavlarla tamamlanan mantıksal ve ilgi çekici bir yapıyı kolayca oluşturabilirsiniz.</p>
+
+<p>Örneğin emeklilik planlamasıyla ilgili bir kurs oluşturmak istediğinizi varsayalım.</p>
+
+<p>ChatGPT’yi kullanarak aşağıdaki örnekte olduğu gibi bir kurs yapısı oluşturabilirsiniz.</p>
+
+<p><em>Örnek:</em> Kurs yapısı</p>
+
+<p><strong>Mesaj:</strong> “Emeklilik Planlama” için bölümler, dersler ve sınavlarla tamamlanmış mantıklı ve ilgi çekici bir kurs yapısı oluştur.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Tabii, işte “Emeklilik Planlama” kursu için bir kurs yapısı:</p>
+
+<p><strong>Kurs:</strong> Emeklilik Planlama</p>
+
+<p><strong>Bölüm 1: Emekliliğe Hazırlık</strong></p>
+
+<p><em>Ders 1: Emeklilik Neden Önemlidir?</em></p>
+
+<ul>
+  <li>Emekliliğin önemi ve erken dönemde emeklilik için tasarruf etmenin faydaları.</li>
+  <li>Emeklilik dönemi için mali güvenlik sağlamanın stratejileri.</li>
+</ul>
+
+<p><em>Ders 2: Emeklilik Hedefleri Belirleme</em></p>
+
+<ul>
+  <li>Kişisel emeklilik hedeflerinin belirlenmesi.</li>
+  <li>Yaşam tarzı, sağlık, seyahat gibi hedeflerin emeklilik planına entegrasyonu.</li>
+</ul>
+
+<p><strong>Bölüm 2: Emeklilik Planlama Araçları ve Stratejileri</strong></p>
+
+<p><em>Ders 3: Emeklilik Hesapları ve Planları</em></p>
+
+<ul>
+  <li>401(k), IRA, Roth IRA gibi emeklilik hesaplarının tanıtımı.</li>
+  <li>Emeklilik planları ve otomatik katılımın önemi.</li>
+</ul>
+
+<p><em>Ders 4: Emeklilik Fonları ve Portföy Yönetimi</em></p>
+
+<ul>
+  <li>Emeklilik fonlarının çeşitleri ve seçimi.</li>
+  <li>Portföy çeşitlendirme stratejileri ve risk yönetimi.</li>
+</ul>
+
+<p><strong>Bölüm 3: Emeklilik Yönetimi ve Gelir Planlama</strong></p>
+
+<p><em>Ders 5: Emeklilik Geliri Planlama</em></p>
+
+<ul>
+  <li>Emeklilik geliri kaynakları: Sosyal Güvenlik, emekli maaşı, yatırım geliri.</li>
+  <li>Emeklilik gelirinin optimize edilmesi ve sürdürülebilirliği.</li>
+</ul>
+
+<p><em>Ders 6: Emeklilik Dönemi Mali Planlama</em></p>
+
+<ul>
+  <li>Sağlık masrafları, seyahat, yaşam tarzı ve acil durumlar için bütçe oluşturma.</li>
+  <li>Vergi planlama ve emeklilik döneminde vergi avantajlarından yararlanma.</li>
+</ul>
+
+<p><strong>Bölüm 4: Emeklilik Yaşamının Yönetimi ve Uygulama</strong></p>
+
+<p><em>Ders 7: Emeklilik Sürecindeki Değişim ve Uyum</em></p>
+
+<ul>
+  <li>Emeklilik dönemine geçişte karşılaşılan duygusal ve fiziksel değişimler.</li>
+  <li>Yeni bir yaşam tarzı ve günlük rutinlerin oluşturulması.</li>
+</ul>
+
+<p><em>Ders 8: Emeklilik Planınızı Değerlendirme ve Güncelleme</em></p>
+
+<ul>
+  <li>Emeklilik planınızı düzenli olarak gözden geçirme önemi.</li>
+  <li>Finansal hedeflerinize uygun olarak emeklilik planınızı güncelleme stratejileri.</li>
+</ul>
+
+<p><strong>Sınav: Emeklilik Planlama Uygulama ve Değerlendirme</strong></p>
+
+<ul>
+  <li>Kurs boyunca öğrenilen konuları içeren bir final sınavı.</li>
+  <li>Katılımcıların emeklilik planlarını oluşturma ve yönetme becerilerini ölçmek için uygulamalı sorular.</li>
+</ul>
+
+<p>Bu kurs yapısı, katılımcıların emeklilik dönemlerini planlama ve yönetme konusunda kapsamlı bir anlayış geliştirmelerini sağlar. Her bir bölüm, temel kavramların öğretildiği derslerle tamamlanır ve kursun sonunda katılımcılar emeklilik planlarını oluşturma ve yönetme konusunda bilgi sahibi olurlar.</p>
+
+<hr />
+
+<p>Artık bir kurs taslağınız var, her konu (veya isterseniz birden fazla konu) hakkında video oluşturmaya başlayabilirsiniz, burası chatGPT’nin size zaman kazandırabileceği yerdir.</p>
+
+<p>İster video ister ses kayıtları oluşturuyor olun, videoyu/sesi kendiniz kaydetmeniz veya metinden konuşma/video oluşturmak için vidIQ gibi çevrimiçi bir araç kullanmanız gerekecektir.</p>
+
+<p>Son bölümde videolar için script oluşturmayı inceledik.</p>
+
+<p>Daha sonra testler oluşturmak için ChatGPT’yi kullanmalıyız.</p>
+
+<p><strong>Test oluşturma mesajı:</strong> “DERS KONUNUZ BURADA” ile ilgili başlangıç (veya kursunuza bağlı olarak orta/ileri düzey) zorluk seviyesinde 10 soru içeren 4 seçenekli çoktan seçmeli bir test oluştur.</p>
+
+<p>Önceki bölümde sınav oluşturmanın bir örneğini gördük.</p>
+
+<p>Son olarak, kursunuzu başlatma ve öğrencilerin ilgisini çekme zamanı geldiğinde, kursunuz hakkında bilgi vermek için kolayca pazarlama materyalleri ve tanıtım kampanyaları oluşturabilirsiniz.</p>
+
+<h2 id="yazılım-uygulamaları-oluşturmak">Yazılım Uygulamaları Oluşturmak</h2>
+
+<p>Harika fikirleriniz olduğu halde kodlama becerileriniz yok mu?</p>
+
+<p>ChatGPT ile mobil ve masaüstü uygulamalardan kapsamlı oyunlara kadar her şeyi ve dahasını oluşturabilirsiniz, yolun her adımında chatGPT’ye ne yapmanız gerektiğini sorabilirsiniz.</p>
+
+<p>Talimatları takip edebilirseniz hemen hemen her şeyi yaratabilirsiniz; 11 yaşındaki bir çocuk, chatGPT’yi kullanarak binlerce kişinin oynadığı bir oyunu zaten yarattı.</p>
+
+<p>Örneğin bir proje üzerinde çalıştığınızı ve dairenin alanını hesaplayan bir fonksiyon yazmanız gerektiğini varsayalım.</p>
+
+<p>ChatGPT’yi kullanarak, bu fonksiyonun kodunu yorum ve dokümantasyon ile birlikte kolayca oluşturabilirsiniz. Ayrıca kodunuzu test etmek ve karşılaştığınız hataları ayıklamak için ChatGPT’yi kullanabilirsiniz.</p>
+
+<p>Yarattığınız her şeyin bir oyun kadar büyük olmasına gerek yok, insanların para ödeyeceği bir sorunu çözen basit bir şey yaratabilirsiniz, hatta chatGPT’den fikir isteyebilirsiniz!</p>
+
+<p>Örnek: KDV hesaplayan bir web sitesi sayfası oluşturun.</p>
+
+<p>İnsanların yalnızca KDV, Bileşik Faiz ve Gelir Vergisi hesaplamak için ziyaret ettiği pek çok basit web sitesi var.</p>
+
+<p>Milyonlarca insan bu siteleri ziyaret ediyor ve büyük miktarda reklam geliri elde ediliyor. Bu web sitelerinden birini oluşturmak istiyordum, ancak ChatGPT’yi kullanmanın ne kadar basit olabileceğini bilmiyordum.</p>
+
+<p><strong>Mesaj:</strong> Kullanıcı arayüzü öğeleri ve CSS içeren, KDV hesaplayan index.html sayfasının kodunu oluştur.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Tabii, işte temel bir HTML dosyası ve CSS stiliyle birlikte bir KDV hesaplama formu:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;head&gt;
+&lt;meta charset="UTF-8"&gt;
+&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+&lt;title&gt;KDV Hesaplama&lt;/title&gt;
+&lt;style&gt;
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f4f4f4;
+    }
+    .container {
+        width: 300px;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        text-align: center;
+    }
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+    input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+    }
+    input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #007bff;
+        color: #fff;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    input[type="submit"]:hover {
+        background-color: #0056b3;
+    }
+&lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;div class="container"&gt;
+    &lt;h2&gt;KDV Hesaplama&lt;/h2&gt;
+    &lt;form id="kdvForm"&gt;
+        &lt;label for="fiyat"&gt;Fiyat (TL):&lt;/label&gt;
+        &lt;input type="number" id="fiyat" name="fiyat" min="0" step="0.01" required&gt;
+        &lt;input type="submit" value="Hesapla"&gt;
+    &lt;/form&gt;
+    &lt;div id="sonuc"&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+    document.getElementById('kdvForm').addEventListener('submit', function(e) {
+        e.preventDefault();
+        var fiyat = parseFloat(document.getElementById('fiyat').value);
+        var kdvOrani = 0.18; // %18 KDV oranı
+        var kdvTutari = fiyat * kdvOrani;
+        var toplamTutar = fiyat + kdvTutari;
+
+        var sonucHTML = '&lt;p&gt;Fiyat: ' + fiyat.toFixed(2) + ' TL&lt;/p&gt;';
+        sonucHTML += '&lt;p&gt;KDV Tutarı: ' + kdvTutari.toFixed(2) + ' TL&lt;/p&gt;';
+        sonucHTML += '&lt;p&gt;Toplam Tutar: ' + toplamTutar.toFixed(2) + ' TL&lt;/p&gt;';
+
+        document.getElementById('sonuc').innerHTML = sonucHTML;
+    });
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
+
+<hr />
+
+<p><em>Örnek:</em> Dikkat dağıtan web sitelerini engelleyen bir browser uzantısı oluşturun.</p>
+
+<p>Browser uzantılarını seçtim çünkü nispeten hızlı ve basitler, birkaç dakika içinde bir tanesini yazıp kullanabilirsiniz, böylece siz de bunu deneyebilirsiniz - ancak gerçekten faydalıdırlar ve insanlar onlar için para ödemeye oldukça hazırdırlar.</p>
+
+<p>ChatGPT’den bir şeyleri kodlamasını istediğinizde çok spesifik olmalısınız, böylece belirsizlik olmaz - yine de daha sonra bir şeyler ekleyebilirsiniz ve size onunla uğraşmak yerine sadece kopyalayıp yapıştırmanız için tamamen yeni bir kod parçası verebilir. (aynı görüşmede olduğunuz sürece)</p>
+
+<p><strong>Mesaj:</strong> Dikkat dağıtıcı web sitelerini engelleyen ve kullanıcıların odaklanmasına yardımcı olan Chrome uzantısının kodunu yaz.</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// manifest.json
+{
+  "manifest_version": 2,
+  "name": "Odaklanma Uzantısı",
+  "version": "1.0",
+  "description": "Dikkat dağıtıcı web sitelerini engeller.",
+  "permissions": [
+    "activeTab"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon16.png",
+      "48": "icon48.png",
+      "128": "icon128.png"
+    }
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["&lt;all_urls&gt;"],
+      "js": ["content.js"]
+    }
+  ]
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;!-- popup.html --&gt;
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Odaklanma Uzantısı&lt;/title&gt;
+  &lt;script src="popup.js"&gt;&lt;/script&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;h1&gt;Odaklanma Uzantısı&lt;/h1&gt;
+  &lt;button id="blockButton"&gt;Dikkat Dağıtıcı Siteleri Engelle&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// popup.js
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('blockButton').addEventListener('click', blockSites);
+});
+
+function blockSites() {
+  chrome.tabs.query({active: true, currentWindow: true}, function(tabs) {
+    chrome.tabs.sendMessage(tabs[0].id, {action: 'block_sites'}, function(response) {
+      console.log(response.message);
+    });
+  });
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// background.js
+chrome.runtime.onMessage.addListener(function(request, sender, sendResponse) {
+  if (request.action === 'block_sites') {
+    chrome.tabs.executeScript({
+      file: 'content.js'
+    });
+    sendResponse({message: 'Dikkat dağıtıcı siteler engellendi.'});
+  }
+});
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// content.js
+// Bu dosya, dikkat dağıtıcı siteleri engellemek için kullanılabilir.
+// Örneğin, Facebook, Twitter gibi siteleri engelleyebilirsiniz.
+var blockedSites = ['facebook.com', 'twitter.com'];
+
+if (blockedSites.includes(window.location.hostname)) {
+  window.location.href = 'https://www.google.com'; // Kullanıcıyı başka bir siteye yönlendirme
+}
+</code></pre></div></div>
+
+<p>Bu uzantı, kullanıcının bir web sitesindeyken butona tıkladığında o anki sekmeyi kontrol eder ve eğer dikkat dağıtıcı bir siteyle eşleşirse, kullanıcıyı başka bir siteye yönlendirir. Bu örnek, kullanıcıyı Facebook veya Twitter gibi belirli sitelere yönlendirir, ancak blockedSites dizisini ihtiyacınıza göre güncelleyebilirsiniz.</p>
+
+<hr />
+
+<p>Kelimenin tam anlamıyla bunun çalışması için gereken tüm kodu üretti, ancak eğer benim gibiyseniz ve bu kodla ne yapacağınızı bilmiyorsanız, bir sonraki soruyu sorabilirsiniz:</p>
+
+<p><strong>Mesaj:</strong> Bunu çalışan bir uzantı haline getirmek için ne yapmalıyım?</p>
+
+<p><strong>ChatGPT yanıtı:</strong></p>
+
+<p>Bu Chrome uzantısını çalışır hale getirmek için aşağıdaki adımları izleyebilirsiniz:</p>
+
+<p>Yukarıdaki kod parçalarını uygun dosya adlarıyla birlikte aynı dizine yerleştirin:</p>
+
+<ul>
+  <li>manifest.json</li>
+  <li>popup.html</li>
+  <li>popup.js</li>
+  <li>background.js</li>
+  <li>content.js</li>
+  <li>İsteğe bağlı olarak, ikonlar için icon16.png, icon48.png, icon128.png dosyalarını ekleyin.</li>
+</ul>
+
+<p>Google Chrome tarayıcınızda, uzantıları yönetmek için “chrome://extensions/” adresine gidin.</p>
+
+<p>Sağ üst köşede bulunan “Geliştirici modunu aç” anahtarını etkinleştirin.</p>
+
+<p>Sayfanın sol üst köşesinde bulunan “Yeni uzantı ekle” düğmesine tıklayın.</p>
+
+<p>Açılan dosya gezgini penceresinde, uzantının bulunduğu dizini seçin.</p>
+
+<p>Uzantı başarıyla yüklendikten sonra, tarayıcınızın sağ üst köşesindeki uzantı simgesine tıklayarak yeni oluşturulan uzantıyı etkinleştirin.</p>
+
+<p>Uzantıyı etkinleştirdikten sonra, web sayfalarında dikkat dağıtıcı sitelere gittiğinizde, popup penceresindeki “Dikkat Dağıtıcı Siteleri Engelle” düğmesine tıklayarak uzantıyı kullanabilirsiniz.</p>
+
+<p>Bu adımları takip ettikten sonra, dikkat dağıtıcı web sitelerini engelleyen ve kullanıcılara odaklanmalarında yardımcı olan uzantı başarıyla çalışır hale gelmelidir.</p>
+
+<hr />
+
+<p>Artık çalışan bir Chrome uzantımız var, bu kodu kopyalayıp yapıştırabilir ve kendiniz deneyebilirsiniz. Artık ona nasıl daha fazla özellik ekleyeceğimiz veya nasıl paketleyip yükleyeceğimiz konusunda talimatlar isteyebiliriz.</p>
+
+<p>Extension marketplace’e gönderirseniz, bunun için ücret alabilir veya sınırlı bir ücretsiz sürüm verebilir ve insanların profesyonel işlevsellik için “yükseltmelerini” sağlayabilirsiniz.</p>
+
+<p>Bir ürününüz olduğunda bu kod tabanını diğer kanallar için de kullanabilirsiniz. Kolayca  “Uzantıyı Firefox’ta çalışacak şekilde yeniden yaz” vb. şeklinde istekte bulunabilir ve bunları da o pazara çıkarabilirsiniz.</p>
+
+<p>Bu kodu kullanmaktan çekinmeyin, insanların bunun üzerine nasıl farklı özellikler geliştirdiklerine ve farklı gelir akışları oluşturduklarına dair hikayeler duymayı çok isterim.</p>
+
+<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Oyun artık değişti, giriş engeli çok düşük olan pasif gelir kaynakları giderek artıyor çünkü ChatGPT insanların bunu yüzlerce veya binlerce kez tekrarlamasını gerçekten kolaylaştırıyor.]]></summary></entry><entry><title type="html">ChatGPT Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir.html" rel="alternate" type="text/html" title="ChatGPT Nasıl Kullanılır?" /><published>2024-02-22T00:00:00+03:00</published><updated>2024-02-22T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir.html"><![CDATA[<p>Artık ChatGPT’yi ve nasıl çalıştığını anladığınıza göre kullanmaya başlamanın zamanı geldi. Bu bölümde ChatGPT’yi tarayıcınız aracılığıyla kullanmaya odaklanacağız ve etkinliğini en üst düzeye çıkarmak için bazı ipuçları ve en iyi uygulamaları sunacağız.</p>
 
 <p><strong>1. Adım:</strong> OpenAI hesabı oluşturun</p>
 
@@ -96,11 +996,11 @@
 
 <p>Konu: Yeni Bir Başlangıç için Mükemmel Bir Fırsat</p>
 
-<p>Sayın [Ev Sahibinin Adı],</p>
+<p>Sayın <em>Ev Sahibinin Adı</em>,</p>
 
 <p>Evinizi satmayı mı düşünüyorsunuz veya kiralanacak mülkünüzü yönetmek için profesyonel bir destek mi arıyorsunuz? Emlak piyasasında size yardımcı olabileceğimizi bilmenizi isteriz.</p>
 
-<p>Ev sahibi olarak, mülkünüzü en iyi şekilde değerlendirmek ve en iyi getiriyi elde etmek istemeniz gayet doğal. İşte tam bu noktada biz devreye giriyoruz. [Emlak Acentesi Adı], deneyimli ekibi ve etkili pazarlama stratejileriyle size en iyi hizmeti sunmak için burada.</p>
+<p>Ev sahibi olarak, mülkünüzü en iyi şekilde değerlendirmek ve en iyi getiriyi elde etmek istemeniz gayet doğal. İşte tam bu noktada biz devreye giriyoruz. <em>Emlak Acentesi Adı</em>, deneyimli ekibi ve etkili pazarlama stratejileriyle size en iyi hizmeti sunmak için burada.</p>
 
 <p>Mülkünüzü satmak, kiralamak veya yönetmek için ihtiyacınız olan her türlü desteği sağlayabiliriz. Sunduğumuz hizmetler arasında:</p>
 
@@ -116,10 +1016,10 @@
 
 <p>Saygılarımla,</p>
 
-<p>[Adınız]
-[Emlak Acentesi Adı]
-[Tel. No.]
-[E-posta Adresi]</p>
+<p><em>Adınız</em><br />
+<em>Emlak Acentesi Adı</em><br />
+<em>Tel. No.</em><br />
+<em>E-posta Adresi</em></p>
 
 <hr />
 
@@ -137,7 +1037,7 @@
 
 <p>Konu: Döviz Piyasalarında Başarıya Giden Yol</p>
 
-<p>Sayın [Potansiyel Müşterinin Adı],</p>
+<p>Sayın <em>Potansiyel Müşterinin Adı</em>,</p>
 
 <p>Finansal hedeflerinizi gerçekleştirmenize yardımcı olmak için buradayız. FX danışmanlık firmamız, döviz piyasalarında uzmanlaşmış profesyonel bir ekiple size en iyi hizmeti sunmak için hazır.</p>
 
@@ -156,10 +1056,10 @@
 
 <p>Saygılarımla,</p>
 
-<p>[Adınız]
-[FX Danışmanlık Firması Adı]
-[Tel. No.]
-[E-posta Adresi]</p>
+<p><em>Adınız</em><br />
+<em>FX Danışmanlık Firması Adı</em><br />
+<em>Tel. No.</em><br />
+<em>E-posta Adresi</em></p>
 
 <hr />
 
@@ -173,11 +1073,11 @@
 
 <p>Konu: Finansal Hedeflerinizi Gerçekleştirmenize Yardımcı Olabiliriz</p>
 
-<p>Merhaba [Potansiyel Müşterinin Adı],</p>
+<p>Merhaba <em>Potansiyel Müşterinin Adı</em>,</p>
 
-<p>Umarım bu e-posta, finansal hedeflerinizi gerçekleştirmenizde size destek olabileceğimizi hatırlatmanın harika bir yolu olur. Ben [Adınız], [FX Danışmanlık Firması Adı]’dan bir danışmanım, ve işte size özel bir teklifimiz var:</p>
+<p>Umarım bu e-posta, finansal hedeflerinizi gerçekleştirmenizde size destek olabileceğimizi hatırlatmanın harika bir yolu olur. Ben <em>Adınız</em>, <em>FX Danışmanlık Firması Adı</em>‘dan bir danışmanım, ve işte size özel bir teklifimiz var:</p>
 
-<p>Eğer döviz piyasalarında yatırım yaparak gelirinizi artırmak veya risklerinizi yönetmek istiyorsanız, doğru adrestesiniz. [FX Danışmanlık Firması Adı], finansal başarıya ulaşmanıza yardımcı olmak için burada. Bizimle çalışmanın size sağlayacağı faydalar arasında:</p>
+<p>Eğer döviz piyasalarında yatırım yaparak gelirinizi artırmak veya risklerinizi yönetmek istiyorsanız, doğru adrestesiniz. <em>FX Danışmanlık Firması Adı</em>, finansal başarıya ulaşmanıza yardımcı olmak için burada. Bizimle çalışmanın size sağlayacağı faydalar arasında:</p>
 
 <ul>
   <li>Kişisel finansal hedeflerinize uygun stratejilerin belirlenmesi</li>
@@ -192,10 +1092,10 @@
 
 <p>Saygılarımla,</p>
 
-<p>[Adınız]
-[FX Danışmanlık Firması Adı]
-[Tel. No.]
-[E-posta Adresi]</p>
+<p><em>Adınız</em><br />
+<em>FX Danışmanlık Firması Adı</em><br />
+<em>Tel. No.</em><br />
+<em>E-posta Adresi</em></p>
 
 <hr />
 
@@ -207,11 +1107,11 @@
 
 <p>Konu: Yeni Bir Yatırım Macerasına Hazır mısınız?</p>
 
-<p>Merhaba [Potansiyel Müşterinin Adı],</p>
+<p>Merhaba <em>Potansiyel Müşterinin Adı</em>,</p>
 
 <p>Bu e-posta, finansal hedeflerinizi zirveye taşımak için heyecan verici bir fırsat sunuyor. Benim adım Elon ve şirketim, döviz piyasalarında çığır açan bir değişim yaratmak için burada.</p>
 
-<p>Döviz piyasaları, keşfedilmeyi bekleyen sonsuz fırsatlarla doludur. Ancak bu fırsatları en iyi şekilde değerlendirmek için doğru strateji ve uzmanlık gereklidir. İşte bu noktada devreye biz giriyoruz. [FX Danışmanlık Firması Adı], size finansal başarı yolculuğunuzda rehberlik etmek ve en iyi getiriyi elde etmek için burada.</p>
+<p>Döviz piyasaları, keşfedilmeyi bekleyen sonsuz fırsatlarla doludur. Ancak bu fırsatları en iyi şekilde değerlendirmek için doğru strateji ve uzmanlık gereklidir. İşte bu noktada devreye biz giriyoruz. <em>FX Danışmanlık Firması Adı</em>, size finansal başarı yolculuğunuzda rehberlik etmek ve en iyi getiriyi elde etmek için burada.</p>
 
 <p>Bizimle çalışmanın size sağlayacağı faydalar arasında:</p>
 
@@ -228,10 +1128,10 @@
 
 <p>Görüşmek üzere,</p>
 
-<p>Elon Musk
-[FX Danışmanlık Firması Adı]
-[Tel. No.]
-[E-posta Adresi]</p>
+<p>Elon Musk 
+<em>FX Danışmanlık Firması Adı</em><br />
+<em>Tel. No.</em><br />
+<em>E-posta Adresi</em></p>
 
 <hr />
 
@@ -243,7 +1143,7 @@
 
 <p><strong>ChatGPT yanıtı:</strong></p>
 
-<p>Sayın [Müşteri],</p>
+<p>Sayın <em>Müşteri</em>,</p>
 
 <p>Öncelikle bize ulaştığınız için teşekkür ederiz. Müşteri memnuniyeti bizim için son derece önemlidir ve sizin geri bildiriminiz değerlidir.</p>
 
@@ -255,11 +1155,11 @@
 
 <p>Saygılarımla,</p>
 
-<p>[Adınız]
-[Müşteri Hizmetleri Temsilcisi]
-[Şirket Adı]
-[Tel. Numarası]
-[E-posta Adresi]</p>
+<p><em>Adınız</em><br />
+<em>Müşteri Hizmetleri Temsilcisi</em><br />
+<em>Şirket Adı</em><br />
+<em>Tel. Numarası</em><br />
+<em>E-posta Adresi</em></p>
 
 <hr />
 
@@ -394,7 +1294,7 @@
 
 <p><strong>Giriş</strong>
 (Müzik ve drone çekimleriyle başlayan enerjik bir intro)
-Seyircilerimiz, bugün tarım dünyasının geleceğini havada yükselten yeni trendlere bir bakış atacağız! Evet, doğru duydunuz, dronelar artık tarım sektöründe büyük bir devrim yaratıyor. Ben [İsim], bu videoda sizleri bu heyecan verici konu hakkında bilgilendireceğim. Hazırsanız, gelin hemen başlayalım!</p>
+Seyircilerimiz, bugün tarım dünyasının geleceğini havada yükselten yeni trendlere bir bakış atacağız! Evet, doğru duydunuz, dronelar artık tarım sektöründe büyük bir devrim yaratıyor. Ben <em>İsim</em>, bu videoda sizleri bu heyecan verici konu hakkında bilgilendireceğim. Hazırsanız, gelin hemen başlayalım!</p>
 
 <p><strong>Tarım Dünyasının Yeni Kahramanları: Dronelar</strong>
 İlk olarak, tarım dünyasının yeni kahramanlarına bir göz atalım: dronelar! Artık tarım arazilerini havadan tarayarak, çiftçilere inanılmaz bir veri sağlıyorlar. Eskiden saatler süren işler, artık birkaç dakika içinde halledilebiliyor. Dronelar, tarım endüstrisini adeta bir bilim kurgu filmine dönüştürüyor!</p>
@@ -419,7 +1319,7 @@ Ve işte bu kadar dostlar! “Tarımın Geleceğini Yükselten Havada Yeni Trend
 
 <hr />
 
-<p>Daha fazla ayrıntıya ihtiyacınız varsa veya oluşturulan senaryo yeterince uzun değilse, mesajı “[konu] hakkında daha fazla ayrıntı içerecek ve daha uzun olacak şekilde yeniden yaz.” şeklinde kullanın.</p>
+<p>Daha fazla ayrıntıya ihtiyacınız varsa veya oluşturulan senaryo yeterince uzun değilse, mesajı “<em>konu</em> hakkında daha fazla ayrıntı içerecek ve daha uzun olacak şekilde yeniden yaz.” şeklinde kullanın.</p>
 
 <h2 id="sosyal-medya-pazarlama">Sosyal Medya Pazarlama</h2>
 
@@ -641,9 +1541,9 @@ Dayanıklı ve uzun ömürlüdür.</p>
 <p><strong>Fiyat:</strong> $250</p>
 
 <p><strong>Ürün Fotoğrafları:</strong>
-[Ekleyebileceğiniz ürün fotoğrafları]</p>
+<em>Ekleyebileceğiniz ürün fotoğrafları</em></p>
 
-<p><strong>Satın Alma Bağlantısı:</strong> [Etsy mağaza linki]</p>
+<p><strong>Satın Alma Bağlantısı:</strong> <em>Etsy mağaza linki</em></p>
 
 <hr />
 
@@ -856,8 +1756,7 @@ d) Alüminyum kutuların yakılması</p>
 
 <p><strong>ChatGPT yanıtı:</strong></p>
 
-<pre>
-int main() {
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>int main() {
     for (int i = 1; i &lt;= 100; ++i) {
         if (i % 3 == 0 &amp;&amp; i % 5 == 0) {
             std::cout &lt;&lt; "FizzBuzz" &lt;&lt; std::endl;
@@ -871,7 +1770,7 @@ int main() {
     }
     return 0;
 }
-</pre>
+</code></pre></div></div>
 
 <p>Bu program, 1’den 100’e kadar olan her sayı için koşullara göre “Fizz”, “Buzz” veya “FizzBuzz” yazdırır. i değişkeni 1’den başlayarak 100’e kadar artar. Her bir sayı, önce 3 ve 5’e bölünüp bölünmediğine bakılır ve ardından bu koşullara göre ekrana yazdırılır.</p>
 
@@ -895,8 +1794,7 @@ int main() {
 
 <p><em>package.json</em> dosyanız şöyle görünmelidir:</p>
 
-<pre>
-{
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
     "private": true,
     "type": "module",
     "scripts": {
@@ -914,7 +1812,7 @@ int main() {
         "vite": "^4.0.0"
     }
 }
-</pre>
+</code></pre></div></div>
 
 <p>Kodunuzu yeniden deploy edin (buildpack eklediyseniz bu gereklidir) ve build loglarını kontrol edin.</p>
 
@@ -926,23 +1824,92 @@ int main() {
 
 <p>Dosyanın üst kısmında, varsayılan kanal LOG_CHANNEL environment değişkeninden okunacak şekilde ayarlanmıştır:</p>
 
-<pre>
-'default' =&gt; env('LOG_CHANNEL', 'stack'),
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'default' =&gt; env('LOG_CHANNEL', 'stack'),
+</code></pre></div></div>
 
 <p>Bu, Heroku’da doğru şekilde log tutmak için LOG_CHANNEL environment değişkenini “errorlog” olarak ayarlayabileceğiniz anlamına gelir:</p>
 
-<pre>
-heroku config:set LOG_CHANNEL=errorlog
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>heroku config:set LOG_CHANNEL=errorlog
+</code></pre></div></div>
 
 <p><img src="/assets/images/2024/02/heroku-env-log-channel-errorlog.png" alt="Log Channel Config Var" title="Heroku'da Laravel Loglarını Nasıl Görüntüleyebilirim?" class="img-fluid" /></p>
 
 <p>Artık logları canlı olarak takip edebilirsiniz:</p>
 
-<pre>heroku logs -t</pre>
+<p><code class="language-plaintext highlighter-rouge">heroku logs -t</code></p>
 
-<p>Okuduğunuz için teşekkürler.</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.]]></summary></entry><entry><title type="html">Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın</title><link href="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html" rel="alternate" type="text/html" title="Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin</id><content type="html" xml:base="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html"><![CDATA[<p>Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.</p>
+<p>Okuduğunuz için teşekkürler.</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.]]></summary></entry><entry><title type="html">WSL Nedir ve Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html" rel="alternate" type="text/html" title="WSL Nedir ve Nasıl Kullanılır?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html"><![CDATA[<p>Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.</p>
+
+<h2 id="sadece-bir-sanal-makine-değil">Sadece Bir Sanal Makine Değil</h2>
+
+<p>WSL’nin ne olmadığıyla başlayalım; örneğin, Ubuntu’yu VirtualBox’ta çalıştırarak elde edebileceğiniz tam bir Linux masaüstü deneyimi değildir. Performans nedenleriyle teknik olarak sanallaştırmayı kullanır, ancak tam bir VM çalıştırmaktan çok farklıdır. Her şey sizin için yönetilir ve işinizi yapmanız ve git, ssh gibi tanıdık bash komutlarını kullanmanız için basit bir shell ve environment sağlar.</p>
+
+<p>Temel olarak WSL, app store’dan bir uygulama olarak tam bir Linux dağıtımı kurmanıza olanak tanır. Ubuntu’yu (veya tercih ettiğiniz dağıtımı) indirebilir, kurabilir ve başlatabileceğiniz bir uygulama veya terminalinizde CMD veya Powershell ile birlikte çalışacak bir profil olarak kullanıma sunabilirsiniz.</p>
+
+<p>En basit açıklaması “Windows’ta bash çalıştırmanıza izin vermesi” olsa da, bir kabuktan daha fazlasıdır; apt kullanarak programları yükleyebilir ve normal bir Linux örneği gibi özelleştirebilirsiniz.</p>
+
+<p>WSL, geliştiricilere ve bash kullanıcılarına, Windows’u birincil işletim sistemi olarak kullanmak zorunda kalmalarına rağmen Linux shell deneyimi sunmayı amaçlamaktadır. Daha kolay komut satırı erişimi için bir Linux shell’inin yanı sıra Visual Studio gibi Windows uygulamalarını çalıştırmanıza izin vererek her iki dünyanın da en iyisini sunar.</p>
+
+<p>Microsoft, WSL’nin iki sürümünü sunmaktadır: sürüm 1 ve sürüm 2. WSL 2, sanal makine kullanır ve Windows ile oluşturulup gönderilen tam bir Linux çekirdeğine sahiptir. WSL 1 daha eskidir ve genellikle çok daha yavaştır ancak dosya sistemleri arasında çalışırken daha iyi performansa sahiptir. Daha hızlı olduğundan ve Docker gibi araçlarla çok daha iyi çalıştığından çoğu işlem için WSL 2’yi öneriyoruz.</p>
+
+<h2 id="wsl-kurulumu">WSL Kurulumu</h2>
+
+<p>WSL isteğe bağlı bir Windows özelliğidir, dolayısıyla onu açmanız gerekir. Powershell’i başlat menüsünden Administrator olarak açın:</p>
+
+<p><img src="/assets/images/2024/02/powershell-run-as-administrator.png" alt="Powershell'i yönetici olarak çalıştır" title="Powershell'i yönetici olarak çalıştır" class="img-fluid" /></p>
+
+<p>Ardından açın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
+</code></pre></div></div>
+
+<p>Değişiklikleri uygulamak için makinenizi yeniden başlatmanız gerekecektir. Bundan sonra Windows Store’u açabilir ve mevcut dağıtımları görüntülemek için “WSL”yi arayabilirsiniz:</p>
+
+<p><img src="/assets/images/2024/02/wsl-windows-store.png" alt="WSL Windows Store" title="WSL Windows Store" class="img-fluid" /></p>
+
+<p>İlk kez çalıştırdığınızda, örnek için kullanıcı adınızı ve şifrenizi ayarlamanız istenecektir. Bunlar yalnızca Linux içindir ve Windows parolanızla eşleşmesi gerekmez.</p>
+
+<p>İlk yüklediğiniz varsayılan olarak ayarlanmalıdır, ancak birden fazla yükleme yaparsanız varsayılanı manuel olarak ayarlamanız gerekecektir. WSL’yi Powershell’deki wsl komutu aracılığıyla yönetebilirsiniz. Örneğin, şu anda yüklü olan tüm sürümlerin listesi:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS C:\&gt; wsl --list
+Windows Subsystem for Linux Distributions:
+Ubuntu-20.04 (Default)
+docker-desktop
+docker-desktop-data
+</code></pre></div></div>
+
+<p>Ardından, WSL 1 ve 2 arasında geçiş yapmak için de kullanılabilen aşağıdaki komutla varsayılan WSL dağıtımınızı ayarlayabilirsiniz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl --set-version Ubuntu-20.04 2
+</code></pre></div></div>
+
+<p>Gelecekteki tüm kurulumlar için tercih edilen bir WSL sürümünü de ayarlayabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl --set-default-version 2
+</code></pre></div></div>
+
+<h2 id="wsli-kullanmak">WSL’i Kullanmak</h2>
+
+<p>WSL’yi birkaç farklı şekilde açabilirsiniz. En kolayı, Windows’a basıp “wsl” yazmaktır; bu, otomatik olarak wsl.exe’yi çalıştıracak ve varsayılan dağıtımınızı açacaktır.</p>
+
+<p><img src="/assets/images/2024/02/wsl-start-menu.png" alt="WSL Start Menu" title="WSL Start Menu" class="img-fluid" /></p>
+
+<p><img src="/assets/images/2024/02/wsl-windows-terminal.png" alt="WSL Windows Terminal" title="WSL Windows Terminal" class="img-fluid" /></p>
+
+<p>Bu sadece temel bir terminal penceresidir; Microsoft’un yeni Terminal Uygulamasını kullanıyorsanız - ki bunu kesinlikle öneriyoruz - WSL sürümlerinize açılır menü aracılığıyla erişilebilir (ayarlamış olabileceğiniz SSH profillerinin yanı sıra):</p>
+
+<p><img src="/assets/images/2024/02/wsl-windows-terminal-menu.png" alt="WSL Windows Terminal Menu" title="WSL Windows Terminal Menu" class="img-fluid" /></p>
+
+<h2 id="dosya-sistemleri-üzerine-bir-not">Dosya Sistemleri Üzerine Bir Not</h2>
+
+<p>Linux dosya sisteminiz her zamanki gibi / konumuna monte edilmiştir. Windows, /mnt/c/ konumunda veya varsayılan sürücü harfiniz hangisiyse orada bulunur.</p>
+
+<p>Bunların hepsi sanal olduğundan, Linux dosyalarınız elbette sürücünün kendisinde depolanır. WSL 1 için bunlar basit bir klasörde saklanır. WSL 2 bazı şeyleri değiştirir ve dosyaları sanal sabit disk imajı veya VHDX olarak saklar.</p>
+
+<p>Bu imajları aşağıdaki yolda bulabilirsiniz ve dağıtım kayıtlı değilken de monte edilebilseler de, Windows tarafında onları karıştırmanızı önermiyoruz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%USERPROFILE%AppDataLocalPackagesCanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgscLocalState
+</code></pre></div></div>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.]]></summary></entry><entry><title type="html">Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın</title><link href="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html" rel="alternate" type="text/html" title="Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin</id><content type="html" xml:base="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html"><![CDATA[<p>Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.</p>
 
 <p>Son birkaç yılda Konteynerizasyon (veya Docker) konusunu İnternet’in her yerinde duyabilirsiniz. VM’nin tamamını sanallaştırmak yerine kodu ve tüm bağımlılıklarını bir “Konteyner” olarak paketler. Konteynerler hakkında daha fazla bilgiyi buradan edinebilirsiniz… Hala Laradock kullanıyor olabilirsiniz… Son olarak, Aralık 2020’de Taylor Otwell, Laravel Sail’i piyasaya sürdü!</p>
 
@@ -968,9 +1935,8 @@ heroku config:set LOG_CHANNEL=errorlog
 
 <p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki komutu çalıştırın.</p>
 
-<pre>
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</code></pre></div></div>
 
 <p>DISM hakkında daha fazla bilgi için <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11">buraya</a> tıklayın.</p>
 
@@ -978,9 +1944,8 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 <p>WSL 2 için sanallaştırma yetenekleri hala gereklidir. Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki çalıştırın.</p>
 
-<pre>
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+</code></pre></div></div>
 
 <p><strong>3. Linux çekirdeği güncelleme paketini indirin</strong></p>
 
@@ -988,9 +1953,8 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 <p><strong>4. WSL 2’yi varsayılan sürümünüz olarak ayarlayın</strong></p>
 
-<pre>
-wsl --set-default-version 2
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl --set-default-version 2
+</code></pre></div></div>
 
 <p><strong>5. Ubuntu’yu (veya seçtiğiniz Linux dağıtımını) yükleyin</strong></p>
 
@@ -1041,9 +2005,8 @@ wsl --set-default-version 2
 
 <p>Aşağıdaki komutu kullanarak test-project adında yeni bir Laravel projesi oluşturalım:</p>
 
-<pre>
-curl -s https://laravel.build/test-project | bash
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s https://laravel.build/test-project | bash
+</code></pre></div></div>
 
 <p>Daha sonra kurulumu bekleyin.</p>
 
@@ -1051,16 +2014,14 @@ curl -s https://laravel.build/test-project | bash
 
 <p>WSL storage’in gerçek konumu (vhdx formatında) şu adreste bulunur:</p>
 
-<pre>
-C:\Users\user_name\AppData\Local\Packages\
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\user_name\AppData\Local\Packages\
 CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState
-</pre>
+</code></pre></div></div>
 
 <p>Artık cd test-project ile dizine girebilir ve Sail’i başlatabiliriz!</p>
 
-<pre>
-./vendor/bin/sail up
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./vendor/bin/sail up
+</code></pre></div></div>
 
 <p>Sail’i ilk kez çalıştırdığınızda, docker imajlarını indirmek ve konteynerinizi oluşturmak biraz zaman alır ancak bir sonraki çalıştırma için çok hızlı olacaktır.</p>
 
@@ -1076,9 +2037,8 @@ CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState
 
 <p>Query kullanarak favori stack’inizi seçebilirsiniz:</p>
 
-<pre>
-curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
+</code></pre></div></div>
 
 <p>docker-compose.yml dosyanız buna göre yapılandıracaktır.</p>
 
@@ -1086,25 +2046,22 @@ curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
 
 <p><strong>Sail’i detached modda başlatın</strong></p>
 
-<pre>
-./vendor/bin/sail up -d
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./vendor/bin/sail up -d
+</code></pre></div></div>
 
 <p><strong>Sail’i durdurun</strong></p>
 
 <p>“Detached” modu kullanmıyorsanız Control+C, aksi halde,</p>
 
-<pre>
-./vendor/bin/sail down
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./vendor/bin/sail down
+</code></pre></div></div>
 
 <p><strong>Takma ad</strong></p>
 
 <p>Uzun bir yol adı yazmak yerine, sail’e doğrudan ulaşmanıza olanak tanıyan bir Bash takma adı yapılandırın.</p>
 
-<pre>
-alias sail='bash vendor/bin/sail'
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alias sail='bash vendor/bin/sail'
+</code></pre></div></div>
 
 <p>Bir takma ad oluşturabilir ve takma adı kalıcı olarak .bashrc dosyanıza kaydedebilirsiniz. nano ~/.bashrc komutunu kullanıp daha sonra alt tarafa alias sail=’bash vendor/bin/sail’ ekleyip çalıştırabilirsiniz.</p>
 
@@ -1114,15 +2071,13 @@ alias sail='bash vendor/bin/sail'
 
 <p><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote-WSL extension</a> yükleyin ve proje klasöründe olduğunuzdan emin olun.</p>
 
-<pre>
-cd ~/test-project/
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/test-project/
+</code></pre></div></div>
 
 <p>Sonra aşağıdaki kodu çalıştırın.</p>
 
-<pre>
-code .
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code .
+</code></pre></div></div>
 
 <p>VS Code’un başlatıldığını ve proje klasörünüzdeki dosyaları görebilmeniz gerekir.</p>
 
@@ -1138,83 +2093,7 @@ code .
 
 <p>Okuduğunuz için teşekkürler. İyi kodlamalar!</p>
 
-<p><strong>Kaynak:</strong> https://blog.devgenius.io/kickstart-your-laravel-web-app-using-laravel-sail-30276265e588</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.]]></summary></entry><entry><title type="html">WSL Nedir ve Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html" rel="alternate" type="text/html" title="WSL Nedir ve Nasıl Kullanılır?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html"><![CDATA[<p>Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.</p>
-
-<h2 id="sadece-bir-sanal-makine-değil">Sadece Bir Sanal Makine Değil</h2>
-
-<p>WSL’nin ne olmadığıyla başlayalım; örneğin, Ubuntu’yu VirtualBox’ta çalıştırarak elde edebileceğiniz tam bir Linux masaüstü deneyimi değildir. Performans nedenleriyle teknik olarak sanallaştırmayı kullanır, ancak tam bir VM çalıştırmaktan çok farklıdır. Her şey sizin için yönetilir ve işinizi yapmanız ve git, ssh gibi tanıdık bash komutlarını kullanmanız için basit bir shell ve environment sağlar.</p>
-
-<p>Temel olarak WSL, app store’dan bir uygulama olarak tam bir Linux dağıtımı kurmanıza olanak tanır. Ubuntu’yu (veya tercih ettiğiniz dağıtımı) indirebilir, kurabilir ve başlatabileceğiniz bir uygulama veya terminalinizde CMD veya Powershell ile birlikte çalışacak bir profil olarak kullanıma sunabilirsiniz.</p>
-
-<p>En basit açıklaması “Windows’ta bash çalıştırmanıza izin vermesi” olsa da, bir kabuktan daha fazlasıdır; apt kullanarak programları yükleyebilir ve normal bir Linux örneği gibi özelleştirebilirsiniz.</p>
-
-<p>WSL, geliştiricilere ve bash kullanıcılarına, Windows’u birincil işletim sistemi olarak kullanmak zorunda kalmalarına rağmen Linux shell deneyimi sunmayı amaçlamaktadır. Daha kolay komut satırı erişimi için bir Linux shell’inin yanı sıra Visual Studio gibi Windows uygulamalarını çalıştırmanıza izin vererek her iki dünyanın da en iyisini sunar.</p>
-
-<p>Microsoft, WSL’nin iki sürümünü sunmaktadır: sürüm 1 ve sürüm 2. WSL 2, sanal makine kullanır ve Windows ile oluşturulup gönderilen tam bir Linux çekirdeğine sahiptir. WSL 1 daha eskidir ve genellikle çok daha yavaştır ancak dosya sistemleri arasında çalışırken daha iyi performansa sahiptir. Daha hızlı olduğundan ve Docker gibi araçlarla çok daha iyi çalıştığından çoğu işlem için WSL 2’yi öneriyoruz.</p>
-
-<h2 id="wsl-kurulumu">WSL Kurulumu</h2>
-
-<p>WSL isteğe bağlı bir Windows özelliğidir, dolayısıyla onu açmanız gerekir. Powershell’i başlat menüsünden Administrator olarak açın:</p>
-
-<p><img src="/assets/images/2024/02/powershell-run-as-administrator.png" alt="Powershell'i yönetici olarak çalıştır" title="Powershell'i yönetici olarak çalıştır" class="img-fluid" /></p>
-
-<p>Ardından açın:</p>
-
-<pre>
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-</pre>
-
-<p>Değişiklikleri uygulamak için makinenizi yeniden başlatmanız gerekecektir. Bundan sonra Windows Store’u açabilir ve mevcut dağıtımları görüntülemek için “WSL”yi arayabilirsiniz:</p>
-
-<p><img src="/assets/images/2024/02/wsl-windows-store.png" alt="WSL Windows Store" title="WSL Windows Store" class="img-fluid" /></p>
-
-<p>İlk kez çalıştırdığınızda, örnek için kullanıcı adınızı ve şifrenizi ayarlamanız istenecektir. Bunlar yalnızca Linux içindir ve Windows parolanızla eşleşmesi gerekmez.</p>
-
-<p>İlk yüklediğiniz varsayılan olarak ayarlanmalıdır, ancak birden fazla yükleme yaparsanız varsayılanı manuel olarak ayarlamanız gerekecektir. WSL’yi Powershell’deki wsl komutu aracılığıyla yönetebilirsiniz. Örneğin, şu anda yüklü olan tüm sürümlerin listesi:</p>
-
-<pre>
-PS C:\&gt; wsl --list
-Windows Subsystem for Linux Distributions:
-Ubuntu-20.04 (Default)
-docker-desktop
-docker-desktop-data
-</pre>
-
-<p>Ardından, WSL 1 ve 2 arasında geçiş yapmak için de kullanılabilen aşağıdaki komutla varsayılan WSL dağıtımınızı ayarlayabilirsiniz.</p>
-
-<pre>
-wsl --set-version Ubuntu-20.04 2
-</pre>
-
-<p>Gelecekteki tüm kurulumlar için tercih edilen bir WSL sürümünü de ayarlayabilirsiniz:</p>
-
-<pre>
-wsl --set-default-version 2
-</pre>
-
-<h2 id="wsli-kullanmak">WSL’i Kullanmak</h2>
-
-<p>WSL’yi birkaç farklı şekilde açabilirsiniz. En kolayı, Windows’a basıp “wsl” yazmaktır; bu, otomatik olarak wsl.exe’yi çalıştıracak ve varsayılan dağıtımınızı açacaktır.</p>
-
-<p><img src="/assets/images/2024/02/wsl-start-menu.png" alt="WSL Start Menu" title="WSL Start Menu" class="img-fluid" /></p>
-
-<p><img src="/assets/images/2024/02/wsl-windows-terminal.png" alt="WSL Windows Terminal" title="WSL Windows Terminal" class="img-fluid" /></p>
-
-<p>Bu sadece temel bir terminal penceresidir; Microsoft’un yeni Terminal Uygulamasını kullanıyorsanız - ki bunu kesinlikle öneriyoruz - WSL sürümlerinize açılır menü aracılığıyla erişilebilir (ayarlamış olabileceğiniz SSH profillerinin yanı sıra):</p>
-
-<p><img src="/assets/images/2024/02/wsl-windows-terminal-menu.png" alt="WSL Windows Terminal Menu" title="WSL Windows Terminal Menu" class="img-fluid" /></p>
-
-<h2 id="dosya-sistemleri-üzerine-bir-not">Dosya Sistemleri Üzerine Bir Not</h2>
-
-<p>Linux dosya sisteminiz her zamanki gibi / konumuna monte edilmiştir. Windows, /mnt/c/ konumunda veya varsayılan sürücü harfiniz hangisiyse orada bulunur.</p>
-
-<p>Bunların hepsi sanal olduğundan, Linux dosyalarınız elbette sürücünün kendisinde depolanır. WSL 1 için bunlar basit bir klasörde saklanır. WSL 2 bazı şeyleri değiştirir ve dosyaları sanal sabit disk imajı veya VHDX olarak saklar.</p>
-
-<p>Bu imajları aşağıdaki yolda bulabilirsiniz ve dağıtım kayıtlı değilken de monte edilebilseler de, Windows tarafında onları karıştırmanızı önermiyoruz.</p>
-
-<pre>
-%USERPROFILE%AppDataLocalPackagesCanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgscLocalState
-</pre>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.]]></summary></entry><entry><title type="html">Nginx ve PHP-FPM’in Gizemini Çözmek</title><link href="http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html" rel="alternate" type="text/html" title="Nginx ve PHP-FPM’in Gizemini Çözmek" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek</id><content type="html" xml:base="http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html"><![CDATA[<p>Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.</p>
+<p><strong>Kaynak:</strong> https://blog.devgenius.io/kickstart-your-laravel-web-app-using-laravel-sail-30276265e588</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.]]></summary></entry><entry><title type="html">Nginx ve PHP-FPM’in Gizemini Çözmek</title><link href="http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html" rel="alternate" type="text/html" title="Nginx ve PHP-FPM’in Gizemini Çözmek" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek</id><content type="html" xml:base="http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html"><![CDATA[<p>Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.</p>
 
 <p><strong>Not:</strong> Hem Nginx hem de PHP-FPM için, uygulamanızın performansını artırmanıza yardımcı olabilecek, bu yazıda ele alınmayan daha birçok yapılandırma seçeneği vardır.</p>
 
@@ -1383,19 +2262,17 @@ wsl --set-default-version 2
 
 <p>Muhtemelen bildiğiniz gibi container içindeki her servisin benzersiz bir adı vardır. Laravel uygulamasında, bir servise doğrudan container’dan erişmek için App::make() metodunu veya app() helper fonksiyonunu kullanabiliriz.</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 App::make('some_service')-&gt;methodName();
-</pre>
+</code></pre></div></div>
 
 <p>Daha önce de belirtildiği gibi Laravel, servisleri geliştiricinin kullanımına daha okunaklı bir şekilde sunmak için facade sınıflarını kullanır. Facade sınıfı kullanarak aynı şeyi yapmak için yalnızca aşağıdaki kodu yazmamız gerekir:</p>
 
-<pre>
-// ...
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// ...
 someService::methodName();
 // ...
-</pre>
+</code></pre></div></div>
 
 <p>Laravel’de tüm servislerin bir facade sınıfı vardır. Bu facade sınıfları, Illuminate/Support paketinin bir parçası olan base Facade sınıfını genişletir. Uygulamaları gereken tek şey, container içindeki servis adını döndüren getFacadeAccessor metodudur.</p>
 
@@ -1409,8 +2286,7 @@ someService::methodName();
 
 <p>Base facade sınıfında __callStatic metodunun uygulanması:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 // ...
     /**
      * Handle dynamic, static calls to the object.
@@ -1443,7 +2319,7 @@ someService::methodName();
                 return call_user_func_array([$instance, $method], $args);
         }
     }
-</pre>
+</code></pre></div></div>
 
 <p>Yukarıdaki metotta getFacadeRoot() servisi container’dan alır.</p>
 
@@ -1451,8 +2327,7 @@ someService::methodName();
 
 <p>Her facade sınıfı base sınıfı genişletir. Uygulamamız gereken tek şey getFacadeAccessor() metodudur. Bu metot, servisin adını container’a döndürmekten başka bir şey yapmaz.</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 namespace App\Facades;
 
@@ -1471,17 +2346,16 @@ class SomeServiceFacade extends BaseFacade
         return 'some.service';
     }
 }
-</pre>
+</code></pre></div></div>
 
 <h3 id="takma-adlar">Takma adlar</h3>
 
 <p>Laravel facades PHP sınıfları olduğundan, kullanmadan önce bunları içe aktarmamız gerekir. PHP’deki namespace ve autoloading desteği sayesinde, tüm sınıflara tam adlarıyla eriştiğimizde otomatik olarak yüklenirler. PHP ayrıca use ifadesini kullanarak sınıf takma adlarını da destekler:</p>
 
-<pre>
-use App\Facades\SomeServiceFacade
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>use App\Facades\SomeServiceFacade
 
 SomeServiceFacade:SomeMethod();
-</pre>
+</code></pre></div></div>
 
 <p>Ancak bunu, söz konusu facade sınıfına ihtiyaç duyduğumuz her senaryoda yapmak zorundayız. Laravel, bir alias loader kullanarak facade’lerin takma adlarını kendi yöntemiyle ele alır.</p>
 
@@ -1491,25 +2365,23 @@ SomeServiceFacade:SomeMethod();
 
 <p>Diziye göz attığımızda her bir takma adın tam nitelikli bir sınıf adıyla eşlendiğini görebiliriz. Bu, facade sınıfı için istediğimiz herhangi bir adı kullanabileceğimiz anlamına gelir:</p>
 
-<pre>
-// ..
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// ..
 'aliases' =&gt; [
     // ...
     'FancyName' =&gt; 'App\Facades\SomeServiceFacade',
 ],
-</pre>
+</code></pre></div></div>
 
 <p>Şimdi Laravel’in bu diziyi nasıl kullandığını görelim. Önyükleme aşamasında Laravel, Illuminate\Foundation paketinin parçası olan AliasLoader adlı bir servisi kullanır. AliasLoader alias dizisini alır, tüm öğeleri yineler ve PHP’nin spl_autoload_register’ını kullanarak __autoload fonksiyonlarından oluşan bir kuyruk oluşturur. Her __autoload fonksiyonu, PHP’nin class_alias fonksiyonunu kullanarak ilgili facade sınıfı için bir takma ad oluşturmaktan sorumludur.</p>
 
 <p>Sonuç olarak, normalde use ifadesi ile yaptığımız gibi, sınıfları kullanmadan önce içe aktarmamız ve takma ad vermemiz gerekmeyecek. Yani ne zaman var olmayan bir sınıfa erişmeye çalışsak, PHP uygun autoloader’ı bulmak için __autoload kuyruğunu kontrol edecektir. O zamana kadar AliasLoader zaten tüm __autoload fonksiyonlarını kaydetmiştir. Her autoloader süslü bir sınıf adı alır ve onu alias dizisine göre orijinal sınıf adına çözümler. Son olarak o sınıf için bir takma ad oluşturur. Aşağıdaki metot çağrısını göz önünde bulundurun:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 // FancyName is resolved to App\Facades\SomeServiceFacade according to the aliases array
 
 FancyName::someMethod()
-</pre>
+</code></pre></div></div>
 
 <p>Perde arkasında FancyName, App\Facades\SomeServiceFacade olarak çözümlendi.</p>
 
@@ -1519,19 +2391,17 @@ FancyName::someMethod()
 
 <p>Silex’in kendi container’ı vardır. Container içindeki bir servise erişmek için $app nesnesini şu şekilde kullanabiliriz:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 $app['some.service']-&gt;someMethod()
-</pre>
+</code></pre></div></div>
 
 <p>Facade sınıfları yardımıyla Silex servislerimize de static benzeri bir arayüz sağlayabiliriz. Ayrıca bu facade’lere anlamlı takma adlar oluşturmak için AliasLoader servisini kullanabiliriz. Sonuç olarak yukarıdaki kodu şu şekilde yeniden düzenleyebiliriz:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 SomeService::someMethod();
-</pre>
+</code></pre></div></div>
 
 <h3 id="gereksinimler">Gereksinimler</h3>
 
@@ -1545,8 +2415,7 @@ SomeService::someMethod();
 
 <p>Bu eğitim için tüm facade’leri src/Facades altında tutalım. Örnek olarak some.service isimli bir servis için facade sınıfı şu şekilde olacaktır:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 namespace App\Facades
 
@@ -1564,7 +2433,7 @@ class SomeServiceFacade extends Facade {
     }
 }
 
-</pre>
+</code></pre></div></div>
 
 <p>Lütfen sınıfı app\facades altına namespace ile yerleştirdiğimizi unutmayın.</p>
 
@@ -1574,11 +2443,10 @@ class SomeServiceFacade extends Facade {
 
 <p>app.php dosyamıza aşağıdaki kodu eklememiz gerekiyor:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 Illumiante\Support\Facade::setFacadeApplication($app);
-</pre>
+</code></pre></div></div>
 
 <p>Bu, base facade sınıfını genişleten tüm facade’ler için container’ı ayarlayacaktır.</p>
 
@@ -1596,13 +2464,12 @@ Illumiante\Support\Facade::setFacadeApplication($app);
 
 <p>config dizinimizde aliases.php adında bir dosya oluşturalım ve alias-facade bağlantısını yapalım:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 return [
     'FancyName' =&gt; 'App\Facades\SomeService',
 ];
-</pre>
+</code></pre></div></div>
 
 <p>FancyName, App\Facades\SomeService yerine kullanmak istediğimiz addır.</p>
 
@@ -1612,97 +2479,21 @@ return [
 
 <p>Yine app.php dosyasına aşağıdaki kodu ekleyin:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 // ...
 
 $aliases = require __DIR__ . '/../../config/aliases.php';
 App\Facades\AliasLoader::getInstance($aliases)-&gt;register();
-</pre>
+</code></pre></div></div>
 
 <p>Ve hepsi bu kadar! Artık servisi şu şekilde kullanabiliriz:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 FancyName::methodName();
-</pre>
+</code></pre></div></div>
 
 <p>Okuduğunuz için teşekkürler!</p>
 
-<p><strong>Kaynak:</strong> https://www.sitepoint.com/how-laravel-facades-work-and-how-to-use-them-elsewhere/</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Facade pattern, nesne yönelimli programlamada sıklıkla kullanılan bir design pattern’dir. Facade aslında karmaşık bir kütüphaneyi daha basit ve daha okunabilir bir arayüz sağlamak için saran bir sınıftır. Facade pattern’i aynı zamanda bir grup karmaşık ve kötü tasarlanmış API’ye birleşik ve iyi tasarlanmış bir API sağlamak için de kullanılabilir.]]></summary></entry><entry><title type="html">API Gateway Nedir?</title><link href="http://localhost:4000/2024/02/11/api-gateway-nedir.html" rel="alternate" type="text/html" title="API Gateway Nedir?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/api-gateway-nedir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/api-gateway-nedir.html"><![CDATA[<p>Yazılım için bu devrim niteliğindeki çağda, yeni mimari pattern’lerin ortaya çıkma hızı, işletmelerin artık hizmetleri oluşturma, devreye alma ve tüketme yöntemlerini önemli ölçüde etkiledi. Bu değişiklikler aynı zamanda proje iş akışlarına yönelik yenilikçi yaklaşımları memnuniyetle karşılayarak DevOps ve mühendislik ekiplerine API yaşam döngülerinin temel alanlarını otomatikleştirme ve karmaşıklığı genel olarak basitleştirme kapılarını açtı. Çözüm? API Gateway.</p>
-
-<p>API Gateway, mikroservis mimarisinde istemci uygulamaları ile backend servisleri arasında aracı görevi görür. İstek oluşturma, yönlendirme ve protokol çevirisi gibi görevleri yerine getiren çeşitli API’ler için tek bir endpoint işlevi gören bir yazılım katmanıdır. API Gateway, güvenlik politikalarını uygularken API’lerin trafiğini yöneterek istekleri ve yanıtları kontrol eder. Bu, geliştiricilerin karmaşık API ağları tarafından engellenmek yerine bireysel hizmetler oluşturmaya odaklanmalarına yardımcı olan tek bir merkezi kontrol noktası sağlayarak API yönetimini basitleştirir.</p>
-
-<p><img src="/assets/images/2024/02/why-do-microservices-need-an-api-gateway.png" alt="API Gateway" title="Mikroservislerin neden bir API Gateway'e ihtiyacı var?" class="img-fluid" /></p>
-
-<h2 id="api-gateway-nasıl-çalışır">API Gateway Nasıl Çalışır?</h2>
-
-<p>Günümüzün yazılım sistemlerinin güzelliği, karmaşık işlemleri kolaylıkla gerçekleştirme yeteneklerinde yatmaktadır.</p>
-
-<p>Bu yenilikçi teknoloji, istemciler ve backend servisleri arasında bir tampon görevi görerek tüm hata algılama prosedürlerini yerine getirirken aynı zamanda gerektiğinde erişim denetimi sağlar. Bunun temelinde, istek yoluna ve diğer ilgili faktörlere dayalı olarak uygun yönlendirmeyi sağlayan iyi yapılandırılmış bir mimari yer alır. Mikroservis mimarisinin temel özelliği, birden çok bağımsız servisten oluşan bir ekosistem içindeki verimli iletişim yönteminde yatar. İsteğin alınması üzerine, backend servisi, işlemi tamamlandıktan sonra API Gateway aracılığıyla yanıtları geri gönderir. Bu adımdan sonra, Api Gateway, bu çıktıları ilgili tarafa geri aktarmadan önce analiz ederek ve tek bir bileşik endpoint kullanarak işi devralır. Ayrıca, API Gateway yalnızca güvenilir bir cluster sağlamakla kalmaz, aynı zamanda istekleri kabul eden ve eylemleri buna göre yönlendiren bir proxy sunucu olarak çalışma gibi seçeneklere de sahiptir.</p>
-
-<p>Günümüzün yüksek tempolu dijital geliştirme dünyasında verimlilik her şeydir - bu nedenle API Gateway modern yazılım projelerinde çok önemli hale gelmiştir. Mikroservis mimarilerinde API’ler için merkezi bir kontrol noktası görevi gören bu temel araç, cache ve load balancing gibi akıllı görev yönetimi sayesinde gelişmiş performans sunar.</p>
-
-<h3 id="api-gateway-ve-mikroservisler">API Gateway ve Mikroservisler</h3>
-
-<p>Organizasyonlar mikro hizmet mimarisini benimserken, API Gateway’ler giderek daha popüler hale geliyor. API Gateway, tüm backend servisleri için tek bir entry point işlevi görür ve geliştiriciler için sistemin geliştirilmesini, devreye alınmasını ve yönetilmesini basitleştirir. Mikroservisler benzersiz zorluklar sunar, ancak iyi uygulanmış bir API ağ geçidi, bu sorunların ele alınmasına yardımcı olabilir.</p>
-
-<p>Her bir backend servisi, client isteklerini doğru bir şekilde yönlendirmeyi veya birden çok hizmeti tek bir yanıtta birleştirmeyi zorlaştıran bir mikroservis mimarisinde bağımsız bir uygulama olarak çalışacak şekilde tasarlanmıştır. Modern uygulamalar oluşturmak, genellikle benzersiz bir şekilde ele alınması gereken ayrı rotalara veya arayüzlere sahip olabilecek çok sayıda servisle uğraşmayı gerektirir. API Gateway kullanın - birden çok servis arasında tek bir arabirim olarak işlev görerek bu zorluğun üstesinden gelir ve geliştiricilerin istek işleme akışını sorunsuz bir şekilde yönetmesine olanak tanır.</p>
-
-<p><img src="/assets/images/2024/02/api-infrastructure-esb-versus-api-gateway.jpg" alt="API altyapısı" title="API altyapısı" class="img-fluid" /></p>
-
-<h2 id="api-gateway-özellikleri">API Gateway Özellikleri</h2>
-
-<p>API Gateway teknolojisi, gelen istekleri kolayca ilgili backend servislerine yönlendiren verimli yönetim gibi bir dizi avantaj sunar. Ayrıca, istemcilerin servisle zahmetsizce etkileşim kurabilmeleri için protokolleri otomatik olarak çevirebilir.</p>
-
-<ul>
-  <li><strong>API Trafik Yönetimi:</strong> İşletmeler artık sorunsuz kullanıcı deneyimleri sağlamak için karmaşık backend servislerini basitleştirebilir. API Gatewayi, gelen istekleri yönetir ve diğerlerinin yanı sıra istek rotası, başlıklar ve sorgu parametreleri gibi temel faktörlere göre yönlendirir. Trafiğin verimli bir şekilde dağıtılmasına izin verir ve hedef servisler arasında uygun yük dengeleme sağlar.</li>
-  <li><strong>Protokol Çevirisi:</strong> API Gateway kullanırken, farklılaşma, bir protokolü diğerine dönüştürme yeteneği aracılığıyla çözülür. API Gateway, veri aktarım modlarını kolaylıkla çevirerek, istemciler ve backend servisleri arasındaki etkileşimi çok daha kolay hale getirir.</li>
-  <li><strong>Önbelleğe Alma (Cache):</strong> Bu, servis optimum performans seviyelerine ulaşırken daha az trafiği işlemesi için yaygın olarak kullanılan verilerin sık sık depolanmasını sağlayarak kritik bir rol oynayan önemli bir özelliktir.</li>
-  <li><strong>Yük Dengeleme (Load Balancing):</strong> API Gateway aracılığıyla, gelen istekler, bu hizmetin hem ölçeklenebilirliğini hem de kullanılabilirliğini iyileştirmek için bir servisin  birden çok örneği arasında etkili bir şekilde paylaşılabilir.</li>
-  <li><strong>Geliştirici Portalı:</strong> Geliştiriciler, API Gateway uygulanmasıyla kullanıma sunulan kapsamlı bir geliştirici portalından tam olarak yararlanabilir. Bu platformun yardımıyla,  API’leri kolayca keşfedebilirler.</li>
-</ul>
-
-<h2 id="api-gateway-kullanmanın-faydaları-nelerdir">API Gateway Kullanmanın Faydaları Nelerdir?</h2>
-
-<p>Günümüzün yazılım geliştirme dünyasında API Gateway’ler, yeterli güvenlik önlemlerinin alınmasını sağlarken yönetimi basitleştirme, ölçeklenebilirliği ve kullanılabilirliği geliştirme yetenekleri açısından çok önemlidir. Protokol çevirilerini kolaylaştırmak ve analiz desteği sağlamak, kuruluşları günümüzün sürekli gelişen ekosisteminde müşterilerin taleplerini karşılayan güçlü uygulamalar oluşturma konusunda benzersiz bir şekilde güçlendirir.</p>
-
-<h3 id="basitleştirilmiş-api-yönetimi">Basitleştirilmiş API Yönetimi</h3>
-
-<p>Bir API Gateway kullanmıyorsanız, her uygulamanın kendi arayüzleri ve endpointleri varmış gibi göründüğü bir dünyada API’leri yönetmek zaman alan bir görev olabilir. API kontrollerinizi merkezileştirmek, tüm farklı yazılım arayüzlerinizi daha fazla esneklik ve verimlilik sunan tek bir çatı çözümü altında birleştirerek size çok fazla zaman ve emek tasarrufu sağlar. İstekleri tek bir entry point üzerinden yönlendirmek, özellikle birden çok servisle uğraşırken, sisteminizi basitleştirmede harikalar yaratabilir. Arayüzü uygulamanızla birleştirerek ve birden çok isteği tek bir istekte gruplayarak veya bunları backend sistemleriniz tarafından daha basit bir şekilde işlenecek şekilde dönüştürerek, uygulamayı geliştirme ve kullanma konusunda çok fazla yükten kurtulursunuz.</p>
-
-<h3 id="gelişmiş-api-güvenliği">Gelişmiş API Güvenliği</h3>
-
-<p>Herhangi bir işletmenin yazılımı veya uygulamaları için olası bir zayıf nokta, client verilerinin işlenmesidir. DoS (Denial of Service) veya DDos (Distributed Denial of Service) gibi saldırılar, sunucuları aşırı yükleyerek etkin bir şekilde çalışamayacak hale getirir. API Gateway, gelen trafiği nihai hedefine ulaşmadan önce işleyerek bu siber tehditlere karşı korunmak için etkili bir araç görevi görür. Şüpheli istekleri hızlı bir şekilde belirlemede ve potansiyel hasara karşı ek güvenlik için API kimlik doğrulama kontrolleri sağlamada özellikle yararlıdırlar.</p>
-
-<h3 id="geliştirilmiş-ölçeklenebilirlik-ve-kullanılabilirlik">Geliştirilmiş Ölçeklenebilirlik ve Kullanılabilirlik</h3>
-
-<p>Bir API yönetiyorsanız, API Gateway iş yükünü verimli bir şekilde dağıtmanıza yardımcı olabilir. API’nin çeşitli örneklerinde dağıtılmış gelen isteklerle, kolayca aşırı yüklenmez ve ölçeklenebilirliği ve kullanılabilirliği artırır. Özünde bu, tutarlı ve güvenilir hizmet sağlayarak kullanıcı deneyimini geliştirir.</p>
-
-<h3 id="api-analizi">API Analizi</h3>
-
-<p>API Gateway’ler, API’leri izlemek isteyen işletmeler için başvurulacak teknoloji haline geldi. API trafik analizi ve yakalama yetenekleriyle bu çok yönlü gateway’ler, müşterilerin API’leri nasıl kullandıkları, hangi hizmetlerin en popüler olduğu ve sorunların ortaya çıkabileceği yerler hakkında değerli bilgiler sağlayabilir.</p>
-
-<h2 id="api-gateway-gelecek-trendleri">API Gateway Gelecek Trendleri</h2>
-
-<p>API Gateway teknolojisindeki yenilik, performans, güvenlik ve ölçeklenebilirlikte önemli bir gelime sağladı. Bu nedenle, modern yazılım geliştirmeye devam ederken bu çok önemli bileşeni gözden kaçırmak ihmalkarlık olur. Kong, en hızlı API Gateway ve API Yönetim Platformu olup, işletmelerin en güvenilir ve yüksek performanslı cloud native API platformuyla daha hızlı ölçeklendirme yapmasına ve geliştirici üretkenliğini serbest bırakmasına olanak tanır.</p>
-
-<h3 id="cloud-native">Cloud Native</h3>
-
-<p>API dünyası giderek daha karmaşık hale geliyor - bu nedenle pek çok şirket destek için cloud-native gateway’lere yöneliyor. Üst düzeyde ölçeklenebilir ve baskı altında dayanıklı olan bu ağ geçitleri, birden fazla alanda güvenilir bağlantıya ihtiyaç duyan modern işletmelerin ihtiyaçlarını karşılamak için özel olarak tasarlanmıştır. Sofistike mikroservis mimarileri, çok sayıda bulut tabanlı hizmetle sorunsuz entegrasyonun yanı sıra çeşitli bileşenler arasında kolaylaştırılmış iletişim sağlar.</p>
-
-<h3 id="sunucusuz-gatewayler">Sunucusuz Gateway’ler</h3>
-
-<p>Sunucusuz API Gateway’lerin ortaya çıkışı daha belirgin hale geliyor. Bu, Gateway altyapısını yönetme ve ölçeklendirme ihtiyacını ortadan kaldıran bir hizmet olarak API Gateway özelliklerinin sağlanmasını içerir. Bu yeni yaklaşımın önemli avantajlarından biri, hızlı devreye alma ve iyileştirilmiş ölçeklenebilirliği içerir, böylece büyük ölçekli API ekosistemlerini yönetmeyi kolaylaştırır.</p>
-
-<h3 id="yapay-zeka-makine-öğrenimi-güvenliği">Yapay Zeka Makine Öğrenimi Güvenliği</h3>
-
-<p>Siber tehditler giderek daha karmaşık ve sofistike hale geldikçe, API Gateway güvenliğinde makine öğrenimi ve yapay zeka tabanlı güvenliğin rolünün artması bekleniyor. Bu teknolojiler, siber saldırıları gerçek zamanlı olarak tanımlayıp önleyerek API ortamlarını daha güvenli hale getirebilir.</p>
-
-<h2 id="özet">Özet</h2>
-
-<p>API Gateway, tüm API isteklerini işlemek için tek bir entry point görevi görür. API’lerin etkin yönetimine, optimizasyonuna ve korunmasına olanak tanıyan trafik yönetimi, güvenlik protokolleri, cache ve izleme özelliklerine sahip olduğu için işlevselliği çok önemlidir. Doğru isteklerin doğru bir şekilde işlenmesini ve uygun backend servislerine yönlendirilmesini sağlamak için tutarlı bir şekilde çalışan rotalar, kurallar ve endpointler gibi bileşenlerle; API Gateway, ölçeklenebilirlik, performans iyileştirme ve API’lerin basitleştirilmiş yönetimi dahil olmak üzere bir dizi avantaj sağlar. Gelecekte, native cloud ve sunucusuz API Gateway’lerin giderek daha popüler hale geleceği ve yapay zeka teknolojisinin yanı sıra makine öğrenimi tabanlı güvenliğin gelecekte önemli trendler olarak ortaya çıkacağı tahmin edilmektedir. Başarılı yazılım geliştirmede önemli bir faktör, API’lerin etkin bir şekilde yönetilmesini içerir.</p>
-
-<p>Organizasyonların bunu başarabilmesinin bir yolu, API yönetim platformlarıyla entegre olmaktır. Ortaya çıkan kapsamlı çözüm, gelişmiş performans ve güvenlik geliştirmeleri dahil olmak üzere API Gateway tarafından sağlanan çeşitli avantajlardan yararlanırken operasyonları optimize etmelerini sağlar. Geliştiriciler bu hayati aracın yeteneklerini daha da geliştirmenin yollarını aradıkça, şüphesiz yeni ilerlemeler gerçekleşecektir.</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Yazılım için bu devrim niteliğindeki çağda, yeni mimari pattern’lerin ortaya çıkma hızı, işletmelerin artık hizmetleri oluşturma, devreye alma ve tüketme yöntemlerini önemli ölçüde etkiledi. Bu değişiklikler aynı zamanda proje iş akışlarına yönelik yenilikçi yaklaşımları memnuniyetle karşılayarak DevOps ve mühendislik ekiplerine API yaşam döngülerinin temel alanlarını otomatikleştirme ve karmaşıklığı genel olarak basitleştirme kapılarını açtı. Çözüm? API Gateway.]]></summary></entry></feed>
+<p><strong>Kaynak:</strong> https://www.sitepoint.com/how-laravel-facades-work-and-how-to-use-them-elsewhere/</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Facade pattern, nesne yönelimli programlamada sıklıkla kullanılan bir design pattern’dir. Facade aslında karmaşık bir kütüphaneyi daha basit ve daha okunabilir bir arayüz sağlamak için saran bir sınıftır. Facade pattern’i aynı zamanda bir grup karmaşık ve kötü tasarlanmış API’ye birleşik ve iyi tasarlanmış bir API sağlamak için de kullanılabilir.]]></summary></entry></feed>

@@ -73,9 +73,8 @@
 
 <p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki komutu çalıştırın.</p>
 
-<pre>
-dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+</code></pre></div></div>
 
 <p>DISM hakkında daha fazla bilgi için <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11">buraya</a> tıklayın.</p>
 
@@ -83,9 +82,8 @@ dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux 
 
 <p>WSL 2 için sanallaştırma yetenekleri hala gereklidir. Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki çalıştırın.</p>
 
-<pre>
-dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+</code></pre></div></div>
 
 <p><strong>3. Linux çekirdeği güncelleme paketini indirin</strong></p>
 
@@ -93,9 +91,8 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 <p><strong>4. WSL 2’yi varsayılan sürümünüz olarak ayarlayın</strong></p>
 
-<pre>
-wsl --set-default-version 2
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl --set-default-version 2
+</code></pre></div></div>
 
 <p><strong>5. Ubuntu’yu (veya seçtiğiniz Linux dağıtımını) yükleyin</strong></p>
 
@@ -146,9 +143,8 @@ wsl --set-default-version 2
 
 <p>Aşağıdaki komutu kullanarak test-project adında yeni bir Laravel projesi oluşturalım:</p>
 
-<pre>
-curl -s https://laravel.build/test-project | bash
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s https://laravel.build/test-project | bash
+</code></pre></div></div>
 
 <p>Daha sonra kurulumu bekleyin.</p>
 
@@ -156,16 +152,14 @@ curl -s https://laravel.build/test-project | bash
 
 <p>WSL storage’in gerçek konumu (vhdx formatında) şu adreste bulunur:</p>
 
-<pre>
-C:\Users\user_name\AppData\Local\Packages\
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\user_name\AppData\Local\Packages\
 CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState
-</pre>
+</code></pre></div></div>
 
 <p>Artık cd test-project ile dizine girebilir ve Sail’i başlatabiliriz!</p>
 
-<pre>
-./vendor/bin/sail up
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./vendor/bin/sail up
+</code></pre></div></div>
 
 <p>Sail’i ilk kez çalıştırdığınızda, docker imajlarını indirmek ve konteynerinizi oluşturmak biraz zaman alır ancak bir sonraki çalıştırma için çok hızlı olacaktır.</p>
 
@@ -181,9 +175,8 @@ CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState
 
 <p>Query kullanarak favori stack’inizi seçebilirsiniz:</p>
 
-<pre>
-curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
+</code></pre></div></div>
 
 <p>docker-compose.yml dosyanız buna göre yapılandıracaktır.</p>
 
@@ -191,25 +184,22 @@ curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
 
 <p><strong>Sail’i detached modda başlatın</strong></p>
 
-<pre>
-./vendor/bin/sail up -d
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./vendor/bin/sail up -d
+</code></pre></div></div>
 
 <p><strong>Sail’i durdurun</strong></p>
 
 <p>“Detached” modu kullanmıyorsanız Control+C, aksi halde,</p>
 
-<pre>
-./vendor/bin/sail down
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./vendor/bin/sail down
+</code></pre></div></div>
 
 <p><strong>Takma ad</strong></p>
 
 <p>Uzun bir yol adı yazmak yerine, sail’e doğrudan ulaşmanıza olanak tanıyan bir Bash takma adı yapılandırın.</p>
 
-<pre>
-alias sail='bash vendor/bin/sail'
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alias sail='bash vendor/bin/sail'
+</code></pre></div></div>
 
 <p>Bir takma ad oluşturabilir ve takma adı kalıcı olarak .bashrc dosyanıza kaydedebilirsiniz. nano ~/.bashrc komutunu kullanıp daha sonra alt tarafa alias sail=’bash vendor/bin/sail’ ekleyip çalıştırabilirsiniz.</p>
 
@@ -219,15 +209,13 @@ alias sail='bash vendor/bin/sail'
 
 <p><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote-WSL extension</a> yükleyin ve proje klasöründe olduğunuzdan emin olun.</p>
 
-<pre>
-cd ~/test-project/
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/test-project/
+</code></pre></div></div>
 
 <p>Sonra aşağıdaki kodu çalıştırın.</p>
 
-<pre>
-code .
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code .
+</code></pre></div></div>
 
 <p>VS Code’un başlatıldığını ve proje klasörünüzdeki dosyaları görebilmeniz gerekir.</p>
 

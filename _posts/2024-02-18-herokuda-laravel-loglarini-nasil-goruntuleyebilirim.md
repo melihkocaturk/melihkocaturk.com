@@ -9,20 +9,20 @@ app/config/logging.php dosyasında çeşitli log kanallarını yapılandırabili
 
 Dosyanın üst kısmında, varsayılan kanal LOG_CHANNEL environment değişkeninden okunacak şekilde ayarlanmıştır:
 
-<pre>
+```
 'default' => env('LOG_CHANNEL', 'stack'),
-</pre>
+```
 
 Bu, Heroku'da doğru şekilde log tutmak için LOG_CHANNEL environment değişkenini “errorlog” olarak ayarlayabileceğiniz anlamına gelir:
 
-<pre>
+```
 heroku config:set LOG_CHANNEL=errorlog
-</pre>
+```
 
 ![Log Channel Config Var](/assets/images/2024/02/heroku-env-log-channel-errorlog.png "Heroku'da Laravel Loglarını Nasıl Görüntüleyebilirim?"){: class="img-fluid"}
 
 Artık logları canlı olarak takip edebilirsiniz:
 
-<pre>heroku logs -t</pre>
+```heroku logs -t```
 
 Okuduğunuz için teşekkürler.

@@ -80,9 +80,9 @@ Belirli bir sorunu çözmek için, yazılım mimarı önce mevcut bir bileşeni 
 
 Zend Framework'ün ilk kararlı sürümü PHP 5.3'ten önce yayınlandı, dolayısıyla ZF1 namespace kullanmıyordu. Henüz Composer yoktu, bu nedenle ZF1'in kendi otomatik yükleyicisi vardı. Ancak Zend Framework'ün yapısında sunduğu tek özellik, bahsettiğim gibi değişme olasılığıydı. Kararsız sürümler şu şekilde yapılandırılabilir kodlar getirdi:
 
-<pre>
+```
 Zend_Controller_Front::run('/path/to/controllers');
-</pre>
+```
 
 Zend Framework, Controller sınıfları için dizin belirlemek yerine, geliştiricinin seçim yapmasına izin verir. Önerilen bir proje yapısı vardır ve bugün bir uygulama oluşturmaya başlamak için Model-View-Controller (MVC) iskeleti kullanılıyor.
 
@@ -124,4 +124,4 @@ Konu açarak ve sorularınızı forumlara göndererek topluluktan destek alabili
 
 Yazılım yaşayan bir organizma gibidir: doğar, büyür ve bir gün ölür. Yazılımımızın erken ölmesini elbette istemiyoruz. Bunun için yazılımlarımıza uzun süre hayatta kalmasını sağlayacak özellikler kazandırmamız gerekiyor. Bu bölümde, yeniden kullanılabilir ve bakımı kolay yazılımlar oluşturmamıza yardımcı olan framework’lerden bahsettik. PHP web uygulamaları oluşturmak için ücretsiz ve açık kaynak bir framework olan Laminas'ın tarihine değindik. Bir sonraki bölümde Laminas ile PHP web uygulamaları geliştirmek için ortamımızı hazırlayacağız.
 
-**Kaynak:** PHP Web Development with Laminas, Flávio Gomes da Silva Lisboa
+**Kaynak:** "PHP Web Development with Laminas", Flávio Gomes da Silva Lisboa

@@ -19,7 +19,7 @@ Nodejs buildpack’i ekleyin ve PHP buildpack’in sonrasına yerleştirin. Bunu
 
 *package.json* dosyanız şöyle görünmelidir:
 
-<pre>
+```
 {
     "private": true,
     "type": "module",
@@ -38,7 +38,7 @@ Nodejs buildpack’i ekleyin ve PHP buildpack’in sonrasına yerleştirin. Bunu
         "vite": "^4.0.0"
     }
 }
-</pre>
+```
 
 Kodunuzu yeniden deploy edin (buildpack eklediyseniz bu gereklidir) ve build loglarını kontrol edin.
 

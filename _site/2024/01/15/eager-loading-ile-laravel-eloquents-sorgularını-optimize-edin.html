@@ -59,14 +59,13 @@
 
 <p>Temel düzeyde, ORM’ler model verilerini “lazy” yükler. Ne de olsa, ORM niyetinizi nasıl bilecek? Belki de modeli sorguladıktan sonra ilgili modelin verilerini aslında hiçbir zaman kullanmayacaksınız. Sorgunun optimize edilmemesi “N+1” sorunu olarak bilinir. Sorguları temsil etmek için nesneleri kullandığınızda, farkında bile olmadan sorgular yapıyor olabilirsiniz.</p>
 
-<pre>
-$posts = Post::published()-&gt;get(); // one query
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$posts = Post::published()-&gt;get(); // one query
  
 $authors = array_map(function($post) {
     // Produces a query on the author model
     return $post-&gt;author-&gt;name;
 }, $posts);
-</pre>
+</code></pre></div></div>
 
 <p>Modele tüm yazarlara ihtiyacımız olduğunu söylemiyoruz, bu nedenle yazarın adını Post model örneklerinden her aldığımızda ayrı bir sorgu gerçekleşir.</p>
 
@@ -76,13 +75,12 @@ $authors = array_map(function($post) {
 
 <p>İşte eager loading kullanımı hakkında Rails Active Record kılavuzundan bir örnek. Gördüğünüz gibi konsept, Laravel’in eager loading konseptine oldukça benziyor.</p>
 
-<pre>
-# Rails
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># Rails
 posts = Post.includes(:author).limit(100)
  
 # Laravel
 $posts = Post::with('author')-&gt;limit(100)-&gt;get();
-</pre>
+</code></pre></div></div>
 
 <p>Fikirleri daha geniş bir perspektiften keşfederek daha iyi anladığımı görüyorum. Active Record dökümantasyonu, fikrin yankı bulmasına yardımcı olabilecek bazı örnekleri içerir.</p>
 
@@ -98,36 +96,32 @@ $posts = Post::with('author')-&gt;limit(100)-&gt;get();
 
 <p>Laravel installer kullanarak projeyi oluşturalım:</p>
 
-<pre>
-laravel new blog-example
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>laravel new blog-example
+</code></pre></div></div>
 
 <p>.env değerlerinizi veritabanınıza veya seçiminize uyacak şekilde düzenleyin.</p>
 
 <p>Daha sonra, eager loading iç içe ilişkileri deneyebilmek için üç model oluşturacağız. Örnek basit, böylece eager loading’e odaklanabiliriz. Index ve foreign key kısıtlamaları gibi kullanabileceğiniz şeyleri atladım.</p>
 
-<pre>
-php artisan make:model -m Post
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:model -m Post
 php artisan make:model -m Author
 php artisan make:model -m Profile
-</pre>
+</code></pre></div></div>
 
 <p>-m flag’i, tablo şemasını oluşturmak için kullanacağınız modele uygun bir migration oluşturur.</p>
 
 <p>Veri modelleri aşağıdaki ilişkilelere sahip olacaktır:</p>
 
-<pre>
-Post -&gt; belongsTo -&gt; Author
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Post -&gt; belongsTo -&gt; Author
 Author -&gt; hasMany -&gt; Post
 Author -&gt; hasOne -&gt; Profile
-</pre>
+</code></pre></div></div>
 
 <h3 id="migration">Migration</h3>
 
 <p>Her tablo için basit bir şema oluşturalım; Yalnızca up() metodunu oluşturdum çünkü Laravel, yeni tablolar için down() metodunu otomatik olarak oluşturacaktır. Migration dosyaları database/migrations/ klasöründedir:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
  
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -161,10 +155,9 @@ class CreatePostsTable extends Migration
         Schema::dropIfExists('posts');
     }
 }
-</pre>
+</code></pre></div></div>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
  
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -197,10 +190,9 @@ class CreateAuthorsTable extends Migration
         Schema::dropIfExists('authors');
     }
 }
-</pre>
+</code></pre></div></div>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
  
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
@@ -236,7 +228,7 @@ class CreateProfilesTable extends Migration
         Schema::dropIfExists('profiles');
     }
 }
-</pre>
+</code></pre></div></div>
 
 <h3 id="model">Model</h3>
 
@@ -244,8 +236,7 @@ class CreateProfilesTable extends Migration
 
 <p>İlk model app/Post.php’dir:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
  
 namespace App;
  
@@ -258,12 +249,11 @@ class Post extends Model
         return $this-&gt;belongsTo(Author::class);
     }
 }
-</pre>
+</code></pre></div></div>
 
 <p>Ardından, app\Author.php iki ilişkilendirmeye sahiptir:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
  
 namespace App;
  
@@ -281,12 +271,11 @@ class Author extends Model
         return $this-&gt;hasMany(Post::class);
     }
 }
-</pre>
+</code></pre></div></div>
 
 <p>Model ve migration’lar hazır olduğunda, migration’ları çalıştırabilir ve ardından seed (tohum) verileriyle eager loading denemelerine geçebilirsiniz.</p>
 
-<pre>
-php artisan migrate
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan migrate
 Migration table created successfully.
 Migrating: 2014_10_12_000000_create_users_table
 Migrated:  2014_10_12_000000_create_users_table
@@ -298,7 +287,7 @@ Migrating: 2017_08_04_042516_create_authors_table
 Migrated:  2017_08_04_042516_create_authors_table
 Migrating: 2017_08_04_044554_create_profiles_table
 Migrated:  2017_08_04_044554_create_profiles_table
-</pre>
+</code></pre></div></div>
 
 <p>Veritabanını kontrol ettiğinizde, oluşturulan tüm tabloları görmelisiniz!</p>
 
@@ -308,8 +297,7 @@ Migrated:  2017_08_04_044554_create_profiles_table
 
 <p>database/factories/ModelFactory.php dosyasını açın ve aşağıdaki üç factory’i mevcut User factory’nin altına ekleyin:</p>
 
-<pre>
-/** @var \Illuminate\Database\Eloquent\Factory $factory */
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/** @var \Illuminate\Database\Eloquent\Factory $factory */
 $factory-&gt;define(App\Post::class, function (Faker\Generator $faker) {
     return [
         'title' =&gt; $faker-&gt;sentence,
@@ -339,14 +327,13 @@ $factory-&gt;define(App\Profile::class, function (Faker\Generator $faker) {
         'website' =&gt; $faker-&gt;domainName,
     ];
 });
-</pre>
+</code></pre></div></div>
 
 <p>Factory’ler, sorgulayabileceğimiz bir dizi gönderiyi oluşturmayı kolaylaştıracak; bunları veritabanı tohumlaması ile ilişkili model verileri oluşturmak için kullanabiliriz.</p>
 
 <p>database/seeds/DatabaseSeeder.php dosyasını açın ve DatabaseSeeder::run() metoduna şunu ekleyin:</p>
 
-<pre>
-public function run()
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function run()
 {
     $authors = factory(App\Author::class, 5)-&gt;create();
     $authors-&gt;each(function ($author) {
@@ -360,16 +347,15 @@ public function run()
             );
     });
 }
-</pre>
+</code></pre></div></div>
 
 <p>Beş yazar oluşturdunuz ve ardından yazarlar arasında dolaşıp ilişkili bir profili ve birçok gönderiyi (yazar başına 20 ila 30 gönderi) kaydettiniz.</p>
 
 <p>Migration, model, model factory ve seeder oluşturmayı bitirdik. Hepsini birleştirebilir ve tekrarlanabilir bir şekilde yeniden çalıştırabiliriz:</p>
 
-<pre>
-php artisan migrate:refresh
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan migrate:refresh
 php artisan db:seed
-</pre>
+</code></pre></div></div>
 
 <p>Artık bir sonraki bölümde oynayabileceğiniz verilere sahip olmalısınız. Laravel 5.5’in, migration’ları geri alıp yeniden uygulamak yerine tabloları silen migration:fresh komutu içerdiğini unutmayın.</p>
 
@@ -379,8 +365,7 @@ php artisan db:seed
 
 <p>Veritabanı sorgularını log’a kaydetmek için MySQL log’unu etkinleştirebilir veya Eloquent’ten gelen veritabanı çağrılarını dinleyebilirsiniz. Eloquent aracılığıyla sorguları log’a kaydetmek için, app/Providers/AppServiceProvider.php boot() metoduna aşağıdaki kodu ekleyin:</p>
 
-<pre>
-namespace App\Providers;
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>namespace App\Providers;
  
 use DB;
 use Log;
@@ -406,56 +391,51 @@ class AppServiceProvider extends ServiceProvider
  
     // ...
 }
-</pre>
+</code></pre></div></div>
 
 <p>Bu bilgiyi Laravel Debugbar’dan da alabilirsiniz.</p>
 
 <p>Bakalım model ilişkilerinde eager loading kullanmadığımızda ne olacak. storage/log/laravel.log dosyanızı temizleyin ve “tinker” komutunu çalıştırın.</p>
 
-<pre>
-php artisan tinker
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan tinker
  
 &gt;&gt;&gt; $posts = App\Post::all();
 &gt;&gt;&gt; $posts-&gt;map(function ($post) {
 ...     return $post-&gt;author;
 ... });
 &gt;&gt;&gt; ...
-</pre>
+</code></pre></div></div>
 
 <p>laravel.log dosyanızı kontrol ederseniz, ilişkili yazarı almak için bir dizi sorgu görmelisiniz:</p>
 
-<pre>
-[2017-08-04 06:21:58] local.INFO: select * from `posts`
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[2017-08-04 06:21:58] local.INFO: select * from `posts`
 [2017-08-04 06:22:06] local.INFO: select * from `authors` where `authors`.`id` = ? limit 1 [1]
 [2017-08-04 06:22:06] local.INFO: select * from `authors` where `authors`.`id` = ? limit 1 [1]
 [2017-08-04 06:22:06] local.INFO: select * from `authors` where `authors`.`id` = ? limit 1 [1]
 ....
-</pre>
+</code></pre></div></div>
 
 <p>laravel.log dosyanızı tekrar boşaltın ve bu sefer yazar kayıtlarını eager loading ile yüklemek için with() kullanın:</p>
 
-<pre>
-php artisan tinker
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan tinker
  
 &gt;&gt;&gt; $posts = App\Post::with('author')-&gt;get();
 &gt;&gt;&gt; $posts-&gt;map(function ($post) {
 ...     return $post-&gt;author;
 ... });
 ...
-</pre>
+</code></pre></div></div>
 
 <p>Bu sefer log dosyasında yalnızca iki sorgu görmelisiniz. Tüm gönderiler için ilk sorgu ve ilişkili tüm yazarlar için ikinci sorgu.</p>
 
-<pre>
-[2017-08-04 07:18:02] local.INFO: select * from `posts`
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[2017-08-04 07:18:02] local.INFO: select * from `posts`
 [2017-08-04 07:18:02] local.INFO: select * from `authors` where `authors`.`id` in (?, ?, ?, ?, ?) [1,2,3,4,5]
-</pre>
+</code></pre></div></div>
 
 <p>Birden fazla ilgili ilişkilendirmeniz varsa, bunları bir dizi ile isteyerek yükleyebilirsiniz:</p>
 
-<pre>
-$posts = App\Post::with(['author', 'comments'])-&gt;get();
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$posts = App\Post::with(['author', 'comments'])-&gt;get();
+</code></pre></div></div>
 
 <h2 id="eloquentte-i̇ç-i̇çe-eager-loading">Eloquent’te İç İçe Eager Loading</h2>
 
@@ -463,48 +443,44 @@ $posts = App\Post::with(['author', 'comments'])-&gt;get();
 
 <p>laravel.log dosyasını boşaltın ve deneyin:</p>
 
-<pre>
-php artisan tinker
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan tinker
  
 &gt;&gt;&gt; $posts = App\Post::with('author')-&gt;get();
 &gt;&gt;&gt; $posts-&gt;map(function ($post) {
 ...     return $post-&gt;author-&gt;profile;
 ... });
 ...
-</pre>
+</code></pre></div></div>
 
 <p>Şimdi yedi sorgunuz olacak. İlk ikisi eager yüklenir ve ardından her yeni yazar profili için bir sorgu gerekir.</p>
 
 <p>Eager loading ile iç içe ilişkilerdeki fazladan sorgulardan kaçınabiliriz. laravel.log dosyanızı son bir kez temizleyin ve aşağıdakileri çalıştırın:</p>
 
-<pre>
-&gt;&gt;&gt; $posts = App\Post::with('author.profile')-&gt;get();
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&gt;&gt;&gt; $posts = App\Post::with('author.profile')-&gt;get();
 &gt;&gt;&gt; $posts-&gt;map(function ($post) {
 ...     return $post-&gt;author-&gt;profile;
 ... });
-</pre>
+</code></pre></div></div>
 
 <p>Şimdi, toplamda yalnızca 3 sorgunuz olmalıdır:</p>
 
-<pre>
-[2017-08-04 07:27:27] local.INFO: select * from `posts`
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[2017-08-04 07:27:27] local.INFO: select * from `posts`
 [2017-08-04 07:27:27] local.INFO: select * from `authors` where `authors`.`id` in (?, ?, ?, ?, ?) [1,2,3,4,5]
 [2017-08-04 07:27:27] local.INFO: select * from `profiles` where `profiles`.`author_id` in (?, ?, ?, ?, ?) [1,2,3,4,5]
-</pre>
+</code></pre></div></div>
 
 <h2 id="lazy-eager-loading">Lazy Eager Loading</h2>
 
 <p>İlişkili modelleri yalnızca bir koşula dayalı olarak toplamanız gerekebilir. Bu durumda, ilgili veriler için tembelce ek sorgular başlatabilirsiniz:</p>
 
-<pre>
-php artisan tinker
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan tinker
  
 &gt;&gt;&gt; $posts = App\Post::all();
 ...
 &gt;&gt;&gt; $posts-&gt;load('author.profile');
 &gt;&gt;&gt; $posts-&gt;first()-&gt;author-&gt;profile;
 ...
-</pre>
+</code></pre></div></div>
 
 <p>Toplamda üç sorgu görmelisiniz, ancak yalnızca $posts-&gt;load() çağrılırsa.</p>
 

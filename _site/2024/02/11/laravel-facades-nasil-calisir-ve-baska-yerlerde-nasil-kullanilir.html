@@ -65,19 +65,17 @@
 
 <p>Muhtemelen bildiğiniz gibi container içindeki her servisin benzersiz bir adı vardır. Laravel uygulamasında, bir servise doğrudan container’dan erişmek için App::make() metodunu veya app() helper fonksiyonunu kullanabiliriz.</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 App::make('some_service')-&gt;methodName();
-</pre>
+</code></pre></div></div>
 
 <p>Daha önce de belirtildiği gibi Laravel, servisleri geliştiricinin kullanımına daha okunaklı bir şekilde sunmak için facade sınıflarını kullanır. Facade sınıfı kullanarak aynı şeyi yapmak için yalnızca aşağıdaki kodu yazmamız gerekir:</p>
 
-<pre>
-// ...
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// ...
 someService::methodName();
 // ...
-</pre>
+</code></pre></div></div>
 
 <p>Laravel’de tüm servislerin bir facade sınıfı vardır. Bu facade sınıfları, Illuminate/Support paketinin bir parçası olan base Facade sınıfını genişletir. Uygulamaları gereken tek şey, container içindeki servis adını döndüren getFacadeAccessor metodudur.</p>
 
@@ -91,8 +89,7 @@ someService::methodName();
 
 <p>Base facade sınıfında __callStatic metodunun uygulanması:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 // ...
     /**
      * Handle dynamic, static calls to the object.
@@ -125,7 +122,7 @@ someService::methodName();
                 return call_user_func_array([$instance, $method], $args);
         }
     }
-</pre>
+</code></pre></div></div>
 
 <p>Yukarıdaki metotta getFacadeRoot() servisi container’dan alır.</p>
 
@@ -133,8 +130,7 @@ someService::methodName();
 
 <p>Her facade sınıfı base sınıfı genişletir. Uygulamamız gereken tek şey getFacadeAccessor() metodudur. Bu metot, servisin adını container’a döndürmekten başka bir şey yapmaz.</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 namespace App\Facades;
 
@@ -153,17 +149,16 @@ class SomeServiceFacade extends BaseFacade
         return 'some.service';
     }
 }
-</pre>
+</code></pre></div></div>
 
 <h3 id="takma-adlar">Takma adlar</h3>
 
 <p>Laravel facades PHP sınıfları olduğundan, kullanmadan önce bunları içe aktarmamız gerekir. PHP’deki namespace ve autoloading desteği sayesinde, tüm sınıflara tam adlarıyla eriştiğimizde otomatik olarak yüklenirler. PHP ayrıca use ifadesini kullanarak sınıf takma adlarını da destekler:</p>
 
-<pre>
-use App\Facades\SomeServiceFacade
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>use App\Facades\SomeServiceFacade
 
 SomeServiceFacade:SomeMethod();
-</pre>
+</code></pre></div></div>
 
 <p>Ancak bunu, söz konusu facade sınıfına ihtiyaç duyduğumuz her senaryoda yapmak zorundayız. Laravel, bir alias loader kullanarak facade’lerin takma adlarını kendi yöntemiyle ele alır.</p>
 
@@ -173,25 +168,23 @@ SomeServiceFacade:SomeMethod();
 
 <p>Diziye göz attığımızda her bir takma adın tam nitelikli bir sınıf adıyla eşlendiğini görebiliriz. Bu, facade sınıfı için istediğimiz herhangi bir adı kullanabileceğimiz anlamına gelir:</p>
 
-<pre>
-// ..
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// ..
 'aliases' =&gt; [
     // ...
     'FancyName' =&gt; 'App\Facades\SomeServiceFacade',
 ],
-</pre>
+</code></pre></div></div>
 
 <p>Şimdi Laravel’in bu diziyi nasıl kullandığını görelim. Önyükleme aşamasında Laravel, Illuminate\Foundation paketinin parçası olan AliasLoader adlı bir servisi kullanır. AliasLoader alias dizisini alır, tüm öğeleri yineler ve PHP’nin spl_autoload_register’ını kullanarak __autoload fonksiyonlarından oluşan bir kuyruk oluşturur. Her __autoload fonksiyonu, PHP’nin class_alias fonksiyonunu kullanarak ilgili facade sınıfı için bir takma ad oluşturmaktan sorumludur.</p>
 
 <p>Sonuç olarak, normalde use ifadesi ile yaptığımız gibi, sınıfları kullanmadan önce içe aktarmamız ve takma ad vermemiz gerekmeyecek. Yani ne zaman var olmayan bir sınıfa erişmeye çalışsak, PHP uygun autoloader’ı bulmak için __autoload kuyruğunu kontrol edecektir. O zamana kadar AliasLoader zaten tüm __autoload fonksiyonlarını kaydetmiştir. Her autoloader süslü bir sınıf adı alır ve onu alias dizisine göre orijinal sınıf adına çözümler. Son olarak o sınıf için bir takma ad oluşturur. Aşağıdaki metot çağrısını göz önünde bulundurun:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 // FancyName is resolved to App\Facades\SomeServiceFacade according to the aliases array
 
 FancyName::someMethod()
-</pre>
+</code></pre></div></div>
 
 <p>Perde arkasında FancyName, App\Facades\SomeServiceFacade olarak çözümlendi.</p>
 
@@ -201,19 +194,17 @@ FancyName::someMethod()
 
 <p>Silex’in kendi container’ı vardır. Container içindeki bir servise erişmek için $app nesnesini şu şekilde kullanabiliriz:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 $app['some.service']-&gt;someMethod()
-</pre>
+</code></pre></div></div>
 
 <p>Facade sınıfları yardımıyla Silex servislerimize de static benzeri bir arayüz sağlayabiliriz. Ayrıca bu facade’lere anlamlı takma adlar oluşturmak için AliasLoader servisini kullanabiliriz. Sonuç olarak yukarıdaki kodu şu şekilde yeniden düzenleyebiliriz:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 SomeService::someMethod();
-</pre>
+</code></pre></div></div>
 
 <h3 id="gereksinimler">Gereksinimler</h3>
 
@@ -227,8 +218,7 @@ SomeService::someMethod();
 
 <p>Bu eğitim için tüm facade’leri src/Facades altında tutalım. Örnek olarak some.service isimli bir servis için facade sınıfı şu şekilde olacaktır:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 namespace App\Facades
 
@@ -246,7 +236,7 @@ class SomeServiceFacade extends Facade {
     }
 }
 
-</pre>
+</code></pre></div></div>
 
 <p>Lütfen sınıfı app\facades altına namespace ile yerleştirdiğimizi unutmayın.</p>
 
@@ -256,11 +246,10 @@ class SomeServiceFacade extends Facade {
 
 <p>app.php dosyamıza aşağıdaki kodu eklememiz gerekiyor:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 Illumiante\Support\Facade::setFacadeApplication($app);
-</pre>
+</code></pre></div></div>
 
 <p>Bu, base facade sınıfını genişleten tüm facade’ler için container’ı ayarlayacaktır.</p>
 
@@ -278,13 +267,12 @@ Illumiante\Support\Facade::setFacadeApplication($app);
 
 <p>config dizinimizde aliases.php adında bir dosya oluşturalım ve alias-facade bağlantısını yapalım:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 return [
     'FancyName' =&gt; 'App\Facades\SomeService',
 ];
-</pre>
+</code></pre></div></div>
 
 <p>FancyName, App\Facades\SomeService yerine kullanmak istediğimiz addır.</p>
 
@@ -294,22 +282,20 @@ return [
 
 <p>Yine app.php dosyasına aşağıdaki kodu ekleyin:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 // ...
 
 $aliases = require __DIR__ . '/../../config/aliases.php';
 App\Facades\AliasLoader::getInstance($aliases)-&gt;register();
-</pre>
+</code></pre></div></div>
 
 <p>Ve hepsi bu kadar! Artık servisi şu şekilde kullanabiliriz:</p>
 
-<pre>
-&lt;?php
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
 
 FancyName::methodName();
-</pre>
+</code></pre></div></div>
 
 <p>Okuduğunuz için teşekkürler!</p>
 

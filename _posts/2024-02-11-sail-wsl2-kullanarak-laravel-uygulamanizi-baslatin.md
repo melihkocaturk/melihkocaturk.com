@@ -29,9 +29,9 @@ Komut Windows 10’da mevcut değilse aşağıdaki manuel kurulumu deneyin. Alte
 
 Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki komutu çalıştırın.
 
-<pre>
+```
 dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-</pre>
+```
 
 DISM hakkında daha fazla bilgi için [buraya](https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11) tıklayın.
 
@@ -39,9 +39,9 @@ DISM hakkında daha fazla bilgi için [buraya](https://learn.microsoft.com/en-us
 
 WSL 2 için sanallaştırma yetenekleri hala gereklidir. Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki çalıştırın.
 
-<pre>
+```
 dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-</pre>
+```
 
 **3. Linux çekirdeği güncelleme paketini indirin**
 
@@ -49,9 +49,9 @@ dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /nores
 
 **4. WSL 2'yi varsayılan sürümünüz olarak ayarlayın**
 
-<pre>
+```
 wsl --set-default-version 2
-</pre>
+```
 
 **5. Ubuntu'yu (veya seçtiğiniz Linux dağıtımını) yükleyin**
 
@@ -100,9 +100,9 @@ cd ~ komutunu kullanarak Linux ana dizininize gidebiliriz.
 
 Aşağıdaki komutu kullanarak test-project adında yeni bir Laravel projesi oluşturalım:
 
-<pre>
+```
 curl -s https://laravel.build/test-project | bash
-</pre>
+```
 
 Daha sonra kurulumu bekleyin.
 
@@ -110,16 +110,16 @@ Daha sonra kurulumu bekleyin.
 
 WSL storage’in gerçek konumu (vhdx formatında) şu adreste bulunur:
 
-<pre>
+```
 C:\Users\user_name\AppData\Local\Packages\
 CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState
-</pre>
+```
 
 Artık cd test-project ile dizine girebilir ve Sail'i başlatabiliriz!
 
-<pre>
+```
 ./vendor/bin/sail up
-</pre>
+```
 
 Sail’i ilk kez çalıştırdığınızda, docker imajlarını indirmek ve konteynerinizi oluşturmak biraz zaman alır ancak bir sonraki çalıştırma için çok hızlı olacaktır.
 
@@ -135,9 +135,9 @@ Varsayılan stack mysql, redis, meilisearch, mailhog ve selenium'u içeriyor. Me
 
 Query kullanarak favori stack’inizi seçebilirsiniz:
 
-<pre>
+```
 curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
-</pre>
+```
 
 docker-compose.yml dosyanız buna göre yapılandıracaktır.
 
@@ -145,25 +145,25 @@ docker-compose.yml dosyanız buna göre yapılandıracaktır.
 
 **Sail’i detached modda başlatın**
 
-<pre>
+```
 ./vendor/bin/sail up -d
-</pre>
+```
 
 **Sail’i durdurun**
 
 “Detached” modu kullanmıyorsanız Control+C, aksi halde,
 
-<pre>
+```
 ./vendor/bin/sail down
-</pre>
+```
 
 **Takma ad**
 
 Uzun bir yol adı yazmak yerine, sail’e doğrudan ulaşmanıza olanak tanıyan bir Bash takma adı yapılandırın.
 
-<pre>
+```
 alias sail='bash vendor/bin/sail'
-</pre>
+```
 
 Bir takma ad oluşturabilir ve takma adı kalıcı olarak .bashrc dosyanıza kaydedebilirsiniz. nano ~/.bashrc komutunu kullanıp daha sonra alt tarafa alias sail='bash vendor/bin/sail' ekleyip çalıştırabilirsiniz.
 
@@ -173,15 +173,15 @@ Bir takma ad oluşturabilir ve takma adı kalıcı olarak .bashrc dosyanıza kay
 
 [Remote-WSL extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl) yükleyin ve proje klasöründe olduğunuzdan emin olun.
 
-<pre>
+```
 cd ~/test-project/
-</pre>
+```
 
 Sonra aşağıdaki kodu çalıştırın.
 
-<pre>
+```
 code .
-</pre>
+```
 
 VS Code'un başlatıldığını ve proje klasörünüzdeki dosyaları görebilmeniz gerekir.
 

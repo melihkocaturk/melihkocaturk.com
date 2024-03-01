@@ -53,21 +53,19 @@
 
 <p>Dosyanın üst kısmında, varsayılan kanal LOG_CHANNEL environment değişkeninden okunacak şekilde ayarlanmıştır:</p>
 
-<pre>
-'default' =&gt; env('LOG_CHANNEL', 'stack'),
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'default' =&gt; env('LOG_CHANNEL', 'stack'),
+</code></pre></div></div>
 
 <p>Bu, Heroku’da doğru şekilde log tutmak için LOG_CHANNEL environment değişkenini “errorlog” olarak ayarlayabileceğiniz anlamına gelir:</p>
 
-<pre>
-heroku config:set LOG_CHANNEL=errorlog
-</pre>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>heroku config:set LOG_CHANNEL=errorlog
+</code></pre></div></div>
 
 <p><img src="/assets/images/2024/02/heroku-env-log-channel-errorlog.png" alt="Log Channel Config Var" title="Heroku'da Laravel Loglarını Nasıl Görüntüleyebilirim?" class="img-fluid" /></p>
 
 <p>Artık logları canlı olarak takip edebilirsiniz:</p>
 
-<pre>heroku logs -t</pre>
+<p><code class="language-plaintext highlighter-rouge">heroku logs -t</code></p>
 
 <p>Okuduğunuz için teşekkürler.</p>
 </p>
