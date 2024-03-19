@@ -1,21 +1,1740 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-08T01:44:44+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
-</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">ChatGPT’nin Sınırlamaları Nelerdir?</title><link href="http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir.html" rel="alternate" type="text/html" title="ChatGPT’nin Sınırlamaları Nelerdir?" /><published>2024-03-01T00:00:00+03:00</published><updated>2024-03-01T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir</id><content type="html" xml:base="http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir.html"><![CDATA[<p>ChatGPT’nin ne kadar faydalı olabileceğini gördük, ancak her makine öğrenimi modeli gibi onun da kendi sınırlamaları var.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-19T15:31:29+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
+</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Laravel Geliştirme Ortamını Hazırlamak</title><link href="http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak.html" rel="alternate" type="text/html" title="Laravel Geliştirme Ortamını Hazırlamak" /><published>2024-03-18T00:00:00+03:00</published><updated>2024-03-18T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak</id><content type="html" xml:base="http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak.html"><![CDATA[<p>PHP’nin başarısının bir nedeni de, PHP’ye hizmet vermeyen bir web sunucusu bulmanın zor olmasıdır. Ancak, modern PHP araçları geçmişe göre daha katı gereksinimlere sahiptir. Laravel’de geliştirme yapmanın en iyi yolu, kodunuz için tutarlı bir yerel ve uzak sunucu ortamı sağlamaktır ve neyse ki Laravel ekosisteminde bunun için birkaç araç var.</p>
+
+<h2 id="sistem-gereksinimleri">Sistem Gereksinimleri</h2>
+
+<p>Bu bölümde ele alacağımız her şey Windows makinelerde mümkündür, ancak düzinelerce sayfalık özel talimata ve uyarıya ihtiyacınız olacak. Bu talimatları ve uyarıları gerçek Windows kullanıcılarına bırakacağım, bu nedenle buradaki ve kitabın geri kalanındaki örnekler Unix/Linux/macOS geliştiricilerine odaklanacak.</p>
+
+<p>İster yerel makinenize PHP ve diğer araçları yükleyerek web sitenize hizmet vermeyi, ister geliştirme ortamınıza Vagrant veya Docker aracılığıyla sanal bir makineden hizmet vermeyi veya MAMP/WAMP/XAMPP gibi bir aracı kullanmayı seçin, geliştirme ortamınızın şu özelliklere sahip olması gerekir:</p>
 
 <ul>
-  <li>ChatGPT’nin eğitim verilerinin son tarihi 2021’dir ve güncel olaylara erişimi yoktur, bu da o tarihten sonra meydana gelen olayları anlayamayabileceği veya bunlara yanıt veremeyebileceği anlamına gelir.</li>
-  <li>ChatGPT’nin tek bir yanıtta üretebileceği çıktı sınırı vardır; yolun ortasında yanıt vermeyi bırakırsa bu sınıra ulaştığınızı bileceksiniz. Böyle bir durumda “Devam Et” yazmanız yeterlidir; kaldığı yerden devam edecektir.</li>
-  <li>Açık uçlu veya karmaşık sorular sorduğunuzda sınıra ulaşma olasılığınız daha yüksektir. Çıktı sınırı, yanıtın kalitesi ve alaka düzeyi ile modelin hesaplama maliyeti arasındaki bir dengedir.</li>
-  <li>Kaliteli bir yanıt alabilmek için karmaşık sorguları parçalara ayırmak ve bunları sırayla istemek en iyisidir.</li>
-  <li>ChatGPT, alaycılık veya ironi gibi mecazi dili anlamakta zorluk çeker ve bu da yanlış anlamalara veya alakasız yanıtlara yol açabilir.</li>
-  <li>ChatGPT’nin performansı, üzerinde eğitim aldığı verilerden etkilenir ve eğitim verilerindeki önyargı, modelin yanıtlarında önyargıya yol açabilir.</li>
-  <li>ChatGPT’yi kullanırken, herhangi bir kişisel bilgiyi saklamadığını ancak metin çıktısı oluşturmak için girdi olarak sağladığınız bilgileri kullanabileceğini unutmamak önemlidir. Herhangi bir kişisel bilgi vermeden önce gizlilik politikasını kontrol ederek olası sonuçların farkında olmanız çok önemlidir.</li>
+  <li>PHP &gt;= 8.1</li>
+  <li>OpenSSL PHP extension</li>
+  <li>PDO PHP extension</li>
+  <li>Mbstring PHP extension</li>
+  <li>Tokenizer PHP extension</li>
+  <li>XML PHP extension</li>
+  <li>Ctype PHP extension</li>
+  <li>JSON PHP extension</li>
+  <li>BCMath PHP extension</li>
 </ul>
 
-<p>Bunlar, bu yazının yazıldığı sıradaki sınırlamalardır ancak chatGPT sürekli olarak geliştirilmektedir ve mevcut verilere erişmesinin an meselesi olduğu düşünülmektedir.</p>
+<h2 id="composer">Composer</h2>
 
-<p>Her şeyde olduğu gibi, yayınlamadan veya chatGPT’den elde edilen çıktılara dayanarak büyük kararlar almadan önce kendi durumunuzu tespit etmelisiniz.</p>
+<p>Geliştirdiğiniz makine ne olursa olsun, Composer’ın global olarak kurulu olması gerekir. Composer’a aşina değilseniz, çoğu modern PHP geliştirmesinin temelini oluşturan bir araçtır. Composer, Node için NPM (Node Package Manager) veya Ruby için RubyGems gibi, PHP için bir bağımlılık yöneticisidir. Ancak NPM gibi, Composer da testlerimizin çoğunun, yerel script yüklemenin, yükleme scriptlerinin ve çok daha fazlasının temelidir. Laravel’i yüklemek, Laravel’i güncellemek ve harici bağımlılıkları yönetmek için Composer’a ihtiyacınız olacak.</p>
 
-<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[ChatGPT’nin ne kadar faydalı olabileceğini gördük, ancak her makine öğrenimi modeli gibi onun da kendi sınırlamaları var.]]></summary></entry><entry><title type="html">Pasif Gelir Akışı Oluşturmak İçin ChatGPT’yi Kullanın</title><link href="http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin.html" rel="alternate" type="text/html" title="Pasif Gelir Akışı Oluşturmak İçin ChatGPT’yi Kullanın" /><published>2024-03-01T00:00:00+03:00</published><updated>2024-03-01T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin</id><content type="html" xml:base="http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin.html"><![CDATA[<p>Oyun artık değişti, giriş engeli çok düşük olan pasif gelir kaynakları giderek artıyor çünkü ChatGPT insanların bunu yüzlerce veya binlerce kez tekrarlamasını gerçekten kolaylaştırıyor.</p>
+<h2 id="yerel-geliştirme-ortamları">Yerel Geliştirme Ortamları</h2>
+
+<p>Birçok proje için, geliştirme ortamınızı daha basit bir araç seti kullanarak barındırmak yeterli olacaktır. Sisteminizde zaten MAMP veya WAMP veya XAMPP kuruluysa, Laravel’i çalıştırmak muhtemelen sorun olmayacaktır.</p>
+
+<p>Laravel’i PHP’nin yerleşik web sunucusuyla da çalıştırabilirsiniz. Laravel sitenizin kök klasöründen php -S localhost:8000 -t public komutunu çalıştırın ve PHP’nin yerleşik web sunucusu sitenize http://localhost:8000/ adresinden hizmet verecektir.</p>
+
+<p>Ancak, geliştirme ortamınızda biraz daha fazla güç istiyorsanız (her proje için farklı yerel etki alanları, MySQL gibi bağımlılıkların yönetimi vb.), PHP’nin yerleşik sunucusundan daha güçlü bir aracı kullanmak isteyeceksiniz.</p>
+
+<p>Laravel, yerel geliştirme için dört araç sunar: Artisan Serve, Sail, Valet ve Homestead. Her birini kısaca ele alacağız. Hangisini kullanacağınızdan emin değilseniz, kişisel olarak Mac kullanıcıları için Valet ve diğer herkes için Sail hayranıyım.</p>
+
+<p><strong>Artisan Serve</strong></p>
+
+<p>Laravel uygulamanızı kurduktan sonra php artisan serve’i çalıştırırsanız, tıpkı daha önce PHP’nin yerleşik web sunucusunu kullanarak kurduğumuz gibi http://localhost:8000’de hizmet verecektir. Burada ücretsiz olarak başka bir şey almıyorsunuz, bu nedenle tek anlamlı faydası hatırlamanın daha kolay olmasıdır.</p>
+
+<p><strong>Laravel Sail</strong></p>
+
+<p>Sail, işletim sisteminizden bağımsız olarak aynı şekilde yerel Laravel geliştirmeye başlamanın en basit yoludur. Bir PHP web sunucusu, veritabanları ve projenin bağımlılıkları veya geliştiricilerinizin çalışma ortamları ne olursa olsun, projenizdeki her geliştirici için tutarlı olan tek bir Laravel kurulumunu çalıştırmayı çok kolaylaştıran bir dizi başka özellik ile birlikte gelir.</p>
+
+<p>Neden Sail kullanmıyorum? Sail yukarıdakileri gerçekleştirmek için Docker’ı kullanıyor ve macOS’ta Docker, Valet’i tercih edeceğim kadar yavaş. Ancak Laravel’de yeniyseniz, özellikle de Mac kullanmıyorsanız, Laravel uygulamalarınızı oluşturmaya başlamanın en basit yoludur.</p>
+
+<p><strong>Laravel Valet</strong></p>
+
+<p>MacOS kullanıcısıysanız (Windows ve Linux için resmi olmayan dağıtımlar da vardır), Laravel Valet yerel Laravel uygulamalarınızın her birine (ve diğer birçok statik ve PHP tabanlı uygulamaya) farklı yerel etki alanlarında hizmet vermeyi kolaylaştırır.</p>
+
+<p>Dökümantasyonun size yol göstereceği Homebrew’i kullanarak birkaç araç yüklemeniz gerekecek, ancak ilk kurulumdan uygulamalarınızı sunmaya kadar çok az adım vardır.</p>
+
+<p>Valet’i kurun - en son yükleme yönergeleri için Valet belgelerine bakın - ve onu sitelerinizin yaşayacağı bir veya daha fazla dizine yönlendirin. Tüm geliştirdiğim uygulamalarımı koyduğum ~/Sites dizinimden valet park’ı çalıştırdım. Artık dizin adının sonuna .test ekleyebilir ve tarayıcınızda ziyaret edebilirsiniz</p>
+
+<p>Valet, Laravel uygulamalarımıza hizmet vermeyi kolaylaştırır; belirli bir klasördeki tüm alt klasörleri {klasöradı}.test olarak sunmak için valet park, yalnızca tek bir klasöre hizmet vermek için valet link, bir klasör için Valetserved etki alanını göstermek üzere bir tarayıcı açmak için valet open, Valet sitesine HTTPS ile hizmet vermek için valet secure, ve sitenizi başkalarıyla paylaşabilmeniz için ngrok veya Expose tüneli açmak için valet share.</p>
+
+<p><strong>Laravel Homestead</strong></p>
+
+<p>Homestead, yerel geliştirme ortamınızı kurmak için kullanmak isteyebileceğiniz başka bir araçtır. Bu, Vagrant’ın (sanal makineleri yönetmek için bir araç) üzerinde yer alan ve Laravel geliştirme için mükemmel bir şekilde ayarlanmış ve birçok Laravel sitesinin üzerinde çalıştığı en yaygın production ortamını yansıtan önceden yapılandırılmış bir sanal makine görüntüsü sağlayan yapılandırma aracıdır.</p>
+
+<p><a href="https://laravel.com/docs/10.x/homestead">Homestead belgeleri</a> detaylıdır ve sürekli güncel tutulur, bu nedenle nasıl çalıştığını ve nasıl kurulacağını öğrenmek istiyorsanız sizi onlara yönlendireceğim.</p>
+
+<h2 id="yeni-bir-lavel-projesi-oluşturmak">Yeni Bir Lavel Projesi Oluşturmak</h2>
+
+<p>Yeni bir Laravel projesi oluşturmanın iki yolu vardır, ancak her ikisi de komut satırından çalıştırılır. İlk seçenek, Laravel kurulum aracını (Composer kullanarak) global olarak kurmaktır; ikincisi, Composer’ın create-project özelliğini kullanmaktır.</p>
+
+<p>Kurulum belgeleri sayfasında her iki seçenek hakkında daha ayrıntılı bilgi edinebilirsiniz, ancak Laravel kurulum aracını tavsiye ederim.</p>
+
+<p><strong>Laravel Kurulum Aracı ile Laravel Kurulumu</strong></p>
+
+<p>Composer’ı global olarak yüklediyseniz, Laravel yükleyici aracını yüklemek için aşağıdaki komutu çalıştırın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer global require "laravel/installer"
+</code></pre></div></div>
+
+<p>Laravel yükleyici aracını yükledikten sonra, yeni bir Laravel projesi oluşturmak basittir. Sadece şu komutu komut satırınızdan çalıştırın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>laravel new projectName
+</code></pre></div></div>
+
+<p>Bu, geçerli dizininize projectName adlı yeni bir alt dizini oluşturacak ve içine iskelet Laravel projesi yükleyecektir.</p>
+
+<p><strong>Laravel’i Composer’ın create-project Özelliği ile Kurma</strong></p>
+
+<p>Composer ayrıca, belirli bir iskelet ile yeni projeler oluşturmak için create-project adlı bir özellik sunar. Yeni bir Laravel projesi oluşturmak üzere bu aracı kullanmak için aşağıdaki komutu çalıştırın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel projectName
+</code></pre></div></div>
+
+<p>Tıpkı kurulum aracında olduğu gibi, bu da geçerli dizininize geliştirmeniz için hazır bir iskelet Laravel kurulumu içeren projectName adlı bir alt dizin oluşturacaktır.</p>
+
+<p><strong>Sail ile Laravel Kurulumu</strong></p>
+
+<p>Laravel Sail ile çalışmayı planlıyorsanız, bir Laravel uygulaması yükleyebilir ve aynı zamanda Sail kurulum sürecini başlatabilirsiniz. Bilgisayarınızda Docker’ın kurulu olduğundan emin olun ve ardından “example-app” ifadesini uygulamanızın adıyla değiştirerek aşağıdaki komutu çalıştırın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s "https://laravel.build/example-app" | bash
+</code></pre></div></div>
+
+<p>Bu, Laravel’i mevcut klasörünüzün altındaki example-app klasörüne kuracak ve ardından Sail kurulum sürecini başlatacaktır.</p>
+
+<p>Kurulum işlemi tamamlandıktan sonra, yeni dizininize geçin ve Sail’i çalıştırın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd example-app
+./vendor/bin/sail up
+</code></pre></div></div>
+
+<p><strong>Not:</strong> İlk kez sail up çalıştırdığınızda, Docker görüntüsünü oluşturması gerektiğinden, diğer yükleme işlemlerinden biraz daha uzun sürecektir.</p>
+
+<h2 id="laravelin-dizin-yapısı">Laravel’in Dizin Yapısı</h2>
+
+<p>İskelet Laravel uygulaması içeren bir dizini açtığınızda, aşağıdaki dosya ve dizinleri göreceksiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app/
+bootstrap/
+config/
+database/
+public/
+resources/
+routes/
+storage/
+tests/
+vendor/
+.editorconfig
+.env
+.env.example
+.gitattributes
+.gitignore
+artisan
+composer.json
+composer.lock
+package.json
+phpunit.xml
+readme.md
+vite.config.js
+</code></pre></div></div>
+
+<p>Tanımak için bunları tek tek inceleyelim.</p>
+
+<p><strong>Dizinler</strong></p>
+
+<p>Kök dizin varsayılan olarak aşağıdaki klasörleri içerir:</p>
+
+<ul>
+  <li><strong>app</strong> - Uygulamanızın büyük kısmı burada bulunacak. Model, controller, command ve PHP etki alanı kodunuz burada yer alır.</li>
+  <li><strong>bootstrap</strong> - Laravel her çalıştırıldığında önyükleme yapmak için kullandığı dosyaları içerir.</li>
+  <li><strong>config</strong> - Tüm yapılandırma dosyalarının bulunduğu yer.</li>
+  <li><strong>database</strong> - Migration, seed ve factory’lerin bulunduğu yer.</li>
+  <li><strong>public</strong> - Sunucunun web sitesine hizmet verirken işaret ettiği dizin. Bu, önyükleme sürecini başlatan ve tüm istekleri uygun şekilde yönlendiren ön denetleyici olan index.php’yi içerir. Ayrıca resim, stylesheet, script gibi herkese açık dosyaların bulunduğu yerdir.</li>
+  <li><strong>resources</strong> - Diğer scriptler için gerekli olan dosyaların bulunduğu yer. View ve (isteğe bağlı olarak) kaynak CSS ve kaynak JavaScript dosyaları burada bulunur.</li>
+  <li><strong>routes</strong> - Hem HTTP rotaları hem de “konsol rotaları” veya Artisan komutları için tüm route tanımlarının yapıldığı yer.</li>
+  <li><strong>storage</strong> - Önbellek (cache), log ve derlenmiş sistem dosyalarının bulunduğu yer.</li>
+  <li><strong>tests</strong> - Unit ve entegrasyon testlerinin bulunduğu yer.</li>
+  <li><strong>vendor</strong> - Composer’ın bağımlılıklarını kurduğu yer. Composer’ın herhangi bir uzak sunucuda deploy sürecinizin bir parçası olarak çalışması beklendiğinden, Git tarafından göz ardı edildi (versiyon kontrol sisteminizden dışlanmak üzere işaretlendi).</li>
+</ul>
+
+<p><strong>Dosyalar</strong></p>
+
+<p>Kök dizin ayrıca aşağıdaki dosyaları içerir:</p>
+
+<ul>
+  <li><strong>.editorconfig</strong> - IDE/text editörünüze Laravel’in kodlama standartları hakkında talimatlar verir (ör. girintilerin boyutu, karakter kümesi ve sondaki boşlukların kırpılıp kırpılmayacağı).</li>
+  <li><strong>.env</strong> ve <strong>.env.example</strong> - Ortam değişkenlerini tanımlayın (her ortamda farklı olması beklenen ve bu nedenle versiyon kontrolüne bağlı olmayan değişkenler). .env.example, Git tarafından yok sayılan kendi .env dosyasını oluşturmak için her ortamın çoğaltması gereken bir şablondur.</li>
+  <li><strong>.gitignore</strong> ve <strong>.gitattributes</strong> - Git yapılandırma dosyaları.</li>
+  <li><strong>artisan</strong>: Artisan komutlarını (bkz. Bölüm 8) komut satırından çalıştırmanıza izin verir.</li>
+  <li><strong>composer.json</strong> ve <strong>composer.lock</strong> - Composer için yapılandırma dosyaları; composer.json kullanıcı tarafından düzenlenebilir, composer.lock düzenlenemez. Bu dosyalar, proje hakkında bazı temel bilgileri paylaşır ve ayrıca PHP bağımlılıklarını tanımlar.</li>
+  <li><strong>package.json</strong> - composer.json’a benzer ancak build sisteminin frontend assetleri ve bağımlılıkları için kullanılır; NPM’e hangi JavaScript tabanlı bağımlılıkların devreye gireceği konusunda talimat verir.</li>
+  <li><strong>phpunit.xml</strong> - Laravel’in test için kullandığı araç olan PHPUnit yapılandırma dosyası.</li>
+  <li><strong>readme.md</strong> - Laravel hakkında temel bilgiler veren Markdown dosyası. Laravel yükleyicisini kullanırsanız bu dosyayı görmezsiniz.</li>
+  <li><strong>vite.config.js</strong> - Vite için (isteğe bağlı) yapılandırma dosyası. Bu dosya, frontend assetlerinin nasıl derleyeceğini ve işleneceğini bildirir.</li>
+</ul>
+
+<h2 id="yapılandırma">Yapılandırma</h2>
+
+<p>Laravel uygulamanızın temel ayarları - veritabanı bağlantı ayarları, kuyruk ve mail ayarları vb. - config klasöründeki dosyalarda bulunur. Bu dosyaların her biri bir PHP dizisi döndürür ve dizideki her değere, dosya adından ve noktalarla (.) ayrılmış alt anahtarlardan oluşan bir yapılandırma anahtarıyla erişilebilir.</p>
+
+<p>Dolayısıyla, <em>config/services.php</em>‘de şuna benzeyen bir dosya oluşturursanız:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// config/services.php
+return [
+    'sparkpost' =&gt; [
+        'secret' =&gt; 'abcdefg',
+    ],
+];
+</code></pre></div></div>
+
+<p>Bu yapılandırma değişkenine şunu kullanarak erişebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config('services.sparkpost.secret')
+</code></pre></div></div>
+
+<p>Her ortam için farklı olması gereken tüm yapılandırma değişkenleri bunun yerine .env dosyalarınızda oluşturulur. Diyelim ki her ortam için farklı bir Bugsnag API anahtarı kullanmak istiyorsunuz. Yapılandırma dosyasını .env’den alacak şekilde ayarladınız:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// config/services.php
+return [
+    'bugsnag' =&gt; [
+        'api_key' =&gt; env('BUGSNAG_API_KEY'),
+    ],
+];
+</code></pre></div></div>
+
+<p>env() helper fonksiyonu, aynı anahtarla .env dosyasından bir değer çeker. Şimdi, bu anahtarı .env (bu ortam için ayarlar) ve .env.example (tüm ortamlar için şablon) dosyalarınıza ekleyin:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># In .env
+BUGSNAG_API_KEY=oinfp9813410942
+
+# In .env.example
+BUGSNAG_API_KEY=
+</code></pre></div></div>
+
+<p>.env dosyanız, framework’ün ihtiyaç duyduğu, hangi mail sürücüsünü kullanacağınız ve temel veritabanı ayarlarınızın ne olduğu gibi, ortama özgü epeyce değişken içerecektir.</p>
+
+<p><strong>Yapılandırma Dosyalarının Dışında env Kullanımı</strong></p>
+
+<p>Bazı önbelleğe alma ve optimizasyon özellikleri dahil olmak üzere Laravel’deki bazı özellikler, env() çağrıları ile yapılandırma dosyalarının dışında herhangi bir yerde kullanılamaz.</p>
+
+<p>Ortam değişkenlerini çekmenin en iyi yolu, ortama özgü olmasını istediğiniz her şey için yapılandırma öğeleri ayarlamaktır. Bu yapılandırma öğelerinin ortam değişkenlerini okumasını ve ardından uygulamanızın herhangi bir yerinde yapılandırma değişkenlerine başvurmasını sağlayın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// config/services.php
+return [
+    'bugsnag' =&gt; [
+        'key' =&gt; env('BUGSNAG_API_KEY'),
+    ],
+];
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// In controller, or whatever
+$bugsnag = new Bugsnag(config('services.bugsnag.key'));
+</code></pre></div></div>
+
+<p><strong>.env Dosyası</strong></p>
+
+<p>.env dosyasının varsayılan içeriğine hızlıca bir göz atalım. Anahtarlar, kullandığınız Laravel sürümüne bağlı olarak değişir, ancak nasıl göründüklerini görmek için Örnek 2-1’e bakın.</p>
+
+<p><strong>Örnek 2-1</strong>. Laravel’deki varsayılan ortam değişkenleri</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=
+APP_DEBUG=true
+APP_URL=http://localhost
+
+LOG_CHANNEL=stack
+LOG_DEPRECATIONS_CHANNEL=null
+LOG_LEVEL=debug
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+FILESYSTEM_DISK=local
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+MEMCACHED_HOST=127.0.0.1
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_MAILER=smtp
+MAIL_HOST=mailpit
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="${APP_NAME}"
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+AWS_USE_PATH_STYLE_ENDPOINT=false
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_HOST=
+PUSHER_PORT=443
+PUSHER_SCHEME=https
+PUSHER_APP_CLUSTER=mt1
+
+VITE_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+VITE_PUSHER_HOST="${PUSHER_HOST}"
+VITE_PUSHER_PORT="${PUSHER_PORT}"
+VITE_PUSHER_SCHEME="${PUSHER_SCHEME}"
+VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+</code></pre></div></div>
+
+<p>Hepsine girmeyeceğim, çünkü çok azı çeşitli servisler (Pusher, Redis, DB, Mail) için kimlik doğrulama bilgileri gruplarıdır. İşte bilmeniz gereken iki önemli ortam değişkeni:</p>
+
+<ul>
+  <li><strong>APP_KEY</strong> - Verileri şifrelemek için kullanılan rastgele oluşturulmuş bir dize. Bu boşsa, “No application encryption key has been specified.” hatasıyla karşılaşabilirsiniz. Bu durumda, php artisan key:generate komutunu çalıştırın ve Laravel sizin için bir tane üretecektir.</li>
+  <li><strong>APP_DEBUG</strong> - Uygulamanızın bu örneğinde kullanıcıların hata ayıklama hatalarını görüp görmeyeceğini belirleyen boolean değeri; local ve staging ortamları için harika, production için korkunç.</li>
+</ul>
+
+<p>Kimlik doğrulama dışı ayarların geri kalanına (BROADCAST_DRIVER, QUEUE_CONNECTION, vb.), harici servislere mümkün olduğunca az güvenerek çalışan varsayılan değerler verilir ve bu, yeni başladığınız zamanlar için idealdir.</p>
+
+<p>Laravel uygulamanızı başlattığınızda, çoğu proje için muhtemelen yapmak isteyeceğiniz tek değişiklik, veritabanı yapılandırma ayarlarında olacaktır. Laravel Vale kullanıyorum, bu yüzden DB_DATABASE’i projemin adına, DB_USERNAME’i root’a ve DB_PASSWORD’u boş bir dizeye ayarlıyorum:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DB_DATABASE=myProject
+DB_USERNAME=root
+DB_PASSWORD=
+</code></pre></div></div>
+
+<p>Ardından, en sevdiğim MySQL istemcimde projemle aynı ada sahip bir veritabanı oluşturuyorum ve kullanıma hazır.</p>
+
+<h2 id="çalıştırma">Çalıştırma</h2>
+
+<p>Artık bir Laravel kurulumuyla çalışıyorsunuz. git init’i çalıştırın, dosyaları git add . ile işleyin ve git commit ile kodlamaya başlamaya hazırsınız. Bu kadar! Valet kullanıyorsanız, aşağıdaki komutları çalıştırabilir ve sitenizi anında tarayıcınızda canlı olarak görebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>laravel new myProject &amp;&amp; cd myProject &amp;&amp; valet open
+</code></pre></div></div>
+
+<p>Ne zaman yeni bir projeye başlasam, attığım adımlar şunlardır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>laravel new myProject
+cd myProject
+git init
+git add .
+git commit -m "Initial commit"
+</code></pre></div></div>
+
+<p>Tüm sitelerimi, birincil Valet dizinim olarak kurduğum ~/Sites klasöründe tutuyorum, bu durumda, hiçbir ek iş olmadan tarayıcımda myProject.test’e anında erişebiliyorum. .env dosyasını düzenleyebilir ve onu belirli bir veritabanına yönlendirebilirim, bu veritabanını uygulamama ekleyebilirim ve kodlamaya başlamaya hazırım. Ve unutmayın, Lambo kullanıyorsanız, bu adımların tümü zaten sizin yerinize atılmıştır.</p>
+
+<h2 id="test-yapmak">Test yapmak</h2>
+
+<p>Bundan sonraki her bölümde, bölümün sonundaki “Test Etme” bölümü, ele alınan özellik veya özellikler için testlerin nasıl yazılacağını size gösterecektir. Bu bölüm test edilebilir bir özelliği kapsamadığından, testlerden hızlıca bahsedelim. (Laravel’de test yazma ve çalıştırma hakkında daha fazla bilgi edinmek için Bölüm 12’ye gidin.)</p>
+
+<p>Laravel, PHPUnit’i bir bağımlılık olarak getirir ve testleri, adı Test.php ile biten (örneğin, tests/UserTest.php) tests dizinindeki herhangi bir dosyada çalıştırmak üzere yapılandırılmıştır.</p>
+
+<p>Bu nedenle, test yazmanın en basit yolu, testler dizininde Test.php ile biten bir adla dosya oluşturmaktır. Ve bunları çalıştırmanın en kolay yolu, komut satırından (proje kökünde) ./vendor/bin/phpunit komutunu çalıştırmaktır.</p>
+
+<p>Herhangi bir test, veritabanı erişimi gerektiriyorsa, testlerinizi veritabanınızın barındırıldığı makineden yaptığınızdan emin olun; bu nedenle, veritabanınızı Vagrant’ta barındırıyorsanız, testlerinizi oradan çalıştırmak için Vagrant box’ı ssh yaptığınızdan emin olun. Yine, Bölüm 12’de bunu ve çok daha fazlasını öğrenebilirsiniz.</p>
+
+<p>Ayrıca, test bölümlerinden bazıları, kitabı ilk kez okuyorsanız henüz aşina olmayacağınız test sözdizimini ve özelliklerini kullanacaktır. Test bölümlerinden herhangi birindeki kod kafa karıştırıcıysa, onu atlayın ve test bölümünü okuma fırsatı bulduktan sonra geri dönün.</p>
+
+<h2 id="özet">Özet</h2>
+
+<p>Laravel bir PHP framework olduğu için onu yerel olarak sunmak çok basittir. Laravel ayrıca yerel gelişiminizi yönetmeniz için üç araç sunar: Docker kurulumu olan Sail; daha basit bir macOS tabanlı araç olan Valet; ve önceden yapılandırılmış bir Vagrant kurulumu olan Homestead. Laravel, Composer’a dayanır ve bu araç tarafından kurulabilir ve kutudan hem kurallarını hem de diğer açık kaynak araçlarıyla ilişkisini yansıtan bir dizi klasör ve dosyayla çıkar.</p>
+
+<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[PHP’nin başarısının bir nedeni de, PHP’ye hizmet vermeyen bir web sunucusu bulmanın zor olmasıdır. Ancak, modern PHP araçları geçmişe göre daha katı gereksinimlere sahiptir. Laravel’de geliştirme yapmanın en iyi yolu, kodunuz için tutarlı bir yerel ve uzak sunucu ortamı sağlamaktır ve neyse ki Laravel ekosisteminde bunun için birkaç araç var.]]></summary></entry><entry><title type="html">Neden Laravel?</title><link href="http://localhost:4000/2024/03/18/neden-laravel.html" rel="alternate" type="text/html" title="Neden Laravel?" /><published>2024-03-18T00:00:00+03:00</published><updated>2024-03-18T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/18/neden-laravel</id><content type="html" xml:base="http://localhost:4000/2024/03/18/neden-laravel.html"><![CDATA[<p>Dinamik web’in ilk günlerinde, web uygulaması yazmak bugün olduğundan çok daha farklı görünüyordu. O zaman geliştiriciler, yalnızca uygulamalarımızın benzersiz iş mantığı için değil, aynı zamanda sitelerde çok yaygın olan kullanıcı kimlik doğrulaması, input validation, veritabanı erişimi, templating vb. bileşenlerin her biri için kod yazmaktan sorumluydu.</p>
+
+<p>Bugün programcılar düzinelerce uygulama geliştirme framework’üne ve kolayca erişilebilen binlerce bileşene ve kütüphaneye sahiptir. Programcılar arasında yaygın bir nakarat, siz bir framework’ü öğrendiğiniz zaman, onu değiştirmek niyetiyle daha yeni (ve sözde daha iyi) üç framework’ün ortaya çıkmasıdır.</p>
+
+<p>“Sırf orada olduğu için” bir dağa tırmanmak geçerli bir gerekçe olabilir, ancak belirli bir framework kullanmayı seçmek için daha iyi nedenler vardır. Şu soruyu sormaya değer, neden framework? Daha spesifik olarak, neden Laravel?</p>
+
+<h2 id="neden-framework-kullanmalısınız">Neden Framework Kullanmalısınız?</h2>
+
+<p>PHP geliştiricileri için mevcut olan bireysel bileşenleri veya paketleri kullanmanın neden faydalı olduğunu görmek kolaydır. Paketlerde, iyi tanımlanmış bir işi olan yalıtılmış kod parçasının geliştirilmesinden ve sürdürülmesinden bir başkası sorumludur ve teoride o kişi, bu tek bileşen hakkında sizin sahip olabileceğinizden daha derin bir anlayışa sahiptir.</p>
+
+<p>Laravel ve Symfony, Lumen ve Slim gibi framework’ler, yapılandırma dosyaları, servis sağlayıcılar, öngörülen dizin yapıları ve uygulama ön yüklemeleri gibi özel framework “yapıştırıcısı” ile birlikte third-party bileşenlerin bir koleksiyonunu önceden paketler. Bu nedenle, genel olarak bir framework kullanmanın yararı, birinin yalnızca sizin için tek tek bileşenler hakkında değil, aynı zamanda bu bileşenlerin nasıl bir araya getirilmesi gerektiği konusunda da karar vermesidir.</p>
+
+<p>Diyelim ki bir framework’ün avantajı olmadan yeni bir web uygulaması başlattınız. Nereden başlayacaksınız? Muhtemelen HTTP request’lerini yönlendireceksiniz, bu nedenle şimdi mevcut tüm HTTP request ve response kütüphanelerini değerlendirmeniz ve birini seçmeniz gerekir. Daha sonra bir router seçmeniz gerekecek. Ve muhtemelen bir tür route yapılandırma dosyası oluşturmanız gerekecek. Hangi söz dizimini kullanmalı? Nereye gitmeli? Peki ya controller? Nerede tutulacak ve nasıl yüklenecekler? Controller ve bağımlılıklarını çözmek için muhtemelen dependency injection container’a ihtiyacınız olacak. Fakat hangisi?</p>
+
+<p>Ayrıca, tüm bu soruları yanıtlamak için zaman ayırırsanız ve uygulamanızı başarıyla oluşturursanız, bir sonraki geliştirici üzerindeki etkisi ne olur? Dört veya bir düzine özel framework tabanlı uygulamanız olduğunda ve controller’ların nerede olduğunu veya router sözdiziminin ne olduğunu hatırlamanız gerektiğinde ne olur?</p>
+
+<p><strong>Tutarlılık ve Esneklik</strong></p>
+
+<p>Framework’ler, “Burada hangi bileşeni kullanmalıyız?” sorusuna dikkatle düşünülmüş bir yanıt vererek bu sorunu ele alır ve seçilen belirli bileşenlerin birlikte iyi çalışmasını sağlar. Ek olarak, framework’ler, projede yeni olan bir geliştiricinin anlaması gereken kod miktarını azaltan kurallar sağlar; örneğin, bir Laravel projesinde router’ın nasıl çalıştığını anlarsanız, tüm Laravel projelerinde nasıl çalıştığını anlarsınız.</p>
+
+<p>Birisi her yeni proje için kendi framework’ünüzü oluşturmanızı tavsiye ettiğinde, gerçekte savundukları şey, uygulamanızın temeline neyin girip neyin girmediğini kontrol etme yeteneğidir. Bu, en iyi framework’lerin size yalnızca sağlam bir temel sağlamakla kalmayıp, aynı zamanda ihtiyacınıza uygun olarak özelleştirme özgürlüğü vereceği anlamına gelir. Ve bu, size kitabın geri kalanında göstereceğim gibi, Laravel’i bu kadar özel yapan şeyin bir parçasıdır.</p>
+
+<h2 id="laraveli-bu-kadar-özel-yapan-nedir">Laravel’i Bu Kadar Özel Yapan Nedir?</h2>
+
+<p>Peki Laravel’i farklı kılan nedir? Neden herhangi bir zamanda birden fazla PHP çerçevesine sahip olmalıyız? Zaten hepsi Symfony’nin bileşenlerini kullanıyor, değil mi? Laravel’i “harekete geçiren” şeylerden biraz bahsedelim.</p>
+
+<p><strong>Laravel’in Felsefesi</strong></p>
+
+<p>Değerleri anlamak için yalnızca Laravel marketing materyallerini ve README’leri okumanız yeterlidir. Taylor, “Illuminate” ve “Spark” gibi ışıkla ilgili sözcükler kullanır. Bir de şunlar var:  “Artisans”, “Elegant”. Ayrıca bunlar: “Breath of fresh air” “Fresh start”. Ve son olarak: “Rapid” “Warp speed”.</p>
+
+<p>Framework’ün en güçlü şekilde iletilen iki değeri, geliştirici hızını ve geliştirici mutluluğunu artırmaktır. Taylor, “Artisan” dilini kasıtlı olarak daha faydacı değerlere zıt olarak tanımladı. Bu tür bir düşüncenin doğuşunu, StackExchange’teki 2011 tarihli sorusunda görebilirsiniz: “Bazen kodun ‘güzel görünmesini’ sağlamak için anlamsız miktarda zaman (saatler) harcıyorum” - sadece kodun kendisine bakma konusunda daha iyi bir deneyim uğruna. Ayrıca geliştiricilerin fikirlerini hayata geçirmelerini kolaylaştırmanın ve hızlandırmanın, harika ürünler yaratmanın önündeki gereksiz engelleri ortadan kaldırmanın değerinden sık sık bahseder.</p>
+
+<p>Laravel, özünde, geliştiricileri donatmak ve harekete geçirmek ile ilgilidir. Amacı, geliştiricilerin hızlı bir şekilde öğrenmesine, başlamasına, geliştirmesine, ve basit, anlaşılır, kalıcı kodlar yazmalarına yardımcı olmaktır.</p>
+
+<p>Geliştiricileri hedefleme kavramı, Laravel materyallerinde açıktır. Dökümantasyonda “Happy developers make the best code” yazıyor. “Developer happiness from download to deploy” bir süredir resmi olmayan sloganıydı. Tabii ki, herhangi bir araç veya framework, geliştiricilerin mutlu olmasını istediğini söyleyecektir. Ancak geliştirici mutluluğunun ikincil değil birincil kaygı olarak görülmesi Laravel’in tarzı ve karar verme süreci üzerinde büyük bir etkiye sahip. Diğer framework’lerin, birincil hedef olarak mimari saflığı veya enterprise geliştirme ekiplerinin amaç ve değerleriyle uyumluluğu hedefleyebildiği durumlarda, Laravel’in birincil odak noktası bireysel geliştiriciye hizmet etmektir. Bu, Laravel’de mimari olarak saf veya enterprise kullanıma hazır uygulamalar yazamayacağınız anlamına gelmez, ancak kod tabanınızın okunabilirliği ve anlaşılırlığı pahasına olmak zorunda da değildir.</p>
+
+<p><strong>Laravel Geliştirici Mutluluğunu Nasıl Sağlar?</strong></p>
+
+<p>Geliştiricileri mutlu etmek istediğinizi söylemek bir şeydir. Bunu yapmak başka bir şeydir ve bir framework’te geliştiricileri mutsuz etme ve onları mutlu etme olasılığı en yüksek olanı sorgulamanızı gerektirir. Laravel’in geliştiricilerin hayatlarını kolaylaştırmaya çalıştığı birkaç yol vardır.</p>
+
+<p>Birincisi, Laravel hızlı bir uygulama geliştirme framework’üdür. Bu, kolay bir öğrenme eğrisine ve yeni bir uygulama başlatma ile onu yayınlama arasındaki adımları en aza indirmeye odaklandığı anlamına gelir. Veritabanı etkileşimlerinden kimlik doğrulamaya, kuyruklara, e-postaya ve önbelleğe almaya kadar web uygulamaları oluşturmadaki en yaygın görevlerin tümü, Laravel’in sağladığı bileşenler tarafından daha basit hale getirilir. Ancak Laravel’in bileşenleri kendi başlarına mükemmel değildir; tüm framework’te tutarlı bir API ve öngörülebilir yapılar sağlarlar. Bu, Laravel’de yeni bir şey denediğinizde, muhtemelen “… ve işe yarıyor” diyeceğiniz anlamına gelir.</p>
+
+<p>Bu da framework’ün kendisiyle bitmiyor. Laravel, uygulamalar için eksiksiz bir araç ekosistemi sağlar. Yerel geliştirme için Sail, Valet ve Homestead’e, sunucu yönetimi için Forge’a ve gelişmiş deployment için Envoyer ve Vapor’a sahipsiniz. Ayrıca bir dizi eklenti paketi mevcuttur: Ödemeler ve abonelikler için Cashier, WebSockets için Echo, arama için Scout, API kimlik doğrulaması için Sanctum ve Passport, frontend testi için Dusk, sosyal oturum açma için Socialite, kuyrukları izlemek için Horizon, admin panel oluşturmak için Nova ve SaaS’ınızı önyüklemek için Spark. Laravel, benzersiz bir şey yapabilmeleri için geliştiricilerden tekrarlayan işleri almaya çalışıyor.</p>
+
+<p>Daha sonra, Laravel “convention over configuration” a odaklanır - Laravel’in varsayılanlarını kullanmak istiyorsanız, tüm ayarlarınızı bildirmenizi gerektiren diğer framework’lere göre çok daha az iş yapmanız gerekeceği anlamına gelir. Laravel üzerinde inşa edilen projeler, diğer çoğu PHP framework’lerinde inşa edilen projelerden daha az zaman alır.</p>
+
+<p>Lavel ayrıca sadeliğe odaklanır. İsterseniz, Laravel ile dependency injection, Data Mapper pattern ve repository’lerini, Command Query Responsibility Segregation ve diğer her türden daha karmaşık pattern’i kullanmak mümkündür. Ancak diğer framework’ler, bu araçların ve yapıların her projede kullanılmasını önerebilirken, Laravel dökümantasyonu ve topluluğu, mümkün olan en basit uygulamayla başlamaya eğilimlidir - burada global bir fonksiyon, orada bir facade, şurada ActiveRecord. Bu, geliştiricilerin, karmaşık ortamlarda kullanışlılığı sınırlamadan ihtiyaçlarını çözmek için mümkün olan en basit uygulamayı oluşturmalarına olanak tanır.</p>
+
+<p>Laravel’in diğer PHP framework’lerinden ne kadar farklı olduğunun ilginç bir göstergesi, yaratıcısının ve topluluğunun Java’dan çok Ruby, Rails ve fonksiyonel programlama dillerine bağlı ve onlardan ilham almış olmasıdır. Modern PHP’de, PHP’nin Java benzeri yönlerini kucaklayan, ayrıntıya ve karmaşıklığa yönelmek için güçlü bir akım var. Ancak Laravel, dinamik ve basit kodlama uygulamalarını ve dil özelliklerini kucaklayarak diğer tarafta olma eğilimindedir.</p>
+
+<p><strong>Laravel Topluluğu</strong></p>
+
+<p>Laravel topluluğu ile ilk kez karşılaşıyorsanız, sabırsızlıkla bekleyeceğiniz özel bir şey var demektir. Laravel’in ayırt edici unsurlarından biri, büyümesine ve başarısına katkıda bulunan etrafını saran misafirperver, öğretici topluluktur. Jeffrey Way’in Laracasts video eğitimlerinden Laravel News’e, Slack, IRC ve Discord kanallarına, Blog yazarlarına, podcast’lere ve Laracon konferanslarına kadar Laravel, ilk günden beri etrafta olan zengin ve canlı bir topluluğa sahiptir. Ve bu bir tesadüf değil:</p>
+
+<p>Laravel’in en başından beri, tüm insanların kendilerini bir şeyin parçası gibi hissetmek istedikleri fikrine sahibim. Benzer düşünen insanlardan oluşan bir gruba ait olmayı ve kabul edilmeyi istemek doğal bir insan içgüdüsüdür. Dolayısıyla, kişiliği bir web framework’e enjekte ederek ve toplulukla gerçekten aktif olarak, bu tür bir duygu gelişebilir.</p>
+
+<p>– Taylor Otwell, Ürün ve Destek görüşmesi</p>
+
+<p>Taylor, Laravel’in ilk günlerinden itibaren başarılı bir açık kaynak projesinin iki şeye ihtiyacı olduğunu anlamıştı: iyi bir dokümantasyon ve sıcak bir topluluk. Ve bu iki şey artık Laravel’in ayırt edici özellikleri oldu.</p>
+
+<p>Nasıl çalışır</p>
+
+<p>Şimdiye kadar burada paylaştığım her şey tamamen soyuttu. Peki ya kodlar? Laravel ile  çalışmanın gerçekte nasıl olduğunu görebilmeniz için basit bir uygulamaya yapalım.</p>
+
+<p><strong>Örnek 1-1</strong>. routes/web.php içindeki “Hello, World”</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('/', function () {
+    return 'Hello, World!';
+});
+</code></pre></div></div>
+
+<p>Laravel uygulamasında yapabileceğiniz en basit eylem, bir rota tanımlamak ve birisi bu rotayı her ziyaret ettiğinde bir sonuç döndürmektir. Makinenizde yeni bir Laravel uygulaması başlatın, Örnek 1-1’deki rotayı tanımlayın ve ardından siteyi public dizininden çalıştırın, tam olarak işleyen bir “Hello, World” örneğine sahip olacaksınız.</p>
+
+<p>Örnek 1-2’de görebileceğiniz gibi, controller’a çok benziyor (test etmek isterseniz, controller oluşturmak için önce php artisan make:controller WelcomeController komutunu çalıştırın).</p>
+
+<p><strong>Örnek 1-2</strong>. Controller ile “Hello, World”</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: routes/web.php
+use App\Http\Controllers\WelcomeController;
+
+Route::get('/', [WelcomeController::class, 'index']);
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: app/Http/Controllers/WelcomeController.php
+namespace App\Http\Controllers;
+
+class WelcomeController extends Controller
+{
+    public function index()
+    {
+        return 'Hello, World!';
+    }
+}
+</code></pre></div></div>
+
+<p>Ve mesajını bir veritabanında saklıyorsanız, oldukça benzer görünecektir (Örnek 1-3’e bakın).</p>
+
+<p><strong>Örnek 1-3</strong>. Veritabanı erişimi ile “Hello, World”</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: routes/web.php
+use App\Greeting;
+
+Route::get('create-greeting', function () {
+    $greeting = new Greeting;
+    $greeting-&gt;body = 'Hello, World!';
+    $greeting-&gt;save();
+});
+
+Route::get('first-greeting', function () {
+    return Greeting::first()-&gt;body;
+});
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: app/Models/Greeting.php
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Greeting extends Model
+{
+    use HasFactory;
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: database/migrations/2023_03_12_192110_create_greetings_table.php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('greetings', function (Blueprint $table) {
+            $table-&gt;id();
+            $table-&gt;string('body');
+            $table-&gt;timestamps();
+        });
+    }
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('greetings');
+    }
+};
+</code></pre></div></div>
+
+<p>Örnek 1-3 biraz bunaltıcı olabilir ve eğer öyleyse, onu atlayın. Burada olup biten her şeyi sonraki bölümlerde öğreneceksiniz, ancak birkaç satır kodla migration ve modelleri ayarlayabileceğinizi ve veritabanından kayıtları çekebileceğinizi şimdiden görebilirsiniz. Bu kadar basit.</p>
+
+<h2 id="öyleyse-neden-laravel">Öyleyse Neden Laravel?</h2>
+
+<p>Çünkü Laravel, modern kodlama standartlarını kullanır, canlı bir toplulukla çevrilidir ve güçlü araçlarla fikirlerinizi kod israfı olmadan gerçeğe dönüştürmenize yardımcı olur. Ve çünkü siz sevgili geliştirici, mutlu olmayı hak ediyorsunuz.</p>
+
+<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Dinamik web’in ilk günlerinde, web uygulaması yazmak bugün olduğundan çok daha farklı görünüyordu. O zaman geliştiriciler, yalnızca uygulamalarımızın benzersiz iş mantığı için değil, aynı zamanda sitelerde çok yaygın olan kullanıcı kimlik doğrulaması, input validation, veritabanı erişimi, templating vb. bileşenlerin her biri için kod yazmaktan sorumluydu.]]></summary></entry><entry><title type="html">Laravel’de Yönlendirme ve Controller’lar</title><link href="http://localhost:4000/2024/03/18/laravelde-yonlendirme-ve-controllerlar.html" rel="alternate" type="text/html" title="Laravel’de Yönlendirme ve Controller’lar" /><published>2024-03-18T00:00:00+03:00</published><updated>2024-03-18T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/18/laravelde-yonlendirme-ve-controllerlar</id><content type="html" xml:base="http://localhost:4000/2024/03/18/laravelde-yonlendirme-ve-controllerlar.html"><![CDATA[<p>Herhangi bir web uygulama framework’ünün temel işlevi, kullanıcıdan istek almak ve yanıtları, genellikle HTTP(S) aracılığıyla iletmektir. Bu, bir framework’ü öğrenirken ele alınması gereken ilk ve en önemli şeyin uygulamanın rotalarını tanımlamak olduğu anlamına gelir; rotalar olmadan, son kullanıcıyla etkileşim kurma yeteneğiniz çok azdır veya hiç yoktur.</p>
+
+<p>Bu bölümde laravel’de rotaları inceleyeceğiz; bunları nasıl tanımlayacağınızı, yürütmeleri gereken koda nasıl yönlendireceğinizi ve çok çeşitli yönlendirme ihtiyaçlarını karşılamak için Laravel’in yönlendirme araçlarını nasıl kullanacağınızı göreceksiniz.</p>
+
+<h2 id="mvc-http-fiilleri-ve-reste-hızlı-bir-bakış">MVC, HTTP Fiilleri ve REST’e Hızlı Bir Bakış</h2>
+
+<p>Bu bölümde konuşacaklarımızın çoğu, Model-View-Controller (MVC) uygulamalarının nasıl yapılandırıldığına atıfta bulunur ve bakacağımız örneklerin çoğu REST benzeri rota adlarını ve fiillerini kullanır, bu yüzden hızlı bir şekilde başlayalım.</p>
+
+<p><strong>MVC Nedir?</strong></p>
+
+<p>MVC’de üç temel konseptiniz vardır:</p>
+
+<ul>
+  <li><strong>Model</strong> - Tek bir veritabanı tablosunu (veya bu tablodan bir kaydı) temsil eder; “Company” veya “Dog” gibi düşünün.</li>
+  <li><strong>View</strong> - Verilerinizi son kullanıcıya gösteren şablonu temsil eder; “HTML, CSS ve JavaScript ile oluşturulan login sayfası şablonu”nu düşünün.</li>
+  <li><strong>Controller</strong> - Bir trafik polisi gibi, tarayıcıdan HTTP isteklerini alır, veritabanından ve diğer depolama mekanizmalarından verileri alır, kullanıcı girişini doğrular ve sonunda kullanıcıya bir yanıt gönderir.</li>
+</ul>
+
+<p>Şekil 3-1’de, kullanıcının önce tarayıcısını kullanp bir HTTP isteği göndererek denetleyiciyle etkileşim kuracağını görebilirsiniz. Controller, bu talebe yanıt olarak modele (veritabanı) veri yazabilir ve/veya modelden veri çekebilir. Controller daha sonra muhtemelen bir view’a veri gönderecek ve ardından view, tarayıcılarında görüntülenmesi için son kullanıcıya geri dönecektir.</p>
+
+<p><strong>Şekil 3-1</strong>. MVC’nin temel bir örneği</p>
+
+<p><img src="/assets/images/2024/03/basic-example-of-mvc.png" alt="MVC’nin temel bir örneği" title="MVC’nin temel bir örneği" class="img-fluid" /></p>
+
+<p>Uygulama mimarisine bu basit bakış açısına uymayan bazı Laravel kullanım durumlarını ele alacağız, bu nedenle MVC’ye takılıp kalmayın. Ancak bu, en azından sizi, view ve controller hakkında konuşurken bölümün geri kalanına hazırlayacaktır.</p>
+
+<p><strong>HTTP Fiilleri</strong></p>
+
+<p>En yaygın HTTP fiilleri GET ve POST’tur, ardından PUT ve DELETE gelir. Ayrıca HEAD, OPTIONS ve PATCH ve normal web geliştirmede hemen hemen hiç kullanılmayan iki tane daha var, TRACE ve CONNECT.</p>
+
+<p>İşte hızlı bir özet:</p>
+
+<ul>
+  <li><strong>GET</strong> - Bir resource (veya bir resource listesi) isteyin.</li>
+  <li><strong>HEAD</strong> - GET response’unun yalnızca başlıklar içeren bir sürümünü isteyin.</li>
+  <li><strong>POST</strong> - resource oluşturun.</li>
+  <li><strong>PUT</strong> - Bir resource’un üzerine yazın.</li>
+  <li><strong>PATCH</strong> - Bir resource’u değiştirin.</li>
+  <li><strong>DELETE</strong> - Bir resource’u silin.</li>
+  <li><strong>OPTIONS</strong> - Sunucuya bu URL’de hangi fiillere izin verildiğini sorun.</li>
+</ul>
+
+<p>Tablo 3-1, bir resource denetleyicide mevcut olan eylemleri gösterir (bunlar hakkında daha fazla bilgi için “Resource Controller” bölümüne bakın). Her eylem, belirli bir fiili kullanarak belirli bir URL pattern’ini çağırmanızı bekler, böylece her fiilin ne için kullanıldığına dair bir fikir edinebilirsiniz.</p>
+
+<p><strong>Tablo 3-1</strong>. Laravel’in resource controller metotları</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fiil (Verb)</th>
+      <th>URL</th>
+      <th>Controller Metodu</th>
+      <th>Ad</th>
+      <th>Açıklama</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GET</td>
+      <td>tasks</td>
+      <td>index()</td>
+      <td>tasks.index</td>
+      <td>Tüm görevleri göster</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>tasks/create</td>
+      <td>create()</td>
+      <td>tasks.create</td>
+      <td>Görev oluşturma formunu göster</td>
+    </tr>
+    <tr>
+      <td>POST</td>
+      <td>tasks</td>
+      <td>store()</td>
+      <td>tasks.store</td>
+      <td>Görev oluşturma formundan form gönderimini kabul eder</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>tasks/{task}</td>
+      <td>show()</td>
+      <td>tasks.show</td>
+      <td>Bir görev göster</td>
+    </tr>
+    <tr>
+      <td>GET</td>
+      <td>tasks/{task}/edit</td>
+      <td>edit()</td>
+      <td>tasks.edit</td>
+      <td>Bir görevi düzenle</td>
+    </tr>
+    <tr>
+      <td>PUT/PATCH</td>
+      <td>tasks/{task}</td>
+      <td>update()</td>
+      <td>tasks.update</td>
+      <td>Görev düzenleme formundan form gönderimini kabul eder</td>
+    </tr>
+    <tr>
+      <td>DELETE</td>
+      <td>tasks/{task}</td>
+      <td>destroy()</td>
+      <td>tasks.destroy</td>
+      <td>Bir görevi sil</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>REST Nedir?</strong></p>
+
+<p>REST’i ileriki bölümlerde daha ayrıntılı olarak ele alacağız, ancak kısa bir giriş olarak, API oluşturmaya yönelik bir mimari stildir. Bu kitapta REST hakkında konuştuğumuzda, esas olarak aşağıdakiler gibi birkaç özelliğe atıfta bulunacağız:</p>
+
+<ul>
+  <li>Her seferinde tek bir birincil resource etrafında yapılandırılmış olmak (örn. tasks)</li>
+  <li>HTTP fiillerini kullanan öngörülebilir URL yapılarıyla etkileşimlerden oluşur (Tablo 3-1’de görüldüğü gibi)</li>
+  <li>JSON döndürür ve genellikle JSON ile talep edilir</li>
+</ul>
+
+<p>Daha fazlası var, ancak bu kitapta kullanılacağı şekliyle genellikle RESTful, “görev düzenleme sayfasında GET /tasks/14/edit gibi öngörülebilir çağrılar yapabilmemiz için bu URL tabanlı yapılardan sonra modellenmiş” anlamına gelir.</p>
+
+<p>Bu önemlidir (API oluşturmazken bile), çünkü Tablo 3-1’de görebileceğiniz gibi, Laravel’in yönlendirme yapıları REST benzeri bir yapıyı temel alır.</p>
+
+<h2 id="rota-route-tanımları">Rota (Route) Tanımları</h2>
+
+<p>Laravel uygulamalarında, web rotalarınızı routes/web.php’de ve API rotalarınızı routes/api.php’de tanımlayacaksınız. Web rotaları, kullanıcılarınızın ziyaret edeceği rotalardır; API rotaları, varsa API’niz için olanlardır. Şimdilik, öncelikle routes/web.php içindeki rotalara odaklanacağız.</p>
+
+<p>Rota tanımlamanın en basit yolu, Örnek 3-1’de görüldüğü gibi rotayı (ör. /) bir closure ile eşleştirmektir.</p>
+
+<p><strong>Örnek 3-1</strong>. Temel rota tanımı</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// routes/web.php
+Route::get('/', function () {
+    return 'Hello, World!';
+});
+</code></pre></div></div>
+
+<p><strong>Closure Nedir?</strong></p>
+
+<p>Closure’lar, anonim fonksiyonların PHP versiyonudur. Closure, nesne olarak iletebileceğiniz, bir değişkene atayabileceğiniz, diğer fonksiyon ve metotlara parametre olarak iletebileceğiniz ve hatta serialize edilebilen bir işlevdir.</p>
+
+<p>Artık herhangi bir kullanıcı / (etki alanınızın kökünü) ziyaret ederse, Laravel’in router’ının orada tanımlanan closure’ı çalıştırması ve sonucu döndürmesi gerektiğini tanımladınız.</p>
+
+<p><strong>Middleware’a Hızlı Bakış</strong></p>
+
+<p>Merak ediyor olabilirsiniz, “Neden onu yazdırmak yerine ‘Hello, World!’ olarak geri dönüyorum?”</p>
+
+<p>Epeyce cevap var, ancak en basit olanı, Laravel’in request ve response döngüsü etrafında, middleware adı verilen şey de dahil olmak üzere çok sayıda wrapper (sarmalayıcı) olmasıdır. Rota closure veya controller metodumuz tamamlandığında, çıktıyı tarayıcıya gönderme zamanı henüz gelmemiştir; içeriğin döndürülmesi, kullanıcıya geri gönderilmeden önce response yığınından ve middleware’den akmaya devam etmesine olanak tanır.</p>
+
+<p>Pek çok basit web sitesi tamamen routes içinde tanımlanabilir. Örnek 3-2’de gösterildiği gibi, bazı template’ler ile birleştirilmiş birkaç basit GET rotası ile klasik bir web sitesine kolayca hizmet verebilirsiniz.</p>
+
+<p><strong>Örnek 3-2</strong>. Örnek web sitesi</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('/', function () {
+    return view('welcome');
+});
+
+Route::get('about', function () {
+    return view('about');
+});
+
+Route::get('products', function () {
+    return view('products');
+});
+
+Route::get('services', function () {
+    return view('services');
+});
+</code></pre></div></div>
+
+<p><strong>Static Çağrılar</strong></p>
+
+<p>PHP ile geliştirme konusunda deneyiminiz varsa, Route sınıfında static çağrılar görmek sizi şaşırtabilir. Bu aslında kendi başına static bir metot değil, daha ziyade Bölüm 11’de ele alacağımız Laravel’in facade’lerini kullanan hizmet konumudur. Facade’lerden kaçınmayı tercih ederseniz, aynı tanımları şu şekilde yapabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$router-&gt;get('/', function () {
+    return 'Hello, World!';
+});
+</code></pre></div></div>
+
+<p><strong>Rota Fiilleri</strong></p>
+
+<p>Rota tanımlarımızda Route::get() kullandığımızı fark etmişsinizdir. Bu, Laravel’e yalnızca HTTP request’i GET eylemini kullandığında bu rotalar için eşleşmesini söylediğimiz anlamına gelir. Peki ya bu form POST ise veya PUT veya DELETE istekleri gönderen bir JavaScript ise? Örnek 3-3’te gösterildiği gibi, rota tanımında çağrılacak metotlar için birkaç seçenek daha vardır.</p>
+
+<p><strong>Örnek 3-3</strong>. Rota fiilleri</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('/', function () {
+    return 'Hello, World!';
+});
+
+Route::post('/', function () {
+    // Handle someone sending a POST request to this route
+});
+
+Route::put('/', function () {
+    // Handle someone sending a PUT request to this route
+});
+
+Route::delete('/', function () {
+    // Handle someone sending a DELETE request to this route
+});
+
+Route::any('/', function () {
+    // Handle any verb request to this route
+});
+
+Route::match(['get', 'post'], '/', function () {
+    // Handle GET or POST requests to this route
+});
+</code></pre></div></div>
+
+<p><strong>Rota İşleme</strong></p>
+
+<p>Tahmin ettiğiniz gibi, bir rotanın nasıl çözümleneceğini öğretmenin tek yolu rota tanımına closure geçirmek değildir. Closure’lar hızlı ve basittir, ancak uygulamanız büyüdükçe, tüm yönlendirme mantığınızı tek bir dosyaya koymak kullanışsız hale gelir. Ek olarak, rota closure’larını kullanan uygulamalar, Laravel’in her istekten yüzlerce milisaniyeye kadar tasarruf sağlayabilen rota önbelleğinden yararlanamaz (bununla ilgili daha sonra konuşacağız).</p>
+
+<p>Diğer yaygın seçenek, Örnek 3-4’te olduğu gibi, bir controller adını ve metodunu dize olarak iletmektir.</p>
+
+<p><strong>Örnek 3-4</strong>. Controller metotlarını çağıran rotalar</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>use App\Http\Controllers\WelcomeController;
+
+Route::get('/', [WelcomeController::class, 'index']);
+</code></pre></div></div>
+
+<p>Bu, Laravel’e gelen istekleri App\Http\Controllers\WelcomeController controller’ının index() metoduna iletmesini söylüyor.</p>
+
+<p><strong>Rota Parametreleri</strong></p>
+
+<p>Tanımladığınız rotanın parametreleri (URL yapısında değişken olan segmentler) varsa, bunları rotanızda tanımlamak ve closure’a iletmek kolaydır (bkz. Örnek 3-5).</p>
+
+<p><strong>Örnek 3-5</strong>. Rota parametreleri</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('users/{id}/friends', function ($id) {
+    //
+});
+</code></pre></div></div>
+
+<p>Örnek 3-6’da gösterildiği gibi, parametre adından sonra soru işareti (?) ekleyerek rota parametrelerinizi isteğe bağlı yapabilirsiniz. Bu durumda, rotanın karşılık gelen değişkeni için varsayılan değer de sağlamalısınız.</p>
+
+<p><strong>Örnek 3-6</strong>. İsteğe bağlı rota parametreleri</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('users/{id?}', function ($id = 'fallbackId') {
+    //
+});
+</code></pre></div></div>
+
+<p>Örnek 3-7’de olduğu gibi, rotanın yalnızca bir parametrenin belirli gereksinimleri karşılaması durumunda eşleşmesi gerektiğini tanımlamak için regular expressions (regex) kullanabilirsiniz.</p>
+
+<p><strong>Örnek 3-7</strong>. Regex rota kısıtlamaları</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('users/{id}', function ($id) {
+    //
+})-&gt;where('id', '[0-9]+');
+
+Route::get('users/{username}', function ($username) {
+    //
+})-&gt;where('username', '[A-Za-z]+');
+
+Route::get('posts/{id}/{slug}', function ($id, $slug) {
+    //
+})-&gt;where(['id' =&gt; '[0-9]+', 'slug' =&gt; '[A-Za-z]+']);
+</code></pre></div></div>
+
+<p>Tahmin ettiğiniz gibi, rota dizesiyle eşleşen bir yolu ziyaret ederseniz, ancak regex  parametreyle eşleşmezse, eşleştirilmeyecektir. Rotalar yukarıdan aşağıya eşlendiğinden, users/abc Örnek 3-7’deki ilk closure’u atlar, ancak ikinci closure ile eşleştirilir, böylece oraya yönlendirilir. Öte yandan, posts/abc/123 closure’ların hiçbiriyle eşleşmez, dolayısıyla 404 (Not Found) hatası verir.</p>
+
+<p><strong>Örnek 3-8</strong>. Regex rota kısıtlama yardımcıları</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('users/{id}/friends/{friendname}', function ($id, $friendname) {
+    //
+})-&gt;whereNumber('id')-&gt;whereAlpha('friendname');
+
+Route::get('users/{name}', function ($name) {
+    //
+})-&gt;whereAlphaNumeric('name');
+
+Route::get('users/{id}', function ($id) {
+    //
+})-&gt;whereUuid('id');
+
+Route::get('users/{id}', function ($id) {
+    //
+})-&gt;whereUlid('id');
+
+Route::get('friends/types/{type}', function ($type) {
+    //
+})-&gt;whereIn('type', ['acquaintance', 'bestie', 'frenemy']);
+</code></pre></div></div>
+
+<p><strong>Rota parametreleri ile closure/controller metot parametreleri arasındaki ilişki</strong></p>
+
+<p>Örnek 3-5’te görebileceğiniz gibi, rota parametreleriniz ({id}) ve rota tanımınıza enjekte ettikleri metot parametreleri (function ($id)) için aynı adları kullanmak en yaygın olanıdır. Ama bu gerekli mi?</p>
+
+<p>Bu bölümde daha sonra ele alınan route model binding’i kullanmıyorsanız, hayır. Burada görebileceğiniz gibi, hangi rota parametresinin hangi metot parametresiyle eşleştiğini tanımlayan tek şey bunların sırasıdır (soldan sağa):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('users/{userId}/comments/{commentId}', function (
+    $thisIsActuallyTheUserId,
+    $thisIsReallyTheCommentId
+) {
+    //
+});
+</code></pre></div></div>
+
+<p>Bunları farklı yapabiliyor olmanız, yapmanız gerektiği anlamına gelmez. Tutarsız adlandırma nedeniyle tökezleyebilecek gelecekteki geliştiricilerin iyiliği için onları aynı tutmanızı tavsiye ederim.</p>
+
+<p><strong>Rota Adları</strong></p>
+
+<p>Uygulamanızın herhangi bir yerinde rotalara atıfta bulunmanın en basit yolu, path’lerine bakmaktır. Gerekirse, view’da bu linki basitleştirmek için url() global helper kullanabilirsiniz; örnek için bkz. Örnek 3-9. Helper, rotanızın önüne sitenizin tam alan adını koyacaktır.</p>
+
+<p><strong>Örnek 3-9</strong>. url() helper</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="&lt;?php echo url('/'); ?&gt;"&gt;
+// Outputs &lt;a href="http://myapp.com/"&gt;
+</code></pre></div></div>
+
+<p>Ancak Laravel, URL’ye açıkça atıfta bulunmadan ona başvurmanıza olanak tanıyan her bir rotayı adlandırmanıza da izin verir. Bu yararlıdır, çünkü karmaşık rotalara basit takma adlar verebilirsiniz ve ayrıca bunları ada göre bağlamak, yollar değişirse frontend linklerinizi yeniden yazmak zorunda kalmayacağınız anlamına gelir (bkz. Örnek 3-10).</p>
+
+<p><strong>Örnek 3-10</strong>. Rota adlarını tanımlamak</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Defining a route with name() in routes/web.php:
+Route::get('members/{id}', [\App\Http\Controller\MemberController::class, 'show'])
+    -&gt;name('members.show');
+    
+// Linking the route in a view using the route() helper:
+&lt;a href="&lt;?php echo route('members.show', ['id' =&gt; 14]); ?&gt;"&gt;
+</code></pre></div></div>
+
+<p>Bu metot, başka bir yere başvurmayı kolaylaştırmak için kısa bir takma ad vererek rotayı adlandırmamıza izin verir. Örneğimizde, bu rotayı members.show olarak adlandırdık; ResourcePlural.action, route ve view adları için Laravel içinde yaygın olarak kullanılan bir konvansiyondur.</p>
+
+<p><strong>Rota İsimlendirme Konvansiyonları</strong></p>
+
+<p>Rotanızı istediğiniz gibi adlandırabilirsiniz, ancak ortak konvansiyon, resource adının çoğulunun, ardından noktanın ve ardından eylemin kullanılmasıdır. Yani, photo adlı bir resource için en yaygın rotalar şunlardır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>photos.index
+photos.create
+photos.store
+photos.show
+photos.edit
+photos.update
+photos.destroy
+</code></pre></div></div>
+
+<p>Bu kurallar hakkında daha fazla bilgi edinmek için bkz. “Resource Controller’ları”.</p>
+
+<p>Bu örnek ayrıca route() helper’ı da tanıttı. Tıpkı url() gibi, adlandırılmış bir rotaya bağlanmayı basitleştirmek için view’da kullanılması amaçlanmıştır. Rotanın parametresi yoksa, rota adını (route(‘members.index’)) iletebilir ve bir rota dizesi (“http://myapp.com/members”) alabilirsiniz. Parametreleri varsa, bunları Örnek 3-10’da yaptığımız gibi ikinci parametre olarak iletin.</p>
+
+<p>Genel olarak, rotalarınıza başvurmak için path yerine rota adlarını kullanmanızı ve bu nedenle url() helper yerine route() helper kullanmanızı öneririm. Bazen biraz kullanışsız olabilir - örneğin, birden fazla alt alanla çalışıyorsanız - ancak daha sonra uygulamanın yönlendirme yapısını büyük bir maliyet olmadan değiştirmek için inanılmaz bir esneklik sağlar.</p>
+
+<p><strong>Route Helper’a Rota Parametrelerini İletmek</strong></p>
+
+<p>Rotanız parametrelere sahip olduğunda (ör. users/id), rotaya link oluşturmak için route() helper kullanırken bu parametreleri tanımlamanız gerekir.</p>
+
+<p>Bu parametreleri iletmenin birkaç farklı yolu vardır. users/userId/comments/commentId olarak tanımlanan bir rota düşünelim. User ID 1 ve comment ID 2 ise elimizdeki birkaç seçeneğe bakalım:</p>
+
+<p><strong>Seçenek 1:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>route('users.comments.show', [1, 2])
+// http://myapp.com/users/1/comments/2
+</code></pre></div></div>
+
+<p><strong>Seçenek 2:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>route('users.comments.show', ['userId' =&gt; 1, 'commentId' =&gt; 2])
+// http://myapp.com/users/1/comments/2
+</code></pre></div></div>
+
+<p><strong>Seçenek 3:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>route('users.comments.show', ['commentId' =&gt; 2, 'userId' =&gt; 1])
+// http://myapp.com/users/1/comments/2
+</code></pre></div></div>
+
+<p><strong>Seçenek 4:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>route('users.comments.show', ['userId' =&gt; 1, 'commentId' =&gt; 2, 'opt' =&gt; 'a'])
+// http://myapp.com/users/1/comments/2?opt=a
+</code></pre></div></div>
+
+<p>Gördüğünüz gibi, anahtarsız dizi değerleri sırayla atanır; anahtarlı dizi değerleri, anahtarlarıyla eşleşen rota parametreleriyle eşleştirilir ve geriye kalan her şey query parametresi olarak eklenir.</p>
+
+<h2 id="rota-grupları">Rota Grupları</h2>
+
+<p>Genellikle rota grupları belirli bir özelliği paylaşır; kimlik doğrulama gereksinimi, rota öneki veya belki bir controller namespace. Bu paylaşılan özellikleri her rotada tekrar tekrar tanımlamak sıkıcı görünmekle kalmaz, aynı zamanda rota dosyanızın şeklini anlaşılması zor hale getirebilir ve uygulamanızın bazı yapılarını belirsizleştirebilir.</p>
+
+<p>Rota grupları, birkaç rotayı birlikte gruplamanıza ve yinelemeyi azaltmak için tüm paylaşılan yapılandırma ayarlarını grubun tamamına bir kez uygulamanıza olanak tanır. Ek olarak, rota grupları, gelecekteki geliştiricilere (ve kendi beyninize) bu rotaların birlikte gruplandırıldığına dair görsel ipuçları verir.</p>
+
+<p>İki veya daha fazla rotayı birlikte gruplandırmak için, Örnek 3-11’de gösterildiği gibi rota tanımlarını bir rota grubuyla “sarmalarsınız”. Gerçekte, aslında grup tanımına bir closure iletiyorsunuz ve bu closure içinde gruplandırılmış rotaları tanımlıyorsunuz.</p>
+
+<p><strong>Örnek 3-11</strong>. Rota grubu tanımlama</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::group(function () {
+    Route::get('hello', function () {
+        return 'Hello';
+    });
+    Route::get('world', function () {
+        return 'World';
+    });
+});
+</code></pre></div></div>
+
+<p>Varsayılan olarak, rota grubu aslında hiçbir şey yapmaz. Örnek 3-11’deki grubu kullanmak ile rotalarınızın bir bölümünü kod açıklamalarıyla ayırmak arasında hiçbir fark yoktur.</p>
+
+<p><strong>Middleware</strong></p>
+
+<p>Muhtemelen rota gruplarının en yaygın kullanımı, middleware’i bir rota grubuna uygulamaktır. Bölüm 10’da middleware hakkında daha fazla bilgi edineceksiniz, ancak bunlar, diğer şeylerin yanı sıra, Laravel’in kullanıcıların kimliğini doğrulamak ve misafir kullanıcıların sitenin belirli bölümlerini kullanmasını kısıtlamak için kullandığı yazılımlardır.</p>
+
+<p>Örnek 3-12’de, dashboard ve account view’ları çevresinde bir rota grubu oluşturuyoruz ve auth middleware’i her ikisine de uyguluyoruz. Bu örnekte, kullanıcıların dashboard veya account sayfasını görüntülemek için uygulamada oturum açması gerekir.</p>
+
+<p><strong>Örnek 3-12</strong>. Bir grup rotayı yalnızca oturum açmış kullanıcılarla kısıtlama</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::middleware('auth')-&gt;group(function () {
+    Route::get('dashboard', function () {
+        return view('dashboard');
+    });
+    Route::get('account', function () {
+        return view('account');
+    });
+});
+</code></pre></div></div>
+
+<p><strong>Controller’lara Middleware Uygulamak</strong></p>
+
+<p>Rota tanımı yerine controller’a middleware eklemek genellikle daha net ve doğrudandır. Bunu, controller kurucusunda middleware() metodunu çağırarak yapabilirsiniz. middleware() metoduna ilettiğiniz dize, middleware’in adıdır ve isteğe bağlı olarak, bu middleware’i hangi metotların alacağını tanımlamak için modifier metotları (only() ve except()) zincirleyebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class DashboardController extends Controller
+{
+    public function __construct()
+    {
+        $this-&gt;middleware('auth');
+        $this-&gt;middleware('admin-auth')
+            -&gt;only('editUsers');
+        $this-&gt;middleware('team-member')
+            -&gt;except('editUsers');
+    }
+}
+</code></pre></div></div>
+
+<p>Çok sayıda “only” ve “except” özelleştirmeleri yapıyorsanız, bunun genellikle istisnai rotalar için yeni bir controller oluşturmanız gerektiğinin bir işareti olduğunu unutmayın.</p>
+
+<p><strong>Eloquent’e Kısa Bir Bakış</strong></p>
+
+<p>Eloquent’i, veritabanı erişimini ve Laravel’in query builder’ını Bölüm 5’te derinlemesine ele alacağız, ancak şimdi temel bir kavrayış faydalı olacaktır.</p>
+
+<p>Eloquent, Laravel’in ORM’idir (Object-Relational Mapper), bir Post sınıfını (modelini) posts tablosuyla ilişkilendirmeyi ve Post::all() gibi bir çağrıyla tüm kayıtları almayı kolaylaştırır.</p>
+
+<p><strong>Path (Yol) Prefix’leri</strong></p>
+
+<p>Path’lerin bir bölümünü paylaşan bir rota grubunuz varsa (örneğin, sitenizin kontrol paneline /dashboard ön eki verilmişse), bu yapıyı basitleştirmek için rota gruplarını kullanabilirsiniz (bkz. Örnek 3-13).</p>
+
+<p><strong>Örnek 3-13</strong>. Rota grubunu prefix’leme</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::prefix('dashboard')-&gt;group(function () {
+    Route::get('/', function () {
+        // Handles the path /dashboard
+    });
+    Route::get('users', function () {
+        // Handles the path /dashboard/users
+    });
+});
+</code></pre></div></div>
+<p>Her prefix grubunun ayrıca prefix’in kökünü temsil eden bir / rotasına sahip olduğunu unutmayın; Örnek 3-13’te bu /dashboard’dur.</p>
+
+<p><strong>Subdomain Yönlendirmesi</strong></p>
+
+<p>Subdomain yönlendirmesi, rota prefix’i ile aynıdır ancak kapsamı rota prefix’i yerine subdomain tarafından belirlenir. Bunun iki temel kullanımı vardır. İlk olarak, uygulamanın farklı bölümlerini (veya tamamen farklı uygulamaları) farklı subdomain’lerde sunmak isteyebilirsiniz. Örnek 3-14 bunu nasıl yapabileceğinizi göstermektedir.</p>
+
+<p><strong>Örnek 3-14</strong>. Subdomain yönlendirme</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::domain('api.myapp.com')-&gt;group(function () {
+    Route::get('/', function () {
+        //
+    });
+});
+</code></pre></div></div>
+
+<p>İkinci olarak, Örnek 3-15’te gösterildiği gibi subdomain’in bir kısmını parametre olarak kullanmak isteyebilirsiniz. Bu çoğunlukla multitenancy durumlarında yapılır (Slack veya Harvest’i düşünün; burada her şirket, tighten.slack.co gibi kendi subdomain’ini alır).</p>
+
+<p><strong>Örnek 3-15</strong>. Parametreli subdomain yönlendirmesi</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::domain('{account}.myapp.com')-&gt;group(function () {
+    Route::get('/', function ($account) {
+        //
+    });
+    Route::get('users/{id}', function ($account, $id) {
+        //
+    });
+});
+</code></pre></div></div>
+
+<p>Grup için herhangi bir parametrenin, gruplandırılmış rotaların metotlarına ilk parametre(ler) olarak aktarıldığını unutmayın.</p>
+
+<p><strong>Ad Prefix’leri</strong></p>
+
+<p>Rota adlarının miras zincirini yansıtması yaygındır; bu nedenle, users/comments/5, users.comments.show adlı bir rota tarafından sunulur. Bu durumda, user.comments kaynağının altındaki tüm rotaların etrafında bir rota grubu kullanmak yaygın bir uygulamadır.</p>
+
+<p>Tıpkı URL segmentlerini prefix lediğimiz gibi, dizeleri de rota adına prefix olarak ekleyebiliriz. Rota grubu adı prefix’iyle, bu gruptaki her rotanın adının önünde belirli bir dize olması gerektiğini tanımlayabiliriz. Bu bağlamda her rota adının önüne “users.”, ardından “comments.” koyuyoruz. (bkz. Örnek 3-16).</p>
+
+<p><strong>Örnek 3-16</strong>. Rota grubu adı prefixleri</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::name('users.')-&gt;prefix('users')-&gt;group(function () {
+    Route::name('comments.')-&gt;prefix('comments')-&gt;group(function () {
+        Route::get('{id}', function () {
+            // ...
+        })-&gt;name('show'); // Route named 'users.comments.show'
+        Route::destroy('{id}', function () {
+        })-&gt;name('destroy');
+    });
+});
+</code></pre></div></div>
+
+<p><strong>Rota Grubu Controller’ı</strong></p>
+
+<p>Aynı controller tarafından sunulan rotaları gruplarken, örneğin kullanıcıları gösterirken, düzenlerken ve silerken, rota grubu controller() metodunu kullanabiliriz.</p>
+
+<p><strong>Örnek 3-17</strong>. Rota grubu controller’ı</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>use App\Http\Controllers\UserController;
+
+Route::controller(UserController::class)-&gt;group(function () {
+    Route::get('/', 'index');
+    Route::get('{id}', 'show');
+});
+</code></pre></div></div>
+
+<p><strong>Fallback Rotaları</strong></p>
+
+<p>Laravel’de eşleşmeyen tüm istekleri yakalamak için bir “fallback route” (rota dosyanızın sonunda tanımlamanız gereken) tanımlayabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::fallback(function () {
+    //
+});
+</code></pre></div></div>
+
+<h2 id="i̇mzalı-rotalar">İmzalı Rotalar</h2>
+
+<p>Birçok uygulama düzenli olarak tek seferlik eylemler (şifre sıfırlama, davet kabul etme vb.) hakkında bildirimler gönderir ve bu eylemlerin gerçekleştirilmesi için basit linkler sağlar. Alıcının e-posta listesine kayıt olmak istediğini onaylayan bir e-posta gönderdiğimizi hayal edelim.</p>
+
+<p>Bu linki göndermenin üç yolu vardır:</p>
+
+<ul>
+  <li>Bu URL’i herkese açık hale getirin ve başka hiç kimsenin onay URL’sini keşfetmemesini umun.</li>
+  <li>Eylemi kimlik doğrulamanın arkasına yerleştirin, eyleme link verin ve henüz oturum açmadıysa kullanıcının oturum açmasını zorunlu kılın (bu durumda, birçok kullanıcı üye olmadığı için bu mümkün olmayabilir).</li>
+  <li>Linki, kullanıcının oturum açmasına gerek kalmadan e-postasından linki aldığını benzersiz bir şekilde kanıtlayacak şekilde “imzalayın”; şunun gibi http://myapp.com/invitations/5816/yes?signature=030ab0ef6a8237bd86a8b8.</li>
+</ul>
+
+<p>Son seçeneği gerçekleştirmenin basit bir yolu, signed URL adı verilen ve kimliği doğrulanmış linkler göndermek için imza kimlik doğrulama sistemi oluşturmayı kolaylaştıran bir özelliği kullanmaktır. Bu linkler, URL’in gönderildikten sonra değiştirilmediğini (ve dolayısıyla hiç kimsenin bir başkasının bilgisine erişmek için URL’i değiştirmediğini) kanıtlayan bir “imza” eklenmiş normal rota linkinden oluşur.</p>
+
+<p><strong>Rota İmzalama</strong></p>
+
+<p>Belirli bir rotaya erişmek amacıyla imzalı URL oluşturmak için rotanın bir adı olmalıdır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('invitations/{invitation}/{answer}', InvitationController::class)
+    -&gt;name('invitations');
+</code></pre></div></div>
+
+<p>Bu rotaya link oluşturmak için, daha önce ele aldığımız gibi, route() helper kullanabilirsiniz, ancak aynı şeyi yapmak için URL facade kullanabilirsiniz: URL::route(‘invitations’, [‘invitation’ =&gt; 12345, ‘answer’ =&gt;’yes’]). Bu rotaya imzalı bir link oluşturmak için bunun yerine signedRoute() metodunu kullanmanız yeterlidir. Süresi dolan imzalı bir rota oluşturmak istiyorsanız, temporarySignedRoute() metodunu kullanın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Generate a normal link
+URL::route('invitations', ['invitation' =&gt; 12345, 'answer' =&gt; 'yes']);
+
+// Generate a signed link
+URL::signedRoute('invitations', ['invitation' =&gt; 12345, 'answer' =&gt; 'yes']);
+
+// Generate an expiring (temporary) signed link
+URL::temporarySignedRoute(
+    'invitations',
+    now()-&gt;addHours(4),
+    ['invitation' =&gt; 12345, 'answer' =&gt; 'yes']
+);
+</code></pre></div></div>
+
+<p><strong>now() Helper Kullanımı</strong></p>
+
+<p>Laravel, Carbon::now()’a eşdeğer bir now() helper sunmaktadır; tam bu anda, bugünün bir Carbon nesnesini döndürür.</p>
+
+<p>Eğer aşina değilseniz Carbon, Laravel’e dahil olan bir tarih-saat kütüphanesidir.</p>
+
+<p><strong>İmzalı Linklere İzin Vermek İçin Rotaları Düzenlemek</strong></p>
+
+<p>Artık imzalı rotanıza bir link oluşturduğunuza göre, imzasız erişimlere karşı koruma sağlamanız gerekir. En kolay seçenek, signed middleware uygulamaktır.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('invitations/{invitation}/{answer}', InvitationController::class)
+    -&gt;name('invitations')
+    -&gt;middleware('signed');
+</code></pre></div></div>
+
+<p>İsterseniz signed middleware kullanmak yerine, Request nesnesindeki hasValidSignature() metodunu kullanarak manuel olarak doğrulama yapabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class InvitationController
+{
+    public function __invoke(Invitation $invitation, $answer, Request $request)
+    {
+        if (!$request-&gt;hasValidSignature()) {
+            abort(403);
+        }
+        //
+    }
+}
+</code></pre></div></div>
+
+<h2 id="view">View</h2>
+
+<p>Şu ana kadar incelediğimiz rota closure’larının birkaçında, view(‘account’)‘a benzer şeyler gördük. Burada neler oluyor?</p>
+
+<p>MVC modelinde, view (veya template), belirli bir çıktının nasıl görünmesi gerektiğini açıklayan dosyadır. JSON, XML veya e-mail için view’larınız olabilir, ancak bir web framework’teki en yaygın view’lar HTML çıktısı verir.</p>
+
+<p>Laravel’de kullanabileceğiniz iki view formatı vardır: düz PHP veya Blade template. Aradaki fark dosya adındadır: about.php PHP motoruyla işlenecek ve about.blade.php Blade motoruyla işlenecektir.</p>
+
+<p><strong>View Yüklemenin Üç Yolu</strong></p>
+
+<p>Bir görünümü döndürmenin üç farklı yolu vardır. Şimdilik sadece view() ile ilgilenin, ancak View::make() görürseniz, bu aynı şeydir veya isterseniz Illuminate\View\ViewFactory’i enjekte edebilirsiniz.</p>
+
+<p>view() helper ile bir view’ı “yükledikten” sonra, onu basitçe geri döndürebilirsiniz (Örnek 3-18’de olduğu gibi), bu, eğer view controller’dan gelen herhangi bir değişkene dayanmıyorsa düzgün çalışacaktır.</p>
+
+<p><strong>Örnek 3-18</strong>. Basit view() kullanımı</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('/', function () {
+    return view('home');
+});
+</code></pre></div></div>
+
+<p>Bu kod, resources/views/home.blade.php veya resources/views/home.php dosyasında bir view arar ve içeriğini yükler ve view çıktısını elde edene kadar tüm satır içi PHP veya kontrol yapılarını ayrıştırır. Geri gönderdiğinizde response yığınına aktarılır ve sonunda kullanıcıya iletilir.</p>
+
+<p>Peki ya değişkenleri aktarmanız gerekirse? Örnek 3-19’a göz atın.</p>
+
+<p><strong>Örnek 3-19</strong>. Değişkenleri view’a aktarma</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('tasks', function () {
+    return view('tasks.index')
+        -&gt;with('tasks', Task::all());
+});
+</code></pre></div></div>
+
+<p>Bu closure, resources/views/tasks/index.blade.php view’ı yükler ve ona Task::all() metodunun sonucunu içeren, tasks adlı değişkeni iletir.</p>
+
+<p><strong>Basit Rotaları Route::view() ile Doğrudan Döndürme</strong></p>
+
+<p>Bir rotanın hiçbir özel veri olmadan yalnızca bir view döndürmesi çok yaygın olduğundan, Laravel, rota tanımına bir closure veya controller/metot referansı bile geçirmeden, rotayı “view” rotası olarak tanımlamanıza izin verir. Örnek 3-20.</p>
+
+<p><strong>Örnek 3-20</strong>. Route::view()</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Returns resources/views/welcome.blade.php
+Route::view('/', 'welcome');
+
+// Passing simple data to Route::view()
+Route::view('/', 'welcome', ['User' =&gt; 'Michael']);
+</code></pre></div></div>
+
+<p><strong>Değişkenleri Tüm View’lar ile Paylaşmak için View Composer Kullanma</strong></p>
+
+<p>Bazen aynı değişkenleri tekrar tekrar iletmek güçlük yaratabilir. Sitedeki her view için veya belirli bir view sınıfı veya dahil edilen belirli bir subview için (örneğin, tasks ilgili tüm view’lar veya header kısmı) erişilmesini istediğiniz bir değişken olabilir.</p>
+
+<p>Aşağıdaki kodda olduğu gibi belirli değişkenleri her template ile veya yalnızca belirli template’ler ile paylaşmak mümkündür:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>view()-&gt;share('variableName', 'variableValue');
+</code></pre></div></div>
+
+<h2 id="controller">Controller</h2>
+
+<p>Controller’lar dan birkaç kez bahsettim ancak şu ana kadar örneklerin çoğunda rota closure’ları görüldü. MVC pattern’in de controller’lar esas olarak bir veya daha fazla rotanın mantığını tek bir yerde birlikte düzenleyen sınıflardır. Controller’lar, özellikle uygulamanız geleneksel olarak CRUD benzeri bir formatta yapılandırılmışsa, benzer rotaları bir arada gruplandırma eğilimindedir; Bu durumda, controller belirli bir resource üzerinde gerçekleştirilebilecek tüm eylemleri gerçekleştirebilir.</p>
+
+<p><strong>CRUD Nedir?</strong></p>
+
+<p>CRUD, web uygulamalarının bir resource’ta en yaygın olarak sağladığı dört temel işlem olan create, read, update, delete anlamına gelir. Örneğin yeni bir blog yazısı oluşturabilir, o yazıyı okuyabilir, güncelleyebilir veya silebilirsiniz.</p>
+
+<p>Uygulamanın tüm mantığını controller’a sıkıştırmak cazip gelebilir, ancak controller’ları uygulamanızın etrafında HTTP isteklerini yönlendiren trafik polisleri olarak düşünmek daha iyidir. İsteklerin uygulamanıza gelebileceği başka yollar da (cron jobs, Artisan komut satırı çağrıları, queue jobs vb.) olduğundan, çok fazla davranış için controller’a güvenmemek akıllıca olacaktır. Bu, bir controller’ın birincil işinin HTTP isteğinin amacını yakalamak ve onu uygulamanın geri kalanına iletmek olduğu anlamına gelir.</p>
+
+<p>O halde bir controller oluşturalım. Bunu yapmanın kolay bir yolu Artisan komutunu kullanmaktır; terminal’de aşağıdaki komutu çalıştırın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:controller TaskController
+</code></pre></div></div>
+
+<p><strong>Artisan</strong></p>
+
+<p>Laravel, Artisan adlı bir komut satırı aracıyla birlikte gelir. Artisan, migration’ları yürütmek, kullanıcıları ve diğer veritabanı kayıtlarını manuel olarak oluşturmak ve diğer birçok manuel, tek seferlik görevi gerçekleştirmek için kullanılabilir.</p>
+
+<p>make namespace altında Artisan, çeşitli sistem dosyaları için iskelet dosyalar oluşturmaya yönelik araçlar sağlar.</p>
+
+<p>Bu, örnek 3-21’de gösterilen içeriğe sahip, app/Http/Controllers’da TaskController.php adında yeni bir dosya oluşturacaktır.</p>
+
+<p><strong>Örnek 3-21</strong>. Default olarak oluşturulan controller</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+
+class TaskController extends Controller
+{
+    //
+}
+</code></pre></div></div>
+
+<p>Bu dosyayı Örnek 3-22’de gösterildiği gibi değiştirin ve index() adı verilen yeni bir public metot oluşturun. Burada sadece bir metin döndüreceğiz.</p>
+
+<p><strong>Örnek 3-22</strong>. Basit controller örneği</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
+
+namespace App\Http\Controllers;
+
+class TaskController extends Controller
+{
+    public function index()
+    {
+        return 'Hello, World!';
+    }
+}
+</code></pre></div></div>
+
+<p>Daha sonra, Örnek 3-23’te gösterildiği gibi ona bir rota bağlayacağız.</p>
+
+<p><strong>Örnek 3-23</strong>. Basit controller için rota</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// routes/web.php
+&lt;?php
+
+Route::get('/', [TaskController::class, 'index']);
+</code></pre></div></div>
+
+<p>Bu kadar. / rotasını ziyaret ettiğinizde “Hello, World!” kelimelerini göreceksiniz.</p>
+
+<p>O halde bir controller metodunun en yaygın kullanımı, Örnek 3-19’daki route closure ile aynı işlevselliği sağlayan Örnek 3-24 gibi bir şey olacaktır.</p>
+
+<p><strong>Örnek 3-24</strong>. Ortak controller metodu örneği</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// TaskController.php
+...
+public function index()
+{
+    return view('tasks.index')
+        -&gt;with('tasks', Task::all());
+}
+</code></pre></div></div>
+
+<p>Bu controller metodu, resources/views/tasks/index.blade.php view’ını yükler ve ona, Task::all() Eloquent metodunun sonucunu içeren, tasks adlı değişkeni iletir.</p>
+
+<p><strong>Resource Controller Oluşturmak</strong></p>
+
+<p>create() ve update() gibi tüm temel rotaları otomatik olarak oluşturulmuş metotlara sahip bir resource controller oluşturmak istiyorsanız, php artisan make:controller’ı kullanırken –resource flag’ini iletebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:controller TaskController --resource
+</code></pre></div></div>
+
+<p><strong>Kullanıcıdan Girdi Almak</strong></p>
+
+<p>Bir controller metodunda gerçekleştirilecek en yaygın ikinci eylem, kullanıcıdan girdi almak ve buna göre hareket etmektir. Birkaç yeni konsepti göreceğiz, o yüzden örnek koda bakalım ve yeni parçaları gözden geçirelim.</p>
+
+<p><strong>Örnek 3-25</strong>. Temel form action’larını bağlama</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// routes/web.php
+Route::get('tasks/create', [TaskController::class, 'create']);
+Route::post('tasks', [TaskController::class, 'store']);
+</code></pre></div></div>
+
+<p>tasks/create (yeni bir task oluşturmak için form gösterir) GET action’ını ve tasks/ (yeni bir task oluşturduğumuzda formun gönderileceği yer burasıdır) POST action’ını bağladığımıza dikkat edin. create() metodunun yalnızca bir form gösterdiğini varsayabiliriz, o halde Örnek 3-26’daki store() metoduna bakalım.</p>
+
+<p><strong>Örnek 3-26</strong>. Form giriş controller metodu</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// TaskController.php
+...
+public function store()
+{
+    Task::create(request()-&gt;only(['title', 'description']));
+    return redirect('tasks');
+}
+</code></pre></div></div>
+
+<p>Bu örnekte Eloquent modelleri ve redirect() kullanılmaktadır ve bunlar hakkında daha sonra konuşacağız, şimdilik verilerimizi buraya nasıl aldığımız hakkında konuşalım.</p>
+
+<p>HTTP isteğini temsil etmek için request() helper kullanıyoruz (bu konuya daha sonra değineceğiz) ve yalnızca kullanıcının gönderdiği title ve description alanlarını çekmek için only() metodunu kullanıyoruz.</p>
+
+<p>Daha sonra bu verileri Task modelimizin create() metoduna aktarıyoruz; bu, Task’in yeni bir örneğini oluşturur. Son olarak tüm task’leri gösteren sayfaya yönlendiriliyoruz.</p>
+
+<p>Burada, birazdan ele alacağımız birkaç soyutlama katmanı iş başındadır, ancak only() metodundan gelen verilerin, request nesnesinde kullanılan tüm yaygın metotların - all() ve get() dahil - aynı havuzundan geldiğini bilin. Bu metotların her birinin çektiği data - query parametreleri veya POST değerleri - kullanıcı tarafından sağlanan tüm verileri temsil eder. Böylece kullanıcımız “add task” sayfasında iki alanı doldurdu: “title” ve “description”.</p>
+
+<p>Soyutlamayı kırmak için, request()-&gt;only() girdi (input) adlarının ilişkisel bir dizisini alır ve bunları döndürür:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>request()-&gt;only(['title', 'description']);
+// returns:
+[
+    'title' =&gt; 'Whatever title the user typed on the previous page',
+    'description' =&gt; 'Whatever description the user typed on the previous page',
+]
+</code></pre></div></div>
+
+<p>Ve Task::create() ilişkisel bir dizi alır ve ondan yeni bir task oluşturur:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Task::create([
+    'title' =&gt; 'Buy milk',
+    'description' =&gt; 'Remember to check the expiration date this time, Norbert!',
+]);
+</code></pre></div></div>
+
+<p>Bunları bir araya getirmek, kullanıcı tarafından sağlanan “title” ve “description” alanlarını içeren bir task oluşturur.</p>
+
+<p><strong>Bağımlılıkları Controller’lara Eklemek</strong></p>
+
+<p>Facade ve global helper’lar, Laravel’in kod tabanındaki en kullanışlı sınıflara basit bir arayüz sunar. Mevcut istek ve kullanıcı girişi, session, cache ve çok daha fazlası hakkında bilgi alabilirsiniz.</p>
+
+<p>Ancak bağımlılıklarınızı enjekte etmeyi tercih ediyorsanız veya facade ya da helper’ı olmayan bir servis kullanmak istiyorsanız, bu sınıfların örneklerini controller’ınıza getirmenin bir yolunu bulmanız gerekir.</p>
+
+<p>Bu, Laravel’in servis container’ı ilk karşılaşmamız. Şimdilik, eğer bu konu size tanıdık gelmiyorsa, bunu biraz Laravel büyüsü olarak düşünebilirsiniz; veya gerçekte nasıl çalıştığı hakkında daha fazla bilgi edinmek istiyorsanız Bölüm 11’e geçebilirsiniz.</p>
+
+<p>Tüm controller metotları (kurucular dahil) Laravel’in container’ı dışında çözümlenir; bu, container’ın nasıl çözüleceğini bildiğini düşündüğünüz her şeyin otomatik olarak enjekte edileceği anlamına gelir.</p>
+
+<p><strong>Typehinting</strong></p>
+
+<p>PHP’de “Typehinting”, bir sınıfın veya arayüzün adını, yöntem imzasındaki bir değişkenin önüne koymak anlamına gelir.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function __construct(Logger $logger) {}
+</code></pre></div></div>
+
+<p>Bu ipucu PHP’ye, metoda iletilen her şeyin arayüz ya da sınıf olabilecek Logger türünde olması gerektiğini söyler.</p>
+
+<p>Bir örnek olarak, global helper kullanmak yerine Request nesnesinin örneğini kullanmayı tercih ederseniz ne olur? Örnek 3-27’deki gibi, metot parametrelerinize Illuminate\Http\Request yazmanız yeterlidir.</p>
+
+<p><strong>Örnek 3-27</strong>. Typehinting ile controller metodu enjeksiyonu</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// TaskController.php
+...
+public function store(\Illuminate\Http\Request $request)
+{
+    Task::create($request-&gt;only(['title', 'description']));
+    return redirect('tasks');
+}
+</code></pre></div></div>
+
+<p>Böylece, store() metoduna iletilmesi gereken bir parametre tanımladınız. Bunu siz yazdığınız için ve Laravel bu sınıf adını nasıl çözümleyeceğini bildiği için, Request nesnesi metodunuzda kullanılmak üzere hazır hale gelir. Açık bir binding yok, başka bir şey yok; $request değişkeni olarak kullanıma hazırdır.</p>
+
+<p>Örnek 3-26 ile Örnek 3-27’yi karşılaştırdığınızda, request() helper ve Request nesnesinin tam olarak aynı şekilde davrandığını görebilirsiniz.</p>
+
+<p><strong>Resource Controller</strong></p>
+
+<p>Bazen controller’daki metotları adlandırmak, controller yazmanın en zor kısmı olabilir. Neyse ki Laravel, geleneksel REST/CRUD controller (Laravel’de “resource controller” olarak adlandırılır) rotaları için bazı kurallara sahiptir; ek olarak, bir kod generator ve tüm resource controller’ı aynı anda bağlamanıza olanak tanıyan uygun bir rota tanımıyla birlikte gelir.</p>
+
+<p>Laravel’in resource controller’dan beklediği metotları görmek için komut satırından yeni bir controller oluşturalım:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:controller MySampleResourceController --resource
+</code></pre></div></div>
+
+<p>Şimdi app/Http/Controllers/MySampleResourceController.php dosyasını açın. Pek çok metotla önceden doldurulmuş olarak geldiğini göreceksiniz. Her birinin neyi temsil ettiğini gözden geçirelim. Örnek olarak Task kullanacağız.</p>
+
+<p><strong>Resource Controller Metotları</strong></p>
+
+<p>Tablo 3-1’i hatırlıyor musunuz?, Laravel’in resource controller’larında oluşturulan HTTP fiilini, URL’i, controller metot adını ve bu varsayılan metotların her birinin adını gösterir.</p>
+
+<p><strong>Resource Controller’ı Bağlamak</strong></p>
+
+<p>Bunların Laravel’de kullanılacak konvansiyonel rota adları olduğunu ve ayrıca bu varsayılan rotaların her biri için metotlar içeren bir resource controller oluşturmanın kolay olduğunu gördük. Neyse ki, istemiyorsanız bu controller metotlarının her biri için elle rota oluşturmanıza gerek yok. Bunun için resource controller binding adı verilen bir numara var. Örnek 3-28’e bir göz atın.</p>
+
+<p><strong>Example 3-28</strong>. Resource controller binding</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// routes/web.php
+Route::resource('tasks', TaskController::class);
+</code></pre></div></div>
+
+<p><strong>artisan route:list</strong></p>
+
+<p>Kendinizi mevcut uygulamanızın hangi rotalara sahip olduğunu merak ettiğiniz bir durumda bulursanız, bunun için bir araç kullanabilirsiniz: komut satırından, php artisan route:list komutunu çalıştırdığınızda tüm rotaların listesini göreceksiniz (bkz. Şekil 3-2). php artisan route:list –except-vendor seçeneğini tercih ediyorum, böylece bağımlılıkların çalışması için kaydettiği tuhaf rotaları görmüyorum.</p>
+
+<p><img src="/assets/images/2024/03/php-artisan-route-list.png" alt="php artisan route:list" title="php artisan route:list" class="img-fluid" /></p>
+
+<p><strong>API Resource Controller</strong></p>
+
+<p>RESTful API’lerle çalışırken, resource’taki potansiyel action’ların listesi, HTML resource controller’daki ile aynı değildir. Örneğin, resource oluşturmak için API’ye POST isteği gönderebilirsiniz, ancak API’de gerçekten “bir formu gösteremezsiniz”.</p>
+
+<p>create ve edit action’larını hariç tutması dışında, aynı yapıya sahip bir controller olan API resource controller oluşturmak için, controller oluştururken –api flag’ini iletin:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:controller MySampleResourceController --api
+</code></pre></div></div>
+
+<p><strong>API Resource Controller’ı Bağlamak</strong></p>
+
+<p>API resource controller’ı bağlamak için, Örnek 3-29’da gösterildiği gibi, resource() metodu yerine apiResource() metodunu kullanın.</p>
+
+<p><strong>Örnek 3-29</strong>. API resource controller’ın bağlanması</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// routes/web.php
+Route::apiResource('tasks', TaskController::class);
+</code></pre></div></div>
+
+<p><strong>Single Action Controller</strong></p>
+
+<p>Uygulamalarınızda bir controller’ın yalnızca tek bir rotaya hizmet vermesi gereken zamanlar olacaktır. Kendinizi bu rota için controller metodunu nasıl adlandıracağınızı merak ederken bulabilirsiniz. Neyse ki, metodu adlandırmakla uğraşmadan, tek bir controller’a tek bir rotayı yönlendirebilirsiniz.</p>
+
+<p>Bildiğiniz gibi, __invoke() metodu, bir sınıfı fonksiyon gibi ele almanıza ve çağırmanıza olanak tanıyan PHP magic metodudur. Bu, Örnek 3-30’da görebileceğiniz gibi, Laravel’in single action controller’larının tek bir controller’a rota tanımlanıza olanak sağlamak için kullandığı araçtır.</p>
+
+<p><strong>Örnek 3-30</strong>. __invoke() metodunu kullanmak</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// \App\Http\Controllers\UpdateUserAvatar.php
+public function __invoke(User $user)
+{
+    // Update the user's avatar image
+}
+
+// routes/web.php
+Route::post('users/{user}/update-avatar', UpdateUserAvatar::class);
+</code></pre></div></div>
+
+<h2 id="route-model-binding">Route Model Binding</h2>
+
+<p>En yaygın yönlendirme pattern’lerinden biri, herhangi bir controller metodunun ilk satırının, Örnek 3-31’deki gibi, verilen kimliğe sahip resource’u bulmaya çalışmasıdır.</p>
+
+<p><strong>Örnek 3-31</strong>. Her rota için bir resource alma</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('conferences/{id}', function ($id) {
+    $conference = Conference::findOrFail($id);
+});
+</code></pre></div></div>
+
+<p>Laravel, route model binding adı verilen bu pattern’i basitleştiren bir özellik sağlar. Bu, belirli bir parametrenin (örneğin, {conference}) rota çözümleyiciye (route resolver), bu id ile bir Eloquent veritabanı kaydı araması gerektiğini ve ardından sadece id yerine onu parametre olarak iletmesi gerektiğini tanımlamanıza olanak tanır. İki tür route model binding vardır: implicit (örtülü) ve custom (özel veya açık).</p>
+
+<p><strong>Implicit Route Model Binding</strong></p>
+
+<p>Route model binding kullanmanın en basit yolu, rota parametrenizi o modele özgü bir şekilde adlandırmak (örneğin, $id yerine $conference olarak adlandırmak), ardından bu parametreyi closure/controller metoduna yazmak ve orada aynı değişken adını kullanmaktır. Göstermek tarif etmekten daha kolaydır; bu nedenle Örnek 3-32’ye bir göz atın.</p>
+
+<p><strong>Örnek 3-32</strong>. Implicit route model binding kullanımı</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('conferences/{conference}', function (Conference $conference) {
+    return view('conferences.show')-&gt;with('conference', $conference);
+});
+</code></pre></div></div>
+
+<p>Rota parametresi ({conference}) metot parametresi ($conference) ile aynı olduğundan ve metot parametresi Conference türünde (Conference $conference) tanımlandığından, Laravel bunu route model binding olarak görür. Bu rota her ziyaret edildiğinde uygulama, URL’e {conference} yerine iletilen her şeyin, Conference aramak için kullanılması gereken bir id olduğunu varsayacaktır ve ardından ortaya çıkan model örneği, closure veya controller metoduna aktarılacaktır.</p>
+
+<p><strong>Custom Route Model Binding</strong></p>
+
+<p>Route model binding’i manuel olarak yapılandırmak için, Örnek 3-33’teki gibi bir satırı App\Providers\RouteServiceProvider’daki boot() metoduna ekleyin.</p>
+
+<p><strong>Örnek 3-33</strong>. Route model binding ekleme</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function boot()
+{
+    // Perform the binding
+    Route::model('event', Conference::class);
+}
+</code></pre></div></div>
+
+<p>Artık, Örnek 3-34’te gösterildiği gibi, bir rotanın tanımında {event} adlı bir parametre olduğunda, rota çözümleyicinin o URL parametresinin id’si ile Conference sınıfının bir örneğini döndüreceğini belirttiniz.</p>
+
+<p><strong>Örnek 3-34</strong>. Custom route model binding kullanımı</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('events/{event}', function (Conference $event) {
+    return view('events.show')-&gt;with('event', $event);
+});
+</code></pre></div></div>
+
+<h2 id="rota-önbelleği-route-cache">Rota Önbelleği (Route Cache)</h2>
+
+<p>Yükleme sürenizin her milisaniyesini sıkıştırmak istiyorsanız route caching’e göz atmak isteyebilirsiniz. Laravel’in cache’in birkaç yüz milisaniyeye kadar sürebilen parçalarından biri, routes/* dosyalarının ayrıştırılmasıdır ve rotaları önbelleğe almak bu süreci önemli ölçüde hızlandırır.</p>
+
+<p>Rota dosyanızı önbelleğe almak için tüm controller, redirect, view ve resource rotalarını kullanmanız gerekir (rota closure hariç). Uygulamanız herhangi bir rota closure kullanmıyorsa, php artisan route:cache komutunu çalıştırabilirsiniz; Laravel, routes/* dosyalarınızın sonuçlarını serialize edecektir. Önbelleği silmek istiyorsanız php artisan route:clear komutunu çalıştırın.</p>
+
+<p>Dezavantajı şu: Laravel artık gerçek routes/* dosyalarınız yerine rotaları önbelleğe alınmış dosyayla eşleştirecek. Rota dosyalarınızda değişiklikler yapabilirsiniz ve bunlar, route:cache’i tekrar çalıştırana kadar etkili olmaz. Bu, her değişiklik yaptığınızda yeniden ön belleğe almanız gerekeceği anlamına gelir; bu da çok fazla karışıklık potansiyeli doğurur.</p>
+
+<p>Bunun yerine şunu önerebilirim: Git varsayılan olarak rota önbellek dosyasını yok saydığından, yalnızca production sunucunuzda rota önbelleği kullanmayı düşünün ve her yeni kodu deploy ettiğinizde (Git post-deploy hook aracılığıyla, Forge deploy komutu aracılığıyla veya kullandığınız diğer deploy sistemlerinin bir parçası olarak) php artisan route:cache komutunu çalıştırın. Bu şekilde, kafa karıştırıcı local geliştirme sorunlarıyla karşılaşmazsınız, ancak remote environment yine de rota önbelleğinden faydalanacaktır.</p>
+
+<h2 id="form-method-spoofing">Form Method Spoofing</h2>
+
+<p>Bazen bir formun hangi HTTP fiili ile gönderilmesi gerektiğini manuel olarak tanımlamanız gerekir. HTML formları yalnızca GET veya POST’a izin verir, dolayısıyla başka türde bir fiil istiyorsanız bunu kendiniz belirtmelisiniz.</p>
+
+<p><strong>Laravel’de HTTP Fiilleri</strong></p>
+
+<p>Daha önce gördüğümüz gibi, Route::get(), Route::post(), Route::any() veya Route::match() kullanarak rotanın hangi fiillerle eşleşeceğini tanımlayabilirsiniz. Ayrıca Route::patch(), Route::put() ve Route::delete() ile de eşleştirebilirsiniz.</p>
+
+<p>Peki web tarayıcısıyla GET dışında bir istek nasıl gönderilir? İlk olarak, HTML formundaki method özelliği, HTTP fiilini belirler: formunuzda “GET” metodu varsa, query parameter ve GET metodu aracılığıyla gönderilir; formunuzda “POST” metodu varsa, post body ve POST metodu aracılığıyla gönderilir.</p>
+
+<p>JavaScript frameworkleri, DELETE ve PATCH gibi diğer isteklerin gönderilmesini kolaylaştırır. Ancak Laravel’de HTML formlarını GET veya POST dışındaki fiillerle göndermeniz gerektiğini düşünüyorsanız, form method spoofing kullanmanız gerekir; bu, bir HTML formunda HTTP metodunu yanıltmak anlamına gelir.</p>
+
+<p><strong>HTML Formlarında HTTP Method Spoofing</strong></p>
+
+<p>Şu anda gönderdiğiniz formun POST dışında bir şey olarak ele alınması gerektiğini Laravel’e bildirmek için, “PUT”, “PATCH” veya “DELETE” değerine sahip _method adlı bir hidden input ekleyin. Laravel bu form gönderimini sanki o fiille yapılan bir istekmiş gibi eşleştirecek ve yönlendirecektir.</p>
+
+<p>Örnek 3-35’teki form, Laravel’e “DELETE” metodunu ilettiğinden, Route::delete() ile tanımlanan rotalarla eşleşecek ancak Route::post() ile tanımlanan rotalarla eşleşmeyecektir.</p>
+
+<p><strong>Example 3-35</strong>. Form method spoofing</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;form action="/tasks/5" method="POST"&gt;
+    &lt;input type="hidden" name="_method" value="DELETE"&gt;
+    &lt;!-- or: --&gt;
+    @method('DELETE')
+&lt;/form&gt;
+</code></pre></div></div>
+
+<h2 id="csrf-koruması">CSRF Koruması</h2>
+
+<p>Örnek 3-35’teki de dahil olmak üzere, Laravel uygulamasında form göndermeyi denediyseniz, muhtemelen TokenMismatchException ile karşılaşmışsınızdır.</p>
+
+<p>Varsayılan olarak, Laravel’deki “read-only” rotalar (GET, HEAD veya OPTIONS kullananlar) dışındaki tüm rotalar, _token adlı input biçiminde bir “token” gerektirerek cross-site request forgery (CSRF) saldırılarına karşı korunur. Bu token her session başlangıcında oluşturulur ve read-only olmayan her rota, gönderilen _token’ı session token’ı ile karşılaştırır.</p>
+
+<p><strong>CSRF Nedir?</strong></p>
+
+<p>Cross-site request forgery (Siteler arası istek sahteciliği), bir web sitesinin başka bir web sitesi gibi davranmasıdır. Amaç, birisinin, oturum açmış kullanıcının tarayıcısı aracılığıyla kendi web sitesinden web sitenize formlar göndererek kullanıcılarınızın web sitenize erişimini ele geçirmesidir.</p>
+
+<p>CSRF saldırılarını önlemenin en iyi yolu, tüm rotaları (POST, DELETE, vb.) Laravel’in yaptığı gibi bir token ile korumaktır.</p>
+
+<p>Bu CSRF hatasını aşmak için iki seçeneğiniz var. İlk ve tercih edilen yöntem, gönderimlerinizin her birine _token input’unu eklemektir. Örnek 3-36’da görebileceğiniz gibi HTML formlarında bunu yapmanın basit bir yolu vardır.</p>
+
+<p><strong>Örnek 3-36</strong>. CSRF token</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;form action="/tasks/5" method="POST"&gt;
+    @csrf
+&lt;/form&gt;
+</code></pre></div></div>
+
+<p>JavaScript uygulamalarında biraz daha fazla çalışma gerekir, ancak çok fazla değil. JavaScript framework’lerini kullanan siteler için en yaygın çözüm, token’ı her sayfada bunun gibi bir <meta /> etiketinde saklamaktır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta name="csrf-token" content="&lt;?php echo csrf_token(); ?&gt;"&gt;
+</code></pre></div></div>
+
+<p>Token’ı <meta /> etiketinde saklamak, onu doğru HTTP header’a bağlamayı kolaylaştırır; bunu, Örnek 3-37’de olduğu gibi, JavaScript framework’ün den gelen tüm istekler için global olarak bir kez yapabilirsiniz.</p>
+
+<p><strong>Örnek 3-37</strong>. CSRF için global olarak header bağlama</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// In jQuery:
+$.ajaxSetup({
+    headers: {
+        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+    }
+});
+
+// With Axios: it automatically retrieves it from a cookie. Nothing to do!
+</code></pre></div></div>
+
+<p>Laravel her istekte X-CSRF-TOKEN’i (ve Axios ve Angular’ın kullandığı X-XSRF-TOKEN’i) kontrol edecek ve buradan iletilen geçerli tokenlar CSRF korumasını karşılanmış olarak işaretleyecektir.</p>
+
+<h2 id="yönlendirmeler">Yönlendirmeler</h2>
+
+<p>Şu ana kadar controller metodundan veya rota tanımından geri dönmek hakkında açıkça konuştuğumuz tek şey view oldu. Ancak tarayıcıya nasıl davranacağına ilişkin talimatlar vermek için geri kullanabileceğimiz birkaç yapı daha var.</p>
+
+<p>İlk önce yönlendirmeyi (redirect) ele alalım. Bunlardan birkaçını zaten diğer örneklerde gördünüz. Yönlendirme oluşturmanın iki yaygın yolu vardır; Burada redirect() global helper’ını kullanacağız, ancak siz facade tercih edebilirsiniz. Her ikisi de bir Illuminate\Http\RedirectResponse örneği oluşturur, bunun üzerinde bazı metotlar uygular ve ardından onu geri döndürür. Bunu manuel olarak da yapabilirsiniz, ancak biraz daha fazla işi kendiniz yapmanız gerekecektir. Yönlendirmeyi geri döndürmenin birkaç yolunu görmek için Örnek 3-38’e bakın.</p>
+
+<p><strong>Örnek 3-38</strong>. Yönlendirmeyi döndürmenin farklı yolları</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Using the global helper to generate a redirect response
+Route::get('redirect-with-helper', function () {
+    return redirect()-&gt;to('login');
+});
+
+// Using the global helper shortcut
+Route::get('redirect-with-helper-shortcut', function () {
+    return redirect('login');
+});
+
+// Using the facade to generate a redirect response
+Route::get('redirect-with-facade', function () {
+    return Redirect::to('login');
+});
+
+// Using the Route::redirect shortcut
+Route::redirect('redirect-by-route', 'login');
+</code></pre></div></div>
+
+<p>redirect() helper’ın redirect facade ile aynı metotları kullandığını ancak aynı zamanda bir kısayolu olduğunu unutmayın; Parametreleri zincirleme metotlar yerine doğrudan helper’a iletirseniz, bu, to() yönlendirme metodunun kısayoludur.</p>
+
+<p>Ayrıca Route::redirect() route helper’ın - isteğe bağlı - üçüncü parametresinin, yönlendirmenizin status kodu (örn. 302) olabileceğini unutmayın.</p>
+
+<p><strong>redirect()-&gt;to()</strong></p>
+
+<p>Yönlendirmeler için to() metodunu imzası şuna benzer:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function to($to = null, $status = 302, $headers = [], $secure = null)
+</code></pre></div></div>
+
+<p>$to geçerli bir dahili yoldur, $status HTTP status’tür (varsayılan olarak 302’dir), $headers yönlendirmenizle birlikte HTTP header’ları tanımlamanıza olanak tanır ve $secure varsayılan http ve https seçimini geçersiz kılar (normalde URL’e göre ayarlanır). Örnek 3-39 bunun kullanımına ilişkin bir örneği göstermektedir.</p>
+
+<p><strong>Örnek 3-39</strong>. redirect()-&gt;to()</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('redirect', function () {
+    return redirect()-&gt;to('home');
+    // Or same, using the shortcut:
+    return redirect('home');
+});
+</code></pre></div></div>
+
+<p><strong>redirect()-&gt;route()</strong></p>
+
+<p>route() metodu to() metofuyla aynıdır ancak belirli bir yola işaret etmek yerine belirli bir rota adına işaret eder (bkz. Örnek 3-40).</p>
+
+<p><strong>Örnek 3-40</strong>. redirect()-&gt;route()</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('redirect', function () {
+    return redirect()-&gt;route('conferences.index');
+});
+</code></pre></div></div>
+
+<p>Bazı rota adları parametre gerektirdiğinden parametre sırasının biraz farklı olduğunu unutmayın. route(), rota parametreleri için isteğe bağlı ikinci bir parametreye sahiptir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function route($to = null, $parameters = [], $status = 302, $headers = [])
+</code></pre></div></div>
+
+<p>Yani, onu kullanmak biraz Örnek 3-41’e benzeyebilir.</p>
+
+<p><strong>Örnek 3-41</strong>. parametre ile redirect()-&gt;route()</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('redirect', function () {
+    return redirect()-&gt;route('conferences.show', ['conference' =&gt; 99]);
+});
+</code></pre></div></div>
+
+<p><strong>Redirect to_route Helper</strong></p>
+
+<p>to_route() helper’ı, redirect()-&gt;route() metodu için takma ad olarak kullanabilirsiniz. İkisinin de imzası aynıdır.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('redirect', function () {
+    return to_route('conferences.show', ['conference' =&gt; 99]);
+});
+</code></pre></div></div>
+
+<p><strong>redirect()-&gt;back()</strong></p>
+
+<p>Laravel’in session uygulamasının bazı yerleşik kolaylıkları nedeniyle, uygulamanız her zaman kullanıcının daha önce ziyaret ettiği sayfanın ne olduğu bilgisine sahip olacaktır. Bu, kullanıcıyı geldiği sayfaya yönlendiren redirect()-&gt;back() yönlendirmesi fırsatını verir. Bunun için genel bir kısayol da vardır: back().</p>
+
+<p><strong>Diğer Yönlendirme Metotları</strong></p>
+
+<p>Yönlendirme servisi, daha az kullanılan ancak yine de kullanılabilen şu metotları sağlar:</p>
+
+<ul>
+  <li>refresh() - Kullanıcının o anda bulunduğu sayfaya yönlendirir.</li>
+  <li>away() - Varsayılan URL doğrulaması olmadan harici bir URL’ye yönlendirmeye izin verir.</li>
+  <li>secure() - Secure parametresinin “true” olarak ayarlandığı to() gibi.</li>
+  <li>action() - Bir controller’a ve metoda iki yoldan biriyle bağlanmanıza olanak tanır: dize olarak (redirect()-&gt;action(‘MyController@myMethod’)) veya dizi olarak
+(redirect()-&gt;action([MyController::class, ‘myMethod’]))).</li>
+  <li>guest() - Kimlik doğrulama sistemi tarafından dahili olarak kullanılır; Bir kullanıcı, kimlik doğrulamasının yapılmadığı bir rotayı ziyaret ettiğinde, bu rotayı yakalar ve ardından kullanıcıyı (genellikle bir oturum açma sayfasına) yönlendirir.</li>
+  <li>intended() - Ayrıca kimlik doğrulama sistemi tarafından dahili olarak da kullanılır; Başarılı bir kimlik doğrulamanın ardından, guest() metodu tarafından saklanan “amaçlanan” URL’i alır ve kullanıcıyı oraya yönlendirir.</li>
+</ul>
+
+<p><strong>redirect()-&gt;with()</strong></p>
+
+<p>redirect() ile çağırabileceğiniz diğer metotlara benzer şekilde yapılandırılmış olsa da with() metodu, nereye yönlendirme yaptığınızı değil, yönlendirmeyle birlikte hangi verileri ilettiğinizi tanımlaması bakımından farklıdır. Kullanıcıları farklı sayfalara yönlendirirken genellikle belirli verileri de onlarla birlikte iletmek istersiniz. Verileri session’a manuel olarak aktarabilirsiniz, ancak Laravel’in size bu konuda yardımcı olacak bazı kullanışlı metotları vardır.</p>
+
+<p>En yaygın olarak, Örnek 3-42’de olduğu gibi with() kullanarak bir anahtar ve değer dizisini veya tek bir anahtar ve değeri iletebilirsiniz. Bu, verilerinizi yalnızca bir sonraki sayfa yüklemesi için session’a kaydeder.</p>
+
+<p><strong>Örnek 3-42</strong>. Data ile yönlendirme</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('redirect-with-key-value', function () {
+    return redirect('dashboard')
+        -&gt;with('error', true);
+});
+
+Route::get('redirect-with-array', function () {
+    return redirect('dashboard')
+        -&gt;with(['error' =&gt; true, 'message' =&gt; 'Whoops!']);
+});
+</code></pre></div></div>
+
+<p>Ayrıca, Örnek 3-43’te olduğu gibi, kullanıcının form girişi ile yönlendirme yapmak için withInput() metodunu kullanabilirsiniz; Bu, kullanıcıyı az önce geldiği forma geri göndermek istediğiniz doğrulama hatası durumunda en yaygın kullanımdır.</p>
+
+<p><strong>Örnek 3-43</strong>. Form girişiyle yönlendirme</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('form', function () {
+    return view('form');
+});
+
+Route::post('form', function () {
+    return redirect('form')
+        -&gt;withInput()
+        -&gt;with(['error' =&gt; true, 'message' =&gt; 'Whoops!']);
+});
+</code></pre></div></div>
+
+<p>withInput() ile aktarılan girişi almanın en kolay yolu, tüm eski girişleri almak için kullanılabilecek old() helper’ı kullanmaktır. Bunu genellikle view’da göreceksiniz; bu, formun hem “create” hem de “edit” view’ında kullanılmasına olanak tanır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;input name="username" value="&lt;?=
+    old('username', 'Default username instructions here');
+?&gt;"&gt;
+</code></pre></div></div>
+
+<p>Doğrulamadan bahsetmişken, hataları yönlendirme yanıtıyla birlikte iletmek için de yararlı bir metot vardır: withErrors(). Herhangi bir error “provider” iletebilirsiniz; bu bir hata dizesi, bir dizi hata veya yaygın olarak kullanılan Illuminate Validator‘ın bir örneği olabilir.</p>
+
+<p><strong>Örnek 3-44</strong>. Hatalar ile  yönlendirme</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::post('form', function (Illuminate\Http\Request $request) {
+    $validator = Validator::make($request-&gt;all(), $this-&gt;validationRules);
+    
+    if ($validator-&gt;fails()) {
+        return back()
+            -&gt;withErrors($validator)
+            -&gt;withInput();
+    }
+});
+</code></pre></div></div>
+
+<p>withErrors(), yönlendirdiği sayfanın view’ı ile otomatik olarak bir $errors değişkenini paylaşır, böylece istediğiniz gibi işlem yapabilirsiniz.</p>
+
+<h2 id="requestin-i̇ptal-edilmesi">Request’in İptal Edilmesi</h2>
+
+<p>Geri dönen view ve yönlendirmelerin yanı sıra, bir rotadan çıkmanın en yaygın yolu iptal (abort) etmektir. İsteğe bağlı olarak HTTP status kodlarını, bir mesajı ve bir başlık dizisini parametre olarak alan, global olarak kullanılabilen birkaç metot (abort(), abort_if() ve abort_unless()) vardır.</p>
+
+<p>Örnek 3-45’te gösterildiği gibi, abort_if() ve abort_unless(), doğruluğu açısından değerlendirilen bir parametreyi alır ve sonuca bağlı olarak iptal işlemini gerçekleştirir.</p>
+
+<p><strong>Örnek 3-45</strong>. 403 Abort</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::post('something-you-cant-do', function (Illuminate\Http\Request $request) {
+    abort(403, 'You cannot do that!');
+    abort_unless($request-&gt;has('magicToken'), 403);
+    abort_if($request-&gt;user()-&gt;isBanned, 403);
+});
+</code></pre></div></div>
+
+<h2 id="özel-yanıtlar">Özel Yanıtlar</h2>
+
+<p>Geri dönebileceğimiz birkaç seçenek daha var; view, yönlendirme ve iptallerden sonra en yaygın olanları gözden geçirelim. Yönlendirmelerde olduğu gibi, bu metotları da response() helper veya Response facade ile çalıştırabilirsiniz.</p>
+
+<p><strong>response()-&gt;make()</strong></p>
+
+<p>Manuel olarak bir HTTP response oluşturmak istiyorsanız, verilerinizi response()-&gt;make()’in ilk parametresine aktarmanız yeterlidir: örneğin, return response()-&gt;make(Hello, World!). Bir kez daha, ikinci parametre HTTP status kodudur ve üçüncüsü ise başlıklarınızdır.</p>
+
+<p><strong>response()-&gt;json() ve -&gt;jsonp()</strong></p>
+
+<p>JSON kodlu bir HTTP response’u manuel olarak oluşturmak için, JSON uyumlu içeriğinizi (diziler, koleksiyonlar veya başka herhangi bir şey) json() metoduna aktarın: örneğin, return response()-&gt;json(User::all()).</p>
+
+<p><strong>response()-&gt;download(), -&gt;streamDownload(), ve -&gt;file()</strong></p>
+
+<p>Kullanıcıya indirebileceği bir dosya göndermek için, download()’a bir SplFileInfo örneği veya dosya adı iletin: örneğin, return response()-&gt;download(‘file501751.pdf’, ‘myFile.pdf’), bu da file501751.pdf konumundaki bir dosyayı gönderir ve gönderildiği şekliyle myFile.pdf olarak yeniden adlandırır.</p>
+
+<p>Aynı dosyayı tarayıcıda görüntülemek için (eğer bu bir PDF, resim veya tarayıcının işleyebileceği başka bir şeyse), bunun yerine response-&gt;download() ile aynı parametreleri alan response()-&gt;file() kullanın.</p>
+
+<p>Doğrudan sunucunuzun diskine yazmak zorunda kalmadan, harici bir servisteki içerikleri indirilebilir hale getirmek istiyorsanız, response()-&gt;streamDownload()) metodunu kullanabilirsiniz. Bu metot, parametre olarak bir dizeyi, dosya adını ve isteğe bağlı olarak header dizisini dönen bir closure bekler; bkz. Örnek 3-46.</p>
+
+<p><strong>Örnek 3-46</strong>. Harici sunuculardan indirilen dosyalar</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>return response()-&gt;streamDownload(function () {
+    echo DocumentService::file('myFile')-&gt;getContent();
+}, 'myFile.pdf');
+</code></pre></div></div>
+
+<h2 id="özet">Özet</h2>
+
+<p>Laravel’in rotaları, routes/web.php ve routes/api.php’de tanımlanır. Her rota için beklenen yolu, hangi segmentlerin static, hangilerinin parametre olduğunu, hangi HTTP fiillerinin rotaya erişebileceğini ve bunun nasıl çözümleneceğini tanımlayabilirsiniz. Ayrıca rotalara middleware ekleyebilir, bunları gruplandırabilir ve onlara adlar verebilirsiniz.</p>
+
+<p>Rota closure veya controller metodundan döndürülen şey, Laravel’in kullanıcıya nasıl yanıt vereceğini belirler. Bir dize veya view ise kullanıcıya sunulur; eğer başka türden bir veri ise JSON’a dönüştürülür ve kullanıcıya sunulur; ve eğer bu bir yönlendirmeyse, yönlendirmeye zorlar.</p>
+
+<p>Laravel, yönlendirme ile ilgili genel görevleri ve yapıları basitleştirmek için bir dizi araç ve kolaylık sağlar. Bunlar resource controller, route model binding, ve form method spoofing’tir.</p>
+
+<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Herhangi bir web uygulama framework’ünün temel işlevi, kullanıcıdan istek almak ve yanıtları, genellikle HTTP(S) aracılığıyla iletmektir. Bu, bir framework’ü öğrenirken ele alınması gereken ilk ve en önemli şeyin uygulamanın rotalarını tanımlamak olduğu anlamına gelir; rotalar olmadan, son kullanıcıyla etkileşim kurma yeteneğiniz çok azdır veya hiç yoktur.]]></summary></entry><entry><title type="html">Pasif Gelir Akışı Oluşturmak İçin ChatGPT’yi Kullanın</title><link href="http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin.html" rel="alternate" type="text/html" title="Pasif Gelir Akışı Oluşturmak İçin ChatGPT’yi Kullanın" /><published>2024-03-01T00:00:00+03:00</published><updated>2024-03-01T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin</id><content type="html" xml:base="http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin.html"><![CDATA[<p>Oyun artık değişti, giriş engeli çok düşük olan pasif gelir kaynakları giderek artıyor çünkü ChatGPT insanların bunu yüzlerce veya binlerce kez tekrarlamasını gerçekten kolaylaştırıyor.</p>
 
 <p>Bu nedenle, Amazon’daki basit içerikli kitaplar (defterler, boyama kitapları veya bulmaca kitapları vb.) gibi veya AI sanatı oluşturmak ve bunu stok fotoğraf sitelerinde satmak (bazı fotoğraf siteleri bunu zaten yasakladı) gibi oluşturulması kolay şeylere odaklanmayacağız.</p>
 
@@ -915,7 +2634,23 @@ if (blockedSites.includes(window.location.hostname)) {
 
 <p>Bu kodu kullanmaktan çekinmeyin, insanların bunun üzerine nasıl farklı özellikler geliştirdiklerine ve farklı gelir akışları oluşturduklarına dair hikayeler duymayı çok isterim.</p>
 
-<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Oyun artık değişti, giriş engeli çok düşük olan pasif gelir kaynakları giderek artıyor çünkü ChatGPT insanların bunu yüzlerce veya binlerce kez tekrarlamasını gerçekten kolaylaştırıyor.]]></summary></entry><entry><title type="html">ChatGPT Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir.html" rel="alternate" type="text/html" title="ChatGPT Nasıl Kullanılır?" /><published>2024-02-22T00:00:00+03:00</published><updated>2024-02-22T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir.html"><![CDATA[<p>Artık ChatGPT’yi ve nasıl çalıştığını anladığınıza göre kullanmaya başlamanın zamanı geldi. Bu bölümde ChatGPT’yi tarayıcınız aracılığıyla kullanmaya odaklanacağız ve etkinliğini en üst düzeye çıkarmak için bazı ipuçları ve en iyi uygulamaları sunacağız.</p>
+<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Oyun artık değişti, giriş engeli çok düşük olan pasif gelir kaynakları giderek artıyor çünkü ChatGPT insanların bunu yüzlerce veya binlerce kez tekrarlamasını gerçekten kolaylaştırıyor.]]></summary></entry><entry><title type="html">ChatGPT’nin Sınırlamaları Nelerdir?</title><link href="http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir.html" rel="alternate" type="text/html" title="ChatGPT’nin Sınırlamaları Nelerdir?" /><published>2024-03-01T00:00:00+03:00</published><updated>2024-03-01T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir</id><content type="html" xml:base="http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir.html"><![CDATA[<p>ChatGPT’nin ne kadar faydalı olabileceğini gördük, ancak her makine öğrenimi modeli gibi onun da kendi sınırlamaları var.</p>
+
+<ul>
+  <li>ChatGPT’nin eğitim verilerinin son tarihi 2021’dir ve güncel olaylara erişimi yoktur, bu da o tarihten sonra meydana gelen olayları anlayamayabileceği veya bunlara yanıt veremeyebileceği anlamına gelir.</li>
+  <li>ChatGPT’nin tek bir yanıtta üretebileceği çıktı sınırı vardır; yolun ortasında yanıt vermeyi bırakırsa bu sınıra ulaştığınızı bileceksiniz. Böyle bir durumda “Devam Et” yazmanız yeterlidir; kaldığı yerden devam edecektir.</li>
+  <li>Açık uçlu veya karmaşık sorular sorduğunuzda sınıra ulaşma olasılığınız daha yüksektir. Çıktı sınırı, yanıtın kalitesi ve alaka düzeyi ile modelin hesaplama maliyeti arasındaki bir dengedir.</li>
+  <li>Kaliteli bir yanıt alabilmek için karmaşık sorguları parçalara ayırmak ve bunları sırayla istemek en iyisidir.</li>
+  <li>ChatGPT, alaycılık veya ironi gibi mecazi dili anlamakta zorluk çeker ve bu da yanlış anlamalara veya alakasız yanıtlara yol açabilir.</li>
+  <li>ChatGPT’nin performansı, üzerinde eğitim aldığı verilerden etkilenir ve eğitim verilerindeki önyargı, modelin yanıtlarında önyargıya yol açabilir.</li>
+  <li>ChatGPT’yi kullanırken, herhangi bir kişisel bilgiyi saklamadığını ancak metin çıktısı oluşturmak için girdi olarak sağladığınız bilgileri kullanabileceğini unutmamak önemlidir. Herhangi bir kişisel bilgi vermeden önce gizlilik politikasını kontrol ederek olası sonuçların farkında olmanız çok önemlidir.</li>
+</ul>
+
+<p>Bunlar, bu yazının yazıldığı sıradaki sınırlamalardır ancak chatGPT sürekli olarak geliştirilmektedir ve mevcut verilere erişmesinin an meselesi olduğu düşünülmektedir.</p>
+
+<p>Her şeyde olduğu gibi, yayınlamadan veya chatGPT’den elde edilen çıktılara dayanarak büyük kararlar almadan önce kendi durumunuzu tespit etmelisiniz.</p>
+
+<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[ChatGPT’nin ne kadar faydalı olabileceğini gördük, ancak her makine öğrenimi modeli gibi onun da kendi sınırlamaları var.]]></summary></entry><entry><title type="html">ChatGPT Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir.html" rel="alternate" type="text/html" title="ChatGPT Nasıl Kullanılır?" /><published>2024-02-22T00:00:00+03:00</published><updated>2024-02-22T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir.html"><![CDATA[<p>Artık ChatGPT’yi ve nasıl çalıştığını anladığınıza göre kullanmaya başlamanın zamanı geldi. Bu bölümde ChatGPT’yi tarayıcınız aracılığıyla kullanmaya odaklanacağız ve etkinliğini en üst düzeye çıkarmak için bazı ipuçları ve en iyi uygulamaları sunacağız.</p>
 
 <p><strong>1. Adım:</strong> OpenAI hesabı oluşturun</p>
 
@@ -1854,410 +3589,4 @@ d) Alüminyum kutuların yakılması</p>
 
 <p><code class="language-plaintext highlighter-rouge">heroku logs -t</code></p>
 
-<p>Okuduğunuz için teşekkürler.</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.]]></summary></entry><entry><title type="html">WSL Nedir ve Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html" rel="alternate" type="text/html" title="WSL Nedir ve Nasıl Kullanılır?" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/11/wsl-nedir-ve-nasil-kullanilir.html"><![CDATA[<p>Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.</p>
-
-<h2 id="sadece-bir-sanal-makine-değil">Sadece Bir Sanal Makine Değil</h2>
-
-<p>WSL’nin ne olmadığıyla başlayalım; örneğin, Ubuntu’yu VirtualBox’ta çalıştırarak elde edebileceğiniz tam bir Linux masaüstü deneyimi değildir. Performans nedenleriyle teknik olarak sanallaştırmayı kullanır, ancak tam bir VM çalıştırmaktan çok farklıdır. Her şey sizin için yönetilir ve işinizi yapmanız ve git, ssh gibi tanıdık bash komutlarını kullanmanız için basit bir shell ve environment sağlar.</p>
-
-<p>Temel olarak WSL, app store’dan bir uygulama olarak tam bir Linux dağıtımı kurmanıza olanak tanır. Ubuntu’yu (veya tercih ettiğiniz dağıtımı) indirebilir, kurabilir ve başlatabileceğiniz bir uygulama veya terminalinizde CMD veya Powershell ile birlikte çalışacak bir profil olarak kullanıma sunabilirsiniz.</p>
-
-<p>En basit açıklaması “Windows’ta bash çalıştırmanıza izin vermesi” olsa da, bir kabuktan daha fazlasıdır; apt kullanarak programları yükleyebilir ve normal bir Linux örneği gibi özelleştirebilirsiniz.</p>
-
-<p>WSL, geliştiricilere ve bash kullanıcılarına, Windows’u birincil işletim sistemi olarak kullanmak zorunda kalmalarına rağmen Linux shell deneyimi sunmayı amaçlamaktadır. Daha kolay komut satırı erişimi için bir Linux shell’inin yanı sıra Visual Studio gibi Windows uygulamalarını çalıştırmanıza izin vererek her iki dünyanın da en iyisini sunar.</p>
-
-<p>Microsoft, WSL’nin iki sürümünü sunmaktadır: sürüm 1 ve sürüm 2. WSL 2, sanal makine kullanır ve Windows ile oluşturulup gönderilen tam bir Linux çekirdeğine sahiptir. WSL 1 daha eskidir ve genellikle çok daha yavaştır ancak dosya sistemleri arasında çalışırken daha iyi performansa sahiptir. Daha hızlı olduğundan ve Docker gibi araçlarla çok daha iyi çalıştığından çoğu işlem için WSL 2’yi öneriyoruz.</p>
-
-<h2 id="wsl-kurulumu">WSL Kurulumu</h2>
-
-<p>WSL isteğe bağlı bir Windows özelliğidir, dolayısıyla onu açmanız gerekir. Powershell’i başlat menüsünden Administrator olarak açın:</p>
-
-<p><img src="/assets/images/2024/02/powershell-run-as-administrator.png" alt="Powershell'i yönetici olarak çalıştır" title="Powershell'i yönetici olarak çalıştır" class="img-fluid" /></p>
-
-<p>Ardından açın:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-</code></pre></div></div>
-
-<p>Değişiklikleri uygulamak için makinenizi yeniden başlatmanız gerekecektir. Bundan sonra Windows Store’u açabilir ve mevcut dağıtımları görüntülemek için “WSL”yi arayabilirsiniz:</p>
-
-<p><img src="/assets/images/2024/02/wsl-windows-store.png" alt="WSL Windows Store" title="WSL Windows Store" class="img-fluid" /></p>
-
-<p>İlk kez çalıştırdığınızda, örnek için kullanıcı adınızı ve şifrenizi ayarlamanız istenecektir. Bunlar yalnızca Linux içindir ve Windows parolanızla eşleşmesi gerekmez.</p>
-
-<p>İlk yüklediğiniz varsayılan olarak ayarlanmalıdır, ancak birden fazla yükleme yaparsanız varsayılanı manuel olarak ayarlamanız gerekecektir. WSL’yi Powershell’deki wsl komutu aracılığıyla yönetebilirsiniz. Örneğin, şu anda yüklü olan tüm sürümlerin listesi:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS C:\&gt; wsl --list
-Windows Subsystem for Linux Distributions:
-Ubuntu-20.04 (Default)
-docker-desktop
-docker-desktop-data
-</code></pre></div></div>
-
-<p>Ardından, WSL 1 ve 2 arasında geçiş yapmak için de kullanılabilen aşağıdaki komutla varsayılan WSL dağıtımınızı ayarlayabilirsiniz.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl --set-version Ubuntu-20.04 2
-</code></pre></div></div>
-
-<p>Gelecekteki tüm kurulumlar için tercih edilen bir WSL sürümünü de ayarlayabilirsiniz:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl --set-default-version 2
-</code></pre></div></div>
-
-<h2 id="wsli-kullanmak">WSL’i Kullanmak</h2>
-
-<p>WSL’yi birkaç farklı şekilde açabilirsiniz. En kolayı, Windows’a basıp “wsl” yazmaktır; bu, otomatik olarak wsl.exe’yi çalıştıracak ve varsayılan dağıtımınızı açacaktır.</p>
-
-<p><img src="/assets/images/2024/02/wsl-start-menu.png" alt="WSL Start Menu" title="WSL Start Menu" class="img-fluid" /></p>
-
-<p><img src="/assets/images/2024/02/wsl-windows-terminal.png" alt="WSL Windows Terminal" title="WSL Windows Terminal" class="img-fluid" /></p>
-
-<p>Bu sadece temel bir terminal penceresidir; Microsoft’un yeni Terminal Uygulamasını kullanıyorsanız - ki bunu kesinlikle öneriyoruz - WSL sürümlerinize açılır menü aracılığıyla erişilebilir (ayarlamış olabileceğiniz SSH profillerinin yanı sıra):</p>
-
-<p><img src="/assets/images/2024/02/wsl-windows-terminal-menu.png" alt="WSL Windows Terminal Menu" title="WSL Windows Terminal Menu" class="img-fluid" /></p>
-
-<h2 id="dosya-sistemleri-üzerine-bir-not">Dosya Sistemleri Üzerine Bir Not</h2>
-
-<p>Linux dosya sisteminiz her zamanki gibi / konumuna monte edilmiştir. Windows, /mnt/c/ konumunda veya varsayılan sürücü harfiniz hangisiyse orada bulunur.</p>
-
-<p>Bunların hepsi sanal olduğundan, Linux dosyalarınız elbette sürücünün kendisinde depolanır. WSL 1 için bunlar basit bir klasörde saklanır. WSL 2 bazı şeyleri değiştirir ve dosyaları sanal sabit disk imajı veya VHDX olarak saklar.</p>
-
-<p>Bu imajları aşağıdaki yolda bulabilirsiniz ve dağıtım kayıtlı değilken de monte edilebilseler de, Windows tarafında onları karıştırmanızı önermiyoruz.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>%USERPROFILE%AppDataLocalPackagesCanonicalGroupLimited.Ubuntu18.04onWindows_79rhkp1fndgscLocalState
-</code></pre></div></div>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Windows Subsystem For Linux (WSL), Linux’u Windows’ta native olarak çalıştırmak için Microsoft tarafından sağlanan bir araçtır. Kusursuz bir deneyim olacak şekilde tasarlanmıştır ve esasen Windows dosya sisteminizle etkileşime girebilecek tam bir Linux shell sağlar.]]></summary></entry><entry><title type="html">Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın</title><link href="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html" rel="alternate" type="text/html" title="Sail (WSL2) Kullanarak Laravel Uygulamanızı Başlatın" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin</id><content type="html" xml:base="http://localhost:4000/2024/02/11/sail-wsl2-kullanarak-laravel-uygulamanizi-baslatin.html"><![CDATA[<p>Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.</p>
-
-<p>Son birkaç yılda Konteynerizasyon (veya Docker) konusunu İnternet’in her yerinde duyabilirsiniz. VM’nin tamamını sanallaştırmak yerine kodu ve tüm bağımlılıklarını bir “Konteyner” olarak paketler. Konteynerler hakkında daha fazla bilgiyi buradan edinebilirsiniz… Hala Laradock kullanıyor olabilirsiniz… Son olarak, Aralık 2020’de Taylor Otwell, Laravel Sail’i piyasaya sürdü!</p>
-
-<p><em>Laravel Sail, Laravel’in varsayılan Docker geliştirme ortamıyla etkileşime geçmek için kullanılan hafif bir komut satırı arayüzüdür. Sail, önceden Docker deneyimi gerektirmeden PHP, MySQL ve Redis kullanarak bir Laravel uygulaması oluşturmak için harika bir başlangıç noktası sağlar.</em></p>
-
-<p><em>Kaynak: Laravel Belgeleri</em></p>
-
-<p>Bu eğitimde WSL 2 kullanarak Windows üzerinde yepyeni bir Laravel projesi başlatacaksınız. WSL, Windows Subsystem for Linux anlamına gelir ve geliştiricilerin herhangi bir “gerçek” VM host olmadan Linux ortamlarını doğrudan Windows üzerinde çalıştırmasına olanak tanır. WSL 2 büyük bir revizyondur ve daha iyi dosya IO performansıyla (20 kat daha hızlı) WSL 1’in avantajlarını sağlar. Önyüklemesi yavaş, kaynak yükü büyük ve tamamen yalıtılmış olan geleneksel VM’e benzemez.</p>
-
-<p>Windows makinenizde WSL 2’yi açalım!</p>
-
-<h2 id="wsl-2yi-yükleyin">WSL 2’yi Yükleyin</h2>
-
-<h3 id="basitleştirilmiş-kurulum-windows-11windows-10-sürüm-2004-veya-üzeri">Basitleştirilmiş Kurulum (Windows 11/Windows 10 sürüm 2004 veya üzeri)</h3>
-
-<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve wsl –install komutunu çalıştırın, yeniden başlattıktan sonra WSL’yi kullanmaya hazır olacaksınız.</p>
-
-<p>Komut Windows 10’da mevcut değilse aşağıdaki manuel kurulumu deneyin. Alternatif olarak daha fazla ayrıntı için KB5004296’yı arayabilirsiniz.</p>
-
-<h3 id="manuel-kurulum-windows-10-build-18362-veya-üzeri-home-edition-dahil">Manuel Kurulum (Windows 10 Build 18362 veya üzeri, Home Edition dahil)</h3>
-
-<p><strong>1. WSL’yi etkinleştirin</strong></p>
-
-<p>Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki komutu çalıştırın.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
-</code></pre></div></div>
-
-<p>DISM hakkında daha fazla bilgi için <a href="https://learn.microsoft.com/en-us/windows-hardware/manufacture/desktop/what-is-dism?view=windows-11">buraya</a> tıklayın.</p>
-
-<p><strong>2. Sanal Makine özelliğini etkinleştirin</strong></p>
-
-<p>WSL 2 için sanallaştırma yetenekleri hala gereklidir. Yönetici ayrıcalıklarına sahip bir komut penceresi açın ve ardından aşağıdaki çalıştırın.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
-</code></pre></div></div>
-
-<p><strong>3. Linux çekirdeği güncelleme paketini indirin</strong></p>
-
-<p><a href="https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi">wsl_update_x64.msi</a> paketini indirin ve yükleyin. Daha sonra bilgisayarınızı yeniden başlatın.</p>
-
-<p><strong>4. WSL 2’yi varsayılan sürümünüz olarak ayarlayın</strong></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>wsl --set-default-version 2
-</code></pre></div></div>
-
-<p><strong>5. Ubuntu’yu (veya seçtiğiniz Linux dağıtımını) yükleyin</strong></p>
-
-<ul>
-  <li>Microsoft Mağazasını açın ve ardından Ubuntu’yu arayın ve seçin.</li>
-  <li>Dağıtım sayfasından “Al”ı ve ardından “Yükle”yi seçin.</li>
-  <li>Hazır olduğunda “Başlat”a tıklayın.</li>
-  <li>Ubuntu için kullanıcı adınızı ve şifrenizi oluşturun.</li>
-</ul>
-
-<p><strong>6. Kurulumunuzu doğrulamak için wsl –list –verbose komutunu kullanın.</strong></p>
-
-<p><img src="/assets/images/2024/02/wsl-list-verbose.png" alt="wsl --list --verbose" title="wsl --list --verbose" class="img-fluid" /></p>
-
-<p>Herhangi bir sorunla karşılaşırsanız <a href="https://docs.microsoft.com/en-my/windows/wsl/install-win10#troubleshooting-installation">buradaki</a> sorun giderme ipuçlarına başvurabilirsiniz.</p>
-
-<h2 id="dockerı-yükleyin">Docker’ı Yükleyin</h2>
-
-<p><strong>1. İndirin</strong></p>
-
-<p>Docker <a href="https://docs.docker.com/desktop/install/windows-install/">Desktop Stable</a> sürümünü indirin.</p>
-
-<p><strong>2. Kurulum</strong></p>
-
-<p>Docker Masaüstünü kurmak için kurulum sihirbazını takip edin. WSL 2’niz düzgün yapılandırılmışsa kurulum sırasında WSL 2’yi etkinleştirmeniz istenecektir.</p>
-
-<p><img src="/assets/images/2024/02/docker-use-wsl2-based-engine.png" alt="Docker WSL2 engine kullanıyor" title="Docker WSL2 engine kullanıyor" class="img-fluid" /></p>
-
-<p><strong>3. WSL Entegrasyonunu Yapılandırın</strong></p>
-
-<p>Doğru Linux dağıtımlarını açtığınızdan emin olun.</p>
-
-<p><img src="/assets/images/2024/02/docker-wsl-integration-settings.png" alt="Docker WSL entegrasyon ayarları" title="Docker WSL entegrasyon ayarları" class="img-fluid" /></p>
-
-<h2 id="haydi-yelken-açalım">Haydi Yelken Açalım</h2>
-
-<p>Windows Terminalini başlatın ve wsl’yi girin.</p>
-
-<p><img src="/assets/images/2024/02/terminal-wsl-command.png" alt="Terminal wsl komutu" title="Terminal wsl komutu" class="img-fluid" /></p>
-
-<p>İşte püf noktası… Yolun, Windows kullanıcı dizininiz olduğunu fark edebilirsiniz.</p>
-
-<p>Resmi Microsoft WSL belgelerinde <a href="https://learn.microsoft.com/en-us/windows/wsl/compare-versions#comparing-features">WSL özellikleri</a> karşılaştırıldı. WSL 2 mimarisi, işletim sistemi dosya sistemlerindeki performans dışında, WSL 1’den birkaç açıdan daha iyi performans gösterir.</p>
-
-<p><img src="/assets/images/2024/02/wsl-comparing-features.png" alt="WSL özelliklerinin karşılaştırılması" title="WSL özelliklerinin karşılaştırılması" class="img-fluid" /></p>
-
-<p>cd ~ komutunu kullanarak Linux ana dizininize gidebiliriz.</p>
-
-<p>Aşağıdaki komutu kullanarak test-project adında yeni bir Laravel projesi oluşturalım:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s https://laravel.build/test-project | bash
-</code></pre></div></div>
-
-<p>Daha sonra kurulumu bekleyin.</p>
-
-<p><img src="/assets/images/2024/02/wsl-laravel-installation.png" alt="WSL Laravel kurulumu" title="WSL Laravel kurulumu" class="img-fluid" /></p>
-
-<p>WSL storage’in gerçek konumu (vhdx formatında) şu adreste bulunur:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>C:\Users\user_name\AppData\Local\Packages\
-CanonicalGroupLimited.UbuntuonWindows_79rhkp1fndgsc\LocalState
-</code></pre></div></div>
-
-<p>Artık cd test-project ile dizine girebilir ve Sail’i başlatabiliriz!</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./vendor/bin/sail up
-</code></pre></div></div>
-
-<p>Sail’i ilk kez çalıştırdığınızda, docker imajlarını indirmek ve konteynerinizi oluşturmak biraz zaman alır ancak bir sonraki çalıştırma için çok hızlı olacaktır.</p>
-
-<p>Herhangi bir sorunla karşılaşırsanız suçlu Antivirüs yazılımınız olabilir. Lütfen “C:\ProgramData\DockerDesktop\vm-data\” yolunu hariç tutun.</p>
-
-<p><img src="/assets/images/2024/02/container-up-and-running.png" alt="Docker container çalışıyor" title="Docker container çalışıyor" class="img-fluid" /></p>
-
-<p>Container başlatıldıktan sonra yepyeni Laravel projenize erişmek için http://localhost adresine gidebilirsiniz.</p>
-
-<h3 id="sail-stackinizi-seçin">Sail Stack’inizi Seçin</h3>
-
-<p>Varsayılan stack mysql, redis, meilisearch, mailhog ve selenium’u içeriyor. Mevcut servisler arasında mysql, pgsql, mariadb, redis, memcached, meilisearch, selenium ve mailhog bulunmaktadır.</p>
-
-<p>Query kullanarak favori stack’inizi seçebilirsiniz:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s "https://laravel.build/example-app?with=mysql,redis" | bash
-</code></pre></div></div>
-
-<p>docker-compose.yml dosyanız buna göre yapılandıracaktır.</p>
-
-<h3 id="günlük-sail-rutini">Günlük Sail Rutini</h3>
-
-<p><strong>Sail’i detached modda başlatın</strong></p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./vendor/bin/sail up -d
-</code></pre></div></div>
-
-<p><strong>Sail’i durdurun</strong></p>
-
-<p>“Detached” modu kullanmıyorsanız Control+C, aksi halde,</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>./vendor/bin/sail down
-</code></pre></div></div>
-
-<p><strong>Takma ad</strong></p>
-
-<p>Uzun bir yol adı yazmak yerine, sail’e doğrudan ulaşmanıza olanak tanıyan bir Bash takma adı yapılandırın.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>alias sail='bash vendor/bin/sail'
-</code></pre></div></div>
-
-<p>Bir takma ad oluşturabilir ve takma adı kalıcı olarak .bashrc dosyanıza kaydedebilirsiniz. nano ~/.bashrc komutunu kullanıp daha sonra alt tarafa alias sail=’bash vendor/bin/sail’ ekleyip çalıştırabilirsiniz.</p>
-
-<h2 id="kodlamaya-başlayın">Kodlamaya Başlayın</h2>
-
-<p><strong>Visual Studio Code</strong></p>
-
-<p><a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">Remote-WSL extension</a> yükleyin ve proje klasöründe olduğunuzdan emin olun.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd ~/test-project/
-</code></pre></div></div>
-
-<p>Sonra aşağıdaki kodu çalıştırın.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>code .
-</code></pre></div></div>
-
-<p>VS Code’un başlatıldığını ve proje klasörünüzdeki dosyaları görebilmeniz gerekir.</p>
-
-<p><img src="/assets/images/2024/02/vs-code-explorer.png" alt="VS Code Explorer" title="VS Code Explorer" class="img-fluid" /></p>
-
-<p>Artık http://localhost adresinde kodlamaya başlayabilir ve değişikliklerinizi izleyebilirsiniz.</p>
-
-<p><strong>PhpStorm</strong></p>
-
-<p>Projeyi \wsl$\Ubuntu\home&lt;user&gt;\test-project kullanarak açabilirsiniz.</p>
-
-<p><strong>İpucu:</strong> sail artisan <command /> komutunu kullanarak artisan komutunu çağırabilirsiniz.</p>
-
-<p>Okuduğunuz için teşekkürler. İyi kodlamalar!</p>
-
-<p><strong>Kaynak:</strong> https://blog.devgenius.io/kickstart-your-laravel-web-app-using-laravel-sail-30276265e588</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel geliştirme ortamında Homestead VirtualBox’a aşina olabilirsiniz. Ancak, bu geleneksel sanal makine, gerçek donanım kaynaklarınıza erişmeden önce ekstra bir ek yük katmanıyla birlikte gelir.]]></summary></entry><entry><title type="html">Nginx ve PHP-FPM’in Gizemini Çözmek</title><link href="http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html" rel="alternate" type="text/html" title="Nginx ve PHP-FPM’in Gizemini Çözmek" /><published>2024-02-11T00:00:00+03:00</published><updated>2024-02-11T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek</id><content type="html" xml:base="http://localhost:4000/2024/02/11/nginx-ve-php-fpm-in-gizemini-cozmek.html"><![CDATA[<p>Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.</p>
-
-<p><strong>Not:</strong> Hem Nginx hem de PHP-FPM için, uygulamanızın performansını artırmanıza yardımcı olabilecek, bu yazıda ele alınmayan daha birçok yapılandırma seçeneği vardır.</p>
-
-<h2 id="php-web-mimarisi">PHP Web Mimarisi</h2>
-
-<p>PHP çekirdeği, local environment’ta çalışırken geliştirme amacıyla kullanabileceğiniz yerleşik bir sunucu içermesine rağmen, tek seferde tek bir istek yürütmesini sınırlayan tek iş parçacıklı yapısı nedeniyle production ortamları için uygun değildir. Diğerlerinin yanı sıra güvenlik, önbelleğe alma, ölçekleme vb. ile ilgili yeteneklerden yoksundur. Sonuç olarak PHP, birden çok işlemi yönetmek için ek bir bileşen olan PHP-FPM’e ve nihayetinde web uygulamalarını verimli bir şekilde sunmak için Nginx’e güvenir.</p>
-
-<p><img src="/assets/images/2024/02/php-web-architecture.jpg" alt="PHP web mimarisi" title="PHP web mimarisi" class="img-fluid" /></p>
-
-<h2 id="php-fpm-fastcgi-process-manager">PHP-FPM: FastCGI Process Manager</h2>
-
-<p>PHP-FPM veya “PHP FastCGI Process Manager”, PHP için gelişmiş, yüksek performanslı bir FastCGI proses yöneticisidir. Aynı anda birden çok isteği işleyebilen birden çok worker oluşturarak PHP’nin yerleşik sunucusunun eşzamanlılık sorununu çözer. Ancak PHP-FPM, gelen HTTP trafiğini doğrudan yönetemez ve bu da bir web sunucusunun ters proxy gibi davranmasını gerektirir.</p>
-
-<h2 id="nginx-yüksek-performanslı-web-sunucusu-ve-ters-proxy">Nginx: Yüksek Performanslı Web Sunucusu ve Ters Proxy</h2>
-
-<p>Nginx, gelen HTTP trafiğini yönetmede mükemmel olan güçlü, açık kaynaklı bir web sunucusudur. client isteklerini PHP-FPM’ye ileten ve işlenen yanıtları client’lara geri döndüren bir ters proxy işlevi görür. Ek olarak Nginx, web uygulamalarınızın genel performansını ve güvenilirliğini artıran yük dengeleme, SSL termination ve statik dosyalar sunma gibi çeşitli avantajlar sağlar.</p>
-
-<p>Sonuç olarak, Nginx ve PHP-FPM arasındaki ilişkiyi anlamak, PHP uygulamanızın mimarisi ve dağıtımı hakkında bilinçli kararlar vermenizi sağlayacaktır. Bu güçlü bileşenlerden yararlanarak, uygulamalarınızın zorlu production ortamlarında bile verimli ve güvenilir bir şekilde çalışmasını sağlayabilirsiniz.</p>
-
-<h2 id="php-fpmi-ayarlamak">PHP-FPM’i Ayarlamak</h2>
-
-<h3 id="process-manager-stratejileri-on-demand-statik-ve-dinamik">Process Manager Stratejileri: On-Demand, Statik ve Dinamik</h3>
-
-<p>Her bir stratejiye dalmadan önce, process manager, worker ve bir isteğin (request) yaşam döngüsü ile ilgili bazı temel kavramları anlamak önemlidir.</p>
-
-<p>Bir isteğin yaşam döngüsü, web sunucusuna (Nginx) ulaştığında başlar. Web sunucusu, isteği işlemek için uygun bir worker atayan PHP-FPM’e iletir. Worker, PHP scriptini yürüterek isteği işler ve web sunucusu aracılığıyla client’a döndürülen bir yanıt oluşturur. Worker farklı durumlarda olabilir:</p>
-
-<ul>
-  <li><strong>Idle:</strong> Bu durumda, worker herhangi bir isteği işlemez ve yeni isteklerin gelmesini bekler. Worker yeni görevler almaya hazırdır.</li>
-  <li><strong>Active:</strong> Bu durumda worker, istekle ilişkili PHP scriptini yürütür.</li>
-  <li><strong>Terminated:</strong> Worker, process manager stratejisine ve yapılandırma ayarlarına göre sonlandırılabilir. Sunucunuzun kaynak kullanımını optimize etmek için PHP-FPM yapılandırma dosyasında ayarlayabileceğiniz bazı temel direktiflere göz atın:
-    <ul>
-      <li><strong>process_idle_timeout:</strong> on-demand ve dinamik stratejilerde, boşta kalan worker belirli bir boşta kalma zaman aşımından sonra sonlandırılır.</li>
-      <li><strong>max_requests:</strong> maksimum istek sayısına ulaşıldığında worker değiştirilir; bu, potansiyel bellek sızıntılarını önlemenin anahtarıdır.</li>
-      <li><strong>request_terminate_timeout:</strong> aktif bir worker, talebi işlemek için maksimum süreye ulaşılırsa process manager tarafından sonlandırılabilir; bu, her zaman zamanında yanıt veren bir sistem sağlamak için özellikle önemlidir.</li>
-      <li><strong>php_value[memory_limit]:</strong> worker’ın ayırabileceği maksimum bellek miktarını belirler. Bellek kullanımını sınırlandırarak, tek bir worker veya havuzun tamamının mevcut tüm sistem kaynaklarını tüketmesini ve sunucunuzun genel performansını etkilemesini önleyebilirsiniz.</li>
-    </ul>
-  </li>
-</ul>
-
-<p>Process manager, worker havuzunu kontrol etmekten sorumludur. Seçilen strateji ve yapılandırma ayarlarına göre bu worker’ların nasıl oluşturulacağını, sürdürüleceğini ve sonlandırılacağını belirler. Aynı anda birden çok istek geldiğinde, process manager bu istekleri uygun worker’lara dağıtarak sunucunun gelen trafiği işleme kapasitesini artırır.</p>
-
-<p>Process manager stratejisi, CPU, bellek ve bant genişliği gibi sunucu kaynaklarının potansiyel kullanımını etkiler. Yanıt verebilirlik ve verimlilik arasında dengeyi korurken mevcut kaynakları en iyi şekilde kullanan bir strateji seçmek çok önemlidir.</p>
-
-<p>Şimdi mevcut farklı stratejilerin her birini inceleyelim:</p>
-
-<h3 id="on-demand-i̇stek-üzerine-strateji">On-Demand (İstek Üzerine) Strateji</h3>
-
-<p>On-demand strateji, boş bir worker havuzuyla başlar ve yalnızca ihtiyaç duyulduğunda worker prosesleri oluşturur. İstek işlendikten sonra boştaki worker sonlandırılır.</p>
-
-<p><img src="/assets/images/2024/02/on-demand-strategy.jpg" alt="On-Demand Strateji" title="On-Demand Strateji" class="img-fluid" /></p>
-
-<p><strong>Yapılandırma</strong></p>
-
-<ul>
-  <li><strong>pm:</strong> On-demand stratejisini etkinleştirmek için bu parametreyi ondemand olarak ayarlayın.</li>
-  <li><strong>pm.max_children:</strong> Oluşturulabilecek maksimum worker proses sayısını tanımlar. PHP-FPM, bu sınırdan daha fazla worker üretmeyecek.</li>
-  <li><strong>pm.process_idle_timeout:</strong> Boşta kalan worker’ların sonlandırılacağı saniye cinsinden süreyi belirtir.</li>
-</ul>
-
-<p>On-demand strateji kaynak açısından verimli olsa da worker proseslerini oluşturmak ve sonlandırmak için gereken süre nedeniyle ek gecikmeye neden olabilir.</p>
-
-<h3 id="statik-strateji">Statik Strateji</h3>
-
-<p>Statik strateji, sabit sayıda worker ile başlar ve sürdürerek, gelen istekleri işlemeye her zaman hazır olan sabit bir worker havuzu sağlar.</p>
-
-<p><img src="/assets/images/2024/02/static-strategy.jpg" alt="Statik Strateji" title="Statik Strateji" class="img-fluid" /></p>
-
-<p><strong>Yapılandırma</strong></p>
-
-<ul>
-  <li><strong>pm:</strong> Statik stratejiyi etkinleştirmek için bu parametreyi static olarak ayarlayın.</li>
-  <li><strong>pm.max_children:</strong> Sürdürülecek sabit worker sayısını belirler.</li>
-</ul>
-
-<p>Statik strateji, tutarlı performans ve öngörülebilir kaynak tahsisi sağlar. Boştaki prosesler bellek ve CPU açısından çok düşük kaynak tükettiği için kaynak israfı marjinaldir. Sunucunun performansı, her zaman hazır olan sabit sayıda worker nedeniyle hem yüksek hem de düşük trafik senaryolarında daha kararlı ve öngörülebilirdir.</p>
-
-<p>max_requests yönergesi, statik stratejide worker proseslerin düzenli olarak yeniden başlatılmasını sağlamak ve dolayısıyla olası bellek sızıntılarını önlemek için gereklidir.</p>
-
-<h3 id="dinamik-strateji">Dinamik Strateji</h3>
-
-<p>Dinamik strateji, on-demand ve statik stratejiler arasında bir denge sağlar. Minimum boş worker sayısını belirler ve talebe göre havuz boyutunu ayarlar. Kaynak kullanımı ve yanıt verebilirlik arasında bir uzlaşma sunar.</p>
-
-<p><img src="/assets/images/2024/02/dynamic-strategy.jpg" alt="Dinamik Strateji" title="Dinamik Strateji" class="img-fluid" /></p>
-
-<p><strong>Yapılandırma</strong></p>
-
-<ul>
-  <li><strong>pm:</strong> Dinamik stratejiyi etkinleştirmek için bu parametreyi dynamic olarak ayarlayın.</li>
-  <li><strong>pm.start_servers:</strong> Başlangıçta oluşturulacak worker proses ilk sayısını belirler.</li>
-  <li><strong>pm.max_children:</strong> Oluşturulabilecek maksimum worker proses sayısını tanımlar.</li>
-  <li><strong>pm.min_spare_servers:</strong> Her zaman sürdürülmesi gereken minimum boş worker sayısını ayarlar. Boştaki worker sayısı bu değerin altına düşerse, PHP-FPM ek prosesler oluşturacaktır.</li>
-  <li><strong>pm.max_spare_servers:</strong> İzin verilen maksimum boş worker proses sayısını belirtir. Boştaki worker sayısı bu değeri aşarsa, PHP-FPM fazla işlemleri sonlandırır.</li>
-  <li><strong>pm.process_idle_timeout:</strong> Boştaki worker proseslerin ne kadar süre sonra sonlandırılacağını belirtir. Bu, kaynak kullanımını ve yanıt verebilirliği dengeleyerek optimum sayıda boş proses’in sürdürülmesine yardımcı olur.</li>
-</ul>
-
-<p>Dinamik strateji duruma göre uyarlanabilir ve çok çeşitli senaryolar için uygun olabilir. Ancak, yapılandırma parametrelerinde ince ayar yapılması optimum performans için çok önemlidir ve hataya açık olabilir. Boştaki worker sayısını sistem kaynaklarına ve trafik seviyelerine göre dengelemek önemlidir, ancak trafiğin yoğun olduğu zamanlarda yanlış veya optimal olmayan bir yapılandırma nedeniyle olumsuz durumlarla karşılaşabilirsiniz. Bu gibi durumlarda, statik strateji daha istikrarlı ve öngörülebilir bir performans sağladığı için daha uygun bir seçim olabilir.</p>
-
-<h2 id="nginxi-ayarlamak">Nginx’i Ayarlamak</h2>
-
-<p>Nginx’in HTTP isteklerini nasıl ele aldığını, worker ve bağlantıları (connection) nasıl yönettiğini anlamak, web sunucunuzun performansını optimize etmek için çok önemlidir.</p>
-
-<p>Nginx, client’lardan gelen HTTP isteklerini işler, bu istekleri PHP-FPM’ye iletir ve uygun yanıtları client’a geri döndürür. Bu istekleri verimli bir şekilde yönetmek için Nginx, worker ve bağlantıları kullanır.</p>
-
-<p>Nginx’teki bir worker, gelen bağlantıları ve istekleri işlemekten sorumlu ayrı bir prosestir. Her worker proses, birden çok bağlantıyı yöneterek, Nginx’in nispeten az sayıda worker proses ile aynı anda birçok isteği işlemesine olanak tanır.</p>
-
-<p>Nginx’teki bir bağlantı, sunucuya bireysel bir client bağlantısını ifade eder. Her bağlantı, web uygulamanıza istekte bulunan tek bir client’ı temsil eder. Nginx, olay odaklı mimarisi sayesinde çok sayıda bağlantıyı verimli bir şekilde işlemek için tasarlanmıştır.</p>
-
-<h3 id="worker-process">Worker Process</h3>
-
-<p>worker_processes yönergesi bağlantı havuzunu işlemek için oluşturulacak Nginx worker proseslerinin sayısını belirtir. Genel olarak, bu değeri sunucunuzda bulunan CPU çekirdeği sayısına eşit olarak ayarlamanız önerilir. Bu ayar, mevcut CPU kaynaklarının kullanımını en üst düzeye çıkararak en iyi performansı sağlar. Değerin otomatik olarak ayarlanması, Nginx’in mevcut CPU çekirdeği sayısına göre en uygun sayıda worker proses otomatik olarak algılamasına ve kullanmasına olanak tanır.</p>
-
-<h3 id="worker-connection">Worker Connection</h3>
-
-<p>worker_connections yönergesi, her bir worker proses tarafından yönetilebilecek maksimum eşzamanlı connection sayısını belirler. Bu değer, sunucunuzun aynı anda hizmet verebileceği toplam client sayısını doğrudan etkiler. Değeri ayarlamak için sunucunuzun kapasitesini ve beklenen eşzamanlı bağlantı sayısını göz önünde bulundurun.</p>
-
-<p>Nginx’te worker ve connection’ların rollerini anlayarak ve worker_processes ile worker_connections yönergelerinde ince ayar yaparak web sunucunuzun performansını optimize edebilirsiniz. Nginx’in performansı ve sistem davranışını geliştirmek için bu yazıda ele alınmayan ancak web uygulamaları için çok önemli olan birçok başka yeteneğe sahip olduğunu unutmayın — bu konuşmada Nginx optimizasyon teknikleri hakkında daha fazla bilgi edinebilirsiniz.</p>
-
-<h2 id="i̇zleme-ve-sorun-giderme">İzleme ve Sorun Giderme</h2>
-
-<p>PHP uygulamalarınızın performansını ve kararlılığını korumak için, sunucuda ortaya çıkabilecek sorunları izlemek ve gidermek çok önemlidir.</p>
-
-<p><strong>PHP-FPM’i İzlemek</strong></p>
-
-<p>PHP-FPM, havuzlarınızın performansını ve sağlığını izlemenize yardımcı olabilecek yerleşik bir status sayfası sağlar. PHP-FPM yapılandırmanızda status sayfasını etkinleştirerek, PHP-FPM havuzlarınız hakkında aktif proses sayısı, boştaki proses ve kuyruktaki istekler gibi gerçek zamanlı bilgilere erişebilirsiniz.</p>
-
-<p><strong>Nginx’i İzlemek</strong></p>
-
-<p>Nginx ayrıca, Nginx sunucunuzun performansını ve sağlığını izlemenize yardımcı olabilecek yerleşik bir status modülü içerir. Nginx yapılandırmanızda status modülünü etkinleştirerek, Nginx sunucunuz hakkında aktif bağlantı sayısı, kabul edilen bağlantılar ve işlenen istekler gibi gerçek zamanlı bilgilere erişebilirsiniz.</p>
-
-<h3 id="sorun-giderme">Sorun giderme</h3>
-
-<p>Sorunlar ortaya çıktığında, ilgili bilgileri nerede arayacağınızı bilmek önemlidir. Hem PHP-FPM hem de Nginx, sorunları belirlemenize ve çözmenize yardımcı olabilecek log dosyaları oluşturur.</p>
-
-<p><strong>PHP-FPM Log Dosyaları</strong></p>
-
-<p>PHP-FPM log dosyaları, PHP uygulamalarınızla ilgili hatalar ve uyarılar hakkında değerli bilgiler içerir. PHP-FPM logları varsayılan olarak /var/log/php-fpm dizininde bulunabilir veya PHP-FPM yapılandırma dosyanızda belirtilebilir. Bu logları incelemek, PHP kodunuz veya yapılandırma ayarlarınızla ilgili sorunları belirlemenize yardımcı olabilir.</p>
-
-<p><strong>Nginx Log Dosyaları</strong></p>
-
-<p>Erişim ve hata logları dahil olmak üzere Nginx log dosyaları, /var/log/nginx dizininde bulunabilir veya Nginx yapılandırma dosyanızda belirtilebilir. Erişim logları, gelen tüm istekleri kaydederken hata logları, Nginx sunucusuyla ilgili sorunlar hakkında bilgiler içerir. Bu logları analiz etmek, sunucu yapılandırmanız, kaynak kullanımınız veya performans darboğazlarınız ile ilgili sorunları belirlemenize yardımcı olabilir.</p>
-
-<p>PHP-FPM ve Nginx yapılandırmalarınızı izleyerek ve sorun gidererek, PHP uygulamalarınızın sorunsuz çalışmasını sağlayabilir ve yüksek performanslı bir sunucu ortamı sağlayabilirsiniz.</p>
-
-<h2 id="sonuç">Sonuç</h2>
-
-<p>Bir geliştirici olarak, kodunuzun nasıl yürütüldüğü ve production ortamında ortaya çıkan zorluklar hakkında belirli bir düzeyde farkındalığa sahip olmak önemlidir. Yapılandırmaları ve yönetim stratejileriyle birlikte Nginx ve PHP-FPM’nin rollerini anlamak, web uygulamalarınızı optimize etmenize, kararlılık, yanıt verebilirlik ve verimlilik sağlamanıza yardımcı olabilir.</p>
-
-<p>Sunucu tarafı bileşenlerinin derinliklerine inenerek ve nasıl ince ayar yapacağınızı öğrenerek, kullanıcılarınız için daha iyi bir deneyim oluşturabilir ve yüksek performanslı bir sunucu ortamı sağlayabilirsiniz. Bu bilgi, yalnızca olası sorunları daha etkin bir şekilde ele almanıza olanak sağlamakla kalmaz, aynı zamanda Ürün ve SRE ekipleri arasında işbirliğini teşvik eder ve sonuç olarak daha sağlam ve ölçeklenebilir uygulamalara yol açar.</p>
-
-<p><strong>Kaynak:</strong> https://medium.com/@mgonzalezbaile/demystifying-nginx-and-php-fpm-for-php-developers-bba548dd38f9</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Kodlarının sunucu tarafında yürütülmesi söz konusu olduğunda, geliştiriciler genellikle farklı düzeylerde deneyim ve bilgiye sahiptir. Bunun nedeni, geliştiricilerin genellikle zamanlarını yeni özellikleri kodlamaya odaklarken, uygulamaları dağıtma, sunucuları kurma ve sunucuların yapılandırmasını ayarlama ile ilgili görevlerin genellikle SRE (Site Güvenilirliği Mühendisliği)’ler tarafından yapılmasıdır. Geçmişiniz ne olursa olsun, Nginx ve PHP-FPM’i içeren standart PHP Web Mimarisi hakkında daha derin bir anlayış kazanmak faydalı olabilir. Bu blog yazısında, uygulamalarınızı hayata geçiren bu sunucu tarafı bileşenleri inceleyeceğiz ve maksimum performans için sisteminizde ince ayar yapmanızı sağlayabilecek bazı önemli yapılandırma parametrelerini gözden geçireceğiz.]]></summary></entry></feed>
+<p>Okuduğunuz için teşekkürler.</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.]]></summary></entry></feed>

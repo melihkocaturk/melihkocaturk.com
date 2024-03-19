@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang=" tr-TR" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Neden Laravel? - Melih Kocatürk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D81YCKRVTX"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D81YCKRVTX');
+</script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div class="container-fluid py-5">
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="d-flex flex-row">
+                <div class="p-2">
+                    <img src="/assets/images/avatar.jpg" alt="Melih Kocatürk" class="rounded-circle" width="60" height="60">
+                </div>
+                <div class="p-2">
+                    <h1 class="h4 mb-0">Melih Kocatürk</h1>
+                    Code Ninja
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    <main class="flex-shrink-0 mb-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Neden Laravel?</h1>
+            <p class="text-center text-uppercase mb-5">
+                <small class="text-muted">Melih Kocatürk / 18.03.2024</small>
+            </p>
+            <p><p>Dinamik web’in ilk günlerinde, web uygulaması yazmak bugün olduğundan çok daha farklı görünüyordu. O zaman geliştiriciler, yalnızca uygulamalarımızın benzersiz iş mantığı için değil, aynı zamanda sitelerde çok yaygın olan kullanıcı kimlik doğrulaması, input validation, veritabanı erişimi, templating vb. bileşenlerin her biri için kod yazmaktan sorumluydu.</p>
+
+<p>Bugün programcılar düzinelerce uygulama geliştirme framework’üne ve kolayca erişilebilen binlerce bileşene ve kütüphaneye sahiptir. Programcılar arasında yaygın bir nakarat, siz bir framework’ü öğrendiğiniz zaman, onu değiştirmek niyetiyle daha yeni (ve sözde daha iyi) üç framework’ün ortaya çıkmasıdır.</p>
+
+<p>“Sırf orada olduğu için” bir dağa tırmanmak geçerli bir gerekçe olabilir, ancak belirli bir framework kullanmayı seçmek için daha iyi nedenler vardır. Şu soruyu sormaya değer, neden framework? Daha spesifik olarak, neden Laravel?</p>
+
+<h2 id="neden-framework-kullanmalısınız">Neden Framework Kullanmalısınız?</h2>
+
+<p>PHP geliştiricileri için mevcut olan bireysel bileşenleri veya paketleri kullanmanın neden faydalı olduğunu görmek kolaydır. Paketlerde, iyi tanımlanmış bir işi olan yalıtılmış kod parçasının geliştirilmesinden ve sürdürülmesinden bir başkası sorumludur ve teoride o kişi, bu tek bileşen hakkında sizin sahip olabileceğinizden daha derin bir anlayışa sahiptir.</p>
+
+<p>Laravel ve Symfony, Lumen ve Slim gibi framework’ler, yapılandırma dosyaları, servis sağlayıcılar, öngörülen dizin yapıları ve uygulama ön yüklemeleri gibi özel framework “yapıştırıcısı” ile birlikte third-party bileşenlerin bir koleksiyonunu önceden paketler. Bu nedenle, genel olarak bir framework kullanmanın yararı, birinin yalnızca sizin için tek tek bileşenler hakkında değil, aynı zamanda bu bileşenlerin nasıl bir araya getirilmesi gerektiği konusunda da karar vermesidir.</p>
+
+<p>Diyelim ki bir framework’ün avantajı olmadan yeni bir web uygulaması başlattınız. Nereden başlayacaksınız? Muhtemelen HTTP request’lerini yönlendireceksiniz, bu nedenle şimdi mevcut tüm HTTP request ve response kütüphanelerini değerlendirmeniz ve birini seçmeniz gerekir. Daha sonra bir router seçmeniz gerekecek. Ve muhtemelen bir tür route yapılandırma dosyası oluşturmanız gerekecek. Hangi söz dizimini kullanmalı? Nereye gitmeli? Peki ya controller? Nerede tutulacak ve nasıl yüklenecekler? Controller ve bağımlılıklarını çözmek için muhtemelen dependency injection container’a ihtiyacınız olacak. Fakat hangisi?</p>
+
+<p>Ayrıca, tüm bu soruları yanıtlamak için zaman ayırırsanız ve uygulamanızı başarıyla oluşturursanız, bir sonraki geliştirici üzerindeki etkisi ne olur? Dört veya bir düzine özel framework tabanlı uygulamanız olduğunda ve controller’ların nerede olduğunu veya router sözdiziminin ne olduğunu hatırlamanız gerektiğinde ne olur?</p>
+
+<p><strong>Tutarlılık ve Esneklik</strong></p>
+
+<p>Framework’ler, “Burada hangi bileşeni kullanmalıyız?” sorusuna dikkatle düşünülmüş bir yanıt vererek bu sorunu ele alır ve seçilen belirli bileşenlerin birlikte iyi çalışmasını sağlar. Ek olarak, framework’ler, projede yeni olan bir geliştiricinin anlaması gereken kod miktarını azaltan kurallar sağlar; örneğin, bir Laravel projesinde router’ın nasıl çalıştığını anlarsanız, tüm Laravel projelerinde nasıl çalıştığını anlarsınız.</p>
+
+<p>Birisi her yeni proje için kendi framework’ünüzü oluşturmanızı tavsiye ettiğinde, gerçekte savundukları şey, uygulamanızın temeline neyin girip neyin girmediğini kontrol etme yeteneğidir. Bu, en iyi framework’lerin size yalnızca sağlam bir temel sağlamakla kalmayıp, aynı zamanda ihtiyacınıza uygun olarak özelleştirme özgürlüğü vereceği anlamına gelir. Ve bu, size kitabın geri kalanında göstereceğim gibi, Laravel’i bu kadar özel yapan şeyin bir parçasıdır.</p>
+
+<h2 id="laraveli-bu-kadar-özel-yapan-nedir">Laravel’i Bu Kadar Özel Yapan Nedir?</h2>
+
+<p>Peki Laravel’i farklı kılan nedir? Neden herhangi bir zamanda birden fazla PHP çerçevesine sahip olmalıyız? Zaten hepsi Symfony’nin bileşenlerini kullanıyor, değil mi? Laravel’i “harekete geçiren” şeylerden biraz bahsedelim.</p>
+
+<p><strong>Laravel’in Felsefesi</strong></p>
+
+<p>Değerleri anlamak için yalnızca Laravel marketing materyallerini ve README’leri okumanız yeterlidir. Taylor, “Illuminate” ve “Spark” gibi ışıkla ilgili sözcükler kullanır. Bir de şunlar var:  “Artisans”, “Elegant”. Ayrıca bunlar: “Breath of fresh air” “Fresh start”. Ve son olarak: “Rapid” “Warp speed”.</p>
+
+<p>Framework’ün en güçlü şekilde iletilen iki değeri, geliştirici hızını ve geliştirici mutluluğunu artırmaktır. Taylor, “Artisan” dilini kasıtlı olarak daha faydacı değerlere zıt olarak tanımladı. Bu tür bir düşüncenin doğuşunu, StackExchange’teki 2011 tarihli sorusunda görebilirsiniz: “Bazen kodun ‘güzel görünmesini’ sağlamak için anlamsız miktarda zaman (saatler) harcıyorum” - sadece kodun kendisine bakma konusunda daha iyi bir deneyim uğruna. Ayrıca geliştiricilerin fikirlerini hayata geçirmelerini kolaylaştırmanın ve hızlandırmanın, harika ürünler yaratmanın önündeki gereksiz engelleri ortadan kaldırmanın değerinden sık sık bahseder.</p>
+
+<p>Laravel, özünde, geliştiricileri donatmak ve harekete geçirmek ile ilgilidir. Amacı, geliştiricilerin hızlı bir şekilde öğrenmesine, başlamasına, geliştirmesine, ve basit, anlaşılır, kalıcı kodlar yazmalarına yardımcı olmaktır.</p>
+
+<p>Geliştiricileri hedefleme kavramı, Laravel materyallerinde açıktır. Dökümantasyonda “Happy developers make the best code” yazıyor. “Developer happiness from download to deploy” bir süredir resmi olmayan sloganıydı. Tabii ki, herhangi bir araç veya framework, geliştiricilerin mutlu olmasını istediğini söyleyecektir. Ancak geliştirici mutluluğunun ikincil değil birincil kaygı olarak görülmesi Laravel’in tarzı ve karar verme süreci üzerinde büyük bir etkiye sahip. Diğer framework’lerin, birincil hedef olarak mimari saflığı veya enterprise geliştirme ekiplerinin amaç ve değerleriyle uyumluluğu hedefleyebildiği durumlarda, Laravel’in birincil odak noktası bireysel geliştiriciye hizmet etmektir. Bu, Laravel’de mimari olarak saf veya enterprise kullanıma hazır uygulamalar yazamayacağınız anlamına gelmez, ancak kod tabanınızın okunabilirliği ve anlaşılırlığı pahasına olmak zorunda da değildir.</p>
+
+<p><strong>Laravel Geliştirici Mutluluğunu Nasıl Sağlar?</strong></p>
+
+<p>Geliştiricileri mutlu etmek istediğinizi söylemek bir şeydir. Bunu yapmak başka bir şeydir ve bir framework’te geliştiricileri mutsuz etme ve onları mutlu etme olasılığı en yüksek olanı sorgulamanızı gerektirir. Laravel’in geliştiricilerin hayatlarını kolaylaştırmaya çalıştığı birkaç yol vardır.</p>
+
+<p>Birincisi, Laravel hızlı bir uygulama geliştirme framework’üdür. Bu, kolay bir öğrenme eğrisine ve yeni bir uygulama başlatma ile onu yayınlama arasındaki adımları en aza indirmeye odaklandığı anlamına gelir. Veritabanı etkileşimlerinden kimlik doğrulamaya, kuyruklara, e-postaya ve önbelleğe almaya kadar web uygulamaları oluşturmadaki en yaygın görevlerin tümü, Laravel’in sağladığı bileşenler tarafından daha basit hale getirilir. Ancak Laravel’in bileşenleri kendi başlarına mükemmel değildir; tüm framework’te tutarlı bir API ve öngörülebilir yapılar sağlarlar. Bu, Laravel’de yeni bir şey denediğinizde, muhtemelen “… ve işe yarıyor” diyeceğiniz anlamına gelir.</p>
+
+<p>Bu da framework’ün kendisiyle bitmiyor. Laravel, uygulamalar için eksiksiz bir araç ekosistemi sağlar. Yerel geliştirme için Sail, Valet ve Homestead’e, sunucu yönetimi için Forge’a ve gelişmiş deployment için Envoyer ve Vapor’a sahipsiniz. Ayrıca bir dizi eklenti paketi mevcuttur: Ödemeler ve abonelikler için Cashier, WebSockets için Echo, arama için Scout, API kimlik doğrulaması için Sanctum ve Passport, frontend testi için Dusk, sosyal oturum açma için Socialite, kuyrukları izlemek için Horizon, admin panel oluşturmak için Nova ve SaaS’ınızı önyüklemek için Spark. Laravel, benzersiz bir şey yapabilmeleri için geliştiricilerden tekrarlayan işleri almaya çalışıyor.</p>
+
+<p>Daha sonra, Laravel “convention over configuration” a odaklanır - Laravel’in varsayılanlarını kullanmak istiyorsanız, tüm ayarlarınızı bildirmenizi gerektiren diğer framework’lere göre çok daha az iş yapmanız gerekeceği anlamına gelir. Laravel üzerinde inşa edilen projeler, diğer çoğu PHP framework’lerinde inşa edilen projelerden daha az zaman alır.</p>
+
+<p>Lavel ayrıca sadeliğe odaklanır. İsterseniz, Laravel ile dependency injection, Data Mapper pattern ve repository’lerini, Command Query Responsibility Segregation ve diğer her türden daha karmaşık pattern’i kullanmak mümkündür. Ancak diğer framework’ler, bu araçların ve yapıların her projede kullanılmasını önerebilirken, Laravel dökümantasyonu ve topluluğu, mümkün olan en basit uygulamayla başlamaya eğilimlidir - burada global bir fonksiyon, orada bir facade, şurada ActiveRecord. Bu, geliştiricilerin, karmaşık ortamlarda kullanışlılığı sınırlamadan ihtiyaçlarını çözmek için mümkün olan en basit uygulamayı oluşturmalarına olanak tanır.</p>
+
+<p>Laravel’in diğer PHP framework’lerinden ne kadar farklı olduğunun ilginç bir göstergesi, yaratıcısının ve topluluğunun Java’dan çok Ruby, Rails ve fonksiyonel programlama dillerine bağlı ve onlardan ilham almış olmasıdır. Modern PHP’de, PHP’nin Java benzeri yönlerini kucaklayan, ayrıntıya ve karmaşıklığa yönelmek için güçlü bir akım var. Ancak Laravel, dinamik ve basit kodlama uygulamalarını ve dil özelliklerini kucaklayarak diğer tarafta olma eğilimindedir.</p>
+
+<p><strong>Laravel Topluluğu</strong></p>
+
+<p>Laravel topluluğu ile ilk kez karşılaşıyorsanız, sabırsızlıkla bekleyeceğiniz özel bir şey var demektir. Laravel’in ayırt edici unsurlarından biri, büyümesine ve başarısına katkıda bulunan etrafını saran misafirperver, öğretici topluluktur. Jeffrey Way’in Laracasts video eğitimlerinden Laravel News’e, Slack, IRC ve Discord kanallarına, Blog yazarlarına, podcast’lere ve Laracon konferanslarına kadar Laravel, ilk günden beri etrafta olan zengin ve canlı bir topluluğa sahiptir. Ve bu bir tesadüf değil:</p>
+
+<p>Laravel’in en başından beri, tüm insanların kendilerini bir şeyin parçası gibi hissetmek istedikleri fikrine sahibim. Benzer düşünen insanlardan oluşan bir gruba ait olmayı ve kabul edilmeyi istemek doğal bir insan içgüdüsüdür. Dolayısıyla, kişiliği bir web framework’e enjekte ederek ve toplulukla gerçekten aktif olarak, bu tür bir duygu gelişebilir.</p>
+
+<p>– Taylor Otwell, Ürün ve Destek görüşmesi</p>
+
+<p>Taylor, Laravel’in ilk günlerinden itibaren başarılı bir açık kaynak projesinin iki şeye ihtiyacı olduğunu anlamıştı: iyi bir dokümantasyon ve sıcak bir topluluk. Ve bu iki şey artık Laravel’in ayırt edici özellikleri oldu.</p>
+
+<p>Nasıl çalışır</p>
+
+<p>Şimdiye kadar burada paylaştığım her şey tamamen soyuttu. Peki ya kodlar? Laravel ile  çalışmanın gerçekte nasıl olduğunu görebilmeniz için basit bir uygulamaya yapalım.</p>
+
+<p><strong>Örnek 1-1</strong>. routes/web.php içindeki “Hello, World”</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('/', function () {
+    return 'Hello, World!';
+});
+</code></pre></div></div>
+
+<p>Laravel uygulamasında yapabileceğiniz en basit eylem, bir rota tanımlamak ve birisi bu rotayı her ziyaret ettiğinde bir sonuç döndürmektir. Makinenizde yeni bir Laravel uygulaması başlatın, Örnek 1-1’deki rotayı tanımlayın ve ardından siteyi public dizininden çalıştırın, tam olarak işleyen bir “Hello, World” örneğine sahip olacaksınız.</p>
+
+<p>Örnek 1-2’de görebileceğiniz gibi, controller’a çok benziyor (test etmek isterseniz, controller oluşturmak için önce php artisan make:controller WelcomeController komutunu çalıştırın).</p>
+
+<p><strong>Örnek 1-2</strong>. Controller ile “Hello, World”</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: routes/web.php
+use App\Http\Controllers\WelcomeController;
+
+Route::get('/', [WelcomeController::class, 'index']);
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: app/Http/Controllers/WelcomeController.php
+namespace App\Http\Controllers;
+
+class WelcomeController extends Controller
+{
+    public function index()
+    {
+        return 'Hello, World!';
+    }
+}
+</code></pre></div></div>
+
+<p>Ve mesajını bir veritabanında saklıyorsanız, oldukça benzer görünecektir (Örnek 1-3’e bakın).</p>
+
+<p><strong>Örnek 1-3</strong>. Veritabanı erişimi ile “Hello, World”</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: routes/web.php
+use App\Greeting;
+
+Route::get('create-greeting', function () {
+    $greeting = new Greeting;
+    $greeting-&gt;body = 'Hello, World!';
+    $greeting-&gt;save();
+});
+
+Route::get('first-greeting', function () {
+    return Greeting::first()-&gt;body;
+});
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: app/Models/Greeting.php
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Greeting extends Model
+{
+    use HasFactory;
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: database/migrations/2023_03_12_192110_create_greetings_table.php
+use Illuminate\Database\Migrations\Migration;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Support\Facades\Schema;
+
+return new class extends Migration
+{
+    /**
+     * Run the migrations.
+     */
+    public function up(): void
+    {
+        Schema::create('greetings', function (Blueprint $table) {
+            $table-&gt;id();
+            $table-&gt;string('body');
+            $table-&gt;timestamps();
+        });
+    }
+    /**
+     * Reverse the migrations.
+     */
+    public function down(): void
+    {
+        Schema::dropIfExists('greetings');
+    }
+};
+</code></pre></div></div>
+
+<p>Örnek 1-3 biraz bunaltıcı olabilir ve eğer öyleyse, onu atlayın. Burada olup biten her şeyi sonraki bölümlerde öğreneceksiniz, ancak birkaç satır kodla migration ve modelleri ayarlayabileceğinizi ve veritabanından kayıtları çekebileceğinizi şimdiden görebilirsiniz. Bu kadar basit.</p>
+
+<h2 id="öyleyse-neden-laravel">Öyleyse Neden Laravel?</h2>
+
+<p>Çünkü Laravel, modern kodlama standartlarını kullanır, canlı bir toplulukla çevrilidir ve güçlü araçlarla fikirlerinizi kod israfı olmadan gerçeğe dönüştürmenize yardımcı olur. Ve çünkü siz sevgili geliştirici, mutlu olmayı hak ediyorsunuz.</p>
+
+<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>
+</p>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                    <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <a href="/feed.xml" class="text-decoration-none" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss-fill" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/melihkocaturk" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="text-center">
+            <small><a href="mailto:melih.kocaturk@icloud.com" class="text-decoration-none text-secondary">melih.kocaturk@icloud.com</a></small>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

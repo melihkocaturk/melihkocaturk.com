@@ -2,3 +2,13 @@
 ---
 
 @import "base";
+
+table {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+th, td {
+    border: 1px solid gray;
+    padding: 5px;
+}

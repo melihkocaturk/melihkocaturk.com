@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang=" tr-TR" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Laravel Geliştirme Ortamını Hazırlamak - Melih Kocatürk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D81YCKRVTX"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D81YCKRVTX');
+</script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div class="container-fluid py-5">
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="d-flex flex-row">
+                <div class="p-2">
+                    <img src="/assets/images/avatar.jpg" alt="Melih Kocatürk" class="rounded-circle" width="60" height="60">
+                </div>
+                <div class="p-2">
+                    <h1 class="h4 mb-0">Melih Kocatürk</h1>
+                    Code Ninja
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    <main class="flex-shrink-0 mb-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Laravel Geliştirme Ortamını Hazırlamak</h1>
+            <p class="text-center text-uppercase mb-5">
+                <small class="text-muted">Melih Kocatürk / 18.03.2024</small>
+            </p>
+            <p><p>PHP’nin başarısının bir nedeni de, PHP’ye hizmet vermeyen bir web sunucusu bulmanın zor olmasıdır. Ancak, modern PHP araçları geçmişe göre daha katı gereksinimlere sahiptir. Laravel’de geliştirme yapmanın en iyi yolu, kodunuz için tutarlı bir yerel ve uzak sunucu ortamı sağlamaktır ve neyse ki Laravel ekosisteminde bunun için birkaç araç var.</p>
+
+<h2 id="sistem-gereksinimleri">Sistem Gereksinimleri</h2>
+
+<p>Bu bölümde ele alacağımız her şey Windows makinelerde mümkündür, ancak düzinelerce sayfalık özel talimata ve uyarıya ihtiyacınız olacak. Bu talimatları ve uyarıları gerçek Windows kullanıcılarına bırakacağım, bu nedenle buradaki ve kitabın geri kalanındaki örnekler Unix/Linux/macOS geliştiricilerine odaklanacak.</p>
+
+<p>İster yerel makinenize PHP ve diğer araçları yükleyerek web sitenize hizmet vermeyi, ister geliştirme ortamınıza Vagrant veya Docker aracılığıyla sanal bir makineden hizmet vermeyi veya MAMP/WAMP/XAMPP gibi bir aracı kullanmayı seçin, geliştirme ortamınızın şu özelliklere sahip olması gerekir:</p>
+
+<ul>
+  <li>PHP &gt;= 8.1</li>
+  <li>OpenSSL PHP extension</li>
+  <li>PDO PHP extension</li>
+  <li>Mbstring PHP extension</li>
+  <li>Tokenizer PHP extension</li>
+  <li>XML PHP extension</li>
+  <li>Ctype PHP extension</li>
+  <li>JSON PHP extension</li>
+  <li>BCMath PHP extension</li>
+</ul>
+
+<h2 id="composer">Composer</h2>
+
+<p>Geliştirdiğiniz makine ne olursa olsun, Composer’ın global olarak kurulu olması gerekir. Composer’a aşina değilseniz, çoğu modern PHP geliştirmesinin temelini oluşturan bir araçtır. Composer, Node için NPM (Node Package Manager) veya Ruby için RubyGems gibi, PHP için bir bağımlılık yöneticisidir. Ancak NPM gibi, Composer da testlerimizin çoğunun, yerel script yüklemenin, yükleme scriptlerinin ve çok daha fazlasının temelidir. Laravel’i yüklemek, Laravel’i güncellemek ve harici bağımlılıkları yönetmek için Composer’a ihtiyacınız olacak.</p>
+
+<h2 id="yerel-geliştirme-ortamları">Yerel Geliştirme Ortamları</h2>
+
+<p>Birçok proje için, geliştirme ortamınızı daha basit bir araç seti kullanarak barındırmak yeterli olacaktır. Sisteminizde zaten MAMP veya WAMP veya XAMPP kuruluysa, Laravel’i çalıştırmak muhtemelen sorun olmayacaktır.</p>
+
+<p>Laravel’i PHP’nin yerleşik web sunucusuyla da çalıştırabilirsiniz. Laravel sitenizin kök klasöründen php -S localhost:8000 -t public komutunu çalıştırın ve PHP’nin yerleşik web sunucusu sitenize http://localhost:8000/ adresinden hizmet verecektir.</p>
+
+<p>Ancak, geliştirme ortamınızda biraz daha fazla güç istiyorsanız (her proje için farklı yerel etki alanları, MySQL gibi bağımlılıkların yönetimi vb.), PHP’nin yerleşik sunucusundan daha güçlü bir aracı kullanmak isteyeceksiniz.</p>
+
+<p>Laravel, yerel geliştirme için dört araç sunar: Artisan Serve, Sail, Valet ve Homestead. Her birini kısaca ele alacağız. Hangisini kullanacağınızdan emin değilseniz, kişisel olarak Mac kullanıcıları için Valet ve diğer herkes için Sail hayranıyım.</p>
+
+<p><strong>Artisan Serve</strong></p>
+
+<p>Laravel uygulamanızı kurduktan sonra php artisan serve’i çalıştırırsanız, tıpkı daha önce PHP’nin yerleşik web sunucusunu kullanarak kurduğumuz gibi http://localhost:8000’de hizmet verecektir. Burada ücretsiz olarak başka bir şey almıyorsunuz, bu nedenle tek anlamlı faydası hatırlamanın daha kolay olmasıdır.</p>
+
+<p><strong>Laravel Sail</strong></p>
+
+<p>Sail, işletim sisteminizden bağımsız olarak aynı şekilde yerel Laravel geliştirmeye başlamanın en basit yoludur. Bir PHP web sunucusu, veritabanları ve projenin bağımlılıkları veya geliştiricilerinizin çalışma ortamları ne olursa olsun, projenizdeki her geliştirici için tutarlı olan tek bir Laravel kurulumunu çalıştırmayı çok kolaylaştıran bir dizi başka özellik ile birlikte gelir.</p>
+
+<p>Neden Sail kullanmıyorum? Sail yukarıdakileri gerçekleştirmek için Docker’ı kullanıyor ve macOS’ta Docker, Valet’i tercih edeceğim kadar yavaş. Ancak Laravel’de yeniyseniz, özellikle de Mac kullanmıyorsanız, Laravel uygulamalarınızı oluşturmaya başlamanın en basit yoludur.</p>
+
+<p><strong>Laravel Valet</strong></p>
+
+<p>MacOS kullanıcısıysanız (Windows ve Linux için resmi olmayan dağıtımlar da vardır), Laravel Valet yerel Laravel uygulamalarınızın her birine (ve diğer birçok statik ve PHP tabanlı uygulamaya) farklı yerel etki alanlarında hizmet vermeyi kolaylaştırır.</p>
+
+<p>Dökümantasyonun size yol göstereceği Homebrew’i kullanarak birkaç araç yüklemeniz gerekecek, ancak ilk kurulumdan uygulamalarınızı sunmaya kadar çok az adım vardır.</p>
+
+<p>Valet’i kurun - en son yükleme yönergeleri için Valet belgelerine bakın - ve onu sitelerinizin yaşayacağı bir veya daha fazla dizine yönlendirin. Tüm geliştirdiğim uygulamalarımı koyduğum ~/Sites dizinimden valet park’ı çalıştırdım. Artık dizin adının sonuna .test ekleyebilir ve tarayıcınızda ziyaret edebilirsiniz</p>
+
+<p>Valet, Laravel uygulamalarımıza hizmet vermeyi kolaylaştırır; belirli bir klasördeki tüm alt klasörleri {klasöradı}.test olarak sunmak için valet park, yalnızca tek bir klasöre hizmet vermek için valet link, bir klasör için Valetserved etki alanını göstermek üzere bir tarayıcı açmak için valet open, Valet sitesine HTTPS ile hizmet vermek için valet secure, ve sitenizi başkalarıyla paylaşabilmeniz için ngrok veya Expose tüneli açmak için valet share.</p>
+
+<p><strong>Laravel Homestead</strong></p>
+
+<p>Homestead, yerel geliştirme ortamınızı kurmak için kullanmak isteyebileceğiniz başka bir araçtır. Bu, Vagrant’ın (sanal makineleri yönetmek için bir araç) üzerinde yer alan ve Laravel geliştirme için mükemmel bir şekilde ayarlanmış ve birçok Laravel sitesinin üzerinde çalıştığı en yaygın production ortamını yansıtan önceden yapılandırılmış bir sanal makine görüntüsü sağlayan yapılandırma aracıdır.</p>
+
+<p><a href="https://laravel.com/docs/10.x/homestead">Homestead belgeleri</a> detaylıdır ve sürekli güncel tutulur, bu nedenle nasıl çalıştığını ve nasıl kurulacağını öğrenmek istiyorsanız sizi onlara yönlendireceğim.</p>
+
+<h2 id="yeni-bir-lavel-projesi-oluşturmak">Yeni Bir Lavel Projesi Oluşturmak</h2>
+
+<p>Yeni bir Laravel projesi oluşturmanın iki yolu vardır, ancak her ikisi de komut satırından çalıştırılır. İlk seçenek, Laravel kurulum aracını (Composer kullanarak) global olarak kurmaktır; ikincisi, Composer’ın create-project özelliğini kullanmaktır.</p>
+
+<p>Kurulum belgeleri sayfasında her iki seçenek hakkında daha ayrıntılı bilgi edinebilirsiniz, ancak Laravel kurulum aracını tavsiye ederim.</p>
+
+<p><strong>Laravel Kurulum Aracı ile Laravel Kurulumu</strong></p>
+
+<p>Composer’ı global olarak yüklediyseniz, Laravel yükleyici aracını yüklemek için aşağıdaki komutu çalıştırın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer global require "laravel/installer"
+</code></pre></div></div>
+
+<p>Laravel yükleyici aracını yükledikten sonra, yeni bir Laravel projesi oluşturmak basittir. Sadece şu komutu komut satırınızdan çalıştırın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>laravel new projectName
+</code></pre></div></div>
+
+<p>Bu, geçerli dizininize projectName adlı yeni bir alt dizini oluşturacak ve içine iskelet Laravel projesi yükleyecektir.</p>
+
+<p><strong>Laravel’i Composer’ın create-project Özelliği ile Kurma</strong></p>
+
+<p>Composer ayrıca, belirli bir iskelet ile yeni projeler oluşturmak için create-project adlı bir özellik sunar. Yeni bir Laravel projesi oluşturmak üzere bu aracı kullanmak için aşağıdaki komutu çalıştırın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel projectName
+</code></pre></div></div>
+
+<p>Tıpkı kurulum aracında olduğu gibi, bu da geçerli dizininize geliştirmeniz için hazır bir iskelet Laravel kurulumu içeren projectName adlı bir alt dizin oluşturacaktır.</p>
+
+<p><strong>Sail ile Laravel Kurulumu</strong></p>
+
+<p>Laravel Sail ile çalışmayı planlıyorsanız, bir Laravel uygulaması yükleyebilir ve aynı zamanda Sail kurulum sürecini başlatabilirsiniz. Bilgisayarınızda Docker’ın kurulu olduğundan emin olun ve ardından “example-app” ifadesini uygulamanızın adıyla değiştirerek aşağıdaki komutu çalıştırın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s "https://laravel.build/example-app" | bash
+</code></pre></div></div>
+
+<p>Bu, Laravel’i mevcut klasörünüzün altındaki example-app klasörüne kuracak ve ardından Sail kurulum sürecini başlatacaktır.</p>
+
+<p>Kurulum işlemi tamamlandıktan sonra, yeni dizininize geçin ve Sail’i çalıştırın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd example-app
+./vendor/bin/sail up
+</code></pre></div></div>
+
+<p><strong>Not:</strong> İlk kez sail up çalıştırdığınızda, Docker görüntüsünü oluşturması gerektiğinden, diğer yükleme işlemlerinden biraz daha uzun sürecektir.</p>
+
+<h2 id="laravelin-dizin-yapısı">Laravel’in Dizin Yapısı</h2>
+
+<p>İskelet Laravel uygulaması içeren bir dizini açtığınızda, aşağıdaki dosya ve dizinleri göreceksiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app/
+bootstrap/
+config/
+database/
+public/
+resources/
+routes/
+storage/
+tests/
+vendor/
+.editorconfig
+.env
+.env.example
+.gitattributes
+.gitignore
+artisan
+composer.json
+composer.lock
+package.json
+phpunit.xml
+readme.md
+vite.config.js
+</code></pre></div></div>
+
+<p>Tanımak için bunları tek tek inceleyelim.</p>
+
+<p><strong>Dizinler</strong></p>
+
+<p>Kök dizin varsayılan olarak aşağıdaki klasörleri içerir:</p>
+
+<ul>
+  <li><strong>app</strong> - Uygulamanızın büyük kısmı burada bulunacak. Model, controller, command ve PHP etki alanı kodunuz burada yer alır.</li>
+  <li><strong>bootstrap</strong> - Laravel her çalıştırıldığında önyükleme yapmak için kullandığı dosyaları içerir.</li>
+  <li><strong>config</strong> - Tüm yapılandırma dosyalarının bulunduğu yer.</li>
+  <li><strong>database</strong> - Migration, seed ve factory’lerin bulunduğu yer.</li>
+  <li><strong>public</strong> - Sunucunun web sitesine hizmet verirken işaret ettiği dizin. Bu, önyükleme sürecini başlatan ve tüm istekleri uygun şekilde yönlendiren ön denetleyici olan index.php’yi içerir. Ayrıca resim, stylesheet, script gibi herkese açık dosyaların bulunduğu yerdir.</li>
+  <li><strong>resources</strong> - Diğer scriptler için gerekli olan dosyaların bulunduğu yer. View ve (isteğe bağlı olarak) kaynak CSS ve kaynak JavaScript dosyaları burada bulunur.</li>
+  <li><strong>routes</strong> - Hem HTTP rotaları hem de “konsol rotaları” veya Artisan komutları için tüm route tanımlarının yapıldığı yer.</li>
+  <li><strong>storage</strong> - Önbellek (cache), log ve derlenmiş sistem dosyalarının bulunduğu yer.</li>
+  <li><strong>tests</strong> - Unit ve entegrasyon testlerinin bulunduğu yer.</li>
+  <li><strong>vendor</strong> - Composer’ın bağımlılıklarını kurduğu yer. Composer’ın herhangi bir uzak sunucuda deploy sürecinizin bir parçası olarak çalışması beklendiğinden, Git tarafından göz ardı edildi (versiyon kontrol sisteminizden dışlanmak üzere işaretlendi).</li>
+</ul>
+
+<p><strong>Dosyalar</strong></p>
+
+<p>Kök dizin ayrıca aşağıdaki dosyaları içerir:</p>
+
+<ul>
+  <li><strong>.editorconfig</strong> - IDE/text editörünüze Laravel’in kodlama standartları hakkında talimatlar verir (ör. girintilerin boyutu, karakter kümesi ve sondaki boşlukların kırpılıp kırpılmayacağı).</li>
+  <li><strong>.env</strong> ve <strong>.env.example</strong> - Ortam değişkenlerini tanımlayın (her ortamda farklı olması beklenen ve bu nedenle versiyon kontrolüne bağlı olmayan değişkenler). .env.example, Git tarafından yok sayılan kendi .env dosyasını oluşturmak için her ortamın çoğaltması gereken bir şablondur.</li>
+  <li><strong>.gitignore</strong> ve <strong>.gitattributes</strong> - Git yapılandırma dosyaları.</li>
+  <li><strong>artisan</strong>: Artisan komutlarını (bkz. Bölüm 8) komut satırından çalıştırmanıza izin verir.</li>
+  <li><strong>composer.json</strong> ve <strong>composer.lock</strong> - Composer için yapılandırma dosyaları; composer.json kullanıcı tarafından düzenlenebilir, composer.lock düzenlenemez. Bu dosyalar, proje hakkında bazı temel bilgileri paylaşır ve ayrıca PHP bağımlılıklarını tanımlar.</li>
+  <li><strong>package.json</strong> - composer.json’a benzer ancak build sisteminin frontend assetleri ve bağımlılıkları için kullanılır; NPM’e hangi JavaScript tabanlı bağımlılıkların devreye gireceği konusunda talimat verir.</li>
+  <li><strong>phpunit.xml</strong> - Laravel’in test için kullandığı araç olan PHPUnit yapılandırma dosyası.</li>
+  <li><strong>readme.md</strong> - Laravel hakkında temel bilgiler veren Markdown dosyası. Laravel yükleyicisini kullanırsanız bu dosyayı görmezsiniz.</li>
+  <li><strong>vite.config.js</strong> - Vite için (isteğe bağlı) yapılandırma dosyası. Bu dosya, frontend assetlerinin nasıl derleyeceğini ve işleneceğini bildirir.</li>
+</ul>
+
+<h2 id="yapılandırma">Yapılandırma</h2>
+
+<p>Laravel uygulamanızın temel ayarları - veritabanı bağlantı ayarları, kuyruk ve mail ayarları vb. - config klasöründeki dosyalarda bulunur. Bu dosyaların her biri bir PHP dizisi döndürür ve dizideki her değere, dosya adından ve noktalarla (.) ayrılmış alt anahtarlardan oluşan bir yapılandırma anahtarıyla erişilebilir.</p>
+
+<p>Dolayısıyla, <em>config/services.php</em>‘de şuna benzeyen bir dosya oluşturursanız:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// config/services.php
+return [
+    'sparkpost' =&gt; [
+        'secret' =&gt; 'abcdefg',
+    ],
+];
+</code></pre></div></div>
+
+<p>Bu yapılandırma değişkenine şunu kullanarak erişebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config('services.sparkpost.secret')
+</code></pre></div></div>
+
+<p>Her ortam için farklı olması gereken tüm yapılandırma değişkenleri bunun yerine .env dosyalarınızda oluşturulur. Diyelim ki her ortam için farklı bir Bugsnag API anahtarı kullanmak istiyorsunuz. Yapılandırma dosyasını .env’den alacak şekilde ayarladınız:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// config/services.php
+return [
+    'bugsnag' =&gt; [
+        'api_key' =&gt; env('BUGSNAG_API_KEY'),
+    ],
+];
+</code></pre></div></div>
+
+<p>env() helper fonksiyonu, aynı anahtarla .env dosyasından bir değer çeker. Şimdi, bu anahtarı .env (bu ortam için ayarlar) ve .env.example (tüm ortamlar için şablon) dosyalarınıza ekleyin:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># In .env
+BUGSNAG_API_KEY=oinfp9813410942
+
+# In .env.example
+BUGSNAG_API_KEY=
+</code></pre></div></div>
+
+<p>.env dosyanız, framework’ün ihtiyaç duyduğu, hangi mail sürücüsünü kullanacağınız ve temel veritabanı ayarlarınızın ne olduğu gibi, ortama özgü epeyce değişken içerecektir.</p>
+
+<p><strong>Yapılandırma Dosyalarının Dışında env Kullanımı</strong></p>
+
+<p>Bazı önbelleğe alma ve optimizasyon özellikleri dahil olmak üzere Laravel’deki bazı özellikler, env() çağrıları ile yapılandırma dosyalarının dışında herhangi bir yerde kullanılamaz.</p>
+
+<p>Ortam değişkenlerini çekmenin en iyi yolu, ortama özgü olmasını istediğiniz her şey için yapılandırma öğeleri ayarlamaktır. Bu yapılandırma öğelerinin ortam değişkenlerini okumasını ve ardından uygulamanızın herhangi bir yerinde yapılandırma değişkenlerine başvurmasını sağlayın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// config/services.php
+return [
+    'bugsnag' =&gt; [
+        'key' =&gt; env('BUGSNAG_API_KEY'),
+    ],
+];
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// In controller, or whatever
+$bugsnag = new Bugsnag(config('services.bugsnag.key'));
+</code></pre></div></div>
+
+<p><strong>.env Dosyası</strong></p>
+
+<p>.env dosyasının varsayılan içeriğine hızlıca bir göz atalım. Anahtarlar, kullandığınız Laravel sürümüne bağlı olarak değişir, ancak nasıl göründüklerini görmek için Örnek 2-1’e bakın.</p>
+
+<p><strong>Örnek 2-1</strong>. Laravel’deki varsayılan ortam değişkenleri</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>APP_NAME=Laravel
+APP_ENV=local
+APP_KEY=
+APP_DEBUG=true
+APP_URL=http://localhost
+
+LOG_CHANNEL=stack
+LOG_DEPRECATIONS_CHANNEL=null
+LOG_LEVEL=debug
+
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=laravel
+DB_USERNAME=root
+DB_PASSWORD=
+
+BROADCAST_DRIVER=log
+CACHE_DRIVER=file
+FILESYSTEM_DISK=local
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+MEMCACHED_HOST=127.0.0.1
+
+REDIS_HOST=127.0.0.1
+REDIS_PASSWORD=null
+REDIS_PORT=6379
+
+MAIL_MAILER=smtp
+MAIL_HOST=mailpit
+MAIL_PORT=1025
+MAIL_USERNAME=null
+MAIL_PASSWORD=null
+MAIL_ENCRYPTION=null
+MAIL_FROM_ADDRESS="hello@example.com"
+MAIL_FROM_NAME="${APP_NAME}"
+
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_DEFAULT_REGION=us-east-1
+AWS_BUCKET=
+AWS_USE_PATH_STYLE_ENDPOINT=false
+
+PUSHER_APP_ID=
+PUSHER_APP_KEY=
+PUSHER_APP_SECRET=
+PUSHER_HOST=
+PUSHER_PORT=443
+PUSHER_SCHEME=https
+PUSHER_APP_CLUSTER=mt1
+
+VITE_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
+VITE_PUSHER_HOST="${PUSHER_HOST}"
+VITE_PUSHER_PORT="${PUSHER_PORT}"
+VITE_PUSHER_SCHEME="${PUSHER_SCHEME}"
+VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
+</code></pre></div></div>
+
+<p>Hepsine girmeyeceğim, çünkü çok azı çeşitli servisler (Pusher, Redis, DB, Mail) için kimlik doğrulama bilgileri gruplarıdır. İşte bilmeniz gereken iki önemli ortam değişkeni:</p>
+
+<ul>
+  <li><strong>APP_KEY</strong> - Verileri şifrelemek için kullanılan rastgele oluşturulmuş bir dize. Bu boşsa, “No application encryption key has been specified.” hatasıyla karşılaşabilirsiniz. Bu durumda, php artisan key:generate komutunu çalıştırın ve Laravel sizin için bir tane üretecektir.</li>
+  <li><strong>APP_DEBUG</strong> - Uygulamanızın bu örneğinde kullanıcıların hata ayıklama hatalarını görüp görmeyeceğini belirleyen boolean değeri; local ve staging ortamları için harika, production için korkunç.</li>
+</ul>
+
+<p>Kimlik doğrulama dışı ayarların geri kalanına (BROADCAST_DRIVER, QUEUE_CONNECTION, vb.), harici servislere mümkün olduğunca az güvenerek çalışan varsayılan değerler verilir ve bu, yeni başladığınız zamanlar için idealdir.</p>
+
+<p>Laravel uygulamanızı başlattığınızda, çoğu proje için muhtemelen yapmak isteyeceğiniz tek değişiklik, veritabanı yapılandırma ayarlarında olacaktır. Laravel Vale kullanıyorum, bu yüzden DB_DATABASE’i projemin adına, DB_USERNAME’i root’a ve DB_PASSWORD’u boş bir dizeye ayarlıyorum:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DB_DATABASE=myProject
+DB_USERNAME=root
+DB_PASSWORD=
+</code></pre></div></div>
+
+<p>Ardından, en sevdiğim MySQL istemcimde projemle aynı ada sahip bir veritabanı oluşturuyorum ve kullanıma hazır.</p>
+
+<h2 id="çalıştırma">Çalıştırma</h2>
+
+<p>Artık bir Laravel kurulumuyla çalışıyorsunuz. git init’i çalıştırın, dosyaları git add . ile işleyin ve git commit ile kodlamaya başlamaya hazırsınız. Bu kadar! Valet kullanıyorsanız, aşağıdaki komutları çalıştırabilir ve sitenizi anında tarayıcınızda canlı olarak görebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>laravel new myProject &amp;&amp; cd myProject &amp;&amp; valet open
+</code></pre></div></div>
+
+<p>Ne zaman yeni bir projeye başlasam, attığım adımlar şunlardır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>laravel new myProject
+cd myProject
+git init
+git add .
+git commit -m "Initial commit"
+</code></pre></div></div>
+
+<p>Tüm sitelerimi, birincil Valet dizinim olarak kurduğum ~/Sites klasöründe tutuyorum, bu durumda, hiçbir ek iş olmadan tarayıcımda myProject.test’e anında erişebiliyorum. .env dosyasını düzenleyebilir ve onu belirli bir veritabanına yönlendirebilirim, bu veritabanını uygulamama ekleyebilirim ve kodlamaya başlamaya hazırım. Ve unutmayın, Lambo kullanıyorsanız, bu adımların tümü zaten sizin yerinize atılmıştır.</p>
+
+<h2 id="test-yapmak">Test yapmak</h2>
+
+<p>Bundan sonraki her bölümde, bölümün sonundaki “Test Etme” bölümü, ele alınan özellik veya özellikler için testlerin nasıl yazılacağını size gösterecektir. Bu bölüm test edilebilir bir özelliği kapsamadığından, testlerden hızlıca bahsedelim. (Laravel’de test yazma ve çalıştırma hakkında daha fazla bilgi edinmek için Bölüm 12’ye gidin.)</p>
+
+<p>Laravel, PHPUnit’i bir bağımlılık olarak getirir ve testleri, adı Test.php ile biten (örneğin, tests/UserTest.php) tests dizinindeki herhangi bir dosyada çalıştırmak üzere yapılandırılmıştır.</p>
+
+<p>Bu nedenle, test yazmanın en basit yolu, testler dizininde Test.php ile biten bir adla dosya oluşturmaktır. Ve bunları çalıştırmanın en kolay yolu, komut satırından (proje kökünde) ./vendor/bin/phpunit komutunu çalıştırmaktır.</p>
+
+<p>Herhangi bir test, veritabanı erişimi gerektiriyorsa, testlerinizi veritabanınızın barındırıldığı makineden yaptığınızdan emin olun; bu nedenle, veritabanınızı Vagrant’ta barındırıyorsanız, testlerinizi oradan çalıştırmak için Vagrant box’ı ssh yaptığınızdan emin olun. Yine, Bölüm 12’de bunu ve çok daha fazlasını öğrenebilirsiniz.</p>
+
+<p>Ayrıca, test bölümlerinden bazıları, kitabı ilk kez okuyorsanız henüz aşina olmayacağınız test sözdizimini ve özelliklerini kullanacaktır. Test bölümlerinden herhangi birindeki kod kafa karıştırıcıysa, onu atlayın ve test bölümünü okuma fırsatı bulduktan sonra geri dönün.</p>
+
+<h2 id="özet">Özet</h2>
+
+<p>Laravel bir PHP framework olduğu için onu yerel olarak sunmak çok basittir. Laravel ayrıca yerel gelişiminizi yönetmeniz için üç araç sunar: Docker kurulumu olan Sail; daha basit bir macOS tabanlı araç olan Valet; ve önceden yapılandırılmış bir Vagrant kurulumu olan Homestead. Laravel, Composer’a dayanır ve bu araç tarafından kurulabilir ve kutudan hem kurallarını hem de diğer açık kaynak araçlarıyla ilişkisini yansıtan bir dizi klasör ve dosyayla çıkar.</p>
+
+<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>
+</p>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                    <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <a href="/feed.xml" class="text-decoration-none" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss-fill" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/melihkocaturk" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="text-center">
+            <small><a href="mailto:melih.kocaturk@icloud.com" class="text-decoration-none text-secondary">melih.kocaturk@icloud.com</a></small>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
