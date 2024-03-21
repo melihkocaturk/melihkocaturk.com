@@ -1,5 +1,1907 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-19T15:31:29+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
-</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Laravel Geliştirme Ortamını Hazırlamak</title><link href="http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak.html" rel="alternate" type="text/html" title="Laravel Geliştirme Ortamını Hazırlamak" /><published>2024-03-18T00:00:00+03:00</published><updated>2024-03-18T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak</id><content type="html" xml:base="http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak.html"><![CDATA[<p>PHP’nin başarısının bir nedeni de, PHP’ye hizmet vermeyen bir web sunucusu bulmanın zor olmasıdır. Ancak, modern PHP araçları geçmişe göre daha katı gereksinimlere sahiptir. Laravel’de geliştirme yapmanın en iyi yolu, kodunuz için tutarlı bir yerel ve uzak sunucu ortamı sağlamaktır ve neyse ki Laravel ekosisteminde bunun için birkaç araç var.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-21T23:27:06+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
+</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">PHP – Nesnelerin Temelleri</title><link href="http://localhost:4000/2024/03/20/php-nesnelerin-temelleri.html" rel="alternate" type="text/html" title="PHP – Nesnelerin Temelleri" /><published>2024-03-20T00:00:00+03:00</published><updated>2024-03-20T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/20/php-nesnelerin-temelleri</id><content type="html" xml:base="http://localhost:4000/2024/03/20/php-nesnelerin-temelleri.html"><![CDATA[<p>Nesneler ve sınıflar bu kitabın merkezindedir ve on yıl önce PHP 5’in piyasaya sürülmesinden bu yana PHP’nin de kalbinde yer alıyor. Bu bölümde, PHP’nin nesne yönelimli özelliklerini inceleyerek nesneleri ve tasarımı daha derinlemesine ele almak için temel oluşturuyorum. Nesne yönelimli programlamada yeniyseniz, bu bölümü dikkatlice okumalısınız.</p>
+
+<p>Bu bölüm aşağıdaki konuları kapsayacaktır:</p>
+
+<ul>
+  <li>Sınıflar ve nesneler: Sınıfları tanımlamak ve nesneleri başlatmak</li>
+  <li>Kurucu metotlar: Nesnelerin kurulumunu otomatikleştirmek</li>
+  <li>Primitif ve sınıf tipleri: Tipler neden önemlidir?</li>
+  <li>Kalıtım: Neden kalıtıma ihtiyacımız var ve onu nasıl kullanacağız?</li>
+  <li>Görünürlük: Nesne arayüzünü düzene sokmak</li>
+</ul>
+
+<h2 id="sınıflar-ve-nesneler">Sınıflar ve Nesneler</h2>
+
+<p>Nesne yönelimli programlamayı anlamanın önündeki ilk engel, sınıf ve nesne arasındaki garip ve harika ilişkidir. Pek çok insan için, aydınlanmayı temsil eden bu ilişkidir. O halde temel bilgileri gözden kaçırmayalım.</p>
+
+<p><strong>İlk Sınıf</strong></p>
+
+<p>Sınıflar genellikle nesneler açısından tanımlanır. Bu ilginç çünkü nesneler genellikle sınıflar olarak tanımlanır. Bu döngüsellik, nesne yönelimli programlamanın ilk adımlarını zorlaştırabilir. Nesneleri şekillendiren sınıflar olduğu için, bir sınıf tanımlayarak başlamalıyız.</p>
+
+<p>Kısacası, bir sınıf, bir veya daha fazla nesne oluşturmak için kullanılan bir kod şablonudur. class anahtar sözcüğü ve sınıf adıyla bir sınıf bildirirsiniz. Sınıf adları bir sayı ile başlayamaz, fakat sayı ve harflerin herhangi bir bileşimi olabilir. Alt çizgi karakteri de içerebilirler. Sınıfla ilişkilendirilen kod parantez içine alınmalıdır. Bir sınıf oluşturmak için bu öğeleri birleştiriyorum:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProduct
+{
+    // class body
+}
+</code></pre></div></div>
+
+<p>Örnekteki ShopProduct sınıfı, henüz çok kullanışlı olmasa da kurala uygun bir sınıftır. Yine de oldukça önemli bir şey yaptım. Bir tür tanımladım; yani kullanabileceğim bir veri kategorisi oluşturdum. Bölüm boyunca bunun gücü daha net hale gelecektir.</p>
+
+<p><strong>İlk Nesne (veya İki)</strong></p>
+
+<p>Sınıf, nesneleri oluşturmak için bir şablonsa, nesnenin, sınıfta tanımlanan şablona göre yapılandırılmış veriler olduğu sonucu çıkar. Nesne, sınıfının örneğidir. Sınıf tarafından tanımlanan tiptedir.</p>
+
+<p>ShopProduct nesnelerini oluşturmak için ShopProduct sınıfını kalıp olarak kullanıyorum. Bunu yapmak için new operatörüne ihtiyacım var. new operatörü, sınıfın adıyla birlikte kullanılır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1 = new ShopProduct();
+$product2 = new ShopProduct();
+</code></pre></div></div>
+
+<p>new operatörü, tek operant olarak sınıf adıyla çağrılır ve o sınıfın örneğini döndürür; yukarıda ShopProduct nesnesini oluşturur.</p>
+
+<p>ShopProduct sınıfını şablon olarak kullanarak, iki ShopProduct nesnesi oluşturdum. $product1 ve $product2 işlevsel olarak aynı olmalarına rağmen, tek bir sınıftan türetilmiş, aynı türden farklı nesnelerdir.</p>
+
+<p>Hala kafanız karışıksa, şu benzetmeyi deneyin. Sınıfı, plastik ördek yapan bir makinede kalıp olarak düşünün. Nesnelerimiz, bu makinenin ürettiği ördekler. Üretilen şeyin türü, preslendiği kalıba göre belirlenir. Ördekler her yönden aynı görünürler, ancak farklı varlıklardır. Başka bir deyişle, aynı türün farklı örnekleridir. Ördeklerin kimliklerini kanıtlamak için kendi seri numaraları bile olabilir. PHP kodunda oluşturulan her nesneye ayrıca kendi benzersiz kimliği verilir. Bunu, $product1 ve $product2 nesnelerini yazdırarak gösterebilirim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var_dump($product1);
+var_dump($product2);
+</code></pre></div></div>
+
+<p>Bu fonksiyonları çalıştırmak aşağıdaki çıktıyı üretir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>object(popp\ch03\batch01\ShopProduct)#235 (0) {
+}
+object(popp\ch03\batch01\ShopProduct)#234 (0) {
+}
+</code></pre></div></div>
+
+<p><strong>Not</strong>: PHP’nin eski sürümlerinde (5.1 sürümüne kadar), bir nesneyi doğrudan yazdırabilirsiniz. Bu, nesneyi, nesnenin kimliğini içeren bir metne dönüştürür. PHP 5.2’den itibaren artık bu desteklenmiyor ve bir nesneyi metin olarak yazdırma girişimleri, nesnenin sınıfında __toString() adlı bir metot tanımlanmadıkça hataya neden oluyor. Metotlara daha sonra bakacağım ve Bölüm 4’te __toString()’i ele alacağım.</p>
+
+<p>Nesneleri var_dump()’a ileterek, # işaretinden sonra nesnelerin kimliği de dahil olmak üzere yararlı bilgileri alıyorum.</p>
+
+<p>Bu nesneleri daha ilginç hale getirmek için ShopProduct sınıfını, properties adı verilen özel veri alanlarını destekleyecek şekilde değiştirebilirim.</p>
+
+<h2 id="sınıf-özellikleri-properties">Sınıf Özellikleri (Properties)</h2>
+
+<p>Sınıflar, property adı verilen özel değişkenleri tanımlayabilir. Üye değişken olarak da bilinen property, nesneden nesneye değişebilen verileri tutar. Dolayısıyla, ShopProduct nesneleri söz konusu olduğunda, örneğin başlık ve fiyat alanlarını değiştirmek isteyebilirsiniz.</p>
+
+<p>Property, standart bir değişkene benzer, ancak bir property bildirirken, değişkenden önce görünürlük (visibility) anahtar sözcüğü kullanmalısınız. Bu, public, protected ve private olabilir ve erişilebilirliği belirler. Örneğin, public property’lere sınıf dışından erişilebilir ve private property’lere yalnızca sınıf içindeki koddan erişilebilir.</p>
+
+<p>Anahtar kelimelere ve erişilebilirlik konusuna daha sonra döneceğim. Şimdilik, public anahtar sözcüğünü kullanarak bazı property’ler tanımlayacağım:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProduct
+{
+    public $title = "default product";
+    public $producerMainName = "main name";
+    public $producerFirstName = "first name";
+    public $price = 0;
+}
+</code></pre></div></div>
+
+<p>Gördüğünüz gibi, her birine varsayılan değer atayarak dört property oluşturdum. ShopProduct sınıfından örneklendirdiğim tüm nesneler artık varsayılan verilerle önceden doldurulacak. Her property bildirimindeki public anahtar sözcüğü, property’e nesne bağlamı dışından erişebilmemi sağlar.</p>
+
+<p>“-&gt;” karakterini (nesne operatörü) kullanarak, property değişkenlerine nesne bazında erişebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1 = new ShopProduct();
+print $product1-&gt;title;
+// default product
+</code></pre></div></div>
+
+<p>Property’ler public olarak tanımlandığından, sınıftaki herhangi bir varsayılan değeri değiştirerek - okuyabildiğiniz gibi - değer atayabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1 = new ShopProduct();
+$product2 = new ShopProduct();
+$product1-&gt;title = "My Antonia";
+$product2-&gt;title = "Catch 22";
+</code></pre></div></div>
+
+<p>ShopProduct sınıfında $title property’sini bildirerek ve değer atayarak, tüm ShopProduct nesnelerinin ilk oluşturulduğunda bu özelliğe sahip olmasını sağlayabilirsiniz. Bu sınıfı kullanan kodun, bu varsayıma dayalı olarak ShopProduct nesneleriyle çalışabileceği anlamına gelir. Yine de sıfırlayabildiğim için, $title’ın değeri nesneden nesneye değişebilir.</p>
+
+<p>Aslında, PHP bizi sınıfın tüm property’lerini bildirmeye zorlamaz. Property’leri bir nesneye dinamik olarak ekleyebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1-&gt;arbitraryAddition = "treehouse";
+</code></pre></div></div>
+
+<p>Ancak bu yöntem, nesne yönelimli programlamada iyi bir uygulama olarak kabul edilmez.</p>
+
+<p>Property’leri dinamik olarak oluşturmak neden kötü bir uygulamadır? Bir sınıf oluşturduğunuzda, tür tanımlarsınız. Dünyaya, sınıfınızın (ve ondan örneklenen herhangi bir nesnenin) belirli bir alan ve metot kümesinden oluştuğunu bildirirsiniz. ShopProduct sınıfınızda $title property’si tanımlanmışsa ShopProduct nesneleriyle çalışan herhangi bir kod, $title property’sinin kullanılabilir olacağı varsayımıyla ilerleyebilir. Yine de, dinamik olarak ayarlanmış property’ler hakkında hiçbir garanti verilemez.</p>
+
+<p>Nesnelerim bu aşamada hala hantal. Nesnenin özellikleriyle çalışmam gerektiğinde, bunu şu anda nesnenin dışında yapmalıyım. Birden çok nesnede birden çok property ile çalışmak, kısa sürede angarya haline gelecektir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1 = new ShopProduct();
+$product1-&gt;title = "My Antonia";
+$product1-&gt;producerMainName = "Cather";
+$product1-&gt;producerFirstName = "Willa";
+$product1-&gt;price = 5.99;
+</code></pre></div></div>
+
+<p>Tüm ürün ayrıntılarını set edene kadar varsayılan property değerlerini birer birer geçersiz kılıyorum. Artık bazı verileri set ettiğime göre, bunlara da erişebilirim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print "author: {$product1-&gt;producerFirstName} "
+    . "{$product1-&gt;producerMainName}\n";
+// author: Willa Cather
+</code></pre></div></div>
+
+<p>Bu yaklaşımla ilgili bir dizi sorun vardır. PHP, property’leri dinamik olarak set etmenize izin verdiği için, property adını yanlış yazarsanız veya unutursanız uyarı almazsınız. Örneğin, şu satırı yazmak istediğimi varsayalım:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>product1-&gt;producerMainName = "Cather";
+</code></pre></div></div>
+
+<p>Maalesef yanlışlıkla şöyle yazıyorum:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1-&gt;producerSecondName = "Cather";
+</code></pre></div></div>
+
+<p>PHP motoru söz konusu olduğunda, bu kod tamamen kurala uygundur ve sizi bu konuda uyarmaz. Yazarın adını yazdırmak istediğimde ise beklenmedik sonuçlarla karşılaşacağım.</p>
+
+<p>Başka bir sorun da, sınıfımın fazla rahat olması. Başlık, fiyat veya yazar isimleri belirlemek zorunda değilim. Yazılımcı, bu property’lerin var olduğundan emin olabilir, ancak çoğu zaman varsayılan değerlerle karşılaşma olasılığı yüksektir. İdeal olarak, ShopProduct nesnesini başlatan herkesi anlamlı property değerleri belirlemeye teşvik etmek istiyorum.</p>
+
+<p>Son olarak, muhtemelen oldukça sık yapmak isteyeceğim bir şeyi yapmak için çemberlerin içinden atlamam gerekiyor. Gördüğünüz gibi, yazar adının basılması yorucu bir süreçtir.</p>
+
+<p>Nesnenin bu tür angarya işleri benim adıma halletmesi güzel olurdu.</p>
+
+<p>Bu sorunlar, ShopProduct nesnesine, property verilerini nesne bağlamı içinde işlemek için kullanılabilecek kendi fonksiyon kümesi verilerek çözülebilir.</p>
+
+<h2 id="metotlarla-çalışmak">Metotlarla Çalışmak</h2>
+
+<p>Property’ler, nesnelerinizin veri depolamasına izin verdiği gibi, metotlar da nesnelerinizin görevleri gerçekleştirmesine izin verir. Metotlar, bir sınıf içinde bildirilen özel fonksiyonlardır. Tahmin edebileceğiniz gibi, metot bildirimi fonksiyon bildirimine benzer. function anahtar sözcüğü, metot adından önce gelir, ardından parantez içinde isteğe bağlı parametre listesi gelir. Metot gövdesi parantez içine alınır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function myMethod($argument, $another)
+{
+    // ... 
+}
+</code></pre></div></div>
+
+<p>Fonksiyonlardan farklı olarak, metotlar bir sınıfın gövdesinde bildirilmelidir. Ayrıca, görünürlük anahtar kelimesi de dahil olmak üzere bir dizi niteleyiciyi kabul edebilirler. Property gibi, metotlar da public, protected veya private olarak bildirilebilir. Metodu public olarak tanımlayarak, geçerli nesnenin dışından çağrılabilmesini sağlarsınız. Metot bildiriminde görünürlük anahtar sözcüğünü atlarsanız, dolaylı olarak public olarak tanımlanır. Bununla birlikte, tüm metotlar için açıkça görünürlük tanımlamak iyi bir uygulama olarak kabul edilir.</p>
+
+<p><strong>Not</strong>: Kodlama stili standardı PSR-12, görünürlüğün tüm yöntemler için bildirilmesini gerektirir.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProduct
+{
+    public $title = "default product";
+    public $producerMainName = "main name";
+    public $producerFirstName = "first name";
+    public $price = 0;
+
+    public function getProducer()
+    {
+        return $this-&gt;producerFirstName . " "
+            . $this-&gt;producerMainName;
+    }
+}
+</code></pre></div></div>
+
+<p>Çoğu durumda, nesne işleci -&gt; ve metot adıyla bağlantılı bir nesne değişkeni kullanarak metotları çağırırsınız. Fonksiyon çağırıyormuşsunuz gibi (metoda herhangi bir parametre iletmiyor olsanız bile) metot çağrınızda parantez kullanmalısınız:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1 = new ShopProduct();
+$product1-&gt;title = "My Antonia";
+$product1-&gt;producerMainName = "Cather";
+$product1-&gt;producerFirstName = "Willa";
+$product1-&gt;price = 5.99;
+
+print "author: {$product1-&gt;getProducer()}\n";
+// author: Willa Cather
+</code></pre></div></div>
+
+<p>GetProducer() metodunu ShopProduct sınıfına ekliyorum. getProducer() metodunu public olarak tanımladığıma dikkat edin, bu onun sınıf dışından çağrılabileceği anlamına gelir.</p>
+
+<p>Metot gövdesinde bir özellik tanıtıyorum. $this sözde değişkeni, sınıfın nesne örneğine atıfta bulunabileceği mekanizmadır. Bu kavramı anlamakta zorlanıyorsanız, $this ifadesini “geçerli örnek” ifadesiyle değiştirmeyi deneyin. Aşağıdaki ifadeyi göz önünde bulundurun:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$this-&gt;producerFirstName
+</code></pre></div></div>
+
+<p>Bu, şu anlama gelir:</p>
+
+<p><em>geçerli örneğin</em> $producerFirstName <em>property’si</em></p>
+
+<p>Böylece getProducer() metodu, $producerFirstName ve $producerMainName property’lerini birleştirir ve döndürür, bu da beni, tam yapımcı adını her alıntılamam gerektiğinde bu işi yapma zahmetinden kurtarır.</p>
+
+<p>Sınıfı biraz geliştirdim. ShopProduct nesnesinin property’lerinin varsayılan değerlerinin değiştirilmesi için yazılımcıya güveniyorum. Bu iki yönden sorunludur. İlk olarak, ShopProduct nesnesini düzgün bir şekilde başlatmak beş satır alır ve hiçbir yazılımcı bunun için size teşekkür etmez. İkincisi, ShopProduct nesnesi başlatıldığında herhangi bir property’nin set edildiğinden emin olmanın hiçbir yolu yoktur.</p>
+
+<p>İhtiyacım olan, nesne oluşturulduğunda otomatik olarak çağrılan bir metot.</p>
+
+<h2 id="kurucu-constructor-metot-oluşturmak">Kurucu (Constructor) Metot Oluşturmak</h2>
+
+<p>Bir nesne oluşturulduğunda kurucu metot çağrılır. Gerekli property’lere değer atamak, bir şeyleri ayarlamak ve gerekli ön işleri tamamlamak için kullanabilirsiniz.</p>
+
+<p><strong>Not</strong>: PHP 5’ten önceki sürümlerde, sınıfın adını alan bir kurucu metot vardı. Böylece ShopProduct sınıfı, kurucu olarak ShopProduct() metodunu kullanır. Bu, PHP 7’den itibaren kullanımdan kaldırılmıştır ve PHP 8’den itibaren artık çalışmamaktadır. Kurucu metodunuzu  __construct() olarak adlandırın.</p>
+
+<p>Metot adının iki alt çizgi karakteriyle başladığını unutmayın. PHP sınıflarındaki diğer birçok özel metot için bu adlandırma kuralının kullanıldığını göreceksiniz. ShopProduct sınıfı için bir kurucu tanımlıyorum:</p>
+
+<p><strong>Not</strong>: Bu şekilde başlayan metotlar, belirli durumlarda otomatik olarak çağrıldıklarından sihirli metotlar olarak ta bilinirler. Bunlar hakkında daha fazla bilgiyi www.php.net/manual/en/language.oop5.magic.php adresinde bulabilirsiniz. Çift alt çizgi belirli bir çağrışıma sahip olduğu için, bunları kendi özel metotlarınızda kullanmamak iyi bir fikirdir.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProduct
+{
+    public $title;
+    public $producerMainName;
+    public $producerFirstName;
+    public $price = 0;
+
+    public function __construct(
+        $title,
+        $firstName,
+        $mainName,
+        $price
+    ) {
+        $this-&gt;title = $title;
+        $this-&gt;producerFirstName = $firstName;
+        $this-&gt;producerMainName = $mainName;
+        $this-&gt;price = $price;
+    }
+
+    public function getProducer()
+    {
+        return $this-&gt;producerFirstName . " "
+            . $this-&gt;producerMainName;
+    }
+}
+</code></pre></div></div>
+
+<p>Bir kez daha sınıfımı geliştiriyorum, koddan ve tekrardan tasarruf ediyorum. __construct() metodu, new operatörü kullanılarak nesne oluşturulduğunda çağrılır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1 = new ShopProduct(
+    "My Antonia",
+    "Willa",
+    "Cather",
+    5.99
+);
+
+print "author: {$product1-&gt;getProducer()}\n";
+// author: Willa Cather
+</code></pre></div></div>
+
+<p>Verilen parametreler kurucuya iletilir. Kurucu metot, nesnenin property’lerine değer atamak için $this sözde değişkenini kullanır.</p>
+
+<p><strong>Not</strong>: ShopProduct nesnesinin örneğini oluşturmak artık daha kolay ve kullanımı daha güvenli. Örneklendirme ve kurulum tek bir ifadede tamamlanıyor. ShopProduct nesnesini kullanan herhangi bir kod, tüm property’lere değer atandığından makul ölçüde emin olabilir.</p>
+
+<p><strong>Yeni Kurucu Metot Sözdizimi</strong></p>
+
+<p>ShopProduct sınıfını daha güvenli ve daha pratik hale getirdik. Sınıfa bir göz atın. Dört property’e sahip bir nesneyi örneklendirmek için, property’leri tanımlıyoruz, verileri tutmak için kurucu metot parametrelerini tanımlıyoruz ve ardından, property’lere metot parametrelerini atayarak hepsini bir araya getiriyoruz. PHP 8, yeni bir kurucu metot kısayolu sağlar. Kurucu metot parametrelerinize görünürlük anahtar sözcüğü ekleyerek, bunları property bildirimleriyle birleştirebilir ve aynı anda atayabilirsiniz. İşte ShopProduct’ın yeni bir versiyonu:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProduct
+{
+    public function __construct(
+        public $title,
+        public $producerFirstName,
+        public $producerMainName,
+        public $price
+    ) {
+    }
+
+    public function getProducer()
+    {
+        return $this-&gt;producerFirstName . " "
+            . $this-&gt;producerMainName;
+    }
+}
+</code></pre></div></div>
+
+<p>Kurucu metottaki property’lerin hem bildirimi hem de ataması dolaylı olarak işlenir. Bu tekrarı ve hata yapma olasılığını da azaltır. Sınıfı daha kompakt hale getirerek, kaynak kodu okuyanların mantığa odaklanmasını kolaylaştırır.</p>
+
+<p>Öngörülebilirlik, nesne yönelimli programlamanın önemli bir yönüdür. Sınıflarınızı, nesneleri  kullananların özelliklerinden emin olabileceği şekilde tasarlamalısınız. Nesneyi güvenli hale getirmenin bir yolu, property’lerinde tuttuğu veri türlerini tahmin edilebilir kılmaktır. Örneğin, $name property’sinin her zaman karakterlerden oluşması sağlanabilir. Ancak property verileri sınıfın dışından alınıyorsa bunu nasıl başarabilirsiniz? Bir sonraki bölümde, metot bildirimlerinde nesne türlerini zorlamak için kullanabileceğiniz bir mekanizmayı inceliyorum.</p>
+
+<h2 id="varsayılan-parametreler-ve-adlandırılmış-parametreler">Varsayılan Parametreler ve Adlandırılmış Parametreler</h2>
+
+<p>Zamanla, metot parametre listesi uzun ve hantal hale gelebilir. Bu, metotların gerektirdiği parametreleri takip etmeyi zorlaştırır. Metot tanımlarında varsayılan değerler kullanarak yazılımcı için işleri kolaylaştırabiliriz. Örneğin, ShopProduct nesnemiz için başlığa ihtiyacımız olduğunu, ancak üretici adları için boş string değerlerini ve fiyat için sıfır değerini kabul ettiğimizi varsayalım. Çağıran kodun tüm bu verileri sağlaması gerekir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1 = new ShopProduct("Shop Catalogue", "", "", 0);
+</code></pre></div></div>
+
+<p>Parametrelerimiz için varsayılan değerler atayarak örneklemeyi kolaylaştırabiliriz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProduct
+{
+    public function __construct(
+        public $title,
+        public $producerFirstName = "",
+        public $producerMainName = "",
+        public $price = 0
+    ) {
+    }
+
+    // ...
+}
+</code></pre></div></div>
+
+<p>Şimdi, kurucuya yapılan isteğin yalnızca bir değer belirtmesi gerekir: başlık.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1 = new ShopProduct("Shop Catalogue");
+</code></pre></div></div>
+
+<p>Varsayılan parametre değerleri, metotlarla çalışmayı daha kolay hale getirebilir, ancak çoğu zaman, istenmeyen komplikasyonlara da neden olabilir. Bir fiyat vermek istesem, ancak yine de isimlerin varsayılan değerlerinde kalmasını istersem, kurucu metot çağrıma ne olur? PHP 8’den önce takılıp kalırdım. Fiyatı belirtmek için boş isimler vermem gerekecek. Bu bizi başladığımız yere getiriyor. Ayrıca, kurucunun boş isimler için ne tür değerler beklediğini de bulmam gerekecek. Boş bir metin mi atamalıyım? Yoksa null mu olmalı? İşi kurtarmak şöyle dursun, varsayılan değerler kafa karışıklığına yol açmış olabilir.</p>
+
+<p>Şanslıyız, PHP 8 adlandırılmış parametreleri sağlar. Metot çağrısında, artık iletmek istediğim değerin önünde parametre adını belirtebilirim. PHP değeri, - daha sonra çağıran koddaki sıra ne olursa olsun -  metot imzasındaki doğru parametre ile ilişkilendirir.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1 = new ShopProduct(
+    price: 0.7,
+    title: "Shop Catalogue"
+);
+</code></pre></div></div>
+
+<p>Buradaki sözdizimine dikkat edin: PHP’ye $price parametresini 0.7’ye set etmek istediğimi, önce parametre adını, sonra iki nokta üst üste ve ardından değeri belirterek söylüyorum. Adlandırılmış parametreler kullandığım için artık sıraları önemli değil ve artık boş değerler vermem gerekmiyor.</p>
+
+<h2 id="parametreler-ve-tipler">Parametreler ve Tipler</h2>
+
+<p>Tipler, verilerin yönetilme şeklini belirler. Örneğin, karakter verilerini görüntülemek için string türünü kullanırsınız ve bu tür verileri string fonksiyonlarıyla manipule edersiniz. Integer matematiksel ifadelerde, boolean test ifadelerinde vb. kullanılır. Bunlar ilkel (primitive) tipler olarak bilinir. Bu nedenle ShopProduct nesnesi, ilkel nesne tipine  aittir, ancak aynı zamanda sınıf tipine de aittir. Bu bölümde, sınıf metotlarıyla ilgili olarak her iki türe de bakacağım.</p>
+
+<p>Metot ve fonksiyon tanımları, parametrenin belirli bir türde olmasını zorunlu olarak gerektirmez. Bu hem bir lanet hem de bir nimettir. Parametrenin herhangi bir türden olabileceği gerçeği size esneklik sunar. İşlevselliği değişen koşullara uyarlayarak farklı veri türlerine akıllıca yanıt veren metotlar oluşturabilirsiniz. Bu esneklik, belirsizliğe neden olabilir.</p>
+
+<h3 id="i̇lkel-tipler">İlkel Tipler</h3>
+
+<p>PHP gevşek (loosely typed) yazılmış bir dildir. Bu, bir değişkenin belirli bir veri tipini tutması için tanımlanmasına gerek olmadığı anlamına gelir. $number değişkeni 2 ve “two” değerini aynı kapsamda tutabilir. C veya Java gibi sıkı tip denetimi olan (strongly typed) dillerde, bir değer atamadan önce değişkenin türünü bildirmelisiniz ve tabii ki değer belirtilen türde olmalıdır.</p>
+
+<p>Bu, PHP’nin tip kavramı olmadığı anlamına gelmez. Değişkene atanabilen her değerin bir tipi vardır. PHP’nin tip kontrol işlevlerinden birini kullanarak değişkenin değerinin tipini belirleyebilirsiniz. Aşağıdaki tablo, PHP’de tanınan ilkel türleri ve bunlara karşılık gelen test fonksiyonlarını listeler. Her fonksiyon bir değişkeni veya değeri kabul eder ve bu parametre  ilgili türdeyse true döndürür.</p>
+
+<p><strong>Tablo 3-1</strong>. PHP’de İlkel Tipler ve Kontrol Fonksiyonları</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fonksiyon</th>
+      <th>Tip</th>
+      <th>Açıklama</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>is_bool()</td>
+      <td>Boolean</td>
+      <td>true veya false</td>
+    </tr>
+    <tr>
+      <td>is_integer()</td>
+      <td>Integer</td>
+      <td>Tam sayı. is_int() ve is_long()’un takma adı</td>
+    </tr>
+    <tr>
+      <td>is_float()</td>
+      <td>Float</td>
+      <td>Kayan noktalı sayı. is_double()’ın takma adı</td>
+    </tr>
+    <tr>
+      <td>is_string()</td>
+      <td>String</td>
+      <td>Karakter verileri</td>
+    </tr>
+    <tr>
+      <td>is_object()</td>
+      <td>Object</td>
+      <td>Nesne</td>
+    </tr>
+    <tr>
+      <td>is_resource()</td>
+      <td>Resource</td>
+      <td>Veritabanları veya dosyalar gibi dış kaynakları tanımlamak ve bunlarla çalışmak için kullanılan veri tipi</td>
+    </tr>
+    <tr>
+      <td>is_array()</td>
+      <td>Array</td>
+      <td>Dizi</td>
+    </tr>
+    <tr>
+      <td>is_null()</td>
+      <td>Null</td>
+      <td>Atanmamış değer</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Özellikle metot ve fonksiyon parametreleriyle çalışırken değişkenin türünü kontrol etmek önemli olabilir.</p>
+
+<p><strong>İlkel Tipler: Bir Örnek</strong></p>
+
+<p>Kodunuzu yazarken dikkatli olmalısınız. İşte karşılaşabileceğiniz tiple ilgili birçok sorundan birine örnek.</p>
+
+<p>Yapılandırma ayarlarının bir XML dosyasında tutulduğunu hayal edin. <code class="language-plaintext highlighter-rouge">&lt;resolveddomains&gt;&lt;/resolveddomains&gt;</code> XML öğesi, uygulamanıza IP adreslerini çözümlemeye çalışıp çalışmayacağını söyler; bu yararlı ancak maliyetli bir işlemdir.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;settings&gt;
+    &lt;resolvedomains&gt;false&lt;/resolvedomains&gt;
+&lt;/settings&gt;
+</code></pre></div></div>
+
+<p>“false” dizesi, uygulamanız tarafından alınır ve IP adresi verilerini görüntüleyen outputAddresses() adlı bir metoda iletilir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class AddressManager
+{
+    private $addresses = ["209.131.36.159", "216.58.213.174"];
+
+    public function outputAddresses($resolve)
+    {
+        foreach ($this-&gt;addresses as $address) {
+            print $address;
+            if ($resolve) {
+                print " (" . gethostbyaddr($address) . ")";
+            }
+            print "\n";
+        }
+    }
+}
+</code></pre></div></div>
+
+<p>Elbette, AddressManager sınıfı biraz geliştirilebilir. Örneğin, IP adreslerini bir sınıfın içine kodlamak pek kullanışlı değildir. Yine de outputAddresses() metodu, döngü oluşturarak  her öğeyi yazdırır. $resolve parametresi true olarak çözümlenirse, metot alan adının yanı sıra IP adresini de verir.</p>
+
+<p>İşte, AddressManager sınıfıyla birlikte XML yapılandırma öğesini kullanan bir yaklaşım. Kusurlu olduğunu tespit edip edemeyeceğinize bakın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$settings = simplexml_load_file(__DIR__ . "/resolve.xml");
+$manager = new AddressManager();
+$manager-&gt;outputAddresses((string)$settings-&gt;resolvedomains);
+</code></pre></div></div>
+
+<p>Kod parçası, SimpleXML API’sini kullanır. Bu örnekte, değerin “false” olduğunu biliyorum ve SimpleXML belgelerinin yapmamı önerdiği gibi onu string’e dönüştürüyorum.</p>
+
+<p>Bu kod beklediğiniz gibi davranmayacaktır. “false” dizesini outputAddresses() metoduna iletirken, metodun parametre hakkında yaptığı örtük varsayımı yanlış anlıyorum. Metot bir boolean değer (yani, true veya false) bekliyor. “false” dizesi aslında true olarak yorumlanır. Bunun nedeni, PHP’nin sizin için boş olmayan bir string değerini boolean tipine çevirecek olmasıdır. Bu kod üzerinde düşünün:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if ("false") {
+    // ...
+}
+</code></pre></div></div>
+
+<p>Aslında şuna eşdeğerdir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if (true) {
+    // ...
+}
+</code></pre></div></div>
+
+<p>Bunu düzeltmek için uygulayabileceğiniz birkaç yaklaşım var.</p>
+
+<p>outputAddresses() matodunu daha töleranslı hale getirebilirsiniz, böylece dizeyi tanır ve onu boolean eşdeğerine dönüştürmek için bazı temel kurallar uygular:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function outputAddresses($resolve)
+{
+    if (is_string($resolve)) {
+        $resolve = (preg_match("/^(false|no|off)$/i", $resolve)) ? false : true;
+    }
+    // ...
+}
+</code></pre></div></div>
+
+<p>Bununla birlikte, böyle bir yaklaşımdan kaçınmak gerekir. Genel olarak konuşursak, metot veya fonksiyon için net ve katı bir arayüz sağlamak, belirsiz bir arayüz sunmaktan daha iyidir. Belirsiz metot ve fonksiyonlar kafa karışıklığına neden olabilir ve bu nedenle bugları besleyebilir.</p>
+
+<p>Başka bir yaklaşım benimseyebilirsiniz: outputAddresses() metodunu olduğu gibi bırakın ve $resolve parametresinin boolean değer içermesi gerektiğine dair açık talimatlar içeren bir yorum ekleyin. Bu yaklaşım, temel olarak yazılımcıya küçük yazıları okumasını söyler:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/**
+* Outputs the list of addresses.
+* If $resolve is true then each address will be resolved
+* @param $resolve boolean Resolve the address?
+*/
+public function outputAddresses($resolve)
+{
+    // ...
+}
+</code></pre></div></div>
+
+<p>Bu, yazılımcının belgeleri özenle okuduğu (veya bu tür ek açıklamaları tanıyan akıllı editörler kullandıkları) varsayıldığında makul bir yaklaşımdır.</p>
+
+<p>Son olarak, outputAddresses() metodunu veri tipi konusunda katı hale getirebilirsiniz. Boolean gibi ilkel türler için, PHP 7’nin yayınlanmasından önce bunu yapmanın gerçekten tek bir yolu vardı. Gelen verileri incelemek için kod yazmanız ve gerekli tiple eşleşmiyorsa bir şeyler yapmanız gerekir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function outputAddresses($resolve)
+{
+    if (! is_bool($resolve)) {
+        // do something drastic
+    }
+}
+</code></pre></div></div>
+
+<p>Bu yaklaşım, doğru veri türünü sağlamaya zorlamak veya bir uyarı vermek için kullanılabilir.</p>
+
+<p><strong>Not</strong>: Sonraki bölüm olan “Tip Bildirimleri: Nesne Tipleri”nde, metotlara ve fonksiyonlara iletilen parametre tiplerini sınırlamanın çok daha iyi bir yolunu açıklayacağım.</p>
+
+<p>String parametreyi dönüştürmek kolay olabilir, ancak muhtemelen başka sorunlara da yol açabilir. Bir dönüştürme mekanizması sağlarken, yazılımcının bağlamını ve amacını ikinci kez tahmin edersiniz. Öte yandan, boolean veri türünü zorlayarak, dizelerin boolean değerler ile eşleşip eşlemeyeceğine ve hangi sözcüğün true veya false olarak yorumlanacağına karar verme işini yazılımcıya bırakmış olursunuz. outputAddresses() metodu ise gerçekleştirmek üzere tasarlandığı göreve odaklanır. Belirli bir görevi daha geniş bağlamı göz ardı ederek gerçekleştirmeye yapılan bu vurgu, nesne yönelimli programlamada önemli bir ilkedir ve kitap boyunca buna sık sık döneceğim.</p>
+
+<p>Aslında, parametre tipleri ile başa çıkma stratejileri bir yandan olası hataların ciddiyetine, diğer yandan esnekliğin faydalarına bağlı olacaktır. PHP, sizin için - içeriğe bağlı olarak - ilkel değerleri atar. Dizelerdeki sayılar, örneğin bir matematiksel ifadede kullanıldığında integer veya float eşdeğerlerine dönüştürülür. Dolayısıyla kodunuz doğal olarak tip hatalarına karşı töleranslı olabilir.</p>
+
+<p>Bununla birlikte, genel olarak, hem nesne hem de ilkel tipler söz konusu olduğunda katı olmak en iyisidir. Şanslıyız ki, PHP 8, tip güvenliğini sağlamak için her zamankinden daha fazla araç sağlar.</p>
+
+<h3 id="diğer-bazı-tip-kontrol-fonksiyonları">Diğer Bazı Tip Kontrol Fonksiyonları</h3>
+
+<p>İlkel tipleri kontrol eden fonksiyonları gördük. Değişkenlerimizin içeriğini kontrol ederken -  değişkende tutulan verilerin nasıl kullanılabileceği hakkında daha genel bilgi sağlamak için -  ilkel türleri kontrol etmenin ötesine geçen birkaç fonksiyondan bahsetmekte fayda var. Bunları Tablo 3-2’de listeliyorum.</p>
+
+<p><strong>Tablo 3-2</strong>. Sözde Tip Denetimi İşlevleri</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Fonksiyon</th>
+      <th>Açıklama</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>is_countable()</td>
+      <td>count() fonksiyonuna aktarılabilen dizi veya nesne</td>
+    </tr>
+    <tr>
+      <td>is_iterable()</td>
+      <td>foreach kullanılarak döngüye alınabilen bir veri yapısı</td>
+    </tr>
+    <tr>
+      <td>is_callable()</td>
+      <td>Çağrılabilen kod - genellikle anonim bir fonksiyon veya fonksiyon adı</td>
+    </tr>
+    <tr>
+      <td>is_numeric()</td>
+      <td>integer, long veya sayı olarak çözümlenebilen string</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Tablo 3-2’de açıklanan fonksiyonlar, belirli tipleri kontrol etmekten çok, test ettiğiniz değerleri nasıl ele alacağınızı kontrol eder. Örneğin, is_callable() değişken için true değerini döndürürse, ona bir fonksiyon veya metot gibi davranabileceğinizi ve onu çağırabileceğinizi bilirsiniz. Benzer şekilde, is_iterable() testinden geçen bir değeri - dizi yerine özel bir nesne türü olsa bile - döngüye sokabilirsiniz.</p>
+
+<h3 id="tip-bildirimleri-nesne-tipleri">Tip Bildirimleri: Nesne Tipleri</h3>
+
+<p>Tıpkı bir parametre değişkeninin herhangi bir ilkel türü içerebileceği gibi, varsayılan olarak herhangi bir türden nesneyi de içerebilir. Bu esnekliğin kullanım alanları vardır, ancak bir metot tanımı bağlamında sorunlar ortaya çıkarabilir.</p>
+
+<p>ShopProduct nesnesiyle çalışmak üzere tasarlanmış bir metot düşünün:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProductWriter
+{
+    public function write($shopProduct)
+    {
+        $str = $shopProduct-&gt;title . ": "
+            . $shopProduct-&gt;getProducer()
+            . " (" . $shopProduct-&gt;price . ")\n";
+        print $str;
+    }
+}
+</code></pre></div></div>
+
+<p>Bu sınıfı şu şekilde test edebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1 = new ShopProduct("My Antonia", "Willa", "Cather", 5.99);
+$writer = new ShopProductWriter();
+$writer-&gt;write($product1);
+// My Antonia: Willa Cather (5.99)
+</code></pre></div></div>
+
+<p>ShopProductWriter sınıfı tek bir metot içerir, write(). Metot, ShopProduct nesnesini kabul eder ve nesnenin özetini oluşturmak ve yazdırmak için property ve metotlarını kullanır. $shopProduct parametresinin adını - metodun beklediği parametreye uygun olarak - ShopProduct olarak kullandım, ancak bunu zorlamadım. Bu, beklenmeyen bir nesne veya ilkel bir tür iletilebileceğim anlamına gelir. O zamana kadar kod, kendisine gerçek bir ShopProduct nesnesinin iletildiği varsayımına göre hareket etmiş olabilir.</p>
+
+<p><strong>Not</strong>: write() metodunu neden doğrudan ShopProduct’a eklemediğimi merak edebilirsiniz. Nedeni sorumluluk alanlarında yatmaktadır. ShopProduct sınıfı, ürün verilerinin yönetiminden sorumludur; ShopProductWriter bunu yazdırmaktan sorumludur. Bu bölümü okurken, işbölümünün yararlarını görmeye başlayacaksınız.</p>
+
+<p>Bu sorunu çözmek için PHP 5, sınıf tipi bildirimlerini tanıttı. Metot parametresine sınıf tipi bildirimi eklemek için, sınırlandırmanız gereken parametrenin önüne sınıf adını koymanız yeterlidir. write() metodunu şu şekilde değiştirebilirim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function write(ShopProduct $shopProduct)
+{
+    // ...
+}
+</code></pre></div></div>
+
+<p>Artık write() metodu, $shopProduct parametresini yalnızca ShopProduct türünde bir nesne içeriyorsa kabul edecektir.</p>
+
+<p>İşte basit bir sınıf:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Wrong
+{
+}
+</code></pre></div></div>
+
+<p>Ve burada write() metodunu Wrong nesnesiyle çağırmaya çalışıyoruz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$writer = new ShopProductWriter();
+$writer-&gt;write(new Wrong());
+</code></pre></div></div>
+
+<p>write() metoduna Wrong nesnesini iletmek önemli bir hataya neden olur.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TypeError: popp\ch03\batch08\ShopProductWriter::write(): Argument #1
+($shopProduct) must be of type
+popp\ch03\batch04\ShopProduct, popp\ch03\batch08\Wrong given, called in
+/var/popp/src/ch03/batch08/Runner.php on ...
+</code></pre></div></div>
+
+<p><strong>Not</strong>: TypeError çıktısının çok fazla ek bilgi içerdiğini fark etmiş olabilirsiniz. Örneğin, Wrong sınıfı popp\ch03\batch08\Wrong şeklinde belirtilir. Bunlar namespace (isim alanı) örnekleridir ve bunları Bölüm 4’te ayrıntılı olarak göreceksiniz.</p>
+
+<p>Bu, beni parametrenin türünü test etme zorunluluğundan kurtarıyor. Ayrıca yazılımcı için metot imzasını çok daha net hale getirir. Bir bakışta write() metodunun gereksinimlerini görebilir. Deklarasyon katı bir şekilde uygulandığından, tip hatasından kaynaklanan bazı belirsiz bug’lar hakkında endişelenmeye gerek yoktur.</p>
+
+<p>Otomatikleştirilmiş tip denetimi, hataları önlemenin harika bir yolu olsa da, tip bildirimlerinin çalışma zamanında denetlendiğini anlamak önemlidir. Bu, yalnızca metoda istenmeyen bir nesne gönderildiği anda hata oluştuğu anlamına gelir. write() çağrısı, yalnızca Noel sabahı çalışan koşullu bir ifadeye gömülürse ve kodunuzu dikkatli bir şekilde kontrol etmediyseniz, kendinizi tatilde çalışırken bulabilirsiniz.</p>
+
+<h3 id="tip-bildirimleri-i̇lkel-tipler">Tip Bildirimleri: İlkel Tipler</h3>
+
+<p>PHP 7’nin piyasaya sürülmesine kadar, yalnızca nesneleri ve diğer birkaç türü (callable ve array) kısıtlamak mümkündü. PHP 7 sonunda skaler tip bildirimlerini tanıttı. Bu, parametre listenizde boolean, string, integer ve float türlerini kullanmanıza olanak tanır.</p>
+
+<p>Skaler tip bildirimleriyle donanmış olarak, ShopProduct sınıfına bazı kısıtlamalar ekleyebilirim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProduct
+{
+    public $title;
+    public $producerMainName;
+    public $producerFirstName;
+    public $price = 0;
+
+    public function __construct(
+        string $title,
+        string $firstName,
+        string $mainName,
+        float $price
+    ) {
+        $this-&gt;title = $title;
+        $this-&gt;producerFirstName = $firstName;
+        $this-&gt;producerMainName = $mainName;
+        $this-&gt;price = $price;
+    }
+    // ...
+}
+</code></pre></div></div>
+
+<p>Kurucu metot bu şekilde desteklendiğinde, $title, $firstName ve $mainName parametrelerinin her zaman string ve $price öğesinin float veri içerdiğinden emin olabilirim. Bunu, ShopProduct’ı yanlış bilgilerle başlatarak gösterebilirim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product = new ShopProduct("title", "first", "main", []);
+</code></pre></div></div>
+
+<p>ShopProduct nesnesini başlatmaya çalışıyorum. Kurucuya üç dize iletiyorum, ancak sonuncu da gerekli değişken yerine boş bir dizi ileterek başarısız oluyorum. Tip bildirimleri sayesinde, PHP bundan kurtulmama izin vermiyor:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TypeError: popp\ch03\batch09\ShopProduct:: construct(): Argument #4
+($price) must be of type float, array given, called in...
+</code></pre></div></div>
+
+<p>Varsayılan olarak PHP, mümkün olduğunda, parametreleri gerekli tipe dolaylı olarak dönüştürür. Bu, daha önce karşılaştığımız güvenlik ve esneklik arasındaki ikileme bir örnektir. Örneğin, ShopProduct sınıfının yeni uygulaması, bizim için sessizce string’i float’a çevirecek. Dolayısıyla, bu örnekleme başarısız olmaz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product = new ShopProduct("title", "first", "main", "4.22");
+</code></pre></div></div>
+
+<p>Perde arkasında, string “4.22” float 4.22 olur. Şimdiye kadar, çok faydalı görünüyor. Ancak, AddressManager sınıfında karşılaştığımız sorunu tekrar düşünün. “false” dizesi sessizce true boolean’a çözümleniyordu. Varsayılan olarak, AddressManager::outputAddresses() metodunda şuna benzer bir bool tip bildirimi kullanırsam aynı şey olur:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function outputAddresses(bool $resolve)
+{
+    // ...
+}
+</code></pre></div></div>
+
+<p>Şimdi şöyle bir metot çağrısını düşünün:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$manager-&gt;outputAddresses("false");
+</code></pre></div></div>
+
+<p>Örtülü atama nedeniyle, işlevsel olarak aynıdır. Yalnızca dosya bazında olmasına rağmen, skaler tip bildirimlerini katı hale geirebilirsiniz. Burada katı tip bildirimlerini açıyorum ve outputAddresses()’i bir kez daha string ile çağırıyorum:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>declare(strict_types=1);
+
+$manager-&gt;outputAddresses("false");
+</code></pre></div></div>
+
+<p>Bu çağrı TypeError hatasına neden olur:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TypeError: popp\ch03\batch09\AddressManager::outputAddresses(): Argument #1
+($resolve) must be of type bool, string given, called in...
+</code></pre></div></div>
+
+<p><strong>Not</strong>: strict_types bildirimi, fonksiyonun veya metodun uygulandığı dosyaya değil, çağrının yapıldığı dosyaya uygulanır. Bu nedenle, katılığı uygulamak yazılımcıya bağlıdır.</p>
+
+<p>İsteğe bağlı bir parametre yapmanız gerekebilir, ancak yine de onun türünü kısıtlayın. Bunu varsayılan değer atayarak yapabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ConfReader
+{
+    public function getValues(array $default = [])
+    {
+        $values = [];
+        // do something to get values
+        // merge the provided defaults (it will always be an array)
+        $values = array_merge($default, $values);
+        return $values;
+    }
+}
+</code></pre></div></div>
+
+<h3 id="mixed-tipler">Mixed Tipler</h3>
+
+<p>PHP 8.0 ile tanıtılan mixed tip bildirimi, sentetik şeker olarak görülebilir, yani kendi başına pek bir şey yapmaz. Şunlar arasında işlevsel bir fark yoktur:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Storage
+{
+    public function add(string $key, $value)
+    {
+        // do something with $key and $value
+    }
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Storage
+{
+    public function add(string $key, mixed $value)
+    {
+        // do something with $key and $value
+    }
+}
+</code></pre></div></div>
+
+<p>İkinci versiyonda, add() için $value parametresinin mixed, başka bir deyişle array, bool, callable, int, float, null, object, resource veya string herhangi bir türü kabul edeceğini bildirdim. Bu nedenle, mixed $value bildirmek, parametre listesinde tip bildirimi olmadan $value kullanmakla aynıdır. Öyleyse neden mixed bildirimle uğraşıyorsunuz? Özünde, parametrenin kasıtlı olarak herhangi bir değeri kabul ettiğini beyan ediyorsunuz. Çıplak bir parametre, herhangi bir değeri kabul etmeye yönelik olabilir - veya yazılımcı tembel olduğu için tip bildirimi olmadan bırakılmış olabilir. Mixed şüphe ve belirsizliği ortadan kaldırır ve bu nedenle yararlıdır.</p>
+
+<p>Özetlemek gerekirse, Tablo 3-3’te PHP tarafından desteklenen tip bildirimlerini listeliyorum.</p>
+
+<p><strong>Tablo 3-3</strong>. Tip Bildirimleri</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tip Bildirimi</th>
+      <th>PHP Versiyon</th>
+      <th>Tanım</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>array</td>
+      <td>5.1</td>
+      <td>Varsayılan olarak null veya bir dizi olabilir</td>
+    </tr>
+    <tr>
+      <td>int</td>
+      <td>7.0</td>
+      <td>Varsayılan olarak null veya bir tamsayı olabilir</td>
+    </tr>
+    <tr>
+      <td>float</td>
+      <td>7.0</td>
+      <td>Kayan noktalı sayı. Katı mod etkinleştirilmiş olsa bile tamsayı kabul edilecektir. Varsayılan olarak null, float veya integer olabilir</td>
+    </tr>
+    <tr>
+      <td>callable</td>
+      <td>5.4</td>
+      <td>Çağrılabilir kod (anonim bir fonksiyon gibi). Varsayılan olarak null olabilir</td>
+    </tr>
+    <tr>
+      <td>bool</td>
+      <td>7.0</td>
+      <td>Varsayılan olarak null veya boolean olabilir</td>
+    </tr>
+    <tr>
+      <td>string</td>
+      <td>5.0</td>
+      <td>Varsayılan olarak null veya dize olabilir</td>
+    </tr>
+    <tr>
+      <td>self</td>
+      <td>5.0</td>
+      <td>İçinde bulunduğu sınıfa başvuru</td>
+    </tr>
+    <tr>
+      <td>[a class type]</td>
+      <td>5.0</td>
+      <td>Sınıf veya arayüz tipi. Varsayılan olarak null olabilir</td>
+    </tr>
+    <tr>
+      <td>iterable</td>
+      <td>7.1</td>
+      <td>foreach ile gezilebilir (dizi olması gerekmez - Traversable uygulanabilir)</td>
+    </tr>
+    <tr>
+      <td>object</td>
+      <td>7.2</td>
+      <td>Nesne</td>
+    </tr>
+    <tr>
+      <td>mixed</td>
+      <td>8.0</td>
+      <td>Değerin herhangi bir türde olabileceğine dair açık bildirim</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="birleşik-union-tipler">Birleşik (Union) Tipler</h3>
+
+<p>Mixed ile tip bildirimlerinin göreli katılığı arasında oldukça büyük bir uçurum vardır. Bir parametreyi iki, üç veya daha fazla tiple sınırlamanız gerekirse ne yaparsınız? PHP 8’e kadar, bunu başarabilmenin tek yolu, metot gövdesi içinde türü test etmekti. Storage sınıfına yeni bir gereksinimle dönelim. add(), yalnızca string veya boolean değer kabul etmelidir. İşte metot gövdesi içinde tipi kontrol eden bir uygulama:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Storage
+{
+    public function add(string $key, $value)
+    {
+        if (! is_bool($value) &amp;&amp; ! is_string($value)) {
+            error_log("value must be string or Boolean - given: " .
+            gettype($value));
+            return false;
+        }
+        // do something with $key and $value
+    }
+}
+</code></pre></div></div>
+
+<p><strong>Not</strong>: Aslında, false döndürmek yerine büyük olasılıkla exception fırlatırdık. Bölüm 4’te istisnalar hakkında daha fazla bilgi edinebilirsiniz.</p>
+
+<p>Bu manuel kontrol işimizi görsede, hantal ve okunması zor. Şanslıyız ki, PHP 8 yeni bir özellik getirdi: birleşik tip bildirimi yapmak için pipe sembolüyle ayrılmış iki veya daha fazla tipi birleştirmenize izin veren union type. İşte benim Storage’i yeniden uygulamam:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Storage
+{
+    public function add(string $key, string|bool $value)
+    {
+        // do something with $key and $value
+    }
+}
+</code></pre></div></div>
+
+<p>Şimdi $value parametresine float veya boolean dışında herhangi bir şey atamaya çalışırsam, artık tanıdık bir TypeError alacağım.</p>
+
+<p>add() metodunu biraz daha toleranslı yapmak istersem, null değerine izin vermek için birleşik tip kullanabilirim.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Storage
+{
+    public function add(string $key, string|bool|null $value)
+    {
+        // do something with $key and $value
+    }
+}
+</code></pre></div></div>
+
+<p>Birleşik tip bildirimleri, nesne tipi bildirimleriyle aynı şekilde çalışacaktır. Bu örnek, ShopProduct tipinde bir nesneyi veya null değeri kabul eder:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function setShopProduct(ShopProduct|null $product)
+{
+    // do something with $product
+}
+</code></pre></div></div>
+
+<p>Birçok metot false’ı alternatif bir değer olarak kabul ettiğinden veya döndürdüğünden, PHP 8 birleşik tipler bağlamında false sözde türünü destekler. Dolayısıyla, bu örnekte, ShopProduct nesnesini veya false’ı kabul edeceğim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function setShopProduct2(ShopProduct|false $product)
+{
+    // do something with $product
+}
+</code></pre></div></div>
+
+<p>Bu, <code class="language-plaintext highlighter-rouge">ShopProduct|bool</code> birleşiminden daha kullanışlı çünkü hiçbir senaryoda true kabul etmek istemiyorum.</p>
+
+<p><strong>Not</strong>: Birleşik tipler PHP 8’de eklenmiştir.</p>
+
+<h3 id="null-yapılabilir-tipler">Null Yapılabilir Tipler</h3>
+
+<p>Birleşik tipin null değerini iki seçenekten biri olarak kabul ettiği durumlarda, kullanabileceğiniz eşdeğer bir parametre vardır. Null yapılabilir tip, soru işaretiyle başlayan bir tip bildiriminden oluşur. Storage’in bu sürümü string veya null kabul eder:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Storage
+{
+    public function add(string $key, ?string $value)
+    {
+        // do something with $key and $value
+    }
+}
+</code></pre></div></div>
+
+<p>Sınıf tipi bildirimlerini açıkladığımda, türlerin ve sınıfların eşanlamlı olduğunu ima ettim. Ancak ikisi arasında önemli bir fark vardır. Bir sınıf tanımladığınızda, tür de tanımlarsınız, ancak bir tür, tüm sınıf ailesini tanımlayabilir. Farklı sınıfların bir tür altında gruplandırılabileceği mekanizmaya kalıtım denir. Kalıtımı bir sonraki bölümde ele alacağım.</p>
+
+<h2 id="dönüş-tipi-bildirimi">Dönüş Tipi Bildirimi</h2>
+
+<p>Bir parametrenin tipini bildirebileceğimiz gibi, metotlarımızın döndürdüğü tipleri sınırlamak için dönüş tipi bildirimlerini kullanabiliriz. Doğrudan bir metodun veya fonksiyonun kapanış parantezinden sonra iki nokta üst üste eklenir ve onu dönüş tipi bildirimi takip eder. Dönüş tipi bildirilirken, parametre tiplerinde olduğu gibi aynı türler desteklenir. Burada getPlayLength() dönüş tipini kısıtlıyorum:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function getPlayLength(): int
+{
+    return $this-&gt;playLength;
+}
+</code></pre></div></div>
+
+<p>Bu metot çağrıldığında tamsayı değeri döndüremezse, PHP bir hata üretir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TypeError: popp\ch03\batch15\CdProduct::getPlayLength(): Return value must be of type int, none returned
+</code></pre></div></div>
+
+<p>Dönüş değeri bu şekilde zorlandığından, metodu çağıran herhangi bir kod, dönüş değerinin tamsayı olmasına güvenebilir.</p>
+
+<p>Dönüş tipi bildirimleri, null yapılabilir ve birleşik türleri destekler:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function getPrice(): int|float
+{
+    return ($this-&gt;price - $this-&gt;discount);
+}
+</code></pre></div></div>
+
+<p>PHP 8’den itibaren desteklenen void dönüş tipi bildirimi ile bir metodun asla değer döndürmeyeceğini beyan edebilirsiniz. Örneğin, setDiscount() metodu bir değer sağlamak yerine set etmek için tasarlandığından, burada void dönüş tipi bildirimini kullanıyorum:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function setDiscount(int|float $num): void
+{
+    $this-&gt;discount = $num;
+}
+</code></pre></div></div>
+
+<h2 id="kalıtım">Kalıtım</h2>
+
+<p>Kalıtım, temel bir sınıftan bir veya daha fazla sınıfın türetilebileceği anlamına gelir.</p>
+
+<p>Bir başka sınıftan miras alan sınıfın onun alt sınıfı (subclass) olduğu söylenir. Bu ilişki genellikle ebeveynler ve çocuklar açısından tanımlanır. Bir alt sınıf (child), ebeveynden (parent) türetilir ve özelliklerini miras alır. Bu özellikler property ve metotlardan oluşur. Alt sınıf, tipik olarak ebeveyni (superclass olarak ta bilinir) tarafından sağlananlara yeni işlevler ekler; bu nedenle alt sınıfın ebeveynini genişlettiği söylenir.</p>
+
+<p>Kalıtımın söz dizimine girmeden önce, onun çözmenize yardımcı olabileceği sorunları inceleyeceğim.</p>
+
+<h3 id="kalıtım-problemi">Kalıtım Problemi</h3>
+
+<p>ShopProduct sınıfına tekrar bakalım. Şu anda, oldukça genel. Her türlü ürün için kullanılabilir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product1 = new ShopProduct("My Antonia", "Willa", "Cather", 5.99);
+$product2 = new ShopProduct(
+    "Exile on Coldharbour Lane", "The",
+    "Alabama 3",
+    10.99
+);
+print "author: " . $product1-&gt;getProducer() . "\n";
+print "artist: " . $product2-&gt;getProducer() . "\n";
+
+// author: Willa Cather
+// artist: The Alabama 3
+</code></pre></div></div>
+
+<p>Yapımcı adını ikiye ayırmak hem kitaplar hem de CD’ler için uygundur. “The” ve “Willa”ya göre değil, “Alabama 3” ve “Cather”e göre sıralama yapabilmek istiyorum. Tembellik mükemmel bir tasarım stratejisidir, dolayısıyla bu aşamada ShopProduct’ın birden fazla ürün türü için kullanma konusunda endişelenmenize gerek yoktur.</p>
+
+<p>Bununla birlikte, örneğime bazı yeni gereksinimler eklersem, işler hızla daha karmaşık hale gelebilir. Örneğin, kitaplara ve CD’lere özgü verileri temsil etmeniz gerektiğini düşünün. CD’ler için toplam çalma süresini kaydetmelisiniz; kitaplar için toplam sayfa sayısı. Daha başka farklar da olabilir, ancak bu, konuyu açıklamaya hizmet edecektir.</p>
+
+<p>Bu değişiklikleri karşılamak için örneğimi nasıl genişletebilirim? İki seçenek hemen kendini gösterir. İlk olarak, tüm verileri ShopProduct sınıfına atabilirim. İkincisi, ShopProduct’ı iki ayrı sınıfa ayırabilirim.</p>
+
+<p>İlk yaklaşımı inceleyelim. Burada, CD ve kitapla ilgili verileri tek bir sınıfta birleştiriyorum:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProduct
+{
+    public $numPages;
+    public $playLength;
+    public $title;
+    public $producerMainName;
+    public $producerFirstName;
+    public $price;
+
+    public function __construct(
+        string $title,
+        string $firstName,
+        string $mainName,
+        float $price,
+        int $numPages = 0,
+        int $playLength = 0
+    ) {
+        $this-&gt;title = $title;
+        $this-&gt;producerFirstName = $firstName;
+        $this-&gt;producerMainName = $mainName;
+        $this-&gt;price = $price;
+        $this-&gt;numPages = $numPages;
+        $this-&gt;playLength = $playLength;
+    }
+
+    public function getNumberOfPages(): int
+    {
+        return $this-&gt;numPages;
+    }
+
+    public function getPlayLength(): int
+    {
+        return $this-&gt;playLength;
+    }
+
+    public function getProducer(): string
+    {
+        return $this-&gt;producerFirstName . " "
+            . $this-&gt;producerMainName;
+    }
+}
+</code></pre></div></div>
+
+<p>$numPages ve $playLength property’lerine metot erişimi sağladım. Bu sınıftan örneklenen nesne, fazladan bir metot içerecektir ve bir CD için, gereksiz bir kurucu metot parametresi kullanılarak örneklendirilmelidir: CD, kitap sayfalarıyla ilgili bilgileri depolayacak ve kitap oynatma uzunluğu verisini destekleyecektir. Bu muhtemelen şu anda birlikte yaşayabileceğiniz bir şey. Ancak, her biri kendine ait metotları olan ürün türleri eklemeye devam edersem ne olur? Sınıfımız giderek daha karmaşık ve yönetilmesi zor hale gelir.</p>
+
+<p>Bu nedenle, tek bir sınıfa ait olmayan alanları zorlamak, gereksiz property ve metotlarla şişirilmiş nesnelere yol açar.</p>
+
+<p>Sorun verilerle de bitmiyor. İşlevsellik konusunda da zorluklarla karşılaşıyorum. Ürünü özetleyen bir metot düşünün. Satış departmanı, faturalarda kullanılmak üzere net bir özet satırı talep etti. CD’ler için çalma süresi ve kitaplar için sayfa sayısı eklememi istiyorlar, bu yüzden her tür için farklı uygulamalar sağlamak zorunda kalacağım. Nesnenin formatını takip etmek için flag kullanmayı deneyebilirim.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function getSummaryLine(): string
+{
+    $base = "{$this-&gt;title} ( {$this-&gt;producerMainName}, ";
+    $base .= "{$this-&gt;producerFirstName} )";
+
+    if ($this-&gt;type == 'book') {
+        $base .= ": page count - {$this-&gt;numPages}";
+    } elseif ($this-&gt;type == 'cd') {
+        $base .= ": playing time - {$this-&gt;playLength}";
+    }
+
+    return $base;
+}
+</code></pre></div></div>
+
+<p>$type’ı ayarlamak için, $numPages parametresini kurucu metodta test edebilirim. Yine de ShopProduct sınıfı bir kez daha gereğinden fazla karmaşık hale geldi. Daha fazla farklılık  veya yeni formatlar eklendikçe, bu işlevsel farklılıkları yönetmek daha da zorlaşacak. Belki de bu sorun için başka bir yaklaşım denemeliyim.</p>
+
+<p>ShopProduct bir arada iki sınıf gibi hissettirmeye başladığından, iki farklı tür oluşturabilirim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class CdProduct
+{
+    public $playLength;
+    public $title;
+    public $producerMainName;
+    public $producerFirstName;
+    public $price;
+
+    public function __construct(
+        string $title,
+        string $firstName,
+        string $mainName,
+        float $price,
+        int $playLength
+    ) {
+        $this-&gt;title = $title;
+        $this-&gt;producerFirstName = $firstName;
+        $this-&gt;producerMainName = $mainName;
+        $this-&gt;price = $price;
+        $this-&gt;playLength = $playLength;
+    }
+
+    public function getPlayLength(): int
+    {
+        return $this-&gt;playLength;
+    }
+
+    public function getSummaryLine(): string
+    {
+        $base = "{$this-&gt;title} ( {$this-&gt;producerMainName}, ";
+        $base .= "{$this-&gt;producerFirstName} )";
+        $base .= ": playing time - {$this-&gt;playLength}";
+        return $base;
+    }
+
+    public function getProducer(): string
+    {
+        return $this-&gt;producerFirstName . " "
+            . $this-&gt;producerMainName;
+    }
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class BookProduct
+{
+    public $numPages;
+    public $title;
+    public $producerMainName;
+    public $producerFirstName;
+    public $price;
+
+    public function __construct(
+        string $title,
+        string $firstName,
+        string $mainName,
+        float $price,
+        int $numPages
+    ) {
+        $this-&gt;title = $title;
+        $this-&gt;producerFirstName = $firstName;
+        $this-&gt;producerMainName = $mainName;
+        $this-&gt;price = $price;
+        $this-&gt;numPages = $numPages;
+    }
+
+    public function getNumberOfPages(): int
+    {
+        return $this-&gt;numPages;
+    }
+
+    public function getSummaryLine(): string
+    {
+        $base = "{$this-&gt;title} ( {$this-&gt;producerMainName}, ";
+        $base .= "{$this-&gt;producerFirstName} )";
+        $base .= ": page count - {$this-&gt;numPages}";
+        return $base;
+    }
+
+    public function getProducer(): string
+    {
+        return $this-&gt;producerFirstName . " "
+            . $this-&gt;producerMainName;
+    }
+}
+</code></pre></div></div>
+
+<p>Karmaşıklık sorununu ele aldım, ancak bunun bir bedeli var. Artık flag kullanmadan her format için bir getSummaryLine() metodu oluşturabilirim. Hiçbir sınıf, kendisiyle ilgili olmayan alanları veya metotları tutmaz.</p>
+
+<p>Maliyet çoğaltmada yatmaktadır. getProducerName() metodu her sınıfta tamamen aynıdır. Her kurucu metot, aynı şekilde bir dizi özdeş property ayarlar.</p>
+
+<p>GetProducer() metodunun her sınıf için aynı şekilde davranması gerekiyorsa, bir uygulamada yaptığım herhangi bir değişikliği diğeri içinde yapmam gerekir. Umursamazsanız, sınıflar kısa sürede senkronizasyondan çıkar.</p>
+
+<p>Yinelemeyi sürdürebileceğimden emin olsam bile endişelerim bitmedi. Artık bir yerine iki türüm var.</p>
+
+<p>ShopProductWriter sınıfını hatırlıyor musunuz? write() metodu, tek bir türle çalışacak şekilde tasarlanmıştır: ShopProduct. Bunu eskisi gibi çalışacak şekilde değiştirebilirim? Sınıf türü bildirimini metot imzasından kaldırabilirim, ancak o zaman doğru türde nesne iletildiği konusunda şansa güvenmeliyim. Metodun gövdesine kendi tip kontrol kodumu ekleyebilirim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProductWriter
+{
+    public function write($shopProduct): void
+    {
+        if (
+            ! ($shopProduct instanceof CdProduct) &amp;&amp;
+            ! ($shopProduct instanceof BookProduct)
+        ){
+            die("wrong type supplied"); 
+        }
+        $str  = "{$shopProduct-&gt;title}: "
+            . $shopProduct-&gt;getProducer()
+            . " ({$shopProduct-&gt;price})\n";
+        print $str;
+    }
+}
+</code></pre></div></div>
+
+<p>Örnekteki instanceof operatörüne dikkat edin; sol işlenendeki nesne sağ işlenen tarafından temsil edilen türdeyse, instanceof true olarak çözümlenir.</p>
+
+<p>Bir kez daha, karmaşıklığı arttırmak zorunda kaldım. $shopProduct parametresini iki tür için test etmem ve her türün diğeriyle aynı alanları ve metotları desteklemeye devam edeceğine güvenmem gerekiyor. Sınıf tipi bildirimi kullandığımda ve tek bir tür talep ettiğimde - ShopProduct sınıfının belirli bir arabirimi desteklediğinden emin olabileceğim için - her şey çok daha düzenliydi.</p>
+
+<p>ShopProduct sınıfı CD ve kitap yönleriyle birlikte iyi çalışmıyor ama ayrı da yaşayamıyor gibi görünüyor. Her format için ayrı bir uygulama sağlarken, kitap ve CD’leri tek bir tür olarak tanımlamak istiyorum. Tekrarı önlemek için ortak bir işlevsellik sağlamalıyım, ancak her formatın bazı metot çağrılarını farklı şekilde işlemesine izin vermek istiyorum. Kalıtım kullanmam gerekiyor.</p>
+
+<h3 id="kalıtımla-çalışmak">Kalıtımla Çalışmak</h3>
+
+<p>Bir kalıtım ağacı oluşturmanın ilk adımı, temel sınıfın birbirine uymayan veya farklı şekilde ele alınması gereken öğelerini bulmaktır. getPlayLength() ve getNumberOfPages() metotlarının birbirine ait olmadığını biliyorum. Ayrıca getSummaryLine() metodu için farklı uygulamalar oluşturmam gerektiğini de biliyorum. Bu farklılıkları türetilmiş iki sınıf için temel olarak kullanalım:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProduct
+{
+    public $numPages;
+    public $playLength;
+    public $title;
+    public $producerMainName;
+    public $producerFirstName;
+    public $price;
+
+    public function __construct(
+        string $title,
+        string $firstName,
+        string $mainName,
+        float $price,
+        int $numPages = 0,
+        int $playLength = 0
+    ) {
+        $this-&gt;title = $title;
+        $this-&gt;producerFirstName = $firstName;
+        $this-&gt;producerMainName = $mainName;
+        $this-&gt;price = $price;
+        $this-&gt;numPages = $numPages;
+        $this-&gt;playLength = $playLength;
+    }
+
+    public function getProducer(): string
+    {
+        return $this-&gt;producerFirstName . " "
+            . $this-&gt;producerMainName;
+    }
+
+    public function getSummaryLine(): string
+    {
+        $base = "{$this-&gt;title} ( {$this-&gt;producerMainName}, ";
+        $base .= "{$this-&gt;producerFirstName} )";
+        return $base;
+    }
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class CdProduct extends ShopProduct
+{
+    public function getPlayLength(): int
+    {
+        return $this-&gt;playLength;
+    }
+
+    public function getSummaryLine(): string
+    {
+        $base = "{$this-&gt;title} ( {$this-&gt;producerMainName}, ";
+        $base .= "{$this-&gt;producerFirstName} )";
+        $base .= ": playing time - {$this-&gt;playLength}";
+        return $base;
+    }
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class BookProduct extends ShopProduct
+{
+    public function getNumberOfPages(): int
+    {
+        return $this-&gt;numPages;
+    }
+
+    public function getSummaryLine(): string
+    {
+        $base = "{$this-&gt;title} ( {$this-&gt;producerMainName}, ";
+        $base .= "{$this-&gt;producerFirstName} )";
+        $base .= ": page count - {$this-&gt;numPages}";
+        return $base;
+    }
+}
+</code></pre></div></div>
+
+<p>Alt sınıf oluşturmak için, sınıf bildiriminde extends anahtar sözcüğünü kullanmalısınız. Örnekte, BookProduct ve CdProduct olmak üzere iki yeni sınıf oluşturdum. Her ikisi de ShopProduct sınıfını genişletir.</p>
+
+<p>Türetilmiş sınıflarda kurucu metot tanımlamadığından, üst sınıfın kurucusu otomatik olarak çağrılır. Alt sınıflar, ebeveynin tüm public ve protected metotlarına erişebilir (ancak private metot veya property’lere erişemezler). Bu, ShopProduct sınıfında getProducer() tanımlanmış olsa bile, CdProduct sınıfından oluşturulan bir nesnede getProducer() yöntemini çağırabileceğiniz anlamına gelir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$product2 = new CdProduct(
+    "Exile on Coldharbour Lane",
+    "The",
+    "Alabama 3",
+    10.99,
+    0,
+    60.33
+);
+
+print "artist: {$product2-&gt;getProducer()}\n";
+</code></pre></div></div>
+
+<p>Böylece her iki çocuk sınıf, ebeveynin davranışlarını miras alır. BookProduct nesnesine ShopProduct nesnesiymiş gibi davranabilirsiniz. BookProduct veya CdProduct nesnesini ShopProductWriter sınıfının write() metoduna iletebilirsiniz ve her şey beklendiği gibi çalışacaktır.</p>
+
+<p>CdProduct ve BookProduct sınıflarının getSummaryLine() metodunu geçersiz kılarak kendi uygulamalarını sağladığına dikkat edin. Türetilmiş sınıflar, ebeveynlerinin işlevlerini genişletebilir ama aynı zamanda değiştirebilir.</p>
+
+<p>Üst sınıfın bu metodu uygulaması, alt sınıflar tarafından geçersiz kılındığı için gereksiz görünebilir. Bununla birlikte, yeni alt sınıfların kullanabileceği temel işlevleri sağlar. Metodun varlığı aynı zamanda, tüm ShopProduct nesnelerinin getSummaryLine() metodunu sağlayacağına dair bir garanti verir. Daha sonra, herhangi bir uygulama olmadan bunu temel sınıfta yapmanın nasıl mümkün olduğunu göreceksiniz. Her alt ShopProduct sınıfı, ebeveyninin özelliklerini devralır. Hem BookProduct hem de CdProduct, getSummaryLine() versiyonlarında $title property’sine erişir.</p>
+
+<p>Kalıtım, ilk başta anlaşılması zor bir kavram olabilir. Diğerini genişleten bir sınıf tanımlayarak, ondan örneklenen nesnenin önce alt sınıfın, sonra üst sınıfın özellikleri tarafından tanımlanmasını sağlarsınız. Bunu düşünmenin başka bir yolu da aramadır. $product2-&gt;getProducer()’ı çağırdığımda, CdProduct sınıfında böyle bir metot olmadığı için metot çağrısı, ShopProduct’taki varsayılan uygulamaya düşüyor. $product2-&gt;getSummaryLine()’ı çağırdığımda ise, getSummaryLine() metodu CdProduct’ta bulunuyor ve çağrılıyor.</p>
+
+<p>Aynı şey property erişimleri için de geçerlidir. BookProduct sınıfının getSummaryLine() metodunda $title’a eriştiğimde, property BookProduct sınıfında bulunamadı. Bunun yerine üst sınıftan, ShopProduct’tan alınır. $title her iki alt sınıfa da uygulanır ve bu nedenle üst sınıfa aittir.</p>
+
+<p>Bununla birlikte, ShopProduct kurucu metoduna baktığımızda, alt sınıflar tarafından işlenmesi gereken verileri yönetmeye devam ettiğini gösteriyor. BookProduct sınıfı, $numPages parametre ve property’sini, CdProduct sınıfı ise $playLength parametre ve property’sini işlemelidir. Bunun işe yaraması için, alt sınıfların her birinde kurucu metotlar tanımlayacağım.</p>
+
+<p><strong>Kurucular ve Kalıtım</strong></p>
+
+<p>Bir alt sınıfta kurucu metot tanımladığınızda, üst sınıfa herhangi bir argümanı iletmekten sorumlu olursunuz. Bunu başaramazsanız, kısmen inşa edilmiş bir nesne elde edebilirsiniz.</p>
+
+<p>Üst sınıftan bir metodu çağırmak için, önce sınıfın kendisine atıfta bulunmanın bir yolunu bulmalısınız. PHP bu amaç için bize parent anahtar sözcüğünü sağlar.</p>
+
+<p>Nesne yerine sınıf bağlamında bir metoda başvurmak için -&gt; yerine :: kullanırsınız:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>parent::__construct()
+</code></pre></div></div>
+
+<p>Önceki kod parçası, “Ana sınıfın __construct() metodunu çağır” anlamına gelir. Burada, örneğimi her sınıfın yalnızca kendisine uygun olan verileri işlemesi için değiştiriyorum:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProduct
+{
+    public $title;
+    public $producerMainName;
+    public $producerFirstName;
+    public $price;
+
+    public function __construct(
+        $title,
+        $firstName,
+        $mainName,
+        $price
+    ) {
+        $this-&gt;title = $title;
+        $this-&gt;producerFirstName = $firstName;
+        $this-&gt;producerMainName = $mainName;
+        $this-&gt;price = $price;
+    }
+
+    public function getProducer(): string
+    {
+        return $this-&gt;producerFirstName . " "
+            . $this-&gt;producerMainName;
+    }
+
+    public function getSummaryLine(): string
+    {
+        $base = "{$this-&gt;title} ( {$this-&gt;producerMainName}, ";
+        $base .= "{$this-&gt;producerFirstName} )"; return $base;
+    }
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class BookProduct extends ShopProduct
+{
+    public $numPages;
+
+    public function __construct(
+        string $title,
+        string $firstName,
+        string $mainName,
+        float $price,
+        int $numPages
+    ) {
+        parent:: __construct(
+            $title,
+            $firstName,
+            $mainName,
+            $price
+        );
+        $this-&gt;numPages = $numPages;
+    }
+
+    public function getNumberOfPages(): int
+    {
+        return $this-&gt;numPages;
+    }
+
+    public function getSummaryLine(): string
+    {
+        $base = "{$this-&gt;title} ( $this-&gt;producerMainName, ";
+        $base .= "$this-&gt;producerFirstName )";
+        $base .= ": page count - {$this-&gt;numPages}";
+        return $base;
+    }
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class CdProduct extends ShopProduct
+{
+    public $playLength;
+
+    public function __construct(
+        string $title,
+        string $firstName,
+        string $mainName,
+        float $price,
+        int $playLength
+    ) {
+        parent:: __construct(
+            $title,
+            $firstName,
+            $mainName,
+            $price
+        );
+        $this-&gt;playLength = $playLength;
+    }
+
+    public function getPlayLength(): int
+    {
+        return $this-&gt;playLength;
+    }
+
+    public function getSummaryLine(): string
+    {
+        $base = "{$this-&gt;title} ( {$this-&gt;producerMainName}, ";
+        $base .= "{$this-&gt;producerFirstName} )";
+        $base .= ": playing time - {$this-&gt;playLength}";
+        return $base;
+    }
+}
+</code></pre></div></div>
+
+<p>Her alt sınıf, kendi property’lerini ayarlamadan önce üst sınıfın kurucusunu çağırır. Temel sınıf artık yalnızca kendi verilerini tutuyor. Genel bir kural olarak, üst sınıflara alt sınıfları hakkında herhangi bir özel bilgi vermekten kaçınmalısınız.</p>
+
+<p><strong>Not</strong>: PHP 5’ten önce, kurucular çevreleyen sınıfın adını alırdı. Yeni kurucular __construct() adını kullanır. Eski sözdizimini kullanarak, üst sınıfın kurucusuna yapılan çağrı sizi söz konusu sınıfa bağlar: parent::ShopProduct();. Eski kurucu sözdizimi PHP 7.0’da deprecated oldu ve PHP 8’de tamamen kaldırıldı.</p>
+
+<p><strong>Geçersiz Kılınan Metodu Çalıştırmak</strong></p>
+
+<p>parent anahtar sözcüğü, bir üst sınıftaki eşdeğerini geçersiz kılan herhangi bir metotla kullanılabilir. Bir metodu geçersiz kıldığınızda, üst sınıfın işlevselliğini ortadan kaldırmak yerine onu genişletmek isteyebilirsiniz. Bunu, geçerli nesne bağlamında üst sınıfın metodunu çağırarak başarabilirsiniz. getSummaryLine() metoduna tekrar bakarsanız, birçok kodun kopyalandığını göreceksiniz. ShopProduct sınıfında halihazırda geliştirilen işlevselliği yeniden oluşturmak yerine kullanmak daha iyi olacaktır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function getSummaryLine(): string
+{
+    $base = "{$this-&gt;title} ( {$this-&gt;producerMainName}, ";
+    $base .= "{$this-&gt;producerFirstName} )";
+    return $base;
+}
+</code></pre></div></div>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function getSummaryLine(): string
+{
+    $base = parent::getSummaryLine();
+    $base .= ": page count - $this-&gt;numPages";
+    return $base;
+}
+</code></pre></div></div>
+
+<p>ShopProduct üst sınıfında getSummaryLine() metodu için temel işlevselliği oluşturdum.</p>
+
+<p>Bunu CdProduct ve BookProduct alt sınıflarında yeniden oluşturmak yerine, özet dizesine daha fazla veri eklemeye devam etmeden önce ana metodu çağırıyorum.</p>
+
+<p>Artık kalıtımın temellerini gördüğünüze göre, property ve metot görünürlüğünü resmin tamamı ışığında yeniden inceleyeceğim.</p>
+
+<h3 id="public-private-and-protected-sınıflarınıza-erişimi-yönetmek">Public, Private, and Protected: Sınıflarınıza Erişimi Yönetmek</h3>
+
+<p>Şimdiye kadar, tüm property’leri public olarak tanımladım. Property bildiriminizde eski var anahtar sözcüğünü kullandıysanız, metodlar ve property’ler için genel erişim varsayılan ayardı.</p>
+
+<p><strong>Not</strong>: var, PHP 5’te kullanımdan kaldırılmıştır ve muhtemelen gelecekte dilden tamamen kaldırılacaktır.</p>
+
+<p>Gördüğümüz gibi, sınıflarınızdaki öğeler public, private veya protected olarak bildirilebilir:</p>
+
+<ul>
+  <li>Public property ve metotlara herhangi bir bağlamdan erişilebilir.</li>
+  <li>Private property veya metoda yalnızca çevreleyen sınıf içinden erişilebilir. Alt sınıfların bile erişimi yoktur.</li>
+  <li>Protected property veya metoda yalnızca çevreleyen sınıf içinden veya bir alt sınıftan erişilebilir. Hiçbir harici koda erişim izni verilmez.</li>
+</ul>
+
+<p>Peki bu bizim için ne kadar faydalı? Görünürlük anahtar sözcükleri, bir sınıfın yalnızca yazılımcı tarafından gerekli görülen yönlerini açığa çıkarmanıza olanak tanır. Bu, nesneniz için net bir arayüz sağlar.</p>
+
+<p>Erişim denetimi, yazılımcının belirli özelliklere erişmesini engelleyerek kodunuzdaki hataların önlenmesine de yardımcı olabilir. Örneğin, ShopProduct nesnelerinin indirimi desteklemesine izin vermek istediğinizi düşünün. $discount property’si ve setDiscount() metodu ekleyebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// ShopProduct class
+public $discount = 0;
+//...
+public function setDiscount(int $num): void
+{
+    $this-&gt;discount = $num;
+}
+</code></pre></div></div>
+
+<p>Uygulanan indirimi dikkate alan bir getPrice() metodu oluşturabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function getPrice(): int|float
+{
+    return ($this-&gt;price - $this-&gt;discount);
+}
+</code></pre></div></div>
+
+<p>Bu noktada bir sorunumuz var. Yalnızca ayarlanmış fiyatı göstermek istiyorsunuz, ancak bir yazılımcı getPrice() metodunu kolayca atlayabilir ve $price özelliğine erişebilir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>print "The price is {$product1-&gt;price}\n";
+</code></pre></div></div>
+
+<p>Bu, sunmak istediğiniz iskontoya göre düzeltilmiş fiyatı değil, ham fiyatı yazdıracaktır. $price property’sini private yaparak buna hemen bir son verebilirsiniz. Bu, yazılımcıları getPrice() metodunu kullanmaya zorlayarak doğrudan erişimi engelleyecektir. ShopProduct sınıfının dışından $price property’sine erişme girişimleri başarısız olur. Daha geniş dünya söz konusu olduğunda, bu property’nin varlığı sona ermiştir.</p>
+
+<p>Property’leri private olarak ayarlamak aşırı hevesli bir strateji olabilir. Private bir property’ye alt sınıf tarafından erişilemez. İş kurallarımızın yalnızca kitapların indirim için uygun olmaması gerektiğini belirttiğini hayal edin. GetPrice() metodunu, indirim uygulamadan $price property’sini döndürmesi için geçersiz kılabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// BookProduct
+public function getPrice(): int|float
+{
+    return $this-&gt;price;
+}
+</code></pre></div></div>
+
+<p>Private $price property’si BookProduct’ta değil ShopProduct sınıfında bildirildiğinden, ona buradan erişme girişimi başarısız olur. Bu sorunun çözümü, $price değişkenini protected olarak bildirmek ve böylece alt sınıflara erişim sağlamaktır. Protected property veya metot, bildirildiği sınıf hiyerarşisinin dışından erişilemez. Yalnızca kaynak sınıfından veya kaynak sınıfın alt öğelerinden erişilebilir.</p>
+
+<p>İlk başta property’leri private veya protected hale getirin ve kısıtlamanızı yalnızca gerektiğinde gevşetin. Sınıflarınızdaki çoğu (çoğu değilse de büyük kısmı) metot public olacak, ancak şüpheniz varsa bir kez daha kilitleyin. Sınıfınızdaki diğer metotlar için yerel işlevsellik sağlayan bir metodun, sınıfınızın kullanıcıları ile hiçbir ilgisi yoktur. Private veya protected yapın.</p>
+
+<p><strong>Erişim (Accessor) Metotları</strong></p>
+
+<p>Yazılımcıların sınıfınız tarafından tutulan değerlerle çalışması gerektiğinde, property’lere doğrudan erişimi reddetmek, bunun yerine gerekli değerleri aktaran metotlar sağlamak genellikle iyi bir fikirdir. Bu tür metotlar accessor veya getter ve setter olarak bilinir.</p>
+
+<p>Erişim metotlarının sağladığı bir avantajı zaten gördünüz. getPrice() metodunda gösterildiği gibi, property değerini koşullara göre filtrelemek için accessor kullanabilirsiniz.</p>
+
+<p>Property türünü zorlamak için setter kullanabilirsiniz. Tip bildirimleri, metot parametrelerini kısıtlamak için kullanılabilir, ancak property herhangi bir türde veri içerebilir. Liste verilerini çıkarmak için ShopProduct nesnesini kullanan ShopProductWriter sınıfını hatırlıyor musunuz? Bunu, bir defada herhangi bir sayıda ShopProduct nesnesini yazabilecek şekilde geliştirebilirim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProductWriter
+{
+    public $products = [];
+
+    public function addProduct(ShopProduct $shopProduct): void
+    {
+        $this-&gt;products[] = $shopProduct;
+    }
+
+    public function write(): void
+    {
+        $str = "";
+        foreach ($this-&gt;products as $shopProduct) {
+            $str .= "{$shopProduct-&gt;title}: ";
+            $str .= $shopProduct-&gt;getProducer();
+            $str .= " ({$shopProduct-&gt;getPrice()})\n";
+        }
+        print $str;
+    }
+}
+</code></pre></div></div>
+
+<p>ShopProductWriter sınıfı artık çok daha kullanışlı. Birçok ShopProduct nesnesini tutabilir ve hepsi için tek seferde veri yazabilir. Yine de, yazılımcılara sınıfı amacına uygun olarak kullanmaları konusunda güvenmeliyim. addProduct() metodunu sağlamış olmama rağmen, yazılımcıların $products property’sini doğrudan manipüle etmesini engellemedim. Birisi $products property’sine yanlış türde nesne eklemekle kalmaz, aynı zamanda tüm dizinin üzerine yazıp onu ilkel bir veri ile değiştirebilir. $products property’sini private yaparak bunu önleyebilirim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProductWriter
+{
+    private $products = [];
+    //...
+</code></pre></div></div>
+
+<p>Harici kodun $products property’sine zarar vermesi artık imkansız. Tüm erişim addProduct() metodu aracılığıyla olmalıdır ve metot bildiriminde kullandığım sınıf tipi bildirimi, array property’sine yalnızca ShopProduct nesnelerinin eklenebilmesini sağlar.</p>
+
+<h3 id="property-tipleri">Property Tipleri</h3>
+
+<p>Böylece, metot imzalarındaki tip bildirimlerini property görünürlük bildirimleriyle birleştirerek, sınıflarınızdaki property tiplerini kontrol edebilirsiniz. İşte başka bir örnek: property tiplerini yönetmek için tip bildirimlerini ve property görünürlüğünü kullandığım Point sınıfı:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Point
+{
+    private $x = 0;
+    private $y = 0;
+
+    public function setVals(int $x, int $y)
+    {
+        $this-&gt;x = $x;
+        $this-&gt;y = $y;
+    }
+
+    public function getX(): int
+    {
+        return $this-&gt;x;
+    }
+
+    public function getY(): int
+    {
+        return $this-&gt;y;
+    }
+}
+</code></pre></div></div>
+
+<p>$x ve $y property’leri private olduğundan, yalnızca setVals() metoduyla ayarlanabilirler ve setVals() yalnızca integer değerleri kabul edeceğinden, $x ve $y’nin her zaman tamsayı içerdiğinden emin olabilirsiniz.</p>
+
+<p>Tabii ki, bu property’ler private olarak ayarlandığından, bunlara erişmenin tek yolu getter veya accessor metotlardır.</p>
+
+<p>Property tiplerini tanıtan PHP sürüm 7.4’e kadar, property tiplerini sabitlemek için bu yönteme takılıp kalmıştık. Bu, property’leri için tip bildirmemizi sağlar. İşte bundan yararlanan Point sürümü:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class Point
+{
+    public int $x = 0;
+    public int $y = 0;
+}
+</code></pre></div></div>
+
+<p>$x ve $y property’lerini public yaptım ve türlerini kısıtlamak için tip bildirimi kullandım. Bu nedenle, istersem kontrolden ödün vermeden setVals() metodundan kurtulmayı seçebilirim. Ayrıca getX() ve getY() metotlarına da ihtiyacım yok. Point artık son derece basit bir sınıftır, ancak her iki property public olsa bile, tuttuğu veriler hakkında dünyaya garantiler sunar.</p>
+
+<p>Bu property’lerden birine dize ayarlamaya çalışalım:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$point = new Point();
+$point-&gt;x = "a";
+</code></pre></div></div>
+
+<p>PHP bundan kaçmamıza izin vermeyecek:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>TypeError: Cannot assign string to property popp\ch03\batch11\Point::$x of type int
+</code></pre></div></div>
+
+<p><strong>Not</strong>: Birleşik tipler, property tip bildirimlerinde de kullanılabilir.</p>
+
+<p><strong>ShopProduct Sınıfları</strong></p>
+
+<p>Bu bölümü, ShopProduct sınıfı ve alt öğelerin erişim denetimini kilitleyerek ve ele aldığımız diğer özelliklerden bazılarını dahil edecek şekilde değiştirerek kapatalım:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class ShopProduct
+{
+    private int|float $discount = 0;
+
+    public function __construct(
+        private string $title,
+        private string $producerFirstName,
+        private string $producerMainName,
+        protected int|float $price
+    ) {
+    }
+
+    public function getProducerFirstName(): string
+    {
+        return $this-&gt;producerFirstName;
+    }
+
+    public function getProducerMainName(): string
+    {
+        return $this-&gt;producerMainName;
+    }
+
+    public function setDiscount(int|float $num): void
+    {
+        $this-&gt;discount = $num;
+    }
+
+        public function getDiscount(): int
+    {
+        return $this-&gt;discount;
+    }
+
+    public function getTitle(): string
+    {
+        return $this-&gt;title;
+    }
+
+    public function getPrice(): int|float
+    {
+        return ($this-&gt;price - $this-&gt;discount);
+    }
+
+    public function getProducer(): string
+    {
+        return $this-&gt;producerFirstName . " "
+            . $this-&gt;producerMainName;
+    }
+
+    public function getSummaryLine(): string
+    {
+        $base = "{$this-&gt;title} ( {$this-&gt;producerMainName}, ";
+        $base .= "{$this-&gt;producerFirstName} )";
+        return $base;
+    }
+}
+</code></pre></div></div>
+
+<p>Görünürlüklerini private (veya $discount durumunda protected) olarak ayarlayarak property’lerin çoğuna erişimi kapatmanın yanı sıra, property bildirimlerimi kurucu metot imzasıyla birleştirdim. Aynı zamanda PHP 8’in yeni tip birleşim özelliğini gösteren $discount için property tip bildirimi kullandım. Int veya float değer atanabilmesi için $discount’u kısıtladım. $discount private olarak bildirildiğinden ve setDiscount() metodundaki tip bildirimi aynı koşulu uygulayacağından, bu kısıtlama gereksiz görünebilir. Bununla birlikte, bir tür zorunlu satır içi belgeleme işlevi gördüğü için ve kısmen de ShopProduct’ın geliştirilmesi sırasında yanlışlıkla $discount ile istenmeyen şekilde oynamamızı önleyeceği için property tipi bildirmek iyi bir uygulamadır.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class CdProduct extends ShopProduct
+{
+    public function __construct(
+        string $title,
+        string $firstName,
+        string $mainName,
+        int|float $price,
+        private int $playLength
+    ) {
+        parent:: __construct(
+            $title,
+            $firstName,
+            $mainName,
+            $price
+        );
+    }
+
+    public function getPlayLength(): int
+    {
+        return $this-&gt;playLength;
+    }
+
+    public function getSummaryLine(): string
+    {
+        $base = "{$this-&gt;title} ( {$this-&gt;producerMainName}, ";
+        $base .= "{$this-&gt;producerFirstName} )";
+        $base .= ": playing time - {$this-&gt;playLength}";
+        return $base;
+    }
+}
+</code></pre></div></div>
+
+<p>Yine property tip bildirimini kurucu metot imzası ile birleştiriyorum. Bu sefer, yalnızca bir parametre için: $playLength. Kurucu parametrelerinin geri kalanını üst sınıfa aktarıyorum ve onlar için görünürlük ayarlamıyorum. Bunun yerine kurucunun gövdesinde kullanıyorum.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class BookProduct extends ShopProduct
+{
+    public function __construct(
+        string $title,
+        string $firstName,
+        string $mainName,
+        int|float $price,
+        private int $numPages
+    ) {
+        parent:: construct(
+            $title,
+            $firstName,
+            $mainName,
+            $price
+        );
+    }
+
+    public function getNumberOfPages(): int
+    {
+        return $this-&gt;numPages;
+    }
+
+    public function getSummaryLine(): string
+    {
+        $base = parent::getSummaryLine();
+        $base .= ": page count - $this-&gt;numPages";
+        return $base;
+    }
+
+    public function getPrice(): int|float
+    {
+        return $this-&gt;price;
+    }
+}
+</code></pre></div></div>
+
+<p>ShopProduct ailesinin bu sürümünde tüm property’ler private veya protected olarak tanımlandı. İşleri tamamlamak için bir dizi erişim metodu ekledim.</p>
+
+<p><strong>Özet</strong></p>
+
+<p>Bu bölüm, bir sınıfı boş bir uygulamadan tüm özeliklere sahip kalıtım hiyerarşisine götüren birçok konuyu kapsıyordu. Özellikle tür ve kalıtımla ilgili bazı tasarım konularını ele aldınız. PHP’nin görünürlük desteğini gördünüz ve bazı kullanımlarını incelediniz. Bir sonraki bölümde, size PHP’nin nesne yönelimli özelliklerinden daha fazlasını göstereceğim.</p>
+
+<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Nesneler ve sınıflar bu kitabın merkezindedir ve on yıl önce PHP 5’in piyasaya sürülmesinden bu yana PHP’nin de kalbinde yer alıyor. Bu bölümde, PHP’nin nesne yönelimli özelliklerini inceleyerek nesneleri ve tasarımı daha derinlemesine ele almak için temel oluşturuyorum. Nesne yönelimli programlamada yeniyseniz, bu bölümü dikkatlice okumalısınız.]]></summary></entry><entry><title type="html">PHP ve Nesneler</title><link href="http://localhost:4000/2024/03/20/php-ve-nesneler.html" rel="alternate" type="text/html" title="PHP ve Nesneler" /><published>2024-03-20T00:00:00+03:00</published><updated>2024-03-20T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/20/php-ve-nesneler</id><content type="html" xml:base="http://localhost:4000/2024/03/20/php-ve-nesneler.html"><![CDATA[<p>Nesneler her zaman PHP projesinin önemli bir parçası değildi. Aslında, bir zamanlar PHP tasarımcıları tarafından “sonradan düşünülmüş” olarak tanımlanmışlardı. Bu bölümde, PHP’nin nesne yönelimli özelliklerinin gelişimini özetleyerek tanıtıyorum.</p>
+
+<p>Aşağıdakilere bakacağız:</p>
+
+<ul>
+  <li>PHP/FI 2.0: PHP, ama bildiğimiz gibi değil.</li>
+  <li>PHP 3: Nesneler ilk kez ortaya çıkıyor.</li>
+  <li>PHP 4: Nesne yönelimli programlama gelişir.</li>
+  <li>PHP 5: Dilin merkezindeki nesneler.</li>
+  <li>PHP 7: Boşluğu kapatmak.</li>
+  <li>PHP 8: Konsolidasyon devam ediyor.</li>
+</ul>
+
+<h2 id="php-nesnelerinin-kazara-başarısı">PHP Nesnelerinin Kazara Başarısı</h2>
+
+<p>PHP’nin kapsamlı nesne desteği ve dolaşımdaki çok sayıda nesne yönelimli PHP kütüphanesi ve uygulamasıyla, PHP’de nesnenin yükselişi doğal ve kaçınılmaz bir süreç gibi görünebilir. Doğrusu, hiçbir şey gerçeklerden daha uzak olamaz.</p>
+
+<p><strong>Başlangıç: PHP/FI</strong></p>
+
+<p>Bugün bildiğimiz PHP’nin doğuşu, Rasmus Lerdorf tarafından Perl kullanılarak geliştirilen iki araca dayanmaktadır. PHP, Personal Home Page Tools anlamına geliyordu. FI, Form Interpreter anlamına gelir. Birlikte, veritabanlarına, formlara ve akış kontrolüne SQL ifadeleri gönderen makrolardan oluşuyorlardı.</p>
+
+<p>Bu araçlar C’de yeniden yazıldı ve PHP/FI 2.0 adı altında birleştirildi. Bu aşamadaki dil, bugün tanıdığımız sözdiziminden farklı görünüyordu ama o kadar da farklı değildi. Değişkenler, ilişkisel diziler ve fonksiyonlar için destek vardı. Ancak nesneler ufukta görünmüyordu.</p>
+
+<p><strong>Sentetik Şeker: PHP 3</strong></p>
+
+<p>Hatta PHP 3 daha planlama aşamasındayken bile konu gündem dışıydı. PHP 3’ün başlıca mimarları Zeev Suraski ve Andi Gutmans idi. PHP 3 tamamen yeniden yazıldı, ancak nesneler yeni sözdiziminin gerekli bir parçası olarak görülmedi.</p>
+
+<p>Zeev Suraski’ye göre, sınıf desteği neredeyse sonradan düşünülerek eklendi (kesin olarak 27 Ağustos 1997’de). Sınıflar ve nesneler aslında ilişkisel dizileri tanımlamanın ve bunlara erişmenin başka bir yoluydu…</p>
+
+<p>Elbette, metotların ve kalıtımın eklenmesi, sınıfları ilişkisel dizilerden çok daha fazlası haline getirdi, ancak yine de sınıflarla neler yapabileceğiniz konusunda ciddi sınırlamalar vardı. Özellikle, bir üst sınıfın geçersiz kılınan metotlarına erişemezsiniz (bunun ne anlama geldiğini henüz bilmiyorsanız merak etmeyin; daha sonra açıklayacağım). Bir sonraki bölümde inceleyeceğim bir diğer dezavantaj, PHP scriptlerinde nesnelerin aktarılmasının optimal olmayan yoluydu.</p>
+
+<p>Nesnelerin o zamanlar marjinal bir konu olduğu, resmi dökümantasyonda önem taşımamalarıyla vurgulanmaktadır. Dökümantasyon, nesnelere bir cümle ve bir kod örneği ayırdı. Örnek, kalıtımı veya özellikleri (property) göstermiyordu.</p>
+
+<p><strong>PHP 4 ve Sessiz Devrim</strong></p>
+
+<p>PHP 4, dil için bir başka çığır açan adım olsa da, temel değişikliklerin çoğu yüzeyin altında gerçekleşti. Zend Motoru (adı Zeev ve Andi’den türetilmiştir) dili güçlendirmek için sıfırdan yazılmıştır. Zend Engine, PHP’yi çalıştıran ana bileşenlerden biridir. Aramak isteyebileceğiniz herhangi bir PHP fonksiyonu, aslında üst düzey uzantı katmanının bir parçasıdır. Bunlar, veritabanı API’leriyle konuşmak veya dizelerde hokkabazlık yapmak gibi işleri yaparlar. Bunun altında, Zend Engine belleği yönetir, kontrolü diğer bileşenlere devreder ve her gün çalıştığınız tanıdık PHP sözdizimini çalıştırılabilir bayt koduna çevirir. Sınıflar gibi temel dil özellikleri için teşekkür etmemiz gereken Zend Engine’dir.</p>
+
+<p>Nesnel bakış açımızdan, PHP 4’ün ana metotları geçersiz kılmayı ve bunlara alt sınıflardan erişmeyi mümkün kılması büyük bir avantajdı.</p>
+
+<p>Ancak büyük bir dezavantaj devam etti. Bir değişkene nesne atamak, onu fonksiyona göndermek veya metottan döndürmek, bir kopyanın oluşmasıyla sonuçlandı. Bunun gibi bir atama düşünün:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$my_obj = new User('bob');
+$other = $my_obj;
+</code></pre></div></div>
+
+<p>Bu kod çalıştırıldığında, aynı User nesnesine iki referans yerine, iki User nesnesinin varlığıyla sonuçlandı. Çoğu nesne yönelimli dilde, değere göre değil referansa göre atama beklersiniz. Bu, nesnelerin kendisini kopyalamak yerine nesne işaretçilerini atayacağınız anlamına gelir. Varsayılan değere göre atama davranışı, programcıların farkında olmadan komut dosyasının bir bölümündeki nesneleri değiştirerek, değişikliklerin başka bir yerdeki referanslar aracılığıyla görülmesini bekledikleri için pek çok hatayla sonuçlandı. Bu kitap boyunca, aynı nesnenin birden fazla referansını kullandığım birçok örnek göreceksiniz.</p>
+
+<p>İyi ki, referansa dayalı atamayı zorlamanın bir yolu vardı, ancak bu, hantal bir yapı kullanmayı hatırlamak anlamına geliyordu.</p>
+
+<p>Referans olarak nasıl atayacağınız aşağıda açıklanmıştır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$other =&amp; $my_obj;
+// $other and $my_obj point to same object
+</code></pre></div></div>
+
+<p>Bu, referansa göre geçişi zorunlu kılar:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function setSchool(&amp; $school)
+{
+    // $school is now a reference to not a copy of passed object
+}
+</code></pre></div></div>
+
+<p>Ve işte referansla geri dönüş:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function &amp; getSchool()
+{
+    // returning a reference not a copy
+    return $this-&gt;school;
+}
+</code></pre></div></div>
+
+<p>İyi çalışsa da, &amp; işaretini eklemeyi unutmak kolaydı ve bu, hataların koda sızmasının çok kolay olduğu anlamına geliyordu. Hataların izini sürmek özellikle zordu, çünkü nadiren raporlanan hatalara neden oluyorlardı.</p>
+
+<p>PHP kılavuzunda genel olarak sözdiziminin, özel olarak nesnelerin kapsamı genişletildi ve nesne yönelimli kodlama akımına doğru yönelim başladı. PHP’deki nesneler tartışmasız değildi (şimdi olduğu gibi) ve “Nesnelere ihtiyacım var mı?” sorusu, posta listelerinde yaygın olarak görülüyordu. Gerçekten de, Zend sitesi, nesne yönelimli programlamayı teşvik eden makalelerin yanı sıra bu konuda uyaran makalelere ev sahipliği yaptı. Referansla geçiş sorunları ve tartışmalara rağmen, birçok programcı kodlarını &amp; karakteriyle doldurdu. Nesne yönelimli PHP popülaritesini artırdı. Zeev Suraski bu konuyu DevX.com için bir makalede yazdı.</p>
+
+<p>“PHP tarihindeki en büyük dönüm noktalarından biri - sınırlı işlevselliğe ve bir dizi sorun ve sınırlamaya rağmen - nesne yönelimli programlamanın gelişmesi ve artan sayıda kullanıma hazır PHP uygulamaları için en popüler paradigma haline gelmesiydi. Çoğunlukla beklenmedik olan bu eğilim, PHP’yi hazırlıksız yakaladı. Nesnelerin diğer dillerdeki nesneler gibi davranmadığı ve bunun yerine <em>ilişkisel</em> diziler gibi davrandığı ortaya çıktı.”</p>
+
+<p>Önceki bölümde belirtildiği gibi, nesne yönelimli tasarıma olan ilgi çevrimiçi sitelerde ve makalelerde belirgin hale geldi. PHP’nin resmi yazılım reposu PEAR nesne yönelimli programlamayı benimsemiştir. Geriye dönüp bakıldığında, PHP’nin nesne yönelimli desteği benimsemesinin kaçınılmaz bir güce isteksiz bir teslimiyet olduğunu düşünmek kolaydır. Nesneye yönelik programlamanın 1960’lardan beri var olmasına rağmen, 1990’ların ortalarında gerçekten zemin kazandığını hatırlamak önemlidir. Nesne yönelimli programlamayı popülerleştiren Java, 1995’e kadar piyasaya sürülmedi. Prosedürel bir dil olan C’nin bir üst kümesi C++, 1979’dan beri ortalıkta dolaşıyor. Uzun bir evrimden sonra, 1990’larda tartışmasız büyük bir sıçrama yaptı. Perl 5, 1994 yılında piyasaya sürüldü, bu, kullanıcılarının nesneler üzerinde düşünmesini mümkün kılan, prosedürel bir dilde başka bir devrimdi. Küçük bir prosedürel dil için PHP, nesne desteğini oldukça hızlı geliştirerek, kullanıcılarının gereksinimlerine gerçek bir yanıt verdi.</p>
+
+<p><strong>Benimsenen Değişim: PHP 5</strong></p>
+
+<p>PHP 5, nesnelerin ve nesne yönelimli programlamanın açık onayını temsil ediyordu. Bu, nesnelerin PHP ile çalışmanın tek yolu olduğu anlamına gelmez (bu arada, bu kitap bunu da söylemiyor). Bununla birlikte, nesneler, enterprise sistemler geliştirmek için güçlü ve önemli bir araç olarak kabul edildi ve PHP, core tasarımında bunları tam olarak destekledi.</p>
+
+<p>Muhtemelen, PHP 5’teki geliştirmelerin önemli etkilerinden biri, dilin daha büyük İnternet şirketleri tarafından benimsenmesiydi. Örneğin Yahoo ve Facebook, PHP’yi yoğun bir şekilde kullanmaya başladı. Sürüm 5 ile PHP, web geliştirme için standart dillerden biri haline geldi.</p>
+
+<p>Nesneler dil sürücüsüne taşınmıştı. Belki de en önemli değişiklik, pass-by-reference davranışıydı. Ancak bu sadece başlangıçtı. Bu kitap boyunca ve özellikle de bu bölümünde, private ve protected metotlar ve properties (özellikler), static anahtar sözcüğü, namespace’ler, type hints (artık type declaration olarak adlandırılmaktadır) ve exceptions (istisnalar) dahil olmak üzere çok daha fazla geliştirmeyle karşılaşacağız. PHP 5 uzun bir süredir (yaklaşık 12 yıl) ortalıkta dolaşıyordu ve yeni özellikler aşamalı olarak piyasaya sürüldü.</p>
+
+<p><strong>Not</strong>: PHP’nin, PHP 5’in tanıtılmasıyla referans olarak atama için tam anlamıyla hareket etmediğini ve bu durumun değişmediğini belirtmekte fayda var. Bunun yerine, varsayılan olarak, bir nesne atandığında, metoda iletildiğinde veya metottan döndürüldüğünde, o nesneye tanımlayıcı kopyalanır. Bu nedenle, &amp; işareti ile referansa göre atamayı zorunlu kılmadığınız sürece, yine de bir kopyalama işlemi gerçekleştiriyorsunuz. Bununla birlikte, pratik açıdan, bu tür kopyalama ile referans yoluyla atama arasında genellikle çok az fark vardır, çünkü aynı hedef nesneye başvuruda bulunursunuz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class megaquiz_util_Conf
+{
+}
+</code></pre></div></div>
+
+<p>Bunun gibi sınıf adları, paketler arasındaki çakışmaları önlemenin bir yoludur, ancak dolambaçlı kodlar oluşturabilirler. Ayrıca closure, generator, trait, late static binding desteği de verildi.</p>
+
+<p><strong>PHP 7: Boşluğu Kapatmak</strong></p>
+
+<p>Programcılar zorlu bir gruptur. Design pattern’leri seven birçok kişi için, PHP’de hala eksik olan iki temel özellik vardı. Bunlar, skaler tip bildirimleri ve zorunlu dönüş tipleriydi. PHP 5 ile, yalnızca bir nesneye, diziye veya daha sonra çağrılabilir bir koda ihtiyacınız olduğu sürece, metoda veya fonksiyona iletilen değişkenin tipini zorlamak mümkündü. Skaler değerler (integer, string ve float gibi) hiç uygulanamadı. Ayrıca, bir metodun veya fonksiyonun dönüş tipini bildirme şansınız yoktu.</p>
+
+<p>Göreceğiniz gibi, nesne yönelimli tasarım genellikle bir tür sözleşme olarak metot bildirimi kullanır. Metot, belirli girdiler talep eder ve karşılıklı olarak, size belirli bir veri tipini geri vermeyi taahhüt eder. PHP 5 programcıları, birçok durumda bu tür sözleşmeleri sürdürmek için yorumlara, kurallara ve manuel tip denetimine güvenmek zorunda kaldı. Geliştiriciler ve yorumcular genellikle bundan şikayet ediyordu.</p>
+
+<p>PHP 7, skaler tip bildirimlerini (önceden type hint olarak biliniyordu) ve dönüş tipi bildirimlerini tanıttı. Dahası, PHP 7.4, typed property sunarak tip güvenliğini daha da ileri götürdü. Doğal olarak, tüm bunlar bu baskıda ele alınmıştır.</p>
+
+<p>PHP 7 ayrıca, anonim sınıflar ve bazı namespace geliştirmeleri dahil olmak üzere başka güzel şeyler de sağladı.</p>
+
+<p><strong>PHP 8: Konsolidasyon devam ediyor</strong></p>
+
+<p>PHP, diğer dillerin en iyi özelliklerini ödünç almıştır. PHP 8, diğer dillerde annotation olarak bilinen nitelikler de dahil olmak üzere birçok yeni özellik sunar. Bu kullanışlı etiketler, bir sistemdeki sınıflar, metotlar, properties ve sabitler hakkında ek bağlamsal bilgiler sağlamak için kullanılabilir. Ayrıca PHP 8, tip bildirimleri için desteğini genişletmeye devam etmiştir. Bu alanda özellikle ilginç olanı, union tipi bildirimidir. Bu, bir özelliğin veya parametrenin tipinin belirtilen birkaç tipten biriyle sınırlandırabilmenize olanak tanır. PHP’nin tip esnekliğinden yararlanırken aynı zamanda tipleri kilitleyebilirsiniz.</p>
+
+<p><strong>Nesne Tartışması</strong></p>
+
+<p>Nesneler ve nesne yönelimli tasarım, tutku uyandırıyor gibi görünüyor. Pek çok mükemmel programcı, nesneleri kullanmadan yıllarca mükemmel kodlar üretti ve PHP, prosedürel web programlama için etkileyici bir platform olmaya devam ediyor.</p>
+
+<p>Bu kitap doğal olarak baştan sona nesne yönelimli önyargı sergiliyor, bu önyargı benim nesneye bulaşmış bakış açımı yansıtıyor. Konumuz nesneler olduğundan, vurgunun kesinlikle nesne yönelimli olması kaçınılmazdır. Bununla birlikte, bu kitaptaki hiçbir şey, nesnelerin başarıya giden tek gerçek yol olduğunu öne sürmeyi amaçlamamaktadır.</p>
+
+<p>Geliştiricilerin nesne yönelimli bir dil olarak PHP ile çalışmayı seçip seçmemesi bir zamanlar bir tercih meselesiydi. Bu, tamamen kabul edilebilir sistemler yaratılabileceği ölçüde hala geçerlidir. Bazı harika araçlar (örneğin, WordPress) temel mimarilerinde hala prosedüreldir. Bununla birlikte, PHP’nin nesne desteğini kullanmadan ve anlamadan bir PHP programcısı olarak çalışmak giderek daha zor hale geliyor, özellikle de projelerinizde kullanacağınız kütüphanelerin kendileri muhtemelen nesne yönelimli olacakları için.</p>
+
+<p>Yine de, Perl’in şu ünlü mottosunu akılda tutmaya değer: “Bir şeyi yapmanın birden fazla yolu var.” Bu özellikle daha küçük scriptler için geçerlidir, hızlı bir şekilde çalışan bir örnek oluşturmak, daha büyük bir sisteme ölçeklendirilecek bir yapı oluşturmaktan daha önemlidir.</p>
+
+<p>Kod esnek bir ortamdır. İşin püf noktası, konseptinizin ne zaman daha büyük bir geliştirmenin temeli haline geldiğini bilmektir. Artık büyüyen projenize tasarım odaklı bir yaklaşım benimsemeye karar verdiğinize göre, bu kitabın nesne yönelimli mimariler oluşturmaya başlamak için ihtiyaç duyduğunuz yardımı sağlayacağını umuyorum.</p>
+
+<p><strong>Özet</strong></p>
+
+<p>Bu kısa bölüm, nesneleri PHP dilindeki bağlamlarına yerleştirdi. PHP’nin geleceği, nesne yönelimli tasarıma bağlıdır. Sonraki birkaç bölümde, PHP’nin mevcut nesne desteğinin anlık görüntüsünü alacağım ve bazı tasarım konularını tanıtacağım.</p>
+
+<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Nesneler her zaman PHP projesinin önemli bir parçası değildi. Aslında, bir zamanlar PHP tasarımcıları tarafından “sonradan düşünülmüş” olarak tanımlanmışlardı. Bu bölümde, PHP’nin nesne yönelimli özelliklerinin gelişimini özetleyerek tanıtıyorum.]]></summary></entry><entry><title type="html">PHP - Tasarım ve Yönetim</title><link href="http://localhost:4000/2024/03/20/php-tasarim-ve-yonetim.html" rel="alternate" type="text/html" title="PHP - Tasarım ve Yönetim" /><published>2024-03-20T00:00:00+03:00</published><updated>2024-03-20T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/20/php-tasarim-ve-yonetim</id><content type="html" xml:base="http://localhost:4000/2024/03/20/php-tasarim-ve-yonetim.html"><![CDATA[<p>Temmuz 2004’te PHP 5.0 yayınlandı. Bu sürüm, bir dizi radikal geliştirmeyle geldi. Belki de bunlardan ilki, nesne yönelimli programlama için kökten geliştirilmiş destekti. Bu, PHP topluluğu içinde nesnelere ve tasarıma büyük ilgi uyandırdı. Aslında bu, PHP 4.0 ile  başlayan bir sürecin devamıydı.</p>
+
+<p>Bu bölümde, nesnelerin çözebileceği bazı sorunları inceliyorum. Örüntülerin ve ilgili uygulamaların evriminin bazı yönlerini kısaca özetliyorum.</p>
+
+<p>Ayrıca bu kitapta ele alınan konuları da özetledim.</p>
+
+<ul>
+  <li><em>Felaketin evrimi</em>: Bir proje kötüye gidiyor</li>
+  <li><em>Tasarım ve PHP</em>: Nesne yönelimli tasarım teknikleri PHP topluluğunda nasıl kök saldı?</li>
+  <li><em>Bu kitap</em>: Nesneler, Pattern’ler, Uygulama</li>
+</ul>
+
+<h2 id="sorun">Sorun</h2>
+
+<p>Sorun şu ki PHP çok kolay. Fikirlerinizi denemeniz için sizi cezbeder ve iyi sonuçlarla gururunuzu okşar. PHP bunu desteklemek için tasarlandığından, kodunuzun çoğunu doğrudan web sayfalarınıza yazarsınız. Sayfadan sayfaya dahil edilebilecek dosyalara yardımcı işlevler (veritabanı erişim kodu gibi) eklersiniz ve siz farkına bile varmadan çalışan bir web uygulamanız olur.</p>
+
+<p>Felakete doğru ilerliyorsun. Bunu elbette anlamıyorsunuz çünkü siteniz harika görünüyor. İyi performans gösteriyor, müşterileriniz mutlu ve kullanıcılarınız para harcıyor.</p>
+
+<p>Yeni bir aşamaya başlamak için koda geri döndüğünüzde sorun çıkar. Artık daha büyük bir ekibiniz, daha fazla kullanıcınız ve daha büyük bir bütçeniz var. Ancak, hiçbir uyarı olmadan  işler ters gitmeye başlar. Sanki projeniz zehirlenmiş gibi.</p>
+
+<p>Yeni programcınız kodu anlamakta zorlanıyor. Bir ekip üyesi olarak tam güce ulaşması beklediğinizden daha uzun sürüyor.</p>
+
+<p>Bir gün olarak tahmin edilen basit bir değişiklik, sonuç olarak 20 veya daha fazla sayfayı  güncellemeniz gerektiğini keşfettiğinizde üç gün sürer.</p>
+
+<p>Yazılımcılarınızdan biri, bir süre önce aynı kodda yaptığınız büyük değişikliklerin üzerine kendi sürümünü kaydeder. Kayıp üç gün boyunca fark edilmez, bu zamana kadar kendi yerel kopyanızı değiştirmiş olursunuz. Aynı zamanda dosya üzerinde çalışan üçüncü bir geliştiriciyi bekleterek karmaşayı çözmek bir gün sürer.</p>
+
+<p>Uygulamanın popülaritesi nedeniyle, kodu yeni bir sunucuya taşımanız gerekir. Proje elle kurulmalıdır ve dosya yollarının, veritabanı adlarının ve parolaların birçok kaynak dosyaya sabit kodlanmış olduğunu keşfedersiniz. Taşıma sırasında çalışmayı durdurursunuz çünkü yapılandırma değişikliklerinin üzerine yazmak istemezsiniz. Birisinin Apache modülü ModRewrite ile ilgili akıllıca bir şey yaptığı ve uygulamanın artık düzgün çalışması için buna ihtiyaç duyduğu ortaya çıktığında, tahmini iki saat sekiz saat oluyor.</p>
+
+<p>Sonunda 2. faza geçtiniz. Bir buçuk gün boyunca her şey yolunda. İlk hata raporu, siz ofisten çıkmak üzereyken gelir. Müşteri şikayet etmek için dakikalar sonra telefon eder. Rapor ilkine benziyor, ancak biraz daha incelendiğinde, benzer davranışlara neden olan farklı bir hata olduğu ortaya çıkıyor. Projenin geri kalanında kapsamlı değişiklikler gerektiren, fazın başlangıcındaki basit değişikliği hatırlıyorsunuz.</p>
+
+<p>Gerekli değişikliklerin tümünün yerinde olmadığını anlıyorsunuz. Bunun nedeni, başlangıçta atlanmış olmaları veya söz konusu dosyaların üzerine yazılmasıdır. Hataları düzeltmek için gereken değişiklikleri aceleyle yaparsınız. Değişiklikleri test etmek çok acele ediyorsunuz, ancak bunlar basit bir kopyala ve yapıştır meselesi, öyleyse ne ters gidebilir?</p>
+
+<p>Ertesi sabah, ofise geldiğinizde bir alışveriş sepeti modülünün bütün gece kapalı olduğunu görürsünüz. Yaptığınız son dakika değişiklikleri, baştaki tırnak işaretini atlayarak kodu kullanılamaz hale getirdi. Elbette, siz uyurken, diğer zaman dilimlerindeki potansiyel müşteriler tamamen uyanıktı ve mağazanızda para harcamaya hazırdı. Sorunu çözersiniz, müşterileri sakinleştirirsiniz ve ekibi başka bir günkü yangınla mücadele için bir araya getirirsiniz.</p>
+
+<p>Kod yazan insanların bu günlük hikayesi biraz abartılı görünebilir, ancak tüm bunların tekrar tekrar olduğunu gördüm. Pek çok PHP projesi hayata küçük başlar ve canavarlara dönüşür.</p>
+
+<p>Sunum katmanı aynı zamanda uygulama mantığını da içerdiğinden, veritabanı sorguları, kimlik doğrulama kontrolleri, form işlemleri ve daha fazlası sayfadan sayfaya kopyalanır. Bu kod bloklarından birinde değişiklik gerektiğinde, kodun bulunduğu her yerde yapılması gerekir.</p>
+
+<p>Dokümantasyon eksikliği kodun okunmasını zorlaştırır ve test eksikliği belirsiz hataların dağıtıma kadar farkedilmesini engeller. Bir işin değişen doğası, genellikle kodun, temel olarak uygun olmadığı görevleri yerine getirene kadar asıl amacından uzaklaşması anlamına gelir. Bu tür bir kod genellikle arap saçına döndüğünden, yeni amaca uyacak şekilde kısımları değiştirmek ve yeniden yazmak imkansız değilse bile zordur.</p>
+
+<h2 id="php-ve-diğer-diller">PHP ve Diğer Diller</h2>
+
+<p>PHP’nin olağanüstü popülaritesi, sınırlarının erken ve zorlu bir şekilde test edilmesi anlamına geliyordu. Bir sonraki bölümde göreceğiniz gibi, PHP hayata kişisel web sayfalarını yönetmek için bir dizi makro olarak başladı. PHP 3’ün ve daha büyük ölçüde PHP 4’ün gelişiyle, dil hızla büyük kurumsal web sitelerinin arkasındaki başarılı güç haline geldi. Bununla birlikte, birçok yönden, PHP’nin başlangıç mirası, script tasarımı ve proje yönetimine taşındı. Bazı çevrelerde PHP, sunum (presentation) görevleri için en uygun olan hobi dili olarak haksız bir üne sahipti.</p>
+
+<p>Bu sıralarda (milenyum başında), diğer topluluklarda yeni fikirler geçerlilik kazanıyordu. Nesne yönelimli tasarıma olan ilgi, Java topluluğunu harekete geçirdi. Java nesne yönelimli bir dil olduğu için bunun gereksiz olduğunu düşünebilirsiniz. Ancak sınıfları ve nesneleri kullanmak kendi başına belirli bir tasarım yaklaşımı sağlamaz.</p>
+
+<p>Bir sorunu, çözümünün özüyle birlikte tanımlamanın yolu olarak design pattern (tasarım deseni) kavramı ilk kez 1970’lerde tartışıldı. Fikir - belkide en uygun şekilde - bilgisayar bilimi alanından değil, mimarlık alanından, Christopher Alexander’ın ufuk açıcı bir çalışmasıyla ortaya çıkmıştır: A Pattern Language (Oxford University Press, 1977). 1990’ların başlarında, nesne yönelimli programcılar, yazılım tasarımı problemlerini adlandırmak ve tanımlamak için aynı tekniği kullanıyorlardı. Erich Gamma, Richard Helm, Ralph Johnson ve John Vlissides’ın (bundan böyle bu kitapta “Gang of Four” takma adlarıyla anılacaklardır) yazdığı tasarım desenleri üzerine ufuk açıcı kitap Design Patterns: Elements of Reusable Object-Oriented Software bugün hala vazgeçilmezdir. İçerdiği pattern’ler, bu alana yeni başlayan herkes için gerekli bir ilk adımdır, bu nedenle bu kitaptaki pattern’lerin çoğu ondan alınmıştır.</p>
+
+<p>Java dilinin kendisi, API’sinde birçok core pattern’i konuşlandırdı, ancak design pattern’lerin topluluğun genelinin bilincine sızması 1990’ların sonlarını buldu. Pattern’ler hızla Main Street kitapçılarının bilgisayar bölümlerine ulaştı ve ilk ateşli tartışmalar mail listelerinde ve forumlarda başladı.</p>
+
+<p>İlgili konular da önem kazandı. Bunların arasında Kent Beck tarafından desteklenen Extreme Programming (XP) de vardı. XP, esnek, tasarım yönlü, yüksek odaklı planlama ve yürütmeyi teşvik eden bir proje yaklaşımıdır.</p>
+
+<p>XP’nin ilkeleri arasında öne çıkan, testin bir projenin başarısı için çok önemli olduğu konusundaki ısrardır. Testler otomatikleştirilmeli, sık çalıştırılmalı ve tercihen kodlar yazılmadan önce tasarlanmalıdır.</p>
+
+<p>XP ayrıca projelerin küçük (çok küçük) iterasyonlara bölünmesi gerektiğini de belirtir. Hem kod hem de gereksinimler her zaman incelenmelidir. Mimari ve tasarım, kodun sık sık gözden geçirilmesine yol açan, paylaşılan ve sürekli bir sorun olmalıdır.</p>
+
+<p>XP, tasarım hareketinin militan kanadıysa, o zaman ılımlı eğilim, programlama hakkında şimdiye kadar okuduğum en iyi kitaplardan biri tarafından iyi bir şekilde temsil ediliyor: The Pragmatic Programmer: From Journeyman to Master by Andrew Hunt and David Thomas.</p>
+
+<p>XP, bazıları tarafından biraz kült olarak kabul edildi, ama en üst düzeyde yirmi yıllık nesne yönelimli pratikle ortaya çıktı. Özellikle, yeniden düzenleme olarak bilinen code revision, pattern’lere güçlü bir yardımcı-tamamlayıcı olarak ele alındı.</p>
+
+<p>Yeniden düzenleme 1980’lerden beri gelişti, ancak Martin Fowler’ın 1999’da yayınlanan ve alanı tanımlayan “Refactoring: Improving the Design of Existing Code” adlı kitabında  sistematikleştirildi.</p>
+
+<p>XP’nin ve pattern’lerin öne çıkmasıyla birlikte test etme sıcak bir konu haline geldi. Otomatik testlerin önemi, Java programcılarının cephaneliğinde önemli bir silah haline gelen güçlü JUnit test platformunun piyasaya sürülmesiyle daha da vurgulandı. Konuyla ilgili dönüm noktası niteliğinde bir makale, Kent Beck ve Erich Gamma tarafından yazılan “Test Infected: Programmers Love Writing Tests”, konuya mükemmel bir giriş yapıyor ve büyük ölçüde etkili olmaya devam ediyor.</p>
+
+<p>PHP 4, yaklaşık olarak bu sıralarda piyasaya sürüldü ve beraberinde verimlilikte iyileştirmeler ve en önemlisi, nesneler için gelişmiş destek getirdi. Bu geliştirmeler, tamamen nesne yönelimli projeleri bir olasılık haline getirdi. Programcılar, biraz şaşırtacak şekilde bu özelliği benimsedi. Bir sonraki bölümde göreceğiniz gibi, PHP’nin nesne desteği kesinlikle mükemmel değildi. Ancak disiplin ve sözdiziminin dikkatli kullanımı ile kişi aynı anda nesneler ve PHP hakkında düşünmeye başlayabilir.</p>
+
+<p>Yine de, bu bölümün başında tasvir edilene benzer tasarım felaketleri yaygın olmaya devam etti. Tasarım kültürü olgunlaşmamıştı ve PHP ile ilgili kitaplarda neredeyse yoktu. Ancak çevrimiçi ortamda ilgi olduğu açıktı. Leon Atkinson, 2001’de Zend için PHP ve pattern’ler hakkında bir makale yazdı ve Harry Fuecks, 2002’de www.phppatterns.com’da (şu anda  kullanılmayan) kendi blog’unu başlattı. BinaryCloud gibi model tabanlı framework projelerinin yanı sıra otomatikleştirilmiş test ve belgeleme araçları ortaya çıkmaya başladı.</p>
+
+<p>İlk PHP 5 beta sürümünün 2003 yılında piyasaya sürülmesi, nesne yönelimli programlama dili olarak PHP’nin geleceğini garantiledi. Zend Engine 2, büyük ölçüde geliştirilmiş nesne desteği sağladı. Aynı derecede önemli olan, nesnelerin ve nesne yönelimli tasarımın artık PHP projelerinin merkezinde yer aldığına dair bir sinyal gönderdi.</p>
+
+<p>Yıllar geçtikçe PHP 5, namespace ve closure gibi önemli yeni özellikleri bünyesine katarak gelişmeye ve evrilmeye devam etti. Bu süre zarfında, sunucu taraflı web programlama için en iyi seçenek olarak ününü sağlamlaştırdı.</p>
+
+<p>Aralık 2015’te yayınlanan PHP 7, bu eğilimin devamını temsil ediyordu. Özellikle, birçok geliştiricinin (bu kitabın önceki sürümleriyle birlikte) yıllardır yaygara kopardığı iki özellik olan hem parametre hem de dönüş tipi bildirimleri için destek sağladı. Anonim sınıflar, geliştirilmiş bellek kullanımı ve artırılmış hız dahil olmak üzere birçok başka özellik ve iyileştirme vardı. Yıllar geçtikçe dil, nesne yönelimli yazılımcının bakış açısından istikrarlı bir şekilde daha sağlam, daha temiz ve daha eğlenceli hale geldi.</p>
+
+<p>Aralık 2020’de, PHP 7’nin yayınlanmasından neredeyse tam beş yıl sonra, PHP 8’in piyasaya sürülmesi gerekiyor. Bazı uygulama ayrıntıları değişebilir (ve bu kitabın yazılması sırasında biraz değişmiş olsa da), özellikler bu yazının yazıldığı tarihte (Ağustos 2020) zaten mevcuttur. Birçoğunu burada ayrıntılı olarak ele alıyorum. Tip bildirimlerinde iyileştirmeler, modern özellik ataması ve diğer birçok yeni özellik içerir.</p>
+
+<h2 id="kitap-hakkında">Kitap Hakkında</h2>
+
+<p>Bu kitap, nesne yönelimli tasarım alanında çığır açmaya çalışmıyor. Bunun yerine, PHP bağlamında, bazı yerleşik tasarım ilkelerini ve bazı temel pattern’leri (özellikle klasik Gang of Four kitabı olan Design Patterns’te yazılanları) inceliyorum. Son olarak, bir projenin başarısını sağlamaya yardımcı olabilecek araçlara ve tekniklere bakmak için katı kod sınırlarının ötesine geçiyorum. Giriş ve kısa bir sonuç dışında, kitap üç ana bölüme ayrılmıştır: nesneler, pattern’ler ve uygulama.</p>
+
+<p><strong>Nesneler</strong></p>
+
+<p>Bölüm 1’e PHP’nin ve nesnelerin tarihine hızlı bir bakışla başlıyorum, PHP 3’teki sonradan düşünülenden PHP 5’teki temel özelliğe geçişi çiziyorum.</p>
+
+<p>Nesneler hakkında çok az bilginiz olsa da, hiç bilginiz olmadan da deneyimli ve başarılı bir PHP programcısı olabilirsiniz. Bu nedenle nesneleri, sınıfları ve kalıtımı açıklamaya temel ilkelerden başlıyorum. Bu erken aşamada bile, PHP 5, PHP 7 ve PHP 8’in getirdiği bazı nesne geliştirmelerine bakıyorum.</p>
+
+<p>Temel bilgileri aldığınızda, PHP’nin daha gelişmiş nesne yönelimli özelliklerini inceleyerek konumuzun derinliklerine iniyorum. PHP’nin nesneler ve sınıflarla çalışmanıza yardımcı olmak için sağladığı araçlara da bir bölüm ayırdım.</p>
+
+<p>Bununla birlikte, bir sınıfın nasıl tanımlanacağını bilmek ve onu bir nesneyi başlatmak için kullanmak yeterli değildir. Öncelikle sisteminiz için doğru katılımcıları seçmeli ve onlar için en iyi etkileşim yollarına karar vermelisiniz. Bu seçimleri açıklamak ve öğrenmek, nesne araçları ve sözdizimi hakkındaki çıplak gerçekleri öğrenmekten çok daha zordur. Bölüm 1’i PHP ile nesne yönelimli tasarıma girişle bitiriyorum.</p>
+
+<p><strong>Pattern’ler</strong></p>
+
+<p>Pattern, yazılım tasarımındaki bir sorunu tanımlar ve çözümün özünü sağlar. Buradaki “Çözüm”, bir cookbook’ta bulabileceğiniz türden kes-yapıştır kodu anlamına gelmez (yine de cookbook’lar programcı için birer kaynaktır). Bunun yerine, design pattern, bir sorunu çözmek için kullanılabilecek yaklaşımı tanımlar.</p>
+
+<p>Bölüm 2, design pattern’leri tanımlayarak ve yapılarını açıklayarak başlar. Popülerliklerinin ardındaki bazı nedenlere de bakıyorum.</p>
+
+<p>Pattern’ler, belirli temel tasarım ilkelerini destekleme ve takip etme eğilimindedir. Bunların anlaşılması, pattern’in motivasyonunun analiz edilmesine yardımcı olabilir ve tüm programlamaya faydalı bir şekilde uygulanabilir. Bu ilkelerin bazılarını tartışıyorum. Sınıfları ve etkileşimlerini tanımlamanın platformdan bağımsız bir yolu olan Unified Modeling Language (UML) de inceliyorum.
+Bu kitap bir pattern kataloğu olmasa da, en ünlü ve faydalı pattern’lerden bazılarını inceliyorum. Her pattern’in ele aldığı sorunu anlatıyor, çözümü analiz ediyor ve PHP’de bir uygulama örneği sunuyorum.</p>
+
+<p><strong>Uygulama</strong></p>
+
+<p>Doğru yönetilmezse, doğru dengelenmiş bir mimari bile başarısız olur. 3. Bölümde, projenizin başarısını garanti altına alan bir framework oluşturmanıza yardımcı olacak mevcut araçlara bakıyorum. Kitabın geri kalanı tasarım ve programlama pratiği hakkındaysa, 3. Kısım kodunuzu yönetme pratiği hakkındadır. İncelediğim araçlar, bir proje için destek yapısı oluşturarak, ortaya çıkan hataları izlemeye yardımcı olabilir, programcılar arasında işbirliğini teşvik edebilir ve kurulum kolaylığı ve kod netliği sağlayabilir.</p>
+
+<p>Otomatik testin gücünden daha önce bahsetmiştim. Bölüm 3’e, bu alandaki sorunlara ve çözümlere genel bir bakış sunan giriş bölümüyle başlıyorum.</p>
+
+<p>Birçok programcı, her şeyi kendi başına yapma dürtüsüne yenik düşmekten suçludur. Composer, ana reposu olan Packagist ile birlikte, kolaylıkla projelere eklenebilecek binlerce  pakete erişim sunar.</p>
+
+<p>Composer konusu açılmışken, bir paketin dağıtımını tek bir komut kadar basit hale getiren kurulum mekanizmasını inceliyorum.</p>
+
+<p>Kod işbirliği ile ilgilidir. Bu gerçek ödüllendirici olabilir. Aynı zamanda tam bir kabus olabilir. Git, birçok programcının birbirlerinin çalışmalarının üzerine yazmadan aynı kod tabanı üzerinde birlikte çalışmasını sağlayan bir sürüm kontrol sistemidir. Geliştirmenin herhangi bir aşamasında projenizin anlık görüntülerini almanıza, kimin hangi değişiklikleri yaptığını görmenize ve projeyi birleştirilebilir dallara ayırmanıza olanak tanır. Git projenizi bir gün kurtaracak.</p>
+
+<p>İnsanlar ve kütüphaneler işbirliği yaptıklarında, partiye genellikle farklı gelenekler ve stiller getirirler. Bu sağlıklı olmakla birlikte birlikte çalışabilirliği de baltalayabilir. Uymak ve kabul etmek gibi sözcükler tüylerimi ürpertiyor ama internetin yaratıcılığının standartlarla desteklendiği inkar edilemez. Belirli geleneklere uyarak, hayal edilemeyecek kadar geniş bir sanal alanda oynamak için özgürleşiriz. Bu yüzden PHP standartlarını, bize nasıl yardımcı olabileceklerini, nasıl ve neden uymamız gerektiğini keşfediyorum.</p>
+
+<p>İki gerçek kaçınılmaz görünüyor. İlk olarak, hatalar genellikle aynı kod bölgesinde tekrarlanır ve bazı iş günleri déjà vu’da bir egzersiz haline getirir. İkincisi, genellikle iyileştirmeler düzelttikleri kadar veya daha fazla bozarlar. Otomatik test, kodunuzdaki sorunlar için bir erken uyarı sistemi sağlayarak bu sorunların her ikisini de ele alabilir. İlk önce Smalltalk için tasarlanmış, ancak şimdi başta Java olmak üzere birçok dile taşınan xUnit test platformunun güçlü bir uygulaması olan PHPUnit’i tanıtıyorum. Özellikle PHPUnit’in özelliklerine ve daha genel olarak test etmenin faydalarına ve maliyetine bakıyorum.</p>
+
+<p>Uygulamanız dağınıksa dosyaların standart olmayan konumlara yüklenmesi gerekebilir, veritabanı kurmak veya sunucu yapılandırmasına yama uygulamak isteyebilir. Kısacası, uygulamaların kurulum sırasında yapılması gerekenler vardır. Phing, Ant adlı bir Java aracının bağlantı noktasıdır. Phing ve Ant, bir yapılandırma dosyasını yorumlar ve kaynak dosyalarınızı onlara söylediğiniz şekilde işler. Bu genellikle dosyalarınızı bir dizinden sisteminizdeki çeşitli hedef konumlara kopyalamak anlamına gelir, ancak ihtiyaçlarınız daha karmaşık hale geldikçe, Phing bunları karşılamak için kolayca ölçeklenir.</p>
+
+<p>Bazı şirketler geliştirme platformlarını zorunlu kılar, ancak çoğu durumda ekipler bir dizi farklı işletim sistemi çalıştırır. Bunların tümü, kolaylıkla bir LAMP yığınını çalıştıracaktır. Ancak ideal olarak, geliştiricilerin kodlarını production’a çok benzeyen ortamlarda çalıştırmaları gerekir. Ekip üyelerinin kendilerine özgü geliştirme platformlarını koruyabilmeleri ancak production benzeri bir sistemde kodlarını çalıştırabilmeleri için sanallaştırma uygulaması olan Vagrant’ı inceliyorum.</p>
+
+<p>Testler oldukça faydalıdır, ancak testlerinizi yüklemeniz, çalıştırmanız ve buna devam etmeniz gerekiyor. Build ve testlerinizi otomatikleştirmezseniz, rehavete kapılmak ve her şeyin kaymasına izin vermek kolaydır. Tam da bu konuda size yardımcı olacak “sürekli entegrasyon” kategorisinde bir araya toplanmış bazı araçlara ve tekniklere bakıyorum.</p>
+
+<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Temmuz 2004’te PHP 5.0 yayınlandı. Bu sürüm, bir dizi radikal geliştirmeyle geldi. Belki de bunlardan ilki, nesne yönelimli programlama için kökten geliştirilmiş destekti. Bu, PHP topluluğu içinde nesnelere ve tasarıma büyük ilgi uyandırdı. Aslında bu, PHP 4.0 ile başlayan bir sürecin devamıydı.]]></summary></entry><entry><title type="html">Laravel Geliştirme Ortamını Hazırlamak</title><link href="http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak.html" rel="alternate" type="text/html" title="Laravel Geliştirme Ortamını Hazırlamak" /><published>2024-03-18T00:00:00+03:00</published><updated>2024-03-18T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak</id><content type="html" xml:base="http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak.html"><![CDATA[<p>PHP’nin başarısının bir nedeni de, PHP’ye hizmet vermeyen bir web sunucusu bulmanın zor olmasıdır. Ancak, modern PHP araçları geçmişe göre daha katı gereksinimlere sahiptir. Laravel’de geliştirme yapmanın en iyi yolu, kodunuz için tutarlı bir yerel ve uzak sunucu ortamı sağlamaktır ve neyse ki Laravel ekosisteminde bunun için birkaç araç var.</p>
 
 <h2 id="sistem-gereksinimleri">Sistem Gereksinimleri</h2>
 
@@ -1734,7 +3636,23 @@ Route::post('form', function () {
 
 <p>Laravel, yönlendirme ile ilgili genel görevleri ve yapıları basitleştirmek için bir dizi araç ve kolaylık sağlar. Bunlar resource controller, route model binding, ve form method spoofing’tir.</p>
 
-<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Herhangi bir web uygulama framework’ünün temel işlevi, kullanıcıdan istek almak ve yanıtları, genellikle HTTP(S) aracılığıyla iletmektir. Bu, bir framework’ü öğrenirken ele alınması gereken ilk ve en önemli şeyin uygulamanın rotalarını tanımlamak olduğu anlamına gelir; rotalar olmadan, son kullanıcıyla etkileşim kurma yeteneğiniz çok azdır veya hiç yoktur.]]></summary></entry><entry><title type="html">Pasif Gelir Akışı Oluşturmak İçin ChatGPT’yi Kullanın</title><link href="http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin.html" rel="alternate" type="text/html" title="Pasif Gelir Akışı Oluşturmak İçin ChatGPT’yi Kullanın" /><published>2024-03-01T00:00:00+03:00</published><updated>2024-03-01T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin</id><content type="html" xml:base="http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin.html"><![CDATA[<p>Oyun artık değişti, giriş engeli çok düşük olan pasif gelir kaynakları giderek artıyor çünkü ChatGPT insanların bunu yüzlerce veya binlerce kez tekrarlamasını gerçekten kolaylaştırıyor.</p>
+<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Herhangi bir web uygulama framework’ünün temel işlevi, kullanıcıdan istek almak ve yanıtları, genellikle HTTP(S) aracılığıyla iletmektir. Bu, bir framework’ü öğrenirken ele alınması gereken ilk ve en önemli şeyin uygulamanın rotalarını tanımlamak olduğu anlamına gelir; rotalar olmadan, son kullanıcıyla etkileşim kurma yeteneğiniz çok azdır veya hiç yoktur.]]></summary></entry><entry><title type="html">ChatGPT’nin Sınırlamaları Nelerdir?</title><link href="http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir.html" rel="alternate" type="text/html" title="ChatGPT’nin Sınırlamaları Nelerdir?" /><published>2024-03-01T00:00:00+03:00</published><updated>2024-03-01T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir</id><content type="html" xml:base="http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir.html"><![CDATA[<p>ChatGPT’nin ne kadar faydalı olabileceğini gördük, ancak her makine öğrenimi modeli gibi onun da kendi sınırlamaları var.</p>
+
+<ul>
+  <li>ChatGPT’nin eğitim verilerinin son tarihi 2021’dir ve güncel olaylara erişimi yoktur, bu da o tarihten sonra meydana gelen olayları anlayamayabileceği veya bunlara yanıt veremeyebileceği anlamına gelir.</li>
+  <li>ChatGPT’nin tek bir yanıtta üretebileceği çıktı sınırı vardır; yolun ortasında yanıt vermeyi bırakırsa bu sınıra ulaştığınızı bileceksiniz. Böyle bir durumda “Devam Et” yazmanız yeterlidir; kaldığı yerden devam edecektir.</li>
+  <li>Açık uçlu veya karmaşık sorular sorduğunuzda sınıra ulaşma olasılığınız daha yüksektir. Çıktı sınırı, yanıtın kalitesi ve alaka düzeyi ile modelin hesaplama maliyeti arasındaki bir dengedir.</li>
+  <li>Kaliteli bir yanıt alabilmek için karmaşık sorguları parçalara ayırmak ve bunları sırayla istemek en iyisidir.</li>
+  <li>ChatGPT, alaycılık veya ironi gibi mecazi dili anlamakta zorluk çeker ve bu da yanlış anlamalara veya alakasız yanıtlara yol açabilir.</li>
+  <li>ChatGPT’nin performansı, üzerinde eğitim aldığı verilerden etkilenir ve eğitim verilerindeki önyargı, modelin yanıtlarında önyargıya yol açabilir.</li>
+  <li>ChatGPT’yi kullanırken, herhangi bir kişisel bilgiyi saklamadığını ancak metin çıktısı oluşturmak için girdi olarak sağladığınız bilgileri kullanabileceğini unutmamak önemlidir. Herhangi bir kişisel bilgi vermeden önce gizlilik politikasını kontrol ederek olası sonuçların farkında olmanız çok önemlidir.</li>
+</ul>
+
+<p>Bunlar, bu yazının yazıldığı sıradaki sınırlamalardır ancak chatGPT sürekli olarak geliştirilmektedir ve mevcut verilere erişmesinin an meselesi olduğu düşünülmektedir.</p>
+
+<p>Her şeyde olduğu gibi, yayınlamadan veya chatGPT’den elde edilen çıktılara dayanarak büyük kararlar almadan önce kendi durumunuzu tespit etmelisiniz.</p>
+
+<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[ChatGPT’nin ne kadar faydalı olabileceğini gördük, ancak her makine öğrenimi modeli gibi onun da kendi sınırlamaları var.]]></summary></entry><entry><title type="html">Pasif Gelir Akışı Oluşturmak İçin ChatGPT’yi Kullanın</title><link href="http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin.html" rel="alternate" type="text/html" title="Pasif Gelir Akışı Oluşturmak İçin ChatGPT’yi Kullanın" /><published>2024-03-01T00:00:00+03:00</published><updated>2024-03-01T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin</id><content type="html" xml:base="http://localhost:4000/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin.html"><![CDATA[<p>Oyun artık değişti, giriş engeli çok düşük olan pasif gelir kaynakları giderek artıyor çünkü ChatGPT insanların bunu yüzlerce veya binlerce kez tekrarlamasını gerçekten kolaylaştırıyor.</p>
 
 <p>Bu nedenle, Amazon’daki basit içerikli kitaplar (defterler, boyama kitapları veya bulmaca kitapları vb.) gibi veya AI sanatı oluşturmak ve bunu stok fotoğraf sitelerinde satmak (bazı fotoğraf siteleri bunu zaten yasakladı) gibi oluşturulması kolay şeylere odaklanmayacağız.</p>
 
@@ -2634,71 +4552,7 @@ if (blockedSites.includes(window.location.hostname)) {
 
 <p>Bu kodu kullanmaktan çekinmeyin, insanların bunun üzerine nasıl farklı özellikler geliştirdiklerine ve farklı gelir akışları oluşturduklarına dair hikayeler duymayı çok isterim.</p>
 
-<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Oyun artık değişti, giriş engeli çok düşük olan pasif gelir kaynakları giderek artıyor çünkü ChatGPT insanların bunu yüzlerce veya binlerce kez tekrarlamasını gerçekten kolaylaştırıyor.]]></summary></entry><entry><title type="html">ChatGPT’nin Sınırlamaları Nelerdir?</title><link href="http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir.html" rel="alternate" type="text/html" title="ChatGPT’nin Sınırlamaları Nelerdir?" /><published>2024-03-01T00:00:00+03:00</published><updated>2024-03-01T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir</id><content type="html" xml:base="http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir.html"><![CDATA[<p>ChatGPT’nin ne kadar faydalı olabileceğini gördük, ancak her makine öğrenimi modeli gibi onun da kendi sınırlamaları var.</p>
-
-<ul>
-  <li>ChatGPT’nin eğitim verilerinin son tarihi 2021’dir ve güncel olaylara erişimi yoktur, bu da o tarihten sonra meydana gelen olayları anlayamayabileceği veya bunlara yanıt veremeyebileceği anlamına gelir.</li>
-  <li>ChatGPT’nin tek bir yanıtta üretebileceği çıktı sınırı vardır; yolun ortasında yanıt vermeyi bırakırsa bu sınıra ulaştığınızı bileceksiniz. Böyle bir durumda “Devam Et” yazmanız yeterlidir; kaldığı yerden devam edecektir.</li>
-  <li>Açık uçlu veya karmaşık sorular sorduğunuzda sınıra ulaşma olasılığınız daha yüksektir. Çıktı sınırı, yanıtın kalitesi ve alaka düzeyi ile modelin hesaplama maliyeti arasındaki bir dengedir.</li>
-  <li>Kaliteli bir yanıt alabilmek için karmaşık sorguları parçalara ayırmak ve bunları sırayla istemek en iyisidir.</li>
-  <li>ChatGPT, alaycılık veya ironi gibi mecazi dili anlamakta zorluk çeker ve bu da yanlış anlamalara veya alakasız yanıtlara yol açabilir.</li>
-  <li>ChatGPT’nin performansı, üzerinde eğitim aldığı verilerden etkilenir ve eğitim verilerindeki önyargı, modelin yanıtlarında önyargıya yol açabilir.</li>
-  <li>ChatGPT’yi kullanırken, herhangi bir kişisel bilgiyi saklamadığını ancak metin çıktısı oluşturmak için girdi olarak sağladığınız bilgileri kullanabileceğini unutmamak önemlidir. Herhangi bir kişisel bilgi vermeden önce gizlilik politikasını kontrol ederek olası sonuçların farkında olmanız çok önemlidir.</li>
-</ul>
-
-<p>Bunlar, bu yazının yazıldığı sıradaki sınırlamalardır ancak chatGPT sürekli olarak geliştirilmektedir ve mevcut verilere erişmesinin an meselesi olduğu düşünülmektedir.</p>
-
-<p>Her şeyde olduğu gibi, yayınlamadan veya chatGPT’den elde edilen çıktılara dayanarak büyük kararlar almadan önce kendi durumunuzu tespit etmelisiniz.</p>
-
-<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[ChatGPT’nin ne kadar faydalı olabileceğini gördük, ancak her makine öğrenimi modeli gibi onun da kendi sınırlamaları var.]]></summary></entry><entry><title type="html">ChatGPT Nasıl Kullanılır?</title><link href="http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir.html" rel="alternate" type="text/html" title="ChatGPT Nasıl Kullanılır?" /><published>2024-02-22T00:00:00+03:00</published><updated>2024-02-22T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir</id><content type="html" xml:base="http://localhost:4000/2024/02/22/chatgpt-nasil-kullanilir.html"><![CDATA[<p>Artık ChatGPT’yi ve nasıl çalıştığını anladığınıza göre kullanmaya başlamanın zamanı geldi. Bu bölümde ChatGPT’yi tarayıcınız aracılığıyla kullanmaya odaklanacağız ve etkinliğini en üst düzeye çıkarmak için bazı ipuçları ve en iyi uygulamaları sunacağız.</p>
-
-<p><strong>1. Adım:</strong> OpenAI hesabı oluşturun</p>
-
-<p><a href="https://chat.openai.com">https://chat.openai.com</a> adresinde ChatGPT’yi kullanmaya başlamanın ilk adımı OpenAI hesabı oluşturmaktır. Bu web sitesi aracılığıyla ChatGPT ve diğer OpenAI dil modellerine erişebilirsiniz.</p>
-
-<p><img src="/assets/images/2024/02/openai-com.png" alt="openai.com" title="openai.com" class="img-fluid" /></p>
-
-<p>Hesap oluşturmak için OpenAI web sitesini ziyaret edin ve sayfadaki “Sign Up” butonuna tıklayın. Adınız ve e-mail adresiniz gibi bazı temel bilgileri vermeniz ve hizmet şartlarını kabul etmeniz gerekecektir. Kayıt işlemini tamamladıktan sonra yeni hesabınızla giriş yapabileceksiniz.</p>
-
-<p><strong>2. Adım:</strong> ChatGPT modelini keşfedin</p>
-
-<p>Oturum açtığınızda, “Message ChatGPT…” alanına birşeyler yazıp göndererek ChatGPT modelini keşfedebileceksiniz. ChatGPT daha sonra mesajınıza göre bir yanıt oluşturacaktır.</p>
-
-<p>ChatGPT’nin nasıl yanıt verdiğini görmek için farklı mesajlarla denemeler yapabilirsiniz. Örneğin, oluşturulan metnin rastgeleliğini ve yaratıcılığını nasıl etkilediğini görmek için farklı uzunluklar ve tonlar belirtmeyi deneyebilirsiniz.</p>
-
-<p><strong>3. Adım:</strong> ChatGPT iş başında</p>
-
-<p>Aşağıdaki ekran görüntüsü şu soruyu sorduğumu gösteriyor: “Bana senin hakkında 7 ilginç şey söyle”</p>
-
-<p><img src="/assets/images/2024/02/7-interesting-things-about-chatgpt.png" alt="ChatGPT hakkında 7 ilginç şey" title="ChatGPT hakkında 7 ilginç şey" class="img-fluid" /></p>
-
-<p>Bu chatGPT ekranıdır, henüz yapmadıysanız chat.openai.com adresine gidin ve onunla oynamaya başlayın.</p>
-
-<p>Basit bir “Merhaba” ile başlayın, ona sorular sorun, bir şeyler kodlamasını isteyin veya bir şeyleri tercüme etmesini veya analiz etmesini, kitap özetleri oluşturmasını ve kitap önerileri yapmasını isteyin.</p>
-
-<h2 id="chatgptyi-etkili-bir-şekilde-kullanmak-için-birkaç-ipucu">ChatGPT’yi etkili bir şekilde kullanmak için birkaç ipucu:</h2>
-
-<p><strong>Net bir hedef belirleyin:</strong> İçeriğinizle neyi başarmak istediğinizi ve bunun size nasıl fayda sağlayacağını tam olarak bilmelisiniz. Bu, hedefe yönelik ve etkili içerik oluşturmanıza yardımcı olacaktır. “Bileşik faizi hesaplayan bir web sitesi nasıl oluşturulur” diye sormak yerine “Bana bileşik faiz hesaplayıcısı olan index.html sayfasının kodunu ver” diye sorun.</p>
-
-<p><strong>Deneyin:</strong> Farklı mesajları ve ayarları test etmekten korkmayın. Daha önce hiç düşünmediğiniz içerik oluşturma yollarını asla bilemezsiniz. İçerik oluştururken “Bunu esprili, eğlenceli, ilgi çekici bir tonda yaz” diyebilirsiniz veya “Bu podcast tanıtımını Joe Rogan tarzında yaz” gibi bir ifade kullanabilirsiniz.</p>
-
-<p><strong>Gibi davran:</strong> Bu, çok özel durumlar için ChatGPT’den benzersiz, kişiselleştirilmiş ve kullanışlı içerik elde etmenin en iyi tekniğidir; aşağıdaki italik metni kopyalayıp yapıştırarak deneyebilirsiniz:</p>
-
-<p><em>Roman yazarı gibi davranmanı istiyorum. Okuyucuların uzun süre ilgisini çekebilecek yaratıcı ve büyüleyici hikayeler ortaya çıkaracaksın. Fantastik, romantik, tarihi, kurgu vb. herhangi bir türü seçebilirsin; ancak amaç olağanüstü bir olay örgüsüne, ilgi çekici karakterlere ve beklenmedik dönüm noktalarına sahip bir şey yazmaktır. İlk isteğim, “gelecekte geçen bir bilim kurgu romanı yazmam gerekiyor”</em></p>
-
-<p><strong>Yanıtı yeniden oluştur:</strong> ChatGPT’den yanıt aldınız ancak bundan pek memnun değilseniz - “Regenerate” e tıklayabilirsiniz - bu, mevcut çıktıyı kaldıracak ve tamamen yeni bir çıktı oluşturacaktır.</p>
-
-<p><strong>Aynı sorgu için birden fazla yanıt alın:</strong> Bu özellikle e-mail konuları veya video/blog başlıkları gibi şeyler seçmek istiyorsanız kullanışlıdır, ilk denemede seveceğiniz bir yanıt alma olasılığınız düşüktür, bu nedenle ChatGPT’den 5 yanıt oluşturmasını isteyebilirsiniz. Tek seferde 10 hatta 20 yanıt.</p>
-
-<p><u>Örnek:</u> En son iPhone modelinin yeni özellikleriyle ilgili makalem için 10 ilgi çekici blog yazısı başlığı oluştur.</p>
-
-<p><strong>İyileştirin ve düzenleyin:</strong> ChatGPT, yüksek kaliteli içerik oluşturmak için harika bir araç olsa da, insan tarafından yapılan düzenlemenin yerini tutmaz. Hatasız olduğundan ve ihtiyaçlarınızı karşıladığından emin olmak için oluşturulan metni incelemeye ve iyileştirmeye zaman ayırın. Hatta bloglara veya bir kitap bölümüne veya e-mail e herhangi bir metinden ChatGPT’ye girebilir ve “Bunu geliştirmek için bana öneriler ver” diyebilirsiniz ve bunu yapacaktır; netlik, okunabilirlik ve üslup gibi şeylere de odaklanabilirsiniz.</p>
-
-<p><u>Örnek:</u> Okunabilirliği artırmak ve bu e-maili daha profesyonel hale getirmek için önerilerde bulun.</p>
-
-<p>Bu ipuçlarını göz önünde bulundurarak ve deneyerek, hedef kitlenizde gerçekten yankı uyandıran ve başarınızı artıran içerikler oluşturmak için ChatGPT’nin tüm potansiyelinden yararlanabilirsiniz.</p>
-
-<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Artık ChatGPT’yi ve nasıl çalıştığını anladığınıza göre kullanmaya başlamanın zamanı geldi. Bu bölümde ChatGPT’yi tarayıcınız aracılığıyla kullanmaya odaklanacağız ve etkinliğini en üst düzeye çıkarmak için bazı ipuçları ve en iyi uygulamaları sunacağız.]]></summary></entry><entry><title type="html">ChatGPT’yi Ne İçin Kullanabilirim?</title><link href="http://localhost:4000/2024/02/22/chatgpt-yi-ne-icin-kullanabilirim.html" rel="alternate" type="text/html" title="ChatGPT’yi Ne İçin Kullanabilirim?" /><published>2024-02-22T00:00:00+03:00</published><updated>2024-02-22T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/22/chatgpt-yi-ne-icin-kullanabilirim</id><content type="html" xml:base="http://localhost:4000/2024/02/22/chatgpt-yi-ne-icin-kullanabilirim.html"><![CDATA[<p>Genel olarak, ister işletme sahibi, ister girişimci veya serbest çalışan olun, ChatGPT, operasyonları iyileştirmek ve geliri artırmak için eyleme geçirilebilir bilgi ve öneriler sunarak çok çeşitli alanlarda yardımcı olabilir, aynı zamanda normalden 10 kat daha hızlı, kaliteli, ilgi çekici içerikler oluşturarak uzun süreli müşteri ilişkilerinin korunmasına yardımcı olur.</p>
+<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Oyun artık değişti, giriş engeli çok düşük olan pasif gelir kaynakları giderek artıyor çünkü ChatGPT insanların bunu yüzlerce veya binlerce kez tekrarlamasını gerçekten kolaylaştırıyor.]]></summary></entry><entry><title type="html">ChatGPT’yi Ne İçin Kullanabilirim?</title><link href="http://localhost:4000/2024/02/22/chatgpt-yi-ne-icin-kullanabilirim.html" rel="alternate" type="text/html" title="ChatGPT’yi Ne İçin Kullanabilirim?" /><published>2024-02-22T00:00:00+03:00</published><updated>2024-02-22T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/22/chatgpt-yi-ne-icin-kullanabilirim</id><content type="html" xml:base="http://localhost:4000/2024/02/22/chatgpt-yi-ne-icin-kullanabilirim.html"><![CDATA[<p>Genel olarak, ister işletme sahibi, ister girişimci veya serbest çalışan olun, ChatGPT, operasyonları iyileştirmek ve geliri artırmak için eyleme geçirilebilir bilgi ve öneriler sunarak çok çeşitli alanlarda yardımcı olabilir, aynı zamanda normalden 10 kat daha hızlı, kaliteli, ilgi çekici içerikler oluşturarak uzun süreli müşteri ilişkilerinin korunmasına yardımcı olur.</p>
 
 <p><strong>Potansiyel müşteriler yaratın:</strong> ChatGPT, iletişimi kişiselleştirmenize, çeşitli durumlar için e-mail şablonları oluşturma ve kullanma sürecini kısaltmanıza ve daha fazla potansiyel müşteriye ulaşmanıza olanak tanıyarak dönüşüm şansını artırmanıza yardımcı olabilir.</p>
 
@@ -3529,64 +5383,4 @@ d) Alüminyum kutuların yakılması</p>
 
 <p>Programı çalıştırmak istiyor ancak nasıl yapılacağından emin değilseniz, chatGPT’ye “Bunu nasıl çalıştırırım” diye sormanız yeterli.</p>
 
-<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Girişimci, serbest çalışan, startup veya hatta küçük bir kobi iseniz, genellikle birçok farklı şeyin nasıl yapılacağını öğrenmesi gereken tek kişilik bir grupsunuzdur, bu sonsuza kadar sürer ya da işi outsource ederiz. Bu işe yarar ancak pahalıdır ve aynı türden işler tekrar ortaya çıkarsa ve en son kullandığınız freelancer mevcut değilse süreklilik eksikliği söz konusudur.]]></summary></entry><entry><title type="html">Heroku’da Vite Uygulaması Nasıl Deploy Edilir?</title><link href="http://localhost:4000/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir.html" rel="alternate" type="text/html" title="Heroku’da Vite Uygulaması Nasıl Deploy Edilir?" /><published>2024-02-19T00:00:00+03:00</published><updated>2024-02-19T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir</id><content type="html" xml:base="http://localhost:4000/2024/02/19/herokuda-vite-uygulamasi-nasil-deploy-edilir.html"><![CDATA[<p>Eğer benim gibi yakın zamanda Laravel’in yeni bir kopyasını indirdiyseniz, muhtemelen Mix’in yerini Vite’ın aldığını fark etmişsinizdir.</p>
-
-<p>Jetstream’in yeni sürümünü yüklediğimde bu bende kafa karışıklığına neden oldu, çünkü hem localde hem de Heroku’ya deploy ettiğimde her şey hizasız görünüyordu.</p>
-
-<p>Localde, <code>npm run dev</code>‘i çalıştırmanız gerekiyor ve bu, <code>npm run watch</code>‘ın yerini alacak gibi görünüyor.</p>
-
-<p>Ancak Heroku için birkaç değişiklik yapmalısınız.</p>
-
-<p>Nodejs buildpack’i ekleyin ve PHP buildpack’in sonrasına yerleştirin. Bunu PHP’nin önüne koymak ilk hatamdı.</p>
-
-<p><img src="/assets/images/2024/02/heroku-nodejs-buildpack.png" alt="Heroku Nodejs Buildpack" title="Heroku Nodejs Buildpack" class="img-fluid" /></p>
-
-<p><em>package.json</em> dosyanızda “scripts” altında “build” için bir giriş olup olmadığını kontrol edin. Bu, deploy sırasında Heroku tarafından otomatik olarak bulunacak ve çalıştırılacaktır. Daha önce Heroku’ya özgü bir girişe ihtiyacınız vardı ancak son bir yıldır Heroku, varsa build’i kullanacak.</p>
-
-<p><em>package.json</em> dosyanız şöyle görünmelidir:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>{
-    "private": true,
-    "type": "module",
-    "scripts": {
-        "dev": "vite",
-        "build": "vite build"
-    },
-    "devDependencies": {
-        "@tailwindcss/forms": "^0.5.2",
-        "alpinejs": "^3.4.2",
-        "autoprefixer": "^10.4.2",,
-        "axios": "^1.1.2",
-        "laravel-vite-plugin": "^0.8.0",
-        "postcss": "^8.4.6",
-        "tailwindcss": "^3.1.0",
-        "vite": "^4.0.0"
-    }
-}
-</code></pre></div></div>
-
-<p>Kodunuzu yeniden deploy edin (buildpack eklediyseniz bu gereklidir) ve build loglarını kontrol edin.</p>
-
-<p>Uygulamanızı yeniden yüklediğinizde CSS artık doğru olmalıdır. Yeni CSS’i yüklemeye zorlamak için browser önbelleğini temizlemeyi unutmayın.</p>
-
-<p><strong>Kaynak:</strong> https://colinlongworth.medium.com/deploying-compiling-laravel-vite-on-heroku-4816dbcd14f5</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Eğer benim gibi yakın zamanda Laravel’in yeni bir kopyasını indirdiyseniz, muhtemelen Mix’in yerini Vite’ın aldığını fark etmişsinizdir.]]></summary></entry><entry><title type="html">Heroku’da Laravel Loglarını Nasıl Görüntüleyebilirim?</title><link href="http://localhost:4000/2024/02/18/herokuda-laravel-loglarini-nasil-goruntuleyebilirim.html" rel="alternate" type="text/html" title="Heroku’da Laravel Loglarını Nasıl Görüntüleyebilirim?" /><published>2024-02-18T00:00:00+03:00</published><updated>2024-02-18T00:00:00+03:00</updated><id>http://localhost:4000/2024/02/18/herokuda-laravel-loglarini-nasil-goruntuleyebilirim</id><content type="html" xml:base="http://localhost:4000/2024/02/18/herokuda-laravel-loglarini-nasil-goruntuleyebilirim.html"><![CDATA[<p>Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.</p>
-
-<p>app/config/logging.php dosyasında çeşitli log kanallarını yapılandırabilirsiniz. Varsayılan olarak, yapılandırma dosyası “errorlog” kanalı için bir tanım içerir; bu, PHP’nin mesajları log’a kaydetmek için kendi hata yönetimini kullanmasına neden olur. Bunlar daha sonra otomatik olarak heroku loglarına gönderilir.</p>
-
-<p>Dosyanın üst kısmında, varsayılan kanal LOG_CHANNEL environment değişkeninden okunacak şekilde ayarlanmıştır:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>'default' =&gt; env('LOG_CHANNEL', 'stack'),
-</code></pre></div></div>
-
-<p>Bu, Heroku’da doğru şekilde log tutmak için LOG_CHANNEL environment değişkenini “errorlog” olarak ayarlayabileceğiniz anlamına gelir:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>heroku config:set LOG_CHANNEL=errorlog
-</code></pre></div></div>
-
-<p><img src="/assets/images/2024/02/heroku-env-log-channel-errorlog.png" alt="Log Channel Config Var" title="Heroku'da Laravel Loglarını Nasıl Görüntüleyebilirim?" class="img-fluid" /></p>
-
-<p>Artık logları canlı olarak takip edebilirsiniz:</p>
-
-<p><code class="language-plaintext highlighter-rouge">heroku logs -t</code></p>
-
-<p>Okuduğunuz için teşekkürler.</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Laravel varsayılan olarak hata ve mesajları diskteki bir dizine kaydeder; bu ideal değildir. Çünkü Heroku geçici (ephemeral) dosya sistemi kullanır; Dyno çalışırken dosya sisteminde yapılan herhangi bir değişiklik dyno kapatılana veya yeniden başlatılana kadar devam eder. Her dyno, en son deploy edilen dosya sisteminin temiz bir kopyasıyla yüklenir. Bu, Docker gibi container tabanlı sistemlerin yapısına benzer.]]></summary></entry></feed>
+<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Girişimci, serbest çalışan, startup veya hatta küçük bir kobi iseniz, genellikle birçok farklı şeyin nasıl yapılacağını öğrenmesi gereken tek kişilik bir grupsunuzdur, bu sonsuza kadar sürer ya da işi outsource ederiz. Bu işe yarar ancak pahalıdır ve aynı türden işler tekrar ortaya çıkarsa ve en son kullandığınız freelancer mevcut değilse süreklilik eksikliği söz konusudur.]]></summary></entry></feed>
