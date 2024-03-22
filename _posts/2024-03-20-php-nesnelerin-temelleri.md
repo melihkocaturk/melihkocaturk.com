@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PHP – Nesnelerin Temelleri
+title: PHP - Nesnelerin Temelleri
 ---
 
 Nesneler ve sınıflar bu kitabın merkezindedir ve on yıl önce PHP 5'in piyasaya sürülmesinden bu yana PHP'nin de kalbinde yer alıyor. Bu bölümde, PHP'nin nesne yönelimli özelliklerini inceleyerek nesneleri ve tasarımı daha derinlemesine ele almak için temel oluşturuyorum. Nesne yönelimli programlamada yeniyseniz, bu bölümü dikkatlice okumalısınız.

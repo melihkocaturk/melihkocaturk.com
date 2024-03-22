@@ -1,6 +1,6 @@
 ---
 layout: post
-title: PHP – Gelişmiş Özellikler
+title: PHP - Gelişmiş Özellikler
 ---
 
 Sınıf tipi ipuçlarının ve erişim kontrolünün size bir sınıfın arayüzü üzerinde nasıl daha fazla kontrol sağladığını zaten gördünüz. Bu bölümde, PHP'nin nesne yönelimli özelliklerini daha derinlemesine inceleyeceğim.
