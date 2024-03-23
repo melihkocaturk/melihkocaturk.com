@@ -377,7 +377,7 @@ set_include_path(get_include_path() . PATH_SEPARATOR . "/home/john/phplib/");
 
 PATH_SEPARATOR sabiti, Unix sisteminde iki nokta üst üste ve Windows platformunda noktalı virgül olarak çözümlenecektir. Taşınabilirlik nedeniyle, kullanımı en iyi uygulama olarak kabul edilir.
 
-**Autoload (Otomatik Yükleme)**
+### Autoload (Otomatik Yükleme)
 
 require_once'ı include path ile birlikte kullanmak zarif olsa da, birçok geliştirici require ifadelerini ortadan kaldırıyor ve bunun yerine autoload’a güveniyor. 
 
