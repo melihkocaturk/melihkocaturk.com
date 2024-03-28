@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-28T13:39:04+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-28T18:09:57+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
 </subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Gatsby’nin Temelleri</title><link href="http://localhost:4000/2024/03/28/gatsby-nin-temelleri.html" rel="alternate" type="text/html" title="Gatsby’nin Temelleri" /><published>2024-03-28T00:00:00+03:00</published><updated>2024-03-28T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/28/gatsby-nin-temelleri</id><content type="html" xml:base="http://localhost:4000/2024/03/28/gatsby-nin-temelleri.html"><![CDATA[<p>Gatsby, React’ı temel alan, statik siteler oluşturmaya yönelik açık kaynaklı bir framework’tür. Genellikle static site generator (SSG) olarak anılan Gatsby, Gridsome gibi diğer SSG’lerin ve statik site oluşturmayı kolaylaştıran Next.js gibi JavaScript framework’lerinin yanı sıra Jamstack teknoloji kategorisinin bir parçasıdır. Gatsby performansa, ölçeklenebilirliğe ve güvenliğe özellikle önem veriyor. Pluginler, temalar, starter’lar ve katkıda bulunulan diğer projelerden oluşan zengin ve büyüyen bir ekosisteme sahip.</p>
 
 <p>Bu ilk bölümde Gatsby’yi tanıyacağız. Gatsby’nin yapı taşları sayfalar ve bileşenler (component) olmasına rağmen, GraphQL ve source pluginlerinden oluşan dahili veri katmanı, veri kaynakları ile statik site oluşturma sırasında derlenen sayfalar ve bileşenler arasında köprü görevi görür. Gatsby, React üzerine inşa edilmiştir, bu nedenle Gatsby geliştiricilerinin anlaması için gerekli olan bazı JavaScript ve React kavramlarına da göz atacağız. Son olarak, Gatsby’nin geliştirici araçlarına aşina olmanızı sağlayacak ilk Gatsby “Hello World” sitemizi oluşturacağız.</p>
@@ -567,7 +567,45 @@ drwxr-xr-x    3 fox  staff       96 27 Mar 16:38 static
 
 <p>Bu portu başka bir şey için kullanmıyorsanız, site https://localhost:9000 adresinde görüntülenebilir (local development sunucusundan farkına dikkat edin). İşte karşınızda: ilk Gatsby siteniz, local development veya production dağıtımına hazır!</p>
 
-<p><strong>Kaynak:</strong> “Gatsby: The Definitive Guide”, Preston So</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Gatsby, React’ı temel alan, statik siteler oluşturmaya yönelik açık kaynaklı bir framework’tür. Genellikle static site generator (SSG) olarak anılan Gatsby, Gridsome gibi diğer SSG’lerin ve statik site oluşturmayı kolaylaştıran Next.js gibi JavaScript framework’lerinin yanı sıra Jamstack teknoloji kategorisinin bir parçasıdır. Gatsby performansa, ölçeklenebilirliğe ve güvenliğe özellikle önem veriyor. Pluginler, temalar, starter’lar ve katkıda bulunulan diğer projelerden oluşan zengin ve büyüyen bir ekosisteme sahip.]]></summary></entry><entry><title type="html">PHP - Nesne Araçları</title><link href="http://localhost:4000/2024/03/23/php-nesne-araclari.html" rel="alternate" type="text/html" title="PHP - Nesne Araçları" /><published>2024-03-23T00:00:00+03:00</published><updated>2024-03-23T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/23/php-nesne-araclari</id><content type="html" xml:base="http://localhost:4000/2024/03/23/php-nesne-araclari.html"><![CDATA[<p>Gördüğümüz gibi PHP, sınıflar ve metotlar gibi dil yapıları aracılığıyla nesne yönelimli programlamayı destekler. Dil ayrıca nesnelerle çalışmanıza yardımcı olmak için tasarlanmış fonksiyon ve sınıflar aracılığıyla daha geniş destek sağlar.</p>
+<p><strong>Kaynak:</strong> “Gatsby: The Definitive Guide”, Preston So</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Gatsby, React’ı temel alan, statik siteler oluşturmaya yönelik açık kaynaklı bir framework’tür. Genellikle static site generator (SSG) olarak anılan Gatsby, Gridsome gibi diğer SSG’lerin ve statik site oluşturmayı kolaylaştıran Next.js gibi JavaScript framework’lerinin yanı sıra Jamstack teknoloji kategorisinin bir parçasıdır. Gatsby performansa, ölçeklenebilirliğe ve güvenliğe özellikle önem veriyor. Pluginler, temalar, starter’lar ve katkıda bulunulan diğer projelerden oluşan zengin ve büyüyen bir ekosisteme sahip.]]></summary></entry><entry><title type="html">Windows’ta PHP CLI versiyonu nasıl değiştirilir?</title><link href="http://localhost:4000/2024/03/28/windows-ta-php-cli-versiyonu-nasil-degistirilir.html" rel="alternate" type="text/html" title="Windows’ta PHP CLI versiyonu nasıl değiştirilir?" /><published>2024-03-28T00:00:00+03:00</published><updated>2024-03-28T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/28/windows-ta-php-cli-versiyonu-nasil-degistirilir</id><content type="html" xml:base="http://localhost:4000/2024/03/28/windows-ta-php-cli-versiyonu-nasil-degistirilir.html"><![CDATA[<p>Son zamanlarda Laravel 10 ile bir uygulama geliştiriyorum. Laravel 10 ile çalışabilmek için PHP CLI’mı yükseltmem gerekiyor. Şu anda bilgisayarımda PHP 7.0.33 (cli) yüklü. Terminalde kendi PHP CLI’nizi aşağıdaki gibi kontrol edebilirsiniz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php -v
+PHP 7.0.33 (cli) (built: Dec  5 2018 21:22:29) ( ZTS )
+Copyright (c) 1997-2017 The PHP Group
+Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
+</code></pre></div></div>
+
+<p>Şimdi Ortam Değişkenleri altında Sistem değişkenleri bölümündeki PHP CLI yolunu değiştireceğim. Bu şekilde PHP CLI, composer, nodejs’e ve daha fazlasına bilgisayarımın her yerinden erişebilirim.</p>
+
+<h2 id="ortam-değişkenlerine-erişim">Ortam Değişkenlerine Erişim</h2>
+
+<p>Ortam değişkenlerine erişmek için Başlat menüsüne tıklayıp “ortam değişkenleri” yazmanız yeterlidir. Ortam değişkenlerine şuradan erişebilirsiniz:</p>
+
+<p><img src="/assets/images/2024/03/ortam-degiskenleri.png" alt="Ortam Değişkenleri" title="Ortam Değişkenleri" class="img-fluid" /></p>
+
+<p>“Ortam Değişkenleri” butonuna tıkladıktan sonra aşağıdaki popup pencereyi göreceksiniz.</p>
+
+<p><img src="/assets/images/2024/03/sistem-degiskenleri.png" alt="Sistem Değişkenleri" title="Sistem Değişkenleri" class="img-fluid" /></p>
+
+<p>Ortam değişkenlerini düzenleyin.</p>
+
+<h2 id="php-cli-sürümünü-değiştirin">PHP CLI Sürümünü Değiştirin</h2>
+
+<p>Path değişkenini düzenleyin. İstediğiniz PHP CLI sürümünü Path değişkenine eklemeniz yeterlidir.</p>
+
+<p><img src="/assets/images/2024/03/ortam-degiskenini-duzenle.png" alt="Ortam Değişkenini Düzenle" title="Ortam Değişkenini Düzenle" class="img-fluid" /></p>
+
+<p>WampServer’da birden fazla PHP sürümüne sahibim. PHP CLI sürümünü değiştirmek için 7.0.33 olan PHP verisyonunu 8.1.8 olarak düzenledim.</p>
+
+<p>Path değişkenimi, “C:\wamp64\bin\php\php7.0.33” yerine “C:\wamp64\bin\php\php8.1.8” olarak değiştiriyorum.</p>
+
+<p>Açık olan tüm terminalleri ve VSCode’u kapatın. Daha sonra aşağıdaki gibi PHP CLI verisyonunu kontrol edin. Şimdi değiştirdiğiniz PHP CLI sürümünü görmelisiniz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS C:\Users\melih&gt; php -v
+PHP 8.1.8 (cli) (built: Jul  5 2022 23:04:29) (ZTS Visual C++ 2019 x64)
+Copyright (c) The PHP Group
+Zend Engine v4.1.8, Copyright (c) Zend Technologies
+</code></pre></div></div>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Son zamanlarda Laravel 10 ile bir uygulama geliştiriyorum. Laravel 10 ile çalışabilmek için PHP CLI’mı yükseltmem gerekiyor. Şu anda bilgisayarımda PHP 7.0.33 (cli) yüklü. Terminalde kendi PHP CLI’nizi aşağıdaki gibi kontrol edebilirsiniz.]]></summary></entry><entry><title type="html">PHP - Nesne Araçları</title><link href="http://localhost:4000/2024/03/23/php-nesne-araclari.html" rel="alternate" type="text/html" title="PHP - Nesne Araçları" /><published>2024-03-23T00:00:00+03:00</published><updated>2024-03-23T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/23/php-nesne-araclari</id><content type="html" xml:base="http://localhost:4000/2024/03/23/php-nesne-araclari.html"><![CDATA[<p>Gördüğümüz gibi PHP, sınıflar ve metotlar gibi dil yapıları aracılığıyla nesne yönelimli programlamayı destekler. Dil ayrıca nesnelerle çalışmanıza yardımcı olmak için tasarlanmış fonksiyon ve sınıflar aracılığıyla daha geniş destek sağlar.</p>
 
 <p>Bu bölümde, nesneleri ve sınıfları düzenlemek, test etmek ve değiştirmek için kullanabileceğiniz bazı araçlara ve tekniklere bakacağız.</p>
 
@@ -7806,20 +7844,4 @@ Route::post('form', function () {
 
 <p>Laravel, yönlendirme ile ilgili genel görevleri ve yapıları basitleştirmek için bir dizi araç ve kolaylık sağlar. Bunlar resource controller, route model binding, ve form method spoofing’tir.</p>
 
-<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Herhangi bir web uygulama framework’ünün temel işlevi, kullanıcıdan istek almak ve yanıtları, genellikle HTTP(S) aracılığıyla iletmektir. Bu, bir framework’ü öğrenirken ele alınması gereken ilk ve en önemli şeyin uygulamanın rotalarını tanımlamak olduğu anlamına gelir; rotalar olmadan, son kullanıcıyla etkileşim kurma yeteneğiniz çok azdır veya hiç yoktur.]]></summary></entry><entry><title type="html">ChatGPT’nin Sınırlamaları Nelerdir?</title><link href="http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir.html" rel="alternate" type="text/html" title="ChatGPT’nin Sınırlamaları Nelerdir?" /><published>2024-03-01T00:00:00+03:00</published><updated>2024-03-01T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir</id><content type="html" xml:base="http://localhost:4000/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir.html"><![CDATA[<p>ChatGPT’nin ne kadar faydalı olabileceğini gördük, ancak her makine öğrenimi modeli gibi onun da kendi sınırlamaları var.</p>
-
-<ul>
-  <li>ChatGPT’nin eğitim verilerinin son tarihi 2021’dir ve güncel olaylara erişimi yoktur, bu da o tarihten sonra meydana gelen olayları anlayamayabileceği veya bunlara yanıt veremeyebileceği anlamına gelir.</li>
-  <li>ChatGPT’nin tek bir yanıtta üretebileceği çıktı sınırı vardır; yolun ortasında yanıt vermeyi bırakırsa bu sınıra ulaştığınızı bileceksiniz. Böyle bir durumda “Devam Et” yazmanız yeterlidir; kaldığı yerden devam edecektir.</li>
-  <li>Açık uçlu veya karmaşık sorular sorduğunuzda sınıra ulaşma olasılığınız daha yüksektir. Çıktı sınırı, yanıtın kalitesi ve alaka düzeyi ile modelin hesaplama maliyeti arasındaki bir dengedir.</li>
-  <li>Kaliteli bir yanıt alabilmek için karmaşık sorguları parçalara ayırmak ve bunları sırayla istemek en iyisidir.</li>
-  <li>ChatGPT, alaycılık veya ironi gibi mecazi dili anlamakta zorluk çeker ve bu da yanlış anlamalara veya alakasız yanıtlara yol açabilir.</li>
-  <li>ChatGPT’nin performansı, üzerinde eğitim aldığı verilerden etkilenir ve eğitim verilerindeki önyargı, modelin yanıtlarında önyargıya yol açabilir.</li>
-  <li>ChatGPT’yi kullanırken, herhangi bir kişisel bilgiyi saklamadığını ancak metin çıktısı oluşturmak için girdi olarak sağladığınız bilgileri kullanabileceğini unutmamak önemlidir. Herhangi bir kişisel bilgi vermeden önce gizlilik politikasını kontrol ederek olası sonuçların farkında olmanız çok önemlidir.</li>
-</ul>
-
-<p>Bunlar, bu yazının yazıldığı sıradaki sınırlamalardır ancak chatGPT sürekli olarak geliştirilmektedir ve mevcut verilere erişmesinin an meselesi olduğu düşünülmektedir.</p>
-
-<p>Her şeyde olduğu gibi, yayınlamadan veya chatGPT’den elde edilen çıktılara dayanarak büyük kararlar almadan önce kendi durumunuzu tespit etmelisiniz.</p>
-
-<p><strong>Kaynak:</strong> “The ChatGPT Millionaire”, Neil Dagger</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[ChatGPT’nin ne kadar faydalı olabileceğini gördük, ancak her makine öğrenimi modeli gibi onun da kendi sınırlamaları var.]]></summary></entry></feed>
+<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Herhangi bir web uygulama framework’ünün temel işlevi, kullanıcıdan istek almak ve yanıtları, genellikle HTTP(S) aracılığıyla iletmektir. Bu, bir framework’ü öğrenirken ele alınması gereken ilk ve en önemli şeyin uygulamanın rotalarını tanımlamak olduğu anlamına gelir; rotalar olmadan, son kullanıcıyla etkileşim kurma yeteneğiniz çok azdır veya hiç yoktur.]]></summary></entry></feed>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Code Ninja - Melih Kocatürk</title>
+    <title>Windows'ta PHP CLI versiyonu nasıl değiştirilir? - Melih Kocatürk</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="/assets/css/main.css">
@@ -40,62 +40,53 @@
         </div>
     </div>
 </div>
-
-    <main class="flex-shrink-0 mt-5">
+    
+    <main class="flex-shrink-0 mb-5">
         <div class="container">
-            
-    <div class="mb-5">
-        <h2>Pasif Gelir Akışı Oluşturmak İçin ChatGPT'yi Kullanın</h2>
-        <p><p>Oyun artık değişti, giriş engeli çok düşük olan pasif gelir kaynakları giderek artıyor çünkü ChatGPT insanların bunu yüzlerce veya binlerce kez tekrarlamasını gerçekten kolaylaştırıyor.</p>
+            <h1 class="text-center mb-5">Windows&#39;ta PHP CLI versiyonu nasıl değiştirilir?</h1>
+            <p class="text-center text-uppercase mb-5">
+                <small class="text-muted">Melih Kocatürk / 28.03.2024</small>
+            </p>
+            <p><p>Son zamanlarda Laravel 10 ile bir uygulama geliştiriyorum. Laravel 10 ile çalışabilmek için PHP CLI’mı yükseltmem gerekiyor. Şu anda bilgisayarımda PHP 7.0.33 (cli) yüklü. Terminalde kendi PHP CLI’nizi aşağıdaki gibi kontrol edebilirsiniz.</p>
 
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php -v
+PHP 7.0.33 (cli) (built: Dec  5 2018 21:22:29) ( ZTS )
+Copyright (c) 1997-2017 The PHP Group
+Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
+</code></pre></div></div>
+
+<p>Şimdi Ortam Değişkenleri altında Sistem değişkenleri bölümündeki PHP CLI yolunu değiştireceğim. Bu şekilde PHP CLI, composer, nodejs’e ve daha fazlasına bilgisayarımın her yerinden erişebilirim.</p>
+
+<h2 id="ortam-değişkenlerine-erişim">Ortam Değişkenlerine Erişim</h2>
+
+<p>Ortam değişkenlerine erişmek için Başlat menüsüne tıklayıp “ortam değişkenleri” yazmanız yeterlidir. Ortam değişkenlerine şuradan erişebilirsiniz:</p>
+
+<p><img src="/assets/images/2024/03/ortam-degiskenleri.png" alt="Ortam Değişkenleri" title="Ortam Değişkenleri" class="img-fluid" /></p>
+
+<p>“Ortam Değişkenleri” butonuna tıkladıktan sonra aşağıdaki popup pencereyi göreceksiniz.</p>
+
+<p><img src="/assets/images/2024/03/sistem-degiskenleri.png" alt="Sistem Değişkenleri" title="Sistem Değişkenleri" class="img-fluid" /></p>
+
+<p>Ortam değişkenlerini düzenleyin.</p>
+
+<h2 id="php-cli-sürümünü-değiştirin">PHP CLI Sürümünü Değiştirin</h2>
+
+<p>Path değişkenini düzenleyin. İstediğiniz PHP CLI sürümünü Path değişkenine eklemeniz yeterlidir.</p>
+
+<p><img src="/assets/images/2024/03/ortam-degiskenini-duzenle.png" alt="Ortam Değişkenini Düzenle" title="Ortam Değişkenini Düzenle" class="img-fluid" /></p>
+
+<p>WampServer’da birden fazla PHP sürümüne sahibim. PHP CLI sürümünü değiştirmek için 7.0.33 olan PHP verisyonunu 8.1.8 olarak düzenledim.</p>
+
+<p>Path değişkenimi, “C:\wamp64\bin\php\php7.0.33” yerine “C:\wamp64\bin\php\php8.1.8” olarak değiştiriyorum.</p>
+
+<p>Açık olan tüm terminalleri ve VSCode’u kapatın. Daha sonra aşağıdaki gibi PHP CLI verisyonunu kontrol edin. Şimdi değiştirdiğiniz PHP CLI sürümünü görmelisiniz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>PS C:\Users\melih&gt; php -v
+PHP 8.1.8 (cli) (built: Jul  5 2022 23:04:29) (ZTS Visual C++ 2019 x64)
+Copyright (c) The PHP Group
+Zend Engine v4.1.8, Copyright (c) Zend Technologies
+</code></pre></div></div>
 </p>
-        <p><a href="/2024/03/01/pasif-gelir-akisi-olusturmak-icin-chatgpt-yi-kullanin.html">Devamını Oku</a></p>
-    </div>
-
-    <div class="mb-5">
-        <h2>ChatGPT'nin Sınırlamaları Nelerdir?</h2>
-        <p><p>ChatGPT’nin ne kadar faydalı olabileceğini gördük, ancak her makine öğrenimi modeli gibi onun da kendi sınırlamaları var.</p>
-
-</p>
-        <p><a href="/2024/03/01/chatgpt-nin-sinirlamalari-nelerdir.html">Devamını Oku</a></p>
-    </div>
-
-    <div class="mb-5">
-        <h2>ChatGPT'yi Ne İçin Kullanabilirim?</h2>
-        <p><p>Genel olarak, ister işletme sahibi, ister girişimci veya serbest çalışan olun, ChatGPT, operasyonları iyileştirmek ve geliri artırmak için eyleme geçirilebilir bilgi ve öneriler sunarak çok çeşitli alanlarda yardımcı olabilir, aynı zamanda normalden 10 kat daha hızlı, kaliteli, ilgi çekici içerikler oluşturarak uzun süreli müşteri ilişkilerinin korunmasına yardımcı olur.</p>
-
-</p>
-        <p><a href="/2024/02/22/chatgpt-yi-ne-icin-kullanabilirim.html">Devamını Oku</a></p>
-    </div>
-
-    <div class="mb-5">
-        <h2>ChatGPT Verimliliği Nasıl Artırır?</h2>
-        <p><p>Girişimci, serbest çalışan, startup veya hatta küçük bir kobi iseniz, genellikle birçok farklı şeyin nasıl yapılacağını öğrenmesi gereken tek kişilik bir grupsunuzdur, bu sonsuza kadar sürer ya da işi outsource ederiz. Bu işe yarar ancak pahalıdır ve aynı türden işler tekrar ortaya çıkarsa ve en son kullandığınız freelancer mevcut değilse süreklilik eksikliği söz konusudur.</p>
-
-</p>
-        <p><a href="/2024/02/22/chatgpt-verimliligi-nasil-artirir.html">Devamını Oku</a></p>
-    </div>
-
-    <div class="mb-5">
-        <h2>ChatGPT Nasıl Kullanılır?</h2>
-        <p><p>Artık ChatGPT’yi ve nasıl çalıştığını anladığınıza göre kullanmaya başlamanın zamanı geldi. Bu bölümde ChatGPT’yi tarayıcınız aracılığıyla kullanmaya odaklanacağız ve etkinliğini en üst düzeye çıkarmak için bazı ipuçları ve en iyi uygulamaları sunacağız.</p>
-
-</p>
-        <p><a href="/2024/02/22/chatgpt-nasil-kullanilir.html">Devamını Oku</a></p>
-    </div>
-
-
-<div class="d-flex">
-    <ul class="list-inline mx-auto justify-content-center">
-        
-            <li class="list-inline-item"><a href="/blog/page2/">&laquo; Önceki</a></li>
-        
-            <li class="list-inline-item">Sayfa: 3 - 5</li>
-        
-            <li class="list-inline-item"><a href="/blog/page4/">Sonraki &raquo;</a></li>
-        
-    </ul>
-</div>
         </div>
     </main>
 
