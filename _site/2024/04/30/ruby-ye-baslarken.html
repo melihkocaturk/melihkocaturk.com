@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang=" tr-TR" class="h-100">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ruby'ye Başlarken - Melih Kocatürk</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <link href="/assets/favicon.ico" rel="icon" type="image/x-icon">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D81YCKRVTX"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-D81YCKRVTX');
+</script>
+</head>
+
+<body class="d-flex flex-column h-100">
+    <div class="container-fluid py-5">
+    <div class="row align-items-center">
+        <div class="col">
+            <div class="d-flex flex-row">
+                <div class="p-2">
+                    <img src="/assets/images/avatar.jpg" alt="Melih Kocatürk" class="rounded-circle" width="60" height="60">
+                </div>
+                <div class="p-2">
+                    <h1 class="h4 mb-0">Melih Kocatürk</h1>
+                    Code Ninja
+                </div>
+            </div>
+        </div>
+        <div class="col-auto">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+    
+    <main class="flex-shrink-0 mb-5">
+        <div class="container">
+            <h1 class="text-center mb-5">Ruby&#39;ye Başlarken</h1>
+            <p class="text-center text-uppercase mb-5">
+                <small class="text-muted">Melih Kocatürk / 30.04.2024</small>
+            </p>
+            <p><p>Bu kitapta Ruby dili hakkında konuşarak çok zaman harcayacağız. Bunu yapmadan önce Ruby’yi bilgisayarınıza kurup çalıştırabildiğinizden emin olmak istiyoruz. Bu şekilde örnek kodları deneyebilir ve okurken kendi başınıza denemeler yapabilirsiniz. Ruby’yi öğrenmek istiyorsanız, okurken kod yazma alışkanlığını da edinmelisiniz.</p>
+
+<h2 id="rubyyi-yüklemek">Ruby’yi Yüklemek</h2>
+
+<p>İşletim sisteminizde Ruby’nin zaten kurulu olması ihtimali yüksektir. Komut istemine <code class="language-plaintext highlighter-rouge">ruby -- version</code> yazmayı deneyin; hoş bir sürpriz yaşayabilirsiniz. Ancak büyük olasılıkla Ruby sürümünün güncel olmadığını göreceksiniz. Örneğin, bu yazının yazıldığı sırada macOS Ruby 2.6.10 ile birlikte gelir.</p>
+
+<p>Bu kitaptaki örnekler Ruby 3.2’de yazılmıştır. Kodun çoğu Ruby’nin eski sürümlerinde çalışsa da, performans ve güvenlik nedeniyle en güncel sürümü kullanmaya çalışmalısınız.</p>
+
+<p>Ruby’yi çeşitli farklı şekillerde kurabilirsiniz, böylece genel kurulum talimatlarını vermek, biraz kendi maceranı seç hikayesine dönüşür. Bu kitaptaki örneklerin çoğu, Linux tarzı komutlara yanıt veren Linux veya Unix tarzı sistem kullandığınızı varsaymaktadır. Buna tüm Linux dağıtımları, macOS, Windows Subsystem for Linux (WSL) çalıştıran Windows sistemleri ve çoğu Docker container’ının yanı sıra Replit gibi bulut tabanlı geliştirme ortamları dahildir.</p>
+
+<p>Bununla birlikte, Ruby Windows’ta çalışır. Windows’ta Ruby kurulumunu yönetme süreci farklıdır ve bunu bu bölümün ilerleyen kısımlarında tüm ayrıntılarıyla ele alacağız.</p>
+
+<p>Lütfen Ruby kurulumuyla ilgili araçların sık sık değiştiğini ve bazı özel talimatların güncelliğini yitirmiş olabileceğini veya daha yeni araçlarla değiştirilebileceğini unutmayın.</p>
+
+<p>Herhangi bir sebepten dolayı bilgisayarınıza herhangi bir şey yüklemek istemiyorsanız Replit veya GitHub Codespaces gibi bulut tabanlı geliştirme ortamlarından yararlanabilirsiniz. Bu ortamlar, kodunuzu bir tarayıcıda yazmanıza ve bulut tabanlı bir sanal makinede çalıştırmanıza olanak tanır.</p>
+
+<h2 id="rubyyi-rbenv-version-manager-ile-yüklemek">Ruby’yi rbenv Version Manager ile Yüklemek</h2>
+
+<p>Ruby kurulumumuzu kolaylaştırmak için, aynı makineye birden fazla Ruby sürümü kurmanıza ve bunlar arasında geçiş yapmanıza olanak tanıyan bir araç olan sürüm yöneticisi kullanacağız. Ruby kurulumunuzu gerçekleştirmek için sürüm yöneticisi kullanmanın birçok nedeni vardır. Ruby’nin birden çok sürümü arasında kolayca geçiş yapabilmek, size farklı zamanlarda yazılmış olabilecek birden çok projeyle çalışma esnekliği sağlar. Ayrıca sürüm yöneticileri kolay kurulum için oluşturulmuştur, bu nedenle birden fazla Ruby sürümünü bir sürüm yöneticisiyle kurmak, tek bir sürümü tek başına kurmaktan daha kolaydır. Ruby’nin yalnızca bir sürümünü indirmekle ilgileniyorsanız, sistem bazında talimatları <a href="https://www.ruby-lang.org/en/documentation/installation">https://www.ruby-lang.org/en/documentation/installation</a> adresinde bulabilirsiniz.</p>
+
+<p>Bu kitapta kullanacağımız aracın adı rbenv’dir. Rbenv tek Ruby sürüm yöneticisi olmasa da muhtemelen bugünlerde en sık kullanılanıdır. Yaygın olarak kullanılan diğer sürüm yöneticileri RVM ve chruby’dir. Birden fazla dil için sürüm yönetimi kullanıyorsanız, farklı dillerin sürüm yöneticilerini birleştiren asdf adlı bir projeye bakmak isteyebilirsiniz ve Ruby’de hızla daha popüler hale geliyor.</p>
+
+<p>Rbenv’i, rbenv-installer programı aracılığıyla kuracağız. Başka birinin shell script’ini çalıştırmak sizi tedirgin ediyorsa, script’i çalıştırmadan önce <a href="https://github.com/rbenv/rbenv-installer/blob/main/bin/rbenv-installer">https://github.com/rbenv/rbenv-installer/blob/main/bin/rbenv-installer</a> adresinden inceleyebilirsiniz.</p>
+
+<p>Bir terminalden bu komutun tamamını tek bir satıra girin.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
+</code></pre></div></div>
+
+<p>Curl, URL’lere erişmek ve dönüş değeriyle faydalı bir şeyler yapmak için kullanılan komut satırı aracıdır - bu durumda, rbenv GitHub reposundan shell script’ini alır ve bunu yürütecek olan bash kabuğuna iletir.</p>
+
+<p>Bu script dosyası, sisteminiz için uygun paket yöneticisini kullanarak rbenv’i kuracak ve ayrıca farklı Ruby sürümlerinin indirilmesini ve kurulumunu yönetecek ruby-build adlı bir helper programı da kuracaktır.</p>
+
+<p>Kurulum komutu çok fazla çıktı üretebilir; özellikle de Homebrew paket yöneticisini kullanan bir macOS sistemindeyseniz. Mac’te aşağıdaki şekilde bitmelidir; WSL altındaki bir Windows kullanıcısı farklı bir şey görebilir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>All done! Note that this installer does NOT edit your shell configuration files: 1. Run `rbenv init' to view instructions on how to configure rbenv for your shell. 2. Launch a new terminal window after editing shell configuration files.
+</code></pre></div></div>
+
+<p>Talimatları takip ederek <code class="language-plaintext highlighter-rouge">rbenv init</code>‘i çalıştırın. Bu, zshell çalıştıran bir Mac’teki çıktıdır (talimatlarınız farklı olabilir):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rbenv init
+# Load rbenv automatically by appending 
+# the following to ~/.zshrc:
+eval "$(rbenv init - zsh)"
+</code></pre></div></div>
+
+<p>Kurulumunuz ne olursa olsun, bu talimatta almanız gerekenler:</p>
+
+<ul>
+  <li>Güncellemeniz gereken kabuk yapılandırmasını içeren dosya</li>
+  <li>Dosyanın sonuna koymanız gereken metin</li>
+</ul>
+
+<p>Önerilen metin satırını yapılandırma dosyanızın sonuna koymanız ve yeni bir terminal penceresi açmanız gerekir; değişiklik yalnızca bir pencere yüklendiğinde etkili olur, dolayısıyla rbenv’i başlatmanın en kolay yolu yeni bir terminal penceresi açmaktır.</p>
+
+<p>Şimdi belirli bir Ruby sürümünü yükleyelim.</p>
+
+<p><strong>Ruby’leri rbenv ile kurmak</strong></p>
+
+<p>Rbenv, <code class="language-plaintext highlighter-rouge">rbenv install -l</code> komutuyla yüklemek isteyeceğiniz Ruby sürümlerinin bir listesini görmenizi sağlar. İşte bugün itibariyle liste:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rbenv install -l 
+2.7.7
+3.0.5
+3.1.3
+3.2.0
+jruby-9.4.0.0
+mruby-3.1.0
+picoruby-3.0.0
+rbx-5.0
+truffleruby-22.3.0
+truffleruby+graalvm-22.3.0
+Only latest stable releases for each Ruby implementation are shown.
+Use 'rbenv install --list-all / -L' to show all local versions.
+</code></pre></div></div>
+
+<p>Bu liste, çeşitli Ruby uygulamalarının en güncel yama sürümüdür. Ana Ruby uygulama sürümü 2.7, 3.0, 3.1 ve 3.2 için Ruby sürümlerini görebilirsiniz. (Farklı Ruby uygulamalarından bahsederken, ana versiyona bazen CRuby, bazen de “Matz’ın Ruby Yorumlayıcısı” için MRI denir.) Burada fazla bahsetmeyeceğimiz başka versiyonlar da var. JRuby, Java Sanal Makinesi üzerinde çalışan bir Ruby sürümüdür; mruby ise gömülü donanım üzerinde çalışmaya yönelik özel sınırlı bir Ruby yapısıdır. Rbx, Ruby’yi Ruby’de uygulamaya yönelik artık kullanılmayan bir proje olan Rubinius’tur ve TruffleRuby, yüksek performansa odaklanan dilin bir uygulamasıdır.</p>
+
+<p>Şu an ilgi alanımız rbenv install 3.2.0 komutuyla kurabileceğimiz Ruby 3.2.0. Listede Ruby’nin en güncel sürümünü göremiyorsanız ve rbenv’i daha önce yüklediyseniz, listenizde daha yeni Ruby sürümleri almak için ruby-build’i nasıl güncelleyeceğinize ilişkin talimatlar alabilirsiniz. Rbenv komutlarının hiçbirinin superuser erişimine sahip olmamızı veya sudo kullanmamızı gerektirmediğini unutmayın. Rbenv de dahil olmak üzere Ruby sürüm yöneticilerinin keyifleri yanlarından biri, her şeyi ana dizininizin içinde yapmalarıdır, yeni Ruby sürümlerini yüklemek veya kullanmak için herhangi bir özel sistem ayrıcalığına ihtiyacınız yoktur.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rbenv install 3.2.0
+To follow progress, use
+'tail -f &lt;REDACTED&gt;'
+or pass --verbose
+Installing openssl-3.0.7...
+Installed openssl-3.0.7 to /Users/noel/.rbenv/versions/3.2.0
+Installing ruby-3.2.0...
+ruby-build: using readline from homebrew
+ruby-build: using gmp from homebrew
+Installed ruby-3.2.0 to /Users/noel/.rbenv/versions/3.2.0
+</code></pre></div></div>
+
+<p>Çıktınız, tam sürüm numarasına ve Ruby sürümünü yeniden kurup kurmadığınıza bağlı olarak biraz farklı olabilir.</p>
+
+<p>Örneğin Ruby sürümünün rbenv sürümleriyle birlikte kurulduğunu doğrulayabiliriz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rbenv versions
+* system
+3.2.0
+</code></pre></div></div>
+
+<p>Buradaki system, eğer böyle bir şey varsa işletim sistemi için önceden tanımlanmış Ruby’dir ve yıldız işareti o anda hangi sürümün aktif olduğunu gösterir.</p>
+
+<p>Önemli bir adım: rbenv aracılığıyla yeni bir Ruby kurduktan sonra <code class="language-plaintext highlighter-rouge">rbenv rehash</code> komutunu çalıştırmalısınız. Bu komut hiçbir çıktı üretmez ancak rbenv’in yeni yüklenen Ruby’yi kullanmasını sağlar.</p>
+
+<p>Şu anda Ruby system hala aktif. Bunu değiştirelim.</p>
+
+<p><strong>Ruby’leri rbenv ile değiştirmek</strong></p>
+
+<p>İşte bu noktada getirisini görmeye başlıyoruz. Farklı Ruby sürümleri yüklendikten ve <code class="language-plaintext highlighter-rouge">rbenv rehash</code> çağrıldıktan sonra, Rbenv bize, kullandığımız Ruby sürümünü değiştirmemiz için birden fazla yol sağlar.</p>
+
+<p><code class="language-plaintext highlighter-rouge">rbenv local &lt;version&gt;</code> komutu, bulunduğunuz dizinin Ruby sürümünü değiştirir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ruby --version
+ruby 2.6.10p210 (2022-04-12 revision 67958) [universal.arm64e-darwin22]
+$ rbenv local 3.2.0
+$ ruby --version
+ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
+</code></pre></div></div>
+
+<p>Dizinin bu ayarı, dizinden çıkıp geri dönseniz bile korunur. (Değişikliğin geçerli oturumun ötesinde devam etmesini istemiyorsanız, <code class="language-plaintext highlighter-rouge">rbenv local</code> yerine <code class="language-plaintext highlighter-rouge">rbenv shell &lt;version&gt;</code> kullanabilirsiniz).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ..
+$ cd test
+$ ruby --version
+ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
+</code></pre></div></div>
+
+<p>Rbenv bunu dizine .ruby-version adlı bir dosya koyarak başarır, bu sadece o dizin için ayarladığınız Ruby’nin sürüm numarasını içerir.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% cat .ruby-version
+3.2.0
+</code></pre></div></div>
+
+<p>Bu dosya aynı zamanda tersten de çalışır; eğer rbenv’i yüklediyseniz ve <code class="language-plaintext highlighter-rouge">.ruby-version</code> dosyasını içeren bir dizine geçerseniz, rbenv kuruluysa otomatik olarak o Ruby sürümüne geçecektir veya dizinin kaldırılmış bir Ruby beklediği konusunda sizi uyarabilir. Pek çok Ruby projesi, Ruby sürümünü belirtmek için <code class="language-plaintext highlighter-rouge">.ruby-version</code> dosyası kullanır ve bu dosya, tüm Ruby sürüm yöneticileri tarafından dikkate alınır.</p>
+
+<p>Kendileri belirtmeyen dizinler için varsayılan bir Ruby sürümü ayarlamak istiyorsanız bunu <code class="language-plaintext highlighter-rouge">rbenv global &lt;version&gt;</code> ile yapabilirsiniz.</p>
+
+<p>Bu, Ruby’yi kurmayı beklediğinizden daha fazla iş gerektirebilir. Eğer yapmak istediğiniz Ruby’nin tek bir versiyonunu kullanmak olsaydı, buna katılırdık. Ancak burada gerçekten yaptığınız şey, kendinize inanılmaz miktarda esneklik kazandırmaktır. Belki gelecekte <code class="language-plaintext highlighter-rouge">.ruby-version</code> dosyasına göre Ruby 2.7.5 kullanan bir proje ortaya çıkabilir. Bu sorun değil; yalnızca <code class="language-plaintext highlighter-rouge">rbenv install 2.7.5</code>‘i kullanın; <code class="language-plaintext highlighter-rouge">rbenv rehash</code> ve rbenv, sürümü <code class="language-plaintext highlighter-rouge">.ruby-version</code> dosyasından otomatik olarak alacaktır.</p>
+
+<p><strong>rbenv aslında ne yapıyor?</strong></p>
+
+<p>Rbenv, dinamik davranışını normal terminal ortamınızda mümkün olduğunca az değişiklik yaparak sağlamaya çalışır.</p>
+
+<p>Unix terminali, bir komut yazdığınızda yürütülebilir programlar için hangi dizinlere bakacağını belirlemek amacıyla PATH adı verilen genel bir ortam değişkenini kullanır. Terminalinizin yapılandırma dosyasına bakarsanız, muhtemelen PATH değişkeninin değiştirildiğini göreceksiniz.</p>
+
+<p>Terminal kurulumunuzun bir parçası olarak rbenv init komutu yürütüldüğünde, PATH’inizin önüne bir dizin ekler, böylece işletim sisteminiz başka bir yere bakmadan önce rbenv dizinine bakar. Bu dizinde rbenv’in shim olarak adlandırdığı bir dizi şey vardır; Tüm Ruby sürümlerinizdeki tüm yürütülebilir komutlarla eşleşen küçük programlar (Yeni bir Ruby kurduktan sonra <code class="language-plaintext highlighter-rouge">rbenv rehash</code>‘ı çalıştırmanızın nedeni bu dizini yenilemektir). Ruby veya (birazdan göreceğiniz gibi) irb gibi bir Ruby komutunu çağırdığınızda, ilk önce rbenv shim ile karşılaşılır ve genellikle bir .ruby-version dosyasının varlığına bağlı olarak hangi Ruby’nin aktif olduğunu dinamik olarak seçer. Daha sonra komut, o geçerli sürümdeki gerçek yürütülebilir programa aktarılır. Bu gerçek sürümleri görebilirsiniz, ~/.rbenv/versions adresindeki ana dizininizde bulunurlar.</p>
+
+<h2 id="rubyyi-çalıştırmak">Ruby’yi Çalıştırmak</h2>
+
+<p>Artık Ruby kurulduğuna göre muhtemelen bazı programları çalıştırmak isteyeceksiniz. Derlenmiş dillerden farklı olarak Ruby’yi çalıştırmanın iki yolu vardır; kodu etkileşimli olarak yazabilir veya program dosyaları oluşturup çalıştırabilirsiniz. Kodu etkileşimli olarak yazmak, dili denemenin harika bir yoludur, ancak daha karmaşık kodlar veya birden fazla çalıştırmak isteyeceğiniz kodlar için program dosyaları oluşturmanız ve bunları çalıştırmanız gerekir. Ancak daha ileri gitmeden önce Ruby’nin kurulu olup olmadığını test edelim. Yeni bir komut istemi açın ve şunu yazın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ruby --version
+ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
+</code></pre></div></div>
+
+<p>Teknik olarak, yalnızca kabuk komut istemine ruby yazarak Ruby’yi etkileşimli olarak çalıştırabilirsiniz. Yanıt olarak boş bir satır alacaksınız ve oraya Ruby kodunu yazabilirsiniz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ruby
+puts "Hello, world!" 
+^D
+Hello, world!
+</code></pre></div></div>
+
+<p>Bu örnekte tek bir Ruby satırı yazdık. Bu satır iki bölümden oluşuyor. İlk bölüm, bir metodun adıdır. Metot önceden tanımlanmış bir kod yığınıdır. Bu durumda <code class="language-plaintext highlighter-rouge">puts</code> metodu Ruby tarafından bizim için tanımlanan çeşitli metotlardan biridir. İkinci bölüm olan “Hello, world!”, string (dize) adı verilen çift tırnakla çevrelenmiş metindir. İkisini birleştiren Ruby kodu, “Hello, world!” parametresiyle <code class="language-plaintext highlighter-rouge">puts</code> metodunu çağırır. <code class="language-plaintext highlighter-rouge">puts</code> metodu daha sonra bu parametreyi terminale geri gönderir; puts, “outPUT String”in kısaltmasıdır.</p>
+
+<p>Bir sonraki satıra dosya sonu karakterini (sistemimizde Ctrl+D) yazarak programdan çıktık ve yazdıklarımızın değerlendirilmesine neden olduk. Ruby’yi bu şekilde kullanmak işe yarar, ancak yanıtları yalnızca açıkça yazdırırsanız gösterir. Ayrıca, bir yazım hatası yaparsanız can sıkıcı olabilir ve yazarken neler olduğunu göremezsiniz.</p>
+
+<p>Neyse ki Ruby ile etkileşim kurmanın daha iyi bir yolu var.</p>
+
+<p>Etkileşimli Ruby veya irb, Ruby’yi etkileşimli olarak çalıştırmak için tercih edilen araçtır. Irb, komut satırı geçmişi, satır düzenleme yetenekleri ve iş kontrolü ile eksiksiz bir Ruby kabuğudur. irb’yi komut satırından çalıştırabilirsiniz. Başladıktan sonra Ruby kodunu yazın. Her ifadeyi değerlendirirken size değerini gösterecektir. Exit yazarak veya Ctrl+D ile irb oturumundan çıkın.</p>
+
+<p>İşte örnek bir oturum:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ irb
+irb(main):001:1* def sum(n1, n2)
+irb(main):002:1* n1 + n2
+irb(main):003:0&gt; end
+=&gt; :sum
+irb(main):004:0&gt; sum(3, 4)
+=&gt; 7
+irb(main):005:0&gt; sum("cat", "dog") =&gt; "catdog"
+irb(main):006:0&gt; exit
+</code></pre></div></div>
+
+<p>Bu oturumun ilk üç satırında sum adında bir metot tanımlıyoruz. Bu metodu tanımlama eylemi, metodun adıyla eşleşen bir Ruby sembolü olan :sum değerini döndürür. Semboller ve metot adları hakkında daha sonra daha fazla konuşacağız. 4. satırda, önce 3 ve 4 parametreleriyle, ardından 5. satırda “cat” ve “dog” parametreleriyle metodu çağırıyoruz. Ruby’de dizeleri eklemek onları birleştirir, böylece “catdog” dizesi döndürülür. Daha sonra 6. satırda çıkıyoruz.</p>
+
+<p>Bunu Ruby 3.1 veya üzeri sürümlerde denerseniz, irb’nin değişken adlarını, komutları ve renk kodlarını otomatik olarak tamamlamaya çalıştığını fark edeceksiniz; bunların hiçbirinin bir kitapta gösterilmesi kolay değildir.</p>
+
+<p>irb’ye aşina olmanızı öneririz; Ruby kavramlarını keşfetmenin ve kodunuzda hata ayıklamanın harika bir yoludur ve Ruby deneyiminizi daha eğlenceli hale getirecektir.</p>
+
+<p><strong>Docker’a ne dersiniz?</strong></p>
+
+<p>Ruby’yi daha büyük bir projede veya daha büyük bir ekiple kullanıyorsanız Docker’ın geliştirme ortamınızın bir parçası olma ihtimali yüksektir. Docker, container tanımlamanıza ve çalıştırmanıza olanak tanıyan bir araçtır. Container, kod çalıştırmak için gereken tüm bağımlılıkları paketlemenin bir yoludur; etkili bir şekilde bilgisayarınızın içindeki sanal bir işletim sistemidir. Docker’ı kullanarak, hangi işletim sistemini çalıştırıyor olursanız olun bir Linux ortamını simüle edebilirsiniz.</p>
+
+<p>Docker’ın tam bir açıklaması bu kitabın kapsamı dışındadır, ancak genel olarak Docker’a zaten aşina iseniz, Docker’ın önceden yüklenmiş farklı Ruby sürümleriyle image’leri tuttuğunu ve Ruby ile her zaman en son yayımlanan sürüme ulaşabileceğinizi belirtmekte fayda var. <code class="language-plaintext highlighter-rouge">ruby:latest</code> ile en son yayımlanan sürüme ulaşabilirsiniz ve <code class="language-plaintext highlighter-rouge">docker run -it ruby irb</code> ile doğrudan dockerize edilmiş irb komut istemine gidebilirsiniz. Harici Ruby dosyalarını Docker container’ında çalıştırmak da mümkündür ancak biraz daha Docker bilgisi gerektirir.</p>
+
+<h2 id="ruby-programları-oluşturmak">Ruby Programları Oluşturmak</h2>
+
+<p>Ruby programları yazmanın en yaygın yolu Ruby kodunu bir veya daha fazla metin dosyasına yerleştirmektir. Bu dosyaları oluşturmak için bir metin düzenleyici veya Entegre Geliştirme Ortamı (IDE) kullanacaksınız; Ruby desteğine sahip Visual Studio Code, Vim, Sublime Text ve RubyMine gibi birçok popüler editör vardır. Daha sonra dosyaları editörün içinden veya komut satırından çalıştıracaksınız. Her iki teknik de faydalıdır; tek dosyalı programları editörün içinden, daha karmaşık programları ise komut satırından çalıştırabilirsiniz.</p>
+
+<p>Basit bir Ruby programı oluşturup çalıştıralım. Terminal penceresini açın ve bir yerde boş bir dizin oluşturun, belki buna pickaxe diyebilirsiniz.</p>
+
+<p>Ardından, seçtiğiniz editörü kullanarak aşağıdaki metni içeren <em>myprog.rb</em> dosyasını oluşturun.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>puts "Hello, Ruby Programmer"
+puts "It is now #{Time.now}"
+</code></pre></div></div>
+
+<p>İkinci dizenin parantezlerin değil süslü parantezlerin arasında Time.now metnini içerdiğini unutmayın.</p>
+
+<p>Bir Ruby programını, Python gibi başka bir script dilindeki herhangi bir shell script’i gibi dosyadan çalıştırabilirsiniz. Basitçe Ruby yorumlayıcısını çalıştırın ve ona parametre olarak script dosyası adını verin:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ruby myprog.rb
+Hello, Ruby Programmer
+It is now 2022-12-25 12:29:56 -0600
+</code></pre></div></div>
+
+<p>Unix sistemlerinde program dosyasının ilk satırı olarak “shebang” gösterimini kullanabilirsiniz. Sisteminiz destekliyorsa, <code class="language-plaintext highlighter-rouge">#!/usr/bin/env ruby</code> komutunu kullanarak Ruby yolunu sabit kodlamaktan kaçınabilirsiniz; bu, yolunuzu Ruby için arayacak ve daha sonra çalıştıracaktır.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/bin/env ruby
+puts "Hello, Ruby Programmer"
+puts "It is now #{Time.now}"
+</code></pre></div></div>
+
+<p>Bu kaynak dosyayı yürütülebilir hale getirirseniz (örneğin, <code class="language-plaintext highlighter-rouge">chmod +x myprog.rb</code> kullanarak), Unix dosyayı bir program olarak çalıştırmanıza olanak tanır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./myprog.rb
+Hello, Ruby Programmer
+It is now 2022-12-25 12:29:56 -0600
+</code></pre></div></div>
+
+<p>Dosya ilişkilendirmelerini kullanarak Microsoft Windows altında benzer bir şey yapabilirsiniz ve Ruby GUI uygulamalarını Windows Gezgini’nde adlarına çift tıklayarak çalıştırabilirsiniz.</p>
+
+<h2 id="ruby-hakkında-daha-fazla-bilgi-almak">Ruby Hakkında Daha Fazla Bilgi Almak</h2>
+
+<p>Ruby kütüphanelerinin hacmi büyüdükçe hepsini tek bir kitapta belgelemek imkansız hale geldi; Ruby ile birlikte gelen standart kütüphane artık 9.000’den fazla metot içeriyor.</p>
+
+<p>Resmi Ruby belgeleri <a href="https://docs.ruby-lang.org">https://docs.ruby-lang.org</a> adresindedir. Ruby 3.2’de, siz yazdıkça irb size standart metot adlarının dokümantasyonunu verecektir.</p>
+
+<p>Bu belgelerin çoğu, RubyDoc adlı bir araç kullanılarak kaynak kodundaki yorumlardan oluşturulmuştur. Buna “Ruby’yi Belgelemek” bölümünde bakacağız. <a href="https://www.rubydoc.info">https://www.rubydoc.info</a> adresindeki RubyDoc sitesi, RubyDoc kullanan Ruby projelerine yönelik dökümantasyonları içerir.</p>
+
+<p>Ruby dünyasındaki third-party kütüphanelere gem denir ve Ruby Gems resmi listesi <a href="https://rubygems.org">https://rubygems.org</a> adresindedir. “Ruby Gems” bölümünde gemler hakkında daha fazla konuşacağız.</p>
+
+<p>Ayrıca Ruby core dokümantasyonu için ri adı verilen bir komut satırı aracı da vardır. Bir sınıfın dokümantasyonunu bulmak için <code class="language-plaintext highlighter-rouge">ri &lt;sınıf adı&gt;</code> yazın. Örneğin String sınıfına ait özet bilgilerin başlangıcı aşağıdadır. Hiçbir parametre olmadan <code class="language-plaintext highlighter-rouge">ri</code> yazarsanız, sizden sınıf isteyen bir prompt alırsınız.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>= String &lt; Object
+------------------------------------------------------------------------
+= Includes:
+Comparable (from ruby core)
+(from ruby core)
+------------------------------------------------------------------------
+A String object has an arbitrary sequence of bytes, typically
+representing text or binary data. A String object may be created using
+String::new or as literals.
+String objects differ from Symbol objects in that Symbol objects are
+designed to be used as identifiers, instead of text or data.
+</code></pre></div></div>
+
+<p>String’in tüm metotlarını listelemeye devam ediyor.</p>
+
+<p>Ayrıca bir metot adını da deneyebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ri strip
+= .strip
+
+(from ruby core)
+=== Implementation from String
+------------------------------------------------------------------------
+  strip -&gt; new_string
+
+------------------------------------------------------------------------
+
+Returns a copy of the receiver with leading and trailing whitespace
+removed; see {Whitespace in
+Strings}[rdoc-ref:String@Whitespace+in+Strings]:
+
+  whitespace = "\x00\t\n\v\f\r "
+  s = whitespace + 'abc' + whitespace
+  s       # =&gt; "\u0000\t\n\v\f\r abc\u0000\t\n\v\f\r "
+  s.strip # =&gt; "abc"
+
+Related: String#lstrip, String#rstrip.
+</code></pre></div></div>
+
+<p>Daha sonra <code class="language-plaintext highlighter-rouge">q</code> yazarak listeden çıkabilirsiniz.</p>
+
+<h2 id="sıradaki">Sıradaki</h2>
+
+<p>Artık Ruby’yi kullanmaya başladığınıza göre Ruby’nin nasıl çalıştığını ve dilin temel özelliklerini öğrenmenin zamanı geldi. Ancak öncelikle dilin öne çıkan noktalarına hızlı bir genel bakış yapacağız.</p>
+
+<p><strong>Kaynak:</strong> “Programming Ruby 3.2: The Pragmatic Programmers’ Guide”, Noel Rappin with Dave Thomas</p>
+</p>
+        </div>
+    </main>
+
+    <footer class="footer mt-auto py-3">
+    <div class="container">
+        <div class="row mb-2">
+            <div class="col">
+                <ul class="list-inline">
+                    <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                    <li class="list-inline-item"><a href="/about">Hakkında</a></li>
+                </ul>
+            </div>
+            <div class="col-auto">
+                <a href="/feed.xml" class="text-decoration-none" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss-fill" viewBox="0 0 16 16">
+                        <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2m0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2m.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3" />
+                    </svg>
+                </a>
+                <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                        <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z" />
+                    </svg>
+                </a>
+                <a href="https://github.com/melihkocaturk" class="text-decoration-none">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
+                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="text-center">
+            <small><a href="mailto:melih.kocaturk@icloud.com" class="text-decoration-none text-secondary">melih.kocaturk@icloud.com</a></small>
+        </div>
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

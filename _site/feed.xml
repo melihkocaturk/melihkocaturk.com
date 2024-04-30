@@ -1,5 +1,296 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-03-28T18:09:57+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
-</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Gatsby’nin Temelleri</title><link href="http://localhost:4000/2024/03/28/gatsby-nin-temelleri.html" rel="alternate" type="text/html" title="Gatsby’nin Temelleri" /><published>2024-03-28T00:00:00+03:00</published><updated>2024-03-28T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/28/gatsby-nin-temelleri</id><content type="html" xml:base="http://localhost:4000/2024/03/28/gatsby-nin-temelleri.html"><![CDATA[<p>Gatsby, React’ı temel alan, statik siteler oluşturmaya yönelik açık kaynaklı bir framework’tür. Genellikle static site generator (SSG) olarak anılan Gatsby, Gridsome gibi diğer SSG’lerin ve statik site oluşturmayı kolaylaştıran Next.js gibi JavaScript framework’lerinin yanı sıra Jamstack teknoloji kategorisinin bir parçasıdır. Gatsby performansa, ölçeklenebilirliğe ve güvenliğe özellikle önem veriyor. Pluginler, temalar, starter’lar ve katkıda bulunulan diğer projelerden oluşan zengin ve büyüyen bir ekosisteme sahip.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-04-30T16:25:26+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
+</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Ruby’ye Başlarken</title><link href="http://localhost:4000/2024/04/30/ruby-ye-baslarken.html" rel="alternate" type="text/html" title="Ruby’ye Başlarken" /><published>2024-04-30T00:00:00+03:00</published><updated>2024-04-30T00:00:00+03:00</updated><id>http://localhost:4000/2024/04/30/ruby-ye-baslarken</id><content type="html" xml:base="http://localhost:4000/2024/04/30/ruby-ye-baslarken.html"><![CDATA[<p>Bu kitapta Ruby dili hakkında konuşarak çok zaman harcayacağız. Bunu yapmadan önce Ruby’yi bilgisayarınıza kurup çalıştırabildiğinizden emin olmak istiyoruz. Bu şekilde örnek kodları deneyebilir ve okurken kendi başınıza denemeler yapabilirsiniz. Ruby’yi öğrenmek istiyorsanız, okurken kod yazma alışkanlığını da edinmelisiniz.</p>
+
+<h2 id="rubyyi-yüklemek">Ruby’yi Yüklemek</h2>
+
+<p>İşletim sisteminizde Ruby’nin zaten kurulu olması ihtimali yüksektir. Komut istemine <code class="language-plaintext highlighter-rouge">ruby -- version</code> yazmayı deneyin; hoş bir sürpriz yaşayabilirsiniz. Ancak büyük olasılıkla Ruby sürümünün güncel olmadığını göreceksiniz. Örneğin, bu yazının yazıldığı sırada macOS Ruby 2.6.10 ile birlikte gelir.</p>
+
+<p>Bu kitaptaki örnekler Ruby 3.2’de yazılmıştır. Kodun çoğu Ruby’nin eski sürümlerinde çalışsa da, performans ve güvenlik nedeniyle en güncel sürümü kullanmaya çalışmalısınız.</p>
+
+<p>Ruby’yi çeşitli farklı şekillerde kurabilirsiniz, böylece genel kurulum talimatlarını vermek, biraz kendi maceranı seç hikayesine dönüşür. Bu kitaptaki örneklerin çoğu, Linux tarzı komutlara yanıt veren Linux veya Unix tarzı sistem kullandığınızı varsaymaktadır. Buna tüm Linux dağıtımları, macOS, Windows Subsystem for Linux (WSL) çalıştıran Windows sistemleri ve çoğu Docker container’ının yanı sıra Replit gibi bulut tabanlı geliştirme ortamları dahildir.</p>
+
+<p>Bununla birlikte, Ruby Windows’ta çalışır. Windows’ta Ruby kurulumunu yönetme süreci farklıdır ve bunu bu bölümün ilerleyen kısımlarında tüm ayrıntılarıyla ele alacağız.</p>
+
+<p>Lütfen Ruby kurulumuyla ilgili araçların sık sık değiştiğini ve bazı özel talimatların güncelliğini yitirmiş olabileceğini veya daha yeni araçlarla değiştirilebileceğini unutmayın.</p>
+
+<p>Herhangi bir sebepten dolayı bilgisayarınıza herhangi bir şey yüklemek istemiyorsanız Replit veya GitHub Codespaces gibi bulut tabanlı geliştirme ortamlarından yararlanabilirsiniz. Bu ortamlar, kodunuzu bir tarayıcıda yazmanıza ve bulut tabanlı bir sanal makinede çalıştırmanıza olanak tanır.</p>
+
+<h2 id="rubyyi-rbenv-version-manager-ile-yüklemek">Ruby’yi rbenv Version Manager ile Yüklemek</h2>
+
+<p>Ruby kurulumumuzu kolaylaştırmak için, aynı makineye birden fazla Ruby sürümü kurmanıza ve bunlar arasında geçiş yapmanıza olanak tanıyan bir araç olan sürüm yöneticisi kullanacağız. Ruby kurulumunuzu gerçekleştirmek için sürüm yöneticisi kullanmanın birçok nedeni vardır. Ruby’nin birden çok sürümü arasında kolayca geçiş yapabilmek, size farklı zamanlarda yazılmış olabilecek birden çok projeyle çalışma esnekliği sağlar. Ayrıca sürüm yöneticileri kolay kurulum için oluşturulmuştur, bu nedenle birden fazla Ruby sürümünü bir sürüm yöneticisiyle kurmak, tek bir sürümü tek başına kurmaktan daha kolaydır. Ruby’nin yalnızca bir sürümünü indirmekle ilgileniyorsanız, sistem bazında talimatları <a href="https://www.ruby-lang.org/en/documentation/installation">https://www.ruby-lang.org/en/documentation/installation</a> adresinde bulabilirsiniz.</p>
+
+<p>Bu kitapta kullanacağımız aracın adı rbenv’dir. Rbenv tek Ruby sürüm yöneticisi olmasa da muhtemelen bugünlerde en sık kullanılanıdır. Yaygın olarak kullanılan diğer sürüm yöneticileri RVM ve chruby’dir. Birden fazla dil için sürüm yönetimi kullanıyorsanız, farklı dillerin sürüm yöneticilerini birleştiren asdf adlı bir projeye bakmak isteyebilirsiniz ve Ruby’de hızla daha popüler hale geliyor.</p>
+
+<p>Rbenv’i, rbenv-installer programı aracılığıyla kuracağız. Başka birinin shell script’ini çalıştırmak sizi tedirgin ediyorsa, script’i çalıştırmadan önce <a href="https://github.com/rbenv/rbenv-installer/blob/main/bin/rbenv-installer">https://github.com/rbenv/rbenv-installer/blob/main/bin/rbenv-installer</a> adresinden inceleyebilirsiniz.</p>
+
+<p>Bir terminalden bu komutun tamamını tek bir satıra girin.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ curl -fsSL https://github.com/rbenv/rbenv-installer/raw/HEAD/bin/rbenv-installer | bash
+</code></pre></div></div>
+
+<p>Curl, URL’lere erişmek ve dönüş değeriyle faydalı bir şeyler yapmak için kullanılan komut satırı aracıdır - bu durumda, rbenv GitHub reposundan shell script’ini alır ve bunu yürütecek olan bash kabuğuna iletir.</p>
+
+<p>Bu script dosyası, sisteminiz için uygun paket yöneticisini kullanarak rbenv’i kuracak ve ayrıca farklı Ruby sürümlerinin indirilmesini ve kurulumunu yönetecek ruby-build adlı bir helper programı da kuracaktır.</p>
+
+<p>Kurulum komutu çok fazla çıktı üretebilir; özellikle de Homebrew paket yöneticisini kullanan bir macOS sistemindeyseniz. Mac’te aşağıdaki şekilde bitmelidir; WSL altındaki bir Windows kullanıcısı farklı bir şey görebilir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>All done! Note that this installer does NOT edit your shell configuration files: 1. Run `rbenv init' to view instructions on how to configure rbenv for your shell. 2. Launch a new terminal window after editing shell configuration files.
+</code></pre></div></div>
+
+<p>Talimatları takip ederek <code class="language-plaintext highlighter-rouge">rbenv init</code>‘i çalıştırın. Bu, zshell çalıştıran bir Mac’teki çıktıdır (talimatlarınız farklı olabilir):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rbenv init
+# Load rbenv automatically by appending 
+# the following to ~/.zshrc:
+eval "$(rbenv init - zsh)"
+</code></pre></div></div>
+
+<p>Kurulumunuz ne olursa olsun, bu talimatta almanız gerekenler:</p>
+
+<ul>
+  <li>Güncellemeniz gereken kabuk yapılandırmasını içeren dosya</li>
+  <li>Dosyanın sonuna koymanız gereken metin</li>
+</ul>
+
+<p>Önerilen metin satırını yapılandırma dosyanızın sonuna koymanız ve yeni bir terminal penceresi açmanız gerekir; değişiklik yalnızca bir pencere yüklendiğinde etkili olur, dolayısıyla rbenv’i başlatmanın en kolay yolu yeni bir terminal penceresi açmaktır.</p>
+
+<p>Şimdi belirli bir Ruby sürümünü yükleyelim.</p>
+
+<p><strong>Ruby’leri rbenv ile kurmak</strong></p>
+
+<p>Rbenv, <code class="language-plaintext highlighter-rouge">rbenv install -l</code> komutuyla yüklemek isteyeceğiniz Ruby sürümlerinin bir listesini görmenizi sağlar. İşte bugün itibariyle liste:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rbenv install -l 
+2.7.7
+3.0.5
+3.1.3
+3.2.0
+jruby-9.4.0.0
+mruby-3.1.0
+picoruby-3.0.0
+rbx-5.0
+truffleruby-22.3.0
+truffleruby+graalvm-22.3.0
+Only latest stable releases for each Ruby implementation are shown.
+Use 'rbenv install --list-all / -L' to show all local versions.
+</code></pre></div></div>
+
+<p>Bu liste, çeşitli Ruby uygulamalarının en güncel yama sürümüdür. Ana Ruby uygulama sürümü 2.7, 3.0, 3.1 ve 3.2 için Ruby sürümlerini görebilirsiniz. (Farklı Ruby uygulamalarından bahsederken, ana versiyona bazen CRuby, bazen de “Matz’ın Ruby Yorumlayıcısı” için MRI denir.) Burada fazla bahsetmeyeceğimiz başka versiyonlar da var. JRuby, Java Sanal Makinesi üzerinde çalışan bir Ruby sürümüdür; mruby ise gömülü donanım üzerinde çalışmaya yönelik özel sınırlı bir Ruby yapısıdır. Rbx, Ruby’yi Ruby’de uygulamaya yönelik artık kullanılmayan bir proje olan Rubinius’tur ve TruffleRuby, yüksek performansa odaklanan dilin bir uygulamasıdır.</p>
+
+<p>Şu an ilgi alanımız rbenv install 3.2.0 komutuyla kurabileceğimiz Ruby 3.2.0. Listede Ruby’nin en güncel sürümünü göremiyorsanız ve rbenv’i daha önce yüklediyseniz, listenizde daha yeni Ruby sürümleri almak için ruby-build’i nasıl güncelleyeceğinize ilişkin talimatlar alabilirsiniz. Rbenv komutlarının hiçbirinin superuser erişimine sahip olmamızı veya sudo kullanmamızı gerektirmediğini unutmayın. Rbenv de dahil olmak üzere Ruby sürüm yöneticilerinin keyifleri yanlarından biri, her şeyi ana dizininizin içinde yapmalarıdır, yeni Ruby sürümlerini yüklemek veya kullanmak için herhangi bir özel sistem ayrıcalığına ihtiyacınız yoktur.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rbenv install 3.2.0
+To follow progress, use
+'tail -f &lt;REDACTED&gt;'
+or pass --verbose
+Installing openssl-3.0.7...
+Installed openssl-3.0.7 to /Users/noel/.rbenv/versions/3.2.0
+Installing ruby-3.2.0...
+ruby-build: using readline from homebrew
+ruby-build: using gmp from homebrew
+Installed ruby-3.2.0 to /Users/noel/.rbenv/versions/3.2.0
+</code></pre></div></div>
+
+<p>Çıktınız, tam sürüm numarasına ve Ruby sürümünü yeniden kurup kurmadığınıza bağlı olarak biraz farklı olabilir.</p>
+
+<p>Örneğin Ruby sürümünün rbenv sürümleriyle birlikte kurulduğunu doğrulayabiliriz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rbenv versions
+* system
+3.2.0
+</code></pre></div></div>
+
+<p>Buradaki system, eğer böyle bir şey varsa işletim sistemi için önceden tanımlanmış Ruby’dir ve yıldız işareti o anda hangi sürümün aktif olduğunu gösterir.</p>
+
+<p>Önemli bir adım: rbenv aracılığıyla yeni bir Ruby kurduktan sonra <code class="language-plaintext highlighter-rouge">rbenv rehash</code> komutunu çalıştırmalısınız. Bu komut hiçbir çıktı üretmez ancak rbenv’in yeni yüklenen Ruby’yi kullanmasını sağlar.</p>
+
+<p>Şu anda Ruby system hala aktif. Bunu değiştirelim.</p>
+
+<p><strong>Ruby’leri rbenv ile değiştirmek</strong></p>
+
+<p>İşte bu noktada getirisini görmeye başlıyoruz. Farklı Ruby sürümleri yüklendikten ve <code class="language-plaintext highlighter-rouge">rbenv rehash</code> çağrıldıktan sonra, Rbenv bize, kullandığımız Ruby sürümünü değiştirmemiz için birden fazla yol sağlar.</p>
+
+<p><code class="language-plaintext highlighter-rouge">rbenv local &lt;version&gt;</code> komutu, bulunduğunuz dizinin Ruby sürümünü değiştirir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ruby --version
+ruby 2.6.10p210 (2022-04-12 revision 67958) [universal.arm64e-darwin22]
+$ rbenv local 3.2.0
+$ ruby --version
+ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
+</code></pre></div></div>
+
+<p>Dizinin bu ayarı, dizinden çıkıp geri dönseniz bile korunur. (Değişikliğin geçerli oturumun ötesinde devam etmesini istemiyorsanız, <code class="language-plaintext highlighter-rouge">rbenv local</code> yerine <code class="language-plaintext highlighter-rouge">rbenv shell &lt;version&gt;</code> kullanabilirsiniz).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ cd ..
+$ cd test
+$ ruby --version
+ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
+</code></pre></div></div>
+
+<p>Rbenv bunu dizine .ruby-version adlı bir dosya koyarak başarır, bu sadece o dizin için ayarladığınız Ruby’nin sürüm numarasını içerir.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% cat .ruby-version
+3.2.0
+</code></pre></div></div>
+
+<p>Bu dosya aynı zamanda tersten de çalışır; eğer rbenv’i yüklediyseniz ve <code class="language-plaintext highlighter-rouge">.ruby-version</code> dosyasını içeren bir dizine geçerseniz, rbenv kuruluysa otomatik olarak o Ruby sürümüne geçecektir veya dizinin kaldırılmış bir Ruby beklediği konusunda sizi uyarabilir. Pek çok Ruby projesi, Ruby sürümünü belirtmek için <code class="language-plaintext highlighter-rouge">.ruby-version</code> dosyası kullanır ve bu dosya, tüm Ruby sürüm yöneticileri tarafından dikkate alınır.</p>
+
+<p>Kendileri belirtmeyen dizinler için varsayılan bir Ruby sürümü ayarlamak istiyorsanız bunu <code class="language-plaintext highlighter-rouge">rbenv global &lt;version&gt;</code> ile yapabilirsiniz.</p>
+
+<p>Bu, Ruby’yi kurmayı beklediğinizden daha fazla iş gerektirebilir. Eğer yapmak istediğiniz Ruby’nin tek bir versiyonunu kullanmak olsaydı, buna katılırdık. Ancak burada gerçekten yaptığınız şey, kendinize inanılmaz miktarda esneklik kazandırmaktır. Belki gelecekte <code class="language-plaintext highlighter-rouge">.ruby-version</code> dosyasına göre Ruby 2.7.5 kullanan bir proje ortaya çıkabilir. Bu sorun değil; yalnızca <code class="language-plaintext highlighter-rouge">rbenv install 2.7.5</code>‘i kullanın; <code class="language-plaintext highlighter-rouge">rbenv rehash</code> ve rbenv, sürümü <code class="language-plaintext highlighter-rouge">.ruby-version</code> dosyasından otomatik olarak alacaktır.</p>
+
+<p><strong>rbenv aslında ne yapıyor?</strong></p>
+
+<p>Rbenv, dinamik davranışını normal terminal ortamınızda mümkün olduğunca az değişiklik yaparak sağlamaya çalışır.</p>
+
+<p>Unix terminali, bir komut yazdığınızda yürütülebilir programlar için hangi dizinlere bakacağını belirlemek amacıyla PATH adı verilen genel bir ortam değişkenini kullanır. Terminalinizin yapılandırma dosyasına bakarsanız, muhtemelen PATH değişkeninin değiştirildiğini göreceksiniz.</p>
+
+<p>Terminal kurulumunuzun bir parçası olarak rbenv init komutu yürütüldüğünde, PATH’inizin önüne bir dizin ekler, böylece işletim sisteminiz başka bir yere bakmadan önce rbenv dizinine bakar. Bu dizinde rbenv’in shim olarak adlandırdığı bir dizi şey vardır; Tüm Ruby sürümlerinizdeki tüm yürütülebilir komutlarla eşleşen küçük programlar (Yeni bir Ruby kurduktan sonra <code class="language-plaintext highlighter-rouge">rbenv rehash</code>‘ı çalıştırmanızın nedeni bu dizini yenilemektir). Ruby veya (birazdan göreceğiniz gibi) irb gibi bir Ruby komutunu çağırdığınızda, ilk önce rbenv shim ile karşılaşılır ve genellikle bir .ruby-version dosyasının varlığına bağlı olarak hangi Ruby’nin aktif olduğunu dinamik olarak seçer. Daha sonra komut, o geçerli sürümdeki gerçek yürütülebilir programa aktarılır. Bu gerçek sürümleri görebilirsiniz, ~/.rbenv/versions adresindeki ana dizininizde bulunurlar.</p>
+
+<h2 id="rubyyi-çalıştırmak">Ruby’yi Çalıştırmak</h2>
+
+<p>Artık Ruby kurulduğuna göre muhtemelen bazı programları çalıştırmak isteyeceksiniz. Derlenmiş dillerden farklı olarak Ruby’yi çalıştırmanın iki yolu vardır; kodu etkileşimli olarak yazabilir veya program dosyaları oluşturup çalıştırabilirsiniz. Kodu etkileşimli olarak yazmak, dili denemenin harika bir yoludur, ancak daha karmaşık kodlar veya birden fazla çalıştırmak isteyeceğiniz kodlar için program dosyaları oluşturmanız ve bunları çalıştırmanız gerekir. Ancak daha ileri gitmeden önce Ruby’nin kurulu olup olmadığını test edelim. Yeni bir komut istemi açın ve şunu yazın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ruby --version
+ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
+</code></pre></div></div>
+
+<p>Teknik olarak, yalnızca kabuk komut istemine ruby yazarak Ruby’yi etkileşimli olarak çalıştırabilirsiniz. Yanıt olarak boş bir satır alacaksınız ve oraya Ruby kodunu yazabilirsiniz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ruby
+puts "Hello, world!" 
+^D
+Hello, world!
+</code></pre></div></div>
+
+<p>Bu örnekte tek bir Ruby satırı yazdık. Bu satır iki bölümden oluşuyor. İlk bölüm, bir metodun adıdır. Metot önceden tanımlanmış bir kod yığınıdır. Bu durumda <code class="language-plaintext highlighter-rouge">puts</code> metodu Ruby tarafından bizim için tanımlanan çeşitli metotlardan biridir. İkinci bölüm olan “Hello, world!”, string (dize) adı verilen çift tırnakla çevrelenmiş metindir. İkisini birleştiren Ruby kodu, “Hello, world!” parametresiyle <code class="language-plaintext highlighter-rouge">puts</code> metodunu çağırır. <code class="language-plaintext highlighter-rouge">puts</code> metodu daha sonra bu parametreyi terminale geri gönderir; puts, “outPUT String”in kısaltmasıdır.</p>
+
+<p>Bir sonraki satıra dosya sonu karakterini (sistemimizde Ctrl+D) yazarak programdan çıktık ve yazdıklarımızın değerlendirilmesine neden olduk. Ruby’yi bu şekilde kullanmak işe yarar, ancak yanıtları yalnızca açıkça yazdırırsanız gösterir. Ayrıca, bir yazım hatası yaparsanız can sıkıcı olabilir ve yazarken neler olduğunu göremezsiniz.</p>
+
+<p>Neyse ki Ruby ile etkileşim kurmanın daha iyi bir yolu var.</p>
+
+<p>Etkileşimli Ruby veya irb, Ruby’yi etkileşimli olarak çalıştırmak için tercih edilen araçtır. Irb, komut satırı geçmişi, satır düzenleme yetenekleri ve iş kontrolü ile eksiksiz bir Ruby kabuğudur. irb’yi komut satırından çalıştırabilirsiniz. Başladıktan sonra Ruby kodunu yazın. Her ifadeyi değerlendirirken size değerini gösterecektir. Exit yazarak veya Ctrl+D ile irb oturumundan çıkın.</p>
+
+<p>İşte örnek bir oturum:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ irb
+irb(main):001:1* def sum(n1, n2)
+irb(main):002:1* n1 + n2
+irb(main):003:0&gt; end
+=&gt; :sum
+irb(main):004:0&gt; sum(3, 4)
+=&gt; 7
+irb(main):005:0&gt; sum("cat", "dog") =&gt; "catdog"
+irb(main):006:0&gt; exit
+</code></pre></div></div>
+
+<p>Bu oturumun ilk üç satırında sum adında bir metot tanımlıyoruz. Bu metodu tanımlama eylemi, metodun adıyla eşleşen bir Ruby sembolü olan :sum değerini döndürür. Semboller ve metot adları hakkında daha sonra daha fazla konuşacağız. 4. satırda, önce 3 ve 4 parametreleriyle, ardından 5. satırda “cat” ve “dog” parametreleriyle metodu çağırıyoruz. Ruby’de dizeleri eklemek onları birleştirir, böylece “catdog” dizesi döndürülür. Daha sonra 6. satırda çıkıyoruz.</p>
+
+<p>Bunu Ruby 3.1 veya üzeri sürümlerde denerseniz, irb’nin değişken adlarını, komutları ve renk kodlarını otomatik olarak tamamlamaya çalıştığını fark edeceksiniz; bunların hiçbirinin bir kitapta gösterilmesi kolay değildir.</p>
+
+<p>irb’ye aşina olmanızı öneririz; Ruby kavramlarını keşfetmenin ve kodunuzda hata ayıklamanın harika bir yoludur ve Ruby deneyiminizi daha eğlenceli hale getirecektir.</p>
+
+<p><strong>Docker’a ne dersiniz?</strong></p>
+
+<p>Ruby’yi daha büyük bir projede veya daha büyük bir ekiple kullanıyorsanız Docker’ın geliştirme ortamınızın bir parçası olma ihtimali yüksektir. Docker, container tanımlamanıza ve çalıştırmanıza olanak tanıyan bir araçtır. Container, kod çalıştırmak için gereken tüm bağımlılıkları paketlemenin bir yoludur; etkili bir şekilde bilgisayarınızın içindeki sanal bir işletim sistemidir. Docker’ı kullanarak, hangi işletim sistemini çalıştırıyor olursanız olun bir Linux ortamını simüle edebilirsiniz.</p>
+
+<p>Docker’ın tam bir açıklaması bu kitabın kapsamı dışındadır, ancak genel olarak Docker’a zaten aşina iseniz, Docker’ın önceden yüklenmiş farklı Ruby sürümleriyle image’leri tuttuğunu ve Ruby ile her zaman en son yayımlanan sürüme ulaşabileceğinizi belirtmekte fayda var. <code class="language-plaintext highlighter-rouge">ruby:latest</code> ile en son yayımlanan sürüme ulaşabilirsiniz ve <code class="language-plaintext highlighter-rouge">docker run -it ruby irb</code> ile doğrudan dockerize edilmiş irb komut istemine gidebilirsiniz. Harici Ruby dosyalarını Docker container’ında çalıştırmak da mümkündür ancak biraz daha Docker bilgisi gerektirir.</p>
+
+<h2 id="ruby-programları-oluşturmak">Ruby Programları Oluşturmak</h2>
+
+<p>Ruby programları yazmanın en yaygın yolu Ruby kodunu bir veya daha fazla metin dosyasına yerleştirmektir. Bu dosyaları oluşturmak için bir metin düzenleyici veya Entegre Geliştirme Ortamı (IDE) kullanacaksınız; Ruby desteğine sahip Visual Studio Code, Vim, Sublime Text ve RubyMine gibi birçok popüler editör vardır. Daha sonra dosyaları editörün içinden veya komut satırından çalıştıracaksınız. Her iki teknik de faydalıdır; tek dosyalı programları editörün içinden, daha karmaşık programları ise komut satırından çalıştırabilirsiniz.</p>
+
+<p>Basit bir Ruby programı oluşturup çalıştıralım. Terminal penceresini açın ve bir yerde boş bir dizin oluşturun, belki buna pickaxe diyebilirsiniz.</p>
+
+<p>Ardından, seçtiğiniz editörü kullanarak aşağıdaki metni içeren <em>myprog.rb</em> dosyasını oluşturun.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>puts "Hello, Ruby Programmer"
+puts "It is now #{Time.now}"
+</code></pre></div></div>
+
+<p>İkinci dizenin parantezlerin değil süslü parantezlerin arasında Time.now metnini içerdiğini unutmayın.</p>
+
+<p>Bir Ruby programını, Python gibi başka bir script dilindeki herhangi bir shell script’i gibi dosyadan çalıştırabilirsiniz. Basitçe Ruby yorumlayıcısını çalıştırın ve ona parametre olarak script dosyası adını verin:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ruby myprog.rb
+Hello, Ruby Programmer
+It is now 2022-12-25 12:29:56 -0600
+</code></pre></div></div>
+
+<p>Unix sistemlerinde program dosyasının ilk satırı olarak “shebang” gösterimini kullanabilirsiniz. Sisteminiz destekliyorsa, <code class="language-plaintext highlighter-rouge">#!/usr/bin/env ruby</code> komutunu kullanarak Ruby yolunu sabit kodlamaktan kaçınabilirsiniz; bu, yolunuzu Ruby için arayacak ve daha sonra çalıştıracaktır.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>#!/usr/bin/env ruby
+puts "Hello, Ruby Programmer"
+puts "It is now #{Time.now}"
+</code></pre></div></div>
+
+<p>Bu kaynak dosyayı yürütülebilir hale getirirseniz (örneğin, <code class="language-plaintext highlighter-rouge">chmod +x myprog.rb</code> kullanarak), Unix dosyayı bir program olarak çalıştırmanıza olanak tanır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ./myprog.rb
+Hello, Ruby Programmer
+It is now 2022-12-25 12:29:56 -0600
+</code></pre></div></div>
+
+<p>Dosya ilişkilendirmelerini kullanarak Microsoft Windows altında benzer bir şey yapabilirsiniz ve Ruby GUI uygulamalarını Windows Gezgini’nde adlarına çift tıklayarak çalıştırabilirsiniz.</p>
+
+<h2 id="ruby-hakkında-daha-fazla-bilgi-almak">Ruby Hakkında Daha Fazla Bilgi Almak</h2>
+
+<p>Ruby kütüphanelerinin hacmi büyüdükçe hepsini tek bir kitapta belgelemek imkansız hale geldi; Ruby ile birlikte gelen standart kütüphane artık 9.000’den fazla metot içeriyor.</p>
+
+<p>Resmi Ruby belgeleri <a href="https://docs.ruby-lang.org">https://docs.ruby-lang.org</a> adresindedir. Ruby 3.2’de, siz yazdıkça irb size standart metot adlarının dokümantasyonunu verecektir.</p>
+
+<p>Bu belgelerin çoğu, RubyDoc adlı bir araç kullanılarak kaynak kodundaki yorumlardan oluşturulmuştur. Buna “Ruby’yi Belgelemek” bölümünde bakacağız. <a href="https://www.rubydoc.info">https://www.rubydoc.info</a> adresindeki RubyDoc sitesi, RubyDoc kullanan Ruby projelerine yönelik dökümantasyonları içerir.</p>
+
+<p>Ruby dünyasındaki third-party kütüphanelere gem denir ve Ruby Gems resmi listesi <a href="https://rubygems.org">https://rubygems.org</a> adresindedir. “Ruby Gems” bölümünde gemler hakkında daha fazla konuşacağız.</p>
+
+<p>Ayrıca Ruby core dokümantasyonu için ri adı verilen bir komut satırı aracı da vardır. Bir sınıfın dokümantasyonunu bulmak için <code class="language-plaintext highlighter-rouge">ri &lt;sınıf adı&gt;</code> yazın. Örneğin String sınıfına ait özet bilgilerin başlangıcı aşağıdadır. Hiçbir parametre olmadan <code class="language-plaintext highlighter-rouge">ri</code> yazarsanız, sizden sınıf isteyen bir prompt alırsınız.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>= String &lt; Object
+------------------------------------------------------------------------
+= Includes:
+Comparable (from ruby core)
+(from ruby core)
+------------------------------------------------------------------------
+A String object has an arbitrary sequence of bytes, typically
+representing text or binary data. A String object may be created using
+String::new or as literals.
+String objects differ from Symbol objects in that Symbol objects are
+designed to be used as identifiers, instead of text or data.
+</code></pre></div></div>
+
+<p>String’in tüm metotlarını listelemeye devam ediyor.</p>
+
+<p>Ayrıca bir metot adını da deneyebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ri strip
+= .strip
+
+(from ruby core)
+=== Implementation from String
+------------------------------------------------------------------------
+  strip -&gt; new_string
+
+------------------------------------------------------------------------
+
+Returns a copy of the receiver with leading and trailing whitespace
+removed; see {Whitespace in
+Strings}[rdoc-ref:String@Whitespace+in+Strings]:
+
+  whitespace = "\x00\t\n\v\f\r "
+  s = whitespace + 'abc' + whitespace
+  s       # =&gt; "\u0000\t\n\v\f\r abc\u0000\t\n\v\f\r "
+  s.strip # =&gt; "abc"
+
+Related: String#lstrip, String#rstrip.
+</code></pre></div></div>
+
+<p>Daha sonra <code class="language-plaintext highlighter-rouge">q</code> yazarak listeden çıkabilirsiniz.</p>
+
+<h2 id="sıradaki">Sıradaki</h2>
+
+<p>Artık Ruby’yi kullanmaya başladığınıza göre Ruby’nin nasıl çalıştığını ve dilin temel özelliklerini öğrenmenin zamanı geldi. Ancak öncelikle dilin öne çıkan noktalarına hızlı bir genel bakış yapacağız.</p>
+
+<p><strong>Kaynak:</strong> “Programming Ruby 3.2: The Pragmatic Programmers’ Guide”, Noel Rappin with Dave Thomas</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Bu kitapta Ruby dili hakkında konuşarak çok zaman harcayacağız. Bunu yapmadan önce Ruby’yi bilgisayarınıza kurup çalıştırabildiğinizden emin olmak istiyoruz. Bu şekilde örnek kodları deneyebilir ve okurken kendi başınıza denemeler yapabilirsiniz. Ruby’yi öğrenmek istiyorsanız, okurken kod yazma alışkanlığını da edinmelisiniz.]]></summary></entry><entry><title type="html">Gatsby’nin Temelleri</title><link href="http://localhost:4000/2024/03/28/gatsby-nin-temelleri.html" rel="alternate" type="text/html" title="Gatsby’nin Temelleri" /><published>2024-03-28T00:00:00+03:00</published><updated>2024-03-28T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/28/gatsby-nin-temelleri</id><content type="html" xml:base="http://localhost:4000/2024/03/28/gatsby-nin-temelleri.html"><![CDATA[<p>Gatsby, React’ı temel alan, statik siteler oluşturmaya yönelik açık kaynaklı bir framework’tür. Genellikle static site generator (SSG) olarak anılan Gatsby, Gridsome gibi diğer SSG’lerin ve statik site oluşturmayı kolaylaştıran Next.js gibi JavaScript framework’lerinin yanı sıra Jamstack teknoloji kategorisinin bir parçasıdır. Gatsby performansa, ölçeklenebilirliğe ve güvenliğe özellikle önem veriyor. Pluginler, temalar, starter’lar ve katkıda bulunulan diğer projelerden oluşan zengin ve büyüyen bir ekosisteme sahip.</p>
 
 <p>Bu ilk bölümde Gatsby’yi tanıyacağız. Gatsby’nin yapı taşları sayfalar ve bileşenler (component) olmasına rağmen, GraphQL ve source pluginlerinden oluşan dahili veri katmanı, veri kaynakları ile statik site oluşturma sırasında derlenen sayfalar ve bileşenler arasında köprü görevi görür. Gatsby, React üzerine inşa edilmiştir, bu nedenle Gatsby geliştiricilerinin anlaması için gerekli olan bazı JavaScript ve React kavramlarına da göz atacağız. Son olarak, Gatsby’nin geliştirici araçlarına aşina olmanızı sağlayacak ilk Gatsby “Hello World” sitemizi oluşturacağız.</p>
 
@@ -6613,1235 +6904,4 @@ return new class extends Migration
 
 <p>Çünkü Laravel, modern kodlama standartlarını kullanır, canlı bir toplulukla çevrilidir ve güçlü araçlarla fikirlerinizi kod israfı olmadan gerçeğe dönüştürmenize yardımcı olur. Ve çünkü siz sevgili geliştirici, mutlu olmayı hak ediyorsunuz.</p>
 
-<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Dinamik web’in ilk günlerinde, web uygulaması yazmak bugün olduğundan çok daha farklı görünüyordu. O zaman geliştiriciler, yalnızca uygulamalarımızın benzersiz iş mantığı için değil, aynı zamanda sitelerde çok yaygın olan kullanıcı kimlik doğrulaması, input validation, veritabanı erişimi, templating vb. bileşenlerin her biri için kod yazmaktan sorumluydu.]]></summary></entry><entry><title type="html">Laravel’de Yönlendirme ve Controller’lar</title><link href="http://localhost:4000/2024/03/18/laravelde-yonlendirme-ve-controllerlar.html" rel="alternate" type="text/html" title="Laravel’de Yönlendirme ve Controller’lar" /><published>2024-03-18T00:00:00+03:00</published><updated>2024-03-18T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/18/laravelde-yonlendirme-ve-controllerlar</id><content type="html" xml:base="http://localhost:4000/2024/03/18/laravelde-yonlendirme-ve-controllerlar.html"><![CDATA[<p>Herhangi bir web uygulama framework’ünün temel işlevi, kullanıcıdan istek almak ve yanıtları, genellikle HTTP(S) aracılığıyla iletmektir. Bu, bir framework’ü öğrenirken ele alınması gereken ilk ve en önemli şeyin uygulamanın rotalarını tanımlamak olduğu anlamına gelir; rotalar olmadan, son kullanıcıyla etkileşim kurma yeteneğiniz çok azdır veya hiç yoktur.</p>
-
-<p>Bu bölümde laravel’de rotaları inceleyeceğiz; bunları nasıl tanımlayacağınızı, yürütmeleri gereken koda nasıl yönlendireceğinizi ve çok çeşitli yönlendirme ihtiyaçlarını karşılamak için Laravel’in yönlendirme araçlarını nasıl kullanacağınızı göreceksiniz.</p>
-
-<h2 id="mvc-http-fiilleri-ve-reste-hızlı-bir-bakış">MVC, HTTP Fiilleri ve REST’e Hızlı Bir Bakış</h2>
-
-<p>Bu bölümde konuşacaklarımızın çoğu, Model-View-Controller (MVC) uygulamalarının nasıl yapılandırıldığına atıfta bulunur ve bakacağımız örneklerin çoğu REST benzeri rota adlarını ve fiillerini kullanır, bu yüzden hızlı bir şekilde başlayalım.</p>
-
-<p><strong>MVC Nedir?</strong></p>
-
-<p>MVC’de üç temel konseptiniz vardır:</p>
-
-<ul>
-  <li><strong>Model</strong> - Tek bir veritabanı tablosunu (veya bu tablodan bir kaydı) temsil eder; “Company” veya “Dog” gibi düşünün.</li>
-  <li><strong>View</strong> - Verilerinizi son kullanıcıya gösteren şablonu temsil eder; “HTML, CSS ve JavaScript ile oluşturulan login sayfası şablonu”nu düşünün.</li>
-  <li><strong>Controller</strong> - Bir trafik polisi gibi, tarayıcıdan HTTP isteklerini alır, veritabanından ve diğer depolama mekanizmalarından verileri alır, kullanıcı girişini doğrular ve sonunda kullanıcıya bir yanıt gönderir.</li>
-</ul>
-
-<p>Şekil 3-1’de, kullanıcının önce tarayıcısını kullanp bir HTTP isteği göndererek denetleyiciyle etkileşim kuracağını görebilirsiniz. Controller, bu talebe yanıt olarak modele (veritabanı) veri yazabilir ve/veya modelden veri çekebilir. Controller daha sonra muhtemelen bir view’a veri gönderecek ve ardından view, tarayıcılarında görüntülenmesi için son kullanıcıya geri dönecektir.</p>
-
-<p><strong>Şekil 3-1</strong>. MVC’nin temel bir örneği</p>
-
-<p><img src="/assets/images/2024/03/basic-example-of-mvc.png" alt="MVC’nin temel bir örneği" title="MVC’nin temel bir örneği" class="img-fluid" /></p>
-
-<p>Uygulama mimarisine bu basit bakış açısına uymayan bazı Laravel kullanım durumlarını ele alacağız, bu nedenle MVC’ye takılıp kalmayın. Ancak bu, en azından sizi, view ve controller hakkında konuşurken bölümün geri kalanına hazırlayacaktır.</p>
-
-<p><strong>HTTP Fiilleri</strong></p>
-
-<p>En yaygın HTTP fiilleri GET ve POST’tur, ardından PUT ve DELETE gelir. Ayrıca HEAD, OPTIONS ve PATCH ve normal web geliştirmede hemen hemen hiç kullanılmayan iki tane daha var, TRACE ve CONNECT.</p>
-
-<p>İşte hızlı bir özet:</p>
-
-<ul>
-  <li><strong>GET</strong> - Bir resource (veya bir resource listesi) isteyin.</li>
-  <li><strong>HEAD</strong> - GET response’unun yalnızca başlıklar içeren bir sürümünü isteyin.</li>
-  <li><strong>POST</strong> - resource oluşturun.</li>
-  <li><strong>PUT</strong> - Bir resource’un üzerine yazın.</li>
-  <li><strong>PATCH</strong> - Bir resource’u değiştirin.</li>
-  <li><strong>DELETE</strong> - Bir resource’u silin.</li>
-  <li><strong>OPTIONS</strong> - Sunucuya bu URL’de hangi fiillere izin verildiğini sorun.</li>
-</ul>
-
-<p>Tablo 3-1, bir resource denetleyicide mevcut olan eylemleri gösterir (bunlar hakkında daha fazla bilgi için “Resource Controller” bölümüne bakın). Her eylem, belirli bir fiili kullanarak belirli bir URL pattern’ini çağırmanızı bekler, böylece her fiilin ne için kullanıldığına dair bir fikir edinebilirsiniz.</p>
-
-<p><strong>Tablo 3-1</strong>. Laravel’in resource controller metotları</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Fiil (Verb)</th>
-      <th>URL</th>
-      <th>Controller Metodu</th>
-      <th>Ad</th>
-      <th>Açıklama</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>GET</td>
-      <td>tasks</td>
-      <td>index()</td>
-      <td>tasks.index</td>
-      <td>Tüm görevleri göster</td>
-    </tr>
-    <tr>
-      <td>GET</td>
-      <td>tasks/create</td>
-      <td>create()</td>
-      <td>tasks.create</td>
-      <td>Görev oluşturma formunu göster</td>
-    </tr>
-    <tr>
-      <td>POST</td>
-      <td>tasks</td>
-      <td>store()</td>
-      <td>tasks.store</td>
-      <td>Görev oluşturma formundan form gönderimini kabul eder</td>
-    </tr>
-    <tr>
-      <td>GET</td>
-      <td>tasks/{task}</td>
-      <td>show()</td>
-      <td>tasks.show</td>
-      <td>Bir görev göster</td>
-    </tr>
-    <tr>
-      <td>GET</td>
-      <td>tasks/{task}/edit</td>
-      <td>edit()</td>
-      <td>tasks.edit</td>
-      <td>Bir görevi düzenle</td>
-    </tr>
-    <tr>
-      <td>PUT/PATCH</td>
-      <td>tasks/{task}</td>
-      <td>update()</td>
-      <td>tasks.update</td>
-      <td>Görev düzenleme formundan form gönderimini kabul eder</td>
-    </tr>
-    <tr>
-      <td>DELETE</td>
-      <td>tasks/{task}</td>
-      <td>destroy()</td>
-      <td>tasks.destroy</td>
-      <td>Bir görevi sil</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><strong>REST Nedir?</strong></p>
-
-<p>REST’i ileriki bölümlerde daha ayrıntılı olarak ele alacağız, ancak kısa bir giriş olarak, API oluşturmaya yönelik bir mimari stildir. Bu kitapta REST hakkında konuştuğumuzda, esas olarak aşağıdakiler gibi birkaç özelliğe atıfta bulunacağız:</p>
-
-<ul>
-  <li>Her seferinde tek bir birincil resource etrafında yapılandırılmış olmak (örn. tasks)</li>
-  <li>HTTP fiillerini kullanan öngörülebilir URL yapılarıyla etkileşimlerden oluşur (Tablo 3-1’de görüldüğü gibi)</li>
-  <li>JSON döndürür ve genellikle JSON ile talep edilir</li>
-</ul>
-
-<p>Daha fazlası var, ancak bu kitapta kullanılacağı şekliyle genellikle RESTful, “görev düzenleme sayfasında GET /tasks/14/edit gibi öngörülebilir çağrılar yapabilmemiz için bu URL tabanlı yapılardan sonra modellenmiş” anlamına gelir.</p>
-
-<p>Bu önemlidir (API oluşturmazken bile), çünkü Tablo 3-1’de görebileceğiniz gibi, Laravel’in yönlendirme yapıları REST benzeri bir yapıyı temel alır.</p>
-
-<h2 id="rota-route-tanımları">Rota (Route) Tanımları</h2>
-
-<p>Laravel uygulamalarında, web rotalarınızı routes/web.php’de ve API rotalarınızı routes/api.php’de tanımlayacaksınız. Web rotaları, kullanıcılarınızın ziyaret edeceği rotalardır; API rotaları, varsa API’niz için olanlardır. Şimdilik, öncelikle routes/web.php içindeki rotalara odaklanacağız.</p>
-
-<p>Rota tanımlamanın en basit yolu, Örnek 3-1’de görüldüğü gibi rotayı (ör. /) bir closure ile eşleştirmektir.</p>
-
-<p><strong>Örnek 3-1</strong>. Temel rota tanımı</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// routes/web.php
-Route::get('/', function () {
-    return 'Hello, World!';
-});
-</code></pre></div></div>
-
-<p><strong>Closure Nedir?</strong></p>
-
-<p>Closure’lar, anonim fonksiyonların PHP versiyonudur. Closure, nesne olarak iletebileceğiniz, bir değişkene atayabileceğiniz, diğer fonksiyon ve metotlara parametre olarak iletebileceğiniz ve hatta serialize edilebilen bir işlevdir.</p>
-
-<p>Artık herhangi bir kullanıcı / (etki alanınızın kökünü) ziyaret ederse, Laravel’in router’ının orada tanımlanan closure’ı çalıştırması ve sonucu döndürmesi gerektiğini tanımladınız.</p>
-
-<p><strong>Middleware’a Hızlı Bakış</strong></p>
-
-<p>Merak ediyor olabilirsiniz, “Neden onu yazdırmak yerine ‘Hello, World!’ olarak geri dönüyorum?”</p>
-
-<p>Epeyce cevap var, ancak en basit olanı, Laravel’in request ve response döngüsü etrafında, middleware adı verilen şey de dahil olmak üzere çok sayıda wrapper (sarmalayıcı) olmasıdır. Rota closure veya controller metodumuz tamamlandığında, çıktıyı tarayıcıya gönderme zamanı henüz gelmemiştir; içeriğin döndürülmesi, kullanıcıya geri gönderilmeden önce response yığınından ve middleware’den akmaya devam etmesine olanak tanır.</p>
-
-<p>Pek çok basit web sitesi tamamen routes içinde tanımlanabilir. Örnek 3-2’de gösterildiği gibi, bazı template’ler ile birleştirilmiş birkaç basit GET rotası ile klasik bir web sitesine kolayca hizmet verebilirsiniz.</p>
-
-<p><strong>Örnek 3-2</strong>. Örnek web sitesi</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('/', function () {
-    return view('welcome');
-});
-
-Route::get('about', function () {
-    return view('about');
-});
-
-Route::get('products', function () {
-    return view('products');
-});
-
-Route::get('services', function () {
-    return view('services');
-});
-</code></pre></div></div>
-
-<p><strong>Static Çağrılar</strong></p>
-
-<p>PHP ile geliştirme konusunda deneyiminiz varsa, Route sınıfında static çağrılar görmek sizi şaşırtabilir. Bu aslında kendi başına static bir metot değil, daha ziyade Bölüm 11’de ele alacağımız Laravel’in facade’lerini kullanan hizmet konumudur. Facade’lerden kaçınmayı tercih ederseniz, aynı tanımları şu şekilde yapabilirsiniz:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$router-&gt;get('/', function () {
-    return 'Hello, World!';
-});
-</code></pre></div></div>
-
-<p><strong>Rota Fiilleri</strong></p>
-
-<p>Rota tanımlarımızda Route::get() kullandığımızı fark etmişsinizdir. Bu, Laravel’e yalnızca HTTP request’i GET eylemini kullandığında bu rotalar için eşleşmesini söylediğimiz anlamına gelir. Peki ya bu form POST ise veya PUT veya DELETE istekleri gönderen bir JavaScript ise? Örnek 3-3’te gösterildiği gibi, rota tanımında çağrılacak metotlar için birkaç seçenek daha vardır.</p>
-
-<p><strong>Örnek 3-3</strong>. Rota fiilleri</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('/', function () {
-    return 'Hello, World!';
-});
-
-Route::post('/', function () {
-    // Handle someone sending a POST request to this route
-});
-
-Route::put('/', function () {
-    // Handle someone sending a PUT request to this route
-});
-
-Route::delete('/', function () {
-    // Handle someone sending a DELETE request to this route
-});
-
-Route::any('/', function () {
-    // Handle any verb request to this route
-});
-
-Route::match(['get', 'post'], '/', function () {
-    // Handle GET or POST requests to this route
-});
-</code></pre></div></div>
-
-<p><strong>Rota İşleme</strong></p>
-
-<p>Tahmin ettiğiniz gibi, bir rotanın nasıl çözümleneceğini öğretmenin tek yolu rota tanımına closure geçirmek değildir. Closure’lar hızlı ve basittir, ancak uygulamanız büyüdükçe, tüm yönlendirme mantığınızı tek bir dosyaya koymak kullanışsız hale gelir. Ek olarak, rota closure’larını kullanan uygulamalar, Laravel’in her istekten yüzlerce milisaniyeye kadar tasarruf sağlayabilen rota önbelleğinden yararlanamaz (bununla ilgili daha sonra konuşacağız).</p>
-
-<p>Diğer yaygın seçenek, Örnek 3-4’te olduğu gibi, bir controller adını ve metodunu dize olarak iletmektir.</p>
-
-<p><strong>Örnek 3-4</strong>. Controller metotlarını çağıran rotalar</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>use App\Http\Controllers\WelcomeController;
-
-Route::get('/', [WelcomeController::class, 'index']);
-</code></pre></div></div>
-
-<p>Bu, Laravel’e gelen istekleri App\Http\Controllers\WelcomeController controller’ının index() metoduna iletmesini söylüyor.</p>
-
-<p><strong>Rota Parametreleri</strong></p>
-
-<p>Tanımladığınız rotanın parametreleri (URL yapısında değişken olan segmentler) varsa, bunları rotanızda tanımlamak ve closure’a iletmek kolaydır (bkz. Örnek 3-5).</p>
-
-<p><strong>Örnek 3-5</strong>. Rota parametreleri</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('users/{id}/friends', function ($id) {
-    //
-});
-</code></pre></div></div>
-
-<p>Örnek 3-6’da gösterildiği gibi, parametre adından sonra soru işareti (?) ekleyerek rota parametrelerinizi isteğe bağlı yapabilirsiniz. Bu durumda, rotanın karşılık gelen değişkeni için varsayılan değer de sağlamalısınız.</p>
-
-<p><strong>Örnek 3-6</strong>. İsteğe bağlı rota parametreleri</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('users/{id?}', function ($id = 'fallbackId') {
-    //
-});
-</code></pre></div></div>
-
-<p>Örnek 3-7’de olduğu gibi, rotanın yalnızca bir parametrenin belirli gereksinimleri karşılaması durumunda eşleşmesi gerektiğini tanımlamak için regular expressions (regex) kullanabilirsiniz.</p>
-
-<p><strong>Örnek 3-7</strong>. Regex rota kısıtlamaları</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('users/{id}', function ($id) {
-    //
-})-&gt;where('id', '[0-9]+');
-
-Route::get('users/{username}', function ($username) {
-    //
-})-&gt;where('username', '[A-Za-z]+');
-
-Route::get('posts/{id}/{slug}', function ($id, $slug) {
-    //
-})-&gt;where(['id' =&gt; '[0-9]+', 'slug' =&gt; '[A-Za-z]+']);
-</code></pre></div></div>
-
-<p>Tahmin ettiğiniz gibi, rota dizesiyle eşleşen bir yolu ziyaret ederseniz, ancak regex  parametreyle eşleşmezse, eşleştirilmeyecektir. Rotalar yukarıdan aşağıya eşlendiğinden, users/abc Örnek 3-7’deki ilk closure’u atlar, ancak ikinci closure ile eşleştirilir, böylece oraya yönlendirilir. Öte yandan, posts/abc/123 closure’ların hiçbiriyle eşleşmez, dolayısıyla 404 (Not Found) hatası verir.</p>
-
-<p><strong>Örnek 3-8</strong>. Regex rota kısıtlama yardımcıları</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('users/{id}/friends/{friendname}', function ($id, $friendname) {
-    //
-})-&gt;whereNumber('id')-&gt;whereAlpha('friendname');
-
-Route::get('users/{name}', function ($name) {
-    //
-})-&gt;whereAlphaNumeric('name');
-
-Route::get('users/{id}', function ($id) {
-    //
-})-&gt;whereUuid('id');
-
-Route::get('users/{id}', function ($id) {
-    //
-})-&gt;whereUlid('id');
-
-Route::get('friends/types/{type}', function ($type) {
-    //
-})-&gt;whereIn('type', ['acquaintance', 'bestie', 'frenemy']);
-</code></pre></div></div>
-
-<p><strong>Rota parametreleri ile closure/controller metot parametreleri arasındaki ilişki</strong></p>
-
-<p>Örnek 3-5’te görebileceğiniz gibi, rota parametreleriniz ({id}) ve rota tanımınıza enjekte ettikleri metot parametreleri (function ($id)) için aynı adları kullanmak en yaygın olanıdır. Ama bu gerekli mi?</p>
-
-<p>Bu bölümde daha sonra ele alınan route model binding’i kullanmıyorsanız, hayır. Burada görebileceğiniz gibi, hangi rota parametresinin hangi metot parametresiyle eşleştiğini tanımlayan tek şey bunların sırasıdır (soldan sağa):</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('users/{userId}/comments/{commentId}', function (
-    $thisIsActuallyTheUserId,
-    $thisIsReallyTheCommentId
-) {
-    //
-});
-</code></pre></div></div>
-
-<p>Bunları farklı yapabiliyor olmanız, yapmanız gerektiği anlamına gelmez. Tutarsız adlandırma nedeniyle tökezleyebilecek gelecekteki geliştiricilerin iyiliği için onları aynı tutmanızı tavsiye ederim.</p>
-
-<p><strong>Rota Adları</strong></p>
-
-<p>Uygulamanızın herhangi bir yerinde rotalara atıfta bulunmanın en basit yolu, path’lerine bakmaktır. Gerekirse, view’da bu linki basitleştirmek için url() global helper kullanabilirsiniz; örnek için bkz. Örnek 3-9. Helper, rotanızın önüne sitenizin tam alan adını koyacaktır.</p>
-
-<p><strong>Örnek 3-9</strong>. url() helper</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;a href="&lt;?php echo url('/'); ?&gt;"&gt;
-// Outputs &lt;a href="http://myapp.com/"&gt;
-</code></pre></div></div>
-
-<p>Ancak Laravel, URL’ye açıkça atıfta bulunmadan ona başvurmanıza olanak tanıyan her bir rotayı adlandırmanıza da izin verir. Bu yararlıdır, çünkü karmaşık rotalara basit takma adlar verebilirsiniz ve ayrıca bunları ada göre bağlamak, yollar değişirse frontend linklerinizi yeniden yazmak zorunda kalmayacağınız anlamına gelir (bkz. Örnek 3-10).</p>
-
-<p><strong>Örnek 3-10</strong>. Rota adlarını tanımlamak</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Defining a route with name() in routes/web.php:
-Route::get('members/{id}', [\App\Http\Controller\MemberController::class, 'show'])
-    -&gt;name('members.show');
-    
-// Linking the route in a view using the route() helper:
-&lt;a href="&lt;?php echo route('members.show', ['id' =&gt; 14]); ?&gt;"&gt;
-</code></pre></div></div>
-
-<p>Bu metot, başka bir yere başvurmayı kolaylaştırmak için kısa bir takma ad vererek rotayı adlandırmamıza izin verir. Örneğimizde, bu rotayı members.show olarak adlandırdık; ResourcePlural.action, route ve view adları için Laravel içinde yaygın olarak kullanılan bir konvansiyondur.</p>
-
-<p><strong>Rota İsimlendirme Konvansiyonları</strong></p>
-
-<p>Rotanızı istediğiniz gibi adlandırabilirsiniz, ancak ortak konvansiyon, resource adının çoğulunun, ardından noktanın ve ardından eylemin kullanılmasıdır. Yani, photo adlı bir resource için en yaygın rotalar şunlardır:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>photos.index
-photos.create
-photos.store
-photos.show
-photos.edit
-photos.update
-photos.destroy
-</code></pre></div></div>
-
-<p>Bu kurallar hakkında daha fazla bilgi edinmek için bkz. “Resource Controller’ları”.</p>
-
-<p>Bu örnek ayrıca route() helper’ı da tanıttı. Tıpkı url() gibi, adlandırılmış bir rotaya bağlanmayı basitleştirmek için view’da kullanılması amaçlanmıştır. Rotanın parametresi yoksa, rota adını (route(‘members.index’)) iletebilir ve bir rota dizesi (“http://myapp.com/members”) alabilirsiniz. Parametreleri varsa, bunları Örnek 3-10’da yaptığımız gibi ikinci parametre olarak iletin.</p>
-
-<p>Genel olarak, rotalarınıza başvurmak için path yerine rota adlarını kullanmanızı ve bu nedenle url() helper yerine route() helper kullanmanızı öneririm. Bazen biraz kullanışsız olabilir - örneğin, birden fazla alt alanla çalışıyorsanız - ancak daha sonra uygulamanın yönlendirme yapısını büyük bir maliyet olmadan değiştirmek için inanılmaz bir esneklik sağlar.</p>
-
-<p><strong>Route Helper’a Rota Parametrelerini İletmek</strong></p>
-
-<p>Rotanız parametrelere sahip olduğunda (ör. users/id), rotaya link oluşturmak için route() helper kullanırken bu parametreleri tanımlamanız gerekir.</p>
-
-<p>Bu parametreleri iletmenin birkaç farklı yolu vardır. users/userId/comments/commentId olarak tanımlanan bir rota düşünelim. User ID 1 ve comment ID 2 ise elimizdeki birkaç seçeneğe bakalım:</p>
-
-<p><strong>Seçenek 1:</strong></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>route('users.comments.show', [1, 2])
-// http://myapp.com/users/1/comments/2
-</code></pre></div></div>
-
-<p><strong>Seçenek 2:</strong></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>route('users.comments.show', ['userId' =&gt; 1, 'commentId' =&gt; 2])
-// http://myapp.com/users/1/comments/2
-</code></pre></div></div>
-
-<p><strong>Seçenek 3:</strong></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>route('users.comments.show', ['commentId' =&gt; 2, 'userId' =&gt; 1])
-// http://myapp.com/users/1/comments/2
-</code></pre></div></div>
-
-<p><strong>Seçenek 4:</strong></p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>route('users.comments.show', ['userId' =&gt; 1, 'commentId' =&gt; 2, 'opt' =&gt; 'a'])
-// http://myapp.com/users/1/comments/2?opt=a
-</code></pre></div></div>
-
-<p>Gördüğünüz gibi, anahtarsız dizi değerleri sırayla atanır; anahtarlı dizi değerleri, anahtarlarıyla eşleşen rota parametreleriyle eşleştirilir ve geriye kalan her şey query parametresi olarak eklenir.</p>
-
-<h2 id="rota-grupları">Rota Grupları</h2>
-
-<p>Genellikle rota grupları belirli bir özelliği paylaşır; kimlik doğrulama gereksinimi, rota öneki veya belki bir controller namespace. Bu paylaşılan özellikleri her rotada tekrar tekrar tanımlamak sıkıcı görünmekle kalmaz, aynı zamanda rota dosyanızın şeklini anlaşılması zor hale getirebilir ve uygulamanızın bazı yapılarını belirsizleştirebilir.</p>
-
-<p>Rota grupları, birkaç rotayı birlikte gruplamanıza ve yinelemeyi azaltmak için tüm paylaşılan yapılandırma ayarlarını grubun tamamına bir kez uygulamanıza olanak tanır. Ek olarak, rota grupları, gelecekteki geliştiricilere (ve kendi beyninize) bu rotaların birlikte gruplandırıldığına dair görsel ipuçları verir.</p>
-
-<p>İki veya daha fazla rotayı birlikte gruplandırmak için, Örnek 3-11’de gösterildiği gibi rota tanımlarını bir rota grubuyla “sarmalarsınız”. Gerçekte, aslında grup tanımına bir closure iletiyorsunuz ve bu closure içinde gruplandırılmış rotaları tanımlıyorsunuz.</p>
-
-<p><strong>Örnek 3-11</strong>. Rota grubu tanımlama</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::group(function () {
-    Route::get('hello', function () {
-        return 'Hello';
-    });
-    Route::get('world', function () {
-        return 'World';
-    });
-});
-</code></pre></div></div>
-
-<p>Varsayılan olarak, rota grubu aslında hiçbir şey yapmaz. Örnek 3-11’deki grubu kullanmak ile rotalarınızın bir bölümünü kod açıklamalarıyla ayırmak arasında hiçbir fark yoktur.</p>
-
-<p><strong>Middleware</strong></p>
-
-<p>Muhtemelen rota gruplarının en yaygın kullanımı, middleware’i bir rota grubuna uygulamaktır. Bölüm 10’da middleware hakkında daha fazla bilgi edineceksiniz, ancak bunlar, diğer şeylerin yanı sıra, Laravel’in kullanıcıların kimliğini doğrulamak ve misafir kullanıcıların sitenin belirli bölümlerini kullanmasını kısıtlamak için kullandığı yazılımlardır.</p>
-
-<p>Örnek 3-12’de, dashboard ve account view’ları çevresinde bir rota grubu oluşturuyoruz ve auth middleware’i her ikisine de uyguluyoruz. Bu örnekte, kullanıcıların dashboard veya account sayfasını görüntülemek için uygulamada oturum açması gerekir.</p>
-
-<p><strong>Örnek 3-12</strong>. Bir grup rotayı yalnızca oturum açmış kullanıcılarla kısıtlama</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::middleware('auth')-&gt;group(function () {
-    Route::get('dashboard', function () {
-        return view('dashboard');
-    });
-    Route::get('account', function () {
-        return view('account');
-    });
-});
-</code></pre></div></div>
-
-<p><strong>Controller’lara Middleware Uygulamak</strong></p>
-
-<p>Rota tanımı yerine controller’a middleware eklemek genellikle daha net ve doğrudandır. Bunu, controller kurucusunda middleware() metodunu çağırarak yapabilirsiniz. middleware() metoduna ilettiğiniz dize, middleware’in adıdır ve isteğe bağlı olarak, bu middleware’i hangi metotların alacağını tanımlamak için modifier metotları (only() ve except()) zincirleyebilirsiniz:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class DashboardController extends Controller
-{
-    public function __construct()
-    {
-        $this-&gt;middleware('auth');
-        $this-&gt;middleware('admin-auth')
-            -&gt;only('editUsers');
-        $this-&gt;middleware('team-member')
-            -&gt;except('editUsers');
-    }
-}
-</code></pre></div></div>
-
-<p>Çok sayıda “only” ve “except” özelleştirmeleri yapıyorsanız, bunun genellikle istisnai rotalar için yeni bir controller oluşturmanız gerektiğinin bir işareti olduğunu unutmayın.</p>
-
-<p><strong>Eloquent’e Kısa Bir Bakış</strong></p>
-
-<p>Eloquent’i, veritabanı erişimini ve Laravel’in query builder’ını Bölüm 5’te derinlemesine ele alacağız, ancak şimdi temel bir kavrayış faydalı olacaktır.</p>
-
-<p>Eloquent, Laravel’in ORM’idir (Object-Relational Mapper), bir Post sınıfını (modelini) posts tablosuyla ilişkilendirmeyi ve Post::all() gibi bir çağrıyla tüm kayıtları almayı kolaylaştırır.</p>
-
-<p><strong>Path (Yol) Prefix’leri</strong></p>
-
-<p>Path’lerin bir bölümünü paylaşan bir rota grubunuz varsa (örneğin, sitenizin kontrol paneline /dashboard ön eki verilmişse), bu yapıyı basitleştirmek için rota gruplarını kullanabilirsiniz (bkz. Örnek 3-13).</p>
-
-<p><strong>Örnek 3-13</strong>. Rota grubunu prefix’leme</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::prefix('dashboard')-&gt;group(function () {
-    Route::get('/', function () {
-        // Handles the path /dashboard
-    });
-    Route::get('users', function () {
-        // Handles the path /dashboard/users
-    });
-});
-</code></pre></div></div>
-<p>Her prefix grubunun ayrıca prefix’in kökünü temsil eden bir / rotasına sahip olduğunu unutmayın; Örnek 3-13’te bu /dashboard’dur.</p>
-
-<p><strong>Subdomain Yönlendirmesi</strong></p>
-
-<p>Subdomain yönlendirmesi, rota prefix’i ile aynıdır ancak kapsamı rota prefix’i yerine subdomain tarafından belirlenir. Bunun iki temel kullanımı vardır. İlk olarak, uygulamanın farklı bölümlerini (veya tamamen farklı uygulamaları) farklı subdomain’lerde sunmak isteyebilirsiniz. Örnek 3-14 bunu nasıl yapabileceğinizi göstermektedir.</p>
-
-<p><strong>Örnek 3-14</strong>. Subdomain yönlendirme</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::domain('api.myapp.com')-&gt;group(function () {
-    Route::get('/', function () {
-        //
-    });
-});
-</code></pre></div></div>
-
-<p>İkinci olarak, Örnek 3-15’te gösterildiği gibi subdomain’in bir kısmını parametre olarak kullanmak isteyebilirsiniz. Bu çoğunlukla multitenancy durumlarında yapılır (Slack veya Harvest’i düşünün; burada her şirket, tighten.slack.co gibi kendi subdomain’ini alır).</p>
-
-<p><strong>Örnek 3-15</strong>. Parametreli subdomain yönlendirmesi</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::domain('{account}.myapp.com')-&gt;group(function () {
-    Route::get('/', function ($account) {
-        //
-    });
-    Route::get('users/{id}', function ($account, $id) {
-        //
-    });
-});
-</code></pre></div></div>
-
-<p>Grup için herhangi bir parametrenin, gruplandırılmış rotaların metotlarına ilk parametre(ler) olarak aktarıldığını unutmayın.</p>
-
-<p><strong>Ad Prefix’leri</strong></p>
-
-<p>Rota adlarının miras zincirini yansıtması yaygındır; bu nedenle, users/comments/5, users.comments.show adlı bir rota tarafından sunulur. Bu durumda, user.comments kaynağının altındaki tüm rotaların etrafında bir rota grubu kullanmak yaygın bir uygulamadır.</p>
-
-<p>Tıpkı URL segmentlerini prefix lediğimiz gibi, dizeleri de rota adına prefix olarak ekleyebiliriz. Rota grubu adı prefix’iyle, bu gruptaki her rotanın adının önünde belirli bir dize olması gerektiğini tanımlayabiliriz. Bu bağlamda her rota adının önüne “users.”, ardından “comments.” koyuyoruz. (bkz. Örnek 3-16).</p>
-
-<p><strong>Örnek 3-16</strong>. Rota grubu adı prefixleri</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::name('users.')-&gt;prefix('users')-&gt;group(function () {
-    Route::name('comments.')-&gt;prefix('comments')-&gt;group(function () {
-        Route::get('{id}', function () {
-            // ...
-        })-&gt;name('show'); // Route named 'users.comments.show'
-        Route::destroy('{id}', function () {
-        })-&gt;name('destroy');
-    });
-});
-</code></pre></div></div>
-
-<p><strong>Rota Grubu Controller’ı</strong></p>
-
-<p>Aynı controller tarafından sunulan rotaları gruplarken, örneğin kullanıcıları gösterirken, düzenlerken ve silerken, rota grubu controller() metodunu kullanabiliriz.</p>
-
-<p><strong>Örnek 3-17</strong>. Rota grubu controller’ı</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>use App\Http\Controllers\UserController;
-
-Route::controller(UserController::class)-&gt;group(function () {
-    Route::get('/', 'index');
-    Route::get('{id}', 'show');
-});
-</code></pre></div></div>
-
-<p><strong>Fallback Rotaları</strong></p>
-
-<p>Laravel’de eşleşmeyen tüm istekleri yakalamak için bir “fallback route” (rota dosyanızın sonunda tanımlamanız gereken) tanımlayabilirsiniz:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::fallback(function () {
-    //
-});
-</code></pre></div></div>
-
-<h2 id="i̇mzalı-rotalar">İmzalı Rotalar</h2>
-
-<p>Birçok uygulama düzenli olarak tek seferlik eylemler (şifre sıfırlama, davet kabul etme vb.) hakkında bildirimler gönderir ve bu eylemlerin gerçekleştirilmesi için basit linkler sağlar. Alıcının e-posta listesine kayıt olmak istediğini onaylayan bir e-posta gönderdiğimizi hayal edelim.</p>
-
-<p>Bu linki göndermenin üç yolu vardır:</p>
-
-<ul>
-  <li>Bu URL’i herkese açık hale getirin ve başka hiç kimsenin onay URL’sini keşfetmemesini umun.</li>
-  <li>Eylemi kimlik doğrulamanın arkasına yerleştirin, eyleme link verin ve henüz oturum açmadıysa kullanıcının oturum açmasını zorunlu kılın (bu durumda, birçok kullanıcı üye olmadığı için bu mümkün olmayabilir).</li>
-  <li>Linki, kullanıcının oturum açmasına gerek kalmadan e-postasından linki aldığını benzersiz bir şekilde kanıtlayacak şekilde “imzalayın”; şunun gibi http://myapp.com/invitations/5816/yes?signature=030ab0ef6a8237bd86a8b8.</li>
-</ul>
-
-<p>Son seçeneği gerçekleştirmenin basit bir yolu, signed URL adı verilen ve kimliği doğrulanmış linkler göndermek için imza kimlik doğrulama sistemi oluşturmayı kolaylaştıran bir özelliği kullanmaktır. Bu linkler, URL’in gönderildikten sonra değiştirilmediğini (ve dolayısıyla hiç kimsenin bir başkasının bilgisine erişmek için URL’i değiştirmediğini) kanıtlayan bir “imza” eklenmiş normal rota linkinden oluşur.</p>
-
-<p><strong>Rota İmzalama</strong></p>
-
-<p>Belirli bir rotaya erişmek amacıyla imzalı URL oluşturmak için rotanın bir adı olmalıdır:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('invitations/{invitation}/{answer}', InvitationController::class)
-    -&gt;name('invitations');
-</code></pre></div></div>
-
-<p>Bu rotaya link oluşturmak için, daha önce ele aldığımız gibi, route() helper kullanabilirsiniz, ancak aynı şeyi yapmak için URL facade kullanabilirsiniz: URL::route(‘invitations’, [‘invitation’ =&gt; 12345, ‘answer’ =&gt;’yes’]). Bu rotaya imzalı bir link oluşturmak için bunun yerine signedRoute() metodunu kullanmanız yeterlidir. Süresi dolan imzalı bir rota oluşturmak istiyorsanız, temporarySignedRoute() metodunu kullanın:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Generate a normal link
-URL::route('invitations', ['invitation' =&gt; 12345, 'answer' =&gt; 'yes']);
-
-// Generate a signed link
-URL::signedRoute('invitations', ['invitation' =&gt; 12345, 'answer' =&gt; 'yes']);
-
-// Generate an expiring (temporary) signed link
-URL::temporarySignedRoute(
-    'invitations',
-    now()-&gt;addHours(4),
-    ['invitation' =&gt; 12345, 'answer' =&gt; 'yes']
-);
-</code></pre></div></div>
-
-<p><strong>now() Helper Kullanımı</strong></p>
-
-<p>Laravel, Carbon::now()’a eşdeğer bir now() helper sunmaktadır; tam bu anda, bugünün bir Carbon nesnesini döndürür.</p>
-
-<p>Eğer aşina değilseniz Carbon, Laravel’e dahil olan bir tarih-saat kütüphanesidir.</p>
-
-<p><strong>İmzalı Linklere İzin Vermek İçin Rotaları Düzenlemek</strong></p>
-
-<p>Artık imzalı rotanıza bir link oluşturduğunuza göre, imzasız erişimlere karşı koruma sağlamanız gerekir. En kolay seçenek, signed middleware uygulamaktır.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('invitations/{invitation}/{answer}', InvitationController::class)
-    -&gt;name('invitations')
-    -&gt;middleware('signed');
-</code></pre></div></div>
-
-<p>İsterseniz signed middleware kullanmak yerine, Request nesnesindeki hasValidSignature() metodunu kullanarak manuel olarak doğrulama yapabilirsiniz:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class InvitationController
-{
-    public function __invoke(Invitation $invitation, $answer, Request $request)
-    {
-        if (!$request-&gt;hasValidSignature()) {
-            abort(403);
-        }
-        //
-    }
-}
-</code></pre></div></div>
-
-<h2 id="view">View</h2>
-
-<p>Şu ana kadar incelediğimiz rota closure’larının birkaçında, view(‘account’)‘a benzer şeyler gördük. Burada neler oluyor?</p>
-
-<p>MVC modelinde, view (veya template), belirli bir çıktının nasıl görünmesi gerektiğini açıklayan dosyadır. JSON, XML veya e-mail için view’larınız olabilir, ancak bir web framework’teki en yaygın view’lar HTML çıktısı verir.</p>
-
-<p>Laravel’de kullanabileceğiniz iki view formatı vardır: düz PHP veya Blade template. Aradaki fark dosya adındadır: about.php PHP motoruyla işlenecek ve about.blade.php Blade motoruyla işlenecektir.</p>
-
-<p><strong>View Yüklemenin Üç Yolu</strong></p>
-
-<p>Bir görünümü döndürmenin üç farklı yolu vardır. Şimdilik sadece view() ile ilgilenin, ancak View::make() görürseniz, bu aynı şeydir veya isterseniz Illuminate\View\ViewFactory’i enjekte edebilirsiniz.</p>
-
-<p>view() helper ile bir view’ı “yükledikten” sonra, onu basitçe geri döndürebilirsiniz (Örnek 3-18’de olduğu gibi), bu, eğer view controller’dan gelen herhangi bir değişkene dayanmıyorsa düzgün çalışacaktır.</p>
-
-<p><strong>Örnek 3-18</strong>. Basit view() kullanımı</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('/', function () {
-    return view('home');
-});
-</code></pre></div></div>
-
-<p>Bu kod, resources/views/home.blade.php veya resources/views/home.php dosyasında bir view arar ve içeriğini yükler ve view çıktısını elde edene kadar tüm satır içi PHP veya kontrol yapılarını ayrıştırır. Geri gönderdiğinizde response yığınına aktarılır ve sonunda kullanıcıya iletilir.</p>
-
-<p>Peki ya değişkenleri aktarmanız gerekirse? Örnek 3-19’a göz atın.</p>
-
-<p><strong>Örnek 3-19</strong>. Değişkenleri view’a aktarma</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('tasks', function () {
-    return view('tasks.index')
-        -&gt;with('tasks', Task::all());
-});
-</code></pre></div></div>
-
-<p>Bu closure, resources/views/tasks/index.blade.php view’ı yükler ve ona Task::all() metodunun sonucunu içeren, tasks adlı değişkeni iletir.</p>
-
-<p><strong>Basit Rotaları Route::view() ile Doğrudan Döndürme</strong></p>
-
-<p>Bir rotanın hiçbir özel veri olmadan yalnızca bir view döndürmesi çok yaygın olduğundan, Laravel, rota tanımına bir closure veya controller/metot referansı bile geçirmeden, rotayı “view” rotası olarak tanımlamanıza izin verir. Örnek 3-20.</p>
-
-<p><strong>Örnek 3-20</strong>. Route::view()</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Returns resources/views/welcome.blade.php
-Route::view('/', 'welcome');
-
-// Passing simple data to Route::view()
-Route::view('/', 'welcome', ['User' =&gt; 'Michael']);
-</code></pre></div></div>
-
-<p><strong>Değişkenleri Tüm View’lar ile Paylaşmak için View Composer Kullanma</strong></p>
-
-<p>Bazen aynı değişkenleri tekrar tekrar iletmek güçlük yaratabilir. Sitedeki her view için veya belirli bir view sınıfı veya dahil edilen belirli bir subview için (örneğin, tasks ilgili tüm view’lar veya header kısmı) erişilmesini istediğiniz bir değişken olabilir.</p>
-
-<p>Aşağıdaki kodda olduğu gibi belirli değişkenleri her template ile veya yalnızca belirli template’ler ile paylaşmak mümkündür:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>view()-&gt;share('variableName', 'variableValue');
-</code></pre></div></div>
-
-<h2 id="controller">Controller</h2>
-
-<p>Controller’lar dan birkaç kez bahsettim ancak şu ana kadar örneklerin çoğunda rota closure’ları görüldü. MVC pattern’in de controller’lar esas olarak bir veya daha fazla rotanın mantığını tek bir yerde birlikte düzenleyen sınıflardır. Controller’lar, özellikle uygulamanız geleneksel olarak CRUD benzeri bir formatta yapılandırılmışsa, benzer rotaları bir arada gruplandırma eğilimindedir; Bu durumda, controller belirli bir resource üzerinde gerçekleştirilebilecek tüm eylemleri gerçekleştirebilir.</p>
-
-<p><strong>CRUD Nedir?</strong></p>
-
-<p>CRUD, web uygulamalarının bir resource’ta en yaygın olarak sağladığı dört temel işlem olan create, read, update, delete anlamına gelir. Örneğin yeni bir blog yazısı oluşturabilir, o yazıyı okuyabilir, güncelleyebilir veya silebilirsiniz.</p>
-
-<p>Uygulamanın tüm mantığını controller’a sıkıştırmak cazip gelebilir, ancak controller’ları uygulamanızın etrafında HTTP isteklerini yönlendiren trafik polisleri olarak düşünmek daha iyidir. İsteklerin uygulamanıza gelebileceği başka yollar da (cron jobs, Artisan komut satırı çağrıları, queue jobs vb.) olduğundan, çok fazla davranış için controller’a güvenmemek akıllıca olacaktır. Bu, bir controller’ın birincil işinin HTTP isteğinin amacını yakalamak ve onu uygulamanın geri kalanına iletmek olduğu anlamına gelir.</p>
-
-<p>O halde bir controller oluşturalım. Bunu yapmanın kolay bir yolu Artisan komutunu kullanmaktır; terminal’de aşağıdaki komutu çalıştırın:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:controller TaskController
-</code></pre></div></div>
-
-<p><strong>Artisan</strong></p>
-
-<p>Laravel, Artisan adlı bir komut satırı aracıyla birlikte gelir. Artisan, migration’ları yürütmek, kullanıcıları ve diğer veritabanı kayıtlarını manuel olarak oluşturmak ve diğer birçok manuel, tek seferlik görevi gerçekleştirmek için kullanılabilir.</p>
-
-<p>make namespace altında Artisan, çeşitli sistem dosyaları için iskelet dosyalar oluşturmaya yönelik araçlar sağlar.</p>
-
-<p>Bu, örnek 3-21’de gösterilen içeriğe sahip, app/Http/Controllers’da TaskController.php adında yeni bir dosya oluşturacaktır.</p>
-
-<p><strong>Örnek 3-21</strong>. Default olarak oluşturulan controller</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
-
-namespace App\Http\Controllers;
-
-use Illuminate\Http\Request;
-
-class TaskController extends Controller
-{
-    //
-}
-</code></pre></div></div>
-
-<p>Bu dosyayı Örnek 3-22’de gösterildiği gibi değiştirin ve index() adı verilen yeni bir public metot oluşturun. Burada sadece bir metin döndüreceğiz.</p>
-
-<p><strong>Örnek 3-22</strong>. Basit controller örneği</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;?php
-
-namespace App\Http\Controllers;
-
-class TaskController extends Controller
-{
-    public function index()
-    {
-        return 'Hello, World!';
-    }
-}
-</code></pre></div></div>
-
-<p>Daha sonra, Örnek 3-23’te gösterildiği gibi ona bir rota bağlayacağız.</p>
-
-<p><strong>Örnek 3-23</strong>. Basit controller için rota</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// routes/web.php
-&lt;?php
-
-Route::get('/', [TaskController::class, 'index']);
-</code></pre></div></div>
-
-<p>Bu kadar. / rotasını ziyaret ettiğinizde “Hello, World!” kelimelerini göreceksiniz.</p>
-
-<p>O halde bir controller metodunun en yaygın kullanımı, Örnek 3-19’daki route closure ile aynı işlevselliği sağlayan Örnek 3-24 gibi bir şey olacaktır.</p>
-
-<p><strong>Örnek 3-24</strong>. Ortak controller metodu örneği</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// TaskController.php
-...
-public function index()
-{
-    return view('tasks.index')
-        -&gt;with('tasks', Task::all());
-}
-</code></pre></div></div>
-
-<p>Bu controller metodu, resources/views/tasks/index.blade.php view’ını yükler ve ona, Task::all() Eloquent metodunun sonucunu içeren, tasks adlı değişkeni iletir.</p>
-
-<p><strong>Resource Controller Oluşturmak</strong></p>
-
-<p>create() ve update() gibi tüm temel rotaları otomatik olarak oluşturulmuş metotlara sahip bir resource controller oluşturmak istiyorsanız, php artisan make:controller’ı kullanırken –resource flag’ini iletebilirsiniz:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:controller TaskController --resource
-</code></pre></div></div>
-
-<p><strong>Kullanıcıdan Girdi Almak</strong></p>
-
-<p>Bir controller metodunda gerçekleştirilecek en yaygın ikinci eylem, kullanıcıdan girdi almak ve buna göre hareket etmektir. Birkaç yeni konsepti göreceğiz, o yüzden örnek koda bakalım ve yeni parçaları gözden geçirelim.</p>
-
-<p><strong>Örnek 3-25</strong>. Temel form action’larını bağlama</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// routes/web.php
-Route::get('tasks/create', [TaskController::class, 'create']);
-Route::post('tasks', [TaskController::class, 'store']);
-</code></pre></div></div>
-
-<p>tasks/create (yeni bir task oluşturmak için form gösterir) GET action’ını ve tasks/ (yeni bir task oluşturduğumuzda formun gönderileceği yer burasıdır) POST action’ını bağladığımıza dikkat edin. create() metodunun yalnızca bir form gösterdiğini varsayabiliriz, o halde Örnek 3-26’daki store() metoduna bakalım.</p>
-
-<p><strong>Örnek 3-26</strong>. Form giriş controller metodu</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// TaskController.php
-...
-public function store()
-{
-    Task::create(request()-&gt;only(['title', 'description']));
-    return redirect('tasks');
-}
-</code></pre></div></div>
-
-<p>Bu örnekte Eloquent modelleri ve redirect() kullanılmaktadır ve bunlar hakkında daha sonra konuşacağız, şimdilik verilerimizi buraya nasıl aldığımız hakkında konuşalım.</p>
-
-<p>HTTP isteğini temsil etmek için request() helper kullanıyoruz (bu konuya daha sonra değineceğiz) ve yalnızca kullanıcının gönderdiği title ve description alanlarını çekmek için only() metodunu kullanıyoruz.</p>
-
-<p>Daha sonra bu verileri Task modelimizin create() metoduna aktarıyoruz; bu, Task’in yeni bir örneğini oluşturur. Son olarak tüm task’leri gösteren sayfaya yönlendiriliyoruz.</p>
-
-<p>Burada, birazdan ele alacağımız birkaç soyutlama katmanı iş başındadır, ancak only() metodundan gelen verilerin, request nesnesinde kullanılan tüm yaygın metotların - all() ve get() dahil - aynı havuzundan geldiğini bilin. Bu metotların her birinin çektiği data - query parametreleri veya POST değerleri - kullanıcı tarafından sağlanan tüm verileri temsil eder. Böylece kullanıcımız “add task” sayfasında iki alanı doldurdu: “title” ve “description”.</p>
-
-<p>Soyutlamayı kırmak için, request()-&gt;only() girdi (input) adlarının ilişkisel bir dizisini alır ve bunları döndürür:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>request()-&gt;only(['title', 'description']);
-// returns:
-[
-    'title' =&gt; 'Whatever title the user typed on the previous page',
-    'description' =&gt; 'Whatever description the user typed on the previous page',
-]
-</code></pre></div></div>
-
-<p>Ve Task::create() ilişkisel bir dizi alır ve ondan yeni bir task oluşturur:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Task::create([
-    'title' =&gt; 'Buy milk',
-    'description' =&gt; 'Remember to check the expiration date this time, Norbert!',
-]);
-</code></pre></div></div>
-
-<p>Bunları bir araya getirmek, kullanıcı tarafından sağlanan “title” ve “description” alanlarını içeren bir task oluşturur.</p>
-
-<p><strong>Bağımlılıkları Controller’lara Eklemek</strong></p>
-
-<p>Facade ve global helper’lar, Laravel’in kod tabanındaki en kullanışlı sınıflara basit bir arayüz sunar. Mevcut istek ve kullanıcı girişi, session, cache ve çok daha fazlası hakkında bilgi alabilirsiniz.</p>
-
-<p>Ancak bağımlılıklarınızı enjekte etmeyi tercih ediyorsanız veya facade ya da helper’ı olmayan bir servis kullanmak istiyorsanız, bu sınıfların örneklerini controller’ınıza getirmenin bir yolunu bulmanız gerekir.</p>
-
-<p>Bu, Laravel’in servis container’ı ilk karşılaşmamız. Şimdilik, eğer bu konu size tanıdık gelmiyorsa, bunu biraz Laravel büyüsü olarak düşünebilirsiniz; veya gerçekte nasıl çalıştığı hakkında daha fazla bilgi edinmek istiyorsanız Bölüm 11’e geçebilirsiniz.</p>
-
-<p>Tüm controller metotları (kurucular dahil) Laravel’in container’ı dışında çözümlenir; bu, container’ın nasıl çözüleceğini bildiğini düşündüğünüz her şeyin otomatik olarak enjekte edileceği anlamına gelir.</p>
-
-<p><strong>Typehinting</strong></p>
-
-<p>PHP’de “Typehinting”, bir sınıfın veya arayüzün adını, yöntem imzasındaki bir değişkenin önüne koymak anlamına gelir.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function __construct(Logger $logger) {}
-</code></pre></div></div>
-
-<p>Bu ipucu PHP’ye, metoda iletilen her şeyin arayüz ya da sınıf olabilecek Logger türünde olması gerektiğini söyler.</p>
-
-<p>Bir örnek olarak, global helper kullanmak yerine Request nesnesinin örneğini kullanmayı tercih ederseniz ne olur? Örnek 3-27’deki gibi, metot parametrelerinize Illuminate\Http\Request yazmanız yeterlidir.</p>
-
-<p><strong>Örnek 3-27</strong>. Typehinting ile controller metodu enjeksiyonu</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// TaskController.php
-...
-public function store(\Illuminate\Http\Request $request)
-{
-    Task::create($request-&gt;only(['title', 'description']));
-    return redirect('tasks');
-}
-</code></pre></div></div>
-
-<p>Böylece, store() metoduna iletilmesi gereken bir parametre tanımladınız. Bunu siz yazdığınız için ve Laravel bu sınıf adını nasıl çözümleyeceğini bildiği için, Request nesnesi metodunuzda kullanılmak üzere hazır hale gelir. Açık bir binding yok, başka bir şey yok; $request değişkeni olarak kullanıma hazırdır.</p>
-
-<p>Örnek 3-26 ile Örnek 3-27’yi karşılaştırdığınızda, request() helper ve Request nesnesinin tam olarak aynı şekilde davrandığını görebilirsiniz.</p>
-
-<p><strong>Resource Controller</strong></p>
-
-<p>Bazen controller’daki metotları adlandırmak, controller yazmanın en zor kısmı olabilir. Neyse ki Laravel, geleneksel REST/CRUD controller (Laravel’de “resource controller” olarak adlandırılır) rotaları için bazı kurallara sahiptir; ek olarak, bir kod generator ve tüm resource controller’ı aynı anda bağlamanıza olanak tanıyan uygun bir rota tanımıyla birlikte gelir.</p>
-
-<p>Laravel’in resource controller’dan beklediği metotları görmek için komut satırından yeni bir controller oluşturalım:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:controller MySampleResourceController --resource
-</code></pre></div></div>
-
-<p>Şimdi app/Http/Controllers/MySampleResourceController.php dosyasını açın. Pek çok metotla önceden doldurulmuş olarak geldiğini göreceksiniz. Her birinin neyi temsil ettiğini gözden geçirelim. Örnek olarak Task kullanacağız.</p>
-
-<p><strong>Resource Controller Metotları</strong></p>
-
-<p>Tablo 3-1’i hatırlıyor musunuz?, Laravel’in resource controller’larında oluşturulan HTTP fiilini, URL’i, controller metot adını ve bu varsayılan metotların her birinin adını gösterir.</p>
-
-<p><strong>Resource Controller’ı Bağlamak</strong></p>
-
-<p>Bunların Laravel’de kullanılacak konvansiyonel rota adları olduğunu ve ayrıca bu varsayılan rotaların her biri için metotlar içeren bir resource controller oluşturmanın kolay olduğunu gördük. Neyse ki, istemiyorsanız bu controller metotlarının her biri için elle rota oluşturmanıza gerek yok. Bunun için resource controller binding adı verilen bir numara var. Örnek 3-28’e bir göz atın.</p>
-
-<p><strong>Example 3-28</strong>. Resource controller binding</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// routes/web.php
-Route::resource('tasks', TaskController::class);
-</code></pre></div></div>
-
-<p><strong>artisan route:list</strong></p>
-
-<p>Kendinizi mevcut uygulamanızın hangi rotalara sahip olduğunu merak ettiğiniz bir durumda bulursanız, bunun için bir araç kullanabilirsiniz: komut satırından, php artisan route:list komutunu çalıştırdığınızda tüm rotaların listesini göreceksiniz (bkz. Şekil 3-2). php artisan route:list –except-vendor seçeneğini tercih ediyorum, böylece bağımlılıkların çalışması için kaydettiği tuhaf rotaları görmüyorum.</p>
-
-<p><img src="/assets/images/2024/03/php-artisan-route-list.png" alt="php artisan route:list" title="php artisan route:list" class="img-fluid" /></p>
-
-<p><strong>API Resource Controller</strong></p>
-
-<p>RESTful API’lerle çalışırken, resource’taki potansiyel action’ların listesi, HTML resource controller’daki ile aynı değildir. Örneğin, resource oluşturmak için API’ye POST isteği gönderebilirsiniz, ancak API’de gerçekten “bir formu gösteremezsiniz”.</p>
-
-<p>create ve edit action’larını hariç tutması dışında, aynı yapıya sahip bir controller olan API resource controller oluşturmak için, controller oluştururken –api flag’ini iletin:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php artisan make:controller MySampleResourceController --api
-</code></pre></div></div>
-
-<p><strong>API Resource Controller’ı Bağlamak</strong></p>
-
-<p>API resource controller’ı bağlamak için, Örnek 3-29’da gösterildiği gibi, resource() metodu yerine apiResource() metodunu kullanın.</p>
-
-<p><strong>Örnek 3-29</strong>. API resource controller’ın bağlanması</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// routes/web.php
-Route::apiResource('tasks', TaskController::class);
-</code></pre></div></div>
-
-<p><strong>Single Action Controller</strong></p>
-
-<p>Uygulamalarınızda bir controller’ın yalnızca tek bir rotaya hizmet vermesi gereken zamanlar olacaktır. Kendinizi bu rota için controller metodunu nasıl adlandıracağınızı merak ederken bulabilirsiniz. Neyse ki, metodu adlandırmakla uğraşmadan, tek bir controller’a tek bir rotayı yönlendirebilirsiniz.</p>
-
-<p>Bildiğiniz gibi, __invoke() metodu, bir sınıfı fonksiyon gibi ele almanıza ve çağırmanıza olanak tanıyan PHP magic metodudur. Bu, Örnek 3-30’da görebileceğiniz gibi, Laravel’in single action controller’larının tek bir controller’a rota tanımlanıza olanak sağlamak için kullandığı araçtır.</p>
-
-<p><strong>Örnek 3-30</strong>. __invoke() metodunu kullanmak</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// \App\Http\Controllers\UpdateUserAvatar.php
-public function __invoke(User $user)
-{
-    // Update the user's avatar image
-}
-
-// routes/web.php
-Route::post('users/{user}/update-avatar', UpdateUserAvatar::class);
-</code></pre></div></div>
-
-<h2 id="route-model-binding">Route Model Binding</h2>
-
-<p>En yaygın yönlendirme pattern’lerinden biri, herhangi bir controller metodunun ilk satırının, Örnek 3-31’deki gibi, verilen kimliğe sahip resource’u bulmaya çalışmasıdır.</p>
-
-<p><strong>Örnek 3-31</strong>. Her rota için bir resource alma</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('conferences/{id}', function ($id) {
-    $conference = Conference::findOrFail($id);
-});
-</code></pre></div></div>
-
-<p>Laravel, route model binding adı verilen bu pattern’i basitleştiren bir özellik sağlar. Bu, belirli bir parametrenin (örneğin, {conference}) rota çözümleyiciye (route resolver), bu id ile bir Eloquent veritabanı kaydı araması gerektiğini ve ardından sadece id yerine onu parametre olarak iletmesi gerektiğini tanımlamanıza olanak tanır. İki tür route model binding vardır: implicit (örtülü) ve custom (özel veya açık).</p>
-
-<p><strong>Implicit Route Model Binding</strong></p>
-
-<p>Route model binding kullanmanın en basit yolu, rota parametrenizi o modele özgü bir şekilde adlandırmak (örneğin, $id yerine $conference olarak adlandırmak), ardından bu parametreyi closure/controller metoduna yazmak ve orada aynı değişken adını kullanmaktır. Göstermek tarif etmekten daha kolaydır; bu nedenle Örnek 3-32’ye bir göz atın.</p>
-
-<p><strong>Örnek 3-32</strong>. Implicit route model binding kullanımı</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('conferences/{conference}', function (Conference $conference) {
-    return view('conferences.show')-&gt;with('conference', $conference);
-});
-</code></pre></div></div>
-
-<p>Rota parametresi ({conference}) metot parametresi ($conference) ile aynı olduğundan ve metot parametresi Conference türünde (Conference $conference) tanımlandığından, Laravel bunu route model binding olarak görür. Bu rota her ziyaret edildiğinde uygulama, URL’e {conference} yerine iletilen her şeyin, Conference aramak için kullanılması gereken bir id olduğunu varsayacaktır ve ardından ortaya çıkan model örneği, closure veya controller metoduna aktarılacaktır.</p>
-
-<p><strong>Custom Route Model Binding</strong></p>
-
-<p>Route model binding’i manuel olarak yapılandırmak için, Örnek 3-33’teki gibi bir satırı App\Providers\RouteServiceProvider’daki boot() metoduna ekleyin.</p>
-
-<p><strong>Örnek 3-33</strong>. Route model binding ekleme</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>public function boot()
-{
-    // Perform the binding
-    Route::model('event', Conference::class);
-}
-</code></pre></div></div>
-
-<p>Artık, Örnek 3-34’te gösterildiği gibi, bir rotanın tanımında {event} adlı bir parametre olduğunda, rota çözümleyicinin o URL parametresinin id’si ile Conference sınıfının bir örneğini döndüreceğini belirttiniz.</p>
-
-<p><strong>Örnek 3-34</strong>. Custom route model binding kullanımı</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('events/{event}', function (Conference $event) {
-    return view('events.show')-&gt;with('event', $event);
-});
-</code></pre></div></div>
-
-<h2 id="rota-önbelleği-route-cache">Rota Önbelleği (Route Cache)</h2>
-
-<p>Yükleme sürenizin her milisaniyesini sıkıştırmak istiyorsanız route caching’e göz atmak isteyebilirsiniz. Laravel’in cache’in birkaç yüz milisaniyeye kadar sürebilen parçalarından biri, routes/* dosyalarının ayrıştırılmasıdır ve rotaları önbelleğe almak bu süreci önemli ölçüde hızlandırır.</p>
-
-<p>Rota dosyanızı önbelleğe almak için tüm controller, redirect, view ve resource rotalarını kullanmanız gerekir (rota closure hariç). Uygulamanız herhangi bir rota closure kullanmıyorsa, php artisan route:cache komutunu çalıştırabilirsiniz; Laravel, routes/* dosyalarınızın sonuçlarını serialize edecektir. Önbelleği silmek istiyorsanız php artisan route:clear komutunu çalıştırın.</p>
-
-<p>Dezavantajı şu: Laravel artık gerçek routes/* dosyalarınız yerine rotaları önbelleğe alınmış dosyayla eşleştirecek. Rota dosyalarınızda değişiklikler yapabilirsiniz ve bunlar, route:cache’i tekrar çalıştırana kadar etkili olmaz. Bu, her değişiklik yaptığınızda yeniden ön belleğe almanız gerekeceği anlamına gelir; bu da çok fazla karışıklık potansiyeli doğurur.</p>
-
-<p>Bunun yerine şunu önerebilirim: Git varsayılan olarak rota önbellek dosyasını yok saydığından, yalnızca production sunucunuzda rota önbelleği kullanmayı düşünün ve her yeni kodu deploy ettiğinizde (Git post-deploy hook aracılığıyla, Forge deploy komutu aracılığıyla veya kullandığınız diğer deploy sistemlerinin bir parçası olarak) php artisan route:cache komutunu çalıştırın. Bu şekilde, kafa karıştırıcı local geliştirme sorunlarıyla karşılaşmazsınız, ancak remote environment yine de rota önbelleğinden faydalanacaktır.</p>
-
-<h2 id="form-method-spoofing">Form Method Spoofing</h2>
-
-<p>Bazen bir formun hangi HTTP fiili ile gönderilmesi gerektiğini manuel olarak tanımlamanız gerekir. HTML formları yalnızca GET veya POST’a izin verir, dolayısıyla başka türde bir fiil istiyorsanız bunu kendiniz belirtmelisiniz.</p>
-
-<p><strong>Laravel’de HTTP Fiilleri</strong></p>
-
-<p>Daha önce gördüğümüz gibi, Route::get(), Route::post(), Route::any() veya Route::match() kullanarak rotanın hangi fiillerle eşleşeceğini tanımlayabilirsiniz. Ayrıca Route::patch(), Route::put() ve Route::delete() ile de eşleştirebilirsiniz.</p>
-
-<p>Peki web tarayıcısıyla GET dışında bir istek nasıl gönderilir? İlk olarak, HTML formundaki method özelliği, HTTP fiilini belirler: formunuzda “GET” metodu varsa, query parameter ve GET metodu aracılığıyla gönderilir; formunuzda “POST” metodu varsa, post body ve POST metodu aracılığıyla gönderilir.</p>
-
-<p>JavaScript frameworkleri, DELETE ve PATCH gibi diğer isteklerin gönderilmesini kolaylaştırır. Ancak Laravel’de HTML formlarını GET veya POST dışındaki fiillerle göndermeniz gerektiğini düşünüyorsanız, form method spoofing kullanmanız gerekir; bu, bir HTML formunda HTTP metodunu yanıltmak anlamına gelir.</p>
-
-<p><strong>HTML Formlarında HTTP Method Spoofing</strong></p>
-
-<p>Şu anda gönderdiğiniz formun POST dışında bir şey olarak ele alınması gerektiğini Laravel’e bildirmek için, “PUT”, “PATCH” veya “DELETE” değerine sahip _method adlı bir hidden input ekleyin. Laravel bu form gönderimini sanki o fiille yapılan bir istekmiş gibi eşleştirecek ve yönlendirecektir.</p>
-
-<p>Örnek 3-35’teki form, Laravel’e “DELETE” metodunu ilettiğinden, Route::delete() ile tanımlanan rotalarla eşleşecek ancak Route::post() ile tanımlanan rotalarla eşleşmeyecektir.</p>
-
-<p><strong>Example 3-35</strong>. Form method spoofing</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;form action="/tasks/5" method="POST"&gt;
-    &lt;input type="hidden" name="_method" value="DELETE"&gt;
-    &lt;!-- or: --&gt;
-    @method('DELETE')
-&lt;/form&gt;
-</code></pre></div></div>
-
-<h2 id="csrf-koruması">CSRF Koruması</h2>
-
-<p>Örnek 3-35’teki de dahil olmak üzere, Laravel uygulamasında form göndermeyi denediyseniz, muhtemelen TokenMismatchException ile karşılaşmışsınızdır.</p>
-
-<p>Varsayılan olarak, Laravel’deki “read-only” rotalar (GET, HEAD veya OPTIONS kullananlar) dışındaki tüm rotalar, _token adlı input biçiminde bir “token” gerektirerek cross-site request forgery (CSRF) saldırılarına karşı korunur. Bu token her session başlangıcında oluşturulur ve read-only olmayan her rota, gönderilen _token’ı session token’ı ile karşılaştırır.</p>
-
-<p><strong>CSRF Nedir?</strong></p>
-
-<p>Cross-site request forgery (Siteler arası istek sahteciliği), bir web sitesinin başka bir web sitesi gibi davranmasıdır. Amaç, birisinin, oturum açmış kullanıcının tarayıcısı aracılığıyla kendi web sitesinden web sitenize formlar göndererek kullanıcılarınızın web sitenize erişimini ele geçirmesidir.</p>
-
-<p>CSRF saldırılarını önlemenin en iyi yolu, tüm rotaları (POST, DELETE, vb.) Laravel’in yaptığı gibi bir token ile korumaktır.</p>
-
-<p>Bu CSRF hatasını aşmak için iki seçeneğiniz var. İlk ve tercih edilen yöntem, gönderimlerinizin her birine _token input’unu eklemektir. Örnek 3-36’da görebileceğiniz gibi HTML formlarında bunu yapmanın basit bir yolu vardır.</p>
-
-<p><strong>Örnek 3-36</strong>. CSRF token</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;form action="/tasks/5" method="POST"&gt;
-    @csrf
-&lt;/form&gt;
-</code></pre></div></div>
-
-<p>JavaScript uygulamalarında biraz daha fazla çalışma gerekir, ancak çok fazla değil. JavaScript framework’lerini kullanan siteler için en yaygın çözüm, token’ı her sayfada bunun gibi bir <meta /> etiketinde saklamaktır:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;meta name="csrf-token" content="&lt;?php echo csrf_token(); ?&gt;"&gt;
-</code></pre></div></div>
-
-<p>Token’ı <meta /> etiketinde saklamak, onu doğru HTTP header’a bağlamayı kolaylaştırır; bunu, Örnek 3-37’de olduğu gibi, JavaScript framework’ün den gelen tüm istekler için global olarak bir kez yapabilirsiniz.</p>
-
-<p><strong>Örnek 3-37</strong>. CSRF için global olarak header bağlama</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// In jQuery:
-$.ajaxSetup({
-    headers: {
-        'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-    }
-});
-
-// With Axios: it automatically retrieves it from a cookie. Nothing to do!
-</code></pre></div></div>
-
-<p>Laravel her istekte X-CSRF-TOKEN’i (ve Axios ve Angular’ın kullandığı X-XSRF-TOKEN’i) kontrol edecek ve buradan iletilen geçerli tokenlar CSRF korumasını karşılanmış olarak işaretleyecektir.</p>
-
-<h2 id="yönlendirmeler">Yönlendirmeler</h2>
-
-<p>Şu ana kadar controller metodundan veya rota tanımından geri dönmek hakkında açıkça konuştuğumuz tek şey view oldu. Ancak tarayıcıya nasıl davranacağına ilişkin talimatlar vermek için geri kullanabileceğimiz birkaç yapı daha var.</p>
-
-<p>İlk önce yönlendirmeyi (redirect) ele alalım. Bunlardan birkaçını zaten diğer örneklerde gördünüz. Yönlendirme oluşturmanın iki yaygın yolu vardır; Burada redirect() global helper’ını kullanacağız, ancak siz facade tercih edebilirsiniz. Her ikisi de bir Illuminate\Http\RedirectResponse örneği oluşturur, bunun üzerinde bazı metotlar uygular ve ardından onu geri döndürür. Bunu manuel olarak da yapabilirsiniz, ancak biraz daha fazla işi kendiniz yapmanız gerekecektir. Yönlendirmeyi geri döndürmenin birkaç yolunu görmek için Örnek 3-38’e bakın.</p>
-
-<p><strong>Örnek 3-38</strong>. Yönlendirmeyi döndürmenin farklı yolları</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// Using the global helper to generate a redirect response
-Route::get('redirect-with-helper', function () {
-    return redirect()-&gt;to('login');
-});
-
-// Using the global helper shortcut
-Route::get('redirect-with-helper-shortcut', function () {
-    return redirect('login');
-});
-
-// Using the facade to generate a redirect response
-Route::get('redirect-with-facade', function () {
-    return Redirect::to('login');
-});
-
-// Using the Route::redirect shortcut
-Route::redirect('redirect-by-route', 'login');
-</code></pre></div></div>
-
-<p>redirect() helper’ın redirect facade ile aynı metotları kullandığını ancak aynı zamanda bir kısayolu olduğunu unutmayın; Parametreleri zincirleme metotlar yerine doğrudan helper’a iletirseniz, bu, to() yönlendirme metodunun kısayoludur.</p>
-
-<p>Ayrıca Route::redirect() route helper’ın - isteğe bağlı - üçüncü parametresinin, yönlendirmenizin status kodu (örn. 302) olabileceğini unutmayın.</p>
-
-<p><strong>redirect()-&gt;to()</strong></p>
-
-<p>Yönlendirmeler için to() metodunu imzası şuna benzer:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function to($to = null, $status = 302, $headers = [], $secure = null)
-</code></pre></div></div>
-
-<p>$to geçerli bir dahili yoldur, $status HTTP status’tür (varsayılan olarak 302’dir), $headers yönlendirmenizle birlikte HTTP header’ları tanımlamanıza olanak tanır ve $secure varsayılan http ve https seçimini geçersiz kılar (normalde URL’e göre ayarlanır). Örnek 3-39 bunun kullanımına ilişkin bir örneği göstermektedir.</p>
-
-<p><strong>Örnek 3-39</strong>. redirect()-&gt;to()</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('redirect', function () {
-    return redirect()-&gt;to('home');
-    // Or same, using the shortcut:
-    return redirect('home');
-});
-</code></pre></div></div>
-
-<p><strong>redirect()-&gt;route()</strong></p>
-
-<p>route() metodu to() metofuyla aynıdır ancak belirli bir yola işaret etmek yerine belirli bir rota adına işaret eder (bkz. Örnek 3-40).</p>
-
-<p><strong>Örnek 3-40</strong>. redirect()-&gt;route()</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('redirect', function () {
-    return redirect()-&gt;route('conferences.index');
-});
-</code></pre></div></div>
-
-<p>Bazı rota adları parametre gerektirdiğinden parametre sırasının biraz farklı olduğunu unutmayın. route(), rota parametreleri için isteğe bağlı ikinci bir parametreye sahiptir:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function route($to = null, $parameters = [], $status = 302, $headers = [])
-</code></pre></div></div>
-
-<p>Yani, onu kullanmak biraz Örnek 3-41’e benzeyebilir.</p>
-
-<p><strong>Örnek 3-41</strong>. parametre ile redirect()-&gt;route()</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('redirect', function () {
-    return redirect()-&gt;route('conferences.show', ['conference' =&gt; 99]);
-});
-</code></pre></div></div>
-
-<p><strong>Redirect to_route Helper</strong></p>
-
-<p>to_route() helper’ı, redirect()-&gt;route() metodu için takma ad olarak kullanabilirsiniz. İkisinin de imzası aynıdır.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('redirect', function () {
-    return to_route('conferences.show', ['conference' =&gt; 99]);
-});
-</code></pre></div></div>
-
-<p><strong>redirect()-&gt;back()</strong></p>
-
-<p>Laravel’in session uygulamasının bazı yerleşik kolaylıkları nedeniyle, uygulamanız her zaman kullanıcının daha önce ziyaret ettiği sayfanın ne olduğu bilgisine sahip olacaktır. Bu, kullanıcıyı geldiği sayfaya yönlendiren redirect()-&gt;back() yönlendirmesi fırsatını verir. Bunun için genel bir kısayol da vardır: back().</p>
-
-<p><strong>Diğer Yönlendirme Metotları</strong></p>
-
-<p>Yönlendirme servisi, daha az kullanılan ancak yine de kullanılabilen şu metotları sağlar:</p>
-
-<ul>
-  <li>refresh() - Kullanıcının o anda bulunduğu sayfaya yönlendirir.</li>
-  <li>away() - Varsayılan URL doğrulaması olmadan harici bir URL’ye yönlendirmeye izin verir.</li>
-  <li>secure() - Secure parametresinin “true” olarak ayarlandığı to() gibi.</li>
-  <li>action() - Bir controller’a ve metoda iki yoldan biriyle bağlanmanıza olanak tanır: dize olarak (redirect()-&gt;action(‘MyController@myMethod’)) veya dizi olarak
-(redirect()-&gt;action([MyController::class, ‘myMethod’]))).</li>
-  <li>guest() - Kimlik doğrulama sistemi tarafından dahili olarak kullanılır; Bir kullanıcı, kimlik doğrulamasının yapılmadığı bir rotayı ziyaret ettiğinde, bu rotayı yakalar ve ardından kullanıcıyı (genellikle bir oturum açma sayfasına) yönlendirir.</li>
-  <li>intended() - Ayrıca kimlik doğrulama sistemi tarafından dahili olarak da kullanılır; Başarılı bir kimlik doğrulamanın ardından, guest() metodu tarafından saklanan “amaçlanan” URL’i alır ve kullanıcıyı oraya yönlendirir.</li>
-</ul>
-
-<p><strong>redirect()-&gt;with()</strong></p>
-
-<p>redirect() ile çağırabileceğiniz diğer metotlara benzer şekilde yapılandırılmış olsa da with() metodu, nereye yönlendirme yaptığınızı değil, yönlendirmeyle birlikte hangi verileri ilettiğinizi tanımlaması bakımından farklıdır. Kullanıcıları farklı sayfalara yönlendirirken genellikle belirli verileri de onlarla birlikte iletmek istersiniz. Verileri session’a manuel olarak aktarabilirsiniz, ancak Laravel’in size bu konuda yardımcı olacak bazı kullanışlı metotları vardır.</p>
-
-<p>En yaygın olarak, Örnek 3-42’de olduğu gibi with() kullanarak bir anahtar ve değer dizisini veya tek bir anahtar ve değeri iletebilirsiniz. Bu, verilerinizi yalnızca bir sonraki sayfa yüklemesi için session’a kaydeder.</p>
-
-<p><strong>Örnek 3-42</strong>. Data ile yönlendirme</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('redirect-with-key-value', function () {
-    return redirect('dashboard')
-        -&gt;with('error', true);
-});
-
-Route::get('redirect-with-array', function () {
-    return redirect('dashboard')
-        -&gt;with(['error' =&gt; true, 'message' =&gt; 'Whoops!']);
-});
-</code></pre></div></div>
-
-<p>Ayrıca, Örnek 3-43’te olduğu gibi, kullanıcının form girişi ile yönlendirme yapmak için withInput() metodunu kullanabilirsiniz; Bu, kullanıcıyı az önce geldiği forma geri göndermek istediğiniz doğrulama hatası durumunda en yaygın kullanımdır.</p>
-
-<p><strong>Örnek 3-43</strong>. Form girişiyle yönlendirme</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('form', function () {
-    return view('form');
-});
-
-Route::post('form', function () {
-    return redirect('form')
-        -&gt;withInput()
-        -&gt;with(['error' =&gt; true, 'message' =&gt; 'Whoops!']);
-});
-</code></pre></div></div>
-
-<p>withInput() ile aktarılan girişi almanın en kolay yolu, tüm eski girişleri almak için kullanılabilecek old() helper’ı kullanmaktır. Bunu genellikle view’da göreceksiniz; bu, formun hem “create” hem de “edit” view’ında kullanılmasına olanak tanır:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;input name="username" value="&lt;?=
-    old('username', 'Default username instructions here');
-?&gt;"&gt;
-</code></pre></div></div>
-
-<p>Doğrulamadan bahsetmişken, hataları yönlendirme yanıtıyla birlikte iletmek için de yararlı bir metot vardır: withErrors(). Herhangi bir error “provider” iletebilirsiniz; bu bir hata dizesi, bir dizi hata veya yaygın olarak kullanılan Illuminate Validator‘ın bir örneği olabilir.</p>
-
-<p><strong>Örnek 3-44</strong>. Hatalar ile  yönlendirme</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::post('form', function (Illuminate\Http\Request $request) {
-    $validator = Validator::make($request-&gt;all(), $this-&gt;validationRules);
-    
-    if ($validator-&gt;fails()) {
-        return back()
-            -&gt;withErrors($validator)
-            -&gt;withInput();
-    }
-});
-</code></pre></div></div>
-
-<p>withErrors(), yönlendirdiği sayfanın view’ı ile otomatik olarak bir $errors değişkenini paylaşır, böylece istediğiniz gibi işlem yapabilirsiniz.</p>
-
-<h2 id="requestin-i̇ptal-edilmesi">Request’in İptal Edilmesi</h2>
-
-<p>Geri dönen view ve yönlendirmelerin yanı sıra, bir rotadan çıkmanın en yaygın yolu iptal (abort) etmektir. İsteğe bağlı olarak HTTP status kodlarını, bir mesajı ve bir başlık dizisini parametre olarak alan, global olarak kullanılabilen birkaç metot (abort(), abort_if() ve abort_unless()) vardır.</p>
-
-<p>Örnek 3-45’te gösterildiği gibi, abort_if() ve abort_unless(), doğruluğu açısından değerlendirilen bir parametreyi alır ve sonuca bağlı olarak iptal işlemini gerçekleştirir.</p>
-
-<p><strong>Örnek 3-45</strong>. 403 Abort</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::post('something-you-cant-do', function (Illuminate\Http\Request $request) {
-    abort(403, 'You cannot do that!');
-    abort_unless($request-&gt;has('magicToken'), 403);
-    abort_if($request-&gt;user()-&gt;isBanned, 403);
-});
-</code></pre></div></div>
-
-<h2 id="özel-yanıtlar">Özel Yanıtlar</h2>
-
-<p>Geri dönebileceğimiz birkaç seçenek daha var; view, yönlendirme ve iptallerden sonra en yaygın olanları gözden geçirelim. Yönlendirmelerde olduğu gibi, bu metotları da response() helper veya Response facade ile çalıştırabilirsiniz.</p>
-
-<p><strong>response()-&gt;make()</strong></p>
-
-<p>Manuel olarak bir HTTP response oluşturmak istiyorsanız, verilerinizi response()-&gt;make()’in ilk parametresine aktarmanız yeterlidir: örneğin, return response()-&gt;make(Hello, World!). Bir kez daha, ikinci parametre HTTP status kodudur ve üçüncüsü ise başlıklarınızdır.</p>
-
-<p><strong>response()-&gt;json() ve -&gt;jsonp()</strong></p>
-
-<p>JSON kodlu bir HTTP response’u manuel olarak oluşturmak için, JSON uyumlu içeriğinizi (diziler, koleksiyonlar veya başka herhangi bir şey) json() metoduna aktarın: örneğin, return response()-&gt;json(User::all()).</p>
-
-<p><strong>response()-&gt;download(), -&gt;streamDownload(), ve -&gt;file()</strong></p>
-
-<p>Kullanıcıya indirebileceği bir dosya göndermek için, download()’a bir SplFileInfo örneği veya dosya adı iletin: örneğin, return response()-&gt;download(‘file501751.pdf’, ‘myFile.pdf’), bu da file501751.pdf konumundaki bir dosyayı gönderir ve gönderildiği şekliyle myFile.pdf olarak yeniden adlandırır.</p>
-
-<p>Aynı dosyayı tarayıcıda görüntülemek için (eğer bu bir PDF, resim veya tarayıcının işleyebileceği başka bir şeyse), bunun yerine response-&gt;download() ile aynı parametreleri alan response()-&gt;file() kullanın.</p>
-
-<p>Doğrudan sunucunuzun diskine yazmak zorunda kalmadan, harici bir servisteki içerikleri indirilebilir hale getirmek istiyorsanız, response()-&gt;streamDownload()) metodunu kullanabilirsiniz. Bu metot, parametre olarak bir dizeyi, dosya adını ve isteğe bağlı olarak header dizisini dönen bir closure bekler; bkz. Örnek 3-46.</p>
-
-<p><strong>Örnek 3-46</strong>. Harici sunuculardan indirilen dosyalar</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>return response()-&gt;streamDownload(function () {
-    echo DocumentService::file('myFile')-&gt;getContent();
-}, 'myFile.pdf');
-</code></pre></div></div>
-
-<h2 id="özet">Özet</h2>
-
-<p>Laravel’in rotaları, routes/web.php ve routes/api.php’de tanımlanır. Her rota için beklenen yolu, hangi segmentlerin static, hangilerinin parametre olduğunu, hangi HTTP fiillerinin rotaya erişebileceğini ve bunun nasıl çözümleneceğini tanımlayabilirsiniz. Ayrıca rotalara middleware ekleyebilir, bunları gruplandırabilir ve onlara adlar verebilirsiniz.</p>
-
-<p>Rota closure veya controller metodundan döndürülen şey, Laravel’in kullanıcıya nasıl yanıt vereceğini belirler. Bir dize veya view ise kullanıcıya sunulur; eğer başka türden bir veri ise JSON’a dönüştürülür ve kullanıcıya sunulur; ve eğer bu bir yönlendirmeyse, yönlendirmeye zorlar.</p>
-
-<p>Laravel, yönlendirme ile ilgili genel görevleri ve yapıları basitleştirmek için bir dizi araç ve kolaylık sağlar. Bunlar resource controller, route model binding, ve form method spoofing’tir.</p>
-
-<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Herhangi bir web uygulama framework’ünün temel işlevi, kullanıcıdan istek almak ve yanıtları, genellikle HTTP(S) aracılığıyla iletmektir. Bu, bir framework’ü öğrenirken ele alınması gereken ilk ve en önemli şeyin uygulamanın rotalarını tanımlamak olduğu anlamına gelir; rotalar olmadan, son kullanıcıyla etkileşim kurma yeteneğiniz çok azdır veya hiç yoktur.]]></summary></entry></feed>
+<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Dinamik web’in ilk günlerinde, web uygulaması yazmak bugün olduğundan çok daha farklı görünüyordu. O zaman geliştiriciler, yalnızca uygulamalarımızın benzersiz iş mantığı için değil, aynı zamanda sitelerde çok yaygın olan kullanıcı kimlik doğrulaması, input validation, veritabanı erişimi, templating vb. bileşenlerin her biri için kod yazmaktan sorumluydu.]]></summary></entry></feed>
