@@ -51,7 +51,7 @@
 
 <h2 id="rubyyi-yüklemek">Ruby’yi Yüklemek</h2>
 
-<p>İşletim sisteminizde Ruby’nin zaten kurulu olması ihtimali yüksektir. Komut istemine <code class="language-plaintext highlighter-rouge">ruby -- version</code> yazmayı deneyin; hoş bir sürpriz yaşayabilirsiniz. Ancak büyük olasılıkla Ruby sürümünün güncel olmadığını göreceksiniz. Örneğin, bu yazının yazıldığı sırada macOS Ruby 2.6.10 ile birlikte gelir.</p>
+<p>İşletim sisteminizde Ruby’nin zaten kurulu olması ihtimali yüksektir. Komut istemine <code class="language-plaintext highlighter-rouge">ruby --version</code> yazmayı deneyin; hoş bir sürpriz yaşayabilirsiniz. Ancak büyük olasılıkla Ruby sürümünün güncel olmadığını göreceksiniz. Örneğin, bu yazının yazıldığı sırada macOS Ruby 2.6.10 ile birlikte gelir.</p>
 
 <p>Bu kitaptaki örnekler Ruby 3.2’de yazılmıştır. Kodun çoğu Ruby’nin eski sürümlerinde çalışsa da, performans ve güvenlik nedeniyle en güncel sürümü kullanmaya çalışmalısınız.</p>
 
@@ -96,7 +96,7 @@ eval "$(rbenv init - zsh)"
 <p>Kurulumunuz ne olursa olsun, bu talimatta almanız gerekenler:</p>
 
 <ul>
-  <li>Güncellemeniz gereken kabuk yapılandırmasını içeren dosya</li>
+  <li>Güncellemeniz gereken shell yapılandırmasını içeren dosya</li>
   <li>Dosyanın sonuna koymanız gereken metin</li>
 </ul>
 
@@ -125,7 +125,7 @@ Use 'rbenv install --list-all / -L' to show all local versions.
 
 <p>Bu liste, çeşitli Ruby uygulamalarının en güncel yama sürümüdür. Ana Ruby uygulama sürümü 2.7, 3.0, 3.1 ve 3.2 için Ruby sürümlerini görebilirsiniz. (Farklı Ruby uygulamalarından bahsederken, ana versiyona bazen CRuby, bazen de “Matz’ın Ruby Yorumlayıcısı” için MRI denir.) Burada fazla bahsetmeyeceğimiz başka versiyonlar da var. JRuby, Java Sanal Makinesi üzerinde çalışan bir Ruby sürümüdür; mruby ise gömülü donanım üzerinde çalışmaya yönelik özel sınırlı bir Ruby yapısıdır. Rbx, Ruby’yi Ruby’de uygulamaya yönelik artık kullanılmayan bir proje olan Rubinius’tur ve TruffleRuby, yüksek performansa odaklanan dilin bir uygulamasıdır.</p>
 
-<p>Şu an ilgi alanımız rbenv install 3.2.0 komutuyla kurabileceğimiz Ruby 3.2.0. Listede Ruby’nin en güncel sürümünü göremiyorsanız ve rbenv’i daha önce yüklediyseniz, listenizde daha yeni Ruby sürümleri almak için ruby-build’i nasıl güncelleyeceğinize ilişkin talimatlar alabilirsiniz. Rbenv komutlarının hiçbirinin superuser erişimine sahip olmamızı veya sudo kullanmamızı gerektirmediğini unutmayın. Rbenv de dahil olmak üzere Ruby sürüm yöneticilerinin keyifleri yanlarından biri, her şeyi ana dizininizin içinde yapmalarıdır, yeni Ruby sürümlerini yüklemek veya kullanmak için herhangi bir özel sistem ayrıcalığına ihtiyacınız yoktur.</p>
+<p>Şu an ilgi alanımız <code class="language-plaintext highlighter-rouge">rbenv install 3.2.0</code> komutuyla kurabileceğimiz Ruby 3.2.0. Listede Ruby’nin en güncel sürümünü göremiyorsanız ve rbenv’i daha önce yüklediyseniz, listenizde daha yeni Ruby sürümleri almak için ruby-build’i nasıl güncelleyeceğinize ilişkin talimatlar alabilirsiniz. Rbenv komutlarının hiçbirinin superuser erişimine sahip olmamızı veya sudo kullanmamızı gerektirmediğini unutmayın. Rbenv de dahil olmak üzere Ruby sürüm yöneticilerinin keyifleri yanlarından biri, her şeyi ana dizininizin içinde yapmalarıdır, yeni Ruby sürümlerini yüklemek veya kullanmak için herhangi bir özel sistem ayrıcalığına ihtiyacınız yoktur.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ rbenv install 3.2.0
 To follow progress, use
@@ -175,7 +175,7 @@ $ ruby --version
 ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
 </code></pre></div></div>
 
-<p>Rbenv bunu dizine .ruby-version adlı bir dosya koyarak başarır, bu sadece o dizin için ayarladığınız Ruby’nin sürüm numarasını içerir.</p>
+<p>Rbenv bunu dizine <code class="language-plaintext highlighter-rouge">.ruby-version</code> adlı bir dosya koyarak başarır, bu sadece o dizin için ayarladığınız Ruby’nin sürüm numarasını içerir.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>% cat .ruby-version
 3.2.0
@@ -193,7 +193,7 @@ ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
 
 <p>Unix terminali, bir komut yazdığınızda yürütülebilir programlar için hangi dizinlere bakacağını belirlemek amacıyla PATH adı verilen genel bir ortam değişkenini kullanır. Terminalinizin yapılandırma dosyasına bakarsanız, muhtemelen PATH değişkeninin değiştirildiğini göreceksiniz.</p>
 
-<p>Terminal kurulumunuzun bir parçası olarak rbenv init komutu yürütüldüğünde, PATH’inizin önüne bir dizin ekler, böylece işletim sisteminiz başka bir yere bakmadan önce rbenv dizinine bakar. Bu dizinde rbenv’in shim olarak adlandırdığı bir dizi şey vardır; Tüm Ruby sürümlerinizdeki tüm yürütülebilir komutlarla eşleşen küçük programlar (Yeni bir Ruby kurduktan sonra <code class="language-plaintext highlighter-rouge">rbenv rehash</code>‘ı çalıştırmanızın nedeni bu dizini yenilemektir). Ruby veya (birazdan göreceğiniz gibi) irb gibi bir Ruby komutunu çağırdığınızda, ilk önce rbenv shim ile karşılaşılır ve genellikle bir .ruby-version dosyasının varlığına bağlı olarak hangi Ruby’nin aktif olduğunu dinamik olarak seçer. Daha sonra komut, o geçerli sürümdeki gerçek yürütülebilir programa aktarılır. Bu gerçek sürümleri görebilirsiniz, ~/.rbenv/versions adresindeki ana dizininizde bulunurlar.</p>
+<p>Terminal kurulumunuzun bir parçası olarak <code class="language-plaintext highlighter-rouge">rbenv init</code> komutu yürütüldüğünde, PATH’inizin önüne bir dizin ekler, böylece işletim sisteminiz başka bir yere bakmadan önce rbenv dizinine bakar. Bu dizinde rbenv’in shim olarak adlandırdığı bir dizi şey vardır; Tüm Ruby sürümlerinizdeki tüm yürütülebilir komutlarla eşleşen küçük programlar (Yeni bir Ruby kurduktan sonra <code class="language-plaintext highlighter-rouge">rbenv rehash</code>‘ı çalıştırmanızın nedeni bu dizini yenilemektir). Ruby veya (birazdan göreceğiniz gibi) <code class="language-plaintext highlighter-rouge">irb</code> gibi bir Ruby komutunu çağırdığınızda, ilk önce rbenv shim ile karşılaşılır ve genellikle bir <code class="language-plaintext highlighter-rouge">.ruby-version</code> dosyasının varlığına bağlı olarak hangi Ruby’nin aktif olduğunu dinamik olarak seçer. Daha sonra komut, o geçerli sürümdeki gerçek yürütülebilir programa aktarılır. Bu gerçek sürümleri görebilirsiniz, ~/.rbenv/versions adresindeki ana dizininizde bulunurlar.</p>
 
 <h2 id="rubyyi-çalıştırmak">Ruby’yi Çalıştırmak</h2>
 
@@ -203,7 +203,7 @@ ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
 ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
 </code></pre></div></div>
 
-<p>Teknik olarak, yalnızca kabuk komut istemine ruby yazarak Ruby’yi etkileşimli olarak çalıştırabilirsiniz. Yanıt olarak boş bir satır alacaksınız ve oraya Ruby kodunu yazabilirsiniz.</p>
+<p>Teknik olarak, yalnızca shell komut istemine ruby yazarak Ruby’yi etkileşimli olarak çalıştırabilirsiniz. Yanıt olarak boş bir satır alacaksınız ve oraya Ruby kodunu yazabilirsiniz.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ruby
 puts "Hello, world!" 
@@ -232,7 +232,7 @@ irb(main):005:0&gt; sum("cat", "dog") =&gt; "catdog"
 irb(main):006:0&gt; exit
 </code></pre></div></div>
 
-<p>Bu oturumun ilk üç satırında sum adında bir metot tanımlıyoruz. Bu metodu tanımlama eylemi, metodun adıyla eşleşen bir Ruby sembolü olan :sum değerini döndürür. Semboller ve metot adları hakkında daha sonra daha fazla konuşacağız. 4. satırda, önce 3 ve 4 parametreleriyle, ardından 5. satırda “cat” ve “dog” parametreleriyle metodu çağırıyoruz. Ruby’de dizeleri eklemek onları birleştirir, böylece “catdog” dizesi döndürülür. Daha sonra 6. satırda çıkıyoruz.</p>
+<p>Bu oturumun ilk üç satırında <code class="language-plaintext highlighter-rouge">sum</code> adında bir metot tanımlıyoruz. Bu metodu tanımlama eylemi, metodun adıyla eşleşen bir Ruby sembolü olan <code class="language-plaintext highlighter-rouge">:sum</code> değerini döndürür. Semboller ve metot adları hakkında daha sonra daha fazla konuşacağız. 4. satırda, önce 3 ve 4 parametreleriyle, ardından 5. satırda “cat” ve “dog” parametreleriyle metodu çağırıyoruz. Ruby’de dizeleri eklemek onları birleştirir, böylece “catdog” dizesi döndürülür. Daha sonra 6. satırda çıkıyoruz.</p>
 
 <p>Bunu Ruby 3.1 veya üzeri sürümlerde denerseniz, irb’nin değişken adlarını, komutları ve renk kodlarını otomatik olarak tamamlamaya çalıştığını fark edeceksiniz; bunların hiçbirinin bir kitapta gösterilmesi kolay değildir.</p>
 

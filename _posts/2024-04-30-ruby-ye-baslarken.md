@@ -7,7 +7,7 @@ Bu kitapta Ruby dili hakkında konuşarak çok zaman harcayacağız. Bunu yapmad
 
 ## Ruby'yi Yüklemek
 
-İşletim sisteminizde Ruby'nin zaten kurulu olması ihtimali yüksektir. Komut istemine `ruby -- version` yazmayı deneyin; hoş bir sürpriz yaşayabilirsiniz. Ancak büyük olasılıkla Ruby sürümünün güncel olmadığını göreceksiniz. Örneğin, bu yazının yazıldığı sırada macOS Ruby 2.6.10 ile birlikte gelir.
+İşletim sisteminizde Ruby'nin zaten kurulu olması ihtimali yüksektir. Komut istemine `ruby --version` yazmayı deneyin; hoş bir sürpriz yaşayabilirsiniz. Ancak büyük olasılıkla Ruby sürümünün güncel olmadığını göreceksiniz. Örneğin, bu yazının yazıldığı sırada macOS Ruby 2.6.10 ile birlikte gelir.
 
 Bu kitaptaki örnekler Ruby 3.2'de yazılmıştır. Kodun çoğu Ruby'nin eski sürümlerinde çalışsa da, performans ve güvenlik nedeniyle en güncel sürümü kullanmaya çalışmalısınız.
 
@@ -54,7 +54,7 @@ eval "$(rbenv init - zsh)"
 
 Kurulumunuz ne olursa olsun, bu talimatta almanız gerekenler:
 
-- Güncellemeniz gereken kabuk yapılandırmasını içeren dosya
+- Güncellemeniz gereken shell yapılandırmasını içeren dosya
 - Dosyanın sonuna koymanız gereken metin
 
 Önerilen metin satırını yapılandırma dosyanızın sonuna koymanız ve yeni bir terminal penceresi açmanız gerekir; değişiklik yalnızca bir pencere yüklendiğinde etkili olur, dolayısıyla rbenv'i başlatmanın en kolay yolu yeni bir terminal penceresi açmaktır.
@@ -83,7 +83,7 @@ Use 'rbenv install --list-all / -L' to show all local versions.
 
 Bu liste, çeşitli Ruby uygulamalarının en güncel yama sürümüdür. Ana Ruby uygulama sürümü 2.7, 3.0, 3.1 ve 3.2 için Ruby sürümlerini görebilirsiniz. (Farklı Ruby uygulamalarından bahsederken, ana versiyona bazen CRuby, bazen de “Matz'ın Ruby Yorumlayıcısı” için MRI denir.) Burada fazla bahsetmeyeceğimiz başka versiyonlar da var. JRuby, Java Sanal Makinesi üzerinde çalışan bir Ruby sürümüdür; mruby ise gömülü donanım üzerinde çalışmaya yönelik özel sınırlı bir Ruby yapısıdır. Rbx, Ruby'yi Ruby'de uygulamaya yönelik artık kullanılmayan bir proje olan Rubinius'tur ve TruffleRuby, yüksek performansa odaklanan dilin bir uygulamasıdır.
 
-Şu an ilgi alanımız rbenv install 3.2.0 komutuyla kurabileceğimiz Ruby 3.2.0. Listede Ruby'nin en güncel sürümünü göremiyorsanız ve rbenv'i daha önce yüklediyseniz, listenizde daha yeni Ruby sürümleri almak için ruby-build'i nasıl güncelleyeceğinize ilişkin talimatlar alabilirsiniz. Rbenv komutlarının hiçbirinin superuser erişimine sahip olmamızı veya sudo kullanmamızı gerektirmediğini unutmayın. Rbenv de dahil olmak üzere Ruby sürüm yöneticilerinin keyifleri yanlarından biri, her şeyi ana dizininizin içinde yapmalarıdır, yeni Ruby sürümlerini yüklemek veya kullanmak için herhangi bir özel sistem ayrıcalığına ihtiyacınız yoktur.
+Şu an ilgi alanımız `rbenv install 3.2.0` komutuyla kurabileceğimiz Ruby 3.2.0. Listede Ruby'nin en güncel sürümünü göremiyorsanız ve rbenv'i daha önce yüklediyseniz, listenizde daha yeni Ruby sürümleri almak için ruby-build'i nasıl güncelleyeceğinize ilişkin talimatlar alabilirsiniz. Rbenv komutlarının hiçbirinin superuser erişimine sahip olmamızı veya sudo kullanmamızı gerektirmediğini unutmayın. Rbenv de dahil olmak üzere Ruby sürüm yöneticilerinin keyifleri yanlarından biri, her şeyi ana dizininizin içinde yapmalarıdır, yeni Ruby sürümlerini yüklemek veya kullanmak için herhangi bir özel sistem ayrıcalığına ihtiyacınız yoktur.
 
 ```
 $ rbenv install 3.2.0
@@ -137,7 +137,7 @@ $ ruby --version
 ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
 ```
 
-Rbenv bunu dizine .ruby-version adlı bir dosya koyarak başarır, bu sadece o dizin için ayarladığınız Ruby'nin sürüm numarasını içerir.
+Rbenv bunu dizine `.ruby-version` adlı bir dosya koyarak başarır, bu sadece o dizin için ayarladığınız Ruby'nin sürüm numarasını içerir.
 
 ```
 % cat .ruby-version
@@ -156,7 +156,7 @@ Rbenv, dinamik davranışını normal terminal ortamınızda mümkün olduğunca
 
 Unix terminali, bir komut yazdığınızda yürütülebilir programlar için hangi dizinlere bakacağını belirlemek amacıyla PATH adı verilen genel bir ortam değişkenini kullanır. Terminalinizin yapılandırma dosyasına bakarsanız, muhtemelen PATH değişkeninin değiştirildiğini göreceksiniz.
 
-Terminal kurulumunuzun bir parçası olarak rbenv init komutu yürütüldüğünde, PATH'inizin önüne bir dizin ekler, böylece işletim sisteminiz başka bir yere bakmadan önce rbenv dizinine bakar. Bu dizinde rbenv'in shim olarak adlandırdığı bir dizi şey vardır; Tüm Ruby sürümlerinizdeki tüm yürütülebilir komutlarla eşleşen küçük programlar (Yeni bir Ruby kurduktan sonra `rbenv rehash`'ı çalıştırmanızın nedeni bu dizini yenilemektir). Ruby veya (birazdan göreceğiniz gibi) irb gibi bir Ruby komutunu çağırdığınızda, ilk önce rbenv shim ile karşılaşılır ve genellikle bir .ruby-version dosyasının varlığına bağlı olarak hangi Ruby'nin aktif olduğunu dinamik olarak seçer. Daha sonra komut, o geçerli sürümdeki gerçek yürütülebilir programa aktarılır. Bu gerçek sürümleri görebilirsiniz, ~/.rbenv/versions adresindeki ana dizininizde bulunurlar.
+Terminal kurulumunuzun bir parçası olarak `rbenv init` komutu yürütüldüğünde, PATH'inizin önüne bir dizin ekler, böylece işletim sisteminiz başka bir yere bakmadan önce rbenv dizinine bakar. Bu dizinde rbenv'in shim olarak adlandırdığı bir dizi şey vardır; Tüm Ruby sürümlerinizdeki tüm yürütülebilir komutlarla eşleşen küçük programlar (Yeni bir Ruby kurduktan sonra `rbenv rehash`'ı çalıştırmanızın nedeni bu dizini yenilemektir). Ruby veya (birazdan göreceğiniz gibi) `irb` gibi bir Ruby komutunu çağırdığınızda, ilk önce rbenv shim ile karşılaşılır ve genellikle bir `.ruby-version` dosyasının varlığına bağlı olarak hangi Ruby'nin aktif olduğunu dinamik olarak seçer. Daha sonra komut, o geçerli sürümdeki gerçek yürütülebilir programa aktarılır. Bu gerçek sürümleri görebilirsiniz, ~/.rbenv/versions adresindeki ana dizininizde bulunurlar.
 
 ## Ruby'yi Çalıştırmak
 
@@ -167,7 +167,7 @@ $ ruby --version
 ruby 3.2.0 (2022-12-25 revision a528908271) [arm64-darwin22]
 ```
 
-Teknik olarak, yalnızca kabuk komut istemine ruby yazarak Ruby'yi etkileşimli olarak çalıştırabilirsiniz. Yanıt olarak boş bir satır alacaksınız ve oraya Ruby kodunu yazabilirsiniz.
+Teknik olarak, yalnızca shell komut istemine ruby yazarak Ruby'yi etkileşimli olarak çalıştırabilirsiniz. Yanıt olarak boş bir satır alacaksınız ve oraya Ruby kodunu yazabilirsiniz.
 
 ```
 $ ruby
@@ -198,7 +198,7 @@ irb(main):005:0> sum("cat", "dog") => "catdog"
 irb(main):006:0> exit
 ```
 
-Bu oturumun ilk üç satırında sum adında bir metot tanımlıyoruz. Bu metodu tanımlama eylemi, metodun adıyla eşleşen bir Ruby sembolü olan :sum değerini döndürür. Semboller ve metot adları hakkında daha sonra daha fazla konuşacağız. 4. satırda, önce 3 ve 4 parametreleriyle, ardından 5. satırda "cat" ve "dog" parametreleriyle metodu çağırıyoruz. Ruby'de dizeleri eklemek onları birleştirir, böylece "catdog" dizesi döndürülür. Daha sonra 6. satırda çıkıyoruz.
+Bu oturumun ilk üç satırında `sum` adında bir metot tanımlıyoruz. Bu metodu tanımlama eylemi, metodun adıyla eşleşen bir Ruby sembolü olan `:sum` değerini döndürür. Semboller ve metot adları hakkında daha sonra daha fazla konuşacağız. 4. satırda, önce 3 ve 4 parametreleriyle, ardından 5. satırda "cat" ve "dog" parametreleriyle metodu çağırıyoruz. Ruby'de dizeleri eklemek onları birleştirir, böylece "catdog" dizesi döndürülür. Daha sonra 6. satırda çıkıyoruz.
 
 Bunu Ruby 3.1 veya üzeri sürümlerde denerseniz, irb'nin değişken adlarını, komutları ve renk kodlarını otomatik olarak tamamlamaya çalıştığını fark edeceksiniz; bunların hiçbirinin bir kitapta gösterilmesi kolay değildir.
 
