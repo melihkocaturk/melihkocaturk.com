@@ -1,5 +1,1401 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://www.melihkocaturk.com//feed.xml" rel="self" type="application/atom+xml" /><link href="http://www.melihkocaturk.com//" rel="alternate" type="text/html" /><updated>2024-04-30T16:50:26+03:00</updated><id>http://www.melihkocaturk.com//feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
-</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Ruby’ye Başlarken</title><link href="http://www.melihkocaturk.com//2024/04/30/ruby-ye-baslarken.html" rel="alternate" type="text/html" title="Ruby’ye Başlarken" /><published>2024-04-30T00:00:00+03:00</published><updated>2024-04-30T00:00:00+03:00</updated><id>http://www.melihkocaturk.com//2024/04/30/ruby-ye-baslarken</id><content type="html" xml:base="http://www.melihkocaturk.com//2024/04/30/ruby-ye-baslarken.html"><![CDATA[<p>Bu kitapta Ruby dili hakkında konuşarak çok zaman harcayacağız. Bunu yapmadan önce Ruby’yi bilgisayarınıza kurup çalıştırabildiğinizden emin olmak istiyoruz. Bu şekilde örnek kodları deneyebilir ve okurken kendi başınıza denemeler yapabilirsiniz. Ruby’yi öğrenmek istiyorsanız, okurken kod yazma alışkanlığını da edinmelisiniz.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-14T21:38:47+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
+</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Shell’i Öğrenmek</title><link href="http://localhost:4000/2024/05/14/shell-i-ogrenmek.html" rel="alternate" type="text/html" title="Shell’i Öğrenmek" /><published>2024-05-14T00:00:00+03:00</published><updated>2024-05-14T00:00:00+03:00</updated><id>http://localhost:4000/2024/05/14/shell-i-ogrenmek</id><content type="html" xml:base="http://localhost:4000/2024/05/14/shell-i-ogrenmek.html"><![CDATA[<p>Neden komut satırını öğrenmeniz gerekiyor? Peki, size bir hikaye anlatayım. Yıllar önce çalıştığım yerde bir sorun yaşadık. Dosya sunucularımızdan birinde sürekli dolmaya başlayan bir ortak sürücü vardı. Bu eski işletim sisteminin kullanıcı kotalarını desteklemediğinden bahsetmeyeceğim; bu başka bir hikaye. Ancak sunucu dolmaya devam etti ve insanların çalışmasını engelledi. Yazılım mühendislerimizden biri, tüm kullanıcı dizinlerini tarayacak, kullandıkları alanı toplayacak ve sonuçların listesini yapacak bir C++ programı yazmak için birkaç saat harcadı. İşteyken eski işletim sistemini kullanmak zorunda kaldığım için Linux benzeri bir komut satırı ortamı kurdum. Sorunu duyduğumda bu görevi şu tek satırla yapabileceğimi fark ettim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>du -s * | sort -nr &gt; $HOME/user_space_report.txt
+</code></pre></div></div>
+
+<p>Grafik kullanıcı arayüzleri (GUI’ler) birçok görev için faydalıdır ancak tüm görevler için iyi değildir. Uzun zamandır günümüz bilgisayarlarının çoğunun elektrikle çalışmadığını hissettim. Bunun yerine farenin “pompalama” hareketiyle güç alıyor gibi görünüyorlar. Bilgisayarların bizi manuel işlerden kurtarması gerekiyordu, ancak kaç kez bilgisayarın yapabileceğinden emin olduğunuz bir görevi yerine getirdiniz, fareyi sıkıcı bir şekilde kullanarak işi kendiniz yapmak zorunda kaldınız?</p>
+
+<p>Bir keresinde bir yazarın, çocukken bilgisayarı resimlere bakarak kullandığını söylediğini duymuştum. Büyüyünce okumayı ve yazmayı öğrenirsin. Bilgisayar Okuryazarlığı 101’e hoş geldiniz. Şimdi işe koyulalım.</p>
+
+<h2 id="shell-nedir">“Shell” nedir?</h2>
+
+<p>Basitçe söylemek gerekirse shell, klavyeden komutları alan ve bunları gerçekleştirmesi için işletim sistemine veren bir programdır. Eski günlerde Linux gibi Unix benzeri sistemlerde kullanılabilen tek kullanıcı arayüzüydü. Günümüzde shell gibi komut satırı arayüzlerinin (CLI’ler) yanı sıra grafik kullanıcı arayüzlerine (GUI’ler) de sahibiz.</p>
+
+<p>Çoğu Linux sisteminde, <strong>bash</strong> adı verilen bir program (Bourne Again SHell anlamına gelir; orijinal Unix shell programının geliştirilmiş versiyonu olan <strong>sh</strong>, Steve Bourne tarafından yazılmıştır) shell görevi görür. Linux sistemleri için bash’ın yanı sıra başka shell programları da mevcuttur: <strong>ksh</strong>, <strong>tcsh</strong> ve <strong>zsh</strong>.</p>
+
+<h3 id="terminal-nedir">“Terminal” nedir?</h3>
+
+<p>Terminal emülatörü adı verilen bir programdır. Bu, bir pencere açan ve shell ile etkileşime girmenizi sağlayan bir programdır. Kullanabileceğimiz bir sürü farklı terminal emülatörü var. Bazı Linux dağıtımları birkaç tane yükler. Bunlar <strong>gnome-terminal</strong>, <strong>konsole</strong>, <strong>xterm</strong>, <strong>rxvt</strong>, <strong>kvt</strong>, <strong>nxterm</strong> ve <strong>eterm</strong>‘i içerebilir.</p>
+
+<h3 id="terminali-başlatmak">Terminali Başlatmak</h3>
+
+<p>Genellikle menüden terminal başlatmanın bir yolu vardır. Terminal emülatörüne benzeyen bir şey olup olmadığını görmek için program listesine bakın. Çok sayıda farklı terminal emülatörü olmasına rağmen hepsi aynı şeyi yapar. Bizim için shell oturumuna erişim sağlıyorlar. Sağladığı farklı özelliklere göre muhtemelen bir tanesini tercih edeceksiniz.</p>
+
+<h3 id="klavyeyi-test-etmek">Klavyeyi Test Etmek</h3>
+
+<p>Tamam, biraz yazmayı deneyelim. Bir terminal penceresi açın. Görmemiz gereken ilk şey, kullanıcı adınız, makinenin adı ve ardından dolar işaretini içeren bir shell prompt udur. Bunun gibi bir şey:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$
+</code></pre></div></div>
+
+<p>Harika! Şimdi bazı rastgele karakterler yazın ve enter tuşuna basın.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ kdkjflajfks
+</code></pre></div></div>
+
+<p>Her şey yolunda giderse, komutun anlaşılamadığından şikayet eden bir hata mesajı almış olmalıyız:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ kdkjflajfks
+bash: kdkjflajfks: command not found
+</code></pre></div></div>
+
+<p>Müthiş! Şimdi yukarı ok tuşuna basın. Önceki komutumuz “kdkjflajfks”in nasıl döndüğünü izleyin. Evet, komut geçmişimiz var. Aşağı oka bastığımızda tekrar boş satıra ulaşıyoruz.</p>
+
+<p>Gerekirse yukarı ok tuşunu kullanarak “kdkjflajfks” komutunu geri çağırın. Şimdi sol ve sağ ok tuşlarını deneyin. İmleci komut satırında herhangi bir yere konumlandırabiliriz. Bu, hataları kolayca düzeltmemize olanak tanır.</p>
+
+<p><strong>Root olarak çalışmadığınıza emin olun!</strong></p>
+
+<p>Shell prompt unuzun son karakteri $ yerine # ise, superuser olarak çalışıyorsunuz demektir. Bu, yönetici ayrıcalıklarına sahip olduğunuz anlamına gelir. Sistemdeki herhangi bir dosyayı silebileceğiniz veya üzerine yazabileceğiniz için bu tehlikeli olabilir. Kesinlikle yönetici ayrıcalıklarına ihtiyacınız olmadığı sürece superuser olarak çalışmayın.</p>
+
+<h3 id="fareyi-kullanmak">Fare’yi Kullanmak</h3>
+
+<p>Shell bir komut satırı arayüzü olmasına rağmen fare hala kullanışlıdır.</p>
+
+<p>Terminal penceresinin içeriğini kaydırmak için fareyi kullanmanın yanı sıra, metni kopyalamak için de kullanabiliriz. Sol düğmeyi basılı tutarken fareyi bir metnin üzerine sürükleyin. Metin vurgulanmalıdır. Sol düğmeyi bırakın, fare işaretçisini terminal penceresine getirin ve orta fare düğmesine basın (alternatif olarak, dokunmatik yüzey üzerinde çalışırken hem sol hemde sağ düğmelere aynı anda basın). Pencerede vurguladığımız metin, komut satırına kopyalanacaktır.</p>
+
+<h2 id="navigasyon">Navigasyon</h2>
+
+<p>Bu derste ilk üç komutumuzu tanıtacağız: <strong>pwd</strong> (print working directory), <strong>cd</strong> (change directory) ve <strong>ls</strong> (list files and directories).</p>
+
+<p>Kavramlara alışmak biraz zaman alacağından, komut satırına yeni başlayanlar bu derse çok dikkat etmelidir.</p>
+
+<h3 id="dosya-sistemi-organizasyonu">Dosya Sistemi Organizasyonu</h3>
+
+<p>Windows gibi, Linux sistemindeki dosyalar da hiyerarşik dizin yapısı adı verilen şekilde düzenlenir. Bu, dosyaları ve alt dizinleri içerebilen, ağaç benzeri bir dizin düzeninde (diğer sistemlerde klasörler olarak adlandırılır) organize edildikleri anlamına gelir. Dosya sistemindeki ilk dizine kök (root) dizin denir. Kök dizin, daha fazla dosya ve alt dizin vb. içeren dosyalar ve alt dizinler içerir.</p>
+
+<p>Çoğu grafik ortam, dosya sisteminin içeriğini görüntülemek ve değiştirmek için kullanılan bir dosya yöneticisi programı içerir. Çoğu zaman dosya sisteminin şu şekilde temsil edildiğini göreceğiz:</p>
+
+<p><img src="/assets/images/2024/05/file-manager.jpg" alt="File Manager" title="File Manager" class="img-fluid" /></p>
+
+<p>Windows ile Linux gibi Unix benzeri işletim sistemleri arasındaki önemli bir fark, Linux’un sürücü harfleri kavramını kullanmamasıdır. Windows sürücü harfleri dosya sistemini bir dizi farklı ağaca (her aygıt için bir tane) bölerken, Linux’te her zaman tek bir ağaç bulunur. Farklı depolama aygıtları ağacın farklı dalları olabilir ancak her zaman tek bir ağaç vardır.</p>
+
+<h3 id="pwd">pwd</h3>
+
+<p>Komut satırı arayüzü dosya sistemi yapısının grafik resimlerini sağlayamadığı için onu farklı bir şekilde temsil etmemiz gerekir. Bunu yapmak için dosya sistemi ağacını bir labirent olarak ve bizim de onun içinde durduğumuzu düşünün. Herhangi bir anda tek bir dizinde bulunuruz. Bu dizinin içinde, dosyalarını ve ana dizinine giden yolu ve içinde bulunduğumuz dizinin alt dizinlerine giden yolları görebiliriz.</p>
+
+<p>İçinde bulunduğumuz dizine çalışma dizini denir. Çalışma dizininin adını görmek için <code class="language-plaintext highlighter-rouge">pwd</code> komutunu kullanıyoruz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ pwd
+/home/me
+</code></pre></div></div>
+
+<p>Linux sistemimize ilk giriş yaptığımızda çalışma dizini home olarak ayarlanmıştır. Dosyalarımızı buraya koyacağız. Çoğu sistemde, giriş dizini <em>/home/kullanıcı_adı</em> olarak adlandırılacaktır, ancak sistem yöneticisinin isteğine göre herhangi bir şey olabilir.</p>
+
+<p>Çalışma dizinindeki dosyaları listelemek için <code class="language-plaintext highlighter-rouge">ls</code> komutunu kullanırız.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ ls
+Desktop    Downloads         foo.txt  Pictures  Templates
+Documents  examples.desktop  Music    Public    Videos
+</code></pre></div></div>
+
+<p>Bir sonraki derste <code class="language-plaintext highlighter-rouge">ls</code> konusuna geri döneceğiz. Bununla yapabileceğiniz pek çok eğlenceli şey var, ancak önce biraz yol adları ve dizinler hakkında konuşmamız gerekiyor.</p>
+
+<h3 id="cd">cd</h3>
+
+<p>Çalışma dizinini (labirentte durduğumuz yer) değiştirmek için <code class="language-plaintext highlighter-rouge">cd</code> komutunu kullanırız. Bunu yapmak için <code class="language-plaintext highlighter-rouge">cd</code> yazıp ardından istenen çalışma dizininin yol adını yazıyoruz. Yol adı, istediğimiz dizine ulaşmak için ağacın dalları boyunca izlediğimiz yoldur. Yol adları iki farklı şekilde belirtilebilir; mutlak yol adları veya göreli yol adları. Önce mutlak yol adlarına bakalım.</p>
+
+<p>Mutlak bir yol adı kök dizinle başlar ve istenen dizine veya dosyaya giden yol tamamlanana kadar ağaç dalını takip eder. Örneğin sisteminizde çoğu programın kurulu olduğu bir dizin var. Dizinin yol adı <em>/usr/bin</em>‘dir. Bu, kök dizinde (yol adının başındaki eğik çizgiyle temsil edilir) “bin” adlı bir dizini içeren “usr” adlı bir dizin olduğu anlamına gelir.</p>
+
+<p>Hadi şunu deneyelim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ cd /usr/bin
+[me@linuxbox bin]$ pwd
+/usr/bin
+[me@linuxbox bin]$ ls
+'['                                   mshortname
+ 2to3-2.7                             mshowfat
+ 411toppm                             mtools
+ a2ps                                 mtoolstest
+ a2ps-lpr-wrapper                     mtr
+ aa-enabled                           mtrace
+ aa-exec                              mtr-packet
+ aclocal                              mtvtoppm
+ aclocal-1.15                         mtype
+ aconnect                             mutter
+ acpi_listen                          mxtar
+ add-apt-repository                   mzip
+ addpart                              namei
+
+and many more...
+</code></pre></div></div>
+
+<p>Artık mevcut çalışma dizinini <em>/usr/bin</em> olarak değiştirdiğimizi ve dosyalarla dolu olduğunu görebiliriz. Shell prompt unun nasıl değiştiğine dikkat ettiniz mi? Kolaylık olması açısından genellikle çalışma dizininin adını görüntüleyecek şekilde ayarlanır.</p>
+
+<p>Mutlak yol adı kök dizinden başlayıp hedefine gittiğinde, göreceli yol adı çalışma dizininden başlar. Bunu yapmak için dosya sistemi ağacındaki göreli konumları temsil eden birkaç özel gösterim kullanır. Bu özel gösterimler “.” (nokta) ve “..” (nokta nokta).</p>
+
+<p>”.” gösterimi çalışma dizininin kendisini, “..” gösterimi ise çalışma dizininin üst dizinini belirtir. Nasıl çalıştığını görelim. Çalışma dizinini tekrar <em>/usr/bin</em> olarak değiştirelim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ cd /usr/bin
+[me@linuxbox bin]$ pwd
+/usr/bin
+</code></pre></div></div>
+
+<p>Tamam, şimdi diyelim ki çalışma dizinini <em>/usr/bin</em>‘in ebeveyni olan <em>/usr</em> ile değiştirmek istedik. Bunu iki farklı şekilde yapabiliriz. İlk olarak, mutlak yol adıyla:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox bin]$ cd /usr
+[me@linuxbox usr]$ pwd
+/usr
+</code></pre></div></div>
+
+<p>Veya göreceli yol adıyla:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox bin]$ cd ..
+[me@linuxbox usr]$ pwd
+/usr
+</code></pre></div></div>
+
+<p>Aynı sonuçlara sahip iki farklı metot. Hangisini kullanmalıyız? En az yazmayı gerektireni!</p>
+
+<p>Aynı şekilde çalışma dizinini <em>/usr</em>‘dan <em>/usr/bin</em>‘e iki farklı şekilde değiştirebiliriz. İlk önce mutlak yol adı kullanarak:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox usr]$ cd /usr/bin
+[me@linuxbox bin]$ pwd
+/usr/bin
+</code></pre></div></div>
+
+<p>Veya göreceli yol adıyla:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox usr]$ cd ./bin
+[me@linuxbox bin]$ pwd
+/usr/bin
+</code></pre></div></div>
+
+<p>Burada belirtmemiz gereken önemli bir şey var. Çoğu durumda “./” işaretini atlayabiliriz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox usr]$ cd bin
+</code></pre></div></div>
+
+<p>Genel olarak, eğer bir şeye yol adı belirtmezsek, çalışma dizini varsayılacaktır. Bunun önemli bir istisnası var ama buna bir süre değinmeyeceğiz.</p>
+
+<h3 id="birkaç-kısayol">Birkaç Kısayol</h3>
+
+<p>Eğer <code class="language-plaintext highlighter-rouge">cd</code> ve ardından hiçbir şey yazmazsak, çalışma dizinini ana dizinimize değiştirecektir.</p>
+
+<p>İlgili bir kısayol <code class="language-plaintext highlighter-rouge">cd ~kullanıcı_adı</code> yazmaktır. Bu durumda, çalışma dizinini belirtilen kullanıcının ana dizinine değiştirecektir.</p>
+
+<p><code class="language-plaintext highlighter-rouge">cd -</code> yazmak çalışma dizinini bir öncekine değiştirir.</p>
+
+<h3 id="dosya-adlarıyla-i̇lgili-önemli-bilgiler">Dosya Adlarıyla İlgili Önemli Bilgiler</h3>
+
+<ol>
+  <li>Nokta karakteriyle başlayan dosya adları gizlenir. Bu, <code class="language-plaintext highlighter-rouge">ls -a</code> kullanmadığınız sürece <code class="language-plaintext highlighter-rouge">ls</code>‘nin onları listelemeyeceği anlamına gelir. Hesabınız oluşturulduğunda, hesabınızla ilgili ayarları yapılandırmak için ana dizininize birkaç gizli dosya yerleştirildi. Daha sonra ortamımızı nasıl özelleştirebileceğinizi görmek için bu dosyalardan bazılarına daha yakından bakacağız. Ayrıca bazı uygulamalar, yapılandırma ve ayar dosyalarını gizli dosyalar olarak ana dizininize yerleştirir.</li>
+  <li>Unix gibi Linux’taki dosya adları büyük/küçük harfe duyarlıdır. “Dosya1” ve “dosya1” dosya adları farklı dosyaları ifade eder.</li>
+  <li>Linux’un Windows sistemleri gibi bir “dosya uzantısı” kavramı yoktur. Dosyaları istediğiniz şekilde adlandırabilirsiniz. Ancak Linux’un kendisi dosya uzantılarını umursamasa da birçok uygulama bunu önemser.</li>
+  <li>Linux, boşluklar ve noktalama işaretleri içerebilen uzun dosya adlarını desteklese de, noktalama işaretlerini nokta, kısa çizgi ve alt çizgi ile sınırlandırın. En önemlisi dosya adlarında boşluk kullanmayın. Bir dosya adındaki sözcükler arasındaki boşlukları temsil etmek istiyorsanız alt çizgi karakterlerini kullanın. Daha sonra kendinize teşekkür edeceksiniz.</li>
+</ol>
+
+<h2 id="etrafa-gözatın">Etrafa Gözatın</h2>
+
+<p>Artık çalışma dizininden çalışma dizinine nasıl geçeceğimizi bildiğimize göre, Linux sistemimizde bir tur atacağız ve bu arada onu neyin harekete geçirdiği hakkında bazı şeyler öğreneceğiz. Ancak başlamadan önce yolculuğumuz sırasında işimize yarayacak bazı araçları öğrenmemiz gerekiyor. Bunlar:</p>
+
+<ul>
+  <li><strong>ls</strong> (dosyaları ve dizinleri listele)</li>
+  <li><strong>less</strong> (metin dosyalarını görüntüle)</li>
+  <li><strong>file</strong> (bir dosyanın içeriğini sınıflandırın)</li>
+</ul>
+
+<h3 id="ls">ls</h3>
+
+<p><code class="language-plaintext highlighter-rouge">ls</code> komutu bir dizinin içeriğini listelemek için kullanılır. Muhtemelen en yaygın kullanılan Linux komutudur. Birçok farklı şekilde kullanılabilir. İşte bazı örnekler:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Komut</th>
+      <th>Sonuç</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ls</code></td>
+      <td>Çalışma dizinindeki dosyaları listele</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ls /bin</code></td>
+      <td><em>/bin</em> dizinindeki (veya başka bir dizindeki) dosyaları listeleyin</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ls -l</code></td>
+      <td>Çalışma dizinindeki dosyaları uzun formatta listeleyin</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ls -l /etc /bin</code></td>
+      <td><em>/bin</em> dizinindeki ve <em>/etc</em> dizinindeki dosyaları uzun formatta listeleyin</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ls -la ..</code></td>
+      <td>Çalışma dizininin üst öğesindeki tüm dosyaları (nokta karakteriyle başlayan, normalde gizli olanlar dahil) uzun formatta listeleyin</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Bu örnekler aynı zamanda komutlarla ilgili önemli bir kavrama da işaret etmektedir. Çoğu komut şu şekilde çalışır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>command -options arguments
+</code></pre></div></div>
+
+<p>burada <code class="language-plaintext highlighter-rouge">command</code> komutun adıdır, <code class="language-plaintext highlighter-rouge">-options</code> komutun davranışında yapılan bir veya daha fazla ayarlamadır ve <code class="language-plaintext highlighter-rouge">arguments</code> ise komutun üzerinde çalıştığı bir veya daha fazla “şey”dir.</p>
+
+<p><code class="language-plaintext highlighter-rouge">ls</code> söz konusu olduğunda <code class="language-plaintext highlighter-rouge">ls</code>‘nin komutun adı olduğunu, <code class="language-plaintext highlighter-rouge">-a</code> ve <code class="language-plaintext highlighter-rouge">-l</code> gibi bir veya birden fazla seçeneğe sahip olabileceğini, bir veya birden fazla dosya veya dizin üzerinde çalışabildiğini görüyoruz.</p>
+
+<p><strong>Uzun Formata Yakından Bir Bakış</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">ls</code> ile birlikte <code class="language-plaintext highlighter-rouge">-l</code> seçeneğini kullanırsak, listelenen dosyalar hakkında zengin bilgiler içeren bir dosya listesi elde edersiniz. İşte bir örnek:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>-rw-------   1 me       me            576 Apr 17  2019 weather.txt
+drwxr-xr-x   6 me       me           1024 Oct  9  2019 web_page
+-rw-rw-r--   1 me       me         276480 Feb 11 20:41 web_site.tar
+-rw-------   1 me       me           5743 Dec 16  2018 xmas_file.txt
+
+----------     -------  -------  -------- ------------ -------------
+    |             |        |         |         |             |
+    |             |        |         |         |         File Name
+    |             |        |         |         |
+    |             |        |         |         +---  Modification Time
+    |             |        |         |
+    |             |        |         +-------------   Size (in bytes)
+    |             |        |
+    |             |        +-----------------------        Group
+    |             |
+    |             +--------------------------------        Owner
+    |
+    +----------------------------------------------   File Permissions
+</code></pre></div></div>
+
+<p><strong>File Name</strong>
+Dosyanın veya dizinin adı.</p>
+
+<p><strong>Modification Time</strong>
+Dosyanın en son değiştirildiği zaman. Son değişiklik altı aydan daha uzun bir süre önce yapılmışsa tarih ve yıl görüntülenir. Aksi takdirde günün saati gösterilir.</p>
+
+<p><strong>Size</strong>
+Dosyanın bayt cinsinden boyutu.</p>
+
+<p><strong>Group</strong>
+Dosyanın sahibinin yanı sıra dosya izinlerine de sahip olan grubun adı.</p>
+
+<p><strong>Owner</strong>
+Dosyanın sahibi olan kullanıcının adı.</p>
+
+<p><strong>File Permissions</strong>
+Dosyanın erişim izinlerinin temsili. İlk karakter dosyanın türüdür. “-“ normal (sıradan) bir dosyayı belirtir. “d” bir dizini belirtir. Üç karakterden oluşan ikinci grup, dosya sahibinin okuma, yazma ve yürütme haklarını temsil eder. Sonraki üçü dosya grubunun haklarını, son üçü ise diğer herkese verilen hakları temsil eder. Bunu daha sonraki bir derste daha ayrıntılı olarak tartışacağız.</p>
+
+<h3 id="less">less</h3>
+
+<p><strong>less</strong> metin dosyalarını görüntülememizi sağlayan bir programdır. Linux’u kontrol etmek ve yapılandırmak için kullanılan dosyaların çoğu insan tarafından okunabildiğinden bu çok kullanışlıdır.</p>
+
+<p><strong>“Text” nedir?</strong></p>
+
+<p>Bilgisayarda bilgiyi temsil etmenin birçok yolu vardır. Tüm metotlar, bilgi ile onu temsil etmek için kullanılacak bazı sayılar arasındaki ilişkinin tanımlanmasını içerir. Sonuçta bilgisayarlar yalnızca sayıları anlar ve tüm veriler sayısal gösterime dönüştürülür.</p>
+
+<p>Bu gösterim sistemlerinden bazıları oldukça karmaşıktır (sıkıştırılmış multimedya dosyaları gibi), diğerleri ise oldukça basittir. En eski ve en basitlerinden biri ASCII metnidir. ASCII (“As-Key” olarak telaffuz edilir) “American Standard Code for Information Interchange” in kısaltmasıdır. Bu, ilk olarak Teletype makinelerinde klavye karakterlerini sayılarla eşleştirmek için kullanılan basit bir kodlama şemasıdır.</p>
+
+<p>Metin, karakterlerin sayılara basitçe bire bir eşleştirilmesidir. Çok kompakttır. Elli karakterlik metin, elli baytlık veriye karşılık gelir. Bir Linux sisteminde birçok dosya metin biçiminde saklanır ve metin dosyalarıyla çalışan birçok Linux aracı vardır. Windows sistemleri bile bu formatın öneminin farkındadır. Tanınmış Notepad.exe programı, düz ASCII metin dosyaları için bir düzenleyicidir.</p>
+
+<p><code class="language-plaintext highlighter-rouge">less</code> programı basitçe şunu yazarak çağrılır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>less text_file
+</code></pre></div></div>
+
+<p>Bu dosyayı gösterecektir.</p>
+
+<p><strong>less’i kontrol etmek</strong></p>
+
+<p>Bir kez başlatıldığında, <code class="language-plaintext highlighter-rouge">less</code> metin dosyasını her seferinde bir sayfa olarak görüntüler. Metin dosyasında ilerlemek için “Page Up” ve “Page Down” tuşlarını kullanabiliriz. Çıkmak için “q” yazıyoruz. <code class="language-plaintext highlighter-rouge">less</code>’in kabul edeceği bazı komutlar şunlardır:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Komut</th>
+      <th>Sonuç</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Page Up veya b</td>
+      <td>Bir sayfa geriye git</td>
+    </tr>
+    <tr>
+      <td>Page Down veya space</td>
+      <td>Bir sayfa ileri kaydır</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>Metin dosyasının sonuna git</td>
+    </tr>
+    <tr>
+      <td>1G</td>
+      <td>Metin dosyasının başına git</td>
+    </tr>
+    <tr>
+      <td>/characters</td>
+      <td>Belirtilen karakterleri metin dosyasında ileriye doğru arayın</td>
+    </tr>
+    <tr>
+      <td>n</td>
+      <td>Önceki aramayı tekrarla</td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>Komut ve seçeneklerin tam listesini görüntüleyin</td>
+    </tr>
+    <tr>
+      <td>q</td>
+      <td>Çıkış</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="file">file</h3>
+
+<p>Linux sistemimizde dolaşırken, bir dosyayı görüntülemeye çalışmadan önce ne tür veriler içerdiğini belirlemek yararlı olacaktır. İşte bu noktada <code class="language-plaintext highlighter-rouge">file</code> komutu devreye giriyor. <code class="language-plaintext highlighter-rouge">file</code> bir dosyayı inceleyecek ve bize onun ne tür bir dosya olduğunu söyleyecektir.</p>
+
+<p><code class="language-plaintext highlighter-rouge">file</code> programını kullanmak için şunu yazmamız yeterli:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>file name_of_file
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">file</code> programı aşağıdakiler gibi çoğu dosya türünü tanıyabilir:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dosya Tipi</th>
+      <th>Açıklama</th>
+      <th>Metin olarak görüntülenebilir mi?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ASCII text</td>
+      <td>Adı her şeyi söylüyor</td>
+      <td>Evet</td>
+    </tr>
+    <tr>
+      <td>Bourne-Again shell script text</td>
+      <td>Bir bash scripti</td>
+      <td>Evet</td>
+    </tr>
+    <tr>
+      <td>ELF 64-bit LSB executable</td>
+      <td>Yürütülebilir binary program</td>
+      <td>Hayır</td>
+    </tr>
+    <tr>
+      <td>ELF 64-bit LSB shared object</td>
+      <td>Paylaşılan bir kütüphane</td>
+      <td>Hayır</td>
+    </tr>
+    <tr>
+      <td>GNU tar archive</td>
+      <td>Arşiv dosyası. Dosya gruplarını depolamanın yaygın bir yolu</td>
+      <td>Hayır, listeyi görüntülemek için <strong>tar tvf</strong>‘yi kullanın.</td>
+    </tr>
+    <tr>
+      <td>gzip compressed data</td>
+      <td>gzip ile sıkıştırılmış arşiv</td>
+      <td>Hayır</td>
+    </tr>
+    <tr>
+      <td>HTML document text</td>
+      <td>Web sayfası</td>
+      <td>Evet</td>
+    </tr>
+    <tr>
+      <td>JPEG image data</td>
+      <td>Sıkıştırılmış bir JPEG görüntüsü</td>
+      <td>Hayır</td>
+    </tr>
+    <tr>
+      <td>PostScript document text</td>
+      <td>PostScript dosyası</td>
+      <td>Evet</td>
+    </tr>
+    <tr>
+      <td>Zip archive data</td>
+      <td>Zip ile sıkıştırılmış arşiv</td>
+      <td>Hayır</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Çoğu dosya metin olarak görüntülenemiyor gibi görünse de, şaşırtıcı bir sayı olabilir. Bu özellikle önemli yapılandırma dosyaları için geçerlidir. Maceramız sırasında işletim sisteminin birçok özelliğinin metin yapılandırma dosyaları ve shell script dosyaları tarafından kontrol edildiğini göreceğiz. Linux’ta sır yoktur!</p>
+
+<h2 id="rehberli-tur">Rehberli Tur</h2>
+
+<p>Turumuza çıkmanın vakti geldi. Aşağıda keşfedilecek bazı ilginç yerler listelenmektedir. Bu kesinlikle tam bir liste değil, ancak ilginç bir macera olduğu kanıtlanmalıdır. Aşağıda listelenen dizinlerin her biri için aşağıdakileri yapın:</p>
+
+<ul>
+  <li>Her dizine <code class="language-plaintext highlighter-rouge">cd</code> ile ulaşın.</li>
+  <li>Dizinin içeriğini listelemek için <code class="language-plaintext highlighter-rouge">ls</code> kullanın.</li>
+  <li>İlginç bir dosya varsa içeriğini belirlemek için <code class="language-plaintext highlighter-rouge">file</code> komutunu kullanın.</li>
+  <li>Metin dosyalarını görüntülemek için <code class="language-plaintext highlighter-rouge">less</code> kullanın.</li>
+</ul>
+
+<table>
+  <thead>
+    <tr>
+      <th>Dizin</th>
+      <th>Açıklama</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>/</td>
+      <td>Dosya sisteminin başladığı kök dizin. Kök dizin muhtemelen yalnızca alt dizinleri içerecektir.</td>
+    </tr>
+    <tr>
+      <td>/boot</td>
+      <td>Linux çekirdeği ve önyükleyici dosyalarının saklandığı yer burasıdır. Çekirdek vmlinuz adlı bir dosyadır.</td>
+    </tr>
+    <tr>
+      <td>/etc</td>
+      <td>/etc dizini sistemin yapılandırma dosyalarını içerir. /etc içindeki tüm dosyalar metin dosyaları olmalıdır.</td>
+    </tr>
+    <tr>
+      <td>/bin, /usr/bin</td>
+      <td>Bu iki dizin sistemdeki programların çoğunu içerir. /bin dizini sistemin çalışması için gereken temel programları içerirken, /usr/bin sistem kullanıcılarına yönelik uygulamaları içerir.</td>
+    </tr>
+    <tr>
+      <td>/sbin, /usr/sbin</td>
+      <td>sbin dizinleri, çoğunlukla superuser tarafından kullanılmak üzere sistem yönetimine yönelik programlar içerir.</td>
+    </tr>
+    <tr>
+      <td>/usr</td>
+      <td>/usr dizini kullanıcı uygulamalarını destekleyen çeşitli şeyleri içerir.</td>
+    </tr>
+    <tr>
+      <td>/usr/local</td>
+      <td>/usr/local ve alt dizinleri, local makinede kullanılacak yazılımın ve diğer dosyaların kurulumu için kullanılır. Bunun gerçekte anlamı, resmi dağıtımın parçası olmayan (genellikle /usr/bin dizinine giren) yazılımın buraya gelmesidir. Sisteminize kurabileceğiniz ilgi çekici programlar bulduğunuzda, bunların /usr/local dizinlerinden birine kurulması gerekir. Çoğunlukla tercih edilen dizin /usr/local/bin’dir.</td>
+    </tr>
+    <tr>
+      <td>/var</td>
+      <td>/var dizini sistem çalışırken değişen dosyaları içerir. /var/log log dosyaları içeren dizin. Bunlar sistem çalıştıkça güncellenir. Sisteminizin sağlığını izlemek için bu dizindeki dosyaları zaman zaman görüntülemek iyi bir fikirdir. /var/spool dizini, e-mail mesajları ve yazdırma işleri gibi bazı işlemler için kuyruğa alınan dosyaları tutmak için kullanılır.</td>
+    </tr>
+    <tr>
+      <td>/lib</td>
+      <td>Paylaşılan kütüphaneler (diğer işletim sistemindeki DLL’lere benzer) burada tutulur.</td>
+    </tr>
+    <tr>
+      <td>/home</td>
+      <td>/home kullanıcıların kişisel çalışmalarını sakladıkları yerdir. Genel olarak kullanıcıların dosya yazmasına izin verilen tek yer burasıdır. Bu, her şeyin güzel ve temiz kalmasını sağlar.</td>
+    </tr>
+    <tr>
+      <td>/root</td>
+      <td>Bu, superuser’ın ana dizinidir.</td>
+    </tr>
+    <tr>
+      <td>/tmp</td>
+      <td>/tmp, programların geçici dosyalarını yazabileceği bir dizindir.</td>
+    </tr>
+    <tr>
+      <td>/dev</td>
+      <td>/dev dizini özel bir dizindir, çünkü alışılagelmiş anlamda dosya içermez. Bunun yerine, sistem tarafından kullanılabilen cihazları içerir. Linux’ta (Unix gibi), cihazlara dosyalar gibi davranılır. Cihazları sanki dosyalarmış gibi okuyabilir ve yazabilirsiniz. Örneğin /dev/fd0 ilk disket sürücüsüdür, /dev/sda ise ilk sabit sürücüdür. Kernel’in anladığı tüm cihazlar burada temsil edilir.</td>
+    </tr>
+    <tr>
+      <td>/proc</td>
+      <td>/proc dizini de özeldir. Bu dizin dosya içermiyor. Aslında dizin mevcut değil, tamamen sanaldır. /proc dizini kernel’e küçük gözetleme delikleri içerir. Bu dizinde sistemde çalışan tüm proseslere karşılık gelen bir grup numaralı giriş (entry) vardır. Ek olarak, sistemin mevcut konfigürasyonuna erişime izin veren çok sayıda adlandırılmış giriş vardır. Bu girişlerin çoğu görüntülenebilir. /proc/cpuinfo dosyasını görüntülemeyi deneyin. Bu giriş size kernel’in sistem CPU’su hakkında ne düşündüğünü söyleyecektir.</td>
+    </tr>
+    <tr>
+      <td>/media</td>
+      <td>Son olarak, özel bir şekilde kullanılan normal bir dizin olan /media’ya geliyoruz. /media dizini bağlantı noktaları için kullanılır. İkinci derste öğrendiğimiz gibi, farklı fiziksel depolama aygıtları (sabit disk sürücüleri gibi) dosya sistemi ağacının çeşitli yerlerine eklenir. Ağaca bir cihaz bağlama işlemine mounting denir. Bir cihazın kullanılabilmesi için öncelikle mount edilmesi gerekir. Hangi aygıtların ve bağlantı noktalarının kullanıldığını görmek için mount yazın.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Tuhaf bir dosya türü…</strong></p>
+
+<p>Turunuz sırasında muhtemelen özellikle <em>/lib</em> dizininde garip bir dizin girişi fark etmişsinizdir. <code class="language-plaintext highlighter-rouge">ls -l</code> ile listelendiğinde şunun gibi bir şey görmüş olabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>lrwxrwxrwx     25 Jul  3 16:42 System.map -&gt; /boot/System.map-4.0.36-3
+-rw-r--r-- 105911 Oct 13  2018 System.map-4.0.36-0.7
+-rw-r--r-- 105935 Dec 29  2018 System.map-4.0.36-3
+-rw-r--r-- 181986 Dec 11  2019 initrd-4.0.36-0.7.img
+-rw-r--r-- 182001 Dec 11  2019 initrd-4.0.36.img
+lrwxrwxrwx     26 Jul  3 16:42 module-info -&gt; /boot/module-info-4.0.36-3
+-rw-r--r--  11773 Oct 13  2018 module-info-4.0.36-0.7
+-rw-r--r--  11773 Dec 29  2018 module-info-4.0.36-3
+lrwxrwxrwx     16 Dec 11  2019 vmlinuz -&gt; vmlinuz-4.0.36-3
+-rw-r--r-- 454325 Oct 13  2018 vmlinuz-4.0.36-0.7
+-rw-r--r-- 454434 Dec 29  2018 vmlinuz-4.0.36-3
+</code></pre></div></div>
+
+<p><em>System.map</em>, <em>module-info</em> ve <em>vmlinuz</em> dosyalarına dikkat edin. Dosya adlarından sonraki garip gösterimi görüyor musunuz?</p>
+
+<p>Bunun gibi dosyalara sembolik link denir. Sembolik linkler, başka bir dosyaya işaret eden özel bir dosya türüdür. Sembolik linkler ile tek bir dosyanın birden fazla isme sahip olması mümkündür. Şu şekilde çalışır: Sisteme sembolik bir link olan dosya adı verildiğinde, sistem bunu şeffaf bir şekilde işaret ettiği dosyayla eşleştirir.</p>
+
+<p>Peki bu ne işe yarar? Bu çok kullanışlı bir özelliktir. Yukarıdaki dizin listesine (eski bir sistemin <em>/boot</em> dizini) bakalım. Bu sistemde Linux çekirdeğinin birden fazla sürümü kuruludur. Bunu vmlinuz-4.0.36-0.7 ve vmlinuz-4.0.36-3 dosyalarından görebiliriz. Bu dosya adları hem 4.0.36-0.7 hem de 4.0.36-3 sürümünün yüklü olduğunu göstermektedir. Dosya adları sürümü içerdiğinden, dizin listesindeki farklılıkları görmek kolaydır. Ancak bu, kernel dosyasının adını kullanan programlar için kafa karıştırıcı olabilir. Bu programlar kernel’in basitçe “vmlinuz” olarak adlandırılmasını bekleyebilir. Sembolik link’in güzelliği burada devreye giriyor. vmlinuz-4.0.36-3’e işaret eden vmlinuz adında sembolik bir link oluşturarak sorunu çözdük.</p>
+
+<p>Sembolik link oluşturmak için <code class="language-plaintext highlighter-rouge">ln</code> komutunu kullanın.</p>
+
+<h2 id="dosyaları-düzenlemek">Dosyaları Düzenlemek</h2>
+
+<p>Bu derste aşağıdaki komutlar tanıtılacaktır:</p>
+
+<ul>
+  <li><strong>cp</strong> - dosyaları ve dizinleri kopyala</li>
+  <li><strong>mv</strong> - dosyaları ve dizinleri taşıyın veya yeniden adlandır</li>
+  <li><strong>rm</strong> - dosyaları ve dizinleri kaldır</li>
+  <li><strong>mkdir</strong> - dizin oluştur</li>
+</ul>
+
+<p>Bu dört komut en sık kullanılan Linux komutları arasındadır. Bunlar hem dosyaları hem de dizinleri değiştirmek için kullanılan temel komutlardır.</p>
+
+<p>Açıkçası bu komutların gerçekleştirdiği bazı görevleri grafiksel dosya yöneticisi ile daha kolay bir şekilde gerçekleştirebilirsiniz. Dosya yöneticisiyle, bir dosyayı bir dizinden diğerine sürükleyip bırakabilir, dosyaları kesip yapıştırabilir, dosyaları silebilirsiniz vb. Peki neden bu eski komut satırı programlarını kullanasınız ki?</p>
+
+<p>Cevap güç ve esnekliktir. Grafiksel dosya yöneticisiyle basit dosya işlemlerini gerçekleştirmek kolay olsa da, komut satırı programlarıyla karmaşık görevler daha kolay olabilir. Örneğin, tüm HTML dosyalarını bir dizinden diğerine nasıl kopyalarsınız, ancak yalnızca hedef dizinde bulunmayan veya hedef dizindeki sürümlerden daha yeni olan dosyaları kopyalarsınız? Dosya yöneticisiyle oldukça zor. Komut satırıyla oldukça kolay:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ cp -u *.html destination
+</code></pre></div></div>
+<h3 id="joker-karakterler">Joker Karakterler</h3>
+
+<p>Komutlarımıza başlamadan önce, bu komutları bu kadar güçlü kılan shell özelliğine bakacağız. Shell dosya adlarını çok fazla kullandığından, dosya adı gruplarını hızla belirlemenize yardımcı olacak özel karakterler sağlar. Bu özel karakterlere joker karakterler denir. Joker karakterler, karakter paternlerine göre dosya adlarını seçmenize olanak tanır. Aşağıdaki tabloda joker karakterler ve bunların seçtikleri listelenmektedir:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Joker Karakter</th>
+      <th>Anlamı</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">*</code></td>
+      <td>Herhangi bir karakterle eşleşir</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">?</code></td>
+      <td>Herhangi bir tek karakterle eşleşir</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">[characters]</code></td>
+      <td>Ayarlanan karakterlerin üyesi olan herhangi bir karakterle eşleşir. Karakter kümesi ayrıca aşağıdakilerden gibi bir POSIX karakter sınıfı olarak da ifade edilebilir: <code class="language-plaintext highlighter-rouge">[:alnum:]</code> Alfanümerik karakterler <code class="language-plaintext highlighter-rouge">[:alpha:]</code> Alfabetik karakterler <code class="language-plaintext highlighter-rouge">[:digit:]</code> Rakamlar <code class="language-plaintext highlighter-rouge">[:upper:]</code> Büyük harfli alfabetik karakterler <code class="language-plaintext highlighter-rouge">[:lower:]</code> Küçük harfli alfabetik karakterler</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">[!characters]</code></td>
+      <td>Ayarlanan karakterlerin üyesi olmayan herhangi bir karakterle eşleşir</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Joker karakterleri kullanarak dosya adları için çok karmaşık seçim kriterleri oluşturmak mümkündür. İşte bazı patern örnekleri ve bunların eşleştiği şeyler:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Patern</th>
+      <th>Eşleşme</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">*</code></td>
+      <td>Tüm dosya adları</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">g*</code></td>
+      <td>“g” karakteriyle başlayan tüm dosya adları</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">b*.txt</code></td>
+      <td>“b” karakteriyle başlayan ve “.txt” karakteriyle biten tüm dosya adları</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">Data???</code></td>
+      <td>“Data” karakterleriyle başlayan ve ardından tam olarak 3 karakter daha gelen herhangi bir dosya adı</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">[abc]*</code></td>
+      <td>“a”, “b” veya “c” ile başlayan ve ardından başka karakterler gelen herhangi bir dosya adı</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">[[:upper:]]*</code></td>
+      <td>Büyük harfle başlayan herhangi bir dosya adı. Bu bir karakter sınıfı örneğidir.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">BACKUP.[[:digit:]][[:digit:]]</code></td>
+      <td>Karakter sınıflarına başka bir örnek. Bu patern, “BACKUP.” karakterleriyle başlayan ve ardından tam olarak iki rakam gelen herhangi bir dosya adıyla eşleşir.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">*[![:lower:]]</code></td>
+      <td>Küçük harfle bitmeyen herhangi bir dosya adı.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Dosya adı argümanı kabul eden herhangi bir komutta joker karakterler kullanabiliriz.</p>
+
+<h3 id="cp">cp</h3>
+
+<p><code class="language-plaintext highlighter-rouge">cp</code> programı dosyaları ve dizinleri kopyalar. En basit haliyle tek bir dosyayı kopyalar:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ cp file1 file2
+</code></pre></div></div>
+
+<p>Birden fazla dosyayı (ve/veya dizini) farklı bir dizine kopyalamak için de kullanılabilir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ cp file... directory
+</code></pre></div></div>
+
+<p><strong>Gösterimle ilgili not:</strong> … bir öğenin bir veya daha fazla kez tekrarlanabileceğini belirtir.</p>
+
+<p><code class="language-plaintext highlighter-rouge">cp</code> ve seçeneklerinin diğer kullanışlı örnekleri şunları içerir:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Komut</th>
+      <th>Sonuç</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cp file1 file2</code></td>
+      <td>file1’in içeriğini file2’ye kopyalar. file2 mevcut değilse oluşturulur; aksi takdirde, file1’in içeriği file2’nin üzerine sessizce yazılır.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cp -i file1 file2</code></td>
+      <td>“-i” (etkileşimli) seçeneği belirtildiğinden, eğer file2 mevcutsa, file1’in içeriğinin üzerine yazılmadan önce kullanıcıya bilgi verilir.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cp file1 dir1</code></td>
+      <td>file1’in içeriğini (file1 adlı bir dosyaya) dir1 dizininin içine kopyalayın.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cp -R dir1 dir2</code></td>
+      <td>dir1 dizininin içeriğini kopyalayın. dir2 mevcut değilse oluşturulur. Aksi takdirde, dir2 dizini içerisinde dir1 adında bir dizin oluşturur.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="mv">mv</h3>
+
+<p><code class="language-plaintext highlighter-rouge">mv</code> komutu, nasıl kullanıldığına bağlı olarak dosyaları ve dizinleri taşır veya yeniden adlandırır. Bir veya daha fazla dosyayı farklı bir dizine taşıyacak veya bir dosya veya dizini yeniden adlandıracaktır. Bir dosyayı yeniden adlandırmak için şu şekilde kullanılır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ mv filename1 filename2
+</code></pre></div></div>
+
+<p>Dosyaları (ve/veya dizinleri) farklı bir dizine taşımak için:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ mv file... directory
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">mv</code> ve seçeneklerinin örnekleri şunları içerir:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Komut</th>
+      <th>Sonuç</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mv file1 file2</code></td>
+      <td>file2 mevcut değilse, file1, file2 olarak yeniden adlandırılır. file2 mevcutsa, içeriği sessizce file1’in içeriğiyle değiştirilir.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mv -i file1 file2</code></td>
+      <td>“-i” (etkileşimli) seçeneği belirtildiğinden, eğer file2 mevcutsa, file1’in içeriği üzerine yazılmadan önce kullanıcıya bilgi verilir.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mv file1 file2 dir1</code></td>
+      <td>file1 ve file2 dosyaları dir1 dizinine taşınır. dir1 mevcut değilse, mv bir hatayla çıkacaktır.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mv dir1 dir2</code></td>
+      <td>dir1 mevcut değilse, dir1, dir2 olarak yeniden adlandırılır. dir2 mevcutsa, dir1 dizini dir2’nin içine taşınır.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="rm">rm</h3>
+
+<p><code class="language-plaintext highlighter-rouge">rm</code> komutu dosyaları ve dizinleri kaldırır (siler).</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ rm file...
+</code></pre></div></div>
+
+<p>Özyinelemeli seçeneği (-r) kullanarak, dizinleri silmek için de kullanılabilir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ rm -r directory...
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">rm</code> ve seçeneklerinin örnekleri şunları içerir:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Komut</th>
+      <th>Sonuç</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rm file1 file2</code></td>
+      <td>file1 ve file2’yi siler.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rm -i file1 file2</code></td>
+      <td>“-i” (etkileşimli) seçeneği belirtildiğinden, her dosya silinmeden önce kullanıcıya bilgi verilir.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rm -r dir1 dir2</code></td>
+      <td>dir1 ve dir2 dizinleri tüm içerikleriyle birlikte silinir.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>rm’yi dikkati kullanın</strong></p>
+
+<p>Linux’un silmeyi geri alma komutu yoktur. <code class="language-plaintext highlighter-rouge">rm</code> ile bir şeyi sildiğinizde, o şey gider. Özellikle joker karakterleri kullanırken dikkat etmezseniz <code class="language-plaintext highlighter-rouge">rm</code> ile sisteminize büyük zararlar verebilirsiniz.</p>
+
+<p><code class="language-plaintext highlighter-rouge">rm</code>‘yi joker karakterlerle kullanmadan önce şu yararlı yöntemi deneyebilirsiniz: komutunuzu <code class="language-plaintext highlighter-rouge">ls</code> kullanarak oluşturun. Bunu yaparak, dosyaları silmeden önce joker karakterlerinizin etkisini görebilirsiniz. Komutunuzu <code class="language-plaintext highlighter-rouge">ls</code> ile test ettikten sonra yukarı ok tuşuyla komutu çağırın ve <code class="language-plaintext highlighter-rouge">ls</code> yerine <code class="language-plaintext highlighter-rouge">rm</code> yazın.</p>
+
+<h3 id="mkdir">mkdir</h3>
+
+<p><code class="language-plaintext highlighter-rouge">mkdir</code> komutu dizin oluşturmak için kullanılır. Kullanmak için şunu yazmanız yeterlidir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ mkdir directory...
+</code></pre></div></div>
+
+<h3 id="komutları-joker-karakterlerle-kullanmak">Komutları Joker Karakterlerle Kullanmak</h3>
+
+<p>Burada ele aldığımız komutlar birden fazla dosya ve dizin adını argüman olarak kabul ettiğinden, bunları belirtmek için joker karakterler kullanabilirsiniz. İşte birkaç örnek:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Komut</th>
+      <th>Sonuç</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">cp *.txt text_files</code></td>
+      <td>Geçerli çalışma dizinindeki adları “.txt” karakterleriyle biten tüm dosyaları, text_files adlı mevcut bir dizine kopyalar.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">mv dir1 ../*.bak dir2</code></td>
+      <td>dir1 alt dizinini ve geçerli çalışma dizininin üst dizinindeki “.bak” ile biten tüm dosyaları dir2 adlı mevcut bir dizine taşır.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">rm *~</code></td>
+      <td>Geçerli çalışma dizinindeki “~” karakteriyle biten tüm dosyaları siler. Bazı uygulamalar bu adlandırma şemasını kullanarak yedekleme dosyaları oluşturur. Bu komutu kullanmak onları dizinden temizleyecektir.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="komutlarla-çalışmak">Komutlarla Çalışmak</h2>
+
+<p>Şu ana kadar çok sayıda komutu ve bunların gizemli seçeneklerini ve argümanlarını gördük. Bu derste bu gizemin bir kısmını ortadan kaldırmaya çalışacağız. Aşağıdaki komutları tanıtacağız.</p>
+
+<ul>
+  <li><strong>type</strong> - Komut türüyle ilgili bilgileri görüntüler</li>
+  <li><strong>which</strong> - Bir komut bulun</li>
+  <li><strong>help</strong> - Shell yerleşik referans sayfasını görüntüler</li>
+  <li><strong>man</strong> - Çevrimiçi komut referansını görüntüler</li>
+</ul>
+
+<h3 id="komut-nedir">“Komut” Nedir?</h3>
+
+<p>Komutlar 4 farklı türden biri olabilir:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">/usr/bin</code>‘de gördüğümüz tüm dosyalar gibi <strong>çalıştırılabilir bir program</strong>. Bu kategoride programlar, C ve C++ ile yazılmış programlar gibi derlenmiş binary dosyalar veya shell, Perl, Python, Ruby vb. script dillerinde yazılmış programlar olabilir.</li>
+  <li><strong>Shell’in kendisinde yerleşik bir komut</strong>. bash, dahili olarak shell yerleşikleri (builtin) adı verilen bir dizi komut sağlar. Örneğin <code class="language-plaintext highlighter-rouge">cd</code> komutu shell yerleşiğidir.</li>
+  <li><strong>Shell fonksiyonu</strong>. Bunlar ortama dahil edilen minyatür shell script dosyalarıdır. Daha sonraki derslerde ortamı (environment) yapılandırmayı ve shell fonksiyonları yazmayı ele alacağız, ancak şimdilik bunların var olduğunu unutmayın.</li>
+  <li><strong>Takma ad (alias)</strong>. Kendimiz tanımlayabileceğimiz, diğer komutlardan oluşan komutlar. Bu daha sonra ele alınacaktır.</li>
+</ul>
+
+<h3 id="komutları-tanımlamak">Komutları Tanımlamak</h3>
+
+<p>Dört tür komuttan hangisinin kullanıldığını bilmek genellikle faydalıdır ve Linux bunu öğrenmenin birkaç yolunu sunar.</p>
+
+<p><strong>type</strong></p>
+
+<p><code class="language-plaintext highlighter-rouge">type</code> komutu, belirli bir komut adı verildiğinde shell’in yürüteceği komut türünü görüntüleyen shell yerleşiğidir. Şu şekilde çalışır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>type command
+</code></pre></div></div>
+
+<p>burada “command” incelemek istediğimiz komutun adıdır. İşte bazı örnekler:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ type type
+type is a shell builtin
+[me@linuxbox me]$ type ls
+ls is aliased to 'ls --color=auto'
+[me@linuxbox me]$ type cp
+cp is /bin/cp
+</code></pre></div></div>
+
+<p>Burada üç farklı komut için sonuçları görüyoruz. ls komutunun aslında “– color=auto” seçeneğinin eklendiği ls komutunun takma adı olduğuna dikkat edin. Artık ls çıktısının neden renkli görüntülendiğini biliyoruz!</p>
+
+<p><strong>which</strong></p>
+
+<p>Bazen bir sistemde programın birden fazla sürümü kurulu olabilir. Bu, masaüstü sistemlerde çok yaygın olmasa da, büyük sunucularda alışılmadık bir durum değildir. Belirli bir dosyanın tam konumunu belirlemek için <code class="language-plaintext highlighter-rouge">which</code> komutu kullanılır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ which ls
+/bin/ls
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">which</code> yalnızca çalıştırılabilir programlar için işe yarar, gerçek çalıştırılabilir programların yerine geçen yerleşikler veya takma adlar için geçerli değildir.</p>
+
+<h3 id="komut-dokümantasyonunun-alınması">Komut Dokümantasyonunun Alınması</h3>
+
+<p>Komutun ne olduğuna dair bu bilgiyle, artık her komut türü için mevcut belgeleri arayabiliriz.</p>
+
+<p><strong>help</strong></p>
+
+<p>bash, shell yerleşiklerinin her biri için yardım olanağına sahiptir. Kullanmak için “help” ve ardından shell yerleşiğinin adını yazın. İsteğe bağlı olarak çıktının formatını değiştirmek için <code class="language-plaintext highlighter-rouge">-m</code> seçeneğini ekleyebiliriz. Örneğin:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ help -m cd
+NAME
+    cd - Change the shell working directory.
+
+SYNOPSIS
+    cd [-L|-P] [dir]
+
+DESCRIPTION
+    Change the shell working directory.
+    
+    Change the current directory to DIR.  The default DIR is the value of the
+    HOME shell variable.
+    
+    The variable CDPATH defines the search path for the directory containing
+    DIR.  Alternative directory names in CDPATH are separated by a colon (:).
+    A null directory name is the same as the current directory.  If DIR begins
+    with a slash (/), then CDPATH is not used.
+    
+    If the directory is not found, and the shell option `cdable_vars' is set,
+    the word is assumed to be  a variable name.  If that variable has a value,
+    its value is used for DIR.
+    
+    Options:
+        -L  force symbolic links to be followed
+        -P  use the physical directory structure without following symbolic
+      links
+    
+    The default is to follow symbolic links, as if `-L' were specified.
+    
+    Exit Status:
+    Returns 0 if the directory is changed; non-zero otherwise.
+
+SEE ALSO
+    bash(1)
+
+IMPLEMENTATION
+    GNU bash, version 4.1.5(1)-release (i486-pc-linux-gnu)
+    Copyright (C) 2009 Free Software Foundation, Inc.
+</code></pre></div></div>
+
+<p><strong>Gösterimle ilgili not</strong>: Bir komutun sözdiziminin açıklamasında köşeli parantezler göründüğünde, isteğe bağlı öğeleri belirtir. Dikey çubuk karakteri birbirini dışlayan öğeleri belirtir. Yukarıdaki <code class="language-plaintext highlighter-rouge">cd</code> komutu durumunda:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd [-L|-P] [dir]
+</code></pre></div></div>
+
+<p>Bu gösterim, <code class="language-plaintext highlighter-rouge">cd</code> komutunun ardından isteğe bağlı olarak “-L” veya “-P” ve ayrıca isteğe bağlı olarak “dir” argümanının gelebileceğini belirtir.</p>
+
+<p><strong>–help</strong></p>
+
+<p>Yürütülebilir programların çoğu, komutun desteklenen söz dizimi ve seçeneklerinin açıklamasını görüntüleyen “–help” seçeneğini destekler. Örneğin:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ mkdir --help
+Usage: mkdir [OPTION] DIRECTORY...
+Create the DIRECTORY(ies), if they do not already exist.
+Mandatory arguments to long options are mandatory for short options
+too.
+
+   -Z, --context=CONTEXT (SELinux) set security context to CONTEXT
+   -m, --mode=MODE   set file mode (as in chmod), not a=rwx - umask
+   -p, --parents     no error if existing, make parent directories as
+                     needed
+   -v, --verbose     print a message for each created directory
+   --help            display this help and exit
+   --version         output version information and exit
+</code></pre></div></div>
+
+<p>Bazı programlar “–help” seçeneğini desteklemez ama yine de deneyin.</p>
+
+<p><strong>man</strong></p>
+
+<p>Komut satırı kullanımına yönelik çoğu yürütülebilir program, manual veya man sayfası adı verilen resmi bir dökümantasyon sağlar. Bunları görüntülemek için <code class="language-plaintext highlighter-rouge">man</code> programı kullanılır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>man program
+</code></pre></div></div>
+
+<p>burada “program” görüntülenecek komutun adıdır. Man sayfaları format olarak biraz farklılık gösterir ancak genellikle başlık, komut sözdiziminin özetini, komut amacının açıklamasını ve komut seçeneklerinin her birinin listesini ve açıklamasını içerir. Ancak Man sayfaları genellikle örnekler içermez ve bir tutorial olarak değil, referans olarak tasarlanmıştır. <code class="language-plaintext highlighter-rouge">ls</code> komutu için man sayfasını görüntülemeyi deneyelim:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ man ls
+</code></pre></div></div>
+
+<p>Çoğu Linux sisteminde <code class="language-plaintext highlighter-rouge">man</code>, kılavuz sayfasını görüntülemek için <code class="language-plaintext highlighter-rouge">less</code> kullanır, böylece bilinen <code class="language-plaintext highlighter-rouge">less</code> komutlarının tümü sayfayı görüntülerken çalışır.</p>
+
+<h2 id="io-yönlendirmesi">I/O Yönlendirmesi</h2>
+
+<p>Bu derste, input/output yönlendirmesi adı verilen, komut satırı programlarının kullandığı güçlü bir özelliği inceleyeceğiz. Gördüğümüz gibi <code class="language-plaintext highlighter-rouge">ls</code> benzeri birçok komut çıktılarını ekrana yazdırır. Ancak böyle olmak zorunda değildir. Bazı özel gösterimler kullanarak birçok komutun çıktısını dosyalara, aygıtlara ve hatta diğer komutların girişine yönlendirebiliriz.</p>
+
+<h3 id="standart-output">Standart Output</h3>
+
+<p>Sonuçlarını görüntüleyen çoğu komut satırı programı, sonuçlarını standart output adı verilen bir araca göndererek bunu yapar. Varsayılan olarak standart output, içeriği ekrana yönlendirir. Standart output’u bir dosyaya yönlendirmek için “&gt;” karakteri şu şekilde kullanılır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ ls &gt; file_list.txt
+</code></pre></div></div>
+
+<p>Bu örnekte <code class="language-plaintext highlighter-rouge">ls</code> komutu çalıştırılıyor ve sonuçlar <em>file_list.txt</em> adlı bir dosyaya yazılıyor. <code class="language-plaintext highlighter-rouge">ls</code> çıktısı dosyaya yönlendirildiği için ekranda hiçbir sonuç görünmüyor.</p>
+
+<p>Yukarıdaki komut her tekrarlandığında, <code class="language-plaintext highlighter-rouge">ls</code> komutunun çıktısı baştan itibaren <em>file_list.txt</em> dosyasının üzerine yazılır. Bunun yerine yeni sonuçların dosyaya eklenmesini sağlamak için “»” ifadesini şu şekilde kullanırız:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ ls &gt;&gt; file_list.txt
+</code></pre></div></div>
+
+<p>Yeni sonuçlar dosyanın sonuna eklenir, böylece komut her tekrarlandığında dosya daha uzun hale gelir. Dosya mevcut değilse, dosya oluşturulacaktır.</p>
+
+<h3 id="standard-input">Standard Input</h3>
+
+<p>Birçok komut, standart input adı verilen bir özellikten giriş kabul edebilir. Varsayılan olarak standart input, içeriğini klavyeden alır ancak standart output gibi yeniden yönlendirilebilir. Standart input’u klavye yerine bir dosyadan yönlendirmek için “&lt;” karakteri şu şekilde kullanılır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ sort &lt; file_list.txt
+</code></pre></div></div>
+
+<p>Yukarıdaki örnekte <em>file_list.txt</em> içeriğini işlemek için <code class="language-plaintext highlighter-rouge">sort</code> komutunu kullandık. Standart output yönlendirilmediği için sonuçlar ekranda görüntülenir. Standart output’u şu şekilde başka bir dosyaya yönlendirebiliriz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ sort &lt; file_list.txt &gt; sorted_file_list.txt
+</code></pre></div></div>
+
+<p>Gördüğümüz gibi, bir komutun hem girişi hem de çıkışı yeniden yönlendirilebilir. Yönlendirme sırasının önemli olmadığını unutmayın. Tek gereksinim, yeniden yönlendirme işleçlerinin (“&lt;” ve “&gt;”) komuttaki diğer seçeneklerden ve parametrelerden sonra görünmesi gerektiğidir.</p>
+
+<h3 id="pipeline">Pipeline</h3>
+
+<p>I/O yönlendirmeyle yapabileceğimiz en kullanışlı ve güçlü şey, birden çok komutu birbirine bağlayarak pipeline adı verilen şeyi oluşturmaktır. Pipeline ile bir komutun standart output’u diğerinin standart input’unu besler. İşte çok yararlı bir örnek:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ ls -l | less
+</code></pre></div></div>
+
+<p>Bu örnekte <code class="language-plaintext highlighter-rouge">ls</code> komutunun çıktısı <code class="language-plaintext highlighter-rouge">less</code>‘e aktarılmıştır. Bu <code class="language-plaintext highlighter-rouge">| less</code> hilesini kullanarak herhangi bir komutun kayan çıktıya sahip olmasını sağlayabiliriz.</p>
+
+<p>Komutları birbirine bağlayarak inanılmaz başarılar elde edebiliriz. İşte deneyebileceğiniz bazı örnekler:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Komut</th>
+      <th>Ne Yapar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">ls -lt | head</code></td>
+      <td>Geçerli dizindeki en yeni 10 dosyayı görüntüler.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">du | sort -nr</code></td>
+      <td>Dizinlerin listesini ve ne kadar alan tükettiklerini büyükten küçüğe doğru sıralanmış olarak görüntüler.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">find . -type f -print | wc -l</code></td>
+      <td>Geçerli çalışma dizinindeki ve onun tüm alt dizinlerindeki toplam dosya sayısını görüntüler.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="filtreler">Filtreler</h3>
+
+<p>Pipeline’da sıklıkla kullanılan program türlerinden birine filtre adı verilir. Filtreler standart input’u alıp üzerinde işlem yapar ve sonuçları standart output’a gönderir. Bu şekilde, bilgiyi işlemek için birleştirilebilirler. Filtre olarak kullanılan yaygın programlardan bazıları şunlardır:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Program</th>
+      <th>Ne Yapar</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">sort</code></td>
+      <td>Standart input’u sıralar ve sıralanan sonucu standart output’a verir.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">uniq</code></td>
+      <td>Standart input’tan sıralanmış bir veri akışı verildiğinde, yinelenen veri satırlarını kaldırır (yani her satırın benzersiz olmasını sağlar).</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">grep</code></td>
+      <td>Standart input’tan aldığı her veri satırını inceler ve belirli bir karakter patern’ini içeren her satırın çıktısını alır.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">fmt</code></td>
+      <td>Standart input’taki metni okur, ardından biçimlendirilmiş metni standart output’a verir.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">pr</code></td>
+      <td>Metin girişini standart input’tan alır ve yazdırmaya hazırlık amacıyla verileri sayfa sonları, üstbilgiler ve altbilgilerle sayfalara böler.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">head</code></td>
+      <td>İlk birkaç satırının çıktısını verir. Bir dosyanın başlığını almak için kullanışlıdır.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tail</code></td>
+      <td>Son birkaç satırının çıktısını verir. Log dosyasından en son girişleri almak gibi şeyler için kullanışlıdır.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">tr</code></td>
+      <td>Karakterleri çevirir. Büyük/küçük harf dönüştürme veya satır sonlandırma karakterlerini bir türden diğerine değiştirme (örneğin, DOS metin dosyalarını Unix tarzı metin dosyalarına dönüştürme) gibi görevleri gerçekleştirmek için kullanılabilir.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">sed</code></td>
+      <td>Akış düzenleyicisi. <code class="language-plaintext highlighter-rouge">tr</code>‘ye göre daha karmaşık metin çevirileri gerçekleştirebilir.</td>
+    </tr>
+    <tr>
+      <td><code class="language-plaintext highlighter-rouge">awk</code></td>
+      <td>Filtreler oluşturmak için tasarlanmış eksiksiz bir programlama dili. Son derece güçlüdür.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h2 id="i̇zinler">İzinler</h2>
+
+<p>Linux gibi Unix benzeri işletim sistemleri, yalnızca çoklu görev değil aynı zamanda çok kullanıcılı olmaları açısından diğer sistemlerden farklıdır.</p>
+
+<p>Bu tam olarak ne anlama geliyor? Bu, birden fazla kullanıcının aynı anda bilgisayarı çalıştırabileceği anlamına gelir. Masaüstü veya dizüstü bilgisayarda yalnızca bir klavye ve monitör bulunurken yine de birden fazla kullanıcı tarafından kullanılabilir. Örneğin bilgisayar bir ağa veya internete bağlıysa uzaktaki kullanıcılar ssh (secure shell) aracılığıyla giriş yapıp bilgisayarı çalıştırabilirler. Aslında uzaktaki kullanıcılar grafik uygulamaları çalıştırabilir ve çıktının uzaktaki bir bilgisayarda görüntülenmesini sağlayabilir. X Window sistemi bunu desteklemektedir.</p>
+
+<p>Unix benzeri sistemlerin çok kullanıcılı özelliği, işletim sisteminin tasarımına derinlemesine yerleşmiş bir özelliktir. Unix’in yaratıldığı ortamı hatırlarsak, bu çok mantıklıdır. Yıllar önce bilgisayarlar “kişisel” olmadan önce büyük, pahalı ve merkeziydi. Tipik bir üniversite bilgisayar sistemi, kampüsteki bazı binalarda bulunan büyük bir ana bilgisayardan ve kampüs boyunca her biri büyük merkezi bilgisayara bağlanan terminallerden oluşuyordu. Bilgisayar aynı anda birçok kullanıcıyı destekleyecektir.</p>
+
+<p>Bunu pratik hale getirebilmek için kullanıcıları birbirinden koruyacak bir yöntemin geliştirilmesi gerekiyordu. Sonuçta ne bir kullanıcının eylemlerinin bilgisayarın çökmesine neden olmasını, ne de bir kullanıcının başka bir kullanıcıya ait dosyalara müdahale etmesine izin veremeyiz.</p>
+
+<p>Bu ders aşağıdaki komutları kapsayacaktır:</p>
+
+<ul>
+  <li><strong>chmod</strong> - dosya erişim haklarını değiştirin</li>
+  <li><strong>su</strong> - geçici olarak superuser olun</li>
+  <li><strong>sudo</strong> - geçici olarak superuser olun</li>
+  <li><strong>chown</strong> - dosya sahipliğini değiştirin</li>
+  <li><strong>chgrp</strong> - dosyanın grup sahipliğini değiştirin</li>
+</ul>
+
+<h3 id="dosya-i̇zinleri">Dosya İzinleri</h3>
+
+<p>Bir Linux sisteminde, her dosya ve dizine, dosyanın sahibine, ilgili kullanıcı grubunun üyelerine ve diğer herkese erişim hakları atanır. Bir dosyayı okumak, bir dosyayı yazmak ve bir dosyayı yürütmek (yani dosyayı bir program olarak çalıştırmak) için haklar atanabilir.</p>
+
+<p>Bir dosyanın izin ayarlarını görmek için <code class="language-plaintext highlighter-rouge">ls</code> komutunu kullanabiliriz. Örnek olarak <em>/bin</em> dizininde bulunan bash programına bakacağız:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ ls -l /bin/bash
+-rwxr-xr-x 1 root root 1113504 Jun  6  2019 /bin/bash
+</code></pre></div></div>
+
+<p>Burada şunları görebiliriz:</p>
+
+<ul>
+  <li>“/bin/bash” dosyası “root” kullanıcısına aittir</li>
+  <li>superuser’ın bu dosyayı okuma, yazma ve yürütme hakkı vardır</li>
+  <li>Dosyanın sahibi “root” grubudur</li>
+  <li>“root” grubunun üyeleri de bu dosyayı okuyabilir ve çalıştırabilir</li>
+  <li>Herkes bu dosyayı okuyabilir ve çalıştırabilir</li>
+</ul>
+
+<p>Aşağıdaki şemada listenin ilk bölümünün nasıl yorumlandığını görüyoruz. Dosya türünü belirten bir karakterden ve ardından dosya sahibi, grup ve diğer herkes için okuma, yazma ve yürütme iznini gösteren üç karakterli üç setten oluşur.</p>
+
+<p><img src="/assets/images/2024/05/file-permissions.png" alt="File Permissions" title="File Permissions" class="img-fluid" /></p>
+
+<h3 id="chmod">chmod</h3>
+
+<p><code class="language-plaintext highlighter-rouge">chmod</code> komutu bir dosyanın veya dizinin izinlerini değiştirmek için kullanılır. Kullanmak için istenen izin ayarlarını ve değiştirmek istediğimiz dosya veya dosyaları belirtiyoruz. İzinleri belirtmenin iki yolu vardır. Bu derste bunlardan biri olan sekizli notasyon yöntemine odaklanacağız.</p>
+
+<p>İzin ayarlarını bir dizi bit olarak düşünmek kolaydır (bilgisayarda onlar hakkında böyle düşünür). Şöyle çalışıyor:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>rwx rwx rwx = 111 111 111
+rw- rw- rw- = 110 110 110
+rwx --- --- = 111 000 000
+
+ve benzeri...
+
+rwx = 111 in binary = 7
+rw- = 110 in binary = 6
+r-x = 101 in binary = 5
+r-- = 100 in binary = 4
+</code></pre></div></div>
+
+<p>Şimdi, eğer üç izin kümesinin (sahip, grup ve diğer) her birini tek basamaklı olarak temsil edersek, izin ayarlarını ifade etmenin oldukça uygun bir yoluna sahip oluruz. Örneğin, <em>some_file</em>‘ın sahibi için okuma ve yazma iznine sahip olacak şekilde ayarlamak istiyor ancak dosyayı diğerlerinden gizli tutmak istiyorsak, şunu yaparız:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ chmod 600 some_file
+</code></pre></div></div>
+
+<p>Burada tüm ortak ayarları kapsayan bir sayı tablosu verilmiştir. “7” ile başlayan dosyalar programlarla (yürütmeyi mümkün kıldıkları için) kullanılır, geri kalanlar ise diğer dosya türleri içindir.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Değer</th>
+      <th>Anlamı</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>777</td>
+      <td>(rwxrwxrwx) İzinlerde herhangi bir kısıtlama yoktur. Herkes her şeyi yapabilir. Genellikle arzu edilen bir ayar değildir.</td>
+    </tr>
+    <tr>
+      <td>755</td>
+      <td>(rwxr-xr-x) Dosyanın sahibi dosyayı okuyabilir, yazabilir ve çalıştırabilir. Diğerleri dosyayı okuyabilir ve çalıştırabilir. Bu ayar, tüm kullanıcılar tarafından kullanılan programlar için ortaktır.</td>
+    </tr>
+    <tr>
+      <td>700</td>
+      <td>(rwx——) Dosyanın sahibi dosyayı okuyabilir, yazabilir ve çalıştırabilir. Başka hiç kimsenin hiçbir hakkı yoktur. Bu ayar yalnızca sahibinin kullanabileceği ve diğerlerinden gizli tutulması gereken programlar için kullanışlıdır.</td>
+    </tr>
+    <tr>
+      <td>666</td>
+      <td>(rw-rw-rw-) Tüm kullanıcılar dosyayı okuyabilir ve yazabilir.</td>
+    </tr>
+    <tr>
+      <td>644</td>
+      <td>(rw-r–r–) Dosyanın sahibi bir dosyayı okuyup yazabilir, diğer herkes ise yalnızca dosyayı okuyabilir. Veri dosyaları için herkesin okuyabileceği, ancak yalnızca sahibinin değiştirebileceği ortak bir ayar.</td>
+    </tr>
+    <tr>
+      <td>600</td>
+      <td>(rw——-) Sahibi bir dosyayı okuyabilir ve yazabilir. Diğerlerinin hiçbir hakkı yoktur. Sahibinin gizli tutmak istediği veri dosyaları için ortak bir ayar.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="dizin-i̇zinleri">Dizin İzinleri</h3>
+
+<p>chmod komutu, dizinlere erişim izinlerini kontrol etmek için de kullanılabilir. İzinleri ayarlamak için yine sekizli gösterimi kullanabiliriz ancak r, w ve x niteliklerinin anlamı farklıdır:</p>
+
+<ul>
+  <li><strong>r</strong> - x niteliği de ayarlanmışsa dizin içeriğinin listelenmesine izin verir.</li>
+  <li><strong>w</strong> - x niteliği de ayarlanmışsa, dizin içindeki dosyaların oluşturulmasına, silinmesine veya yeniden adlandırılmasına izin verir.</li>
+  <li><strong>x</strong> - Bir dizinin girilmesine izin verir (örn. <strong>cd dir</strong>).</li>
+</ul>
+
+<p>Dizinler için bazı kullanışlı ayarlar şunlardır:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Değer</th>
+      <th>Anlamı</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>777</td>
+      <td>(rwxrwxrwx) İzinlerde herhangi bir kısıtlama yoktur. Herkes dosyaları listeleyebilir, dizinde yeni dosyalar oluşturabilir ve dizindeki dosyaları silebilir. Genellikle iyi bir ayar değildir.</td>
+    </tr>
+    <tr>
+      <td>755</td>
+      <td>(rwxr-xr-x) Dizin sahibinin tam erişimi vardır. Diğerleri dizini listeleyebilir ancak dosya oluşturamaz veya silemez. Bu ayar, diğer kullanıcılarla paylaşmak istediğiniz dizinler için ortaktır.</td>
+    </tr>
+    <tr>
+      <td>700</td>
+      <td>(rwx——) Dizin sahibinin tam erişimi vardır. Başka hiç kimsenin hiçbir hakkı yoktur. Bu ayar, yalnızca sahibinin kullanabileceği ve diğerlerinden gizli tutulması gereken dizinler için kullanışlıdır</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="kısa-süreliğine-superuser-olmak">Kısa Süreliğine Superuser Olmak</h3>
+
+<p>Önemli sistem yönetimi görevlerini gerçekleştirmek için genellikle superuser olmak gerekir, ancak bildiğimiz gibi superuser olarak oturum açmamalıyız. Çoğu dağıtımda, superuser ayrıcalıklarına geçici olarak erişmenizi sağlayacak bir program vardır. Bu programa <code class="language-plaintext highlighter-rouge">su</code> (substitute user kelimesinin kısaltması) adı verilir ve az sayıda görev için superuser olmanızın gerektiği durumlarda kullanılabilir. Superuser olmak için <code class="language-plaintext highlighter-rouge">su</code> komutunu yazmanız yeterlidir. Superuser şifresi istenecektir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ su
+Password:
+[root@linuxbox me]#
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">su</code> komutunu çalıştırdıktan sonra superuser olarak yeni bir shell oturumu açılır. Superuser oturumundan çıkmak için, <code class="language-plaintext highlighter-rouge">exit</code> yazın ve önceki oturumunuza dönün.</p>
+
+<p>Çoğu modern dağıtımda alternatif bir yöntem kullanılır. Bu sistemler <code class="language-plaintext highlighter-rouge">su</code> kullanmak yerine <code class="language-plaintext highlighter-rouge">sudo</code> komutunu kullanır. sudo ile bir veya daha fazla kullanıcıya gerektiğinde superuser ayrıcalıkları verilir. Bir komutu superuser olarak yürütmek için istenen komutun önüne <code class="language-plaintext highlighter-rouge">sudo</code> komutu gelir. Komut girildikten sonra kullanıcıdan superuser şifresi yerine kendi şifresi istenir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ sudo some_command
+Password for me:
+[me@linuxbox me]$
+</code></pre></div></div>
+
+<p>Aslında, modern dağıtımlar root hesap şifresini bile ayarlamadığından, root kullanıcı olarak oturum açmayı imkansız hale getirir. “-i” seçeneği kullanılarak sudo ile root shell hala mümkündür:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ sudo -i
+Password for me:
+root@linuxbox:~#
+</code></pre></div></div>
+
+<h3 id="dosya-sahipliğini-değiştirmek">Dosya Sahipliğini Değiştirmek</h3>
+
+<p><code class="language-plaintext highlighter-rouge">chown</code> komutunu kullanarak bir dosyanın sahibini değiştirebiliriz. İşte bir örnek: Diyelim ki <em>some_file</em>’ın sahibini “me” yerine “you” olarak değiştirmek istiyoruz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ sudo chown you some_file
+</code></pre></div></div>
+
+<p>Bir dosyanın sahibini değiştirmek için superuser ayrıcalıklarına sahip olmamız gerektiğine dikkat edin. Bunu yapmak için örneğimizde <code class="language-plaintext highlighter-rouge">sudo</code> komutunu kullandık.</p>
+
+<p><code class="language-plaintext highlighter-rouge">chown</code>, dosyalarda olduğu gibi dizinlerde de aynı şekilde çalışır.</p>
+
+<h3 id="grup-sahipliğini-değiştirmek">Grup Sahipliğini Değiştirmek</h3>
+
+<p>Bir dosyanın veya dizinin grup sahipliği <code class="language-plaintext highlighter-rouge">chgrp</code> ile değiştirilebilir. Bu komut şu şekilde kullanılır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ chgrp new_group some_file
+</code></pre></div></div>
+
+<p>Yukarıdaki örnekte, <em>some_file</em>‘ın grup sahipliğini “new_group” olarak değiştirdik. <code class="language-plaintext highlighter-rouge">chgrp</code> işlemini gerçekleştirmek için dosyanın veya dizinin sahibi olmamız gerekir.</p>
+
+<h2 id="i̇ş-kontrolü">İş Kontrolü</h2>
+
+<p>Önceki derste Linux’un çok kullanıcılı bir işletim sistemi olmasının bazı sonuçlarına baktık. Bu dersimizde Linux’un çoklu görev yapısını ve komut satırı arayüzü ile nasıl kontrol edildiğini inceleyeceğiz.</p>
+
+<p>Herhangi bir çoklu görev işletim sisteminde olduğu gibi, Linux’te birden fazla eşzamanlı proses yürütür. Aslında, tek bir işlemci çekirdeği aynı anda yalnızca bir proses yürütebilir, ancak Linux kernel’i işleme sırasını işlemciye vermeyi başarır ve her biri aynı anda çalışıyor gibi görünür.</p>
+
+<p>Süreçleri kontrol etmek için kullanılan çeşitli komutlar vardır. Bunlar:</p>
+
+<ul>
+  <li><strong>ps</strong> - sistemde çalışan prosesleri listeleyin</li>
+  <li><strong>kill</strong> - bir veya daha fazla prosese sinyal gönderin (genellikle prosesi “sonlandırmak” için)</li>
+  <li><strong>jobs</strong> - kendi proseslerinizi listelemenin alternatif bir yolu</li>
+  <li><strong>bg</strong> - prosesi arka plana koyar</li>
+  <li><strong>fg</strong> - prosesi ön plana koyar</li>
+</ul>
+
+<h3 id="pratik-bir-örnek">Pratik Bir Örnek</h3>
+
+<p>Bu konu oldukça belirsiz gibi görünse de çoğunlukla grafik kullanıcı arayüzü ile çalışan ortalama bir kullanıcı için oldukça pratik olabilir. Görünür olmasa da, grafik programların çoğu komut satırından başlatılabilir. İşte bir örnek: X Window sistemiyle birlikte sağlanan <strong>xload</strong> adında, sistem yükünü temsil eden bir grafik görüntüleyen küçük bir program var. Bu programı aşağıdakileri yazarak çalıştırabiliriz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ xload
+</code></pre></div></div>
+
+<p>Küçük <strong>xload</strong> penceresinin göründüğüne ve sistem yük grafiğini görüntülemeye başladığına dikkat edin. Xload’ın kullanılamadığı sistemlerde bunun yerine <strong>gedit</strong>‘i deneyin. Program başlatıldıktan sonra prompt un yeniden görünmediğine de dikkat edin. Shell, geri dönmeden önce programın bitmesini bekliyor. Eğer <strong>xload</strong> penceresini kapatırsak <strong>xload</strong> programı sonlandırılır ve prompt geri döner.</p>
+
+<h3 id="programı-arka-plana-yerleştirmek">Programı Arka Plana Yerleştirmek</h3>
+
+<p>Şimdi hayatı biraz daha kolaylaştırmak için xload programını tekrar başlatacağız ancak bu sefer prompt un geri dönmesi için onu arka plana koyacağız. Bunu yapmak için xload’ı şu şekilde çalıştırıyoruz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ xload &amp;
+[1] 1223
+[me@linuxbox me]$
+</code></pre></div></div>
+
+<p>Bu durumda proses arka planda tutulduğu için prompt geri döndü.</p>
+
+<p>Şimdi programı arka plana yerleştirmek için “&amp;” sembolünü kullanmayı unuttuğumuzu hayal edin. Hala umut var. Ctrl-z ile proses askıya alınacaktır. Bunu programın penceresinin donmuş olduğunu görerek doğrulayabiliriz. Proses hala mevcut ancak boşta. Proses i arka planda sürdürmek için <code class="language-plaintext highlighter-rouge">bg</code> komutunu yazın (background’un kısaltması). İşte bir örnek:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ xload
+[2]+ Stopped xload
+
+[me@linuxbox me]$ bg
+[2]+ xload &amp;
+</code></pre></div></div>
+
+<h3 id="çalışan-proseslerin-listelenmesi">Çalışan Proseslerin Listelenmesi</h3>
+
+<p>Artık arka planda bir prosesimiz olduğuna göre, başlattığımız proseslerin listesini görüntülemek faydalı olacaktır. Bunu yapmak için <code class="language-plaintext highlighter-rouge">jobs</code> komutunu veya daha güçlü olan <code class="language-plaintext highlighter-rouge">ps</code> komutunu kullanabiliriz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ jobs
+[1]+ Running xload&amp;
+
+[me@linuxbox me]$ ps
+PID  TTY   TIME     CMD
+1211 pts/4 00:00:00 bash
+1246 pts/4 00:00:00 xload
+1247 pts/4 00:00:00 ps
+
+[me@linuxbox me]$
+</code></pre></div></div>
+
+<h3 id="prosesi-sonlandırmak">Proses’i Sonlandırmak</h3>
+
+<p>Yanıt vermeyen bir programımız olduğunu varsayalım; ondan nasıl kurtuluruz? Elbette <code class="language-plaintext highlighter-rouge">kill</code> komutunu kullanıyoruz. Bunu xload’da deneyelim. Öncelikle sonlandırmak istediğimiz prosesi tanımlamamız gerekiyor. Bunu yapmak için <code class="language-plaintext highlighter-rouge">jobs</code> veya <code class="language-plaintext highlighter-rouge">ps</code> komutunu kullanabiliriz. Eğer <code class="language-plaintext highlighter-rouge">jobs</code> kullanırsak bir job numarası alacağız. <code class="language-plaintext highlighter-rouge">ps</code> ile bize bir proses id (PID) verilir. Bunu her iki şekilde de yapalım:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ xload &amp;
+[1] 1292
+
+[me@linuxbox me]$ jobs
+[1]+ Running xload&amp;
+
+[me@linuxbox me]$ kill %1
+
+[me@linuxbox me]$ xload &amp;
+[2] 1293
+[1] Terminated xload
+
+[me@linuxbox me]$ ps
+PID  TTY   TIME     CMD
+1280 pts/5 00:00:00 bash
+1293 pts/5 00:00:00 xload
+1294 pts/5 00:00:00 ps
+
+[me@linuxbox me]$ kill 1293
+[2]+ Terminated xload
+[me@linuxbox me]$
+</code></pre></div></div>
+
+<h3 id="kill-hakkında-biraz-daha-fazla-bilgi">kill Hakkında Biraz Daha Fazla Bilgi</h3>
+
+<p><code class="language-plaintext highlighter-rouge">kill</code> komutu prosesleri “sonlandırmak” için kullanılsa da asıl amacı proseslere sinyal göndermektir. Çoğu zaman sinyalin amacı proses’in sona erdiğini söylemektir ancak bundan daha fazlası vardır. Programlar (eğer doğru şekilde yazılmışlarsa) işletim sisteminden gelen sinyalleri dinler ve bunlara yanıt verirler; çoğu zaman zarif bir sonlandırma yöntemine izin verirler. Örneğin bir metin düzenleyici, kullanıcının oturumu kapattığını veya bilgisayarın kapandığını gösteren herhangi bir sinyali dinleyebilir. Bu sinyali aldığında, devam eden işi çıkmadan önce kaydedebilir. <code class="language-plaintext highlighter-rouge">kill</code> komutu proseslere çeşitli sinyaller gönderebilir. Şu komutla:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>kill -l
+</code></pre></div></div>
+
+<p>desteklediği sinyallerin bir listesini yazdıracaktır. Birçoğu oldukça belirsizdir, ancak bazılarını bilmek faydalıdır:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Sinyal #</th>
+      <th>Ad</th>
+      <th>Açıklama</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>SIGHUP</td>
+      <td>Kapatma sinyali. Programlar bu sinyali dinleyebilir ve ona göre hareket edebilir. Bu sinyal, terminali kapattığınızda terminalde çalışan proseslere gönderilir.</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>SIGINT</td>
+      <td>Kesinti (interrupt) sinyali. Bu sinyal proseslere onları kesmeleri için verilir. Programlar bu sinyali işleyebilir ve ona göre hareket edebilir. Bu sinyali programın çalıştığı terminal penceresine Ctrl-c yazarak doğrudan verebiliriz.</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>SIGTERM</td>
+      <td>Sonlandırma sinyali. Bu sinyal proseslere onları sonlandırmak için verilir. Yine programlar bu sinyali işleyebilir ve ona göre hareket edebilir. Bu, herhangi bir sinyal belirtilmemişse kill komutunun gönderdiği varsayılan sinyaldir.</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>SIGKILL</td>
+      <td>Kill sinyali. Bu sinyal, proses’in Linux kerneli tarafından anında sonlandırılmasına neden olur. Programlar bu sinyali dinleyemez.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Şimdi askıda kalan bir programımız olduğunu ve ondan kurtulmak istediğimizi varsayalım. İşte yaptığımız şey:</p>
+
+<ul>
+  <li>Sonlandırmak istediğimiz proses’in id’sini (PID) almak için <code class="language-plaintext highlighter-rouge">ps</code> komutunu kullanın.</li>
+  <li>Bu PID için <code class="language-plaintext highlighter-rouge">kill</code> komutu verin.</li>
+  <li>Proses sonlandırılmayı reddediyorsa (yani sinyali görmezden geliyorsa), sonlandırılana kadar giderek daha sert sinyaller gönderin.</li>
+</ul>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ ps x | grep bad_program
+PID  TTY   STAT TIME COMMAND
+2931 pts/5 SN   0:00 bad_program
+
+[me@linuxbox me]$ kill -SIGTERM 2931
+
+[me@linuxbox me]$ kill -SIGKILL 2931
+</code></pre></div></div>
+
+<p>Yukarıdaki örnekte, tüm proseslerimizi (mevcut terminalden başlatılmayanlar dahil) listelemek için <code class="language-plaintext highlighter-rouge">ps</code> komutunu <code class="language-plaintext highlighter-rouge">x</code> seçeneğiyle birlikte kullandık. Ek olarak, yalnızca ilgilendiğimiz programı listelemek için ps komutunun çıktısını grep’e aktardık. Daha sonra, sorunlu programa SIGTERM sinyali vermek için <code class="language-plaintext highlighter-rouge">kill</code>‘i kullandık. Gerçek uygulamada kill tarafından gönderilen varsayılan sinyal SIGTERM olduğundan ve <code class="language-plaintext highlighter-rouge">kill</code> sinyal adı yerine sinyal numarasını da kullanabileceğinden, bunu aşağıdaki şekilde yapmak daha yaygındır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ kill 2931
+</code></pre></div></div>
+
+<p>Ardından, proses sonlandırılmazsa SIGKILL sinyaliyle zorlayın:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>[me@linuxbox me]$ kill -9 2931
+</code></pre></div></div>
+
+<p><strong>Kaynak:</strong> <a href="https://linuxcommand.org/">LinuxCommand.org</a></p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Neden komut satırını öğrenmeniz gerekiyor? Peki, size bir hikaye anlatayım. Yıllar önce çalıştığım yerde bir sorun yaşadık. Dosya sunucularımızdan birinde sürekli dolmaya başlayan bir ortak sürücü vardı. Bu eski işletim sisteminin kullanıcı kotalarını desteklemediğinden bahsetmeyeceğim; bu başka bir hikaye. Ancak sunucu dolmaya devam etti ve insanların çalışmasını engelledi. Yazılım mühendislerimizden biri, tüm kullanıcı dizinlerini tarayacak, kullandıkları alanı toplayacak ve sonuçların listesini yapacak bir C++ programı yazmak için birkaç saat harcadı. İşteyken eski işletim sistemini kullanmak zorunda kaldığım için Linux benzeri bir komut satırı ortamı kurdum. Sorunu duyduğumda bu görevi şu tek satırla yapabileceğimi fark ettim:]]></summary></entry><entry><title type="html">Ruby’ye Başlarken</title><link href="http://localhost:4000/2024/04/30/ruby-ye-baslarken.html" rel="alternate" type="text/html" title="Ruby’ye Başlarken" /><published>2024-04-30T00:00:00+03:00</published><updated>2024-04-30T00:00:00+03:00</updated><id>http://localhost:4000/2024/04/30/ruby-ye-baslarken</id><content type="html" xml:base="http://localhost:4000/2024/04/30/ruby-ye-baslarken.html"><![CDATA[<p>Bu kitapta Ruby dili hakkında konuşarak çok zaman harcayacağız. Bunu yapmadan önce Ruby’yi bilgisayarınıza kurup çalıştırabildiğinizden emin olmak istiyoruz. Bu şekilde örnek kodları deneyebilir ve okurken kendi başınıza denemeler yapabilirsiniz. Ruby’yi öğrenmek istiyorsanız, okurken kod yazma alışkanlığını da edinmelisiniz.</p>
 
 <h2 id="rubyyi-yüklemek">Ruby’yi Yüklemek</h2>
 
@@ -290,7 +1686,7 @@ Related: String#lstrip, String#rstrip.
 
 <p>Artık Ruby’yi kullanmaya başladığınıza göre Ruby’nin nasıl çalıştığını ve dilin temel özelliklerini öğrenmenin zamanı geldi. Ancak öncelikle dilin öne çıkan noktalarına hızlı bir genel bakış yapacağız.</p>
 
-<p><strong>Kaynak:</strong> “Programming Ruby 3.2: The Pragmatic Programmers’ Guide”, Noel Rappin with Dave Thomas</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Bu kitapta Ruby dili hakkında konuşarak çok zaman harcayacağız. Bunu yapmadan önce Ruby’yi bilgisayarınıza kurup çalıştırabildiğinizden emin olmak istiyoruz. Bu şekilde örnek kodları deneyebilir ve okurken kendi başınıza denemeler yapabilirsiniz. Ruby’yi öğrenmek istiyorsanız, okurken kod yazma alışkanlığını da edinmelisiniz.]]></summary></entry><entry><title type="html">Gatsby’nin Temelleri</title><link href="http://www.melihkocaturk.com//2024/03/28/gatsby-nin-temelleri.html" rel="alternate" type="text/html" title="Gatsby’nin Temelleri" /><published>2024-03-28T00:00:00+03:00</published><updated>2024-03-28T00:00:00+03:00</updated><id>http://www.melihkocaturk.com//2024/03/28/gatsby-nin-temelleri</id><content type="html" xml:base="http://www.melihkocaturk.com//2024/03/28/gatsby-nin-temelleri.html"><![CDATA[<p>Gatsby, React’ı temel alan, statik siteler oluşturmaya yönelik açık kaynaklı bir framework’tür. Genellikle static site generator (SSG) olarak anılan Gatsby, Gridsome gibi diğer SSG’lerin ve statik site oluşturmayı kolaylaştıran Next.js gibi JavaScript framework’lerinin yanı sıra Jamstack teknoloji kategorisinin bir parçasıdır. Gatsby performansa, ölçeklenebilirliğe ve güvenliğe özellikle önem veriyor. Pluginler, temalar, starter’lar ve katkıda bulunulan diğer projelerden oluşan zengin ve büyüyen bir ekosisteme sahip.</p>
+<p><strong>Kaynak:</strong> “Programming Ruby 3.2: The Pragmatic Programmers’ Guide”, Noel Rappin with Dave Thomas</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Bu kitapta Ruby dili hakkında konuşarak çok zaman harcayacağız. Bunu yapmadan önce Ruby’yi bilgisayarınıza kurup çalıştırabildiğinizden emin olmak istiyoruz. Bu şekilde örnek kodları deneyebilir ve okurken kendi başınıza denemeler yapabilirsiniz. Ruby’yi öğrenmek istiyorsanız, okurken kod yazma alışkanlığını da edinmelisiniz.]]></summary></entry><entry><title type="html">Gatsby’nin Temelleri</title><link href="http://localhost:4000/2024/03/28/gatsby-nin-temelleri.html" rel="alternate" type="text/html" title="Gatsby’nin Temelleri" /><published>2024-03-28T00:00:00+03:00</published><updated>2024-03-28T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/28/gatsby-nin-temelleri</id><content type="html" xml:base="http://localhost:4000/2024/03/28/gatsby-nin-temelleri.html"><![CDATA[<p>Gatsby, React’ı temel alan, statik siteler oluşturmaya yönelik açık kaynaklı bir framework’tür. Genellikle static site generator (SSG) olarak anılan Gatsby, Gridsome gibi diğer SSG’lerin ve statik site oluşturmayı kolaylaştıran Next.js gibi JavaScript framework’lerinin yanı sıra Jamstack teknoloji kategorisinin bir parçasıdır. Gatsby performansa, ölçeklenebilirliğe ve güvenliğe özellikle önem veriyor. Pluginler, temalar, starter’lar ve katkıda bulunulan diğer projelerden oluşan zengin ve büyüyen bir ekosisteme sahip.</p>
 
 <p>Bu ilk bölümde Gatsby’yi tanıyacağız. Gatsby’nin yapı taşları sayfalar ve bileşenler (component) olmasına rağmen, GraphQL ve source pluginlerinden oluşan dahili veri katmanı, veri kaynakları ile statik site oluşturma sırasında derlenen sayfalar ve bileşenler arasında köprü görevi görür. Gatsby, React üzerine inşa edilmiştir, bu nedenle Gatsby geliştiricilerinin anlaması için gerekli olan bazı JavaScript ve React kavramlarına da göz atacağız. Son olarak, Gatsby’nin geliştirici araçlarına aşina olmanızı sağlayacak ilk Gatsby “Hello World” sitemizi oluşturacağız.</p>
 
@@ -858,7 +2254,7 @@ drwxr-xr-x    3 fox  staff       96 27 Mar 16:38 static
 
 <p>Bu portu başka bir şey için kullanmıyorsanız, site https://localhost:9000 adresinde görüntülenebilir (local development sunucusundan farkına dikkat edin). İşte karşınızda: ilk Gatsby siteniz, local development veya production dağıtımına hazır!</p>
 
-<p><strong>Kaynak:</strong> “Gatsby: The Definitive Guide”, Preston So</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Gatsby, React’ı temel alan, statik siteler oluşturmaya yönelik açık kaynaklı bir framework’tür. Genellikle static site generator (SSG) olarak anılan Gatsby, Gridsome gibi diğer SSG’lerin ve statik site oluşturmayı kolaylaştıran Next.js gibi JavaScript framework’lerinin yanı sıra Jamstack teknoloji kategorisinin bir parçasıdır. Gatsby performansa, ölçeklenebilirliğe ve güvenliğe özellikle önem veriyor. Pluginler, temalar, starter’lar ve katkıda bulunulan diğer projelerden oluşan zengin ve büyüyen bir ekosisteme sahip.]]></summary></entry><entry><title type="html">Windows’ta PHP CLI versiyonu nasıl değiştirilir?</title><link href="http://www.melihkocaturk.com//2024/03/28/windows-ta-php-cli-versiyonu-nasil-degistirilir.html" rel="alternate" type="text/html" title="Windows’ta PHP CLI versiyonu nasıl değiştirilir?" /><published>2024-03-28T00:00:00+03:00</published><updated>2024-03-28T00:00:00+03:00</updated><id>http://www.melihkocaturk.com//2024/03/28/windows-ta-php-cli-versiyonu-nasil-degistirilir</id><content type="html" xml:base="http://www.melihkocaturk.com//2024/03/28/windows-ta-php-cli-versiyonu-nasil-degistirilir.html"><![CDATA[<p>Son zamanlarda Laravel 10 ile bir uygulama geliştiriyorum. Laravel 10 ile çalışabilmek için PHP CLI’mı yükseltmem gerekiyor. Şu anda bilgisayarımda PHP 7.0.33 (cli) yüklü. Terminalde kendi PHP CLI’nizi aşağıdaki gibi kontrol edebilirsiniz.</p>
+<p><strong>Kaynak:</strong> “Gatsby: The Definitive Guide”, Preston So</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Gatsby, React’ı temel alan, statik siteler oluşturmaya yönelik açık kaynaklı bir framework’tür. Genellikle static site generator (SSG) olarak anılan Gatsby, Gridsome gibi diğer SSG’lerin ve statik site oluşturmayı kolaylaştıran Next.js gibi JavaScript framework’lerinin yanı sıra Jamstack teknoloji kategorisinin bir parçasıdır. Gatsby performansa, ölçeklenebilirliğe ve güvenliğe özellikle önem veriyor. Pluginler, temalar, starter’lar ve katkıda bulunulan diğer projelerden oluşan zengin ve büyüyen bir ekosisteme sahip.]]></summary></entry><entry><title type="html">Windows’ta PHP CLI versiyonu nasıl değiştirilir?</title><link href="http://localhost:4000/2024/03/28/windows-ta-php-cli-versiyonu-nasil-degistirilir.html" rel="alternate" type="text/html" title="Windows’ta PHP CLI versiyonu nasıl değiştirilir?" /><published>2024-03-28T00:00:00+03:00</published><updated>2024-03-28T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/28/windows-ta-php-cli-versiyonu-nasil-degistirilir</id><content type="html" xml:base="http://localhost:4000/2024/03/28/windows-ta-php-cli-versiyonu-nasil-degistirilir.html"><![CDATA[<p>Son zamanlarda Laravel 10 ile bir uygulama geliştiriyorum. Laravel 10 ile çalışabilmek için PHP CLI’mı yükseltmem gerekiyor. Şu anda bilgisayarımda PHP 7.0.33 (cli) yüklü. Terminalde kendi PHP CLI’nizi aşağıdaki gibi kontrol edebilirsiniz.</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>php -v
 PHP 7.0.33 (cli) (built: Dec  5 2018 21:22:29) ( ZTS )
@@ -896,7 +2292,7 @@ Zend Engine v3.0.0, Copyright (c) 1998-2017 Zend Technologies
 PHP 8.1.8 (cli) (built: Jul  5 2022 23:04:29) (ZTS Visual C++ 2019 x64)
 Copyright (c) The PHP Group
 Zend Engine v4.1.8, Copyright (c) Zend Technologies
-</code></pre></div></div>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Son zamanlarda Laravel 10 ile bir uygulama geliştiriyorum. Laravel 10 ile çalışabilmek için PHP CLI’mı yükseltmem gerekiyor. Şu anda bilgisayarımda PHP 7.0.33 (cli) yüklü. Terminalde kendi PHP CLI’nizi aşağıdaki gibi kontrol edebilirsiniz.]]></summary></entry><entry><title type="html">PHP - Nesne Araçları</title><link href="http://www.melihkocaturk.com//2024/03/23/php-nesne-araclari.html" rel="alternate" type="text/html" title="PHP - Nesne Araçları" /><published>2024-03-23T00:00:00+03:00</published><updated>2024-03-23T00:00:00+03:00</updated><id>http://www.melihkocaturk.com//2024/03/23/php-nesne-araclari</id><content type="html" xml:base="http://www.melihkocaturk.com//2024/03/23/php-nesne-araclari.html"><![CDATA[<p>Gördüğümüz gibi PHP, sınıflar ve metotlar gibi dil yapıları aracılığıyla nesne yönelimli programlamayı destekler. Dil ayrıca nesnelerle çalışmanıza yardımcı olmak için tasarlanmış fonksiyon ve sınıflar aracılığıyla daha geniş destek sağlar.</p>
+</code></pre></div></div>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Son zamanlarda Laravel 10 ile bir uygulama geliştiriyorum. Laravel 10 ile çalışabilmek için PHP CLI’mı yükseltmem gerekiyor. Şu anda bilgisayarımda PHP 7.0.33 (cli) yüklü. Terminalde kendi PHP CLI’nizi aşağıdaki gibi kontrol edebilirsiniz.]]></summary></entry><entry><title type="html">PHP - Nesne Araçları</title><link href="http://localhost:4000/2024/03/23/php-nesne-araclari.html" rel="alternate" type="text/html" title="PHP - Nesne Araçları" /><published>2024-03-23T00:00:00+03:00</published><updated>2024-03-23T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/23/php-nesne-araclari</id><content type="html" xml:base="http://localhost:4000/2024/03/23/php-nesne-araclari.html"><![CDATA[<p>Gördüğümüz gibi PHP, sınıflar ve metotlar gibi dil yapıları aracılığıyla nesne yönelimli programlamayı destekler. Dil ayrıca nesnelerle çalışmanıza yardımcı olmak için tasarlanmış fonksiyon ve sınıflar aracılığıyla daha geniş destek sağlar.</p>
 
 <p>Bu bölümde, nesneleri ve sınıfları düzenlemek, test etmek ve değiştirmek için kullanabileceğiniz bazı araçlara ve tekniklere bakacağız.</p>
 
@@ -2448,7 +3844,7 @@ $attrs = $rmeth-&gt;getAttributes(ApiInfo::class, \ReflectionAttribute::IS_INSTA
 
 <p>Ayrıca Reflection API ile işleri bir sonraki aşamaya taşımadan önce PHP’nin nesne ve sınıf fonksiyonlarını da inceledik. Reflection’ın sunduğu potansiyel kullanımlardan birini gösteren basit bir örnek oluşturmak için Reflection sınıflarını kullandık. Son olarak Reflection sınıflarını niteliklerle birleştirdik: PHP 8’de yeni ve önemli bir özellik.</p>
 
-<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Gördüğümüz gibi PHP, sınıflar ve metotlar gibi dil yapıları aracılığıyla nesne yönelimli programlamayı destekler. Dil ayrıca nesnelerle çalışmanıza yardımcı olmak için tasarlanmış fonksiyon ve sınıflar aracılığıyla daha geniş destek sağlar.]]></summary></entry><entry><title type="html">PHP - Gelişmiş Özellikler</title><link href="http://www.melihkocaturk.com//2024/03/22/php-gelismis-ozellikler.html" rel="alternate" type="text/html" title="PHP - Gelişmiş Özellikler" /><published>2024-03-22T00:00:00+03:00</published><updated>2024-03-22T00:00:00+03:00</updated><id>http://www.melihkocaturk.com//2024/03/22/php-gelismis-ozellikler</id><content type="html" xml:base="http://www.melihkocaturk.com//2024/03/22/php-gelismis-ozellikler.html"><![CDATA[<p>Sınıf tipi ipuçlarının ve erişim kontrolünün size bir sınıfın arayüzü üzerinde nasıl daha fazla kontrol sağladığını zaten gördünüz. Bu bölümde, PHP’nin nesne yönelimli özelliklerini daha derinlemesine inceleyeceğim.</p>
+<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Gördüğümüz gibi PHP, sınıflar ve metotlar gibi dil yapıları aracılığıyla nesne yönelimli programlamayı destekler. Dil ayrıca nesnelerle çalışmanıza yardımcı olmak için tasarlanmış fonksiyon ve sınıflar aracılığıyla daha geniş destek sağlar.]]></summary></entry><entry><title type="html">PHP - Gelişmiş Özellikler</title><link href="http://localhost:4000/2024/03/22/php-gelismis-ozellikler.html" rel="alternate" type="text/html" title="PHP - Gelişmiş Özellikler" /><published>2024-03-22T00:00:00+03:00</published><updated>2024-03-22T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/22/php-gelismis-ozellikler</id><content type="html" xml:base="http://localhost:4000/2024/03/22/php-gelismis-ozellikler.html"><![CDATA[<p>Sınıf tipi ipuçlarının ve erişim kontrolünün size bir sınıfın arayüzü üzerinde nasıl daha fazla kontrol sağladığını zaten gördünüz. Bu bölümde, PHP’nin nesne yönelimli özelliklerini daha derinlemesine inceleyeceğim.</p>
 
 <p>Bu bölüm birkaç konuyu kapsayacaktır:</p>
 
@@ -4498,255 +5894,7 @@ $person-&gt;output(
 
 <p>Bir sonraki bölümde, yerleşik nesne özelliklerinden bir adım geri çekiliyorum ve nesnelerle çalışmanıza yardımcı olmak için tasarlanmış sınıflara ve fonksiyonlara bakıyorum.</p>
 
-<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Sınıf tipi ipuçlarının ve erişim kontrolünün size bir sınıfın arayüzü üzerinde nasıl daha fazla kontrol sağladığını zaten gördünüz. Bu bölümde, PHP’nin nesne yönelimli özelliklerini daha derinlemesine inceleyeceğim.]]></summary></entry><entry><title type="html">PHP ve Nesneler</title><link href="http://www.melihkocaturk.com//2024/03/20/php-ve-nesneler.html" rel="alternate" type="text/html" title="PHP ve Nesneler" /><published>2024-03-20T00:00:00+03:00</published><updated>2024-03-20T00:00:00+03:00</updated><id>http://www.melihkocaturk.com//2024/03/20/php-ve-nesneler</id><content type="html" xml:base="http://www.melihkocaturk.com//2024/03/20/php-ve-nesneler.html"><![CDATA[<p>Nesneler her zaman PHP projesinin önemli bir parçası değildi. Aslında, bir zamanlar PHP tasarımcıları tarafından “sonradan düşünülmüş” olarak tanımlanmışlardı. Bu bölümde, PHP’nin nesne yönelimli özelliklerinin gelişimini özetleyerek tanıtıyorum.</p>
-
-<p>Aşağıdakilere bakacağız:</p>
-
-<ul>
-  <li>PHP/FI 2.0: PHP, ama bildiğimiz gibi değil.</li>
-  <li>PHP 3: Nesneler ilk kez ortaya çıkıyor.</li>
-  <li>PHP 4: Nesne yönelimli programlama gelişir.</li>
-  <li>PHP 5: Dilin merkezindeki nesneler.</li>
-  <li>PHP 7: Boşluğu kapatmak.</li>
-  <li>PHP 8: Konsolidasyon devam ediyor.</li>
-</ul>
-
-<h2 id="php-nesnelerinin-kazara-başarısı">PHP Nesnelerinin Kazara Başarısı</h2>
-
-<p>PHP’nin kapsamlı nesne desteği ve dolaşımdaki çok sayıda nesne yönelimli PHP kütüphanesi ve uygulamasıyla, PHP’de nesnenin yükselişi doğal ve kaçınılmaz bir süreç gibi görünebilir. Doğrusu, hiçbir şey gerçeklerden daha uzak olamaz.</p>
-
-<p><strong>Başlangıç: PHP/FI</strong></p>
-
-<p>Bugün bildiğimiz PHP’nin doğuşu, Rasmus Lerdorf tarafından Perl kullanılarak geliştirilen iki araca dayanmaktadır. PHP, Personal Home Page Tools anlamına geliyordu. FI, Form Interpreter anlamına gelir. Birlikte, veritabanlarına, formlara ve akış kontrolüne SQL ifadeleri gönderen makrolardan oluşuyorlardı.</p>
-
-<p>Bu araçlar C’de yeniden yazıldı ve PHP/FI 2.0 adı altında birleştirildi. Bu aşamadaki dil, bugün tanıdığımız sözdiziminden farklı görünüyordu ama o kadar da farklı değildi. Değişkenler, ilişkisel diziler ve fonksiyonlar için destek vardı. Ancak nesneler ufukta görünmüyordu.</p>
-
-<p><strong>Sentetik Şeker: PHP 3</strong></p>
-
-<p>Hatta PHP 3 daha planlama aşamasındayken bile konu gündem dışıydı. PHP 3’ün başlıca mimarları Zeev Suraski ve Andi Gutmans idi. PHP 3 tamamen yeniden yazıldı, ancak nesneler yeni sözdiziminin gerekli bir parçası olarak görülmedi.</p>
-
-<p>Zeev Suraski’ye göre, sınıf desteği neredeyse sonradan düşünülerek eklendi (kesin olarak 27 Ağustos 1997’de). Sınıflar ve nesneler aslında ilişkisel dizileri tanımlamanın ve bunlara erişmenin başka bir yoluydu…</p>
-
-<p>Elbette, metotların ve kalıtımın eklenmesi, sınıfları ilişkisel dizilerden çok daha fazlası haline getirdi, ancak yine de sınıflarla neler yapabileceğiniz konusunda ciddi sınırlamalar vardı. Özellikle, bir üst sınıfın geçersiz kılınan metotlarına erişemezsiniz (bunun ne anlama geldiğini henüz bilmiyorsanız merak etmeyin; daha sonra açıklayacağım). Bir sonraki bölümde inceleyeceğim bir diğer dezavantaj, PHP scriptlerinde nesnelerin aktarılmasının optimal olmayan yoluydu.</p>
-
-<p>Nesnelerin o zamanlar marjinal bir konu olduğu, resmi dökümantasyonda önem taşımamalarıyla vurgulanmaktadır. Dökümantasyon, nesnelere bir cümle ve bir kod örneği ayırdı. Örnek, kalıtımı veya özellikleri (property) göstermiyordu.</p>
-
-<p><strong>PHP 4 ve Sessiz Devrim</strong></p>
-
-<p>PHP 4, dil için bir başka çığır açan adım olsa da, temel değişikliklerin çoğu yüzeyin altında gerçekleşti. Zend Motoru (adı Zeev ve Andi’den türetilmiştir) dili güçlendirmek için sıfırdan yazılmıştır. Zend Engine, PHP’yi çalıştıran ana bileşenlerden biridir. Aramak isteyebileceğiniz herhangi bir PHP fonksiyonu, aslında üst düzey uzantı katmanının bir parçasıdır. Bunlar, veritabanı API’leriyle konuşmak veya dizelerde hokkabazlık yapmak gibi işleri yaparlar. Bunun altında, Zend Engine belleği yönetir, kontrolü diğer bileşenlere devreder ve her gün çalıştığınız tanıdık PHP sözdizimini çalıştırılabilir bayt koduna çevirir. Sınıflar gibi temel dil özellikleri için teşekkür etmemiz gereken Zend Engine’dir.</p>
-
-<p>Nesnel bakış açımızdan, PHP 4’ün ana metotları geçersiz kılmayı ve bunlara alt sınıflardan erişmeyi mümkün kılması büyük bir avantajdı.</p>
-
-<p>Ancak büyük bir dezavantaj devam etti. Bir değişkene nesne atamak, onu fonksiyona göndermek veya metottan döndürmek, bir kopyanın oluşmasıyla sonuçlandı. Bunun gibi bir atama düşünün:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$my_obj = new User('bob');
-$other = $my_obj;
-</code></pre></div></div>
-
-<p>Bu kod çalıştırıldığında, aynı User nesnesine iki referans yerine, iki User nesnesinin varlığıyla sonuçlandı. Çoğu nesne yönelimli dilde, değere göre değil referansa göre atama beklersiniz. Bu, nesnelerin kendisini kopyalamak yerine nesne işaretçilerini atayacağınız anlamına gelir. Varsayılan değere göre atama davranışı, programcıların farkında olmadan komut dosyasının bir bölümündeki nesneleri değiştirerek, değişikliklerin başka bir yerdeki referanslar aracılığıyla görülmesini bekledikleri için pek çok hatayla sonuçlandı. Bu kitap boyunca, aynı nesnenin birden fazla referansını kullandığım birçok örnek göreceksiniz.</p>
-
-<p>İyi ki, referansa dayalı atamayı zorlamanın bir yolu vardı, ancak bu, hantal bir yapı kullanmayı hatırlamak anlamına geliyordu.</p>
-
-<p>Referans olarak nasıl atayacağınız aşağıda açıklanmıştır:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$other =&amp; $my_obj;
-// $other and $my_obj point to same object
-</code></pre></div></div>
-
-<p>Bu, referansa göre geçişi zorunlu kılar:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function setSchool(&amp; $school)
-{
-    // $school is now a reference to not a copy of passed object
-}
-</code></pre></div></div>
-
-<p>Ve işte referansla geri dönüş:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function &amp; getSchool()
-{
-    // returning a reference not a copy
-    return $this-&gt;school;
-}
-</code></pre></div></div>
-
-<p>İyi çalışsa da, &amp; işaretini eklemeyi unutmak kolaydı ve bu, hataların koda sızmasının çok kolay olduğu anlamına geliyordu. Hataların izini sürmek özellikle zordu, çünkü nadiren raporlanan hatalara neden oluyorlardı.</p>
-
-<p>PHP kılavuzunda genel olarak sözdiziminin, özel olarak nesnelerin kapsamı genişletildi ve nesne yönelimli kodlama akımına doğru yönelim başladı. PHP’deki nesneler tartışmasız değildi (şimdi olduğu gibi) ve “Nesnelere ihtiyacım var mı?” sorusu, posta listelerinde yaygın olarak görülüyordu. Gerçekten de, Zend sitesi, nesne yönelimli programlamayı teşvik eden makalelerin yanı sıra bu konuda uyaran makalelere ev sahipliği yaptı. Referansla geçiş sorunları ve tartışmalara rağmen, birçok programcı kodlarını &amp; karakteriyle doldurdu. Nesne yönelimli PHP popülaritesini artırdı. Zeev Suraski bu konuyu DevX.com için bir makalede yazdı.</p>
-
-<p>“PHP tarihindeki en büyük dönüm noktalarından biri - sınırlı işlevselliğe ve bir dizi sorun ve sınırlamaya rağmen - nesne yönelimli programlamanın gelişmesi ve artan sayıda kullanıma hazır PHP uygulamaları için en popüler paradigma haline gelmesiydi. Çoğunlukla beklenmedik olan bu eğilim, PHP’yi hazırlıksız yakaladı. Nesnelerin diğer dillerdeki nesneler gibi davranmadığı ve bunun yerine <em>ilişkisel</em> diziler gibi davrandığı ortaya çıktı.”</p>
-
-<p>Önceki bölümde belirtildiği gibi, nesne yönelimli tasarıma olan ilgi çevrimiçi sitelerde ve makalelerde belirgin hale geldi. PHP’nin resmi yazılım reposu PEAR nesne yönelimli programlamayı benimsemiştir. Geriye dönüp bakıldığında, PHP’nin nesne yönelimli desteği benimsemesinin kaçınılmaz bir güce isteksiz bir teslimiyet olduğunu düşünmek kolaydır. Nesneye yönelik programlamanın 1960’lardan beri var olmasına rağmen, 1990’ların ortalarında gerçekten zemin kazandığını hatırlamak önemlidir. Nesne yönelimli programlamayı popülerleştiren Java, 1995’e kadar piyasaya sürülmedi. Prosedürel bir dil olan C’nin bir üst kümesi C++, 1979’dan beri ortalıkta dolaşıyor. Uzun bir evrimden sonra, 1990’larda tartışmasız büyük bir sıçrama yaptı. Perl 5, 1994 yılında piyasaya sürüldü, bu, kullanıcılarının nesneler üzerinde düşünmesini mümkün kılan, prosedürel bir dilde başka bir devrimdi. Küçük bir prosedürel dil için PHP, nesne desteğini oldukça hızlı geliştirerek, kullanıcılarının gereksinimlerine gerçek bir yanıt verdi.</p>
-
-<p><strong>Benimsenen Değişim: PHP 5</strong></p>
-
-<p>PHP 5, nesnelerin ve nesne yönelimli programlamanın açık onayını temsil ediyordu. Bu, nesnelerin PHP ile çalışmanın tek yolu olduğu anlamına gelmez (bu arada, bu kitap bunu da söylemiyor). Bununla birlikte, nesneler, enterprise sistemler geliştirmek için güçlü ve önemli bir araç olarak kabul edildi ve PHP, core tasarımında bunları tam olarak destekledi.</p>
-
-<p>Muhtemelen, PHP 5’teki geliştirmelerin önemli etkilerinden biri, dilin daha büyük İnternet şirketleri tarafından benimsenmesiydi. Örneğin Yahoo ve Facebook, PHP’yi yoğun bir şekilde kullanmaya başladı. Sürüm 5 ile PHP, web geliştirme için standart dillerden biri haline geldi.</p>
-
-<p>Nesneler dil sürücüsüne taşınmıştı. Belki de en önemli değişiklik, pass-by-reference davranışıydı. Ancak bu sadece başlangıçtı. Bu kitap boyunca ve özellikle de bu bölümünde, private ve protected metotlar ve properties (özellikler), static anahtar sözcüğü, namespace’ler, type hints (artık type declaration olarak adlandırılmaktadır) ve exceptions (istisnalar) dahil olmak üzere çok daha fazla geliştirmeyle karşılaşacağız. PHP 5 uzun bir süredir (yaklaşık 12 yıl) ortalıkta dolaşıyordu ve yeni özellikler aşamalı olarak piyasaya sürüldü.</p>
-
-<p><strong>Not</strong>: PHP’nin, PHP 5’in tanıtılmasıyla referans olarak atama için tam anlamıyla hareket etmediğini ve bu durumun değişmediğini belirtmekte fayda var. Bunun yerine, varsayılan olarak, bir nesne atandığında, metoda iletildiğinde veya metottan döndürüldüğünde, o nesneye tanımlayıcı kopyalanır. Bu nedenle, &amp; işareti ile referansa göre atamayı zorunlu kılmadığınız sürece, yine de bir kopyalama işlemi gerçekleştiriyorsunuz. Bununla birlikte, pratik açıdan, bu tür kopyalama ile referans yoluyla atama arasında genellikle çok az fark vardır, çünkü aynı hedef nesneye başvuruda bulunursunuz.</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class megaquiz_util_Conf
-{
-}
-</code></pre></div></div>
-
-<p>Bunun gibi sınıf adları, paketler arasındaki çakışmaları önlemenin bir yoludur, ancak dolambaçlı kodlar oluşturabilirler. Ayrıca closure, generator, trait, late static binding desteği de verildi.</p>
-
-<p><strong>PHP 7: Boşluğu Kapatmak</strong></p>
-
-<p>Programcılar zorlu bir gruptur. Design pattern’leri seven birçok kişi için, PHP’de hala eksik olan iki temel özellik vardı. Bunlar, skaler tip bildirimleri ve zorunlu dönüş tipleriydi. PHP 5 ile, yalnızca bir nesneye, diziye veya daha sonra çağrılabilir bir koda ihtiyacınız olduğu sürece, metoda veya fonksiyona iletilen değişkenin tipini zorlamak mümkündü. Skaler değerler (integer, string ve float gibi) hiç uygulanamadı. Ayrıca, bir metodun veya fonksiyonun dönüş tipini bildirme şansınız yoktu.</p>
-
-<p>Göreceğiniz gibi, nesne yönelimli tasarım genellikle bir tür sözleşme olarak metot bildirimi kullanır. Metot, belirli girdiler talep eder ve karşılıklı olarak, size belirli bir veri tipini geri vermeyi taahhüt eder. PHP 5 programcıları, birçok durumda bu tür sözleşmeleri sürdürmek için yorumlara, kurallara ve manuel tip denetimine güvenmek zorunda kaldı. Geliştiriciler ve yorumcular genellikle bundan şikayet ediyordu.</p>
-
-<p>PHP 7, skaler tip bildirimlerini (önceden type hint olarak biliniyordu) ve dönüş tipi bildirimlerini tanıttı. Dahası, PHP 7.4, typed property sunarak tip güvenliğini daha da ileri götürdü. Doğal olarak, tüm bunlar bu baskıda ele alınmıştır.</p>
-
-<p>PHP 7 ayrıca, anonim sınıflar ve bazı namespace geliştirmeleri dahil olmak üzere başka güzel şeyler de sağladı.</p>
-
-<p><strong>PHP 8: Konsolidasyon devam ediyor</strong></p>
-
-<p>PHP, diğer dillerin en iyi özelliklerini ödünç almıştır. PHP 8, diğer dillerde annotation olarak bilinen nitelikler de dahil olmak üzere birçok yeni özellik sunar. Bu kullanışlı etiketler, bir sistemdeki sınıflar, metotlar, properties ve sabitler hakkında ek bağlamsal bilgiler sağlamak için kullanılabilir. Ayrıca PHP 8, tip bildirimleri için desteğini genişletmeye devam etmiştir. Bu alanda özellikle ilginç olanı, union tipi bildirimidir. Bu, bir özelliğin veya parametrenin tipinin belirtilen birkaç tipten biriyle sınırlandırabilmenize olanak tanır. PHP’nin tip esnekliğinden yararlanırken aynı zamanda tipleri kilitleyebilirsiniz.</p>
-
-<p><strong>Nesne Tartışması</strong></p>
-
-<p>Nesneler ve nesne yönelimli tasarım, tutku uyandırıyor gibi görünüyor. Pek çok mükemmel programcı, nesneleri kullanmadan yıllarca mükemmel kodlar üretti ve PHP, prosedürel web programlama için etkileyici bir platform olmaya devam ediyor.</p>
-
-<p>Bu kitap doğal olarak baştan sona nesne yönelimli önyargı sergiliyor, bu önyargı benim nesneye bulaşmış bakış açımı yansıtıyor. Konumuz nesneler olduğundan, vurgunun kesinlikle nesne yönelimli olması kaçınılmazdır. Bununla birlikte, bu kitaptaki hiçbir şey, nesnelerin başarıya giden tek gerçek yol olduğunu öne sürmeyi amaçlamamaktadır.</p>
-
-<p>Geliştiricilerin nesne yönelimli bir dil olarak PHP ile çalışmayı seçip seçmemesi bir zamanlar bir tercih meselesiydi. Bu, tamamen kabul edilebilir sistemler yaratılabileceği ölçüde hala geçerlidir. Bazı harika araçlar (örneğin, WordPress) temel mimarilerinde hala prosedüreldir. Bununla birlikte, PHP’nin nesne desteğini kullanmadan ve anlamadan bir PHP programcısı olarak çalışmak giderek daha zor hale geliyor, özellikle de projelerinizde kullanacağınız kütüphanelerin kendileri muhtemelen nesne yönelimli olacakları için.</p>
-
-<p>Yine de, Perl’in şu ünlü mottosunu akılda tutmaya değer: “Bir şeyi yapmanın birden fazla yolu var.” Bu özellikle daha küçük scriptler için geçerlidir, hızlı bir şekilde çalışan bir örnek oluşturmak, daha büyük bir sisteme ölçeklendirilecek bir yapı oluşturmaktan daha önemlidir.</p>
-
-<p>Kod esnek bir ortamdır. İşin püf noktası, konseptinizin ne zaman daha büyük bir geliştirmenin temeli haline geldiğini bilmektir. Artık büyüyen projenize tasarım odaklı bir yaklaşım benimsemeye karar verdiğinize göre, bu kitabın nesne yönelimli mimariler oluşturmaya başlamak için ihtiyaç duyduğunuz yardımı sağlayacağını umuyorum.</p>
-
-<p><strong>Özet</strong></p>
-
-<p>Bu kısa bölüm, nesneleri PHP dilindeki bağlamlarına yerleştirdi. PHP’nin geleceği, nesne yönelimli tasarıma bağlıdır. Sonraki birkaç bölümde, PHP’nin mevcut nesne desteğinin anlık görüntüsünü alacağım ve bazı tasarım konularını tanıtacağım.</p>
-
-<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Nesneler her zaman PHP projesinin önemli bir parçası değildi. Aslında, bir zamanlar PHP tasarımcıları tarafından “sonradan düşünülmüş” olarak tanımlanmışlardı. Bu bölümde, PHP’nin nesne yönelimli özelliklerinin gelişimini özetleyerek tanıtıyorum.]]></summary></entry><entry><title type="html">PHP - Tasarım ve Yönetim</title><link href="http://www.melihkocaturk.com//2024/03/20/php-tasarim-ve-yonetim.html" rel="alternate" type="text/html" title="PHP - Tasarım ve Yönetim" /><published>2024-03-20T00:00:00+03:00</published><updated>2024-03-20T00:00:00+03:00</updated><id>http://www.melihkocaturk.com//2024/03/20/php-tasarim-ve-yonetim</id><content type="html" xml:base="http://www.melihkocaturk.com//2024/03/20/php-tasarim-ve-yonetim.html"><![CDATA[<p>Temmuz 2004’te PHP 5.0 yayınlandı. Bu sürüm, bir dizi radikal geliştirmeyle geldi. Belki de bunlardan ilki, nesne yönelimli programlama için kökten geliştirilmiş destekti. Bu, PHP topluluğu içinde nesnelere ve tasarıma büyük ilgi uyandırdı. Aslında bu, PHP 4.0 ile  başlayan bir sürecin devamıydı.</p>
-
-<p>Bu bölümde, nesnelerin çözebileceği bazı sorunları inceliyorum. Örüntülerin ve ilgili uygulamaların evriminin bazı yönlerini kısaca özetliyorum.</p>
-
-<p>Ayrıca bu kitapta ele alınan konuları da özetledim.</p>
-
-<ul>
-  <li><em>Felaketin evrimi</em>: Bir proje kötüye gidiyor</li>
-  <li><em>Tasarım ve PHP</em>: Nesne yönelimli tasarım teknikleri PHP topluluğunda nasıl kök saldı?</li>
-  <li><em>Bu kitap</em>: Nesneler, Pattern’ler, Uygulama</li>
-</ul>
-
-<h2 id="sorun">Sorun</h2>
-
-<p>Sorun şu ki PHP çok kolay. Fikirlerinizi denemeniz için sizi cezbeder ve iyi sonuçlarla gururunuzu okşar. PHP bunu desteklemek için tasarlandığından, kodunuzun çoğunu doğrudan web sayfalarınıza yazarsınız. Sayfadan sayfaya dahil edilebilecek dosyalara yardımcı işlevler (veritabanı erişim kodu gibi) eklersiniz ve siz farkına bile varmadan çalışan bir web uygulamanız olur.</p>
-
-<p>Felakete doğru ilerliyorsun. Bunu elbette anlamıyorsunuz çünkü siteniz harika görünüyor. İyi performans gösteriyor, müşterileriniz mutlu ve kullanıcılarınız para harcıyor.</p>
-
-<p>Yeni bir aşamaya başlamak için koda geri döndüğünüzde sorun çıkar. Artık daha büyük bir ekibiniz, daha fazla kullanıcınız ve daha büyük bir bütçeniz var. Ancak, hiçbir uyarı olmadan  işler ters gitmeye başlar. Sanki projeniz zehirlenmiş gibi.</p>
-
-<p>Yeni programcınız kodu anlamakta zorlanıyor. Bir ekip üyesi olarak tam güce ulaşması beklediğinizden daha uzun sürüyor.</p>
-
-<p>Bir gün olarak tahmin edilen basit bir değişiklik, sonuç olarak 20 veya daha fazla sayfayı  güncellemeniz gerektiğini keşfettiğinizde üç gün sürer.</p>
-
-<p>Yazılımcılarınızdan biri, bir süre önce aynı kodda yaptığınız büyük değişikliklerin üzerine kendi sürümünü kaydeder. Kayıp üç gün boyunca fark edilmez, bu zamana kadar kendi yerel kopyanızı değiştirmiş olursunuz. Aynı zamanda dosya üzerinde çalışan üçüncü bir geliştiriciyi bekleterek karmaşayı çözmek bir gün sürer.</p>
-
-<p>Uygulamanın popülaritesi nedeniyle, kodu yeni bir sunucuya taşımanız gerekir. Proje elle kurulmalıdır ve dosya yollarının, veritabanı adlarının ve parolaların birçok kaynak dosyaya sabit kodlanmış olduğunu keşfedersiniz. Taşıma sırasında çalışmayı durdurursunuz çünkü yapılandırma değişikliklerinin üzerine yazmak istemezsiniz. Birisinin Apache modülü ModRewrite ile ilgili akıllıca bir şey yaptığı ve uygulamanın artık düzgün çalışması için buna ihtiyaç duyduğu ortaya çıktığında, tahmini iki saat sekiz saat oluyor.</p>
-
-<p>Sonunda 2. faza geçtiniz. Bir buçuk gün boyunca her şey yolunda. İlk hata raporu, siz ofisten çıkmak üzereyken gelir. Müşteri şikayet etmek için dakikalar sonra telefon eder. Rapor ilkine benziyor, ancak biraz daha incelendiğinde, benzer davranışlara neden olan farklı bir hata olduğu ortaya çıkıyor. Projenin geri kalanında kapsamlı değişiklikler gerektiren, fazın başlangıcındaki basit değişikliği hatırlıyorsunuz.</p>
-
-<p>Gerekli değişikliklerin tümünün yerinde olmadığını anlıyorsunuz. Bunun nedeni, başlangıçta atlanmış olmaları veya söz konusu dosyaların üzerine yazılmasıdır. Hataları düzeltmek için gereken değişiklikleri aceleyle yaparsınız. Değişiklikleri test etmek çok acele ediyorsunuz, ancak bunlar basit bir kopyala ve yapıştır meselesi, öyleyse ne ters gidebilir?</p>
-
-<p>Ertesi sabah, ofise geldiğinizde bir alışveriş sepeti modülünün bütün gece kapalı olduğunu görürsünüz. Yaptığınız son dakika değişiklikleri, baştaki tırnak işaretini atlayarak kodu kullanılamaz hale getirdi. Elbette, siz uyurken, diğer zaman dilimlerindeki potansiyel müşteriler tamamen uyanıktı ve mağazanızda para harcamaya hazırdı. Sorunu çözersiniz, müşterileri sakinleştirirsiniz ve ekibi başka bir günkü yangınla mücadele için bir araya getirirsiniz.</p>
-
-<p>Kod yazan insanların bu günlük hikayesi biraz abartılı görünebilir, ancak tüm bunların tekrar tekrar olduğunu gördüm. Pek çok PHP projesi hayata küçük başlar ve canavarlara dönüşür.</p>
-
-<p>Sunum katmanı aynı zamanda uygulama mantığını da içerdiğinden, veritabanı sorguları, kimlik doğrulama kontrolleri, form işlemleri ve daha fazlası sayfadan sayfaya kopyalanır. Bu kod bloklarından birinde değişiklik gerektiğinde, kodun bulunduğu her yerde yapılması gerekir.</p>
-
-<p>Dokümantasyon eksikliği kodun okunmasını zorlaştırır ve test eksikliği belirsiz hataların dağıtıma kadar farkedilmesini engeller. Bir işin değişen doğası, genellikle kodun, temel olarak uygun olmadığı görevleri yerine getirene kadar asıl amacından uzaklaşması anlamına gelir. Bu tür bir kod genellikle arap saçına döndüğünden, yeni amaca uyacak şekilde kısımları değiştirmek ve yeniden yazmak imkansız değilse bile zordur.</p>
-
-<h2 id="php-ve-diğer-diller">PHP ve Diğer Diller</h2>
-
-<p>PHP’nin olağanüstü popülaritesi, sınırlarının erken ve zorlu bir şekilde test edilmesi anlamına geliyordu. Bir sonraki bölümde göreceğiniz gibi, PHP hayata kişisel web sayfalarını yönetmek için bir dizi makro olarak başladı. PHP 3’ün ve daha büyük ölçüde PHP 4’ün gelişiyle, dil hızla büyük kurumsal web sitelerinin arkasındaki başarılı güç haline geldi. Bununla birlikte, birçok yönden, PHP’nin başlangıç mirası, script tasarımı ve proje yönetimine taşındı. Bazı çevrelerde PHP, sunum (presentation) görevleri için en uygun olan hobi dili olarak haksız bir üne sahipti.</p>
-
-<p>Bu sıralarda (milenyum başında), diğer topluluklarda yeni fikirler geçerlilik kazanıyordu. Nesne yönelimli tasarıma olan ilgi, Java topluluğunu harekete geçirdi. Java nesne yönelimli bir dil olduğu için bunun gereksiz olduğunu düşünebilirsiniz. Ancak sınıfları ve nesneleri kullanmak kendi başına belirli bir tasarım yaklaşımı sağlamaz.</p>
-
-<p>Bir sorunu, çözümünün özüyle birlikte tanımlamanın yolu olarak design pattern (tasarım deseni) kavramı ilk kez 1970’lerde tartışıldı. Fikir - belkide en uygun şekilde - bilgisayar bilimi alanından değil, mimarlık alanından, Christopher Alexander’ın ufuk açıcı bir çalışmasıyla ortaya çıkmıştır: A Pattern Language (Oxford University Press, 1977). 1990’ların başlarında, nesne yönelimli programcılar, yazılım tasarımı problemlerini adlandırmak ve tanımlamak için aynı tekniği kullanıyorlardı. Erich Gamma, Richard Helm, Ralph Johnson ve John Vlissides’ın (bundan böyle bu kitapta “Gang of Four” takma adlarıyla anılacaklardır) yazdığı tasarım desenleri üzerine ufuk açıcı kitap Design Patterns: Elements of Reusable Object-Oriented Software bugün hala vazgeçilmezdir. İçerdiği pattern’ler, bu alana yeni başlayan herkes için gerekli bir ilk adımdır, bu nedenle bu kitaptaki pattern’lerin çoğu ondan alınmıştır.</p>
-
-<p>Java dilinin kendisi, API’sinde birçok core pattern’i konuşlandırdı, ancak design pattern’lerin topluluğun genelinin bilincine sızması 1990’ların sonlarını buldu. Pattern’ler hızla Main Street kitapçılarının bilgisayar bölümlerine ulaştı ve ilk ateşli tartışmalar mail listelerinde ve forumlarda başladı.</p>
-
-<p>İlgili konular da önem kazandı. Bunların arasında Kent Beck tarafından desteklenen Extreme Programming (XP) de vardı. XP, esnek, tasarım yönlü, yüksek odaklı planlama ve yürütmeyi teşvik eden bir proje yaklaşımıdır.</p>
-
-<p>XP’nin ilkeleri arasında öne çıkan, testin bir projenin başarısı için çok önemli olduğu konusundaki ısrardır. Testler otomatikleştirilmeli, sık çalıştırılmalı ve tercihen kodlar yazılmadan önce tasarlanmalıdır.</p>
-
-<p>XP ayrıca projelerin küçük (çok küçük) iterasyonlara bölünmesi gerektiğini de belirtir. Hem kod hem de gereksinimler her zaman incelenmelidir. Mimari ve tasarım, kodun sık sık gözden geçirilmesine yol açan, paylaşılan ve sürekli bir sorun olmalıdır.</p>
-
-<p>XP, tasarım hareketinin militan kanadıysa, o zaman ılımlı eğilim, programlama hakkında şimdiye kadar okuduğum en iyi kitaplardan biri tarafından iyi bir şekilde temsil ediliyor: The Pragmatic Programmer: From Journeyman to Master by Andrew Hunt and David Thomas.</p>
-
-<p>XP, bazıları tarafından biraz kült olarak kabul edildi, ama en üst düzeyde yirmi yıllık nesne yönelimli pratikle ortaya çıktı. Özellikle, yeniden düzenleme olarak bilinen code revision, pattern’lere güçlü bir yardımcı-tamamlayıcı olarak ele alındı.</p>
-
-<p>Yeniden düzenleme 1980’lerden beri gelişti, ancak Martin Fowler’ın 1999’da yayınlanan ve alanı tanımlayan “Refactoring: Improving the Design of Existing Code” adlı kitabında  sistematikleştirildi.</p>
-
-<p>XP’nin ve pattern’lerin öne çıkmasıyla birlikte test etme sıcak bir konu haline geldi. Otomatik testlerin önemi, Java programcılarının cephaneliğinde önemli bir silah haline gelen güçlü JUnit test platformunun piyasaya sürülmesiyle daha da vurgulandı. Konuyla ilgili dönüm noktası niteliğinde bir makale, Kent Beck ve Erich Gamma tarafından yazılan “Test Infected: Programmers Love Writing Tests”, konuya mükemmel bir giriş yapıyor ve büyük ölçüde etkili olmaya devam ediyor.</p>
-
-<p>PHP 4, yaklaşık olarak bu sıralarda piyasaya sürüldü ve beraberinde verimlilikte iyileştirmeler ve en önemlisi, nesneler için gelişmiş destek getirdi. Bu geliştirmeler, tamamen nesne yönelimli projeleri bir olasılık haline getirdi. Programcılar, biraz şaşırtacak şekilde bu özelliği benimsedi. Bir sonraki bölümde göreceğiniz gibi, PHP’nin nesne desteği kesinlikle mükemmel değildi. Ancak disiplin ve sözdiziminin dikkatli kullanımı ile kişi aynı anda nesneler ve PHP hakkında düşünmeye başlayabilir.</p>
-
-<p>Yine de, bu bölümün başında tasvir edilene benzer tasarım felaketleri yaygın olmaya devam etti. Tasarım kültürü olgunlaşmamıştı ve PHP ile ilgili kitaplarda neredeyse yoktu. Ancak çevrimiçi ortamda ilgi olduğu açıktı. Leon Atkinson, 2001’de Zend için PHP ve pattern’ler hakkında bir makale yazdı ve Harry Fuecks, 2002’de www.phppatterns.com’da (şu anda  kullanılmayan) kendi blog’unu başlattı. BinaryCloud gibi model tabanlı framework projelerinin yanı sıra otomatikleştirilmiş test ve belgeleme araçları ortaya çıkmaya başladı.</p>
-
-<p>İlk PHP 5 beta sürümünün 2003 yılında piyasaya sürülmesi, nesne yönelimli programlama dili olarak PHP’nin geleceğini garantiledi. Zend Engine 2, büyük ölçüde geliştirilmiş nesne desteği sağladı. Aynı derecede önemli olan, nesnelerin ve nesne yönelimli tasarımın artık PHP projelerinin merkezinde yer aldığına dair bir sinyal gönderdi.</p>
-
-<p>Yıllar geçtikçe PHP 5, namespace ve closure gibi önemli yeni özellikleri bünyesine katarak gelişmeye ve evrilmeye devam etti. Bu süre zarfında, sunucu taraflı web programlama için en iyi seçenek olarak ününü sağlamlaştırdı.</p>
-
-<p>Aralık 2015’te yayınlanan PHP 7, bu eğilimin devamını temsil ediyordu. Özellikle, birçok geliştiricinin (bu kitabın önceki sürümleriyle birlikte) yıllardır yaygara kopardığı iki özellik olan hem parametre hem de dönüş tipi bildirimleri için destek sağladı. Anonim sınıflar, geliştirilmiş bellek kullanımı ve artırılmış hız dahil olmak üzere birçok başka özellik ve iyileştirme vardı. Yıllar geçtikçe dil, nesne yönelimli yazılımcının bakış açısından istikrarlı bir şekilde daha sağlam, daha temiz ve daha eğlenceli hale geldi.</p>
-
-<p>Aralık 2020’de, PHP 7’nin yayınlanmasından neredeyse tam beş yıl sonra, PHP 8’in piyasaya sürülmesi gerekiyor. Bazı uygulama ayrıntıları değişebilir (ve bu kitabın yazılması sırasında biraz değişmiş olsa da), özellikler bu yazının yazıldığı tarihte (Ağustos 2020) zaten mevcuttur. Birçoğunu burada ayrıntılı olarak ele alıyorum. Tip bildirimlerinde iyileştirmeler, modern özellik ataması ve diğer birçok yeni özellik içerir.</p>
-
-<h2 id="kitap-hakkında">Kitap Hakkında</h2>
-
-<p>Bu kitap, nesne yönelimli tasarım alanında çığır açmaya çalışmıyor. Bunun yerine, PHP bağlamında, bazı yerleşik tasarım ilkelerini ve bazı temel pattern’leri (özellikle klasik Gang of Four kitabı olan Design Patterns’te yazılanları) inceliyorum. Son olarak, bir projenin başarısını sağlamaya yardımcı olabilecek araçlara ve tekniklere bakmak için katı kod sınırlarının ötesine geçiyorum. Giriş ve kısa bir sonuç dışında, kitap üç ana bölüme ayrılmıştır: nesneler, pattern’ler ve uygulama.</p>
-
-<p><strong>Nesneler</strong></p>
-
-<p>Bölüm 1’e PHP’nin ve nesnelerin tarihine hızlı bir bakışla başlıyorum, PHP 3’teki sonradan düşünülenden PHP 5’teki temel özelliğe geçişi çiziyorum.</p>
-
-<p>Nesneler hakkında çok az bilginiz olsa da, hiç bilginiz olmadan da deneyimli ve başarılı bir PHP programcısı olabilirsiniz. Bu nedenle nesneleri, sınıfları ve kalıtımı açıklamaya temel ilkelerden başlıyorum. Bu erken aşamada bile, PHP 5, PHP 7 ve PHP 8’in getirdiği bazı nesne geliştirmelerine bakıyorum.</p>
-
-<p>Temel bilgileri aldığınızda, PHP’nin daha gelişmiş nesne yönelimli özelliklerini inceleyerek konumuzun derinliklerine iniyorum. PHP’nin nesneler ve sınıflarla çalışmanıza yardımcı olmak için sağladığı araçlara da bir bölüm ayırdım.</p>
-
-<p>Bununla birlikte, bir sınıfın nasıl tanımlanacağını bilmek ve onu bir nesneyi başlatmak için kullanmak yeterli değildir. Öncelikle sisteminiz için doğru katılımcıları seçmeli ve onlar için en iyi etkileşim yollarına karar vermelisiniz. Bu seçimleri açıklamak ve öğrenmek, nesne araçları ve sözdizimi hakkındaki çıplak gerçekleri öğrenmekten çok daha zordur. Bölüm 1’i PHP ile nesne yönelimli tasarıma girişle bitiriyorum.</p>
-
-<p><strong>Pattern’ler</strong></p>
-
-<p>Pattern, yazılım tasarımındaki bir sorunu tanımlar ve çözümün özünü sağlar. Buradaki “Çözüm”, bir cookbook’ta bulabileceğiniz türden kes-yapıştır kodu anlamına gelmez (yine de cookbook’lar programcı için birer kaynaktır). Bunun yerine, design pattern, bir sorunu çözmek için kullanılabilecek yaklaşımı tanımlar.</p>
-
-<p>Bölüm 2, design pattern’leri tanımlayarak ve yapılarını açıklayarak başlar. Popülerliklerinin ardındaki bazı nedenlere de bakıyorum.</p>
-
-<p>Pattern’ler, belirli temel tasarım ilkelerini destekleme ve takip etme eğilimindedir. Bunların anlaşılması, pattern’in motivasyonunun analiz edilmesine yardımcı olabilir ve tüm programlamaya faydalı bir şekilde uygulanabilir. Bu ilkelerin bazılarını tartışıyorum. Sınıfları ve etkileşimlerini tanımlamanın platformdan bağımsız bir yolu olan Unified Modeling Language (UML) de inceliyorum.
-Bu kitap bir pattern kataloğu olmasa da, en ünlü ve faydalı pattern’lerden bazılarını inceliyorum. Her pattern’in ele aldığı sorunu anlatıyor, çözümü analiz ediyor ve PHP’de bir uygulama örneği sunuyorum.</p>
-
-<p><strong>Uygulama</strong></p>
-
-<p>Doğru yönetilmezse, doğru dengelenmiş bir mimari bile başarısız olur. 3. Bölümde, projenizin başarısını garanti altına alan bir framework oluşturmanıza yardımcı olacak mevcut araçlara bakıyorum. Kitabın geri kalanı tasarım ve programlama pratiği hakkındaysa, 3. Kısım kodunuzu yönetme pratiği hakkındadır. İncelediğim araçlar, bir proje için destek yapısı oluşturarak, ortaya çıkan hataları izlemeye yardımcı olabilir, programcılar arasında işbirliğini teşvik edebilir ve kurulum kolaylığı ve kod netliği sağlayabilir.</p>
-
-<p>Otomatik testin gücünden daha önce bahsetmiştim. Bölüm 3’e, bu alandaki sorunlara ve çözümlere genel bir bakış sunan giriş bölümüyle başlıyorum.</p>
-
-<p>Birçok programcı, her şeyi kendi başına yapma dürtüsüne yenik düşmekten suçludur. Composer, ana reposu olan Packagist ile birlikte, kolaylıkla projelere eklenebilecek binlerce  pakete erişim sunar.</p>
-
-<p>Composer konusu açılmışken, bir paketin dağıtımını tek bir komut kadar basit hale getiren kurulum mekanizmasını inceliyorum.</p>
-
-<p>Kod işbirliği ile ilgilidir. Bu gerçek ödüllendirici olabilir. Aynı zamanda tam bir kabus olabilir. Git, birçok programcının birbirlerinin çalışmalarının üzerine yazmadan aynı kod tabanı üzerinde birlikte çalışmasını sağlayan bir sürüm kontrol sistemidir. Geliştirmenin herhangi bir aşamasında projenizin anlık görüntülerini almanıza, kimin hangi değişiklikleri yaptığını görmenize ve projeyi birleştirilebilir dallara ayırmanıza olanak tanır. Git projenizi bir gün kurtaracak.</p>
-
-<p>İnsanlar ve kütüphaneler işbirliği yaptıklarında, partiye genellikle farklı gelenekler ve stiller getirirler. Bu sağlıklı olmakla birlikte birlikte çalışabilirliği de baltalayabilir. Uymak ve kabul etmek gibi sözcükler tüylerimi ürpertiyor ama internetin yaratıcılığının standartlarla desteklendiği inkar edilemez. Belirli geleneklere uyarak, hayal edilemeyecek kadar geniş bir sanal alanda oynamak için özgürleşiriz. Bu yüzden PHP standartlarını, bize nasıl yardımcı olabileceklerini, nasıl ve neden uymamız gerektiğini keşfediyorum.</p>
-
-<p>İki gerçek kaçınılmaz görünüyor. İlk olarak, hatalar genellikle aynı kod bölgesinde tekrarlanır ve bazı iş günleri déjà vu’da bir egzersiz haline getirir. İkincisi, genellikle iyileştirmeler düzelttikleri kadar veya daha fazla bozarlar. Otomatik test, kodunuzdaki sorunlar için bir erken uyarı sistemi sağlayarak bu sorunların her ikisini de ele alabilir. İlk önce Smalltalk için tasarlanmış, ancak şimdi başta Java olmak üzere birçok dile taşınan xUnit test platformunun güçlü bir uygulaması olan PHPUnit’i tanıtıyorum. Özellikle PHPUnit’in özelliklerine ve daha genel olarak test etmenin faydalarına ve maliyetine bakıyorum.</p>
-
-<p>Uygulamanız dağınıksa dosyaların standart olmayan konumlara yüklenmesi gerekebilir, veritabanı kurmak veya sunucu yapılandırmasına yama uygulamak isteyebilir. Kısacası, uygulamaların kurulum sırasında yapılması gerekenler vardır. Phing, Ant adlı bir Java aracının bağlantı noktasıdır. Phing ve Ant, bir yapılandırma dosyasını yorumlar ve kaynak dosyalarınızı onlara söylediğiniz şekilde işler. Bu genellikle dosyalarınızı bir dizinden sisteminizdeki çeşitli hedef konumlara kopyalamak anlamına gelir, ancak ihtiyaçlarınız daha karmaşık hale geldikçe, Phing bunları karşılamak için kolayca ölçeklenir.</p>
-
-<p>Bazı şirketler geliştirme platformlarını zorunlu kılar, ancak çoğu durumda ekipler bir dizi farklı işletim sistemi çalıştırır. Bunların tümü, kolaylıkla bir LAMP yığınını çalıştıracaktır. Ancak ideal olarak, geliştiricilerin kodlarını production’a çok benzeyen ortamlarda çalıştırmaları gerekir. Ekip üyelerinin kendilerine özgü geliştirme platformlarını koruyabilmeleri ancak production benzeri bir sistemde kodlarını çalıştırabilmeleri için sanallaştırma uygulaması olan Vagrant’ı inceliyorum.</p>
-
-<p>Testler oldukça faydalıdır, ancak testlerinizi yüklemeniz, çalıştırmanız ve buna devam etmeniz gerekiyor. Build ve testlerinizi otomatikleştirmezseniz, rehavete kapılmak ve her şeyin kaymasına izin vermek kolaydır. Tam da bu konuda size yardımcı olacak “sürekli entegrasyon” kategorisinde bir araya toplanmış bazı araçlara ve tekniklere bakıyorum.</p>
-
-<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Temmuz 2004’te PHP 5.0 yayınlandı. Bu sürüm, bir dizi radikal geliştirmeyle geldi. Belki de bunlardan ilki, nesne yönelimli programlama için kökten geliştirilmiş destekti. Bu, PHP topluluğu içinde nesnelere ve tasarıma büyük ilgi uyandırdı. Aslında bu, PHP 4.0 ile başlayan bir sürecin devamıydı.]]></summary></entry><entry><title type="html">PHP - Nesnelerin Temelleri</title><link href="http://www.melihkocaturk.com//2024/03/20/php-nesnelerin-temelleri.html" rel="alternate" type="text/html" title="PHP - Nesnelerin Temelleri" /><published>2024-03-20T00:00:00+03:00</published><updated>2024-03-20T00:00:00+03:00</updated><id>http://www.melihkocaturk.com//2024/03/20/php-nesnelerin-temelleri</id><content type="html" xml:base="http://www.melihkocaturk.com//2024/03/20/php-nesnelerin-temelleri.html"><![CDATA[<p>Nesneler ve sınıflar bu kitabın merkezindedir ve on yıl önce PHP 5’in piyasaya sürülmesinden bu yana PHP’nin de kalbinde yer alıyor. Bu bölümde, PHP’nin nesne yönelimli özelliklerini inceleyerek nesneleri ve tasarımı daha derinlemesine ele almak için temel oluşturuyorum. Nesne yönelimli programlamada yeniyseniz, bu bölümü dikkatlice okumalısınız.</p>
+<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Sınıf tipi ipuçlarının ve erişim kontrolünün size bir sınıfın arayüzü üzerinde nasıl daha fazla kontrol sağladığını zaten gördünüz. Bu bölümde, PHP’nin nesne yönelimli özelliklerini daha derinlemesine inceleyeceğim.]]></summary></entry><entry><title type="html">PHP - Nesnelerin Temelleri</title><link href="http://localhost:4000/2024/03/20/php-nesnelerin-temelleri.html" rel="alternate" type="text/html" title="PHP - Nesnelerin Temelleri" /><published>2024-03-20T00:00:00+03:00</published><updated>2024-03-20T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/20/php-nesnelerin-temelleri</id><content type="html" xml:base="http://localhost:4000/2024/03/20/php-nesnelerin-temelleri.html"><![CDATA[<p>Nesneler ve sınıflar bu kitabın merkezindedir ve on yıl önce PHP 5’in piyasaya sürülmesinden bu yana PHP’nin de kalbinde yer alıyor. Bu bölümde, PHP’nin nesne yönelimli özelliklerini inceleyerek nesneleri ve tasarımı daha derinlemesine ele almak için temel oluşturuyorum. Nesne yönelimli programlamada yeniyseniz, bu bölümü dikkatlice okumalısınız.</p>
 
 <p>Bu bölüm aşağıdaki konuları kapsayacaktır:</p>
 
@@ -6400,7 +7548,255 @@ $point-&gt;x = "a";
 
 <p>Bu bölüm, bir sınıfı boş bir uygulamadan tüm özeliklere sahip kalıtım hiyerarşisine götüren birçok konuyu kapsıyordu. Özellikle tür ve kalıtımla ilgili bazı tasarım konularını ele aldınız. PHP’nin görünürlük desteğini gördünüz ve bazı kullanımlarını incelediniz. Bir sonraki bölümde, size PHP’nin nesne yönelimli özelliklerinden daha fazlasını göstereceğim.</p>
 
-<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Nesneler ve sınıflar bu kitabın merkezindedir ve on yıl önce PHP 5’in piyasaya sürülmesinden bu yana PHP’nin de kalbinde yer alıyor. Bu bölümde, PHP’nin nesne yönelimli özelliklerini inceleyerek nesneleri ve tasarımı daha derinlemesine ele almak için temel oluşturuyorum. Nesne yönelimli programlamada yeniyseniz, bu bölümü dikkatlice okumalısınız.]]></summary></entry><entry><title type="html">Laravel Geliştirme Ortamını Hazırlamak</title><link href="http://www.melihkocaturk.com//2024/03/18/laravel-gelistirme-ortamini-hazirlamak.html" rel="alternate" type="text/html" title="Laravel Geliştirme Ortamını Hazırlamak" /><published>2024-03-18T00:00:00+03:00</published><updated>2024-03-18T00:00:00+03:00</updated><id>http://www.melihkocaturk.com//2024/03/18/laravel-gelistirme-ortamini-hazirlamak</id><content type="html" xml:base="http://www.melihkocaturk.com//2024/03/18/laravel-gelistirme-ortamini-hazirlamak.html"><![CDATA[<p>PHP’nin başarısının bir nedeni de, PHP’ye hizmet vermeyen bir web sunucusu bulmanın zor olmasıdır. Ancak, modern PHP araçları geçmişe göre daha katı gereksinimlere sahiptir. Laravel’de geliştirme yapmanın en iyi yolu, kodunuz için tutarlı bir yerel ve uzak sunucu ortamı sağlamaktır ve neyse ki Laravel ekosisteminde bunun için birkaç araç var.</p>
+<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Nesneler ve sınıflar bu kitabın merkezindedir ve on yıl önce PHP 5’in piyasaya sürülmesinden bu yana PHP’nin de kalbinde yer alıyor. Bu bölümde, PHP’nin nesne yönelimli özelliklerini inceleyerek nesneleri ve tasarımı daha derinlemesine ele almak için temel oluşturuyorum. Nesne yönelimli programlamada yeniyseniz, bu bölümü dikkatlice okumalısınız.]]></summary></entry><entry><title type="html">PHP ve Nesneler</title><link href="http://localhost:4000/2024/03/20/php-ve-nesneler.html" rel="alternate" type="text/html" title="PHP ve Nesneler" /><published>2024-03-20T00:00:00+03:00</published><updated>2024-03-20T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/20/php-ve-nesneler</id><content type="html" xml:base="http://localhost:4000/2024/03/20/php-ve-nesneler.html"><![CDATA[<p>Nesneler her zaman PHP projesinin önemli bir parçası değildi. Aslında, bir zamanlar PHP tasarımcıları tarafından “sonradan düşünülmüş” olarak tanımlanmışlardı. Bu bölümde, PHP’nin nesne yönelimli özelliklerinin gelişimini özetleyerek tanıtıyorum.</p>
+
+<p>Aşağıdakilere bakacağız:</p>
+
+<ul>
+  <li>PHP/FI 2.0: PHP, ama bildiğimiz gibi değil.</li>
+  <li>PHP 3: Nesneler ilk kez ortaya çıkıyor.</li>
+  <li>PHP 4: Nesne yönelimli programlama gelişir.</li>
+  <li>PHP 5: Dilin merkezindeki nesneler.</li>
+  <li>PHP 7: Boşluğu kapatmak.</li>
+  <li>PHP 8: Konsolidasyon devam ediyor.</li>
+</ul>
+
+<h2 id="php-nesnelerinin-kazara-başarısı">PHP Nesnelerinin Kazara Başarısı</h2>
+
+<p>PHP’nin kapsamlı nesne desteği ve dolaşımdaki çok sayıda nesne yönelimli PHP kütüphanesi ve uygulamasıyla, PHP’de nesnenin yükselişi doğal ve kaçınılmaz bir süreç gibi görünebilir. Doğrusu, hiçbir şey gerçeklerden daha uzak olamaz.</p>
+
+<p><strong>Başlangıç: PHP/FI</strong></p>
+
+<p>Bugün bildiğimiz PHP’nin doğuşu, Rasmus Lerdorf tarafından Perl kullanılarak geliştirilen iki araca dayanmaktadır. PHP, Personal Home Page Tools anlamına geliyordu. FI, Form Interpreter anlamına gelir. Birlikte, veritabanlarına, formlara ve akış kontrolüne SQL ifadeleri gönderen makrolardan oluşuyorlardı.</p>
+
+<p>Bu araçlar C’de yeniden yazıldı ve PHP/FI 2.0 adı altında birleştirildi. Bu aşamadaki dil, bugün tanıdığımız sözdiziminden farklı görünüyordu ama o kadar da farklı değildi. Değişkenler, ilişkisel diziler ve fonksiyonlar için destek vardı. Ancak nesneler ufukta görünmüyordu.</p>
+
+<p><strong>Sentetik Şeker: PHP 3</strong></p>
+
+<p>Hatta PHP 3 daha planlama aşamasındayken bile konu gündem dışıydı. PHP 3’ün başlıca mimarları Zeev Suraski ve Andi Gutmans idi. PHP 3 tamamen yeniden yazıldı, ancak nesneler yeni sözdiziminin gerekli bir parçası olarak görülmedi.</p>
+
+<p>Zeev Suraski’ye göre, sınıf desteği neredeyse sonradan düşünülerek eklendi (kesin olarak 27 Ağustos 1997’de). Sınıflar ve nesneler aslında ilişkisel dizileri tanımlamanın ve bunlara erişmenin başka bir yoluydu…</p>
+
+<p>Elbette, metotların ve kalıtımın eklenmesi, sınıfları ilişkisel dizilerden çok daha fazlası haline getirdi, ancak yine de sınıflarla neler yapabileceğiniz konusunda ciddi sınırlamalar vardı. Özellikle, bir üst sınıfın geçersiz kılınan metotlarına erişemezsiniz (bunun ne anlama geldiğini henüz bilmiyorsanız merak etmeyin; daha sonra açıklayacağım). Bir sonraki bölümde inceleyeceğim bir diğer dezavantaj, PHP scriptlerinde nesnelerin aktarılmasının optimal olmayan yoluydu.</p>
+
+<p>Nesnelerin o zamanlar marjinal bir konu olduğu, resmi dökümantasyonda önem taşımamalarıyla vurgulanmaktadır. Dökümantasyon, nesnelere bir cümle ve bir kod örneği ayırdı. Örnek, kalıtımı veya özellikleri (property) göstermiyordu.</p>
+
+<p><strong>PHP 4 ve Sessiz Devrim</strong></p>
+
+<p>PHP 4, dil için bir başka çığır açan adım olsa da, temel değişikliklerin çoğu yüzeyin altında gerçekleşti. Zend Motoru (adı Zeev ve Andi’den türetilmiştir) dili güçlendirmek için sıfırdan yazılmıştır. Zend Engine, PHP’yi çalıştıran ana bileşenlerden biridir. Aramak isteyebileceğiniz herhangi bir PHP fonksiyonu, aslında üst düzey uzantı katmanının bir parçasıdır. Bunlar, veritabanı API’leriyle konuşmak veya dizelerde hokkabazlık yapmak gibi işleri yaparlar. Bunun altında, Zend Engine belleği yönetir, kontrolü diğer bileşenlere devreder ve her gün çalıştığınız tanıdık PHP sözdizimini çalıştırılabilir bayt koduna çevirir. Sınıflar gibi temel dil özellikleri için teşekkür etmemiz gereken Zend Engine’dir.</p>
+
+<p>Nesnel bakış açımızdan, PHP 4’ün ana metotları geçersiz kılmayı ve bunlara alt sınıflardan erişmeyi mümkün kılması büyük bir avantajdı.</p>
+
+<p>Ancak büyük bir dezavantaj devam etti. Bir değişkene nesne atamak, onu fonksiyona göndermek veya metottan döndürmek, bir kopyanın oluşmasıyla sonuçlandı. Bunun gibi bir atama düşünün:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$my_obj = new User('bob');
+$other = $my_obj;
+</code></pre></div></div>
+
+<p>Bu kod çalıştırıldığında, aynı User nesnesine iki referans yerine, iki User nesnesinin varlığıyla sonuçlandı. Çoğu nesne yönelimli dilde, değere göre değil referansa göre atama beklersiniz. Bu, nesnelerin kendisini kopyalamak yerine nesne işaretçilerini atayacağınız anlamına gelir. Varsayılan değere göre atama davranışı, programcıların farkında olmadan komut dosyasının bir bölümündeki nesneleri değiştirerek, değişikliklerin başka bir yerdeki referanslar aracılığıyla görülmesini bekledikleri için pek çok hatayla sonuçlandı. Bu kitap boyunca, aynı nesnenin birden fazla referansını kullandığım birçok örnek göreceksiniz.</p>
+
+<p>İyi ki, referansa dayalı atamayı zorlamanın bir yolu vardı, ancak bu, hantal bir yapı kullanmayı hatırlamak anlamına geliyordu.</p>
+
+<p>Referans olarak nasıl atayacağınız aşağıda açıklanmıştır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$other =&amp; $my_obj;
+// $other and $my_obj point to same object
+</code></pre></div></div>
+
+<p>Bu, referansa göre geçişi zorunlu kılar:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function setSchool(&amp; $school)
+{
+    // $school is now a reference to not a copy of passed object
+}
+</code></pre></div></div>
+
+<p>Ve işte referansla geri dönüş:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>function &amp; getSchool()
+{
+    // returning a reference not a copy
+    return $this-&gt;school;
+}
+</code></pre></div></div>
+
+<p>İyi çalışsa da, &amp; işaretini eklemeyi unutmak kolaydı ve bu, hataların koda sızmasının çok kolay olduğu anlamına geliyordu. Hataların izini sürmek özellikle zordu, çünkü nadiren raporlanan hatalara neden oluyorlardı.</p>
+
+<p>PHP kılavuzunda genel olarak sözdiziminin, özel olarak nesnelerin kapsamı genişletildi ve nesne yönelimli kodlama akımına doğru yönelim başladı. PHP’deki nesneler tartışmasız değildi (şimdi olduğu gibi) ve “Nesnelere ihtiyacım var mı?” sorusu, posta listelerinde yaygın olarak görülüyordu. Gerçekten de, Zend sitesi, nesne yönelimli programlamayı teşvik eden makalelerin yanı sıra bu konuda uyaran makalelere ev sahipliği yaptı. Referansla geçiş sorunları ve tartışmalara rağmen, birçok programcı kodlarını &amp; karakteriyle doldurdu. Nesne yönelimli PHP popülaritesini artırdı. Zeev Suraski bu konuyu DevX.com için bir makalede yazdı.</p>
+
+<p>“PHP tarihindeki en büyük dönüm noktalarından biri - sınırlı işlevselliğe ve bir dizi sorun ve sınırlamaya rağmen - nesne yönelimli programlamanın gelişmesi ve artan sayıda kullanıma hazır PHP uygulamaları için en popüler paradigma haline gelmesiydi. Çoğunlukla beklenmedik olan bu eğilim, PHP’yi hazırlıksız yakaladı. Nesnelerin diğer dillerdeki nesneler gibi davranmadığı ve bunun yerine <em>ilişkisel</em> diziler gibi davrandığı ortaya çıktı.”</p>
+
+<p>Önceki bölümde belirtildiği gibi, nesne yönelimli tasarıma olan ilgi çevrimiçi sitelerde ve makalelerde belirgin hale geldi. PHP’nin resmi yazılım reposu PEAR nesne yönelimli programlamayı benimsemiştir. Geriye dönüp bakıldığında, PHP’nin nesne yönelimli desteği benimsemesinin kaçınılmaz bir güce isteksiz bir teslimiyet olduğunu düşünmek kolaydır. Nesneye yönelik programlamanın 1960’lardan beri var olmasına rağmen, 1990’ların ortalarında gerçekten zemin kazandığını hatırlamak önemlidir. Nesne yönelimli programlamayı popülerleştiren Java, 1995’e kadar piyasaya sürülmedi. Prosedürel bir dil olan C’nin bir üst kümesi C++, 1979’dan beri ortalıkta dolaşıyor. Uzun bir evrimden sonra, 1990’larda tartışmasız büyük bir sıçrama yaptı. Perl 5, 1994 yılında piyasaya sürüldü, bu, kullanıcılarının nesneler üzerinde düşünmesini mümkün kılan, prosedürel bir dilde başka bir devrimdi. Küçük bir prosedürel dil için PHP, nesne desteğini oldukça hızlı geliştirerek, kullanıcılarının gereksinimlerine gerçek bir yanıt verdi.</p>
+
+<p><strong>Benimsenen Değişim: PHP 5</strong></p>
+
+<p>PHP 5, nesnelerin ve nesne yönelimli programlamanın açık onayını temsil ediyordu. Bu, nesnelerin PHP ile çalışmanın tek yolu olduğu anlamına gelmez (bu arada, bu kitap bunu da söylemiyor). Bununla birlikte, nesneler, enterprise sistemler geliştirmek için güçlü ve önemli bir araç olarak kabul edildi ve PHP, core tasarımında bunları tam olarak destekledi.</p>
+
+<p>Muhtemelen, PHP 5’teki geliştirmelerin önemli etkilerinden biri, dilin daha büyük İnternet şirketleri tarafından benimsenmesiydi. Örneğin Yahoo ve Facebook, PHP’yi yoğun bir şekilde kullanmaya başladı. Sürüm 5 ile PHP, web geliştirme için standart dillerden biri haline geldi.</p>
+
+<p>Nesneler dil sürücüsüne taşınmıştı. Belki de en önemli değişiklik, pass-by-reference davranışıydı. Ancak bu sadece başlangıçtı. Bu kitap boyunca ve özellikle de bu bölümünde, private ve protected metotlar ve properties (özellikler), static anahtar sözcüğü, namespace’ler, type hints (artık type declaration olarak adlandırılmaktadır) ve exceptions (istisnalar) dahil olmak üzere çok daha fazla geliştirmeyle karşılaşacağız. PHP 5 uzun bir süredir (yaklaşık 12 yıl) ortalıkta dolaşıyordu ve yeni özellikler aşamalı olarak piyasaya sürüldü.</p>
+
+<p><strong>Not</strong>: PHP’nin, PHP 5’in tanıtılmasıyla referans olarak atama için tam anlamıyla hareket etmediğini ve bu durumun değişmediğini belirtmekte fayda var. Bunun yerine, varsayılan olarak, bir nesne atandığında, metoda iletildiğinde veya metottan döndürüldüğünde, o nesneye tanımlayıcı kopyalanır. Bu nedenle, &amp; işareti ile referansa göre atamayı zorunlu kılmadığınız sürece, yine de bir kopyalama işlemi gerçekleştiriyorsunuz. Bununla birlikte, pratik açıdan, bu tür kopyalama ile referans yoluyla atama arasında genellikle çok az fark vardır, çünkü aynı hedef nesneye başvuruda bulunursunuz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class megaquiz_util_Conf
+{
+}
+</code></pre></div></div>
+
+<p>Bunun gibi sınıf adları, paketler arasındaki çakışmaları önlemenin bir yoludur, ancak dolambaçlı kodlar oluşturabilirler. Ayrıca closure, generator, trait, late static binding desteği de verildi.</p>
+
+<p><strong>PHP 7: Boşluğu Kapatmak</strong></p>
+
+<p>Programcılar zorlu bir gruptur. Design pattern’leri seven birçok kişi için, PHP’de hala eksik olan iki temel özellik vardı. Bunlar, skaler tip bildirimleri ve zorunlu dönüş tipleriydi. PHP 5 ile, yalnızca bir nesneye, diziye veya daha sonra çağrılabilir bir koda ihtiyacınız olduğu sürece, metoda veya fonksiyona iletilen değişkenin tipini zorlamak mümkündü. Skaler değerler (integer, string ve float gibi) hiç uygulanamadı. Ayrıca, bir metodun veya fonksiyonun dönüş tipini bildirme şansınız yoktu.</p>
+
+<p>Göreceğiniz gibi, nesne yönelimli tasarım genellikle bir tür sözleşme olarak metot bildirimi kullanır. Metot, belirli girdiler talep eder ve karşılıklı olarak, size belirli bir veri tipini geri vermeyi taahhüt eder. PHP 5 programcıları, birçok durumda bu tür sözleşmeleri sürdürmek için yorumlara, kurallara ve manuel tip denetimine güvenmek zorunda kaldı. Geliştiriciler ve yorumcular genellikle bundan şikayet ediyordu.</p>
+
+<p>PHP 7, skaler tip bildirimlerini (önceden type hint olarak biliniyordu) ve dönüş tipi bildirimlerini tanıttı. Dahası, PHP 7.4, typed property sunarak tip güvenliğini daha da ileri götürdü. Doğal olarak, tüm bunlar bu baskıda ele alınmıştır.</p>
+
+<p>PHP 7 ayrıca, anonim sınıflar ve bazı namespace geliştirmeleri dahil olmak üzere başka güzel şeyler de sağladı.</p>
+
+<p><strong>PHP 8: Konsolidasyon devam ediyor</strong></p>
+
+<p>PHP, diğer dillerin en iyi özelliklerini ödünç almıştır. PHP 8, diğer dillerde annotation olarak bilinen nitelikler de dahil olmak üzere birçok yeni özellik sunar. Bu kullanışlı etiketler, bir sistemdeki sınıflar, metotlar, properties ve sabitler hakkında ek bağlamsal bilgiler sağlamak için kullanılabilir. Ayrıca PHP 8, tip bildirimleri için desteğini genişletmeye devam etmiştir. Bu alanda özellikle ilginç olanı, union tipi bildirimidir. Bu, bir özelliğin veya parametrenin tipinin belirtilen birkaç tipten biriyle sınırlandırabilmenize olanak tanır. PHP’nin tip esnekliğinden yararlanırken aynı zamanda tipleri kilitleyebilirsiniz.</p>
+
+<p><strong>Nesne Tartışması</strong></p>
+
+<p>Nesneler ve nesne yönelimli tasarım, tutku uyandırıyor gibi görünüyor. Pek çok mükemmel programcı, nesneleri kullanmadan yıllarca mükemmel kodlar üretti ve PHP, prosedürel web programlama için etkileyici bir platform olmaya devam ediyor.</p>
+
+<p>Bu kitap doğal olarak baştan sona nesne yönelimli önyargı sergiliyor, bu önyargı benim nesneye bulaşmış bakış açımı yansıtıyor. Konumuz nesneler olduğundan, vurgunun kesinlikle nesne yönelimli olması kaçınılmazdır. Bununla birlikte, bu kitaptaki hiçbir şey, nesnelerin başarıya giden tek gerçek yol olduğunu öne sürmeyi amaçlamamaktadır.</p>
+
+<p>Geliştiricilerin nesne yönelimli bir dil olarak PHP ile çalışmayı seçip seçmemesi bir zamanlar bir tercih meselesiydi. Bu, tamamen kabul edilebilir sistemler yaratılabileceği ölçüde hala geçerlidir. Bazı harika araçlar (örneğin, WordPress) temel mimarilerinde hala prosedüreldir. Bununla birlikte, PHP’nin nesne desteğini kullanmadan ve anlamadan bir PHP programcısı olarak çalışmak giderek daha zor hale geliyor, özellikle de projelerinizde kullanacağınız kütüphanelerin kendileri muhtemelen nesne yönelimli olacakları için.</p>
+
+<p>Yine de, Perl’in şu ünlü mottosunu akılda tutmaya değer: “Bir şeyi yapmanın birden fazla yolu var.” Bu özellikle daha küçük scriptler için geçerlidir, hızlı bir şekilde çalışan bir örnek oluşturmak, daha büyük bir sisteme ölçeklendirilecek bir yapı oluşturmaktan daha önemlidir.</p>
+
+<p>Kod esnek bir ortamdır. İşin püf noktası, konseptinizin ne zaman daha büyük bir geliştirmenin temeli haline geldiğini bilmektir. Artık büyüyen projenize tasarım odaklı bir yaklaşım benimsemeye karar verdiğinize göre, bu kitabın nesne yönelimli mimariler oluşturmaya başlamak için ihtiyaç duyduğunuz yardımı sağlayacağını umuyorum.</p>
+
+<p><strong>Özet</strong></p>
+
+<p>Bu kısa bölüm, nesneleri PHP dilindeki bağlamlarına yerleştirdi. PHP’nin geleceği, nesne yönelimli tasarıma bağlıdır. Sonraki birkaç bölümde, PHP’nin mevcut nesne desteğinin anlık görüntüsünü alacağım ve bazı tasarım konularını tanıtacağım.</p>
+
+<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Nesneler her zaman PHP projesinin önemli bir parçası değildi. Aslında, bir zamanlar PHP tasarımcıları tarafından “sonradan düşünülmüş” olarak tanımlanmışlardı. Bu bölümde, PHP’nin nesne yönelimli özelliklerinin gelişimini özetleyerek tanıtıyorum.]]></summary></entry><entry><title type="html">PHP - Tasarım ve Yönetim</title><link href="http://localhost:4000/2024/03/20/php-tasarim-ve-yonetim.html" rel="alternate" type="text/html" title="PHP - Tasarım ve Yönetim" /><published>2024-03-20T00:00:00+03:00</published><updated>2024-03-20T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/20/php-tasarim-ve-yonetim</id><content type="html" xml:base="http://localhost:4000/2024/03/20/php-tasarim-ve-yonetim.html"><![CDATA[<p>Temmuz 2004’te PHP 5.0 yayınlandı. Bu sürüm, bir dizi radikal geliştirmeyle geldi. Belki de bunlardan ilki, nesne yönelimli programlama için kökten geliştirilmiş destekti. Bu, PHP topluluğu içinde nesnelere ve tasarıma büyük ilgi uyandırdı. Aslında bu, PHP 4.0 ile  başlayan bir sürecin devamıydı.</p>
+
+<p>Bu bölümde, nesnelerin çözebileceği bazı sorunları inceliyorum. Örüntülerin ve ilgili uygulamaların evriminin bazı yönlerini kısaca özetliyorum.</p>
+
+<p>Ayrıca bu kitapta ele alınan konuları da özetledim.</p>
+
+<ul>
+  <li><em>Felaketin evrimi</em>: Bir proje kötüye gidiyor</li>
+  <li><em>Tasarım ve PHP</em>: Nesne yönelimli tasarım teknikleri PHP topluluğunda nasıl kök saldı?</li>
+  <li><em>Bu kitap</em>: Nesneler, Pattern’ler, Uygulama</li>
+</ul>
+
+<h2 id="sorun">Sorun</h2>
+
+<p>Sorun şu ki PHP çok kolay. Fikirlerinizi denemeniz için sizi cezbeder ve iyi sonuçlarla gururunuzu okşar. PHP bunu desteklemek için tasarlandığından, kodunuzun çoğunu doğrudan web sayfalarınıza yazarsınız. Sayfadan sayfaya dahil edilebilecek dosyalara yardımcı işlevler (veritabanı erişim kodu gibi) eklersiniz ve siz farkına bile varmadan çalışan bir web uygulamanız olur.</p>
+
+<p>Felakete doğru ilerliyorsun. Bunu elbette anlamıyorsunuz çünkü siteniz harika görünüyor. İyi performans gösteriyor, müşterileriniz mutlu ve kullanıcılarınız para harcıyor.</p>
+
+<p>Yeni bir aşamaya başlamak için koda geri döndüğünüzde sorun çıkar. Artık daha büyük bir ekibiniz, daha fazla kullanıcınız ve daha büyük bir bütçeniz var. Ancak, hiçbir uyarı olmadan  işler ters gitmeye başlar. Sanki projeniz zehirlenmiş gibi.</p>
+
+<p>Yeni programcınız kodu anlamakta zorlanıyor. Bir ekip üyesi olarak tam güce ulaşması beklediğinizden daha uzun sürüyor.</p>
+
+<p>Bir gün olarak tahmin edilen basit bir değişiklik, sonuç olarak 20 veya daha fazla sayfayı  güncellemeniz gerektiğini keşfettiğinizde üç gün sürer.</p>
+
+<p>Yazılımcılarınızdan biri, bir süre önce aynı kodda yaptığınız büyük değişikliklerin üzerine kendi sürümünü kaydeder. Kayıp üç gün boyunca fark edilmez, bu zamana kadar kendi yerel kopyanızı değiştirmiş olursunuz. Aynı zamanda dosya üzerinde çalışan üçüncü bir geliştiriciyi bekleterek karmaşayı çözmek bir gün sürer.</p>
+
+<p>Uygulamanın popülaritesi nedeniyle, kodu yeni bir sunucuya taşımanız gerekir. Proje elle kurulmalıdır ve dosya yollarının, veritabanı adlarının ve parolaların birçok kaynak dosyaya sabit kodlanmış olduğunu keşfedersiniz. Taşıma sırasında çalışmayı durdurursunuz çünkü yapılandırma değişikliklerinin üzerine yazmak istemezsiniz. Birisinin Apache modülü ModRewrite ile ilgili akıllıca bir şey yaptığı ve uygulamanın artık düzgün çalışması için buna ihtiyaç duyduğu ortaya çıktığında, tahmini iki saat sekiz saat oluyor.</p>
+
+<p>Sonunda 2. faza geçtiniz. Bir buçuk gün boyunca her şey yolunda. İlk hata raporu, siz ofisten çıkmak üzereyken gelir. Müşteri şikayet etmek için dakikalar sonra telefon eder. Rapor ilkine benziyor, ancak biraz daha incelendiğinde, benzer davranışlara neden olan farklı bir hata olduğu ortaya çıkıyor. Projenin geri kalanında kapsamlı değişiklikler gerektiren, fazın başlangıcındaki basit değişikliği hatırlıyorsunuz.</p>
+
+<p>Gerekli değişikliklerin tümünün yerinde olmadığını anlıyorsunuz. Bunun nedeni, başlangıçta atlanmış olmaları veya söz konusu dosyaların üzerine yazılmasıdır. Hataları düzeltmek için gereken değişiklikleri aceleyle yaparsınız. Değişiklikleri test etmek çok acele ediyorsunuz, ancak bunlar basit bir kopyala ve yapıştır meselesi, öyleyse ne ters gidebilir?</p>
+
+<p>Ertesi sabah, ofise geldiğinizde bir alışveriş sepeti modülünün bütün gece kapalı olduğunu görürsünüz. Yaptığınız son dakika değişiklikleri, baştaki tırnak işaretini atlayarak kodu kullanılamaz hale getirdi. Elbette, siz uyurken, diğer zaman dilimlerindeki potansiyel müşteriler tamamen uyanıktı ve mağazanızda para harcamaya hazırdı. Sorunu çözersiniz, müşterileri sakinleştirirsiniz ve ekibi başka bir günkü yangınla mücadele için bir araya getirirsiniz.</p>
+
+<p>Kod yazan insanların bu günlük hikayesi biraz abartılı görünebilir, ancak tüm bunların tekrar tekrar olduğunu gördüm. Pek çok PHP projesi hayata küçük başlar ve canavarlara dönüşür.</p>
+
+<p>Sunum katmanı aynı zamanda uygulama mantığını da içerdiğinden, veritabanı sorguları, kimlik doğrulama kontrolleri, form işlemleri ve daha fazlası sayfadan sayfaya kopyalanır. Bu kod bloklarından birinde değişiklik gerektiğinde, kodun bulunduğu her yerde yapılması gerekir.</p>
+
+<p>Dokümantasyon eksikliği kodun okunmasını zorlaştırır ve test eksikliği belirsiz hataların dağıtıma kadar farkedilmesini engeller. Bir işin değişen doğası, genellikle kodun, temel olarak uygun olmadığı görevleri yerine getirene kadar asıl amacından uzaklaşması anlamına gelir. Bu tür bir kod genellikle arap saçına döndüğünden, yeni amaca uyacak şekilde kısımları değiştirmek ve yeniden yazmak imkansız değilse bile zordur.</p>
+
+<h2 id="php-ve-diğer-diller">PHP ve Diğer Diller</h2>
+
+<p>PHP’nin olağanüstü popülaritesi, sınırlarının erken ve zorlu bir şekilde test edilmesi anlamına geliyordu. Bir sonraki bölümde göreceğiniz gibi, PHP hayata kişisel web sayfalarını yönetmek için bir dizi makro olarak başladı. PHP 3’ün ve daha büyük ölçüde PHP 4’ün gelişiyle, dil hızla büyük kurumsal web sitelerinin arkasındaki başarılı güç haline geldi. Bununla birlikte, birçok yönden, PHP’nin başlangıç mirası, script tasarımı ve proje yönetimine taşındı. Bazı çevrelerde PHP, sunum (presentation) görevleri için en uygun olan hobi dili olarak haksız bir üne sahipti.</p>
+
+<p>Bu sıralarda (milenyum başında), diğer topluluklarda yeni fikirler geçerlilik kazanıyordu. Nesne yönelimli tasarıma olan ilgi, Java topluluğunu harekete geçirdi. Java nesne yönelimli bir dil olduğu için bunun gereksiz olduğunu düşünebilirsiniz. Ancak sınıfları ve nesneleri kullanmak kendi başına belirli bir tasarım yaklaşımı sağlamaz.</p>
+
+<p>Bir sorunu, çözümünün özüyle birlikte tanımlamanın yolu olarak design pattern (tasarım deseni) kavramı ilk kez 1970’lerde tartışıldı. Fikir - belkide en uygun şekilde - bilgisayar bilimi alanından değil, mimarlık alanından, Christopher Alexander’ın ufuk açıcı bir çalışmasıyla ortaya çıkmıştır: A Pattern Language (Oxford University Press, 1977). 1990’ların başlarında, nesne yönelimli programcılar, yazılım tasarımı problemlerini adlandırmak ve tanımlamak için aynı tekniği kullanıyorlardı. Erich Gamma, Richard Helm, Ralph Johnson ve John Vlissides’ın (bundan böyle bu kitapta “Gang of Four” takma adlarıyla anılacaklardır) yazdığı tasarım desenleri üzerine ufuk açıcı kitap Design Patterns: Elements of Reusable Object-Oriented Software bugün hala vazgeçilmezdir. İçerdiği pattern’ler, bu alana yeni başlayan herkes için gerekli bir ilk adımdır, bu nedenle bu kitaptaki pattern’lerin çoğu ondan alınmıştır.</p>
+
+<p>Java dilinin kendisi, API’sinde birçok core pattern’i konuşlandırdı, ancak design pattern’lerin topluluğun genelinin bilincine sızması 1990’ların sonlarını buldu. Pattern’ler hızla Main Street kitapçılarının bilgisayar bölümlerine ulaştı ve ilk ateşli tartışmalar mail listelerinde ve forumlarda başladı.</p>
+
+<p>İlgili konular da önem kazandı. Bunların arasında Kent Beck tarafından desteklenen Extreme Programming (XP) de vardı. XP, esnek, tasarım yönlü, yüksek odaklı planlama ve yürütmeyi teşvik eden bir proje yaklaşımıdır.</p>
+
+<p>XP’nin ilkeleri arasında öne çıkan, testin bir projenin başarısı için çok önemli olduğu konusundaki ısrardır. Testler otomatikleştirilmeli, sık çalıştırılmalı ve tercihen kodlar yazılmadan önce tasarlanmalıdır.</p>
+
+<p>XP ayrıca projelerin küçük (çok küçük) iterasyonlara bölünmesi gerektiğini de belirtir. Hem kod hem de gereksinimler her zaman incelenmelidir. Mimari ve tasarım, kodun sık sık gözden geçirilmesine yol açan, paylaşılan ve sürekli bir sorun olmalıdır.</p>
+
+<p>XP, tasarım hareketinin militan kanadıysa, o zaman ılımlı eğilim, programlama hakkında şimdiye kadar okuduğum en iyi kitaplardan biri tarafından iyi bir şekilde temsil ediliyor: The Pragmatic Programmer: From Journeyman to Master by Andrew Hunt and David Thomas.</p>
+
+<p>XP, bazıları tarafından biraz kült olarak kabul edildi, ama en üst düzeyde yirmi yıllık nesne yönelimli pratikle ortaya çıktı. Özellikle, yeniden düzenleme olarak bilinen code revision, pattern’lere güçlü bir yardımcı-tamamlayıcı olarak ele alındı.</p>
+
+<p>Yeniden düzenleme 1980’lerden beri gelişti, ancak Martin Fowler’ın 1999’da yayınlanan ve alanı tanımlayan “Refactoring: Improving the Design of Existing Code” adlı kitabında  sistematikleştirildi.</p>
+
+<p>XP’nin ve pattern’lerin öne çıkmasıyla birlikte test etme sıcak bir konu haline geldi. Otomatik testlerin önemi, Java programcılarının cephaneliğinde önemli bir silah haline gelen güçlü JUnit test platformunun piyasaya sürülmesiyle daha da vurgulandı. Konuyla ilgili dönüm noktası niteliğinde bir makale, Kent Beck ve Erich Gamma tarafından yazılan “Test Infected: Programmers Love Writing Tests”, konuya mükemmel bir giriş yapıyor ve büyük ölçüde etkili olmaya devam ediyor.</p>
+
+<p>PHP 4, yaklaşık olarak bu sıralarda piyasaya sürüldü ve beraberinde verimlilikte iyileştirmeler ve en önemlisi, nesneler için gelişmiş destek getirdi. Bu geliştirmeler, tamamen nesne yönelimli projeleri bir olasılık haline getirdi. Programcılar, biraz şaşırtacak şekilde bu özelliği benimsedi. Bir sonraki bölümde göreceğiniz gibi, PHP’nin nesne desteği kesinlikle mükemmel değildi. Ancak disiplin ve sözdiziminin dikkatli kullanımı ile kişi aynı anda nesneler ve PHP hakkında düşünmeye başlayabilir.</p>
+
+<p>Yine de, bu bölümün başında tasvir edilene benzer tasarım felaketleri yaygın olmaya devam etti. Tasarım kültürü olgunlaşmamıştı ve PHP ile ilgili kitaplarda neredeyse yoktu. Ancak çevrimiçi ortamda ilgi olduğu açıktı. Leon Atkinson, 2001’de Zend için PHP ve pattern’ler hakkında bir makale yazdı ve Harry Fuecks, 2002’de www.phppatterns.com’da (şu anda  kullanılmayan) kendi blog’unu başlattı. BinaryCloud gibi model tabanlı framework projelerinin yanı sıra otomatikleştirilmiş test ve belgeleme araçları ortaya çıkmaya başladı.</p>
+
+<p>İlk PHP 5 beta sürümünün 2003 yılında piyasaya sürülmesi, nesne yönelimli programlama dili olarak PHP’nin geleceğini garantiledi. Zend Engine 2, büyük ölçüde geliştirilmiş nesne desteği sağladı. Aynı derecede önemli olan, nesnelerin ve nesne yönelimli tasarımın artık PHP projelerinin merkezinde yer aldığına dair bir sinyal gönderdi.</p>
+
+<p>Yıllar geçtikçe PHP 5, namespace ve closure gibi önemli yeni özellikleri bünyesine katarak gelişmeye ve evrilmeye devam etti. Bu süre zarfında, sunucu taraflı web programlama için en iyi seçenek olarak ününü sağlamlaştırdı.</p>
+
+<p>Aralık 2015’te yayınlanan PHP 7, bu eğilimin devamını temsil ediyordu. Özellikle, birçok geliştiricinin (bu kitabın önceki sürümleriyle birlikte) yıllardır yaygara kopardığı iki özellik olan hem parametre hem de dönüş tipi bildirimleri için destek sağladı. Anonim sınıflar, geliştirilmiş bellek kullanımı ve artırılmış hız dahil olmak üzere birçok başka özellik ve iyileştirme vardı. Yıllar geçtikçe dil, nesne yönelimli yazılımcının bakış açısından istikrarlı bir şekilde daha sağlam, daha temiz ve daha eğlenceli hale geldi.</p>
+
+<p>Aralık 2020’de, PHP 7’nin yayınlanmasından neredeyse tam beş yıl sonra, PHP 8’in piyasaya sürülmesi gerekiyor. Bazı uygulama ayrıntıları değişebilir (ve bu kitabın yazılması sırasında biraz değişmiş olsa da), özellikler bu yazının yazıldığı tarihte (Ağustos 2020) zaten mevcuttur. Birçoğunu burada ayrıntılı olarak ele alıyorum. Tip bildirimlerinde iyileştirmeler, modern özellik ataması ve diğer birçok yeni özellik içerir.</p>
+
+<h2 id="kitap-hakkında">Kitap Hakkında</h2>
+
+<p>Bu kitap, nesne yönelimli tasarım alanında çığır açmaya çalışmıyor. Bunun yerine, PHP bağlamında, bazı yerleşik tasarım ilkelerini ve bazı temel pattern’leri (özellikle klasik Gang of Four kitabı olan Design Patterns’te yazılanları) inceliyorum. Son olarak, bir projenin başarısını sağlamaya yardımcı olabilecek araçlara ve tekniklere bakmak için katı kod sınırlarının ötesine geçiyorum. Giriş ve kısa bir sonuç dışında, kitap üç ana bölüme ayrılmıştır: nesneler, pattern’ler ve uygulama.</p>
+
+<p><strong>Nesneler</strong></p>
+
+<p>Bölüm 1’e PHP’nin ve nesnelerin tarihine hızlı bir bakışla başlıyorum, PHP 3’teki sonradan düşünülenden PHP 5’teki temel özelliğe geçişi çiziyorum.</p>
+
+<p>Nesneler hakkında çok az bilginiz olsa da, hiç bilginiz olmadan da deneyimli ve başarılı bir PHP programcısı olabilirsiniz. Bu nedenle nesneleri, sınıfları ve kalıtımı açıklamaya temel ilkelerden başlıyorum. Bu erken aşamada bile, PHP 5, PHP 7 ve PHP 8’in getirdiği bazı nesne geliştirmelerine bakıyorum.</p>
+
+<p>Temel bilgileri aldığınızda, PHP’nin daha gelişmiş nesne yönelimli özelliklerini inceleyerek konumuzun derinliklerine iniyorum. PHP’nin nesneler ve sınıflarla çalışmanıza yardımcı olmak için sağladığı araçlara da bir bölüm ayırdım.</p>
+
+<p>Bununla birlikte, bir sınıfın nasıl tanımlanacağını bilmek ve onu bir nesneyi başlatmak için kullanmak yeterli değildir. Öncelikle sisteminiz için doğru katılımcıları seçmeli ve onlar için en iyi etkileşim yollarına karar vermelisiniz. Bu seçimleri açıklamak ve öğrenmek, nesne araçları ve sözdizimi hakkındaki çıplak gerçekleri öğrenmekten çok daha zordur. Bölüm 1’i PHP ile nesne yönelimli tasarıma girişle bitiriyorum.</p>
+
+<p><strong>Pattern’ler</strong></p>
+
+<p>Pattern, yazılım tasarımındaki bir sorunu tanımlar ve çözümün özünü sağlar. Buradaki “Çözüm”, bir cookbook’ta bulabileceğiniz türden kes-yapıştır kodu anlamına gelmez (yine de cookbook’lar programcı için birer kaynaktır). Bunun yerine, design pattern, bir sorunu çözmek için kullanılabilecek yaklaşımı tanımlar.</p>
+
+<p>Bölüm 2, design pattern’leri tanımlayarak ve yapılarını açıklayarak başlar. Popülerliklerinin ardındaki bazı nedenlere de bakıyorum.</p>
+
+<p>Pattern’ler, belirli temel tasarım ilkelerini destekleme ve takip etme eğilimindedir. Bunların anlaşılması, pattern’in motivasyonunun analiz edilmesine yardımcı olabilir ve tüm programlamaya faydalı bir şekilde uygulanabilir. Bu ilkelerin bazılarını tartışıyorum. Sınıfları ve etkileşimlerini tanımlamanın platformdan bağımsız bir yolu olan Unified Modeling Language (UML) de inceliyorum.
+Bu kitap bir pattern kataloğu olmasa da, en ünlü ve faydalı pattern’lerden bazılarını inceliyorum. Her pattern’in ele aldığı sorunu anlatıyor, çözümü analiz ediyor ve PHP’de bir uygulama örneği sunuyorum.</p>
+
+<p><strong>Uygulama</strong></p>
+
+<p>Doğru yönetilmezse, doğru dengelenmiş bir mimari bile başarısız olur. 3. Bölümde, projenizin başarısını garanti altına alan bir framework oluşturmanıza yardımcı olacak mevcut araçlara bakıyorum. Kitabın geri kalanı tasarım ve programlama pratiği hakkındaysa, 3. Kısım kodunuzu yönetme pratiği hakkındadır. İncelediğim araçlar, bir proje için destek yapısı oluşturarak, ortaya çıkan hataları izlemeye yardımcı olabilir, programcılar arasında işbirliğini teşvik edebilir ve kurulum kolaylığı ve kod netliği sağlayabilir.</p>
+
+<p>Otomatik testin gücünden daha önce bahsetmiştim. Bölüm 3’e, bu alandaki sorunlara ve çözümlere genel bir bakış sunan giriş bölümüyle başlıyorum.</p>
+
+<p>Birçok programcı, her şeyi kendi başına yapma dürtüsüne yenik düşmekten suçludur. Composer, ana reposu olan Packagist ile birlikte, kolaylıkla projelere eklenebilecek binlerce  pakete erişim sunar.</p>
+
+<p>Composer konusu açılmışken, bir paketin dağıtımını tek bir komut kadar basit hale getiren kurulum mekanizmasını inceliyorum.</p>
+
+<p>Kod işbirliği ile ilgilidir. Bu gerçek ödüllendirici olabilir. Aynı zamanda tam bir kabus olabilir. Git, birçok programcının birbirlerinin çalışmalarının üzerine yazmadan aynı kod tabanı üzerinde birlikte çalışmasını sağlayan bir sürüm kontrol sistemidir. Geliştirmenin herhangi bir aşamasında projenizin anlık görüntülerini almanıza, kimin hangi değişiklikleri yaptığını görmenize ve projeyi birleştirilebilir dallara ayırmanıza olanak tanır. Git projenizi bir gün kurtaracak.</p>
+
+<p>İnsanlar ve kütüphaneler işbirliği yaptıklarında, partiye genellikle farklı gelenekler ve stiller getirirler. Bu sağlıklı olmakla birlikte birlikte çalışabilirliği de baltalayabilir. Uymak ve kabul etmek gibi sözcükler tüylerimi ürpertiyor ama internetin yaratıcılığının standartlarla desteklendiği inkar edilemez. Belirli geleneklere uyarak, hayal edilemeyecek kadar geniş bir sanal alanda oynamak için özgürleşiriz. Bu yüzden PHP standartlarını, bize nasıl yardımcı olabileceklerini, nasıl ve neden uymamız gerektiğini keşfediyorum.</p>
+
+<p>İki gerçek kaçınılmaz görünüyor. İlk olarak, hatalar genellikle aynı kod bölgesinde tekrarlanır ve bazı iş günleri déjà vu’da bir egzersiz haline getirir. İkincisi, genellikle iyileştirmeler düzelttikleri kadar veya daha fazla bozarlar. Otomatik test, kodunuzdaki sorunlar için bir erken uyarı sistemi sağlayarak bu sorunların her ikisini de ele alabilir. İlk önce Smalltalk için tasarlanmış, ancak şimdi başta Java olmak üzere birçok dile taşınan xUnit test platformunun güçlü bir uygulaması olan PHPUnit’i tanıtıyorum. Özellikle PHPUnit’in özelliklerine ve daha genel olarak test etmenin faydalarına ve maliyetine bakıyorum.</p>
+
+<p>Uygulamanız dağınıksa dosyaların standart olmayan konumlara yüklenmesi gerekebilir, veritabanı kurmak veya sunucu yapılandırmasına yama uygulamak isteyebilir. Kısacası, uygulamaların kurulum sırasında yapılması gerekenler vardır. Phing, Ant adlı bir Java aracının bağlantı noktasıdır. Phing ve Ant, bir yapılandırma dosyasını yorumlar ve kaynak dosyalarınızı onlara söylediğiniz şekilde işler. Bu genellikle dosyalarınızı bir dizinden sisteminizdeki çeşitli hedef konumlara kopyalamak anlamına gelir, ancak ihtiyaçlarınız daha karmaşık hale geldikçe, Phing bunları karşılamak için kolayca ölçeklenir.</p>
+
+<p>Bazı şirketler geliştirme platformlarını zorunlu kılar, ancak çoğu durumda ekipler bir dizi farklı işletim sistemi çalıştırır. Bunların tümü, kolaylıkla bir LAMP yığınını çalıştıracaktır. Ancak ideal olarak, geliştiricilerin kodlarını production’a çok benzeyen ortamlarda çalıştırmaları gerekir. Ekip üyelerinin kendilerine özgü geliştirme platformlarını koruyabilmeleri ancak production benzeri bir sistemde kodlarını çalıştırabilmeleri için sanallaştırma uygulaması olan Vagrant’ı inceliyorum.</p>
+
+<p>Testler oldukça faydalıdır, ancak testlerinizi yüklemeniz, çalıştırmanız ve buna devam etmeniz gerekiyor. Build ve testlerinizi otomatikleştirmezseniz, rehavete kapılmak ve her şeyin kaymasına izin vermek kolaydır. Tam da bu konuda size yardımcı olacak “sürekli entegrasyon” kategorisinde bir araya toplanmış bazı araçlara ve tekniklere bakıyorum.</p>
+
+<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Temmuz 2004’te PHP 5.0 yayınlandı. Bu sürüm, bir dizi radikal geliştirmeyle geldi. Belki de bunlardan ilki, nesne yönelimli programlama için kökten geliştirilmiş destekti. Bu, PHP topluluğu içinde nesnelere ve tasarıma büyük ilgi uyandırdı. Aslında bu, PHP 4.0 ile başlayan bir sürecin devamıydı.]]></summary></entry><entry><title type="html">Laravel Geliştirme Ortamını Hazırlamak</title><link href="http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak.html" rel="alternate" type="text/html" title="Laravel Geliştirme Ortamını Hazırlamak" /><published>2024-03-18T00:00:00+03:00</published><updated>2024-03-18T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak</id><content type="html" xml:base="http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak.html"><![CDATA[<p>PHP’nin başarısının bir nedeni de, PHP’ye hizmet vermeyen bir web sunucusu bulmanın zor olmasıdır. Ancak, modern PHP araçları geçmişe göre daha katı gereksinimlere sahiptir. Laravel’de geliştirme yapmanın en iyi yolu, kodunuz için tutarlı bir yerel ve uzak sunucu ortamı sağlamaktır ve neyse ki Laravel ekosisteminde bunun için birkaç araç var.</p>
 
 <h2 id="sistem-gereksinimleri">Sistem Gereksinimleri</h2>
 
@@ -6745,163 +8141,4 @@ git commit -m "Initial commit"
 
 <p>Laravel bir PHP framework olduğu için onu yerel olarak sunmak çok basittir. Laravel ayrıca yerel gelişiminizi yönetmeniz için üç araç sunar: Docker kurulumu olan Sail; daha basit bir macOS tabanlı araç olan Valet; ve önceden yapılandırılmış bir Vagrant kurulumu olan Homestead. Laravel, Composer’a dayanır ve bu araç tarafından kurulabilir ve kutudan hem kurallarını hem de diğer açık kaynak araçlarıyla ilişkisini yansıtan bir dizi klasör ve dosyayla çıkar.</p>
 
-<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[PHP’nin başarısının bir nedeni de, PHP’ye hizmet vermeyen bir web sunucusu bulmanın zor olmasıdır. Ancak, modern PHP araçları geçmişe göre daha katı gereksinimlere sahiptir. Laravel’de geliştirme yapmanın en iyi yolu, kodunuz için tutarlı bir yerel ve uzak sunucu ortamı sağlamaktır ve neyse ki Laravel ekosisteminde bunun için birkaç araç var.]]></summary></entry><entry><title type="html">Neden Laravel?</title><link href="http://www.melihkocaturk.com//2024/03/18/neden-laravel.html" rel="alternate" type="text/html" title="Neden Laravel?" /><published>2024-03-18T00:00:00+03:00</published><updated>2024-03-18T00:00:00+03:00</updated><id>http://www.melihkocaturk.com//2024/03/18/neden-laravel</id><content type="html" xml:base="http://www.melihkocaturk.com//2024/03/18/neden-laravel.html"><![CDATA[<p>Dinamik web’in ilk günlerinde, web uygulaması yazmak bugün olduğundan çok daha farklı görünüyordu. O zaman geliştiriciler, yalnızca uygulamalarımızın benzersiz iş mantığı için değil, aynı zamanda sitelerde çok yaygın olan kullanıcı kimlik doğrulaması, input validation, veritabanı erişimi, templating vb. bileşenlerin her biri için kod yazmaktan sorumluydu.</p>
-
-<p>Bugün programcılar düzinelerce uygulama geliştirme framework’üne ve kolayca erişilebilen binlerce bileşene ve kütüphaneye sahiptir. Programcılar arasında yaygın bir nakarat, siz bir framework’ü öğrendiğiniz zaman, onu değiştirmek niyetiyle daha yeni (ve sözde daha iyi) üç framework’ün ortaya çıkmasıdır.</p>
-
-<p>“Sırf orada olduğu için” bir dağa tırmanmak geçerli bir gerekçe olabilir, ancak belirli bir framework kullanmayı seçmek için daha iyi nedenler vardır. Şu soruyu sormaya değer, neden framework? Daha spesifik olarak, neden Laravel?</p>
-
-<h2 id="neden-framework-kullanmalısınız">Neden Framework Kullanmalısınız?</h2>
-
-<p>PHP geliştiricileri için mevcut olan bireysel bileşenleri veya paketleri kullanmanın neden faydalı olduğunu görmek kolaydır. Paketlerde, iyi tanımlanmış bir işi olan yalıtılmış kod parçasının geliştirilmesinden ve sürdürülmesinden bir başkası sorumludur ve teoride o kişi, bu tek bileşen hakkında sizin sahip olabileceğinizden daha derin bir anlayışa sahiptir.</p>
-
-<p>Laravel ve Symfony, Lumen ve Slim gibi framework’ler, yapılandırma dosyaları, servis sağlayıcılar, öngörülen dizin yapıları ve uygulama ön yüklemeleri gibi özel framework “yapıştırıcısı” ile birlikte third-party bileşenlerin bir koleksiyonunu önceden paketler. Bu nedenle, genel olarak bir framework kullanmanın yararı, birinin yalnızca sizin için tek tek bileşenler hakkında değil, aynı zamanda bu bileşenlerin nasıl bir araya getirilmesi gerektiği konusunda da karar vermesidir.</p>
-
-<p>Diyelim ki bir framework’ün avantajı olmadan yeni bir web uygulaması başlattınız. Nereden başlayacaksınız? Muhtemelen HTTP request’lerini yönlendireceksiniz, bu nedenle şimdi mevcut tüm HTTP request ve response kütüphanelerini değerlendirmeniz ve birini seçmeniz gerekir. Daha sonra bir router seçmeniz gerekecek. Ve muhtemelen bir tür route yapılandırma dosyası oluşturmanız gerekecek. Hangi söz dizimini kullanmalı? Nereye gitmeli? Peki ya controller? Nerede tutulacak ve nasıl yüklenecekler? Controller ve bağımlılıklarını çözmek için muhtemelen dependency injection container’a ihtiyacınız olacak. Fakat hangisi?</p>
-
-<p>Ayrıca, tüm bu soruları yanıtlamak için zaman ayırırsanız ve uygulamanızı başarıyla oluşturursanız, bir sonraki geliştirici üzerindeki etkisi ne olur? Dört veya bir düzine özel framework tabanlı uygulamanız olduğunda ve controller’ların nerede olduğunu veya router sözdiziminin ne olduğunu hatırlamanız gerektiğinde ne olur?</p>
-
-<p><strong>Tutarlılık ve Esneklik</strong></p>
-
-<p>Framework’ler, “Burada hangi bileşeni kullanmalıyız?” sorusuna dikkatle düşünülmüş bir yanıt vererek bu sorunu ele alır ve seçilen belirli bileşenlerin birlikte iyi çalışmasını sağlar. Ek olarak, framework’ler, projede yeni olan bir geliştiricinin anlaması gereken kod miktarını azaltan kurallar sağlar; örneğin, bir Laravel projesinde router’ın nasıl çalıştığını anlarsanız, tüm Laravel projelerinde nasıl çalıştığını anlarsınız.</p>
-
-<p>Birisi her yeni proje için kendi framework’ünüzü oluşturmanızı tavsiye ettiğinde, gerçekte savundukları şey, uygulamanızın temeline neyin girip neyin girmediğini kontrol etme yeteneğidir. Bu, en iyi framework’lerin size yalnızca sağlam bir temel sağlamakla kalmayıp, aynı zamanda ihtiyacınıza uygun olarak özelleştirme özgürlüğü vereceği anlamına gelir. Ve bu, size kitabın geri kalanında göstereceğim gibi, Laravel’i bu kadar özel yapan şeyin bir parçasıdır.</p>
-
-<h2 id="laraveli-bu-kadar-özel-yapan-nedir">Laravel’i Bu Kadar Özel Yapan Nedir?</h2>
-
-<p>Peki Laravel’i farklı kılan nedir? Neden herhangi bir zamanda birden fazla PHP çerçevesine sahip olmalıyız? Zaten hepsi Symfony’nin bileşenlerini kullanıyor, değil mi? Laravel’i “harekete geçiren” şeylerden biraz bahsedelim.</p>
-
-<p><strong>Laravel’in Felsefesi</strong></p>
-
-<p>Değerleri anlamak için yalnızca Laravel marketing materyallerini ve README’leri okumanız yeterlidir. Taylor, “Illuminate” ve “Spark” gibi ışıkla ilgili sözcükler kullanır. Bir de şunlar var:  “Artisans”, “Elegant”. Ayrıca bunlar: “Breath of fresh air” “Fresh start”. Ve son olarak: “Rapid” “Warp speed”.</p>
-
-<p>Framework’ün en güçlü şekilde iletilen iki değeri, geliştirici hızını ve geliştirici mutluluğunu artırmaktır. Taylor, “Artisan” dilini kasıtlı olarak daha faydacı değerlere zıt olarak tanımladı. Bu tür bir düşüncenin doğuşunu, StackExchange’teki 2011 tarihli sorusunda görebilirsiniz: “Bazen kodun ‘güzel görünmesini’ sağlamak için anlamsız miktarda zaman (saatler) harcıyorum” - sadece kodun kendisine bakma konusunda daha iyi bir deneyim uğruna. Ayrıca geliştiricilerin fikirlerini hayata geçirmelerini kolaylaştırmanın ve hızlandırmanın, harika ürünler yaratmanın önündeki gereksiz engelleri ortadan kaldırmanın değerinden sık sık bahseder.</p>
-
-<p>Laravel, özünde, geliştiricileri donatmak ve harekete geçirmek ile ilgilidir. Amacı, geliştiricilerin hızlı bir şekilde öğrenmesine, başlamasına, geliştirmesine, ve basit, anlaşılır, kalıcı kodlar yazmalarına yardımcı olmaktır.</p>
-
-<p>Geliştiricileri hedefleme kavramı, Laravel materyallerinde açıktır. Dökümantasyonda “Happy developers make the best code” yazıyor. “Developer happiness from download to deploy” bir süredir resmi olmayan sloganıydı. Tabii ki, herhangi bir araç veya framework, geliştiricilerin mutlu olmasını istediğini söyleyecektir. Ancak geliştirici mutluluğunun ikincil değil birincil kaygı olarak görülmesi Laravel’in tarzı ve karar verme süreci üzerinde büyük bir etkiye sahip. Diğer framework’lerin, birincil hedef olarak mimari saflığı veya enterprise geliştirme ekiplerinin amaç ve değerleriyle uyumluluğu hedefleyebildiği durumlarda, Laravel’in birincil odak noktası bireysel geliştiriciye hizmet etmektir. Bu, Laravel’de mimari olarak saf veya enterprise kullanıma hazır uygulamalar yazamayacağınız anlamına gelmez, ancak kod tabanınızın okunabilirliği ve anlaşılırlığı pahasına olmak zorunda da değildir.</p>
-
-<p><strong>Laravel Geliştirici Mutluluğunu Nasıl Sağlar?</strong></p>
-
-<p>Geliştiricileri mutlu etmek istediğinizi söylemek bir şeydir. Bunu yapmak başka bir şeydir ve bir framework’te geliştiricileri mutsuz etme ve onları mutlu etme olasılığı en yüksek olanı sorgulamanızı gerektirir. Laravel’in geliştiricilerin hayatlarını kolaylaştırmaya çalıştığı birkaç yol vardır.</p>
-
-<p>Birincisi, Laravel hızlı bir uygulama geliştirme framework’üdür. Bu, kolay bir öğrenme eğrisine ve yeni bir uygulama başlatma ile onu yayınlama arasındaki adımları en aza indirmeye odaklandığı anlamına gelir. Veritabanı etkileşimlerinden kimlik doğrulamaya, kuyruklara, e-postaya ve önbelleğe almaya kadar web uygulamaları oluşturmadaki en yaygın görevlerin tümü, Laravel’in sağladığı bileşenler tarafından daha basit hale getirilir. Ancak Laravel’in bileşenleri kendi başlarına mükemmel değildir; tüm framework’te tutarlı bir API ve öngörülebilir yapılar sağlarlar. Bu, Laravel’de yeni bir şey denediğinizde, muhtemelen “… ve işe yarıyor” diyeceğiniz anlamına gelir.</p>
-
-<p>Bu da framework’ün kendisiyle bitmiyor. Laravel, uygulamalar için eksiksiz bir araç ekosistemi sağlar. Yerel geliştirme için Sail, Valet ve Homestead’e, sunucu yönetimi için Forge’a ve gelişmiş deployment için Envoyer ve Vapor’a sahipsiniz. Ayrıca bir dizi eklenti paketi mevcuttur: Ödemeler ve abonelikler için Cashier, WebSockets için Echo, arama için Scout, API kimlik doğrulaması için Sanctum ve Passport, frontend testi için Dusk, sosyal oturum açma için Socialite, kuyrukları izlemek için Horizon, admin panel oluşturmak için Nova ve SaaS’ınızı önyüklemek için Spark. Laravel, benzersiz bir şey yapabilmeleri için geliştiricilerden tekrarlayan işleri almaya çalışıyor.</p>
-
-<p>Daha sonra, Laravel “convention over configuration” a odaklanır - Laravel’in varsayılanlarını kullanmak istiyorsanız, tüm ayarlarınızı bildirmenizi gerektiren diğer framework’lere göre çok daha az iş yapmanız gerekeceği anlamına gelir. Laravel üzerinde inşa edilen projeler, diğer çoğu PHP framework’lerinde inşa edilen projelerden daha az zaman alır.</p>
-
-<p>Lavel ayrıca sadeliğe odaklanır. İsterseniz, Laravel ile dependency injection, Data Mapper pattern ve repository’lerini, Command Query Responsibility Segregation ve diğer her türden daha karmaşık pattern’i kullanmak mümkündür. Ancak diğer framework’ler, bu araçların ve yapıların her projede kullanılmasını önerebilirken, Laravel dökümantasyonu ve topluluğu, mümkün olan en basit uygulamayla başlamaya eğilimlidir - burada global bir fonksiyon, orada bir facade, şurada ActiveRecord. Bu, geliştiricilerin, karmaşık ortamlarda kullanışlılığı sınırlamadan ihtiyaçlarını çözmek için mümkün olan en basit uygulamayı oluşturmalarına olanak tanır.</p>
-
-<p>Laravel’in diğer PHP framework’lerinden ne kadar farklı olduğunun ilginç bir göstergesi, yaratıcısının ve topluluğunun Java’dan çok Ruby, Rails ve fonksiyonel programlama dillerine bağlı ve onlardan ilham almış olmasıdır. Modern PHP’de, PHP’nin Java benzeri yönlerini kucaklayan, ayrıntıya ve karmaşıklığa yönelmek için güçlü bir akım var. Ancak Laravel, dinamik ve basit kodlama uygulamalarını ve dil özelliklerini kucaklayarak diğer tarafta olma eğilimindedir.</p>
-
-<p><strong>Laravel Topluluğu</strong></p>
-
-<p>Laravel topluluğu ile ilk kez karşılaşıyorsanız, sabırsızlıkla bekleyeceğiniz özel bir şey var demektir. Laravel’in ayırt edici unsurlarından biri, büyümesine ve başarısına katkıda bulunan etrafını saran misafirperver, öğretici topluluktur. Jeffrey Way’in Laracasts video eğitimlerinden Laravel News’e, Slack, IRC ve Discord kanallarına, Blog yazarlarına, podcast’lere ve Laracon konferanslarına kadar Laravel, ilk günden beri etrafta olan zengin ve canlı bir topluluğa sahiptir. Ve bu bir tesadüf değil:</p>
-
-<p>Laravel’in en başından beri, tüm insanların kendilerini bir şeyin parçası gibi hissetmek istedikleri fikrine sahibim. Benzer düşünen insanlardan oluşan bir gruba ait olmayı ve kabul edilmeyi istemek doğal bir insan içgüdüsüdür. Dolayısıyla, kişiliği bir web framework’e enjekte ederek ve toplulukla gerçekten aktif olarak, bu tür bir duygu gelişebilir.</p>
-
-<p>– Taylor Otwell, Ürün ve Destek görüşmesi</p>
-
-<p>Taylor, Laravel’in ilk günlerinden itibaren başarılı bir açık kaynak projesinin iki şeye ihtiyacı olduğunu anlamıştı: iyi bir dokümantasyon ve sıcak bir topluluk. Ve bu iki şey artık Laravel’in ayırt edici özellikleri oldu.</p>
-
-<p>Nasıl çalışır</p>
-
-<p>Şimdiye kadar burada paylaştığım her şey tamamen soyuttu. Peki ya kodlar? Laravel ile  çalışmanın gerçekte nasıl olduğunu görebilmeniz için basit bir uygulamaya yapalım.</p>
-
-<p><strong>Örnek 1-1</strong>. routes/web.php içindeki “Hello, World”</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Route::get('/', function () {
-    return 'Hello, World!';
-});
-</code></pre></div></div>
-
-<p>Laravel uygulamasında yapabileceğiniz en basit eylem, bir rota tanımlamak ve birisi bu rotayı her ziyaret ettiğinde bir sonuç döndürmektir. Makinenizde yeni bir Laravel uygulaması başlatın, Örnek 1-1’deki rotayı tanımlayın ve ardından siteyi public dizininden çalıştırın, tam olarak işleyen bir “Hello, World” örneğine sahip olacaksınız.</p>
-
-<p>Örnek 1-2’de görebileceğiniz gibi, controller’a çok benziyor (test etmek isterseniz, controller oluşturmak için önce php artisan make:controller WelcomeController komutunu çalıştırın).</p>
-
-<p><strong>Örnek 1-2</strong>. Controller ile “Hello, World”</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: routes/web.php
-use App\Http\Controllers\WelcomeController;
-
-Route::get('/', [WelcomeController::class, 'index']);
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: app/Http/Controllers/WelcomeController.php
-namespace App\Http\Controllers;
-
-class WelcomeController extends Controller
-{
-    public function index()
-    {
-        return 'Hello, World!';
-    }
-}
-</code></pre></div></div>
-
-<p>Ve mesajını bir veritabanında saklıyorsanız, oldukça benzer görünecektir (Örnek 1-3’e bakın).</p>
-
-<p><strong>Örnek 1-3</strong>. Veritabanı erişimi ile “Hello, World”</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: routes/web.php
-use App\Greeting;
-
-Route::get('create-greeting', function () {
-    $greeting = new Greeting;
-    $greeting-&gt;body = 'Hello, World!';
-    $greeting-&gt;save();
-});
-
-Route::get('first-greeting', function () {
-    return Greeting::first()-&gt;body;
-});
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: app/Models/Greeting.php
-namespace App\Models;
-
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
-
-class Greeting extends Model
-{
-    use HasFactory;
-}
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// File: database/migrations/2023_03_12_192110_create_greetings_table.php
-use Illuminate\Database\Migrations\Migration;
-use Illuminate\Database\Schema\Blueprint;
-use Illuminate\Support\Facades\Schema;
-
-return new class extends Migration
-{
-    /**
-     * Run the migrations.
-     */
-    public function up(): void
-    {
-        Schema::create('greetings', function (Blueprint $table) {
-            $table-&gt;id();
-            $table-&gt;string('body');
-            $table-&gt;timestamps();
-        });
-    }
-    /**
-     * Reverse the migrations.
-     */
-    public function down(): void
-    {
-        Schema::dropIfExists('greetings');
-    }
-};
-</code></pre></div></div>
-
-<p>Örnek 1-3 biraz bunaltıcı olabilir ve eğer öyleyse, onu atlayın. Burada olup biten her şeyi sonraki bölümlerde öğreneceksiniz, ancak birkaç satır kodla migration ve modelleri ayarlayabileceğinizi ve veritabanından kayıtları çekebileceğinizi şimdiden görebilirsiniz. Bu kadar basit.</p>
-
-<h2 id="öyleyse-neden-laravel">Öyleyse Neden Laravel?</h2>
-
-<p>Çünkü Laravel, modern kodlama standartlarını kullanır, canlı bir toplulukla çevrilidir ve güçlü araçlarla fikirlerinizi kod israfı olmadan gerçeğe dönüştürmenize yardımcı olur. Ve çünkü siz sevgili geliştirici, mutlu olmayı hak ediyorsunuz.</p>
-
-<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Dinamik web’in ilk günlerinde, web uygulaması yazmak bugün olduğundan çok daha farklı görünüyordu. O zaman geliştiriciler, yalnızca uygulamalarımızın benzersiz iş mantığı için değil, aynı zamanda sitelerde çok yaygın olan kullanıcı kimlik doğrulaması, input validation, veritabanı erişimi, templating vb. bileşenlerin her biri için kod yazmaktan sorumluydu.]]></summary></entry></feed>
+<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[PHP’nin başarısının bir nedeni de, PHP’ye hizmet vermeyen bir web sunucusu bulmanın zor olmasıdır. Ancak, modern PHP araçları geçmişe göre daha katı gereksinimlere sahiptir. Laravel’de geliştirme yapmanın en iyi yolu, kodunuz için tutarlı bir yerel ve uzak sunucu ortamı sağlamaktır ve neyse ki Laravel ekosisteminde bunun için birkaç araç var.]]></summary></entry></feed>
