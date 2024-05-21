@@ -1,5 +1,528 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-14T21:38:47+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
-</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Shell’i Öğrenmek</title><link href="http://localhost:4000/2024/05/14/shell-i-ogrenmek.html" rel="alternate" type="text/html" title="Shell’i Öğrenmek" /><published>2024-05-14T00:00:00+03:00</published><updated>2024-05-14T00:00:00+03:00</updated><id>http://localhost:4000/2024/05/14/shell-i-ogrenmek</id><content type="html" xml:base="http://localhost:4000/2024/05/14/shell-i-ogrenmek.html"><![CDATA[<p>Neden komut satırını öğrenmeniz gerekiyor? Peki, size bir hikaye anlatayım. Yıllar önce çalıştığım yerde bir sorun yaşadık. Dosya sunucularımızdan birinde sürekli dolmaya başlayan bir ortak sürücü vardı. Bu eski işletim sisteminin kullanıcı kotalarını desteklemediğinden bahsetmeyeceğim; bu başka bir hikaye. Ancak sunucu dolmaya devam etti ve insanların çalışmasını engelledi. Yazılım mühendislerimizden biri, tüm kullanıcı dizinlerini tarayacak, kullandıkları alanı toplayacak ve sonuçların listesini yapacak bir C++ programı yazmak için birkaç saat harcadı. İşteyken eski işletim sistemini kullanmak zorunda kaldığım için Linux benzeri bir komut satırı ortamı kurdum. Sorunu duyduğumda bu görevi şu tek satırla yapabileceğimi fark ettim:</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.9.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2024-05-22T00:42:59+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>10 yılı aşkın süredir yazılım geliştiriyor. Lise ve Üniversite eğitimini Elektrik-Elektronik üzerine aldı. Teknolojiye olan ilgisi,  bilgisayar programcılığını kariyer olarak seçmesini sağladı. Birçok ulusal ve büyük çaplı projede çalıştı. İşini seven bir yazılımcı  olarak, sürekli kendimi nasıl daha iyi geliştirebilirim sorusuna cevap arıyor...
+</subtitle><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><entry><title type="html">Ruby.new</title><link href="http://localhost:4000/2024/05/21/ruby-new.html" rel="alternate" type="text/html" title="Ruby.new" /><published>2024-05-21T00:00:00+03:00</published><updated>2024-05-21T00:00:00+03:00</updated><id>http://localhost:4000/2024/05/21/ruby-new</id><content type="html" xml:base="http://localhost:4000/2024/05/21/ruby-new.html"><![CDATA[<p>Programlama dilleri üzerine birçok kitap hemen hemen aynı görünür. Temel türlerle ilgili bölümlerle başlarlar: integer, string vb. Daha sonra <code class="language-plaintext highlighter-rouge">if</code> ve <code class="language-plaintext highlighter-rouge">while</code> ifadelerine ve döngülerine geçmeden önce 2 + 3 gibi ifadelere bakarlar. Daha sonra belki 7. veya 8. Bölüm civarında sınıflardan bahsetmeye başlayacaklar. Bunu biraz sıkıcı buluyoruz.</p>
+
+<p>Bunun yerine, bu kitabı tasarlarken büyük bir planımız vardı. Dili yukarıdan aşağıya, sınıflardan ve nesnelerden başlayarak, en ince ayrıntısına kadar söz dizimi ayrıntılarıyla sona erdirerek belgelemek istedik. O zamanlar iyi bir fikir gibi görünüyordu. Sonuçta Ruby’deki her şey bir nesnedir, bu yüzden önce nesnelerden bahsetmek mantıklıydı.</p>
+
+<p>Ya da biz öyle düşündük.</p>
+
+<p>Ne yazık ki bir dili yukarıdan aşağıya anlatmak çok zor. Eğer dizeleri, <code class="language-plaintext highlighter-rouge">if</code> ifadelerini, atamaları ve diğer detayları ele almadıysanız sınıf örnekleri yazmak zordur. Yukarıdan aşağıya açıklamamız boyunca, örnek kodun anlamlı olması için gerekli olan düşük düzeyli ayrıntıları vermeye karar verdik.</p>
+
+<p>Böylece başka bir büyük plan hazırladık (bize boşuna pragmatik demiyorlar). Ruby’yi hâlâ en yukarıdan başlayarak tanımlıyoruz. Ancak bunu yapmadan önce, Ruby’de kullanılan özel sözcüklerin yanı sıra örneklerde kullanılan tüm ortak dil özelliklerini açıklayan kısa bir bölüm ekledik; bu, bizi kitabın geri kalanına yönlendirecek mini bir eğitimdir. Ve bu mini eğitim bu bölümdür.</p>
+
+<h2 id="ruby-nesne-yönelimli-bir-dildir">Ruby Nesne Yönelimli Bir Dildir</h2>
+
+<p>Tekrar söyleyelim. Ruby nesne yönelimli bir dildir. Programlama açısından bir nesne, verileri, bu verileri işleyen mantıkla birleştiren bir şeydir. Ve bir dil, nesnelerin yaratılmasını kolaylaştıran dil yapıları sağlıyorsa “nesne yönelimlidir”. Tipik olarak nesne yönelimli diller, nesnelerin, verilerinin ne olduğunu tanımlamasına, işlevlerini tanımlamasına ve diğer nesnelerin bu işlevselliğe erişmesine izin vermek için ortak bir sözdizimi sağlamasına olanak tanır.</p>
+
+<p>Java, JavaScript ve Python gibi diğer nesne yönelimli dillerin aksine, tüm Ruby türleri nesnelerdir ve farklı davranan nesne olmayan temel türler yoktur. Ancak birçok dil nesne yönelimli olduğunu iddia eder ve bu diller genellikle nesne yönelimli nin ne anlama geldiği konusunda farklı bir yoruma ve kullandıkları kavramlar için farklı bir terminolojiye sahiptir.</p>
+
+<p>O halde ayrıntılara çok fazla girmeden önce Ruby hakkında konuşmak için kullanacağımız terimlere ve gösterimlere kısaca göz atalım.</p>
+
+<p>Nesneye yönelik programlar yazdığınızda, kavramları dış dünyadan veya mantıksal alanınızdan modellemeye çalışırsınız. Bu modelleme süreci sırasında, kodda temsil edilmesi gereken ilgili veri ve davranış kategorilerini keşfedeceksiniz. Müzik kutusunu temsil eden bir sistemde “şarkı” kavramı böyle bir kategori olabilir. Bir şarkı, durumu (örneğin şarkının adı) ve bu durumu (state) kullanan metotları (belki de şarkıyı çalmaya yönelik bir metodu) birleştirebilir. Ruby’de şarkıların genel durumunu temsil etmek için <code class="language-plaintext highlighter-rouge">Song</code> adında bir sınıf tanımlarsınız.</p>
+
+<p>Bu sınıflara sahip olduğunuzda, genellikle her birinin birkaç ayrı örneğini oluşturmak isteyeceksiniz. <code class="language-plaintext highlighter-rouge">Song</code> adlı bir sınıf içeren müzik kutusu sistemi için, “Ruby Tuesday”, “Enveloped in Python”, “String of Pearls”, “Small Talk” vb. gibi farklı adlara sahip popüler hitler için ayrı örnekleriniz olacaktır. Bu örneklerin her birinin kendi durumu vardır ancak sınıfın ortak davranışını paylaşırlar. Nesne (object) kelimesi sıklıkla örnek (instance) kelimesiyle birbirinin yerine kullanılır.</p>
+
+<p>Ruby’de örnekler, sınıfla ilişkili özel bir metot olan kurucunun (constructor) çağrılması yoluyla oluşturulur. Standart kurucuya <code class="language-plaintext highlighter-rouge">new</code> denir. <code class="language-plaintext highlighter-rouge">new</code> metodu sizin için Ruby tarafından tanımlanır ve bunu kendi başınıza tanımlamanıza gerek yoktur. Bunun gibi örnekler oluşturabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>song1 = Song.new("Ruby Tuesday")
+song2 = Song.new("Enveloped in Python") 
+# and so on
+</code></pre></div></div>
+
+<p>Bu örneklerin her ikisi de aynı sınıftan türetilmiştir ancak her birinin benzersiz özellikleri vardır. Her nesnenin, <code class="language-plaintext highlighter-rouge">object_id</code> özelliği aracılığıyla erişilebilen benzersiz bir nesne tanımlayıcısı vardır. Yukarıdaki örnekte, <code class="language-plaintext highlighter-rouge">song1.object_id</code> ve <code class="language-plaintext highlighter-rouge">song2.object_id</code>‘yi kontrol ederseniz, bunların farklı değerlere sahip olduğunu görürsünüz.</p>
+
+<p>Her örnek için, o örneğe özgü değerlere sahip değişkenler tanımlayabilirsiniz. Bu örnek değişkenleri nesnenin durumunu tutar. Örneğin şarkılarımızın her biri, o şarkının adını taşıyan bir örnek değişkene sahip olacak.</p>
+
+<p>Her sınıf içinde örnek metotları tanımlayabilirsiniz. Her metot, sınıf bağlamında ve genellikle sınıfın dışından çağrılabilen bir işlevsellik yığınıdır; ancak hangi metotların harici olarak kullanılabileceğine ilişkin kısıtlamalar belirleyebilirsiniz. Bu örnek metotların nesnenin örnek değişkenlerine ve dolayısıyla nesnenin durumuna erişimi vardır. Örneğin bir <code class="language-plaintext highlighter-rouge">Song</code> sınıfı, <code class="language-plaintext highlighter-rouge">play</code> adı verilen bir örnek metodu tanımlayabilir. Bir değişken belirli bir <code class="language-plaintext highlighter-rouge">Song</code> örneğine referans veriyorsa, o örneğin <code class="language-plaintext highlighter-rouge">play</code> metodunu çağırabilir ve o şarkıyı çalabilirsiniz.</p>
+
+<p>Sözdizimsel olarak, bir metot nokta sözdizimi kullanılarak çağrılır; işte bazı örnekler:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># intro/puts_examples.rb
+"gin joint".length # =&gt; 9
+"Rick".index("c") # =&gt; 2
+42.even? # =&gt; true
+sam.play(song) # =&gt; "duh dum, da dum de dum ..."
+</code></pre></div></div>
+
+<p>Her satır çağrılan metodu gösterir. Noktadan önceki öğeye metodun alıcısı denir ve noktadan sonra gelen öğe çağrılacak metodun adıdır. İlk örnekte “gin joint” dizesinin uzunluğu sorulur; ikincisi farklı bir dizeden c harfinin indeksini bulmasını ister. Üçüncü satır 42 sayısının çift olup olmadığını sorar (soru işareti <code class="language-plaintext highlighter-rouge">even?</code> metot adının bir parçasıdır). Son olarak, <code class="language-plaintext highlighter-rouge">sam</code> adlı bir nesneden bize bir şarkı çalmasını istiyoruz (başka bir yerde tanımladığımız bir nesneye referans veren <code class="language-plaintext highlighter-rouge">sam</code> adında bir değişkenin olduğunu varsayarak).</p>
+
+<p>Gönderilen metotlardan bahsettiğimizde genellikle nesneye bir mesaj gönderdiğimizi söyleriz. Mesaj, metodun adını ve metodun bekleyebileceği tüm argümanları içerir. Nesne, mesaja bu isimdeki metodu çağırarak yanıt verir. Metot çağrılarını nesnelere mesaj şeklinde ifade etme fikri Smalltalk programlama dilinden gelmektedir. Bir nesne bir mesaj aldığında, karşılık gelen bir metot için kendi sınıfını arar. Bulunursa bu metot yürütülür. Metot bulunamazsa, Ruby onu arar.</p>
+
+<p>Burada Ruby ile diğer nesne yönelimli diller arasındaki büyük farka dikkat çekmekte yarar var. Örneğin Java’da, ayrı bir fonksiyonu çağırıp o sayıyı ileterek, sayının mutlak değerini bulursunuz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>num = Math.abs(num); // Java code
+</code></pre></div></div>
+
+<p>Ruby’de mutlak değer belirleme yeteneği, ayrıntılarla dahili olarak ilgilenen numbers sınıfına yerleştirilmiştir. Basitçe <code class="language-plaintext highlighter-rouge">abs</code> mesajını bir sayı nesnesine gönderirsiniz ve işi onun yapmasına izin verirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>num = -1234 # =&gt; -1234 
+positive = num.abs # =&gt; 1234
+</code></pre></div></div>
+
+<p>Aynı durum tüm Ruby nesneleri için geçerlidir. Python’da <code class="language-plaintext highlighter-rouge">len(name)</code> yazarsınız, ancak Ruby’de bu <code class="language-plaintext highlighter-rouge">name.length</code> vb. şeklinde olur. Ruby’nin temel türleri olmayan saf nesne yönelimli bir dil olduğunu söylerken kastettiğimiz şey budur.</p>
+
+<h2 id="temel-ruby">Temel Ruby</h2>
+
+<p>Pek çok insan yeni bir dil öğrenirken sıkıcı sözdizimi kurallarını okumaktan hoşlanmaz, bu yüzden hile yapacağız. Bu bölümde öne çıkanlara değineceğiz - Ruby programları yazacaksanız bilmeniz gereken şeyler var.</p>
+
+<p>Basit bir Ruby programıyla başlayalım. Kişiselleştirilmiş selamlama döndüren bir metot yazacağız. Daha sonra bu metodu birkaç kez çağıracağız:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># intro/hello1.rb
+def say_hello_goodbye(name)
+  result = "I don't know why you say goodbye, " + name + ", I say hello"
+  return result
+end
+# call the method
+puts say_hello_goodbye("John")
+puts say_hello_goodbye("Paul")
+# I don't know why you say goodbye, John, I say hello
+# I don't know why you say goodbye, Paul, I say hello
+</code></pre></div></div>
+
+<p>Örnekte görüldüğü gibi Ruby’nin sözdizimi düzenlidir. Her bir ifadeyi ayrı bir satıra koyduğunuz sürece ifadelerin sonunda noktalı virgül kullanmanıza gerek yoktur. Ruby yorumları <code class="language-plaintext highlighter-rouge">#</code> karakteriyle başlar ve satırın sonuna kadar devam eder. Kod düzeni size kalmış; girinti önemli değildir. Bununla birlikte, iki karakterli girinti Ruby topluluğunun en çok tercih ettiği seçenektir.</p>
+
+<p>Metotlar, <code class="language-plaintext highlighter-rouge">def</code> anahtar sözcüğü, ardından metot adı (bu durumda ad <code class="language-plaintext highlighter-rouge">say_hello_goodbye</code>) ve ardından parantez içindeki metot parametreleri ile tanımlanır (Aslında parantezler isteğe bağlıdır, ancak bunları kullanmanızı öneririz). Ruby, bileşik ifadelerin ve tanımların gövdelerini sınırlamak için parantez kullanmaz. Bunun yerine, gövdeyi <code class="language-plaintext highlighter-rouge">end</code> anahtar sözcüğüyle tamamlamanız yeterlidir. Metodun gövdesi oldukça basittir. İlk satır, “I don’t know why you say goodbye, “ dizesini ve parametre adı ile “, I say hello” dizesini birleştirir ve sonucu local değişken <code class="language-plaintext highlighter-rouge">result</code>‘a atar. Bir sonraki satırda bu sonucu döndürür. <code class="language-plaintext highlighter-rouge">result</code> değişkenini bildirmemize gerek olmadığını unutmayın; biz ona değer atadığımızda ortaya çıktı.</p>
+
+<p>Metodu tanımladıktan sonra onu iki kez çağırıyoruz. Her iki durumda da sonucu <code class="language-plaintext highlighter-rouge">puts</code> metoduna aktarıyoruz, bu metot basitçe argümanı ve ardından yeni satır verir (sonraki çıktı satırına geçer):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>puts say_hello_goodbye("John")
+puts(say_hello_goodbye("John"))
+</code></pre></div></div>
+
+<p>Hayat her zaman basit değildir ve öncelik kuralları, hangi argümanın hangi metot çağrısına uygun olduğunu bilmeyi zorlaştırabilir; bu nedenle en basit durumlar dışında tüm durumlarda parantez kullanmanızı öneririz. Metodun açık bir alıcısı olmadığı ve yalnızca bir argümanı olduğu zaman Ruby programlarının sıklıkla parantezleri atladığını göreceksiniz.</p>
+
+<p>Bu örnek aynı zamanda Ruby string nesnelerini de göstermektedir. String nesnesi oluşturmanın birçok yolu vardır, ancak en yaygın olanı, tek veya çift tırnak işaretleri arasındaki karakter dizileri kullanmaktır. İki form, Ruby’nin literal oluştururken string üzerinde yaptığı işlem miktarı açısından farklılık gösterir. Tek tırnaklı durumda Ruby çok az şey yapar. Birkaç istisna dışında, string literal’e girdiğiniz şey string’in değeri olur.</p>
+
+<p>Çift tırnaklı durumda Ruby daha fazla iş yapar. Öncelikle ters eğik çizgi karakteriyle başlayan ikame dizilerini arar ve bunları bir binary değerle değiştirir. Bu ikamelerden en yaygın olanı, yeni satır karakteriyle değiştirilen <code class="language-plaintext highlighter-rouge">\n</code>‘dir. Yeni satır içeren bir string çıktısı alındığında, bu yeni satır, satır sonu haline gelir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>puts "Hello and goodbye to you,\nGeorge"
+
+# Hello and goodbye to you,
+# George
+</code></pre></div></div>
+
+<p>Ruby’nin çift tırnaklı dizelerle yaptığı ikinci şey ifade enterpolasyonudur. Dize içinde <code class="language-plaintext highlighter-rouge">#{EXPRESSION}</code> dizisinin yerini <code class="language-plaintext highlighter-rouge">EXPRESSION</code> değeri alır. Bunu önceki metodumuzu yeniden yazmak için kullanabiliriz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def say_hello_goodbye(name)
+  result = "I don't know why you say goodbye, #{name}, I say hello"
+  return result
+end
+puts say_hello_goodbye("Ringo")
+# I don't know why you say goodbye, Ringo, I say hello
+</code></pre></div></div>
+
+<p>Ruby bu string nesnesini oluşturduğunda, <code class="language-plaintext highlighter-rouge">name</code>‘in mevcut değerine bakar ve onu string’in yerine koyar. <code class="language-plaintext highlighter-rouge">#{...}</code> yapısında karmaşık ifadelere izin verilir. Aşağıdaki örnekte, parametremizi büyük harfle başlatmak için <code class="language-plaintext highlighter-rouge">capitalize</code> metodunu çağırıyoruz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def say_hello_goodbye(name)
+  result = "I don't know why you say goodbye, #{name.capitalize}, I say hello"
+  return result
+end
+puts say_hello_goodbye("john")
+# I don't know why you say goodbye, John, I say hello
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">say_hello_goodbye</code> metodumuzu biraz daha basitleştirebiliriz. Açık bir <code class="language-plaintext highlighter-rouge">return</code> ifadesinin yokluğunda, Ruby metodunun döndürdüğü değer, değerlendirilen son ifadenin değeridir, böylece geçici değişkenden ve <code class="language-plaintext highlighter-rouge">return</code> ifadesinden tamamen kurtulabiliriz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def say_hello_goodbye(name)
+  "I don't know why you say goodbye, #{name}, I say hello"
+end
+puts say_hello_goodbye("Paul")
+# I don't know why you say goodbye, Paul, I say hello
+</code></pre></div></div>
+
+<p>Bu sürüm daha deyimsel (idiomatic) olarak kabul edilir; bununla, uzman Ruby programcılarının Ruby programlarını yazmayı seçme şekliyle daha uyumlu olduğunu kastediyoruz. Idiomatic Ruby, Ruby’nin kısayollarına ve belirli sözdizimine güvenme eğilimindedir. Idiomatic Ruby stiline ilişkin yönergeleri <a href="https://github.com/testdouble/standard">https://github.com/testdouble/standard</a> adresinde bulabilirsiniz, ki bu kitaptaki kodlar için kullanılmıştır (bir noktaya değinmek için kurallarını kasıtlı olarak ihlal ettiğimiz durumlar hariç).</p>
+
+<p>Bu bölümün kısa olacağına söz vermiştik. Ele almamız gereken bir konu daha var: Ruby adları. Kısaca açıklamak gerekirse, burada tanımlamayacağımız bazı terimleri (sınıf değişkeni gibi) kullanacağız. Ancak, şimdi kurallar hakkında konuşarak, sınıf değişkenlerini ve benzerlerini daha sonra tartışmaya başladığımızda oyunun ilerisinde olacaksınız.</p>
+
+<p>Ruby ilk başta tuhaf görünebilecek bir kural kullanıyor: Bir ismin ilk karakterleri değişkenin ne kadar görünür olduğunu gösterir. Local değişkenler, metot parametreleri ve metot adlarının tümü küçük harfle veya alt çizgiyle başlamalıdır (Ruby’nin kendisinde büyük harfle başlayan birkaç metot vardır, ancak genel olarak bu kendi kodunuzda yapılacak bir şey değildir).</p>
+
+<p>Global değişkenlere dolar işareti <code class="language-plaintext highlighter-rouge">$</code> eklenir ve örnek değişkenler “et” işareti <code class="language-plaintext highlighter-rouge">@</code> ile başlar. Sınıf değişkenleri iki “et” <code class="language-plaintext highlighter-rouge">@@</code> işaretiyle başlar. Her ne kadar burada konuyu tamamlamak adına global ve sınıf değişkenlerinden bahsetsek de, bunların Ruby programlarında nadiren kullanıldığını göreceksiniz. Global değişkenlerin programların sürdürülmesini zorlaştırdığına dair pek çok kanıt var. Sınıf değişkenleri global değişkenler kadar tehlikeli değildir, ancak güvenli bir şekilde kullanılması hala zordur; sadece insanlar bunları pek kullanmama eğilimindedir çünkü benzer işlevleri elde etmenin genellikle daha kolay yolları vardır. Son olarak sınıf adları, modül adları ve diğer sabitler büyük harfle başlamalıdır.</p>
+
+<p>Bu başlangıç karakterinden sonra ad, herhangi bir harf, rakam ve alt çizgi kombinasyonunu içerebilir, istisna olarak <code class="language-plaintext highlighter-rouge">@</code> işaretini takip eden karakter rakam olamaz. Bununla birlikte, geleneksel olarak, çok kelimeli örnek değişkenler, <code class="language-plaintext highlighter-rouge">first_name</code> veya <code class="language-plaintext highlighter-rouge">zip_code</code> gibi kelimelerin arasına alt çizgilerle yazılır ve çok kelimeli sınıf adları, <code class="language-plaintext highlighter-rouge">FirstName</code> veya <code class="language-plaintext highlighter-rouge">ZipCode</code> gibi her kelime büyük harfle yazılacak şekilde MixedCase (bazen CamelCase olarak da adlandırılır) yazılır. Sabitler, <code class="language-plaintext highlighter-rouge">FIRST_NAME</code> veya <code class="language-plaintext highlighter-rouge">ZIP_CODE</code> gibi sözcükler alt çizgilerle ayrılmış şekilde tamamen büyük harflerle yazılır. Metot adları <code class="language-plaintext highlighter-rouge">?</code>, <code class="language-plaintext highlighter-rouge">!</code> ve <code class="language-plaintext highlighter-rouge">=</code> karakterleriyle bitebilir.</p>
+
+<h2 id="diziler-ve-hashler">Diziler ve Hash’ler</h2>
+
+<p>Ruby, nesneleri koleksiyonlarda birleştirmenin birkaç farklı yolunu sunar. Çoğu zaman bunlardan ikisini kullanacaksınız: Diziler ve Hash’ler. Dizi, nesnelerin doğrusal bir listesidir; bunları, ilk slot için sıfırdan başlayarak dizideki yerlerinin sayısı olan indeksleri aracılığıyla alırsınız. Hash bir ilişkilendirmedir, yani her değerin isteğe bağlı bir anahtara sahip olduğu anahtar/değer deposudur ve değeri bu anahtar aracılığıyla alırsınız. Hem diziler hem de hash’ler, yeni öğeleri tutacak şekilde gerektiği kadar büyür. Herhangi bir dizi veya hash, farklı türdeki nesneleri tutabilir; Birazdan göreceğimiz gibi, önce tamsayı, sonra dize, sonra da kayan noktalı sayı içeren bir diziniz olabilir.</p>
+
+<p>Bir diziyi (köşeli parantezler arasındaki öğeler kümesi) kullanarak yeni bir dizi nesnesi oluşturabilir ve başlatabilirsiniz. Bir dizi nesnesi verildiğinde, sonraki örnekte gösterildiği gibi, indeks ile tek tek öğelere erişebilirsiniz. Ruby dizi indekslerinin sıfırdan başladığını unutmayın.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>a = [1, 'cat', 3.14] # array with three elements 
+puts "The first element is #{a[0]}"
+# set the third element
+a[2] = nil
+puts "The array is now #{a.inspect}"
+
+# The first element is 1
+# The array is now [1, "cat", nil]
+</code></pre></div></div>
+
+<p>Bu örnekte <code class="language-plaintext highlighter-rouge">nil</code> özel değerini kullandığımızı fark etmiş olabilirsiniz. Pek çok dilde <code class="language-plaintext highlighter-rouge">nil</code> (veya <code class="language-plaintext highlighter-rouge">null</code>) kavramı “nesne yok” anlamına gelir. Ruby’de durum böyle değildir; <code class="language-plaintext highlighter-rouge">nil</code>, tıpkı diğerleri gibi bir nesnedir. Bu sadece hiçlik kavramını temsil eden bir nesne. Neyse, dizilere ve hash’lere geri dönelim.</p>
+
+<p>Ruby hash sözdizimi dizi sözdizimine benzer. Hash köşeli parantez yerine süslü parantez kullanır. Literal değer her giriş için iki nesne sağlamalıdır: biri anahtar, diğeri değer için. Genel olarak, anahtar ve değer <code class="language-plaintext highlighter-rouge">=&gt;</code> ile ayrılır, ancak çok yaygın olarak kullanılan bir kısayolun da olduğunu göreceğiz.</p>
+
+<p>Örneğin, müzik enstrümanlarını orkestral bölümlerle eşlemek için hash kullanabilirsiniz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>instrument_section = {
+  'cello' =&gt; 'string',
+  'clarinet' =&gt; 'woodwind',
+  'drum' =&gt; 'percussion',
+  'oboe' =&gt; 'woodwind',
+  'trumpet' =&gt; 'brass',
+  'violin' =&gt; 'string'
+}
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">=&gt;</code> işaretinin solundaki şey anahtardır, sağındaki şey ise karşılık gelen değerdir. Belirli bir hash’teki anahtarlar benzersiz olmalıdır; “drum” için iki girişiniz olamaz. Hash’teki anahtarlar ve değerler isteğe bağlı nesneler olabilir. Değerlerin diziler, diğer hash’ler vb. olduğu hash’lere sahip olabilirsiniz. Hash’teki anahtarların sırası sabittir ve her zaman anahtarların eklendiği sırayla eşleşecektir. Bir anahtara yeni değer atarsanız eski değer silinir.</p>
+
+<p>Hash’ler dizilerle aynı köşeli parantez gösterimini kullanılarak indekslenir.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>p instrument_section["oboe"] # =&gt; "woodwind"\n"string"
+p instrument_section["cello"] # =&gt; "string"\nnil
+p instrument_section["bassoon"] # =&gt; nil
+</code></pre></div></div>
+
+<p>Hash’in içermediği bir anahtarı kullandığınızda varsayılan davranışı, değerin yokluğunu temsil eden <code class="language-plaintext highlighter-rouge">nil</code> değerini döndürmektir.</p>
+
+<p>Bazen bu varsayılan davranışı değiştirmek isteyebilirsiniz. Örneğin, bir dosyada her kelimenin kaç kez geçtiğini saymak için hash kullanıyorsanız, varsayılan değerin sıfır olması uygun olur. Daha sonra kelimeyi anahtar olarak kullanabilir ve o kelimeyi daha önce görüp görmediğiniz konusunda endişelenmeden karşılık gelen hash değerini artırabilirsiniz. Bu, yeni, boş bir hash oluşturduğunuzda varsayılan değer belirtilerek yapılabilir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>histogram = Hash.new(0) # The default value is zero 
+histogram["ruby"] # =&gt; 0
+histogram["ruby"] = histogram["ruby"] + 1 
+histogram["ruby"] # =&gt; 1
+</code></pre></div></div>
+
+<h2 id="semboller">Semboller</h2>
+
+<p>Çoğu zaman programlama sırasında aynı dizeyi tekrar tekrar kullanmanız gerekir. Belki de dize hash’teki bir anahtardır veya belki de dize bir metodun adıdır. Bu durumda, muhtemelen dizeye erişimin sabit olmasını, böylece değerinin değişmemesini istersiniz ve ayrıca dizeye erişimin olabildiğince hızlı olmasını ve mümkün olduğunca az bellek kullanmasını istersiniz.</p>
+
+<p>Bu da bizi Ruby’nin sembollerine getiriyor. Semboller tam olarak optimize edilmiş dizeler değildir, ancak çoğu amaç için bunları sabit olan, yalnızca bir kez oluşturulan ve aramanın çok hızlı olduğu özel dizeler olarak düşünebilirsiniz. Sembollerin anahtarlar ve tanımlayıcılar olarak kullanılması amaçlanırken, dizelerin veriler için kullanılması amaçlanmaktadır.</p>
+
+<p>Bir sembol iki nokta üst üste ile başlar ve ardından ad gelir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>walk(:north)
+look(:east)
+</code></pre></div></div>
+
+<p>Bu örnekte, koddaki sabit değerleri temsil etmek için <code class="language-plaintext highlighter-rouge">:north</code> ve <code class="language-plaintext highlighter-rouge">:east</code> sembollerini kullanıyoruz. Sembolleri bildirmemize veya onlara bir değer atamamıza gerek yok; Ruby bunu sizin için halleder. Bir sembolün değeri ismine eşdeğerdir.</p>
+
+<p>Ruby ayrıca programınızda nerede görünürlerse görünsün, aynı ada sahip sembollerin aynı değere sahip olacağını, aslında aynı nesne olacağını garanti eder. Sonuç olarak, aşağıdakileri güvenle yazabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def walk(direction)
+  nil unless direction == :north
+  # ...
+end
+</code></pre></div></div>
+
+<p>Değerleri değişmediği için semboller sıklıkla hash’lerde anahtar olarak kullanılır. Önceki hash örneğimizi sembolleri anahtar olarak kullanarak yazabiliriz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>instrument_section = { 
+  :cello =&gt; "string", 
+  :clarinet =&gt; "woodwind", 
+  :drum =&gt; "percussion", 
+  :oboe =&gt; "woodwind", 
+  :trumpet =&gt; "brass", 
+  :violin =&gt; "string"
+}
+
+instrument_section[:oboe] # =&gt; "woodwind"
+instrument_section[:cello] # =&gt; "string"
+# Note that strings aren"t the same as symbols...
+instrument_section["cello"] # =&gt; nil
+</code></pre></div></div>
+
+<p>Son satırda, sembol anahtarının dize anahtarından farklı olduğunu ve bir anahtar üzerinden erişimin diğeriyle ilişkili bir değerle sonuçlanmayacağını unutmayın.</p>
+
+<p>Semboller hash anahtarları olarak o kadar sık kullanılır ki Ruby’nin bunun için kısayol söz dizimi vardır: anahtar bir sembol ise <code class="language-plaintext highlighter-rouge">name =&gt; value</code> yerine hash oluşturmak için <code class="language-plaintext highlighter-rouge">name: value</code> çiftlerini kullanabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>instrument_section = {
+  cello: "string",
+  clarinet: "woodwind",
+  drum: "percussion",
+  oboe: "woodwind",
+  trumpet: "brass",
+  violin: "string"
+}
+
+puts "An oboe is a #{instrument_section[:oboe]} instrument"
+# An oboe is a woodwind instrument
+</code></pre></div></div>
+
+<p>Bu sözdizimi kısmen, her ikisi de anahtar/değer çiftlerinde ayırıcı olarak iki nokta üst üste kullanan JavaScript ve Python’a aşina olan programcılar için eklenmiştir.</p>
+
+<h2 id="kontrol-yapıları">Kontrol Yapıları</h2>
+
+<p>Ruby, <code class="language-plaintext highlighter-rouge">if</code> ifadeleri ve <code class="language-plaintext highlighter-rouge">while</code> döngüleri gibi tüm olağan kontrol yapılarına sahiptir. Java veya JavaScript programcıları bu ifadelerin gövdelerinin etrafındaki parantezlerin olmayışı karşısında şaşırabilirler. Bunun yerine Ruby, kontrol yapısının gövdesinin sonunu belirtmek için <code class="language-plaintext highlighter-rouge">end</code> anahtar sözcüğünü kullanır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>today = Time.now
+
+if today.saturday?
+  puts "Do chores around the house"
+elsif today.sunday?
+  puts "Relax"
+else
+  puts "Go to work"
+end
+
+# Relax
+</code></pre></div></div>
+
+<p>Alışılmadık bulabileceğiniz bir şey, Ruby’nin ikinci cümlede “else if”i belirtmek için <code class="language-plaintext highlighter-rouge">elsif</code> anahtar kelimesini (bir “e” eksik, tek kelime) kullanmasıdır. Bu anahtar kelimeyi <code class="language-plaintext highlighter-rouge">else if</code> şeklinde kullanmak sözdizimi hatasına neden olur.</p>
+
+<p>Benzer şekilde, <code class="language-plaintext highlighter-rouge">while</code> ifadeleri, while satırındaki koşul doğru olduğu sürece <code class="language-plaintext highlighter-rouge">end</code> ile sonlandırılır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>num_pallets = 0
+weight = 0
+
+while weight &lt; 100 &amp;&amp; num_pallets &lt;= 5
+  pallet = next_pallet()
+  weight += pallet.weight
+  num_pallets += 1
+end
+</code></pre></div></div>
+
+<p>Ruby’deki ifadelerin çoğu değer döndürür; bu da ifadeleri koşul olarak kullanabileceğiniz anlamına gelir. Örneğin, <code class="language-plaintext highlighter-rouge">gets</code> metodu, bir sonraki satırı veya dosyanın sonuna ulaşıldığında <code class="language-plaintext highlighter-rouge">nil</code> değerini döndürür. Ruby, koşullarda <code class="language-plaintext highlighter-rouge">nil</code> değerini <code class="language-plaintext highlighter-rouge">false</code> olarak ele aldığından, bir dosyadaki satırları işlemek için aşağıdakileri yazabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>while (line = gets)
+  puts line.downcase
+end
+</code></pre></div></div>
+
+<p>Atama ifadesi <code class="language-plaintext highlighter-rouge">line</code> değişkenini, metnin bir sonraki satırı veya <code class="language-plaintext highlighter-rouge">nil</code> olacak olan gets çağrısının sonucuna ayarlar. Daha sonra <code class="language-plaintext highlighter-rouge">while</code> ifadesi, atama ifadesinin döndürdüğü değeri, yani atanan değeri test eder. Değer <code class="language-plaintext highlighter-rouge">nil</code> olduğunda bu, çıktıda başka satır olmadığı ve <code class="language-plaintext highlighter-rouge">while</code> döngüsünün sona erdiği anlamına gelir. Ruby ifade değiştiricileri (statement modifiers), <code class="language-plaintext highlighter-rouge">if</code> veya <code class="language-plaintext highlighter-rouge">while</code> ifadesinin gövdesi yalnızca tek bir ifadeden oluşuyorsa kullanışlı bir kısayoldur. Basitçe ifadeyi yazın, ardından if, while ve koşulu yazmanız yeterlidir. Örneğin:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>if radiation &gt; 3000
+  puts "Danger, Will Robinson"
+end
+</code></pre></div></div>
+
+<p>İfade değiştirici kullanılarak yeniden yazıldığında:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>puts "Danger, Will Robinson" if radiation &gt; 3000
+</code></pre></div></div>
+
+<p>Benzer şekilde bu <code class="language-plaintext highlighter-rouge">while</code> döngüsü:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>square = 4
+while square &lt; 1000
+  square = square * square
+end
+</code></pre></div></div>
+
+<p>şu daha kısa versiyona dönüşür:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>square = 4
+square = square * square while square &lt; 1000
+</code></pre></div></div>
+
+<p>Bu değiştiricilerin <code class="language-plaintext highlighter-rouge">if</code> sürümü belki de en yaygın olarak, <code class="language-plaintext highlighter-rouge">return nil if user.nil?</code> örneğinde olduğu gibi, bir metodun başlangıcında koruma ifadesi olarak kullanılır. <code class="language-plaintext highlighter-rouge">while</code> versiyonu çok daha az kullanılır.</p>
+
+<h2 id="düzenli-i̇fadeler-regular-expressions">Düzenli İfadeler (Regular Expressions)</h2>
+
+<p>Ruby’nin yerleşik türlerinin çoğu tüm programcılara tanıdık gelecektir. Dillerin çoğunda dizeler, tamsayılar, kayan değerler, diziler vb. bulunur. Ancak tüm diller, Ruby veya JavaScript’in aksine, düzenli ifadeler için yerleşik desteğe sahip değildir. Bu üzücü, çünkü düzenli ifadeler, şifreli olmasına rağmen metinle çalışmak için güçlü bir araçtır. Ve bunları bir kütüphane arayüzü aracılığıyla oluşturmak yerine yerleşik hale getirmek büyük bir fark yaratıyor.</p>
+
+<p>Düzenli ifadeler hakkında kitaplar yazılmıştır (örneğin Jeffrey Friedl’in Mastering Regular Expressions adlı kitabı), bu nedenle bu kısa bölümde her şeyi kapsamaya çalışmayacağız. Bunun yerine, düzenli ifadelerin yalnızca birkaç örneğine bakacağız. Düzenli ifadelerle ilgili daha fazla bilgiyi ilerleyen bölümlerde bulacaksınız.</p>
+
+<p>Düzenli ifade, bir dizede eşleştirilecek karakterlerin patern’ini belirtmenin bir yoludur. Ruby’de genellikle eğik çizgi karakterleri (/pattern/) arasına patern yazarak düzenli ifade oluşturursunuz. Ve Ruby, Ruby olduğundan, düzenli ifadeler nesnelerdir ve bu şekilde değiştirilebilirler.</p>
+
+<p>Örneğin, aşağıdaki düzenli ifadeyi kullanarak <code class="language-plaintext highlighter-rouge">Ruby</code> metnini veya <code class="language-plaintext highlighter-rouge">Rust</code> metnini içeren dizeyle eşleşen bir patern yazabilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Ruby|Rust/
+</code></pre></div></div>
+
+<p>Eğik çizgiler, eşleştirdiğimiz iki şeyden oluşan patern’i dikey çizgi karakteriyle (<code class="language-plaintext highlighter-rouge">|</code>) ayırır. Düzenli ifadelerde dikey çizgi karakteri “ya sağdaki şey ya da soldaki şey” anlamına gelir, bu durumda ya <code class="language-plaintext highlighter-rouge">Ruby</code> ya da <code class="language-plaintext highlighter-rouge">Rust</code>. Tıpkı aritmetik ifadelerde olduğu gibi patern’lerin içinde parantezleri kullanabilirsiniz, böylece bu patern aynı dize kümesiyle eşleşir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/Ru(by|st)/
+</code></pre></div></div>
+
+<p>Ayrıca patern içindeki tekrarı da belirleyebilirsiniz. <code class="language-plaintext highlighter-rouge">/ab+c/</code>, bir a ve ardından bir veya daha fazla b ve ardından bir c içeren dizeyle eşleşir. Artıyı yıldız işaretiyle değiştirdiğinizde <code class="language-plaintext highlighter-rouge">/ab*c/</code>, bir a, sıfır veya daha fazla b ve bir c ile eşleşen düzenli ifade oluşturur.</p>
+
+<p>Ayrıca patern içindeki bir grup karakterden birini de eşleştirebilirsiniz. Bazı yaygın örnekler, boşluk karakteriyle (boşluk, sekme, yeni satır vb.) eşleşen <code class="language-plaintext highlighter-rouge">\s</code> gibi karakter sınıflarıdır; Herhangi bir rakamla eşleşen <code class="language-plaintext highlighter-rouge">\d</code>; ve <code class="language-plaintext highlighter-rouge">\w</code>, tipik bir sözcükte bulunabilecek herhangi bir karakterle eşleşir. Nokta (<code class="language-plaintext highlighter-rouge">.</code>), (neredeyse) her karakterle eşleşir.</p>
+
+<p>Bazı faydalı düzenli ifadeler üretmek için tüm bunları bir araya getirebiliriz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>/\d\d:\d\d:\d\d/ # a time such as 12:34:56
+/Ruby.*Rust/ # Ruby, zero or more other chars, then Rust
+/Ruby Rust/ # Ruby, exactly one space, and Rust
+/Ruby *Rust/ # Ruby, zero or more spaces, and Rust
+/Ruby +Rust/ # Ruby, one or more spaces, and Rust
+/Ruby\s+Rust/ # Ruby, one or more whitespace characters, then Rust
+/Java (Ruby|Rust)/ # Java, a space, and either Ruby or Rust
+</code></pre></div></div>
+
+<p>Match operatörü <code class="language-plaintext highlighter-rouge">=~</code>, bir dizeyi düzenli ifade ile eşleştirmek için kullanılabilir. Patern dizede bulunursa, başlangıç konumunu döndürür; aksi takdirde <code class="language-plaintext highlighter-rouge">nil</code> değerini döndürür. Bu, <code class="language-plaintext highlighter-rouge">if</code> ve <code class="language-plaintext highlighter-rouge">while</code> ifadelerinde koşul olarak düzenli ifadeleri kullanabileceğiniz anlamına gelir. Örneğin, aşağıdaki kod parçası, bir dizenin <code class="language-plaintext highlighter-rouge">Ruby</code> veya <code class="language-plaintext highlighter-rouge">Rust</code> metnini içermesi durumunda ekrana bir mesaj yazar:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>line = gets
+if line =~ /Ruby|Rust/
+  puts "Programming language mentioned: #{line}"
+end
+</code></pre></div></div>
+
+<p>Hem dizeler hem de düzenli ifadeler, <code class="language-plaintext highlighter-rouge">=~</code> operatörüyle eşanlamlı olan <code class="language-plaintext highlighter-rouge">match?</code> metoduna sahiptir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>line = gets
+if line.match?(/Ruby|Rust/)
+  puts "Scripting language mentioned: #{line}"
+end
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">match?</code> formu muhtemelen Ruby’de daha yaygın kullanılır.</p>
+
+<p>Bir dizenin düzenli ifade ile eşleşen kısmı, Ruby’nin değiştirme metotlarından biri kullanılarak farklı bir metinle değiştirilebilir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>line = gets
+newline = line.sub(/Python/, 'Ruby') # replace first 'Python' with 'Ruby'
+newerline = line.gsub(/Python/, 'Ruby') # replace every 'Python' with 'Ruby'
+</code></pre></div></div>
+
+<p>Bunu kullanarak her JavaScript ve Python kelimesini Ruby ile değiştirebilirsiniz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>line = gets
+newline = line.gsub(/JavaScript|Python/, 'Ruby')
+</code></pre></div></div>
+
+<p>Kitabı okudukça düzenli ifadeler hakkında daha çok şey öğreneceksiniz.</p>
+
+<h2 id="bloklar">Bloklar</h2>
+
+<p>Bu bölümde Ruby’nin güçlü yönlerinden biri olan bloklar kısaca anlatılmaktadır. Kod bloğu, sanki blok başka bir parametreymiş gibi, bir metoda iletebileceğiniz kod yığınıdır. Bu, Ruby metotlarının son derece esnek olmasını sağlayan inanılmaz derecede güçlü bir özelliktir. Bu kitabı ilk inceleyenlerden biri bu noktada şu yorumu yaptı: “Bu oldukça ilginç ve önemli, dolayısıyla daha önce dikkat etmediyseniz muhtemelen şimdi başlamalısınız.” Hala aynı fikirdeyiz.</p>
+
+<p>Sözdizimsel olarak kod blokları iki şekilde sınırlandırılabilen kod parçalarıdır: parantez arasında veya do ile end arasında. Bu, bir mesaj çağrısının sonundaki kod bloğudur:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>foo.each { puts "Hello" }
+</code></pre></div></div>
+
+<p>Bu da aynı zamanda bir mesaj çağrısının sonundaki kod bloğudur:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>foo.each do
+  club.enroll(person)
+  person.socialize
+end
+</code></pre></div></div>
+
+<p>İki tür blok sınırlayıcının önceliği farklıdır: parantezler <code class="language-plaintext highlighter-rouge">do/end</code> çiftlerinden daha sıkı bağlanır, bu da kodunuzda neredeyse hiçbir zaman fark yaratmayacak bir gerçektir. Pratikte en sık göreceğiniz standart, tek satırlı bloklar için parantez, çok satırlı bloklar için <code class="language-plaintext highlighter-rouge">do/end</code> kullanmaktır.</p>
+
+<p>Metot blokla hiçbir şey yapmasa bile, bir bloğu herhangi bir metot çağrısına argüman olarak iletebilirsiniz. Bunu, bloğu metot çağrısının sonunda, diğer parametrelerden sonra başlatarak yaparsınız. Örneğin, aşağıdaki kodda, <code class="language-plaintext highlighter-rouge">puts "Hi"</code> içeren blok, <code class="language-plaintext highlighter-rouge">greet</code> metoduna yapılan çağrıyla ilişkilidir (bunu burada göstermiyoruz):</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>greet { puts "Hi" }
+</code></pre></div></div>
+
+<p>Metodun parametreleri varsa, bunlar bloktan önce görünür ve metot çağrısı başına yalnızca bir blok verebilirsiniz.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>verbose_greet("Dave", "loyal customer") { puts "Hi" }
+</code></pre></div></div>
+
+<p>Daha sonra bir metot, Ruby <code class="language-plaintext highlighter-rouge">yield</code> ifadesini kullanarak ilişkili bloğu bir veya daha fazla kez çağırabilir. <code class="language-plaintext highlighter-rouge">yield</code> ifadesi, metodu iletilen bloğu çağırarak kontrolü bloğun içindeki koda aktarır.</p>
+
+<p>Aşağıdaki örnekte blok çağrısının çalışması gösterilmektedir. İki kez <code class="language-plaintext highlighter-rouge">yield</code> çağıran bir metot tanımlıyoruz. Daha sonra bu metodu çağırıp, herhangi bir argümandan sonra aynı satıra bir blok yerleştirin. Bloğun metotla ilişkilendirilmesini bir tür argüman aktarımı olarak düşünebilirsiniz. Aslında hikayenin tamamı bu değil. Blok, başka bir metoda argüman olarak çağrılabilen veya iletilebilen, etkili bir şekilde tamamen başka bir metottur. Örneğin:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def call_block
+  puts "Start of method"
+  yield
+  yield
+  puts "End of method"
+end
+
+call_block { puts "In the block" }
+
+# Start of method
+# In the block
+# In the block
+# End of method
+</code></pre></div></div>
+
+<p>Bu örnekte, bloktaki kod (<code class="language-plaintext highlighter-rouge">puts "In the block"</code>), kontrolü bloğa aktaran <code class="language-plaintext highlighter-rouge">yield</code> çağrısı için bir kez olmak üzere iki kez yürütülür.</p>
+
+<p><code class="language-plaintext highlighter-rouge">yield</code> için argümanlar sağlayabilirsiniz ve bunlar bloğa iletilecektir. Blok içinde, bu argümanları almak için parametrelerin adlarını dikey çubuklar (<code class="language-plaintext highlighter-rouge">|params...|</code>) arasında listeleyin. Aşağıdaki örnek, ilişkili bloğu iki kez çağıran ve her seferinde bloğa iki argüman ileten bir metodu gösterir:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>def who_says_what
+  yield("Dave", "hello")
+  yield("Andy", "goodbye")
+end
+who_says_what { |person, phrase| puts "#{person} says #{phrase}" }
+
+# Dave says hello
+# Andy says goodbye
+</code></pre></div></div>
+
+<p>Daha sonra callback uygulamak amacıyla kodu paketlemek için kod bloklarını kullanabilirsiniz. Kod blokları kod parçalarını aktarmak için kullanılabilir ve Ruby standart kütüphanesi boyunca, metotların dizi gibi bir koleksiyondaki ardışık öğeler üzerinde eylem gerçekleştirmesine izin vermek için kullanılır. Koleksiyondaki tüm nesnelere benzer bir şey yapma eylemine Ruby’de <em>enumeration</em> denir; diğer diller buna <em>iteration</em> adını verir.</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>animals = ["ant", "bee", "cat", "dog"] # create an array
+animals.each { |animal| puts animal } # iterate over the contents
+
+# ant
+# bee
+# cat
+# dog
+</code></pre></div></div>
+
+<p>Java ve JavaScript gibi dillerde yerleşik olan döngü yapılarının çoğu, Ruby’deki metot çağrılarıdır ve metotlar ilişkili bir bloğu sıfır veya daha fazla kez çağırır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>["cat", "dog", "horse"].each { |name| print name, " " }
+5.times { print "*" }
+3.upto(6) { |i| print i }
+("a".."e").each { |char| print char }
+("a".."e").each { print _1 }
+
+# cat dog horse *****3456abcdeabcde
+</code></pre></div></div>
+
+<p>İlk satırda bir diziden, bloğun her elemanı için bir kez çağrı yapmasını istiyoruz. Daha sonra nesne 5, her seferinde * yazdırarak bloğu beş kez çağırır. Üçüncü örnek, <code class="language-plaintext highlighter-rouge">for</code> döngülerini kullanmak yerine, Ruby’de 3 rakamından bir blok çağırmasını isteyebileceğimizi ve 6’ya ulaşana kadar ardışık değerler iletebileceğimizi gösterir. Son olarak, değer aralıkları için Ruby’nin literal sözdizimini kullanarak a’dan e’ye kadar olan karakter aralığının her biri için  bloğu çağırmasını sağlıyoruz: bu örneği iki kez gösteriyoruz; bir kez Ruby’nin normal blok parametresi sözdizimini kullanarak ve ikinci olarak blok parametreleri için Ruby’nin kısayolunu kullanarak.</p>
+
+<h2 id="okuma-ve-yazma">Okuma ve Yazma</h2>
+
+<p>Ruby, input-output (I/O) işlemlerini yönetmek için kapsamlı bir kütüphane ile birlikte gelir. Ancak bu kitaptaki örneklerin çoğunda birkaç basit metoda sadık kalacağız. Çıktı yazan metotlarla zaten karşılaştık: <code class="language-plaintext highlighter-rouge">puts</code> argümanlarını her birinin arkasına yeni satır ekleyerek yazar; <code class="language-plaintext highlighter-rouge">p</code> de argümanlarını da yazar ancak daha fazla hata ayıklanabilir çıktı üretecektir. Her ikisi de herhangi bir I/O nesnesine yazmak için kullanılabilir, ancak varsayılan olarak standart ouput’a yazarlar.</p>
+
+<p>Programınızda input’u okumanın birçok yolu vardır. Muhtemelen en geleneksel olanı, standart input’tan bir sonraki satırı döndüren <code class="language-plaintext highlighter-rouge">gets</code> (“get string”in kısaltmasıdır) metodunu kullanmaktır:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>line = gets
+print line
+</code></pre></div></div>
+
+<p><code class="language-plaintext highlighter-rouge">gets</code> input’un sonuna ulaştığında <code class="language-plaintext highlighter-rouge">nil</code> değerini döndürdüğü için, dönüş değerini döngü koşulunda kullanabilirsiniz. Aşağıdaki kodda <code class="language-plaintext highlighter-rouge">while</code> koşulunun bir değer ataması olduğuna dikkat edin:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>while (line = gets)
+  print line
+end
+</code></pre></div></div>
+
+<p>İlerleyen bölümlerde bir dosyadan veya başka bir veri kaynağından nasıl okunup yazılacağı hakkında daha fazla konuşacağız.</p>
+
+<h2 id="komut-satırı-argümanları">Komut Satırı Argümanları</h2>
+
+<p>Bir Ruby programını komut satırından çalıştırdığınızda argümanları iletebilirsiniz. Bunlara Ruby kodunuzdan iki farklı şekilde erişilebilir.</p>
+
+<p>İlk olarak, global <code class="language-plaintext highlighter-rouge">ARGV</code> dizisi, çalışan programa aktarılan argümanların her birini içerir. Aşağıdaki kodu <em>cmd_line.rb</em> adında bir dosyaya yerleştirin:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>puts "You gave #{ARGV.size} arguments"
+p ARGV
+</code></pre></div></div>
+
+<p>Argümanlarla çalıştırdığımızda, bunların aktarıldığını görebiliriz:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>$ ruby cmd_line.rb ant bee cat dog
+You gave 4 arguments
+["ant", "bee", "cat", "dog"]
+</code></pre></div></div>
+
+<p>Genellikle bir programın argümanları, işlemek istediğiniz dosyaların adlarıdır. Bu durumda ikinci bir teknik kullanabilirsiniz: <code class="language-plaintext highlighter-rouge">ARGF</code> değişkeni özel bir tür I/O nesnesidir, adları komut satırında iletilen tüm dosyaların içerikleri gibi davranır (veya herhangi bir dosya adını iletmezseniz standart input). Bunu ilerleyen bölümlerde daha detaylı inceleyeceğiz.</p>
+
+<h2 id="rubyde-yorumlar">Ruby’de Yorumlar</h2>
+
+<p>Ruby koduna yorum eklemenin iki yolu vardır; bunlardan birini kullanacaksınız ve birini neredeyse hiç kullanmayacaksınız. Yaygın olanı <code class="language-plaintext highlighter-rouge">#</code> sembolüdür; bu sembolden sonra satırın sonuna kadar olan her şey bir yorumdur ve yorumlayıcı tarafından dikkate alınmaz. Bir sonraki satır yoruma devam ediyorsa kendi <code class="language-plaintext highlighter-rouge">#</code> sembolüne ihtiyacı vardır.</p>
+
+<p>Ruby ayrıca nadiren kullanılan çok satırlı bir yoruma da sahiptir; burada ilk satır <code class="language-plaintext highlighter-rouge">=begin</code> ile başlar ve kod <code class="language-plaintext highlighter-rouge">=end</code>‘e ulaşana kadar her şey bir yorumdur. Hem <code class="language-plaintext highlighter-rouge">=begin</code> hem de <code class="language-plaintext highlighter-rouge">=end</code> satırın en başında olmalıdır; girintili olamazlar.</p>
+
+<p>Az önce Ruby’nin yorumları göz ardı ettiğini söylemiş olsak da Ruby, dosya bazında yapılandırma seçenekleri için çok az sayıda “sihirli yorum” kullanır. Bu yorumlar <code class="language-plaintext highlighter-rouge"># directive: value</code> biçimindedir ve dosyada asıl Ruby kodunun ilk satırından önce görünmelidir.</p>
+
+<p>En sık kullanılan sihirli yorum <code class="language-plaintext highlighter-rouge"># frozen_string_literal: true</code>‘dur. Bu yönerge <code class="language-plaintext highlighter-rouge">true</code> ise, içinde enterpolasyon bulunmayan her dize literali, sanki üzerinde <code class="language-plaintext highlighter-rouge">frozen</code> çağrılmış gibi otomatik olarak dondurulacaktır.</p>
+
+<p>Ayrıca, belirli bir dosyanın içindeki dize ve düzenli ifade literal lerinin kodlamasını belirten <code class="language-plaintext highlighter-rouge"># encoding: VALUE</code> yönergesini de görebilirsiniz. Ruby bir dosyanın girintisinin eşleşmemesi durumunda kod uyarıları verecek <code class="language-plaintext highlighter-rouge"># warn_indent: BOOLEAN</code> flag’ine sahiptir. <code class="language-plaintext highlighter-rouge"># sharable_constant_value</code> adlı deneysel bir yönerge de vardır: Ractor multithreading aracı kullanılarak değerlerin nasıl paylaşıldığını etkiliyor.</p>
+
+<h2 id="sıradaki">Sıradaki</h2>
+
+<p>Ruby’nin bazı temel özelliklerine ışık hızında turumuzu tamamladık. Nesnelere, metotlara, dizelere, container ve düzenli ifadelere göz attık; basit kontrol yapılarını gördük; ve oldukça şık iteratör’lere baktık. Bu bölümün size bu kitabın geri kalanına saldırmanıza yetecek kadar mühimmat verdiğini umuyoruz.</p>
+
+<p>Artık ilerlemenin ve daha yüksek bir seviyeye çıkmanın zamanı geldi. Daha sonra, Ruby’deki en üst düzey yapılar hem de tüm dilin temeli olan sınıflara ve nesnelere bakacağız.</p>
+
+<p><strong>Kaynak:</strong> “Programming Ruby 3.2: The Pragmatic Programmers’ Guide”, Noel Rappin with Dave Thomas</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Programlama dilleri üzerine birçok kitap hemen hemen aynı görünür. Temel türlerle ilgili bölümlerle başlarlar: integer, string vb. Daha sonra if ve while ifadelerine ve döngülerine geçmeden önce 2 + 3 gibi ifadelere bakarlar. Daha sonra belki 7. veya 8. Bölüm civarında sınıflardan bahsetmeye başlayacaklar. Bunu biraz sıkıcı buluyoruz.]]></summary></entry><entry><title type="html">Shell’i Öğrenmek</title><link href="http://localhost:4000/2024/05/14/shell-i-ogrenmek.html" rel="alternate" type="text/html" title="Shell’i Öğrenmek" /><published>2024-05-14T00:00:00+03:00</published><updated>2024-05-14T00:00:00+03:00</updated><id>http://localhost:4000/2024/05/14/shell-i-ogrenmek</id><content type="html" xml:base="http://localhost:4000/2024/05/14/shell-i-ogrenmek.html"><![CDATA[<p>Neden komut satırını öğrenmeniz gerekiyor? Peki, size bir hikaye anlatayım. Yıllar önce çalıştığım yerde bir sorun yaşadık. Dosya sunucularımızdan birinde sürekli dolmaya başlayan bir ortak sürücü vardı. Bu eski işletim sisteminin kullanıcı kotalarını desteklemediğinden bahsetmeyeceğim; bu başka bir hikaye. Ancak sunucu dolmaya devam etti ve insanların çalışmasını engelledi. Yazılım mühendislerimizden biri, tüm kullanıcı dizinlerini tarayacak, kullandıkları alanı toplayacak ve sonuçların listesini yapacak bir C++ programı yazmak için birkaç saat harcadı. İşteyken eski işletim sistemini kullanmak zorunda kaldığım için Linux benzeri bir komut satırı ortamı kurdum. Sorunu duyduğumda bu görevi şu tek satırla yapabileceğimi fark ettim:</p>
 
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>du -s * | sort -nr &gt; $HOME/user_space_report.txt
 </code></pre></div></div>
@@ -7796,349 +8319,4 @@ Bu kitap bir pattern kataloğu olmasa da, en ünlü ve faydalı pattern’lerden
 
 <p>Testler oldukça faydalıdır, ancak testlerinizi yüklemeniz, çalıştırmanız ve buna devam etmeniz gerekiyor. Build ve testlerinizi otomatikleştirmezseniz, rehavete kapılmak ve her şeyin kaymasına izin vermek kolaydır. Tam da bu konuda size yardımcı olacak “sürekli entegrasyon” kategorisinde bir araya toplanmış bazı araçlara ve tekniklere bakıyorum.</p>
 
-<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Temmuz 2004’te PHP 5.0 yayınlandı. Bu sürüm, bir dizi radikal geliştirmeyle geldi. Belki de bunlardan ilki, nesne yönelimli programlama için kökten geliştirilmiş destekti. Bu, PHP topluluğu içinde nesnelere ve tasarıma büyük ilgi uyandırdı. Aslında bu, PHP 4.0 ile başlayan bir sürecin devamıydı.]]></summary></entry><entry><title type="html">Laravel Geliştirme Ortamını Hazırlamak</title><link href="http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak.html" rel="alternate" type="text/html" title="Laravel Geliştirme Ortamını Hazırlamak" /><published>2024-03-18T00:00:00+03:00</published><updated>2024-03-18T00:00:00+03:00</updated><id>http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak</id><content type="html" xml:base="http://localhost:4000/2024/03/18/laravel-gelistirme-ortamini-hazirlamak.html"><![CDATA[<p>PHP’nin başarısının bir nedeni de, PHP’ye hizmet vermeyen bir web sunucusu bulmanın zor olmasıdır. Ancak, modern PHP araçları geçmişe göre daha katı gereksinimlere sahiptir. Laravel’de geliştirme yapmanın en iyi yolu, kodunuz için tutarlı bir yerel ve uzak sunucu ortamı sağlamaktır ve neyse ki Laravel ekosisteminde bunun için birkaç araç var.</p>
-
-<h2 id="sistem-gereksinimleri">Sistem Gereksinimleri</h2>
-
-<p>Bu bölümde ele alacağımız her şey Windows makinelerde mümkündür, ancak düzinelerce sayfalık özel talimata ve uyarıya ihtiyacınız olacak. Bu talimatları ve uyarıları gerçek Windows kullanıcılarına bırakacağım, bu nedenle buradaki ve kitabın geri kalanındaki örnekler Unix/Linux/macOS geliştiricilerine odaklanacak.</p>
-
-<p>İster yerel makinenize PHP ve diğer araçları yükleyerek web sitenize hizmet vermeyi, ister geliştirme ortamınıza Vagrant veya Docker aracılığıyla sanal bir makineden hizmet vermeyi veya MAMP/WAMP/XAMPP gibi bir aracı kullanmayı seçin, geliştirme ortamınızın şu özelliklere sahip olması gerekir:</p>
-
-<ul>
-  <li>PHP &gt;= 8.1</li>
-  <li>OpenSSL PHP extension</li>
-  <li>PDO PHP extension</li>
-  <li>Mbstring PHP extension</li>
-  <li>Tokenizer PHP extension</li>
-  <li>XML PHP extension</li>
-  <li>Ctype PHP extension</li>
-  <li>JSON PHP extension</li>
-  <li>BCMath PHP extension</li>
-</ul>
-
-<h2 id="composer">Composer</h2>
-
-<p>Geliştirdiğiniz makine ne olursa olsun, Composer’ın global olarak kurulu olması gerekir. Composer’a aşina değilseniz, çoğu modern PHP geliştirmesinin temelini oluşturan bir araçtır. Composer, Node için NPM (Node Package Manager) veya Ruby için RubyGems gibi, PHP için bir bağımlılık yöneticisidir. Ancak NPM gibi, Composer da testlerimizin çoğunun, yerel script yüklemenin, yükleme scriptlerinin ve çok daha fazlasının temelidir. Laravel’i yüklemek, Laravel’i güncellemek ve harici bağımlılıkları yönetmek için Composer’a ihtiyacınız olacak.</p>
-
-<h2 id="yerel-geliştirme-ortamları">Yerel Geliştirme Ortamları</h2>
-
-<p>Birçok proje için, geliştirme ortamınızı daha basit bir araç seti kullanarak barındırmak yeterli olacaktır. Sisteminizde zaten MAMP veya WAMP veya XAMPP kuruluysa, Laravel’i çalıştırmak muhtemelen sorun olmayacaktır.</p>
-
-<p>Laravel’i PHP’nin yerleşik web sunucusuyla da çalıştırabilirsiniz. Laravel sitenizin kök klasöründen php -S localhost:8000 -t public komutunu çalıştırın ve PHP’nin yerleşik web sunucusu sitenize http://localhost:8000/ adresinden hizmet verecektir.</p>
-
-<p>Ancak, geliştirme ortamınızda biraz daha fazla güç istiyorsanız (her proje için farklı yerel etki alanları, MySQL gibi bağımlılıkların yönetimi vb.), PHP’nin yerleşik sunucusundan daha güçlü bir aracı kullanmak isteyeceksiniz.</p>
-
-<p>Laravel, yerel geliştirme için dört araç sunar: Artisan Serve, Sail, Valet ve Homestead. Her birini kısaca ele alacağız. Hangisini kullanacağınızdan emin değilseniz, kişisel olarak Mac kullanıcıları için Valet ve diğer herkes için Sail hayranıyım.</p>
-
-<p><strong>Artisan Serve</strong></p>
-
-<p>Laravel uygulamanızı kurduktan sonra php artisan serve’i çalıştırırsanız, tıpkı daha önce PHP’nin yerleşik web sunucusunu kullanarak kurduğumuz gibi http://localhost:8000’de hizmet verecektir. Burada ücretsiz olarak başka bir şey almıyorsunuz, bu nedenle tek anlamlı faydası hatırlamanın daha kolay olmasıdır.</p>
-
-<p><strong>Laravel Sail</strong></p>
-
-<p>Sail, işletim sisteminizden bağımsız olarak aynı şekilde yerel Laravel geliştirmeye başlamanın en basit yoludur. Bir PHP web sunucusu, veritabanları ve projenin bağımlılıkları veya geliştiricilerinizin çalışma ortamları ne olursa olsun, projenizdeki her geliştirici için tutarlı olan tek bir Laravel kurulumunu çalıştırmayı çok kolaylaştıran bir dizi başka özellik ile birlikte gelir.</p>
-
-<p>Neden Sail kullanmıyorum? Sail yukarıdakileri gerçekleştirmek için Docker’ı kullanıyor ve macOS’ta Docker, Valet’i tercih edeceğim kadar yavaş. Ancak Laravel’de yeniyseniz, özellikle de Mac kullanmıyorsanız, Laravel uygulamalarınızı oluşturmaya başlamanın en basit yoludur.</p>
-
-<p><strong>Laravel Valet</strong></p>
-
-<p>MacOS kullanıcısıysanız (Windows ve Linux için resmi olmayan dağıtımlar da vardır), Laravel Valet yerel Laravel uygulamalarınızın her birine (ve diğer birçok statik ve PHP tabanlı uygulamaya) farklı yerel etki alanlarında hizmet vermeyi kolaylaştırır.</p>
-
-<p>Dökümantasyonun size yol göstereceği Homebrew’i kullanarak birkaç araç yüklemeniz gerekecek, ancak ilk kurulumdan uygulamalarınızı sunmaya kadar çok az adım vardır.</p>
-
-<p>Valet’i kurun - en son yükleme yönergeleri için Valet belgelerine bakın - ve onu sitelerinizin yaşayacağı bir veya daha fazla dizine yönlendirin. Tüm geliştirdiğim uygulamalarımı koyduğum ~/Sites dizinimden valet park’ı çalıştırdım. Artık dizin adının sonuna .test ekleyebilir ve tarayıcınızda ziyaret edebilirsiniz</p>
-
-<p>Valet, Laravel uygulamalarımıza hizmet vermeyi kolaylaştırır; belirli bir klasördeki tüm alt klasörleri {klasöradı}.test olarak sunmak için valet park, yalnızca tek bir klasöre hizmet vermek için valet link, bir klasör için Valetserved etki alanını göstermek üzere bir tarayıcı açmak için valet open, Valet sitesine HTTPS ile hizmet vermek için valet secure, ve sitenizi başkalarıyla paylaşabilmeniz için ngrok veya Expose tüneli açmak için valet share.</p>
-
-<p><strong>Laravel Homestead</strong></p>
-
-<p>Homestead, yerel geliştirme ortamınızı kurmak için kullanmak isteyebileceğiniz başka bir araçtır. Bu, Vagrant’ın (sanal makineleri yönetmek için bir araç) üzerinde yer alan ve Laravel geliştirme için mükemmel bir şekilde ayarlanmış ve birçok Laravel sitesinin üzerinde çalıştığı en yaygın production ortamını yansıtan önceden yapılandırılmış bir sanal makine görüntüsü sağlayan yapılandırma aracıdır.</p>
-
-<p><a href="https://laravel.com/docs/10.x/homestead">Homestead belgeleri</a> detaylıdır ve sürekli güncel tutulur, bu nedenle nasıl çalıştığını ve nasıl kurulacağını öğrenmek istiyorsanız sizi onlara yönlendireceğim.</p>
-
-<h2 id="yeni-bir-lavel-projesi-oluşturmak">Yeni Bir Lavel Projesi Oluşturmak</h2>
-
-<p>Yeni bir Laravel projesi oluşturmanın iki yolu vardır, ancak her ikisi de komut satırından çalıştırılır. İlk seçenek, Laravel kurulum aracını (Composer kullanarak) global olarak kurmaktır; ikincisi, Composer’ın create-project özelliğini kullanmaktır.</p>
-
-<p>Kurulum belgeleri sayfasında her iki seçenek hakkında daha ayrıntılı bilgi edinebilirsiniz, ancak Laravel kurulum aracını tavsiye ederim.</p>
-
-<p><strong>Laravel Kurulum Aracı ile Laravel Kurulumu</strong></p>
-
-<p>Composer’ı global olarak yüklediyseniz, Laravel yükleyici aracını yüklemek için aşağıdaki komutu çalıştırın:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer global require "laravel/installer"
-</code></pre></div></div>
-
-<p>Laravel yükleyici aracını yükledikten sonra, yeni bir Laravel projesi oluşturmak basittir. Sadece şu komutu komut satırınızdan çalıştırın:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>laravel new projectName
-</code></pre></div></div>
-
-<p>Bu, geçerli dizininize projectName adlı yeni bir alt dizini oluşturacak ve içine iskelet Laravel projesi yükleyecektir.</p>
-
-<p><strong>Laravel’i Composer’ın create-project Özelliği ile Kurma</strong></p>
-
-<p>Composer ayrıca, belirli bir iskelet ile yeni projeler oluşturmak için create-project adlı bir özellik sunar. Yeni bir Laravel projesi oluşturmak üzere bu aracı kullanmak için aşağıdaki komutu çalıştırın:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>composer create-project laravel/laravel projectName
-</code></pre></div></div>
-
-<p>Tıpkı kurulum aracında olduğu gibi, bu da geçerli dizininize geliştirmeniz için hazır bir iskelet Laravel kurulumu içeren projectName adlı bir alt dizin oluşturacaktır.</p>
-
-<p><strong>Sail ile Laravel Kurulumu</strong></p>
-
-<p>Laravel Sail ile çalışmayı planlıyorsanız, bir Laravel uygulaması yükleyebilir ve aynı zamanda Sail kurulum sürecini başlatabilirsiniz. Bilgisayarınızda Docker’ın kurulu olduğundan emin olun ve ardından “example-app” ifadesini uygulamanızın adıyla değiştirerek aşağıdaki komutu çalıştırın:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl -s "https://laravel.build/example-app" | bash
-</code></pre></div></div>
-
-<p>Bu, Laravel’i mevcut klasörünüzün altındaki example-app klasörüne kuracak ve ardından Sail kurulum sürecini başlatacaktır.</p>
-
-<p>Kurulum işlemi tamamlandıktan sonra, yeni dizininize geçin ve Sail’i çalıştırın:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd example-app
-./vendor/bin/sail up
-</code></pre></div></div>
-
-<p><strong>Not:</strong> İlk kez sail up çalıştırdığınızda, Docker görüntüsünü oluşturması gerektiğinden, diğer yükleme işlemlerinden biraz daha uzun sürecektir.</p>
-
-<h2 id="laravelin-dizin-yapısı">Laravel’in Dizin Yapısı</h2>
-
-<p>İskelet Laravel uygulaması içeren bir dizini açtığınızda, aşağıdaki dosya ve dizinleri göreceksiniz:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>app/
-bootstrap/
-config/
-database/
-public/
-resources/
-routes/
-storage/
-tests/
-vendor/
-.editorconfig
-.env
-.env.example
-.gitattributes
-.gitignore
-artisan
-composer.json
-composer.lock
-package.json
-phpunit.xml
-readme.md
-vite.config.js
-</code></pre></div></div>
-
-<p>Tanımak için bunları tek tek inceleyelim.</p>
-
-<p><strong>Dizinler</strong></p>
-
-<p>Kök dizin varsayılan olarak aşağıdaki klasörleri içerir:</p>
-
-<ul>
-  <li><strong>app</strong> - Uygulamanızın büyük kısmı burada bulunacak. Model, controller, command ve PHP etki alanı kodunuz burada yer alır.</li>
-  <li><strong>bootstrap</strong> - Laravel her çalıştırıldığında önyükleme yapmak için kullandığı dosyaları içerir.</li>
-  <li><strong>config</strong> - Tüm yapılandırma dosyalarının bulunduğu yer.</li>
-  <li><strong>database</strong> - Migration, seed ve factory’lerin bulunduğu yer.</li>
-  <li><strong>public</strong> - Sunucunun web sitesine hizmet verirken işaret ettiği dizin. Bu, önyükleme sürecini başlatan ve tüm istekleri uygun şekilde yönlendiren ön denetleyici olan index.php’yi içerir. Ayrıca resim, stylesheet, script gibi herkese açık dosyaların bulunduğu yerdir.</li>
-  <li><strong>resources</strong> - Diğer scriptler için gerekli olan dosyaların bulunduğu yer. View ve (isteğe bağlı olarak) kaynak CSS ve kaynak JavaScript dosyaları burada bulunur.</li>
-  <li><strong>routes</strong> - Hem HTTP rotaları hem de “konsol rotaları” veya Artisan komutları için tüm route tanımlarının yapıldığı yer.</li>
-  <li><strong>storage</strong> - Önbellek (cache), log ve derlenmiş sistem dosyalarının bulunduğu yer.</li>
-  <li><strong>tests</strong> - Unit ve entegrasyon testlerinin bulunduğu yer.</li>
-  <li><strong>vendor</strong> - Composer’ın bağımlılıklarını kurduğu yer. Composer’ın herhangi bir uzak sunucuda deploy sürecinizin bir parçası olarak çalışması beklendiğinden, Git tarafından göz ardı edildi (versiyon kontrol sisteminizden dışlanmak üzere işaretlendi).</li>
-</ul>
-
-<p><strong>Dosyalar</strong></p>
-
-<p>Kök dizin ayrıca aşağıdaki dosyaları içerir:</p>
-
-<ul>
-  <li><strong>.editorconfig</strong> - IDE/text editörünüze Laravel’in kodlama standartları hakkında talimatlar verir (ör. girintilerin boyutu, karakter kümesi ve sondaki boşlukların kırpılıp kırpılmayacağı).</li>
-  <li><strong>.env</strong> ve <strong>.env.example</strong> - Ortam değişkenlerini tanımlayın (her ortamda farklı olması beklenen ve bu nedenle versiyon kontrolüne bağlı olmayan değişkenler). .env.example, Git tarafından yok sayılan kendi .env dosyasını oluşturmak için her ortamın çoğaltması gereken bir şablondur.</li>
-  <li><strong>.gitignore</strong> ve <strong>.gitattributes</strong> - Git yapılandırma dosyaları.</li>
-  <li><strong>artisan</strong>: Artisan komutlarını (bkz. Bölüm 8) komut satırından çalıştırmanıza izin verir.</li>
-  <li><strong>composer.json</strong> ve <strong>composer.lock</strong> - Composer için yapılandırma dosyaları; composer.json kullanıcı tarafından düzenlenebilir, composer.lock düzenlenemez. Bu dosyalar, proje hakkında bazı temel bilgileri paylaşır ve ayrıca PHP bağımlılıklarını tanımlar.</li>
-  <li><strong>package.json</strong> - composer.json’a benzer ancak build sisteminin frontend assetleri ve bağımlılıkları için kullanılır; NPM’e hangi JavaScript tabanlı bağımlılıkların devreye gireceği konusunda talimat verir.</li>
-  <li><strong>phpunit.xml</strong> - Laravel’in test için kullandığı araç olan PHPUnit yapılandırma dosyası.</li>
-  <li><strong>readme.md</strong> - Laravel hakkında temel bilgiler veren Markdown dosyası. Laravel yükleyicisini kullanırsanız bu dosyayı görmezsiniz.</li>
-  <li><strong>vite.config.js</strong> - Vite için (isteğe bağlı) yapılandırma dosyası. Bu dosya, frontend assetlerinin nasıl derleyeceğini ve işleneceğini bildirir.</li>
-</ul>
-
-<h2 id="yapılandırma">Yapılandırma</h2>
-
-<p>Laravel uygulamanızın temel ayarları - veritabanı bağlantı ayarları, kuyruk ve mail ayarları vb. - config klasöründeki dosyalarda bulunur. Bu dosyaların her biri bir PHP dizisi döndürür ve dizideki her değere, dosya adından ve noktalarla (.) ayrılmış alt anahtarlardan oluşan bir yapılandırma anahtarıyla erişilebilir.</p>
-
-<p>Dolayısıyla, <em>config/services.php</em>‘de şuna benzeyen bir dosya oluşturursanız:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// config/services.php
-return [
-    'sparkpost' =&gt; [
-        'secret' =&gt; 'abcdefg',
-    ],
-];
-</code></pre></div></div>
-
-<p>Bu yapılandırma değişkenine şunu kullanarak erişebilirsiniz:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>config('services.sparkpost.secret')
-</code></pre></div></div>
-
-<p>Her ortam için farklı olması gereken tüm yapılandırma değişkenleri bunun yerine .env dosyalarınızda oluşturulur. Diyelim ki her ortam için farklı bir Bugsnag API anahtarı kullanmak istiyorsunuz. Yapılandırma dosyasını .env’den alacak şekilde ayarladınız:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// config/services.php
-return [
-    'bugsnag' =&gt; [
-        'api_key' =&gt; env('BUGSNAG_API_KEY'),
-    ],
-];
-</code></pre></div></div>
-
-<p>env() helper fonksiyonu, aynı anahtarla .env dosyasından bir değer çeker. Şimdi, bu anahtarı .env (bu ortam için ayarlar) ve .env.example (tüm ortamlar için şablon) dosyalarınıza ekleyin:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code># In .env
-BUGSNAG_API_KEY=oinfp9813410942
-
-# In .env.example
-BUGSNAG_API_KEY=
-</code></pre></div></div>
-
-<p>.env dosyanız, framework’ün ihtiyaç duyduğu, hangi mail sürücüsünü kullanacağınız ve temel veritabanı ayarlarınızın ne olduğu gibi, ortama özgü epeyce değişken içerecektir.</p>
-
-<p><strong>Yapılandırma Dosyalarının Dışında env Kullanımı</strong></p>
-
-<p>Bazı önbelleğe alma ve optimizasyon özellikleri dahil olmak üzere Laravel’deki bazı özellikler, env() çağrıları ile yapılandırma dosyalarının dışında herhangi bir yerde kullanılamaz.</p>
-
-<p>Ortam değişkenlerini çekmenin en iyi yolu, ortama özgü olmasını istediğiniz her şey için yapılandırma öğeleri ayarlamaktır. Bu yapılandırma öğelerinin ortam değişkenlerini okumasını ve ardından uygulamanızın herhangi bir yerinde yapılandırma değişkenlerine başvurmasını sağlayın:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// config/services.php
-return [
-    'bugsnag' =&gt; [
-        'key' =&gt; env('BUGSNAG_API_KEY'),
-    ],
-];
-</code></pre></div></div>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>// In controller, or whatever
-$bugsnag = new Bugsnag(config('services.bugsnag.key'));
-</code></pre></div></div>
-
-<p><strong>.env Dosyası</strong></p>
-
-<p>.env dosyasının varsayılan içeriğine hızlıca bir göz atalım. Anahtarlar, kullandığınız Laravel sürümüne bağlı olarak değişir, ancak nasıl göründüklerini görmek için Örnek 2-1’e bakın.</p>
-
-<p><strong>Örnek 2-1</strong>. Laravel’deki varsayılan ortam değişkenleri</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>APP_NAME=Laravel
-APP_ENV=local
-APP_KEY=
-APP_DEBUG=true
-APP_URL=http://localhost
-
-LOG_CHANNEL=stack
-LOG_DEPRECATIONS_CHANNEL=null
-LOG_LEVEL=debug
-
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=root
-DB_PASSWORD=
-
-BROADCAST_DRIVER=log
-CACHE_DRIVER=file
-FILESYSTEM_DISK=local
-QUEUE_CONNECTION=sync
-SESSION_DRIVER=file
-SESSION_LIFETIME=120
-
-MEMCACHED_HOST=127.0.0.1
-
-REDIS_HOST=127.0.0.1
-REDIS_PASSWORD=null
-REDIS_PORT=6379
-
-MAIL_MAILER=smtp
-MAIL_HOST=mailpit
-MAIL_PORT=1025
-MAIL_USERNAME=null
-MAIL_PASSWORD=null
-MAIL_ENCRYPTION=null
-MAIL_FROM_ADDRESS="hello@example.com"
-MAIL_FROM_NAME="${APP_NAME}"
-
-AWS_ACCESS_KEY_ID=
-AWS_SECRET_ACCESS_KEY=
-AWS_DEFAULT_REGION=us-east-1
-AWS_BUCKET=
-AWS_USE_PATH_STYLE_ENDPOINT=false
-
-PUSHER_APP_ID=
-PUSHER_APP_KEY=
-PUSHER_APP_SECRET=
-PUSHER_HOST=
-PUSHER_PORT=443
-PUSHER_SCHEME=https
-PUSHER_APP_CLUSTER=mt1
-
-VITE_PUSHER_APP_KEY="${PUSHER_APP_KEY}"
-VITE_PUSHER_HOST="${PUSHER_HOST}"
-VITE_PUSHER_PORT="${PUSHER_PORT}"
-VITE_PUSHER_SCHEME="${PUSHER_SCHEME}"
-VITE_PUSHER_APP_CLUSTER="${PUSHER_APP_CLUSTER}"
-</code></pre></div></div>
-
-<p>Hepsine girmeyeceğim, çünkü çok azı çeşitli servisler (Pusher, Redis, DB, Mail) için kimlik doğrulama bilgileri gruplarıdır. İşte bilmeniz gereken iki önemli ortam değişkeni:</p>
-
-<ul>
-  <li><strong>APP_KEY</strong> - Verileri şifrelemek için kullanılan rastgele oluşturulmuş bir dize. Bu boşsa, “No application encryption key has been specified.” hatasıyla karşılaşabilirsiniz. Bu durumda, php artisan key:generate komutunu çalıştırın ve Laravel sizin için bir tane üretecektir.</li>
-  <li><strong>APP_DEBUG</strong> - Uygulamanızın bu örneğinde kullanıcıların hata ayıklama hatalarını görüp görmeyeceğini belirleyen boolean değeri; local ve staging ortamları için harika, production için korkunç.</li>
-</ul>
-
-<p>Kimlik doğrulama dışı ayarların geri kalanına (BROADCAST_DRIVER, QUEUE_CONNECTION, vb.), harici servislere mümkün olduğunca az güvenerek çalışan varsayılan değerler verilir ve bu, yeni başladığınız zamanlar için idealdir.</p>
-
-<p>Laravel uygulamanızı başlattığınızda, çoğu proje için muhtemelen yapmak isteyeceğiniz tek değişiklik, veritabanı yapılandırma ayarlarında olacaktır. Laravel Vale kullanıyorum, bu yüzden DB_DATABASE’i projemin adına, DB_USERNAME’i root’a ve DB_PASSWORD’u boş bir dizeye ayarlıyorum:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>DB_DATABASE=myProject
-DB_USERNAME=root
-DB_PASSWORD=
-</code></pre></div></div>
-
-<p>Ardından, en sevdiğim MySQL istemcimde projemle aynı ada sahip bir veritabanı oluşturuyorum ve kullanıma hazır.</p>
-
-<h2 id="çalıştırma">Çalıştırma</h2>
-
-<p>Artık bir Laravel kurulumuyla çalışıyorsunuz. git init’i çalıştırın, dosyaları git add . ile işleyin ve git commit ile kodlamaya başlamaya hazırsınız. Bu kadar! Valet kullanıyorsanız, aşağıdaki komutları çalıştırabilir ve sitenizi anında tarayıcınızda canlı olarak görebilirsiniz:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>laravel new myProject &amp;&amp; cd myProject &amp;&amp; valet open
-</code></pre></div></div>
-
-<p>Ne zaman yeni bir projeye başlasam, attığım adımlar şunlardır:</p>
-
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>laravel new myProject
-cd myProject
-git init
-git add .
-git commit -m "Initial commit"
-</code></pre></div></div>
-
-<p>Tüm sitelerimi, birincil Valet dizinim olarak kurduğum ~/Sites klasöründe tutuyorum, bu durumda, hiçbir ek iş olmadan tarayıcımda myProject.test’e anında erişebiliyorum. .env dosyasını düzenleyebilir ve onu belirli bir veritabanına yönlendirebilirim, bu veritabanını uygulamama ekleyebilirim ve kodlamaya başlamaya hazırım. Ve unutmayın, Lambo kullanıyorsanız, bu adımların tümü zaten sizin yerinize atılmıştır.</p>
-
-<h2 id="test-yapmak">Test yapmak</h2>
-
-<p>Bundan sonraki her bölümde, bölümün sonundaki “Test Etme” bölümü, ele alınan özellik veya özellikler için testlerin nasıl yazılacağını size gösterecektir. Bu bölüm test edilebilir bir özelliği kapsamadığından, testlerden hızlıca bahsedelim. (Laravel’de test yazma ve çalıştırma hakkında daha fazla bilgi edinmek için Bölüm 12’ye gidin.)</p>
-
-<p>Laravel, PHPUnit’i bir bağımlılık olarak getirir ve testleri, adı Test.php ile biten (örneğin, tests/UserTest.php) tests dizinindeki herhangi bir dosyada çalıştırmak üzere yapılandırılmıştır.</p>
-
-<p>Bu nedenle, test yazmanın en basit yolu, testler dizininde Test.php ile biten bir adla dosya oluşturmaktır. Ve bunları çalıştırmanın en kolay yolu, komut satırından (proje kökünde) ./vendor/bin/phpunit komutunu çalıştırmaktır.</p>
-
-<p>Herhangi bir test, veritabanı erişimi gerektiriyorsa, testlerinizi veritabanınızın barındırıldığı makineden yaptığınızdan emin olun; bu nedenle, veritabanınızı Vagrant’ta barındırıyorsanız, testlerinizi oradan çalıştırmak için Vagrant box’ı ssh yaptığınızdan emin olun. Yine, Bölüm 12’de bunu ve çok daha fazlasını öğrenebilirsiniz.</p>
-
-<p>Ayrıca, test bölümlerinden bazıları, kitabı ilk kez okuyorsanız henüz aşina olmayacağınız test sözdizimini ve özelliklerini kullanacaktır. Test bölümlerinden herhangi birindeki kod kafa karıştırıcıysa, onu atlayın ve test bölümünü okuma fırsatı bulduktan sonra geri dönün.</p>
-
-<h2 id="özet">Özet</h2>
-
-<p>Laravel bir PHP framework olduğu için onu yerel olarak sunmak çok basittir. Laravel ayrıca yerel gelişiminizi yönetmeniz için üç araç sunar: Docker kurulumu olan Sail; daha basit bir macOS tabanlı araç olan Valet; ve önceden yapılandırılmış bir Vagrant kurulumu olan Homestead. Laravel, Composer’a dayanır ve bu araç tarafından kurulabilir ve kutudan hem kurallarını hem de diğer açık kaynak araçlarıyla ilişkisini yansıtan bir dizi klasör ve dosyayla çıkar.</p>
-
-<p><strong>Kaynak:</strong> “Laravel: Up &amp; Running”, Matt Stauffer</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[PHP’nin başarısının bir nedeni de, PHP’ye hizmet vermeyen bir web sunucusu bulmanın zor olmasıdır. Ancak, modern PHP araçları geçmişe göre daha katı gereksinimlere sahiptir. Laravel’de geliştirme yapmanın en iyi yolu, kodunuz için tutarlı bir yerel ve uzak sunucu ortamı sağlamaktır ve neyse ki Laravel ekosisteminde bunun için birkaç araç var.]]></summary></entry></feed>
+<p><strong>Kaynak:</strong> “PHP 8 Objects, Patterns, and Practice”, Matt Zandstra</p>]]></content><author><name>Melih Kocatürk</name><email>melih.kocaturk@icloud.com</email></author><summary type="html"><![CDATA[Temmuz 2004’te PHP 5.0 yayınlandı. Bu sürüm, bir dizi radikal geliştirmeyle geldi. Belki de bunlardan ilki, nesne yönelimli programlama için kökten geliştirilmiş destekti. Bu, PHP topluluğu içinde nesnelere ve tasarıma büyük ilgi uyandırdı. Aslında bu, PHP 4.0 ile başlayan bir sürecin devamıydı.]]></summary></entry></feed>
