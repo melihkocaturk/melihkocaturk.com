@@ -11,7 +11,16 @@
             <p class="text-center text-uppercase mb-5">
                 <small class="text-muted">{{ site.author.name }} / {{ page.date | date: "%d.%m.%Y" }}</small>
             </p>
-            <p>{{ content }}</p>
+
+            {{ content }}
+
+            {% if page.tags.size > 0 %}
+                <p>
+                    {% for tag in page.tags %}
+                        <span class="badge text-bg-light"><a href="{{ site.url }}/tags/#{{ tag | cgi_escape }}" class="text-dark text-decoration-none">{{ tag }}</a></span>
+                    {% endfor %}
+                </p>
+            {% endif %}
         </div>
     </main>
 

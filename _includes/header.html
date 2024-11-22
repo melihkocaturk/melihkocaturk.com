@@ -3,17 +3,20 @@
         <div class="col">
             <div class="d-flex flex-row">
                 <div class="p-2">
-                    <img src="{{ site.avatar }}" alt="{{ site.title }}" class="rounded-circle" width="60" height="60">
+                    <a href="/"><img src="{{ site.avatar }}" alt="{{ site.title }}" class="rounded-circle" width="60" height="60"></a>
                 </div>
                 <div class="p-2">
-                    <h1 class="h4 mb-0">{{ site.author.name }}</h1>
-                    {{ site.author.title }}
+                    <a href="/" class="text-decoration-none text-dark">
+                        <h1 class="h4 mb-0">{{ site.author.name }}</h1>
+                        {{ site.author.title }}
+                    </a>
                 </div>
             </div>
         </div>
         <div class="col-auto">
             <ul class="list-inline">
-                <li class="list-inline-item"><a href="/">Anasayfa</a></li>
+                <li class="list-inline-item"><a href="/">/</a></li>
+                <li class="list-inline-item"><a href="/tags">Etiketler</a></li>
                 <li class="list-inline-item"><a href="/about">Hakkında</a></li>
             </ul>
         </div>
