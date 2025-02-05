@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gereksinim Mühendisliği: Başarılı Projelerin Temeli"
-tags: [gereksinim mühendisliği]
+tags: [yazılım mühendisliği]
 ---
 
 Bir yazılım ya da sistem geliştirme sürecinde en önemli aşamalardan biri gereksinim mühendisliğidir. Doğru tanımlanmamış ya da eksik gereksinimler, projenin başarısız olmasına neden olabilir. Bu nedenle gereksinim mühendisliği, başarılı projelerin temel taşlarından biri olarak kabul edilir.
@@ -24,7 +24,7 @@ Gereksinimleri doğru şekilde belirlemek için çeşitli teknikler kullanılır
 - **Anketler**: Geniş bir kullanıcı kitlesinden veri toplamak için kullanılır ve istatistiksel analizlere olanak sağlar. Açık uçlu ve kapalı uçlu sorular içerebilir.
 - **Beyin Fırtınası**: Farklı paydaşların katılımıyla yaratıcı çözümler geliştirmek ve gereksinimleri belirlemek için uygulanır. Moderatör eşliğinde gerçekleştirilen oturumlarla en iyi sonuçlar elde edilir.
 - **Prototipleme**: Kullanıcılara erken aşamada bir örnek sunarak geri bildirim almaya yardımcı olur. Kağıt prototiplerden interaktif mock-up’lara kadar farklı seviyelerde uygulanabilir.
-- **Senaryo ve Kullanım Durumlar**ı: Gerçek hayat senaryoları üzerinden kullanıcıların ihtiyaçlarını belirlemeye yarar. Kullanıcı hikayeleri ve kullanım senaryoları, sistemin işleyişini somut bir şekilde anlamaya yardımcı olur.
+- **Senaryo ve Kullanım Durumları**: Gerçek hayat senaryoları üzerinden kullanıcıların ihtiyaçlarını belirlemeye yarar. Kullanıcı hikayeleri ve kullanım senaryoları, sistemin işleyişini somut bir şekilde anlamaya yardımcı olur.
 - **Gözlem**: Kullanıcıların mevcut süreçlerde nasıl çalıştığını analiz ederek, farkında olmadıkları gereksinimleri belirlemek için kullanılır.
 - **Odak Grupları**: Farklı paydaşların bir araya gelerek sistemin gereksinimleri hakkında görüş bildirmesine olanak tanır.
 
