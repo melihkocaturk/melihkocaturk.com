@@ -94,3 +94,6 @@ permalink: /:title
 # Pagination
 paginate: 10
 paginate_path: /sayfa:num/
+
+# Google Analytics
+google_analytics: "G-D81YCKRVTX"
