@@ -74,7 +74,7 @@ DEPENDENCIES
   base64
   bigdecimal
   csv
-  jekyll (= 4.0.1)
+  jekyll (~> 4.0.0)
   jekyll-feed
   jekyll-paginate
   jekyll-seo-tag
