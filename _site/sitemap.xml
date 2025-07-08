@@ -121,6 +121,14 @@
 <lastmod>2025-07-07T00:00:00+03:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/konut-projelerinde-deger-artis-potansiyeli-nasil-tespit-edilir</loc>
+<lastmod>2025-07-08T00:00:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/konut-projelerinde-erken-cikis-stratejisi</loc>
+<lastmod>2025-07-08T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/404</loc>
 </url>
 <url>
@@ -137,5 +145,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/sayfa3/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/sayfa4/</loc>
 </url>
 </urlset>
