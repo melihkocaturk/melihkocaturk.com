@@ -14,7 +14,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
-        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+        <ul class="navbar-nav mb-2 mb-lg-0">
           {% for item in site.data.navigation %}
             <li class="nav-item">
               <a class="nav-link {% if page.url == item.link %}active{% endif %}" href="{{ item.link }}">
