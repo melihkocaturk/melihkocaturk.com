@@ -1,0 +1,29 @@
+<div class="container py-3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid px-0">
+      <a class="navbar-brand" href="/">{{ site.title }}</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainMenu"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
+        <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+          {% for item in site.data.navigation %}
+            <li class="nav-item">
+              <a class="nav-link {% if page.url == item.link %}active{% endif %}" href="{{ item.link }}">
+                {{ item.name }}
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>

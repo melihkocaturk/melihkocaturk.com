@@ -1,0 +1,11 @@
+---
+layout: default
+---
+
+<main class="container">
+  <article class="post mx-auto mt-5">
+    <h1 class="display-5 mb-5">{{ page.title | escape }}</h1>
+    <time class="d-block mb-5">{{ page.date | date: "%d/%m/%Y" }}</time>
+    {{ content }}
+  </article>
+</main>

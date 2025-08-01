@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+body { font-family: "Playfair Display", sans-serif; font-optical-sizing: auto; font-style: normal; line-height: 1.7; }
+
+a { text-underline-offset: 3px; }
+
+.navbar-brand { font-size: calc(1vw + 1rem); font-weight: 400; }
+
+.navbar-toggler { border: none; }
+
+.navbar-toggler:focus { box-shadow: none; }
+
+.home { max-width: 960px; }
+
+.home .jumbotron { padding-bottom: 10vw; padding-top: 10vw; }
+
+.get-in-touch { margin-bottom: 5vw; margin-top: 10vw; }
+
+.post { max-width: 720px; }
+
+.post h2, .post h3, .post h4, .post h5, .post h6 { margin-bottom: 1rem; margin-top: 1.5rem; }
+
+.post table { margin-bottom: 2rem; width: 100%; text-align: left; border-collapse: collapse; border: 1px solid #dee2e6; }
+
+.post table th, .post table td { border: 1px solid #dee2e6; padding: 10px 15px; }
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,6 @@
+- name: Anasayfa
+  link: /
+- name: Hakkında
+  link: /hakkinda
+- name: İletişim
+  link: /iletisim
