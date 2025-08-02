@@ -28,3 +28,9 @@ social:
 
 # Google Analytics
 google_analytics: G-D81YCKRVTX
+
+# Plugins
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-feed
