@@ -2,6 +2,7 @@
 layout: post
 title: "Gayrimenkul Sertifikası Nedir? Yatırımcılar İçin Detaylı Rehber"
 description: "Bu yazıda, gayrimenkul sertifikasının ne olduğunu, nasıl çalıştığını, avantajlarını, dezavantajlarını ve Türkiye'deki uygulama örneklerini tüm yönleriyle inceleyeceğiz."
+tags: ["gayrimenkul sertifikası"]
 ---
 
 Gayrimenkul sektörü, yüksek başlangıç sermayesi ve likidite sorunları nedeniyle birçok bireysel yatırımcı için erişilmesi güç bir yatırım alanı olmuştur. Ancak son yıllarda geliştirilen finansal ürünler sayesinde bu engeller yavaş yavaş ortadan kalkıyor. Bunlardan biri de: **gayrimenkul sertifikası**.

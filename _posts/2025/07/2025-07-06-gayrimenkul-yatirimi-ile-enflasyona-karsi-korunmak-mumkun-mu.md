@@ -2,6 +2,7 @@
 layout: post
 title: "Gayrimenkul Yatırımı ile Enflasyona Karşı Korunmak Mümkün mü?"
 description: "Bu yazıda, gayrimenkul yatırımının enflasyonla nasıl ilişkilendiğini ve neden hala birçok yatırımcının gözdesi olduğunu ele alıyoruz."
+tags: ["enflasyon", "gayrimenkul yatırımı"]
 ---
 
 Enflasyon, bir ekonomideki mal ve hizmet fiyatlarının genel düzeyindeki sürekli artış olarak tanımlanır. Özellikle Türkiye gibi zaman zaman yüksek enflasyonla karşılaşan ülkelerde, birikimlerin değerini korumak her yatırımcının öncelikli hedeflerinden biri haline gelir. Peki, bu noktada *gayrimenkul yatırımı enflasyona karşı bir kalkan olabilir mi?*

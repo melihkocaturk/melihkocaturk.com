@@ -2,6 +2,7 @@
 layout: post
 title: "Yeni Konut Projelerine Yatırım Yapmak Mantıklı mı?"
 description: "Bu yazıda, yeni konut projelerine yatırım yapmanın avantajlarını, risklerini ve karar verirken nelere dikkat edilmesi gerektiğini detaylıca ele alıyoruz."
+tags: ["konut projeleri"]
 ---
 
 Konut piyasası, yatırımcıların her dönem radarında olan bir alan. Özellikle büyük şehirlerde yükselen yeni konut projeleri, hem oturum hem de yatırım amaçlı alıcıların ilgisini çekiyor. Peki, bu projelere yatırım yapmak gerçekten mantıklı mı? Bu sorunun cevabı, projenin lokasyonuna, geliştirici firmanın geçmişine, ödeme planlarına ve ekonomik koşullara göre değişiklik gösterebilir. Bu yazıda, yeni konut projelerine yatırım yapmanın avantajlarını, risklerini ve karar verirken nelere dikkat edilmesi gerektiğini detaylıca ele alıyoruz.

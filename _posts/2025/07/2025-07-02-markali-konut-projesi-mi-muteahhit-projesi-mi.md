@@ -2,6 +2,7 @@
 layout: post
 title: "Markalı Konut Projesi mi Müteahhit Projesi mi?"
 description: "Bu yazıda, her iki konut tipi arasındaki farkları, maliyetleri, kalite kriterlerini ve yatırım değerlerini karşılaştırarak karar sürecinizi kolaylaştıracak detaylara yer veriyoruz."
+tags: ["markalı konut"]
 ---
 
 Konut alımında en çok karşılaşılan sorulardan biri şudur: *Markalı konut projesi mi tercih edilmeli, yoksa bireysel müteahhit projesi mi?* Her iki seçeneğin de avantajları ve dezavantajları bulunur. Bu yazıda, her iki konut tipi arasındaki farkları, maliyetleri, kalite kriterlerini ve yatırım değerlerini karşılaştırarak karar sürecinizi kolaylaştıracak detaylara yer veriyoruz.

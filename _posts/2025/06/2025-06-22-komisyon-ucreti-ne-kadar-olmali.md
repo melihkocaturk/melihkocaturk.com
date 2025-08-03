@@ -2,6 +2,7 @@
 layout: post
 title: "Komisyon Ücreti Ne Kadar Olmalı? Emlakçılıkta Yasal Sınırlar"
 description: "Bu yazımızda, emlakçılıkta yasal komisyon sınırları nedir, kimden ne kadar alınır ve dikkat edilmesi gereken noktalar nelerdir sorularını detaylıca ele alıyoruz."
+tags: ["emlak komisyonu"]
 ---
 
 Emlak alım-satım ya da kiralama süreçlerinde en çok merak edilen konuların başında **emlak komisyon ücreti** gelir. Hem alıcılar hem de satıcılar için kafa karıştırıcı olabilen bu konu, aslında Türkiye’de yasal çerçevede net olarak belirlenmiştir. Bu yazımızda, **emlakçılıkta yasal komisyon sınırları** nedir, kimden ne kadar alınır ve dikkat edilmesi gereken noktalar nelerdir sorularını detaylıca ele alıyoruz.

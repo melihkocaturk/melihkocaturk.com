@@ -2,6 +2,7 @@
 layout: post
 title: "LEED ve BREEAM Sertifikaları ile Konutların Değeri Nasıl Artıyor?"
 description: "Bu sertifikalar ne anlama geliyor ve neden konutların değerini artırıyor?"
+tags: ["sürdürülebilirlik", "enerji verimliliği"]
 ---
 
 Günümüzde gayrimenkul yatırımı artık yalnızca konum, manzara veya metrekare üzerinden değerlendirilmekle kalmıyor. Enerji verimliliği, çevresel sürdürülebilirlik ve yaşam kalitesi gibi faktörler de alıcıların ve yatırımcıların kararlarını ciddi şekilde etkiliyor. Bu noktada öne çıkan iki önemli standart: **LEED** (Leadership in Energy and Environmental Design) ve **BREEAM** (Building Research Establishment Environmental Assessment Method) sertifikaları.

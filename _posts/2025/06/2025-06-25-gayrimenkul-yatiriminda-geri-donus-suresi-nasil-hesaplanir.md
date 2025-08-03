@@ -2,6 +2,7 @@
 layout: post
 title: "Gayrimenkul Yatırımında Geri Dönüş Süresi Nasıl Hesaplanır?"
 description: "Yatırım geri dönüş süresi nedir ve nasıl hesaplanır? Bu yazıda adım adım açıklıyoruz."
+tags: ["gayrimenkul yatırımı", "geri dönüş süresi"]
 ---
 
 Gayrimenkul yatırımı, hem kira getirisi hem de uzun vadeli değer artışı sayesinde yatırımcılar arasında her zaman cazibesini korumuştur. Ancak doğru bir yatırım yapabilmek için yalnızca konumu ya da fiyatı değerlendirmek yetmez. **Yatırımın geri dönüş süresi** (diğer adıyla **amortisman** süresi) de dikkatle analiz edilmelidir. Peki bu süre tam olarak nedir ve nasıl hesaplanır? İşte adım adım açıklıyoruz.

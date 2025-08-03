@@ -2,6 +2,7 @@
 layout: post
 title: "Yabancı Yatırımcıların Konut Projelerinde Yarattığı Fırsatlar (ve Tehlikeler)"
 description: "Son yıllarda Türkiye'nin büyük şehirlerinde, özellikle de İstanbul, Antalya, İzmir ve Ankara gibi bölgelerde konut piyasasında ciddi bir hareketlilik gözlemleniyor."
+tags: ["yabancı yatırımcı"]
 ---
 
 Son yıllarda Türkiye'nin büyük şehirlerinde, özellikle de İstanbul, Antalya, İzmir ve Ankara gibi bölgelerde konut piyasasında ciddi bir hareketlilik gözlemleniyor. Bu hareketliliğin en önemli aktörlerinden biri de *yabancı yatırımcılar*. Döviz avantajı, vatandaşlık fırsatları ve Türkiye'nin stratejik konumu sayesinde yabancılar için cazip hale gelen gayrimenkul sektörü, bir yandan önemli fırsatlar sunarken diğer yandan çeşitli riskleri de beraberinde getiriyor.

@@ -2,9 +2,10 @@
 layout: post
 title: "Gayrimenkul Danışmanından Ne Beklenir?"
 description: "Gerçek bir gayrimenkul danışmanının sunduğu değer çok daha fazlasıdır. Peki, bir gayrimenkul danışmanından neler beklenmelidir?"
+tags: ["gayrimenkul danışmanı"]
 ---
 
-Günümüzde ev veya arsa almak, satmak ya da kiralamak, birçok kişi için stresli ve karmaşık bir süreç haline geldi. İşte tam bu noktada, profesyonel bir gayrimenkul danışmanı devreye giriyor. Ancak bir danışmandan sadece ilan göstermek ya da ev gezdirmek beklenmemeli. Gerçek bir gayrimenkul danışmanının sunduğu değer çok daha fazlasıdır. Peki, bir gayrimenkul danışmanından neler beklenmelidir?
+Günümüzde ev veya arsa almak, satmak ya da kiralamak, birçok kişi için stresli ve karmaşık bir süreç haline geldi. İşte tam bu noktada, profesyonel bir *gayrimenkul danışmanı* devreye giriyor. Ancak bir danışmandan sadece ilan göstermek ya da ev gezdirmek beklenmemeli. Gerçek bir gayrimenkul danışmanının sunduğu değer çok daha fazlasıdır. Peki, bir gayrimenkul danışmanından neler beklenmelidir?
 
 ## 1. Piyasa Bilgisi ve Bölge Uzmanlığı
 

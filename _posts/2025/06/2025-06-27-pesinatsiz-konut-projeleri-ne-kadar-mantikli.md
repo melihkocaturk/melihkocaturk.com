@@ -2,6 +2,7 @@
 layout: post
 title: "Peşinatsız Konut Projeleri Ne Kadar Mantıklı? Gizli Maliyetler Neler?"
 description: "Bu yazıda, peşinatsız konut projelerini tüm yönleriyle ele alacak, avantajlarını ve gizli maliyetlerini detaylı şekilde inceleyeceğiz."
+tags: ["konut projesi"]
 ---
 
 Son yıllarda Türkiye'de özellikle büyük şehirlerde yükselen konut fiyatları, birçok kişinin ev sahibi olmasını zorlaştırdı. Bu durumu fırsata çeviren bazı inşaat firmaları ise "peşinatsız konut" sloganıyla alıcıları cezbetmeye başladı. Peki gerçekten peşinatsız ev almak ne kadar mantıklı? Görünmeyen ya da önceden hesaplanmayan maliyetler var mı?

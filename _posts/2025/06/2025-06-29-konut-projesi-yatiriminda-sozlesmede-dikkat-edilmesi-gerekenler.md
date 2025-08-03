@@ -2,6 +2,7 @@
 layout: post
 title: "Konut Projesi Yatırımında Sözleşmede Dikkat Edilmesi Gerekenler"
 description: "Bu yazıda, konut projesi yatırımında sözleşmede dikkat edilmesi gereken kritik maddeleri sizler için detaylıca ele aldık."
+tags: ["konut projesi", "ön satış"]
 ---
 
 Yeni bir konut projesine yatırım yaparken heyecan kadar dikkat de gereklidir. Özellikle *ön satış döneminde veya inşaat halindeki projelerde* yapılan alımlarda, imzalanan sözleşmenin içeriği yatırımcının hem **maddi güvenliğini** hem de **gelecekteki haklarını** doğrudan etkiler. Bu yazıda, konut projesi yatırımında sözleşmede dikkat edilmesi gereken kritik maddeleri sizler için detaylıca ele aldık.

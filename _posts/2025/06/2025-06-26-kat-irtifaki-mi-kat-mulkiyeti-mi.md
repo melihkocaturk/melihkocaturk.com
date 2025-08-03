@@ -2,6 +2,7 @@
 layout: post
 title: "Kat İrtifakı mı Kat Mülkiyeti mi?"
 description: "Kat irtifakı ile kat mülkiyeti arasındaki fark nedir? Hangi durumda hangi tapu tercih edilmelidir?"
+tags: ["kat mülkiyeti", "kat irtifakı", "tapu"]
 ---
 
 Gayrimenkul alım satımında karşımıza çıkan teknik terimlerden biri de tapu türleridir. Özellikle kat irtifakı ve kat mülkiyeti, konut almayı düşünen birçok kişi için kafa karıştırıcı olabilir. Oysa bu kavramlar, bir gayrimenkulün yasal durumu hakkında oldukça önemli bilgiler sunar. Peki kat irtifakı ile kat mülkiyeti arasındaki fark nedir? Hangi durumda hangi tapu tercih edilmelidir? Bu yazımızda tüm detaylarıyla açıklıyoruz.

@@ -2,6 +2,7 @@
 layout: post
 title: "Türkiye’de Arsa Yatırımı: 2025 Arsa Trendleri ve Analizi"
 description: "Bu yazımızda 2025 yılı itibarıyla Türkiye’de arsa yatırımına dair güncel verilerle detaylı bir analiz sunuyoruz."
+tags: ["arsa yatırımı", "tarla yatırımı"]
 ---
 
 2025 yılı itibarıyla Türkiye’de arsa yatırımı yeniden gündemin en sıcak başlıklarından biri haline geldi. Özellikle büyük şehirlerin çevresindeki bölgelerde yaşanan hızlı gelişim ve altyapı yatırımları, arsa fiyatlarını ciddi biçimde etkiliyor. Aynı zamanda sahibinden arsa ilanları sayısında da dikkat çekici bir artış yaşanıyor. Peki bu artış ne anlama geliyor? Hangi bölgeler öne çıkıyor? *Tarla arsa yatırım trendleri* nereye gidiyor? Bu yazımızda 2025 yılı itibarıyla Türkiye’de arsa yatırımına dair güncel verilerle detaylı bir analiz sunuyoruz.

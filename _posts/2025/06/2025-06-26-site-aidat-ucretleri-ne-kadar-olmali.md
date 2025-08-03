@@ -2,6 +2,7 @@
 layout: post
 title: "Site Aidat Ücretleri Ne Kadar Olmalı?"
 description: "Bu yazıda aidatların nasıl belirlendiğini, neye göre değiştiğini ve ideal bir aidat politikasının nasıl olması gerektiğini detaylarıyla ele alıyoruz."
+tags: ["site aidatı", "arsa payı"]
 ---
 
 Site hayatı, konforlu bir yaşam sunarken bazı ortak giderleri de beraberinde getirir. Bu giderlerin karşılanması için sakinlerden toplanan site aidatları, hem yönetim hem de daire sahipleri için önemli bir konudur. Ancak sıkça sorulan soru şudur: "Site aidat ücretleri ne kadar olmalı?"

@@ -2,6 +2,7 @@
 layout: post
 title: "Gayrimenkul Değer Artış Kazancı Vergisi Nasıl Hesaplanır?"
 description: "Bu yazıda, gayrimenkul değer artış kazancı vergisi nedir, kimler öder ve nasıl hesaplanır? sorularına sade ve anlaşılır şekilde yanıt veriyoruz."
+tags: ["gayrimenkul yatırımı"]
 ---
 
 Gayrimenkul alım-satımı yapan birçok yatırımcı ve mülk sahibi için en çok merak edilen konulardan biri de değer artış kazancı vergisidir. Özellikle bir mülkü satarken elde edilen kazanç üzerinden vergi ödenip ödenmeyeceği, ödenecekse ne kadar olacağı önemlidir. Bu yazıda, gayrimenkul değer artış kazancı vergisi nedir, kimler öder ve nasıl hesaplanır? sorularına sade ve anlaşılır şekilde yanıt veriyoruz.

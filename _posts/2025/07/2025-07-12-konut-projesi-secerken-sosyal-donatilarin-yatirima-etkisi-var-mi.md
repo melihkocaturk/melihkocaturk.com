@@ -2,6 +2,7 @@
 layout: post
 title: "Konut Projesi Seçerken Sosyal Donatıların Yatırıma Etkisi Var mı?"
 description: "Sosyal donatılar tam olarak nedir ve neden yatırımcılar için bu kadar önemlidir?"
+tags: ["konut projesi", "geri dönüş süresi"]
 ---
 
 Konut yatırımı yaparken birçok faktörü göz önünde bulundururuz: lokasyon, fiyat, ulaşım imkanları, proje kalitesi… Ancak çoğu zaman gözden kaçan ama yatırım değerini doğrudan etkileyen bir unsur daha var: **sosyal donatılar**. Peki, sosyal donatılar tam olarak nedir ve neden yatırımcılar için bu kadar önemlidir?

@@ -2,6 +2,7 @@
 layout: post
 title: "Tapu Harcı Nasıl Hesaplanır?"
 description: "Tapu harcı nedir, ne kadardır ve nasıl hesaplanır? Bu yazıda tapu harcına dair tüm detayları sade bir dille ele aldık."
+tags: ["tapu"]
 ---
 
 Gayrimenkul alım-satım sürecinde karşımıza çıkan en önemli kalemlerden biri de tapu harcıdır. Peki tapu harcı nedir, ne kadardır ve nasıl hesaplanır? Bu yazıda tapu harcına dair tüm detayları sade bir dille ele aldık.

@@ -2,6 +2,7 @@
 layout: post
 title: "Yatırımcılar İçin En Hızlı Değer Kazanan Konut Tipleri"
 description: "Bu yazıda, son yıllarda Türkiye’de en hızlı değer kazanan konut tiplerini detaylarıyla inceliyoruz."
+tags: ["konut yatırımı", "geri dönüş süresi"]
 ---
 
 Konut yatırımı, uzun vadeli getiri ve güvenli liman arayan yatırımcılar için her zaman cazip bir seçenek olmuştur. Ancak her konut tipi aynı hızda değer kazanmaz. Lokasyon kadar konutun tipi, yapısı ve hitap ettiği hedef kitle de değer artışında önemli rol oynar. Bu yazıda, son yıllarda Türkiye’de en hızlı değer kazanan konut tiplerini detaylarıyla inceliyoruz.
@@ -21,7 +22,7 @@ Konut yatırımı, uzun vadeli getiri ve güvenli liman arayan yatırımcılar i
 ### Yatırımcıya Avantajı:
 
 - Yüksek talep nedeniyle kısa sürede kiralanabilir.
-- Kiraya verme süresi düşük, geri dönüş süresi hızlı.
+- Kiraya verme süresi düşük, *geri dönüş süresi* hızlı.
 
 ## Markalı Konut Projelerindeki Akıllı Evler
 

@@ -2,6 +2,7 @@
 layout: post
 title: "Kat Mülkiyeti Nedir? Tapu Türleri Arasındaki Farklar"
 description: "Bu yazıda kat mülkiyeti nedir, neden önemlidir ve tapular arasındaki farklar nelerdir sorularını detaylıca ele alıyoruz."
+tags: ["kat mülkiyeti", "kat irtifakı", "tapu"]
 ---
 
 Emlak alım-satım süreci çoğu zaman karmaşık görünebilir. Özellikle tapu türleri konusunda bilgi eksikliği, hem alıcılar hem de satıcılar için ciddi riskler doğurabilir. Tapuda "arsa", "kat irtifakı" ya da "kat mülkiyeti" ifadeleri ne anlama gelir? Hangisi daha güvenlidir?

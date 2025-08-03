@@ -2,9 +2,10 @@
 layout: post
 title: "Konut Projelerinde Yatırım Geri Dönüşü Nasıl Ölçülür?"
 description: "Bu yazımızda konut projelerinde yatırım geri dönüşünün nasıl ölçüldüğünü, kullanılan temel yöntemleri ve örnek hesaplamaları inceleyeceğiz."
+tags: ["emlak yatırımı", "konut projeleri"]
 ---
 
-Emlak yatırımları, doğru stratejiyle uzun vadede yüksek kazanç sağlayabilir. Ancak yatırım yapmadan önce en önemli adımlardan biri, yatırımın geri dönüşünü (**ROI** - **Return on Investment**) doğru bir şekilde hesaplamaktır. Bu yazımızda konut projelerinde yatırım geri dönüşünün nasıl ölçüldüğünü, kullanılan temel yöntemleri ve örnek hesaplamaları inceleyeceğiz.
+Emlak yatırımı, doğru stratejiyle uzun vadede yüksek kazanç sağlayabilir. Ancak yatırım yapmadan önce en önemli adımlardan biri, yatırımın geri dönüşünü (**ROI** - **Return on Investment**) doğru bir şekilde hesaplamaktır. Bu yazımızda konut projelerinde yatırım geri dönüşünün nasıl ölçüldüğünü, kullanılan temel yöntemleri ve örnek hesaplamaları inceleyeceğiz.
 
 ## Yatırım Geri Dönüşü (ROI) Nedir?
 

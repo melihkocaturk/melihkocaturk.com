@@ -2,9 +2,10 @@
 layout: post
 title: "Kentsel Dönüşümde Ev Sahibi Olmanın Avantajları ve Riskleri"
 description: "Bu yazıda, kentsel dönüşüm sürecinde ev sahibi olmanın avantajlarını ve karşılaşılabilecek olası riskleri ayrıntılı olarak ele alıyoruz."
+tags: ["kentsel dönüşüm"]
 ---
 
-Kentsel dönüşüm, özellikle büyük şehirlerde eski yapı stoğunun yenilenmesi ve şehirlerin depreme dayanıklı hale getirilmesi için önemli bir adım olarak görülüyor. Ancak bu süreç, ev sahipleri için hem büyük fırsatlar hem de bazı riskler barındırıyor. Bu yazıda, kentsel dönüşüm sürecinde ev sahibi olmanın avantajlarını ve karşılaşılabilecek olası riskleri ayrıntılı olarak ele alıyoruz.
+Kentsel dönüşüm, özellikle büyük şehirlerde eski yapı stoğunun yenilenmesi ve şehirlerin depreme dayanıklı hale getirilmesi için önemli bir adım olarak görülüyor. Ancak bu süreç, ev sahipleri için hem büyük fırsatlar hem de bazı riskler barındırıyor. Bu yazıda, *kentsel dönüşüm* sürecinde ev sahibi olmanın avantajlarını ve karşılaşılabilecek olası riskleri ayrıntılı olarak ele alıyoruz.
 
 ## Kentsel Dönüşüm Nedir?
 

@@ -2,6 +2,7 @@
 layout: post
 title: "Yatırımlık Arsa mı Konut mu? 2025 Karşılaştırması"
 description: "Bu yazıda 2025 yılı özelinde arsa ve konut yatırımlarını detaylı bir şekilde karşılaştırıyor, avantajlarını ve dezavantajlarını ele alıyoruz."
+tags: ["arsa yatırımı", "konut yatırımı"]
 ---
 
 2025 yılında gayrimenkul yatırımı yapmayı düşünenlerin en çok sorduğu sorulardan biri: "Yatırımlık arsa mı daha mantıklı, yoksa konut mu?" Ekonomik gelişmeler, enflasyon, faiz oranları ve imar düzenlemeleri gibi birçok değişken bu kararı doğrudan etkiliyor. Bu yazıda 2025 yılı özelinde arsa ve konut yatırımlarını detaylı bir şekilde karşılaştırıyor, avantajlarını ve dezavantajlarını ele alıyoruz.

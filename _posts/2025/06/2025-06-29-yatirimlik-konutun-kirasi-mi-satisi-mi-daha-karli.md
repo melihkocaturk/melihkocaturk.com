@@ -2,6 +2,7 @@
 layout: post
 title: "Yatırımlık Konutun Kirası mı Satışı mı Daha Karlı?"
 description: "Bu yazımızda kira ve satış arasındaki kârlılık farkını örneklerle inceleyerek hangisinin daha avantajlı olabileceğini ortaya koyacağız."
+tags: ["konut yatırımı", "kira", "geri dönüş süresi"]
 ---
 
 Konut yatırımı yapan herkesin aklındaki temel sorulardan biri şudur: “Bu evi kiraya mı versem yoksa satarak kâr mı etsem?” Doğru karar; bölge, piyasa durumu, maliyetler ve yatırımcının hedeflerine göre değişir. Bu yazımızda kira ve satış arasındaki kârlılık farkını örneklerle inceleyerek hangisinin daha avantajlı olabileceğini ortaya koyacağız.
@@ -18,7 +19,7 @@ Konut yatırımı yapan pek çok kişi, düzenli ve **pasif gelir** için kira s
 - Brüt Kira Getirisi: %6
 - Amortisman Süresi: 16,6 yıl
 
-Bu yatırımcı evi satmak yerine kiraya verirse, 16 yılda ana parasını geri almış olur. Üstelik kira her yıl %15-20 artarsa, geri dönüş süresi daha da kısalabilir.
+Bu yatırımcı evi satmak yerine kiraya verirse, 16 yılda ana parasını geri almış olur. Üstelik kira her yıl %15-20 artarsa, *geri dönüş süresi* daha da kısalabilir.
 
 **Avantajları**:
 
