@@ -15,9 +15,9 @@ a { text-underline-offset: 3px; }
 
 .get-in-touch { margin-bottom: 5vw; margin-top: 10vw; }
 
-.post { max-width: 720px; }
+.post, .page { max-width: 720px; }
 
-.post h2, .post h3, .post h4, .post h5, .post h6 { margin-bottom: 1rem; margin-top: 1.5rem; }
+.post h2, .post h3, .post h4, .post h5, .post h6, .page h2, .page h3, .page h4, .page h5, .page h6 { margin-bottom: 1rem; margin-top: 1.5rem; }
 
 .post table { margin-bottom: 2rem; width: 100%; text-align: left; border-collapse: collapse; border: 1px solid #dee2e6; }
 
