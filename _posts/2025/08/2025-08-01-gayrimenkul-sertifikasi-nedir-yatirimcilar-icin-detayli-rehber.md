@@ -76,6 +76,6 @@ Gayrimenkul sertifikaları, konut yatırımına erişimi demokratikleştiren mod
 
 ## Sıkça Sorulan Sorular
 
-- **Sertifikalarla gerçekten ev sahibi olabilir miyim?** Evet. Gerekli sayıda sertifikayı toplarsanız, proje sonunda ilgili bağımsız bölüm sizin olabilir.
-- **Sertifikaları ne zaman satabilirim?** İstediğiniz zaman Borsa İstanbul üzerinden alım-satım yapabilirsiniz.
-- **Devlet garantisi var mı?** Hayır, sadece SPK ve Borsa denetimi vardır. Yatırım riskini yatırımcı üstlenir.
+1. **Sertifikalarla gerçekten ev sahibi olabilir miyim?** Evet. Gerekli sayıda sertifikayı toplarsanız, proje sonunda ilgili bağımsız bölüm sizin olabilir.
+2. **Sertifikaları ne zaman satabilirim?** İstediğiniz zaman Borsa İstanbul üzerinden alım-satım yapabilirsiniz.
+3. **Devlet garantisi var mı?** Hayır, sadece SPK ve Borsa denetimi vardır. Yatırım riskini yatırımcı üstlenir.

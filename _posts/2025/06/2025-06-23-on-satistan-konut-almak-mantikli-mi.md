@@ -39,6 +39,6 @@ Eğer doğru firma, doğru lokasyon ve güvenli bir sözleşme çerçevesinde ha
 
 ## Sıkça Sorulan Sorular
 
-- **Ön satıştan alınan evin tapusu hemen verilir mi?** Hayır, tapu genellikle yapı kullanım izin belgesi alındıktan sonra verilir.
-- **Devlet garantili projeler var mı?** Evet, TOKİ ve Emlak Konut GYO tarafından desteklenen projeler daha güvenli kabul edilir.
-- **Yatırım açısından ön satış mı, ikinci el konut mu daha avantajlı?** Yatırım getirisi açısından doğru projede ön satış genellikle daha kârlıdır, ancak risk de daha fazladır.
+1. **Ön satıştan alınan evin tapusu hemen verilir mi?** Hayır, tapu genellikle yapı kullanım izin belgesi alındıktan sonra verilir.
+2. **Devlet garantili projeler var mı?** Evet, TOKİ ve Emlak Konut GYO tarafından desteklenen projeler daha güvenli kabul edilir.
+3. **Yatırım açısından ön satış mı, ikinci el konut mu daha avantajlı?** Yatırım getirisi açısından doğru projede ön satış genellikle daha kârlıdır, ancak risk de daha fazladır.

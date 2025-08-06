@@ -79,8 +79,8 @@ Yazlıklar, klasik konut yatırımlarına göre bazı önemli avantajlar sunar:
 
 Kira getirisi yüksek yazlık bölgeler, doğru analiz ve stratejiyle oldukça kârlı yatırımlara dönüşebilir. 2025 itibarıyla özellikle Bodrum, Çeşme, Kaş ve Fethiye gibi bölgelerde yazlık konutlar hem turizm talebi hem de yatırımcı ilgisi açısından öne çıkıyor. Eğer siz de yaz aylarını hem tatil hem kazanç fırsatına dönüştürmek istiyorsanız, bu bölgeler tam size göre olabilir.
 
-## Sık Sorulan Sorular
+## Sıkça Sorulan Sorular
 
-- **Yazlık alırken en çok nelere dikkat edilmeli?** Konum, denize yakınlık, kira potansiyeli, tapu durumu ve belediye izinleri dikkatle incelenmelidir.
-- **Yazlık evler yıl boyunca kiraya verilebilir mi?** Bazı bölgelerde kış sezonu da kiralama fırsatı sunar. Özellikle Fethiye ve Bodrum gibi bölgelerde bu mümkündür.
-- **Airbnb ile mi kiraya vermek daha kârlı?** Evet, özellikle kısa süreli konaklama yapan turistler için daha yüksek gelir elde edilebilir.
+1. **Yazlık alırken en çok nelere dikkat edilmeli?** Konum, denize yakınlık, kira potansiyeli, tapu durumu ve belediye izinleri dikkatle incelenmelidir.
+2. **Yazlık evler yıl boyunca kiraya verilebilir mi?** Bazı bölgelerde kış sezonu da kiralama fırsatı sunar. Özellikle Fethiye ve Bodrum gibi bölgelerde bu mümkündür.
+3. **Airbnb ile mi kiraya vermek daha kârlı?** Evet, özellikle kısa süreli konaklama yapan turistler için daha yüksek gelir elde edilebilir.

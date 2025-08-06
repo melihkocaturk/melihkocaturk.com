@@ -71,6 +71,6 @@ Arsa payı, bir gayrimenkulün görünmeyen ama en değerli bileşenlerinden bir
 
 ## Sıkça Sorulan Sorular
 
-- **Arsa payı düşük bir daire alınır mı?** Alınabilir, ancak özellikle dönüşüm projelerinde daha az hak elde edilir. Bu nedenle fiyat avantajı varsa değerlendirilmelidir.
-- **Arsa payı eşit olmayan dairelerde aidatlar eşit mi olur?** Kat Mülkiyeti Kanunu’na göre giderler arsa payına göre paylaştırılır. Ancak apartman yönetmeliğiyle farklı bir sistem benimsenmiş olabilir.
-- **Tapuda arsa payı kaç m² olduğu yazıyor mu?** Hayır. Tapuda “arsa payı” genellikle pay/payda şeklinde (örneğin 20/500) yazılır. Bu oran, toplam arsanın yüzde kaçına sahip olduğunuzu gösterir.
+1. **Arsa payı düşük bir daire alınır mı?** Alınabilir, ancak özellikle dönüşüm projelerinde daha az hak elde edilir. Bu nedenle fiyat avantajı varsa değerlendirilmelidir.
+2. **Arsa payı eşit olmayan dairelerde aidatlar eşit mi olur?** Kat Mülkiyeti Kanunu’na göre giderler arsa payına göre paylaştırılır. Ancak apartman yönetmeliğiyle farklı bir sistem benimsenmiş olabilir.
+3. **Tapuda arsa payı kaç m² olduğu yazıyor mu?** Hayır. Tapuda “arsa payı” genellikle pay/payda şeklinde (örneğin 20/500) yazılır. Bu oran, toplam arsanın yüzde kaçına sahip olduğunuzu gösterir.

@@ -93,6 +93,6 @@ Siz de taşınmaz alırken tereddüt yaşıyorsanız, danışmanlık hizmetimizd
 
 ## Sıkça Sorulan Sorular
 
-- **Kat irtifakı tapusu ile konut kredisi alınabilir mi?** Bazı bankalar kat irtifaklı tapulara kredi verebilir ancak genelde iskân şartı aranır. Kat mülkiyetli tapular daha kolay kredi almanızı sağlar.
-- **Kat mülkiyeti tapusunu kim çıkarır?** Kat mülkiyeti başvurusunu müteahhit ya da tüm maliklerin ortak kararı ile bina yöneticisi yapabilir.
-- **Tapuda "arsa" yazıyor ama dairede oturuyorum. Bu ne demek?** Bu, binanın hukuken tanınmadığı anlamına gelir. Her an yıkım riski ya da imar cezaları ile karşılaşabilirsiniz.
+1. **Kat irtifakı tapusu ile konut kredisi alınabilir mi?** Bazı bankalar kat irtifaklı tapulara kredi verebilir ancak genelde iskân şartı aranır. Kat mülkiyetli tapular daha kolay kredi almanızı sağlar.
+2. **Kat mülkiyeti tapusunu kim çıkarır?** Kat mülkiyeti başvurusunu müteahhit ya da tüm maliklerin ortak kararı ile bina yöneticisi yapabilir.
+3. **Tapuda "arsa" yazıyor ama dairede oturuyorum. Bu ne demek?** Bu, binanın hukuken tanınmadığı anlamına gelir. Her an yıkım riski ya da imar cezaları ile karşılaşabilirsiniz.

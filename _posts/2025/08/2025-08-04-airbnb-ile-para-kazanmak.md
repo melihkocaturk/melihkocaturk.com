@@ -130,8 +130,8 @@ Airbnb'de puanlama sistemi çok önemlidir. Misafirler:
 
 Airbnb, pasif gelir yaratmak isteyenler için güçlü bir araç olabilir. Ancak bu sistemde sürdürülebilir bir başarı elde etmek için doğru hazırlık, iyi yönetim, kaliteli hizmet ve yasal uyumluluk şart. Kısa vadeli değil, uzun vadeli düşünün. Misafirlerinizin memnuniyeti kazancınızı belirler.
 
-## Sık Sorulan Sorular
+## Sıkça Sorulan Sorular
 
-- **Airbnb ile ne kadar kazanabilirim?** Lokasyona bağlı olarak İstanbul, İzmir, Antalya gibi şehirlerde aylık 20.000 TL ile 100.000 TL arası gelir mümkündür.
-- **Vergi ödemek zorunda mıyım?** Evet. Gelir Vergisi Kanunu gereği beyan zorunludur.
-- **Başka birinin evini Airbnb’ye koyabilir miyim?** Ev sahibiyle yazılı izin alınması gerekir. Aksi halde yasal sorunlarla karşılaşabilirsiniz.
+1. **Airbnb ile ne kadar kazanabilirim?** Lokasyona bağlı olarak İstanbul, İzmir, Antalya gibi şehirlerde aylık 20.000 TL ile 100.000 TL arası gelir mümkündür.
+2. **Vergi ödemek zorunda mıyım?** Evet. Gelir Vergisi Kanunu gereği beyan zorunludur.
+3. **Başka birinin evini Airbnb’ye koyabilir miyim?** Ev sahibiyle yazılı izin alınması gerekir. Aksi halde yasal sorunlarla karşılaşabilirsiniz.

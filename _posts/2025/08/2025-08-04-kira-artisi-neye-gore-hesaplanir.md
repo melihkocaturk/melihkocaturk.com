@@ -2,7 +2,7 @@
 layout: post
 title: "Kira Artışı Neye Göre Hesaplanır?"
 description: "Bu yazımızda, kira artışının nasıl belirlendiğini, hangi yasal dayanaklara göre hesaplandığını ve tarafların hangi haklara sahip olduğunu kapsamlı bir şekilde ele alacağız."
-tags: ["kira", "kira artışı"]
+tags: ["kira"]
 ---
 
 Kira artışı, hem kiracıların hem de ev sahiplerinin düzenli olarak karşı karşıya kaldığı önemli bir konudur. Bu artışlar, yalnızca ekonomik göstergelere değil, aynı zamanda yasal düzenlemelere, sözleşme hükümlerine ve piyasa koşullarına da bağlıdır. Bu yazımızda, kira artışının nasıl belirlendiğini, hangi yasal dayanaklara göre hesaplandığını ve tarafların hangi haklara sahip olduğunu kapsamlı bir şekilde ele alacağız.
