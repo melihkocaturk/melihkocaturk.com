@@ -23,4 +23,6 @@ a { text-underline-offset: 3px; }
 
 .post table th, .post table td { border: 1px solid #dee2e6; padding: 10px 15px; }
 
+.read-time::before { content: "\2022"; padding: 0 0.5em; }
+
 /*# sourceMappingURL=styles.css.map */
