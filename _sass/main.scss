@@ -4,48 +4,66 @@ body {
   font-style: normal;
   line-height: 1.7;
 }
+
 a {
   text-underline-offset: 3px;
 }
+
 .navbar-brand {
   font-size: calc(1vw + 1rem);
   font-weight: 400;
 }
+
 .navbar-toggler {
   border: none;
 }
+
 .navbar-toggler:focus {
   box-shadow: none;
 }
+
 .home {
   max-width: 960px;
+
   & .jumbotron {
     padding-bottom: 10vw;
     padding-top: 10vw;
   }
 }
+
 .get-in-touch {
   margin-bottom: 5vw;
   margin-top: 10vw;
 }
-.post, .page {
+
+.post,
+.page {
   max-width: 720px;
-  & h2, h3, h4, h5, h6 {
+
+  & h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-bottom: 1rem;
     margin-top: 1.5rem;
   }
 }
+
 .post table {
   margin-bottom: 2rem;
   width: 100%;
   text-align: left;
   border-collapse: collapse;
   border: 1px solid #dee2e6;
-  & th, td {
+
+  & th,
+  td {
     border: 1px solid #dee2e6;
     padding: 10px 15px;
   }
 }
+
 .read-time::before {
   content: "\2022";
   padding: 0 0.5em;
