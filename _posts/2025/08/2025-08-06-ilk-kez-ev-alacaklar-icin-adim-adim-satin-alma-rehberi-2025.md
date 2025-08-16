@@ -2,7 +2,6 @@
 layout: post
 title: "İlk Kez Ev Alacaklar İçin Adım Adım Satın Alma Rehberi (2025)"
 description: "Bu rehberde, ilk defa ev alacaklar için tüm süreci adım adım, anlaşılır ve güncel bilgilerle açıklıyoruz."
-tags: []
 ---
 
 Ev sahibi olmak, hayatınızdaki en büyük yatırımlardan biridir. Özellikle ilk kez ev alacaklar için bu süreç hem heyecan verici hem de stresli olabilir. 2025 yılı itibarıyla artan konut fiyatları, değişen kredi şartları ve dijitalleşen emlak piyasası, alım sürecini daha da karmaşık hale getirebiliyor.
