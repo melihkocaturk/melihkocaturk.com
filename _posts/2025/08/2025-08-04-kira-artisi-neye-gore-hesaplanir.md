@@ -17,6 +17,10 @@ Türkiye’de kira artışlarının temelini *6098 sayılı Türk Borçlar Kanun
 
 Yani, yasal artış oranı her ay TÜİK tarafından açıklanan TÜFE 12 aylık ortalama oranına göre şekillenir.
 
+<img src="/images/2025/08/tufe-degisim-oranlari-temmuz-2025.png" alt="TÜFE değişim oranları, Temmuz 2025" class="img-fluid">
+
+*Kaynak*: [https://data.tuik.gov.tr/](https://data.tuik.gov.tr/Bulten/Index?p=Tuketici-Fiyat-Endeksi-Temmuz-2025-54182)
+
 ## TÜFE Nedir ve Kira Artışında Nasıl Kullanılır?
 
 **TÜFE (Tüketici Fiyat Endeksi)**, tüketicilerin satın aldığı mal ve hizmetlerin fiyatlarındaki değişimi ölçen bir endekstir. Kira artışlarında kullanılan TÜFE oranı, *12 aylık ortalama değişim* oranıdır.

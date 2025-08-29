@@ -7,6 +7,10 @@ tags: ["arsa yatırımı", "tarla yatırımı"]
 
 2025 yılı itibarıyla Türkiye’de arsa yatırımı yeniden gündemin en sıcak başlıklarından biri haline geldi. Özellikle büyük şehirlerin çevresindeki bölgelerde yaşanan hızlı gelişim ve altyapı yatırımları, arsa fiyatlarını ciddi biçimde etkiliyor. Aynı zamanda sahibinden arsa ilanları sayısında da dikkat çekici bir artış yaşanıyor. Peki bu artış ne anlama geliyor? Hangi bölgeler öne çıkıyor? *Tarla arsa yatırım trendleri* nereye gidiyor? Bu yazımızda 2025 yılı itibarıyla Türkiye’de arsa yatırımına dair güncel verilerle detaylı bir analiz sunuyoruz.
 
+<img src="/images/2025/08/arsa_getiri_cagr_5y.png" alt="Arsa 5 yıllık ortalama getiri" class="img-fluid">
+
+Yukarıdaki grafikte arsa ve diğer yatırım alternatiflerinin 5 yıllık ortalama getirileri görünüyor.
+
 ## 2025’te Arsa Yatırımı Neden Yeniden Popüler Oldu?
 
 Son yıllarda döviz kurlarındaki artış, konut maliyetlerinin yükselmesi ve merkez bölgelerdeki arsa arzının azalması nedeniyle yatırımcılar rotayı yeniden arsa yatırımına çevirdi. 2025 itibarıyla bu eğilim şu sebeplerle daha da güçlenmiş durumda:

@@ -1,4 +1,198 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="tr"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="tr" /><updated>2025-08-29T00:27:44+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>Emlak danışmanından ipuçları ve stratejiler, arsa yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...</subtitle><entry><title type="html">Türkiye’de Konut Kredisi Kullanım Oranları (2025)</title><link href="http://localhost:4000/turkiyede-konut-kredisi-kullanim-oranlari-2025" rel="alternate" type="text/html" title="Türkiye’de Konut Kredisi Kullanım Oranları (2025)" /><published>2025-08-28T00:00:00+03:00</published><updated>2025-08-28T00:00:00+03:00</updated><id>http://localhost:4000/turkiyede-konut-kredisi-kullanim-oranlari-2025</id><content type="html" xml:base="http://localhost:4000/turkiyede-konut-kredisi-kullanim-oranlari-2025"><![CDATA[<p>2025’te konut finansmanında “kredili satışların payı” (ipotekli konut satışlarının toplam satışlara oranı) yeniden artış eğiliminde. Aşağıda yılın gidişatını, faiz görünümünü ve piyasa oyuncuları için pratik çıkarımları özetledim.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="tr"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="tr" /><updated>2025-08-29T20:53:01+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>Emlak danışmanından ipuçları ve stratejiler, arsa yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...</subtitle><entry><title type="html">Kira Gelir Vergisi Nasıl Hesaplanır?</title><link href="http://localhost:4000/kira-gelir-vergisi-nasil-hesaplanir" rel="alternate" type="text/html" title="Kira Gelir Vergisi Nasıl Hesaplanır?" /><published>2025-08-29T00:00:00+03:00</published><updated>2025-08-29T00:00:00+03:00</updated><id>http://localhost:4000/kira-gelir-vergisi-nasil-hesaplanir</id><content type="html" xml:base="http://localhost:4000/kira-gelir-vergisi-nasil-hesaplanir"><![CDATA[<p>Türkiye’de ev sahipleri, kiraya verdikleri taşınmazlardan elde ettikleri gelir üzerinden vergi ödemekle yükümlüdür. Ancak kira gelir vergisinin nasıl hesaplandığı, hangi istisnaların geçerli olduğu ve beyan sürecinin nasıl işlediği çoğu kişi tarafından tam bilinmez. Bu yazıda, kira gelir vergisinin hesaplanma sürecini adım adım ele alıyoruz.</p>
+
+<h2 id="kira-gelir-vergisi-nedir">Kira Gelir Vergisi Nedir?</h2>
+
+<p>Kira gelir vergisi, gerçek kişilerin sahip oldukları konut veya işyerini kiraya vermeleri sonucunda elde ettikleri gelir üzerinden ödedikleri gelir vergisidir. Bu vergi, Gelir Vergisi Kanunu kapsamında düzenlenir ve yıllık beyanname ile beyan edilir.</p>
+
+<h2 id="hangi-gelirler-vergiye-tabi">Hangi Gelirler Vergiye Tabi?</h2>
+
+<ul>
+  <li><strong>Konut kira geliri</strong>: Ev sahiplerinin kiraya verdikleri daire, villa, yazlık vb. taşınmazlardan elde ettikleri gelir.</li>
+  <li><strong>İşyeri kira geliri</strong>: Dükkan, ofis, mağaza gibi işyeri kiralarından elde edilen gelir.</li>
+  <li><strong>Arsa ve arazi kira geliri</strong>: Arsa veya tarla kiralamalarından elde edilen gelir.</li>
+</ul>
+
+<h2 id="vergiden-muafiyet-ve-i̇stisnalar">Vergiden Muafiyet ve İstisnalar</h2>
+
+<p>2025 yılı için geçerli istisna tutarları:</p>
+
+<ul>
+  <li><strong>Konut kira geliri istisnası</strong>: Yıllık kira geliri toplamı <strong>33.000 TL</strong>’ye kadar olanlar beyanname vermek zorunda değildir.</li>
+  <li><strong>İşyeri kira gelirinde istisna</strong>: İşyerlerinden elde edilen kira gelirleri için istisna uygulanmaz. Ancak işyeri kiralarında <em>stopaj</em> (vergi kesintisi) yapıldığı için çoğu durumda ek vergi çıkmaz.</li>
+</ul>
+
+<p><strong>Not</strong>: Birden fazla konuttan kira geliri elde edenler için toplam gelir dikkate alınır. İstisna sadece bir kez uygulanır.</p>
+
+<h2 id="kira-gelir-vergisi-hesaplama-yöntemleri">Kira Gelir Vergisi Hesaplama Yöntemleri</h2>
+
+<p>Ev sahipleri, vergiye tabi kazançlarını hesaplarken iki yöntemden birini seçebilir:</p>
+
+<p><strong>Götürü Gider Yöntemi</strong></p>
+
+<ul>
+  <li>Kira gelirinden istisna tutarı düşülür.</li>
+  <li>Kalan gelir üzerinden %15 oranında götürü gider indirilir.</li>
+  <li>Geriye kalan tutar vergiye tabi gelir olur.</li>
+</ul>
+
+<p><strong>Örnek</strong>:</p>
+
+<ul>
+  <li>Yıllık konut kira geliri: 120.000 TL</li>
+  <li>İstisna: 33.000 TL</li>
+  <li>Kalan: 87.000 TL</li>
+  <li>Götürü gider (%15): 13.050 TL</li>
+  <li>Vergiye tabi gelir: 73.950 TL</li>
+</ul>
+
+<p><strong>Gerçek Gider Yöntemi</strong></p>
+
+<p>Ev sahibi, kiraya konu taşınmazla ilgili yaptığı masrafları (bakım, onarım, sigorta, kredi faizleri, amortisman vb.) kira gelirinden düşebilir. Bu yöntem, gideri yüksek olan ev sahipleri için avantajlıdır.</p>
+
+<p><strong>Örnek</strong>:</p>
+
+<ul>
+  <li>Yıllık konut kira geliri: 120.000 TL</li>
+  <li>İstisna: 33.000 TL</li>
+  <li>Kalan: 87.000 TL</li>
+  <li>Gerçek gider: 20.000 TL</li>
+  <li>Vergiye tabi gelir: 67.000 TL</li>
+</ul>
+
+<h2 id="vergi-dilimleri-ve-hesaplama-2025">Vergi Dilimleri ve Hesaplama (2025)</h2>
+
+<p>Gelir vergisi, <em>artan oranlı tarifeye göre hesaplanır</em>. 2025 yılı için gelir vergisi dilimleri şu şekildedir:</p>
+
+<ul>
+  <li>0 – 110.000 TL → %15</li>
+  <li>110.000 – 230.000 TL → %20</li>
+  <li>230.000 – 870.000 TL → %27</li>
+  <li>870.000 – 3.000.000 TL → %35</li>
+  <li>3.000.000 TL üzeri → %40</li>
+</ul>
+
+<p><strong>Örnek Hesaplama (Götürü gider yöntemine göre)</strong>:</p>
+
+<ul>
+  <li>Vergiye tabi gelir: 73.950 TL</li>
+  <li>Bu tutar ilk dilimde (110.000 TL altı) olduğundan vergi oranı %15</li>
+  <li>Ödenecek vergi = 73.950 x %15 = <strong>11.092,50</strong> TL</li>
+</ul>
+
+<h2 id="beyanname-süreci-ve-ödeme">Beyanname Süreci ve Ödeme</h2>
+
+<ul>
+  <li>Kira gelirleri, her yıl 1-31 Mart arasında Gelir İdaresi Başkanlığı (GİB) üzerinden elektronik ortamda beyan edilir.</li>
+  <li>Vergi iki taksit halinde ödenir:
+    <ul>
+      <li>1. Taksit: Mart ayında</li>
+      <li>2. Taksit: Temmuz ayında</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="önemli-notlar">Önemli Notlar</h2>
+
+<ul>
+  <li>Kira gelirini eksik beyan edenlere vergi ziyaı cezası uygulanır.</li>
+  <li>Kiraların banka üzerinden ödenmesi zorunludur, elden ödeme kabul edilmez.</li>
+  <li>İşyeri kiralarında kiracının yaptığı stopaj ödemesi, ev sahibinin ödeyeceği vergiden mahsup edilir.</li>
+</ul>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Kira gelir vergisi, doğru yöntem seçilerek ve giderler dikkatlice hesaplanarak önemli ölçüde düşürülebilir. Ev sahiplerinin istisnaları, gider yöntemlerini ve vergi dilimlerini iyi bilmesi gerekir. Ayrıca beyan süresini kaçırmamak ve ödemeleri zamanında yapmak da cezalardan kaçınmak için kritik öneme sahiptir.</p>]]></content><author><name></name></author><category term="kira" /><summary type="html"><![CDATA[Bu yazıda, kira gelir vergisinin hesaplanma sürecini adım adım ele alıyoruz.]]></summary></entry><entry><title type="html">Kira Geliri Beyannamesi Nedir? Kimler Vermek Zorunda?</title><link href="http://localhost:4000/kira-geliri-beyannamesi-nedir-kimler-vermek-zorunda" rel="alternate" type="text/html" title="Kira Geliri Beyannamesi Nedir? Kimler Vermek Zorunda?" /><published>2025-08-29T00:00:00+03:00</published><updated>2025-08-29T00:00:00+03:00</updated><id>http://localhost:4000/kira-geliri-beyannamesi-nedir-kimler-vermek-zorunda</id><content type="html" xml:base="http://localhost:4000/kira-geliri-beyannamesi-nedir-kimler-vermek-zorunda"><![CDATA[<p>Türkiye’de gayrimenkul sahiplerinin en çok dikkat etmesi gereken konulardan biri <strong>kira geliri beyannamesi</strong>dir. Evini, işyerini ya da arsasını kiraya veren herkes belirli şartlar dahilinde elde ettiği gelir için <em>Gelir İdaresi Başkanlığı’na (GİB)</em> beyanname vermek zorundadır. Peki kira geliri beyannamesi nasıl hazırlanır, kimler verir, hangi istisnalar geçerlidir? İşte tüm detaylar…</p>
+
+<h2 id="kira-geliri-beyannamesi-nedir">Kira Geliri Beyannamesi Nedir?</h2>
+
+<p>Kira geliri beyannamesi, gayrimenkullerden elde edilen yıllık <em>kira gelirlerinin vergiye tabi tutulması için beyan edilmesidir</em>. Vergi Usul Kanunu’na göre, gerçek kişiler elde ettikleri kira gelirlerini yıllık olarak beyan eder ve bu gelir üzerinden gelir vergisi öderler.</p>
+
+<p>Beyanname verme süresi genellikle <em>Mart ayının ilk gününden son gününe kadar devam eder</em>.</p>
+
+<h2 id="kimler-kira-geliri-beyannamesi-vermek-zorunda">Kimler Kira Geliri Beyannamesi Vermek Zorunda?</h2>
+
+<ol>
+  <li><strong>Konut Kira Geliri Elde Edenler</strong>
+    <ul>
+      <li>Bir takvim yılı içinde elde edilen kira geliri, yıllık istisna tutarını aşıyorsa beyan edilmek zorundadır.</li>
+      <li>Örneğin 2025 yılı için konut kira geliri istisnası 33.000 TL’dir. Bu tutarın üzerindeki kira gelirleri beyan edilir.</li>
+    </ul>
+  </li>
+  <li><strong>İşyeri Kira Geliri Elde Edenler</strong>
+    <ul>
+      <li>İşyeri kira gelirlerinde istisna uygulanmaz.</li>
+      <li>Ancak işyeri kira gelirinin belirlenen brüt sınırı aşması durumunda beyanname zorunludur.</li>
+      <li>2025 yılı için bu sınır 230.000 TL olarak belirlenmiştir.</li>
+    </ul>
+  </li>
+  <li><strong>Birden Fazla Gayrimenkulden Gelir Elde Edenler</strong>
+    <ul>
+      <li>Tüm kira gelirleri toplanarak istisna ve vergilendirme yapılır.</li>
+    </ul>
+  </li>
+</ol>
+
+<h2 id="kira-geliri-beyannamesi-nasıl-verilir">Kira Geliri Beyannamesi Nasıl Verilir?</h2>
+
+<ul>
+  <li><strong>GİB İnternet Vergi Dairesi Üzerinden</strong>
+    <ul>
+      <li>e-Devlet şifresi veya İnteraktif Vergi Dairesi kullanıcı bilgileri ile giriş yapılır.</li>
+      <li><a href="https://intvrg.gib.gov.tr/hazirbeyan/">Hazır Beyan Sistemi</a> üzerinden kira gelirleri kolayca beyan edilebilir.</li>
+    </ul>
+  </li>
+  <li><strong>Vergi Dairesine Giderek</strong>
+    <ul>
+      <li>İsteyen mükellefler bağlı oldukları vergi dairesine giderek beyannamelerini elden verebilir.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="kira-geliri-beyannamesinde-dikkat-edilmesi-gerekenler">Kira Geliri Beyannamesinde Dikkat Edilmesi Gerekenler</h2>
+
+<ul>
+  <li><strong>Gider Yöntemi Seçimi</strong>
+    <ol>
+      <li><strong>Götürü Gider Yöntemi</strong>: Gelirin %15’i otomatik olarak gider kabul edilir.</li>
+      <li><strong>Gerçek Gider Yöntemi</strong>: Faiz, bakım, onarım, sigorta, emlak vergisi gibi giderler düşülebilir.</li>
+    </ol>
+  </li>
+  <li><strong>Stopaj Durumu</strong>
+    <ul>
+      <li>İşyeri kiralarında, kiracı şirket veya tüzel kişilikse stopaj kesintisi yapılır.</li>
+      <li>Ev kiralarında ise stopaj söz konusu değildir.</li>
+    </ul>
+  </li>
+  <li><strong>İstisna Tutarını Aşmayanlar</strong>
+    <ul>
+      <li>Konut kira gelirleri yıllık istisna tutarını aşmıyorsa beyanname vermek gerekmez.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="beyanname-verilmezse-ne-olur">Beyanname Verilmezse Ne Olur?</h2>
+
+<ul>
+  <li>Beyanname verilmezse <em>Vergi Usul Kanunu’na göre usulsüzlük cezası uygulanır</em>.</li>
+  <li>Ayrıca vergi ziyaı cezası ve gecikme faizi de gündeme gelir.</li>
+</ul>
+
+<h2 id="kira-geliri-vergisi-nasıl-ödenir">Kira Geliri Vergisi Nasıl Ödenir?</h2>
+
+<p>Beyan edilen kira gelirinden hesaplanan vergi iki eşit taksit halinde ödenir:</p>
+
+<ul>
+  <li><strong>İlk taksit</strong>: Mart sonuna kadar</li>
+  <li><strong>İkinci taksit</strong>: Temmuz sonuna kadar</li>
+</ul>
+
+<p>Ödemeler; vergi dairelerinden, bankalardan ya da İnteraktif Vergi Dairesi üzerinden yapılabilir.</p>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Kira geliri beyannamesi, hem ev sahiplerinin hem de işyeri sahiplerinin yerine getirmesi gereken önemli bir yükümlülüktür. Beyannamenin doğru verilmesi, <em>cezalardan korunmak</em> ve <em>yasal süreci sorunsuz yürütmek</em> için büyük önem taşır.</p>
+
+<p>Eğer kira gelirinizin beyan edilip edilmeyeceğinden emin değilseniz, <em>Hazır Beyan Sistemi</em> üzerinden sorgulama yapabilir veya bir mali müşavirden destek alabilirsiniz.</p>]]></content><author><name></name></author><category term="kira" /><summary type="html"><![CDATA[Kira geliri beyannamesi nasıl hazırlanır, kimler verir, hangi istisnalar geçerlidir?]]></summary></entry><entry><title type="html">Türkiye’de Konut Kredisi Kullanım Oranları (2025)</title><link href="http://localhost:4000/turkiyede-konut-kredisi-kullanim-oranlari-2025" rel="alternate" type="text/html" title="Türkiye’de Konut Kredisi Kullanım Oranları (2025)" /><published>2025-08-28T00:00:00+03:00</published><updated>2025-08-28T00:00:00+03:00</updated><id>http://localhost:4000/turkiyede-konut-kredisi-kullanim-oranlari-2025</id><content type="html" xml:base="http://localhost:4000/turkiyede-konut-kredisi-kullanim-oranlari-2025"><![CDATA[<p>2025’te konut finansmanında “kredili satışların payı” (ipotekli konut satışlarının toplam satışlara oranı) yeniden artış eğiliminde. Aşağıda yılın gidişatını, faiz görünümünü ve piyasa oyuncuları için pratik çıkarımları özetledim.</p>
 
 <h2 id="2025te-ipotekli-satışların-payı">2025’te ipotekli satışların payı</h2>
 
@@ -10,7 +204,7 @@
 
 <p>Kısacası 2025’in ilk 7 ayında kredili satışların toplam içindeki payı %12–15 bandında seyretti; geçen yıla göre bariz bir toparlanma var ama pandemi/teşvik dönemlerindeki yüksek payların altında.</p>
 
-<p><img src="/images/2025/ipotekli_satis_oranlari_2025.png" alt="İpotekli satış oranları" class="img-fluid" /></p>
+<p><img src="/images/2025/08/ipotekli_satis_oranlari_2025.png" alt="İpotekli satış oranları" class="img-fluid" /></p>
 
 <p>Yukarıdaki grafikte 2025 yılının Ocak–Temmuz döneminde ipotekli satışların toplam konut satışlarına oranı görünüyor.</p>
 
@@ -610,163 +804,4 @@
 
 <p><em>Konut finansmanı</em>, ev sahibi olmak isteyenlerin en çok başvurduğu yöntemlerden biridir. Doğru planlama yapıldığında hem oturum amaçlı hem de yatırım amaçlı gayrimenkul alımlarında büyük kolaylık sağlar. Ancak her finansman modelinde olduğu gibi detayları iyi analiz etmek, ödeme gücünü doğru hesaplamak ve bankalar arasındaki teklifleri karşılaştırmak oldukça önemlidir.</p>
 
-<p>Unutmayın, ev sahibi olmak uzun vadeli bir yatırım kararıdır ve bu süreçte doğru finansman modeli seçmek sizi hem maddi hem de manevi açıdan daha güvenli bir noktaya taşıyacaktır.</p>]]></content><author><name></name></author><category term="konut finansmanı" /><summary type="html"><![CDATA[Bu yazıda konut finansmanının ne olduğunu, nasıl işlediğini, avantajlarını ve dikkat edilmesi gereken noktaları detaylı bir şekilde ele alacağız.]]></summary></entry><entry><title type="html">Konut Finansmanı Kuruluşları Hangileridir?</title><link href="http://localhost:4000/konut-finansmani-kuruluslari-hangileridir" rel="alternate" type="text/html" title="Konut Finansmanı Kuruluşları Hangileridir?" /><published>2025-08-27T00:00:00+03:00</published><updated>2025-08-27T00:00:00+03:00</updated><id>http://localhost:4000/konut-finansmani-kuruluslari-hangileridir</id><content type="html" xml:base="http://localhost:4000/konut-finansmani-kuruluslari-hangileridir"><![CDATA[<p>Ev sahibi olmak, çoğu insan için hayatın en önemli hedeflerinden biridir. Ancak yüksek konut fiyatları nedeniyle birçok kişi, nakit birikimiyle ev almak yerine konut finansmanı desteğine ihtiyaç duyar. İşte tam da bu noktada <em>konut finansmanı kuruluşları</em> devreye girer. Bu kuruluşlar, tüketicilere uzun vadeli ödeme imkânı sağlayarak konut edinmelerini kolaylaştırır. Peki, konut finansmanı kuruluşları hangileridir ve nasıl çalışırlar?</p>
-
-<h2 id="konut-finansmanı-nedir">Konut Finansmanı Nedir?</h2>
-
-<p>Konut finansmanı, bireylerin ev sahibi olabilmeleri için bankalar veya finans kuruluşları tarafından sunulan kredi sistemidir. Çoğunlukla ipotekli konut kredisi şeklinde bilinir. Ev almak isteyen kişi, seçtiği konutu teminat göstererek kredi kullanır ve bu krediyi uzun vadede taksitler hâlinde öder.</p>
-
-<h2 id="konut-finansmanı-kuruluşları-türleri">Konut Finansmanı Kuruluşları Türleri</h2>
-
-<p>Konut finansmanı hizmeti sunan kuruluşlar, mevzuat gereği belirli kurumlarla sınırlandırılmıştır. Türkiye’de konut finansmanı sağlayan başlıca kuruluşlar şunlardır:</p>
-
-<h3 id="1-bankalar">1. Bankalar</h3>
-
-<p>Konut finansmanının en yaygın ve bilinen kaynağı bankalardır.</p>
-
-<ul>
-  <li><strong>Katılım Bankaları</strong>: Faizsiz finansman modeliyle çalışırlar. Ev almak isteyen müşteriye “konut finansmanı” sağlanır, banka evi satın alır ve müşteriye vadeli olarak satar.</li>
-  <li><strong>Mevduat Bankaları</strong>: Faizli kredi yöntemini kullanarak ipotek karşılığında konut kredisi verirler.</li>
-</ul>
-
-<p>Bankaların sunduğu konut finansmanı ürünleri arasında şunlar bulunur:</p>
-
-<ul>
-  <li>Sabit faizli konut kredisi</li>
-  <li>Değişken faizli konut kredisi</li>
-  <li>Yapılandırılmış konut kredileri</li>
-</ul>
-
-<h3 id="2-finansman-şirketleri">2. Finansman Şirketleri</h3>
-
-<p>Bankacılık Düzenleme ve Denetleme Kurumu (BDDK) tarafından yetkilendirilmiş finansman şirketleri de konut finansmanı sağlayabilir. Bu şirketler, özellikle alternatif finansman modelleriyle tüketicilere farklı seçenekler sunar.</p>
-
-<ul>
-  <li>Bazı finansman şirketleri “tasarruf finansman modeli” (örneğin, tasarruf grupları oluşturarak) ile ev sahibi olmayı mümkün kılar.</li>
-  <li>Bu modelde faizsiz sistemle, belirli bir grup içinde kura veya sıra ile ev alınır.</li>
-</ul>
-
-<h3 id="3-konut-finansmanı-şirketleri-mortgage-şirketleri">3. Konut Finansmanı Şirketleri (Mortgage Şirketleri)</h3>
-
-<p>Türkiye’de sayıları az olmakla birlikte, sadece konut finansmanı üzerine uzmanlaşmış şirketler de bulunmaktadır. Bu şirketler, genellikle uzun vadeli kredi ve finansman çözümleri sunar.</p>
-
-<h3 id="4-tasarruf-finansman-şirketleri">4. Tasarruf Finansman Şirketleri</h3>
-
-<p>Son yıllarda yaygınlaşan bir modeldir. Tasarruf finansman şirketleri, ev almak isteyen kişileri bir araya getirir ve dayanışma esaslı sistemlerle ev sahibi olmalarını sağlar. Bu şirketler BDDK denetimine tabi olup yasal çerçevede hizmet verir.</p>
-
-<ul>
-  <li>Faizsiz sistem olması nedeniyle özellikle faiz hassasiyeti olan kişiler tarafından tercih edilmektedir.</li>
-  <li>Katılımcılar belirli bir süre boyunca ödeme yapar ve kura veya sıra yöntemiyle ev sahibi olur.</li>
-</ul>
-
-<h2 id="türkiyede-öne-çıkan-konut-finansmanı-kuruluşları">Türkiye’de Öne Çıkan Konut Finansmanı Kuruluşları</h2>
-
-<p>Türkiye’de faaliyet gösteren ve tüketicilere konut finansmanı sağlayan başlıca kuruluşlar şunlardır:</p>
-
-<ul>
-  <li>Ziraat Bankası, Halkbank, VakıfBank gibi kamu bankaları</li>
-  <li>Garanti BBVA, Akbank, Yapı Kredi, İş Bankası, QNB Finansbank, DenizBank gibi özel bankalar</li>
-  <li>Albaraka Türk, Kuveyt Türk, Türkiye Finans, Emlak Katılım gibi katılım bankaları</li>
-  <li>Eminevim, Fuzulev gibi tasarruf finansman şirketleri</li>
-</ul>
-
-<h2 id="hangi-kuruluş-seçilmelidir">Hangi Kuruluş Seçilmelidir?</h2>
-
-<p>Konut finansmanı almak isteyenlerin dikkat etmesi gereken noktalar:</p>
-
-<ul>
-  <li>Faiz/kar payı oranları</li>
-  <li>Vade süresi</li>
-  <li>Dosya masrafları ve ek maliyetler</li>
-  <li>Esnek ödeme planı imkânı</li>
-  <li>Güvenilirlik ve yasal denetim</li>
-</ul>
-
-<p>Örneğin; uzun vadede ödeyebileceğiniz sabit taksitler istiyorsanız kamu bankaları genellikle uygun faiz oranları sunar. Faizsiz yöntem arıyorsanız katılım bankaları veya tasarruf finansman şirketleri daha doğru bir seçenek olabilir.</p>
-
-<h2 id="sonuç">Sonuç</h2>
-
-<p>Konut finansmanı, ev sahibi olmak isteyenler için büyük bir kolaylık sağlar. Bankalar, finansman şirketleri ve tasarruf finansman kuruluşları bu süreçte önemli rol oynar. Hangi kuruluşun tercih edileceği ise tamamen kişinin ödeme gücüne, faiz hassasiyetine ve uzun vadeli planlarına bağlıdır.</p>]]></content><author><name></name></author><category term="konut finansmanı" /><summary type="html"><![CDATA[Konut finansmanı kuruluşları, tüketicilere uzun vadeli ödeme imkânı sağlayarak konut edinmelerini kolaylaştırır.]]></summary></entry><entry><title type="html">Mortgage ve Konut Kredisi Arasındaki Farklar Nelerdir?</title><link href="http://localhost:4000/mortgage-ve-konut-kredisi-arasindaki-farklar-nelerdir" rel="alternate" type="text/html" title="Mortgage ve Konut Kredisi Arasındaki Farklar Nelerdir?" /><published>2025-08-27T00:00:00+03:00</published><updated>2025-08-27T00:00:00+03:00</updated><id>http://localhost:4000/mortgage-ve-konut-kredisi-arasindaki-farklar-nelerdir</id><content type="html" xml:base="http://localhost:4000/mortgage-ve-konut-kredisi-arasindaki-farklar-nelerdir"><![CDATA[<p>Ev sahibi olma hayali kuranların en çok karşılaştığı kavramlardan ikisi mortgage ve konut kredisidir. Çoğu zaman birbirine karıştırılan bu iki finansman yöntemi aslında benzer yanlar taşısa da önemli farklara sahiptir. Bu yazıda, mortgage ve konut kredisi arasındaki temel farklılıkları, avantajlarını ve hangi durumda hangisinin tercih edilebileceğini ele alacağız.</p>
-
-<h2 id="konut-kredisi-nedir">Konut Kredisi Nedir?</h2>
-
-<p>Konut kredisi, bankaların ya da konut finansmanı kuruluşlarının, ev almak isteyen kişilere verdikleri klasik kredi türüdür.</p>
-
-<ul>
-  <li><strong>Vade</strong>: Türkiye’de konut kredilerinde genellikle 120 aya (10 yıl) kadar vade imkânı sunulur.</li>
-  <li><strong>Faiz Oranları</strong>: Kredi çekildiği tarihte belirlenen faiz oranı, çoğu zaman sabit kalır.</li>
-  <li><strong>Teminat</strong>: Alınacak ev, bankaya ipotek edilir. Borç bittiğinde ipotek kaldırılır.</li>
-  <li><strong>Kullanım</strong>: Sadece satın alınacak konut için kullanılabilir.</li>
-</ul>
-
-<h2 id="mortgage-nedir">Mortgage Nedir?</h2>
-
-<p>Mortgage kelimesi İngilizce kökenli olup “ipotekli konut kredisi” anlamına gelir. Türkiye’de “mortgage sistemi” 2007 yılında yürürlüğe giren Konut Finansmanı Sistemi ile yasal olarak uygulanmaya başlanmıştır.</p>
-
-<ul>
-  <li><strong>Vade</strong>: Mortgage kredilerinde vade süresi 20-30 yıla kadar çıkabilir.</li>
-  <li><strong>Faiz Yapısı</strong>: Sabit veya değişken faiz seçenekleri sunulabilir.</li>
-  <li><strong>Teminat</strong>: Konut, kredi süresince ipotek altında olur.</li>
-  <li><strong>Esneklik</strong>: Sadece konut alımı değil, refinansman (eski krediyi daha avantajlı şartlarla yenileme) veya evin tadilat masrafları için de kullanılabilir.</li>
-</ul>
-
-<h2 id="mortgage-ve-konut-kredisi-arasındaki-temel-farklar">Mortgage ve Konut Kredisi Arasındaki Temel Farklar</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Özellik</th>
-      <th>Konut Kredisi</th>
-      <th>Mortgage</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Vade Süresi</td>
-      <td>En fazla 10 yıl</td>
-      <td>20-30 yıla kadar</td>
-    </tr>
-    <tr>
-      <td>Faiz Türü</td>
-      <td>Genellikle sabit</td>
-      <td>Sabit veya değişken</td>
-    </tr>
-    <tr>
-      <td>Kapsam</td>
-      <td>Sadece konut alımı</td>
-      <td>Konut alımı, refinansman, tadilat vb.</td>
-    </tr>
-    <tr>
-      <td>Yasal Sistem</td>
-      <td>Banka kredisi mantığına dayanır</td>
-      <td>Konut Finansmanı Sistemi’nin bir parçasıdır</td>
-    </tr>
-    <tr>
-      <td>Esneklik</td>
-      <td>Daha sınırlı</td>
-      <td>Daha esnek ve uzun vadeli</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="hangi-durumda-hangisi-tercih-edilmeli">Hangi Durumda Hangisi Tercih Edilmeli?</h2>
-
-<ul>
-  <li><em>Kısa vadede borcunu kapatmak isteyenler için</em>: Konut kredisi daha uygundur.</li>
-  <li><em>Uzun vadeli ödeme planı arayanlar için</em>: Mortgage daha avantajlıdır.</li>
-  <li><em>Konut dışında farklı finansman ihtiyacı olanlar için</em>: Mortgage esnek yapısıyla tercih sebebi olabilir.</li>
-</ul>
-
-<h2 id="sonuç">Sonuç</h2>
-
-<p>Mortgage ve konut kredisi, ev sahibi olmak isteyenler için önemli finansman araçlarıdır. Aralarındaki farkları bilmek, hangi seçeneğin sizin için daha avantajlı olacağını belirlemede kritik rol oynar. Eğer kısa vadede borcunuzu ödemek istiyorsanız konut kredisi, uzun vadeli ve esnek ödeme planları arıyorsanız mortgage sizin için daha uygun bir seçenek olabilir.</p>
-
-<h2 id="sıkça-sorulan-sorular">Sıkça Sorulan Sorular</h2>
-
-<ol>
-  <li><strong>Mortgage faiz oranları nasıl belirlenir?</strong> Mortgage faiz oranları, bankaların kendi politikaları, Merkez Bankası kararları ve piyasa koşullarına göre belirlenir. Sabit faizli mortgage’ta faiz değişmezken, değişken faizli mortgage’ta oranlar piyasa koşullarına göre güncellenebilir.</li>
-  <li><strong>Konut kredisi erken kapatılır mı?</strong> Evet, konut kredisi erken kapatılabilir. Ancak bankalar erken ödeme durumunda “erken ödeme tazminatı” talep edebilir. Bu oran genellikle kalan anaparanın %1-2’si civarındadır.</li>
-  <li><strong>Mortgage ile konut kredisi aynı şey midir?</strong> Hayır. Konut kredisi, yalnızca ev almak için kullanılan kısa/orta vadeli bir kredidir. Mortgage ise daha uzun vadeli, esnek ve farklı finansman ihtiyaçlarını da kapsayan bir sistemdir.</li>
-  <li><strong>Türkiye’de mortgage en fazla kaç yıl vadeyle alınabilir?</strong> Türkiye’de mortgage kredilerinde vade genellikle 240 ay (20 yıl) ile sınırlıdır. Ancak bazı ülkelerde bu süre 30 yıla kadar çıkabilir.</li>
-  <li><strong>Mortgage sadece sıfır konut için mi geçerlidir?</strong> Hayır. Mortgage hem sıfır hem de ikinci el konutlar için kullanılabilir. Ayrıca refinansman ve konutun tadilatı için de mortgage kredisi çekilebilir.</li>
-</ol>]]></content><author><name></name></author><category term="konut finansmanı" /><summary type="html"><![CDATA[Bu yazıda, mortgage ve konut kredisi arasındaki temel farklılıkları, avantajlarını ve hangi durumda hangisinin tercih edilebileceğini ele alacağız.]]></summary></entry></feed>
+<p>Unutmayın, ev sahibi olmak uzun vadeli bir yatırım kararıdır ve bu süreçte doğru finansman modeli seçmek sizi hem maddi hem de manevi açıdan daha güvenli bir noktaya taşıyacaktır.</p>]]></content><author><name></name></author><category term="konut finansmanı" /><summary type="html"><![CDATA[Bu yazıda konut finansmanının ne olduğunu, nasıl işlediğini, avantajlarını ve dikkat edilmesi gereken noktaları detaylı bir şekilde ele alacağız.]]></summary></entry></feed>

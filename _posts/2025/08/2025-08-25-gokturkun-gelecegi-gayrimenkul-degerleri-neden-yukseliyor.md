@@ -7,6 +7,10 @@ tags: ["göktürk", "gayrimenkul yatırımı"]
 
 İstanbul’un hızla gelişen bölgelerinden biri olan Göktürk, son yıllarda gayrimenkul yatırımcılarının ve ailelerin en çok tercih ettiği lokasyonlardan biri haline geldi. Doğa ile iç içe yaşamı, ulaşım kolaylıkları ve *modern konut projeleri* sayesinde bölgedeki gayrimenkul değerleri her geçen gün yükseliyor. Peki, Göktürk’te konut fiyatları neden bu kadar artıyor?
 
+<img src="/images/2025/08/gokturk_konut_fiyatlari_2020_2025.png" alt="Göktürk Konut Fiyat Endeksi" class="img-fluid">
+
+Yukarıdaki grafikte 2020-2025 yılları arasındaki Göktürk konut fiyat endeksi görünüyor.
+
 ## 1. Konum ve Ulaşım Avantajı
 
 Göktürk, *İstanbul Havalimanı*’na yakınlığı ile yatırımcıların ilgisini çekiyor. Havalimanının açılmasıyla birlikte bölge, iş dünyası için stratejik bir merkez haline geldi. Ayrıca *Kuzey Marmara Otoyolu* ve yapımı devam eden **metro hattı**, Göktürk’ü şehir merkezine daha da bağlıyor.
