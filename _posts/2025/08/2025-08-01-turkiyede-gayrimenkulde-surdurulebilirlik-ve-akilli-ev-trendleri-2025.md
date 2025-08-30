@@ -20,6 +20,13 @@ gibi unsurlar, yeni nesil konutların temel özellikleri hâline geldi.
 
 Ayrıca Çevre, Şehircilik ve İklim Değişikliği Bakanlığı'nın yayınladığı *Enerji Kimlik Belgesi (EKB)* zorunluluğu da bu dönüşümü hızlandırıyor. 2025 itibarıyla yeni yapılan konutların %70’inden fazlası A veya B enerji sınıfına sahip.
 
+Türkiye’de EKB sınıflarını gösteren görsel dağılım grafiği:
+
+- A yeşil ve en verimli,
+- G koyu kırmızı ve en düşük verimli sınıfı temsil ediyor.
+
+<img src="/images/2025/08/ekb_siniflari.png" alt="Türkiye’de EKB sınıfları" class="img-fluid">
+
 ## Akıllı Ev Sistemleriyle Gelen Konfor ve Güvenlik
 
 Akıllı ev teknolojileri, 2025’te artık lüks değil, standart bir beklenti hâline geldi. Özellikle büyük konut projeleri, *yapay zekâ destekli otomasyon sistemleri* ile fark yaratıyor. İşte öne çıkan bazı akıllı ev sistemleri:

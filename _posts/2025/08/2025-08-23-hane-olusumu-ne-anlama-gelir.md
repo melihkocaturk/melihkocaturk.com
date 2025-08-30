@@ -12,6 +12,14 @@ Hane oluşumu, belirli bir dönemde *yeni hanelerin ortaya çıkması sürecini*
 
 Bir hane, tek başına yaşayan bir birey olabileceği gibi; aile, ev arkadaşı ya da birlikte yaşayan farklı kişilerden de oluşabilir. Dolayısıyla hane oluşumu, sadece evliliklerle değil, boşanmalar, göçler veya bireylerin bağımsız yaşam tercihiyle de yakından ilişkilidir.
 
+## Türkiye’de Hanehalkı Büyüklüğünün Son 5 Yıldaki Değişimi
+
+Türkiye’de hanehalkı yapısı son yıllarda önemli bir dönüşüm geçiriyor. TÜİK verilerine göre 2020 yılında 3,30 kişi olan ortalama hanehalkı büyüklüğü, her yıl kademeli olarak azalarak 2024’te 3,11 kişi seviyesine geriledi. Bu düşüş, özellikle kentleşme, bireyselleşme eğilimleri ve gençlerin daha küçük hanelerde yaşama tercihleri ile yakından ilişkili.
+
+<img src="/images/2025/08/tuik_ortalama_hanehalki_buyuklugu_2020_2024.png" alt="Tüik ortalama hane halkı büyüklüğü (2020-2024)" class="img-fluid">
+
+Azalan hanehalkı büyüklüğü, sosyal ve ekonomik açıdan da çeşitli sonuçlar doğuruyor. Daha küçük haneler; konut talebinden tüketim alışkanlıklarına, sosyal politikaların şekillenmesinden yerel yönetim hizmetlerine kadar pek çok alanı etkiliyor. Önümüzdeki yıllarda bu trendin devam etmesi bekleniyor ve bu da emlak piyasası, aile yapısı ve toplum dinamikleri açısından önemli ipuçları veriyor.
+
 ## Hane Oluşumunun Nedenleri
 
 Hane oluşumunu tetikleyen pek çok sosyal ve ekonomik faktör vardır:
