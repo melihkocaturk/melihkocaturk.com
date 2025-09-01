@@ -35,6 +35,14 @@ tags: ["arsa yatırımı", "konut yatırımı"]
 - **Bakım ve Yönetim Masrafları**: Aidat, tadilat, bakım gibi ek masraflar yatırım geri dönüşünü etkileyebilir.
 - **Vergilendirme**: Kira gelirinden dolayı gelir vergisi beyanı gerekir.
 
+## Son 5 Yılda Hangisi Daha Çok Kazandırdı
+
+Son beş yılın verilerine bakıldığında, arsa yatırımlarının konuta kıyasla daha yüksek getiri sağladığı açıkça görülüyor. Özellikle 2020 sonrası dönemde artan talep, gelişen altyapı projeleri ve şehirlerin genişleme trendi, arsaların değer kazanmasında belirleyici rol oynamış durumda. Konut yatırımları ise istikrarlı bir gelir sunmasına rağmen, aynı dönemde arsa kadar hızlı bir yükseliş göstermemiştir.
+
+<img src="/images/2025/06/arsa_konut_getiri_2020_2024.png" alt="Son 5 yılda arsa ve konutun getirisi ne oldu?" class="img-fluid">
+
+Bu karşılaştırma yatırımcıya önemli bir mesaj veriyor: Konut, kira geliri ve düşük risk avantajı ile daha güvenli bir liman sunarken; arsa, uzun vadede yüksek getiri hedefleyenler için öne çıkıyor. Yatırım tercihi yapılırken, hem risk profili hem de hedeflenen kazanç düzeyi göz önünde bulundurulmalıdır.
+
 ## 2025 Yılında Ekonomik ve Politik Gelişmelerin Etkisi
 
 - **Enflasyon ve Faiz Oranları**: 2025 yılında yüksek enflasyon beklentileri, özellikle kira geliri sağlayan konut yatırımlarını cazip hale getiriyor.

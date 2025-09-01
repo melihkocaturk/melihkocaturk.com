@@ -14,12 +14,15 @@ Her iki seçeneğin de kendine has avantajları, dezavantajları ve riskleri var
 Yeni yapılarda, özellikle 2018 sonrası inşa edilen projelerde, Türkiye Bina Deprem Yönetmeliği esas alınarak tasarım yapılır. Bu da yapısal güvenlik anlamında önemli bir avantaj sağlar.
 
 ### Isı ve Ses Yalıtımı
+
 Yeni binalar, TS 825 standardına göre daha yüksek yalıtım değerlerine sahiptir. Bu sayede hem ısınma giderlerinden tasarruf edilir hem de dışarıdan gelen sesler minimuma indirilir.
 
 ### Estetik ve Fonksiyonel Tasarım
+
 Yeni projelerde açık mutfak, ebeveyn banyosu, yerden ısıtma, akıllı ev sistemleri gibi modern detaylar sıkça yer alır. Ayrıca bina içi sosyal donatılar (spor salonu, çocuk parkı, otopark, güvenlik) da yaşam kalitesini artırır.
 
 ### Yüksek Kredi Uygunluğu
+
 Bankalar genellikle yeni binalara daha kolay konut kredisi verir. Ekspertiz değeri yüksek çıktığı için peşinat oranı da daha düşük olabilir.
 
 ### Dezavantajlar:
@@ -93,14 +96,14 @@ Bu iki seçenek arasında seçim yaparken konum, yaşam tarzı ve bütçe iyi de
 
 ## Sonuç: Yeni mi Eski mi?
 
-### Yeni Yapı Tercih Etmelisiniz Eğer:
+**Yeni Yapı Tercih Etmelisiniz Eğer**:
 
 - Konfor, güvenlik ve teknoloji sizin için öncelikliyse
 - Tadilatla uğraşmak istemiyorsanız
 - Uzun vadeli yatırım düşünüyorsanız
 - Ulaşım imkanları gelişmekte olan bölgelerde yaşamayı sorun etmiyorsanız
 
-### Eski Bina Tercih Etmelisiniz Eğer:
+**Eski Bina Tercih Etmelisiniz Eğer**:
 
 - Merkezi lokasyonda yaşamak istiyorsanız
 - Geniş ve ferah bir daire arıyorsanız

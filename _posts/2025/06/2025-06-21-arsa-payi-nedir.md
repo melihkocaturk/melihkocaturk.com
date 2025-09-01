@@ -31,13 +31,9 @@ Arsa payları, proje onayı ve tapu müdürlüğüne tescil sırasında belirlen
 Arsa payı, sadece sayısal bir ifade değildir. Birçok konuda doğrudan *hak sahibi olup olmadığınızı ve ne kadar hakka sahip olduğunuzu* belirler. İşte bazı kritik başlıklar:
 
 1. **Yeniden İnşa (Kentsel Dönüşüm) Süreçleri**: Bir bina kentsel dönüşüme girdiğinde veya yıkılıp yeniden yapılmak istendiğinde, arsa üzerindeki hak sahipliği arsa payına göre belirlenir. Örneğin; binanın yıkılıp yeniden yapılması kararlaştırıldığında, yeni yapılacak binada kim ne kadar daire alacak ya da ne kadar katılım sağlayacak sorusu arsa payına göre hesaplanır.
-
 2. **Kat Mülkiyeti ve Ortak Giderler**: Kat mülkiyetine geçilmiş bir yapıda, apartman aidatları, bakım ve onarım masrafları gibi ortak giderlerin paylaşımı genellikle arsa payı oranında yapılır.
-
 3. **Ortak Alan Kullanımı ve Satışları**: Apartmanlarda yer alan otopark, depo, bahçe gibi ortak alanların yönetimi ve satışı söz konusu olduğunda, karar alma sürecinde maliklerin arsa payı büyüklüklerine göre oy hakkı bulunur.
-
 4. **Vergilendirme ve Mülkiyet Hakkı**: Tapuda yer alan arsa payı, mülkiyet hakkınızı doğrudan etkiler. Bir bağımsız bölümün arsa payı ne kadar fazlaysa, o daire sahibinin arsa üzerindeki payı da o kadar büyüktür. Bu durum veraset, vergi hesaplaması veya istimlak durumlarında da önem kazanır.
-
 5. **Arsa Payı ile Kat Alanı Aynı Şey midir?** Hayır. Bu en yaygın yanlış anlamalardan biridir. Bir dairenin brüt veya net metrekaresi, fiziksel kullanım alanını ifade eder. Arsa payı ise o dairenin bağlı bulunduğu arsa üzerindeki soyut, mülkiyet hakkını gösterir. 100 m²’lik iki daire, farklı konum ve değerlerde olduğu için farklı arsa paylarına sahip olabilir.
 
 ## Arsa Payı Düşük Olursa Ne Olur?

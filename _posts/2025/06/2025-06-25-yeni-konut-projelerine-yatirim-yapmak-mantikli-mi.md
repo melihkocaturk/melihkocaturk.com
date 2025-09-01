@@ -10,19 +10,14 @@ Konut piyasası, yatırımcıların her dönem radarında olan bir alan. Özelli
 ## Yeni Konut Projelerine Yatırımın Avantajları
 
 1. **Erken Dönem Fiyat Avantajı**: Yeni bir projeye lansman döneminde yatırım yapmak, genellikle daha düşük metrekare fiyatlarından yararlanmak anlamına gelir. İnşaat ilerledikçe ve proje tamamlandıkça fiyatlar kademeli olarak artar. Bu da yatırımcının kısa sürede değer kazanımı yaşamasını sağlar.
-
 2. **Esnek Ödeme Seçenekleri**: Projeler genellikle farklı bütçelere hitap eden vade seçenekleri, düşük peşinatlar veya faizsiz taksit imkanları sunar. Bu da yatırımcıya nakit akışını yönetme kolaylığı sağlar.
-
 3. **Modern Donatılar ve Teknolojik Altyapı**: Yeni projelerde genellikle akıllı ev sistemleri, enerji verimliliği sağlayan çözümler, sosyal donatılar (havuz, spor salonu, çocuk parkı, vs.) gibi çağdaş yaşam ihtiyaçlarını karşılayan özellikler bulunur. Bu da kiralama ve satışta ciddi avantaj sağlar.
-
 4. **Kiralama Potansiyeli**: Yeni ve modern projeler, kiracılar tarafından daha çok tercih edilir. Bu da daha yüksek kira getirisi anlamına gelir.
 
 ## Dikkat Edilmesi Gereken Riskler
 
 1. **Tamamlanma Riski**: Henüz inşaat aşamasındaki projelerde, geliştirici firmanın projeyi tamamlamama riski vardır. Bu nedenle yatırımcı, firmanın geçmiş projelerine ve mali gücüne mutlaka bakmalıdır.
-
 2. **Lokasyon Yanılgısı**: Bazı projeler gelişmekte olan bölgelerde yer alır. Ancak her gelişmekte olan bölge gelecekte değerlenmeyebilir. Altyapı yatırımları, ulaşım olanakları ve çevre düzenlemeleri dikkatle incelenmelidir.
-
 3. **Beklenen Değer Artışının Gerçekleşmemesi**: Bazı projeler, bölgenin ortalamasının çok üzerinde fiyatlandırılabilir. Bu durumda kısa vadede beklenen prim gerçekleşmeyebilir. Dolayısıyla piyasa analizleriyle karşılaştırma yapmak şarttır.
 
 ## Yatırım Kararı Verirken Nelere Dikkat Edilmeli?

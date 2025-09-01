@@ -53,10 +53,11 @@ Sonrasında formül şu hale gelir:
 
 ## Türkiye'de Ortalama Geri Dönüş Süresi
 
-Türkiye genelinde konutlarda geri dönüş süresi ortalama 18-22 yıl arasında değişmektedir. Ancak bu süre;
+Son beş yılda Türkiye’de konut yatırımında geri dönüş sürelerinde dikkat çekici bir değişim yaşandı. 2021 ve 2022 yıllarında yatırımın geri dönüşü ortalama 20–22 yıl gibi uzun vadeli bir perspektif gerektirirken, 2023 itibarıyla bu süre yeniden 20 yıl seviyesine geriledi. Ancak asıl kırılma 2024 ve 2025 yıllarında ortaya çıktı; kira fiyatlarındaki hızlı artış, konut değerlenmesi ve yüksek talep sayesinde amortisman süreleri 14 yıla, ardından 13 yıla kadar düştü. Bu durum, yatırımcı açısından konutun daha kısa vadede kendini finanse edebildiğini göstermesi açısından önemli.
 
-- İstanbul gibi büyükşehirlerde semte göre 15-25 yıl arasında,
-- Yeni gelişen bölgelerde ise 10-15 yıla kadar düşebilmektedir.
+<img src="/images/2025/06/konut_yatirimi_geri_donus_suresi.png" alt="Türkiye’de konut yatırımında ortalama geri dönüş (amortisman) süresi" class="img-fluid">
+
+Konut yatırımında geri dönüş süresinin kısalması, piyasaya olan ilgiyi artıran bir faktör haline geldi. Özellikle büyükşehirlerde kira fiyatlarının yükselmesi, yatırımcıların satın aldığı gayrimenkulün daha hızlı bir şekilde getiri sağlamasını mümkün kıldı. Buna rağmen, bölgesel farklılıklar halen çok belirleyici; bazı şehirlerde amortisman süreleri ulusal ortalamanın altında gerçekleşirken, kimi bölgelerde daha uzun süreler gözlemleniyor. Genel tablo ise, Türkiye’de konut yatırımının son yıllarda cazibesini artırdığı yönünde.
 
 ## Kısa Sürede Geri Dönüş Sağlayan Yatırımlar
 

@@ -63,6 +63,14 @@ Ancak bu oranlar, konutun bulunduğu bölgeye, konumuna, kira artış potansiyel
   - Üniversite öğrencilerinin yoğun olduğu bölgede yüksek kira talebi
   - Dönüşüm projeleri ile değer artışı bekleniyor
 
+## Son 10 Yılda Kira Çarpanı Nasıl Değişti?
+
+Grafikte görüldüğü üzere, kira çarpanı son 10 yılda düzenli bir artış göstermiştir. 2015 yılında ortalama 180 ay civarında olan kira çarpanı, 2024’e gelindiğinde 340 ay seviyelerine ulaşmıştır. Bu artışın temel sebepleri arasında konut fiyatlarının kira gelirine kıyasla daha hızlı yükselmesi ve özellikle büyük şehirlerde yatırım geri dönüş süresinin uzaması yer almaktadır.
+
+<img src="/images/2025/06/son_10_yilda_kira_carpani.png" alt="Son 10 yılda kira çarpanı nasıl değişti?" class="img-fluid">
+
+Bu tablo, gayrimenkul yatırımcıları için önemli bir uyarı niteliğindedir. Geçmişte daha kısa sürede kendini amorti eden gayrimenkuller, günümüzde çok daha uzun vadeli yatırımlar haline gelmiştir. Dolayısıyla, yatırım kararı verirken yalnızca kira çarpanını değil, bölgesel kira artış potansiyelini, ekonomik dalgalanmaları ve alternatif yatırım araçlarını da dikkate almak gerekmektedir.
+
 ## Kira Çarpanı Tek Başına Yeterli mi?
 
 Hayır. Kira çarpanı, yatırım kararında önemli bir araç olsa da tek başına yeterli değildir. Dikkat edilmesi gereken diğer unsurlar şunlardır:
@@ -75,6 +83,6 @@ Hayır. Kira çarpanı, yatırım kararında önemli bir araç olsa da tek baş�
 
 ## Sonuç
 
-**Kira çarpanı**, yatırımın ni hesaplamak için en pratik araçlardan biridir. Özellikle yatırım amaçlı gayrimenkul satın alırken bu çarpanın düşük olduğu bölgeler tercih edilmelidir. Ancak unutulmamalıdır ki düşük kira çarpanı, her zaman yüksek kazanç anlamına gelmez. Bölgenin gelecekteki potansiyeli, kira artış trendleri ve konutun özellikleri de detaylı şekilde analiz edilmelidir.
+**Kira çarpanı**, yatırımın geri dönüşünü hesaplamak için en pratik araçlardan biridir. Özellikle yatırım amaçlı gayrimenkul satın alırken bu çarpanın düşük olduğu bölgeler tercih edilmelidir. Ancak unutulmamalıdır ki düşük kira çarpanı, her zaman yüksek kazanç anlamına gelmez. Bölgenin gelecekteki potansiyeli, kira artış trendleri ve konutun özellikleri de detaylı şekilde analiz edilmelidir.
 
 Eğer siz de yatırım için en doğru bölgeyi seçmek istiyorsanız, kira çarpanını analiz ederek başlayabilir, bulunduğunuz şehirde bu çarpanı karşılaştırarak daha akılcı yatırımlar yapabilirsiniz.

@@ -14,25 +14,17 @@ Kentsel dönüşüm, riskli yapıların yıkılıp yerine modern, güvenli, çev
 ## Kentsel Dönüşümde Ev Sahibi Olmanın Avantajları
 
 1. **Depreme Dayanıklı Yeni Konutlar**: Kentsel dönüşüm süreciyle birlikte eski ve riskli yapılar yıkılarak, yeni yönetmeliklere uygun olarak inşa edilen depreme dayanıklı binalar yapılır. Bu da can ve mal güvenliğini önemli ölçüde artırır.
-
 2. **Mülkün Değer Kazanması**: Yeni yapılan binalar modern yaşam alanları sunar ve bu da mülkün değerini artırır. Yenilenmiş bir daire, hem satışta hem de kirada daha yüksek getiriler sağlayabilir.
-
 3. **Modern Yaşam Alanlarına Geçiş**: Yalıtım, asansör, otopark, güvenlik sistemleri gibi yeni nesil özelliklerle donatılan binalar, daha konforlu bir yaşam sunar. Eski apartmanlardaki teknik sorunlar da bu sayede ortadan kalkar.
-
 4. **Vergi ve Harç Muafiyetleri**: Kentsel dönüşüm kapsamındaki işlemler için devlet, çeşitli vergi ve harç muafiyetleri sağlamaktadır. Tapu harcı, noter ücreti ve KDV gibi birçok masrafta indirim veya muafiyet uygulanabilir.
-
 5. **Finansal Destek ve Kira Yardımı**: Ev sahipleri için Çevre, Şehircilik ve İklim Değişikliği Bakanlığı tarafından kira yardımı, taşınma desteği ve faiz destekli kredi gibi teşvikler sunulmaktadır.
 
 ## Kentsel Dönüşümde Karşılaşılabilecek Riskler
 
 1. **Süreçte Yaşanabilecek Gecikmeler**: Müteahhit firma, belediye onayları, teknik sorunlar gibi nedenlerle proje uzayabilir. Bu da ev sahibinin uzun süre kira ödemesi ya da belirsizlik yaşaması anlamına gelir.
-
 2. **Müteahhit Seçiminde Hatalar**: Deneyimsiz ya da güvenilir olmayan bir müteahhit ile anlaşmak; inşaat kalitesi, maliyetler ve sözleşme hükümleri açısından büyük riskler yaratabilir. Bu da dava süreçlerine yol açabilir.
-
 3. **Anlaşmazlıklar ve Ortak Karar Alma Güçlüğü**: Apartmanda tüm kat maliklerinin uzlaşması gerekebilir. Ancak bazı maliklerin itirazları veya farklı beklentileri süreci tıkayabilir.
-
 4. **Geçici Konaklama Sorunu**: Ev yıkıldıktan sonra yeni bina tamamlanana kadar kira yardımı yapılsa da, yaşanacak yeni bir yer bulmak, taşınmak gibi işlemler stresli olabilir.
-
 5. **Metrekare ve Kat Kaybı Riski**: Yeni imar planına göre, eskiye kıyasla daha az metrekareye sahip bir daire ya da daha alt bir katta yer alan bir konut alma durumu olabilir.
 
 ## Riskleri Azaltmak İçin Nelere Dikkat Edilmeli?
