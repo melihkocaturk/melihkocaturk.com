@@ -2,7 +2,7 @@
 layout: post
 title: "Arsa Payı Nedir? Neden Önemlidir?"
 description: "Bu yazıda, arsa payının ne anlama geldiğini, nasıl belirlendiğini, hukuki boyutlarını ve alım-satım süreçlerindeki önemini detaylı şekilde ele alacağız."
-tags: ["arsa payı", "kentsel dönüşüm"]
+tags: ["arsa payı"]
 ---
 
 Gayrimenkul alım satımlarında sıkça duyduğumuz kavramlardan biri **arsa payı**'dır. Ancak bu terim, özellikle ilk defa ev ya da iş yeri alacak olan kişiler için çoğu zaman kafa karıştırıcı olabilir. Arsa payı, sadece tapuda yazan bir değer değil; aynı zamanda mülkiyet hakkı, kat irtifakı ve yeniden inşa gibi birçok önemli konuda doğrudan etkili olan temel bir unsurdur.
