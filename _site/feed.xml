@@ -1,72 +1,150 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="tr"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="tr" /><updated>2025-09-13T22:49:47+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>Emlak danışmanından ipuçları ve stratejiler, arsa yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...</subtitle><entry><title type="html">Proje Ruhsatı Nedir? İnşaat ve Alım Süreçleri</title><link href="http://localhost:4000/proje-ruhsati-nedir-insaat-ve-alim-surecleri" rel="alternate" type="text/html" title="Proje Ruhsatı Nedir? İnşaat ve Alım Süreçleri" /><published>2025-09-13T00:00:00+03:00</published><updated>2025-09-13T00:00:00+03:00</updated><id>http://localhost:4000/proje-ruhsati-nedir-insaat-ve-alim-surecleri</id><content type="html" xml:base="http://localhost:4000/proje-ruhsati-nedir-insaat-ve-alim-surecleri"><![CDATA[<p>Kentsel dönüşümden yeni konut projelerine kadar her inşaat faaliyetinin yasal bir çerçevede ilerlemesi gerekir. Bu noktada devreye <em>proje ruhsatı</em> girer. Proje ruhsatı, bir yapının inşa edilmeden önce, ilgili idareler tarafından teknik ve hukuki yönden onaylanmasını sağlayan en kritik belgedir. Hem müteahhitler hem de arsa sahipleri için büyük önem taşıyan bu belge, inşaatın sorunsuz başlaması ve ilerlemesi açısından olmazsa olmazdır.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="tr"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="tr" /><updated>2025-09-15T23:53:56+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>Emlak danışmanından ipuçları ve stratejiler, arsa yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...</subtitle><entry><title type="html">Yetkilendirme Sözleşmesi Nedir?</title><link href="http://localhost:4000/yetkilendirme-sozlesmesi-nedir" rel="alternate" type="text/html" title="Yetkilendirme Sözleşmesi Nedir?" /><published>2025-09-15T00:00:00+03:00</published><updated>2025-09-15T00:00:00+03:00</updated><id>http://localhost:4000/yetkilendirme-sozlesmesi-nedir</id><content type="html" xml:base="http://localhost:4000/yetkilendirme-sozlesmesi-nedir"><![CDATA[<p>Emlak sektöründe güven, şeffaflık ve yasal zeminde hareket etmek hem alıcı hem de satıcı için kritik öneme sahiptir. Gayrimenkul alım satımında emlak danışmanlarıyla çalışırken en sık karşılaşılan belgelerden biri de “yetkilendirme sözleşmesi” dir. Peki, bu sözleşme nedir, ne işe yarar ve taraflara hangi sorumlulukları yükler?</p>
 
-<h2 id="proje-ruhsatı-nedir">Proje Ruhsatı Nedir?</h2>
+<p>Yetkilendirme sözleşmesi, bir taşınmazın <em>satış, kiralama veya pazarlama sürecinde</em> mülk sahibi ile emlak danışmanı arasında imzalanan, tarafların hak ve sorumluluklarını belirleyen resmi bir belgedir. Bu sözleşme ile mülk sahibi, danışmana belirli koşullar çerçevesinde gayrimenkulü pazarlama yetkisi verir.</p>
 
-<p>Proje ruhsatı, bir yapının <strong>imar planına, mevzuata ve mühendislik esaslarına uygun şekilde projelendirilip uygulanabileceğini belgeleyen resmi izin</strong>dir. Belediyeler veya ilgili kamu kurumları tarafından düzenlenir.</p>
-
-<p>Bir binanın inşaatına başlamadan önce alınması gereken bu ruhsat, projeyi hukuki zemine oturtur ve ileride doğabilecek cezai yaptırımların önüne geçer.</p>
-
-<h2 id="proje-ruhsatının-önemi">Proje Ruhsatının Önemi</h2>
-
-<ul>
-  <li><strong>Yasal Güvence Sağlar</strong>: Ruhsatsız inşaatlarda yıkım, para cezası veya dava gibi ciddi yaptırımlar söz konusu olabilir.</li>
-  <li><strong>Finansal İşlemlerde Gereklidir</strong>: Banka kredileri, sigorta işlemleri veya satış öncesi kontrollerde ruhsat büyük rol oynar.</li>
-  <li><strong>Mühendislik Güvencesi Sunar</strong>: Statik, mimari, elektrik ve mekanik projelerin onaylı olduğunu gösterir.</li>
-  <li><strong>Kentsel Düzen ve Güvenlik Sağlar</strong>: Projelerin şehir planına, estetik ve güvenlik standartlarına uygun yapılmasını sağlar.</li>
-</ul>
-
-<h2 id="proje-ruhsatı-almak-i̇çin-gerekli-belgeler">Proje Ruhsatı Almak İçin Gerekli Belgeler</h2>
-
-<p>Proje ruhsatı alım süreci, her belediyede küçük farklılıklar gösterebilir. Ancak genel olarak aşağıdaki belgeler talep edilir:</p>
-
-<ul>
-  <li>Tapu senedi</li>
-  <li>İmar durumu belgesi</li>
-  <li>Mimari proje (mimar tarafından hazırlanmış)</li>
-  <li>Statik proje (inşaat mühendisi tarafından hazırlanmış)</li>
-  <li>Elektrik ve mekanik tesisat projeleri</li>
-  <li>Zemin etüdü raporu</li>
-  <li>Yapı denetim sözleşmesi</li>
-  <li>Müteahhitlik ve şantiye şefliği belgeleri</li>
-</ul>
-
-<h2 id="proje-ruhsatı-alım-süreci">Proje Ruhsatı Alım Süreci</h2>
+<p>Genellikle bu sözleşme;</p>
 
 <ol>
-  <li><strong>İmar Durumunun Alınması</strong>: İlk adım, ilgili belediyeden arsanın imar durumunun temin edilmesidir.</li>
-  <li><strong>Projelerin Hazırlanması</strong>: Mimar, mühendis ve uzman ekipler tarafından projeler hazırlanır.</li>
-  <li><strong>Belediyeye Başvuru</strong>: Tüm belgeler ve projeler belediyeye teslim edilir.</li>
-  <li><strong>Teknik ve Hukuki İnceleme</strong>: Belediye birimleri, projeyi mevzuata uygunluk açısından inceler.</li>
-  <li><strong>Eksikliklerin Giderilmesi</strong>: Gerekli düzeltmeler yapılarak yeniden teslim edilir.</li>
-  <li><strong>Ruhsatın Onaylanması</strong>: Tüm aşamalar tamamlandıktan sonra proje ruhsatı düzenlenir.</li>
+  <li><strong>Genel Yetkilendirme Sözleşmesi</strong>:
+    <ul>
+      <li>Mülk sahibi aynı anda birden fazla emlak danışmanına yetki verebilir. Bu durumda mülk farklı kanallardan pazarlanabilir ancak danışmanlar arasında rekabet oluşabilir.</li>
+    </ul>
+  </li>
+  <li><strong>Tek Yetkilendirme Sözleşmesi</strong>:
+    <ul>
+      <li>Mülk sahibi, belirli bir süre boyunca yalnızca tek bir emlak danışmanına yetki verir. Böylece danışman pazarlama faaliyetlerini daha güçlü ve güvenle yürütür. Tek yetkili çalışmada genellikle satış süreci daha kısa sürede sonuçlanır.</li>
+    </ul>
+  </li>
 </ol>
 
-<h2 id="proje-ruhsatının-geçerlilik-süresi">Proje Ruhsatının Geçerlilik Süresi</h2>
+<p>olarak ikiye ayrılır.</p>
 
-<p>Proje ruhsatı, sınırsız bir süre için geçerli değildir. Türk imar mevzuatına göre ruhsatın geçerliliği belirli kurallara bağlanmıştır:</p>
+<h2 id="yasal-dayanağı">Yasal Dayanağı</h2>
+
+<p>Yetkilendirme sözleşmesi, <em>6502 sayılı Tüketicinin Korunması Hakkında Kanun</em> ve <em>Taşınmaz Ticareti Hakkında Yönetmelik</em> çerçevesinde düzenlenir. Bu nedenle sözleşmenin yazılı yapılması zorunludur ve sözleşmede mutlaka tarafların kimlik bilgileri, taşınmazın açık adresi, hizmet kapsamı, süresi ve komisyon oranı belirtilmelidir.</p>
+
+<p>Kısacası, yetkilendirme sözleşmesi yalnızca bir “izin belgesi” değil, hem emlak danışmanının emeğini güvence altına alan hem de mülk sahibini olası mağduriyetlerden koruyan bir yasal sözleşmedir.</p>
+
+<h2 id="neden-önemlidir">Neden Önemlidir?</h2>
+
+<p>Yetkilendirme sözleşmesi yalnızca emlak danışmanını değil, mülk sahibini de koruyan bir belgedir. Özellikle taşınmaz satış ve kiralama işlemlerinde hak kayıplarının önlenmesi için güvence sağlar.</p>
+
+<p>Sözleşmenin önemi şu noktalarda öne çıkar:</p>
 
 <ul>
-  <li><strong>Başlama Süresi</strong>: Ruhsat alındıktan sonra <strong>2 yıl içinde inşaata başlanması gerekir</strong>. Eğer bu süre içinde herhangi bir faaliyet başlamazsa, ruhsat hükümsüz hale gelir.</li>
-  <li><strong>Bitirme Süresi</strong>: İnşaata başlanmış olsa dahi, ruhsat tarihinden itibaren <strong>5 yıl içinde inşaatın tamamlanması gerekir</strong>. Aksi halde ruhsat geçerliliğini yitirir ve yeniden ruhsat alınması gerekir.</li>
-  <li><strong>Süre Uzatma</strong>: Geçerli bir mazeret veya zorunluluk halinde, ilgili idareye başvurularak süre uzatımı talep edilebilir. Ancak bu durum belediyenin takdirindedir.</li>
+  <li><strong>Yasal güvence sağlar</strong>: Tarafların hakları net şekilde belirlenir.</li>
+  <li><strong>Hizmetin kapsamını belirler</strong>: Danışmanın yapacağı pazarlama faaliyetleri yazılı olarak sabitlenir.</li>
+  <li><strong>Komisyon oranı netleşir</strong>: Satış veya kiralama sonrası danışmana ödenecek hizmet bedeli kayıt altına alınır.</li>
+  <li><strong>Süreç şeffaflaşır</strong>: Mülk sahibi, gayrimenkulünün kim tarafından ve nasıl pazarlanacağını bilir.</li>
 </ul>
 
-<p>Bu düzenleme, hem şehir planlamasının düzenli ilerlemesini sağlamak hem de uzun süre atıl kalmış projelerin önüne geçmek için uygulanır.</p>
+<h2 id="yetkilendirme-sözleşmesinde-yer-alan-başlıca-unsurlar">Yetkilendirme Sözleşmesinde Yer Alan Başlıca Unsurlar</h2>
 
-<h2 id="ruhsat-olmadan-i̇nşaata-başlamanın-riskleri">Ruhsat Olmadan İnşaata Başlamanın Riskleri</h2>
+<p>Bir yetkilendirme sözleşmesinde genellikle şu maddeler bulunur:</p>
 
 <ul>
-  <li>Kaçak yapı statüsüne düşülmesi</li>
-  <li>Yıkım ve para cezaları</li>
-  <li>Elektrik, su, doğalgaz aboneliklerinin alınamaması</li>
-  <li>İleride mülk satışı veya devrinde ciddi zorluklar yaşanması</li>
+  <li>Tarafların bilgileri (mülk sahibi ve emlak danışmanı)</li>
+  <li>Gayrimenkulün açık adresi ve özellikleri</li>
+  <li>Pazarlama yetkisinin kapsamı (satış, kiralama veya her ikisi)</li>
+  <li>Yetkinin türü (tek yetkili mi, genel yetki mi)</li>
+  <li>Sözleşme süresi (genellikle 3-6 ay)</li>
+  <li>Hizmet bedeli / komisyon oranı</li>
+  <li>Tarafların hak ve yükümlülükleri</li>
+  <li>Fesih şartları</li>
+</ul>
+
+<h2 id="mülk-sahibi-i̇çin-avantajları">Mülk Sahibi İçin Avantajları</h2>
+
+<ul>
+  <li>Profesyonel bir danışman aracılığıyla mülkünü doğru kitleye ulaştırabilir.</li>
+  <li>Pazarlama sürecinde zamandan tasarruf eder.</li>
+  <li>Yasal zeminde işlem yaparak haklarını güvenceye alır.</li>
+</ul>
+
+<h2 id="emlak-danışmanı-i̇çin-avantajları">Emlak Danışmanı İçin Avantajları</h2>
+
+<ul>
+  <li>Sözleşme ile verdiği hizmetin karşılığını alma hakkını garanti altına alır.</li>
+  <li>Profesyonel pazarlama planını gönül rahatlığıyla uygulayabilir.</li>
+  <li>Yetkili sözleşme sayesinde daha hızlı satış veya kiralama başarısı elde edebilir.</li>
+</ul>
+
+<h2 id="sözleşme-i̇mzalanmadan-önce-dikkat-edilmesi-gerekenler">Sözleşme İmzalanmadan Önce Dikkat Edilmesi Gerekenler</h2>
+
+<ul>
+  <li>Sözleşmenin <em>süresi</em> net şekilde belirlenmeli.</li>
+  <li>Komisyon oranı <em>yüzde</em> (%) üzerinden yazılmalı.</li>
+  <li>Gayrimenkul bilgileri doğru ve eksiksiz olmalı.</li>
+  <li>Mülk sahibi, birden fazla danışmana yetki verip vermediğini kontrol etmeli.</li>
+  <li>Taraflar, sözleşmenin bir nüshasını mutlaka saklamalı.</li>
 </ul>
 
 <h2 id="sonuç">Sonuç</h2>
 
-<p>Proje ruhsatı, sadece yasal bir formalite değil; aynı zamanda güvenli, sürdürülebilir ve değerli yapılar inşa etmenin temel taşıdır. Gerek bireysel arsa sahipleri, gerekse büyük inşaat firmaları için ruhsat süreci, projenin başarısını doğrudan etkiler.</p>
+<p>Emlak sektöründe yetkilendirme sözleşmesi, hem mülk sahibi hem de emlak danışmanı için güvenli bir işbirliği ortamı sunar. Doğru hazırlandığında ve şeffaf bir şekilde uygulandığında, taşınmaz alım-satım ve kiralama süreçlerinin hızlı, düzenli ve yasal çerçevede yürütülmesini sağlar.</p>
 
-<p>Bu nedenle inşaat projelerine başlamadan önce, tüm belgelerin eksiksiz hazırlanması ve uzman danışmanlardan destek alınması oldukça önemlidir.</p>]]></content><author><name></name></author><category term="proje ruhsatı" /><summary type="html"><![CDATA[Proje ruhsatı, bir yapının inşa edilmeden önce, ilgili idareler tarafından teknik ve hukuki yönden onaylanmasını sağlayan en kritik belgedir.]]></summary></entry><entry><title type="html">Kentsel Dönüşümde Arsa Payı Neden Önemlidir?</title><link href="http://localhost:4000/kentsel-donusumde-arsa-payi-neden-onemlidir" rel="alternate" type="text/html" title="Kentsel Dönüşümde Arsa Payı Neden Önemlidir?" /><published>2025-09-13T00:00:00+03:00</published><updated>2025-09-13T00:00:00+03:00</updated><id>http://localhost:4000/kentsel-donusumde-arsa-payi-neden-onemlidir</id><content type="html" xml:base="http://localhost:4000/kentsel-donusumde-arsa-payi-neden-onemlidir"><![CDATA[<p>Kentsel dönüşüm süreci, hem binaların yenilenmesi hem de daha güvenli yaşam alanlarının oluşturulması açısından büyük fırsatlar sunar. Ancak bu süreçte en çok tartışılan ve kafa karıştıran konulardan biri arsa payıdır. Yanlış ya da adaletsiz belirlenen arsa payları, hak sahipleri arasında ciddi anlaşmazlıklara yol açabilir. Bu yazıda, kentsel dönüşümde arsa payının ne anlama geldiğini, nasıl belirlendiğini ve hak kayıplarının nasıl önlenebileceğini detaylı olarak ele alacağız.</p>
+<p>Gayrimenkulünüzü satmayı veya kiralamayı düşünüyorsanız, sürece başlamadan önce bir yetkilendirme sözleşmesi imzalamayı ihmal etmemeniz, ileride yaşanabilecek anlaşmazlıkların önüne geçecektir.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Yetkilendirme sözleşmesi nedir, ne işe yarar ve taraflara hangi sorumlulukları yükler?]]></summary></entry><entry><title type="html">Tek Yetki Sözleşmesi Nedir?</title><link href="http://localhost:4000/tek-yetki-sozlesmesi-nedir" rel="alternate" type="text/html" title="Tek Yetki Sözleşmesi Nedir?" /><published>2025-09-15T00:00:00+03:00</published><updated>2025-09-15T00:00:00+03:00</updated><id>http://localhost:4000/tek-yetki-sozlesmesi-nedir</id><content type="html" xml:base="http://localhost:4000/tek-yetki-sozlesmesi-nedir"><![CDATA[<p>Emlak sektöründe satış ya da kiralama süreçlerinin profesyonel bir şekilde yürütülmesi için hem satıcı/ev sahibi hem de emlak danışmanı arasında güvene dayalı bir iş birliği gerekir. Bu noktada devreye giren en önemli belgelerden biri tek yetki sözleşmesidir. Peki tek yetki sözleşmesi nedir, neden önemlidir ve taraflara ne gibi avantajlar sağlar? İşte detaylar…</p>
+
+<p><em>Tek yetki sözleşmesi</em>, gayrimenkul sahibi ile emlak danışmanı (veya emlak ofisi) arasında imzalanan, belirli bir süre boyunca satış ya da kiralama işleminin yalnızca o danışman aracılığıyla yapılmasını sağlayan resmi bir belgedir.</p>
+
+<p>Bu sözleşme ile satıcı ya da ev sahibi, taşınmazını başka emlakçılar aracılığıyla pazarlayamaz. Yani, mülkün pazarlanması konusunda tek yetki yalnızca sözleşmeyi imzalayan emlak danışmanına aittir.</p>
+
+<h2 id="tek-yetki-sözleşmesinin-amacı">Tek Yetki Sözleşmesinin Amacı</h2>
+
+<ul>
+  <li>Profesyonel pazarlama süreci sağlamak</li>
+  <li>Satıcı/ev sahibinin farklı emlakçılarla yaşadığı bilgi kirliliğini önlemek</li>
+  <li>Alıcı için güvenilir ve doğru bilgilendirme ortamı yaratmak</li>
+  <li>Emlak danışmanının emeğini ve yatırımını korumak</li>
+</ul>
+
+<p>Bu sayede her iki tarafın da hakkı güvence altına alınır.</p>
+
+<h2 id="tek-yetki-sözleşmesinin-avantajları">Tek Yetki Sözleşmesinin Avantajları</h2>
+
+<p><strong>Satıcı/Ev Sahibi İçin Avantajları</strong></p>
+
+<ul>
+  <li><strong>Daha hızlı satış/kiralama</strong>: Emlak danışmanı tüm pazarlama gücünü tek bir taşınmaz için kullanır.</li>
+  <li><strong>Profesyonel hizmet</strong>: Fotoğraf, ilan, dijital pazarlama ve müşteri bulma süreçleri daha kaliteli yürütülür.</li>
+  <li><strong>Doğru fiyatlandırma</strong>: Danışman piyasa analizleriyle en uygun satış/kiralama fiyatını belirler.</li>
+  <li><strong>Güvenilir süreç</strong>: Aynı ilan farklı emlakçılar tarafından farklı fiyatlarla paylaşılmadığı için alıcı güveni artar.</li>
+</ul>
+
+<p><strong>Emlak Danışmanı İçin Avantajları</strong></p>
+
+<ul>
+  <li><strong>Yatırım güvencesi</strong>: İlan, fotoğraf, tanıtım ve reklam harcamalarının boşa gitme riski azalır.</li>
+  <li><strong>Motivasyon</strong>: Emlakçı, emeğinin karşılığını alacağından emin olduğu için sürece daha fazla enerji harcar.</li>
+  <li><strong>Marka değeri</strong>: Profesyonel portföy yönetimi danışmanın itibarını artırır.</li>
+</ul>
+
+<p><strong>Alıcı İçin Avantajları</strong></p>
+
+<ul>
+  <li><strong>Şeffaf bilgi</strong>: Aynı mülk farklı fiyatlarla karşısına çıkmaz.</li>
+  <li><strong>Güven ortamı</strong>: Tek yetkili danışman sayesinde yanlış bilgiye maruz kalmaz.</li>
+  <li><strong>Profesyonel yönlendirme</strong>: Satın alma/kiralama sürecinde daha net bilgilendirilir.</li>
+</ul>
+
+<h2 id="tek-yetki-sözleşmesi-ne-kadar-süreli-olur">Tek Yetki Sözleşmesi Ne Kadar Süreli Olur?</h2>
+
+<p>Genellikle <em>3 ay ile 6 ay arasında</em> süreyle yapılır. Ancak tarafların mutabakatı ile bu süre uzatılabilir ya da sözleşme bitiminde yeniden imzalanabilir.</p>
+
+<h2 id="tek-yetki-sözleşmesi-olmadan-neler-olabilir">Tek Yetki Sözleşmesi Olmadan Neler Olabilir?</h2>
+
+<ul>
+  <li>Aynı mülk farklı fiyatlarla farklı platformlarda görünebilir.</li>
+  <li>Satıcı, pazarlama sürecini kontrol etmekte zorlanabilir.</li>
+  <li>Emlakçı, pazarlama için yatırım yapmak istemez, süreç yavaşlar.</li>
+  <li>Alıcı güven kaybeder ve satın almaktan/kiralamaktan vazgeçebilir.</li>
+</ul>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Tek yetki sözleşmesi, emlak sektöründe hem danışman hem de mülk sahibi için karşılıklı güveni, şeffaflığı ve profesyonelliği sağlayan en önemli belgelerdendir. Bu sözleşme sayesinde satıcı, danışmanın tüm pazarlama gücünden faydalanırken; emlakçı da emeğinin karşılığını güvence altına alır.</p>
+
+<p>Eğer mülkünüzü satmak ya da kiralamak istiyorsanız, sürecin daha hızlı ve sorunsuz ilerlemesi için <em>tek yetki sözleşmesi imzalamayı mutlaka düşünmelisiniz</em>.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Tek yetki sözleşmesi nedir, neden önemlidir ve taraflara ne gibi avantajlar sağlar?]]></summary></entry><entry><title type="html">Kentsel Dönüşümde Arsa Payı Neden Önemlidir?</title><link href="http://localhost:4000/kentsel-donusumde-arsa-payi-neden-onemlidir" rel="alternate" type="text/html" title="Kentsel Dönüşümde Arsa Payı Neden Önemlidir?" /><published>2025-09-13T00:00:00+03:00</published><updated>2025-09-13T00:00:00+03:00</updated><id>http://localhost:4000/kentsel-donusumde-arsa-payi-neden-onemlidir</id><content type="html" xml:base="http://localhost:4000/kentsel-donusumde-arsa-payi-neden-onemlidir"><![CDATA[<p>Kentsel dönüşüm süreci, hem binaların yenilenmesi hem de daha güvenli yaşam alanlarının oluşturulması açısından büyük fırsatlar sunar. Ancak bu süreçte en çok tartışılan ve kafa karıştıran konulardan biri arsa payıdır. Yanlış ya da adaletsiz belirlenen arsa payları, hak sahipleri arasında ciddi anlaşmazlıklara yol açabilir. Bu yazıda, kentsel dönüşümde arsa payının ne anlama geldiğini, nasıl belirlendiğini ve hak kayıplarının nasıl önlenebileceğini detaylı olarak ele alacağız.</p>
 
 <h2 id="arsa-payı-nedir">Arsa Payı Nedir?</h2>
 
@@ -230,7 +308,75 @@
 
 <p>Bağımsız bölümlerin arsa payı, sadece teknik bir tapu detayı değil, mülkün gerçek değerini ve gelecekteki haklarını belirleyen kritik bir unsurdur. Bu nedenle arsa payı, mutlaka bağımsız bölümlerin gerçek değerleri göz önüne alınarak adil bir şekilde dağıtılmalıdır.</p>
 
-<p>Özellikle kentsel dönüşümün hızla ilerlediği günümüzde, arsa payının önemi daha da artmıştır. Mülk sahipleri, tapularındaki arsa paylarını kontrol etmeli ve gerekirse hukuki yollardan düzeltilmesini sağlamalıdır.</p>]]></content><author><name></name></author><category term="arsa payı" /><summary type="html"><![CDATA[Arsa payı nasıl belirlenir, hangi kriterlere göre hesaplanır ve neden önemlidir?]]></summary></entry><entry><title type="html">Arsa ve Arazi Arasındaki Farklar Nelerdir?</title><link href="http://localhost:4000/arsa-ve-arazi-arasindaki-farklar-nelerdir" rel="alternate" type="text/html" title="Arsa ve Arazi Arasındaki Farklar Nelerdir?" /><published>2025-09-09T00:00:00+03:00</published><updated>2025-09-09T00:00:00+03:00</updated><id>http://localhost:4000/arsa-ve-arazi-arasindaki-farklar-nelerdir</id><content type="html" xml:base="http://localhost:4000/arsa-ve-arazi-arasindaki-farklar-nelerdir"><![CDATA[<p>Gayrimenkul yatırımları arasında en çok kafa karıştıran kavramlardan ikisi arsa ve arazidir. Günlük dilde birbirinin yerine kullanılsalar da aslında hem hukuki hem de teknik açıdan büyük farklılıkları vardır. Bu farkları bilmek, yatırım yaparken doğru kararlar vermenizi, ileride doğabilecek hukuki sorunlardan korunmanızı sağlar.</p>
+<p>Özellikle kentsel dönüşümün hızla ilerlediği günümüzde, arsa payının önemi daha da artmıştır. Mülk sahipleri, tapularındaki arsa paylarını kontrol etmeli ve gerekirse hukuki yollardan düzeltilmesini sağlamalıdır.</p>]]></content><author><name></name></author><category term="arsa payı" /><summary type="html"><![CDATA[Arsa payı nasıl belirlenir, hangi kriterlere göre hesaplanır ve neden önemlidir?]]></summary></entry><entry><title type="html">Proje Ruhsatı Nedir? İnşaat ve Alım Süreçleri</title><link href="http://localhost:4000/proje-ruhsati-nedir-insaat-ve-alim-surecleri" rel="alternate" type="text/html" title="Proje Ruhsatı Nedir? İnşaat ve Alım Süreçleri" /><published>2025-09-13T00:00:00+03:00</published><updated>2025-09-13T00:00:00+03:00</updated><id>http://localhost:4000/proje-ruhsati-nedir-insaat-ve-alim-surecleri</id><content type="html" xml:base="http://localhost:4000/proje-ruhsati-nedir-insaat-ve-alim-surecleri"><![CDATA[<p>Kentsel dönüşümden yeni konut projelerine kadar her inşaat faaliyetinin yasal bir çerçevede ilerlemesi gerekir. Bu noktada devreye <em>proje ruhsatı</em> girer. Proje ruhsatı, bir yapının inşa edilmeden önce, ilgili idareler tarafından teknik ve hukuki yönden onaylanmasını sağlayan en kritik belgedir. Hem müteahhitler hem de arsa sahipleri için büyük önem taşıyan bu belge, inşaatın sorunsuz başlaması ve ilerlemesi açısından olmazsa olmazdır.</p>
+
+<h2 id="proje-ruhsatı-nedir">Proje Ruhsatı Nedir?</h2>
+
+<p>Proje ruhsatı, bir yapının <strong>imar planına, mevzuata ve mühendislik esaslarına uygun şekilde projelendirilip uygulanabileceğini belgeleyen resmi izin</strong>dir. Belediyeler veya ilgili kamu kurumları tarafından düzenlenir.</p>
+
+<p>Bir binanın inşaatına başlamadan önce alınması gereken bu ruhsat, projeyi hukuki zemine oturtur ve ileride doğabilecek cezai yaptırımların önüne geçer.</p>
+
+<h2 id="proje-ruhsatının-önemi">Proje Ruhsatının Önemi</h2>
+
+<ul>
+  <li><strong>Yasal Güvence Sağlar</strong>: Ruhsatsız inşaatlarda yıkım, para cezası veya dava gibi ciddi yaptırımlar söz konusu olabilir.</li>
+  <li><strong>Finansal İşlemlerde Gereklidir</strong>: Banka kredileri, sigorta işlemleri veya satış öncesi kontrollerde ruhsat büyük rol oynar.</li>
+  <li><strong>Mühendislik Güvencesi Sunar</strong>: Statik, mimari, elektrik ve mekanik projelerin onaylı olduğunu gösterir.</li>
+  <li><strong>Kentsel Düzen ve Güvenlik Sağlar</strong>: Projelerin şehir planına, estetik ve güvenlik standartlarına uygun yapılmasını sağlar.</li>
+</ul>
+
+<h2 id="proje-ruhsatı-almak-i̇çin-gerekli-belgeler">Proje Ruhsatı Almak İçin Gerekli Belgeler</h2>
+
+<p>Proje ruhsatı alım süreci, her belediyede küçük farklılıklar gösterebilir. Ancak genel olarak aşağıdaki belgeler talep edilir:</p>
+
+<ul>
+  <li>Tapu senedi</li>
+  <li>İmar durumu belgesi</li>
+  <li>Mimari proje (mimar tarafından hazırlanmış)</li>
+  <li>Statik proje (inşaat mühendisi tarafından hazırlanmış)</li>
+  <li>Elektrik ve mekanik tesisat projeleri</li>
+  <li>Zemin etüdü raporu</li>
+  <li>Yapı denetim sözleşmesi</li>
+  <li>Müteahhitlik ve şantiye şefliği belgeleri</li>
+</ul>
+
+<h2 id="proje-ruhsatı-alım-süreci">Proje Ruhsatı Alım Süreci</h2>
+
+<ol>
+  <li><strong>İmar Durumunun Alınması</strong>: İlk adım, ilgili belediyeden arsanın imar durumunun temin edilmesidir.</li>
+  <li><strong>Projelerin Hazırlanması</strong>: Mimar, mühendis ve uzman ekipler tarafından projeler hazırlanır.</li>
+  <li><strong>Belediyeye Başvuru</strong>: Tüm belgeler ve projeler belediyeye teslim edilir.</li>
+  <li><strong>Teknik ve Hukuki İnceleme</strong>: Belediye birimleri, projeyi mevzuata uygunluk açısından inceler.</li>
+  <li><strong>Eksikliklerin Giderilmesi</strong>: Gerekli düzeltmeler yapılarak yeniden teslim edilir.</li>
+  <li><strong>Ruhsatın Onaylanması</strong>: Tüm aşamalar tamamlandıktan sonra proje ruhsatı düzenlenir.</li>
+</ol>
+
+<h2 id="proje-ruhsatının-geçerlilik-süresi">Proje Ruhsatının Geçerlilik Süresi</h2>
+
+<p>Proje ruhsatı, sınırsız bir süre için geçerli değildir. Türk imar mevzuatına göre ruhsatın geçerliliği belirli kurallara bağlanmıştır:</p>
+
+<ul>
+  <li><strong>Başlama Süresi</strong>: Ruhsat alındıktan sonra <strong>2 yıl içinde inşaata başlanması gerekir</strong>. Eğer bu süre içinde herhangi bir faaliyet başlamazsa, ruhsat hükümsüz hale gelir.</li>
+  <li><strong>Bitirme Süresi</strong>: İnşaata başlanmış olsa dahi, ruhsat tarihinden itibaren <strong>5 yıl içinde inşaatın tamamlanması gerekir</strong>. Aksi halde ruhsat geçerliliğini yitirir ve yeniden ruhsat alınması gerekir.</li>
+  <li><strong>Süre Uzatma</strong>: Geçerli bir mazeret veya zorunluluk halinde, ilgili idareye başvurularak süre uzatımı talep edilebilir. Ancak bu durum belediyenin takdirindedir.</li>
+</ul>
+
+<p>Bu düzenleme, hem şehir planlamasının düzenli ilerlemesini sağlamak hem de uzun süre atıl kalmış projelerin önüne geçmek için uygulanır.</p>
+
+<h2 id="ruhsat-olmadan-i̇nşaata-başlamanın-riskleri">Ruhsat Olmadan İnşaata Başlamanın Riskleri</h2>
+
+<ul>
+  <li>Kaçak yapı statüsüne düşülmesi</li>
+  <li>Yıkım ve para cezaları</li>
+  <li>Elektrik, su, doğalgaz aboneliklerinin alınamaması</li>
+  <li>İleride mülk satışı veya devrinde ciddi zorluklar yaşanması</li>
+</ul>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Proje ruhsatı, sadece yasal bir formalite değil; aynı zamanda güvenli, sürdürülebilir ve değerli yapılar inşa etmenin temel taşıdır. Gerek bireysel arsa sahipleri, gerekse büyük inşaat firmaları için ruhsat süreci, projenin başarısını doğrudan etkiler.</p>
+
+<p>Bu nedenle inşaat projelerine başlamadan önce, tüm belgelerin eksiksiz hazırlanması ve uzman danışmanlardan destek alınması oldukça önemlidir.</p>]]></content><author><name></name></author><category term="proje ruhsatı" /><summary type="html"><![CDATA[Proje ruhsatı, bir yapının inşa edilmeden önce, ilgili idareler tarafından teknik ve hukuki yönden onaylanmasını sağlayan en kritik belgedir.]]></summary></entry><entry><title type="html">Arsa ve Arazi Arasındaki Farklar Nelerdir?</title><link href="http://localhost:4000/arsa-ve-arazi-arasindaki-farklar-nelerdir" rel="alternate" type="text/html" title="Arsa ve Arazi Arasındaki Farklar Nelerdir?" /><published>2025-09-09T00:00:00+03:00</published><updated>2025-09-09T00:00:00+03:00</updated><id>http://localhost:4000/arsa-ve-arazi-arasindaki-farklar-nelerdir</id><content type="html" xml:base="http://localhost:4000/arsa-ve-arazi-arasindaki-farklar-nelerdir"><![CDATA[<p>Gayrimenkul yatırımları arasında en çok kafa karıştıran kavramlardan ikisi arsa ve arazidir. Günlük dilde birbirinin yerine kullanılsalar da aslında hem hukuki hem de teknik açıdan büyük farklılıkları vardır. Bu farkları bilmek, yatırım yaparken doğru kararlar vermenizi, ileride doğabilecek hukuki sorunlardan korunmanızı sağlar.</p>
 
 <p>Peki, arsa ile arazi arasındaki farklar nelerdir? Gelin detaylıca inceleyelim.</p>
 
@@ -653,190 +799,4 @@
 
 <p>Gayrimenkul sektöründe doğru karar vermek için güvenilir bilgiye ihtiyaç vardır. Gayrimenkul değerleme şirketleri, bu ihtiyacı karşılayan bağımsız ve profesyonel kurumlardır. Bir taşınmazın gerçek değerini öğrenmek, hem yatırımcı hem de birey için doğru adımlar atmanın anahtarıdır.</p>
 
-<p>Eğer evinizi satmayı, yatırım yapmayı veya kredi kullanmayı düşünüyorsanız, ilk adımınız mutlaka güvenilir bir <em>gayrimenkul değerleme şirketi</em> ile çalışmak olmalıdır.</p>]]></content><author><name></name></author><category term="gayrimenkul değerleme" /><summary type="html"><![CDATA[Gayrimenkul değerleme şirketi; konut, arsa, işyeri, fabrika, otel gibi taşınmazların veya gayrimenkul projelerinin piyasa değerini bağımsız, tarafsız ve bilimsel yöntemlerle belirleyen kurumsal yapılardır.]]></summary></entry><entry><title type="html">Değerleme Uzmanı Kimdir, Nasıl Çalışır?</title><link href="http://localhost:4000/degerleme-uzmani-kimdir-nasil-calisir" rel="alternate" type="text/html" title="Değerleme Uzmanı Kimdir, Nasıl Çalışır?" /><published>2025-09-07T00:00:00+03:00</published><updated>2025-09-07T00:00:00+03:00</updated><id>http://localhost:4000/degerleme-uzmani-kimdir-nasil-calisir</id><content type="html" xml:base="http://localhost:4000/degerleme-uzmani-kimdir-nasil-calisir"><![CDATA[<p>Gayrimenkul, makine, araç veya şirket gibi bir varlığın gerçek piyasa değerini belirlemek oldukça hassas ve uzmanlık gerektiren bir süreçtir. Bu noktada <em>değerleme uzmanları</em> devreye girer. Tarafsız, bağımsız ve bilimsel yöntemlerle çalışan değerleme uzmanları, yatırımcılardan bankalara, kamu kurumlarından bireylere kadar birçok kişi ve kuruluş için güvenilir raporlar hazırlar.</p>
-
-<p>Peki, <strong>değerleme uzmanı kimdir</strong>, hangi sorumluluklara sahiptir ve nasıl çalışır? Gelin detaylıca inceleyelim.</p>
-
-<h2 id="değerleme-uzmanı-kimdir">Değerleme Uzmanı Kimdir?</h2>
-
-<p>Değerleme uzmanı, gayrimenkul ya da diğer varlıkların gerçek değerini belirleyen, bu konuda resmi raporlar hazırlayan, SPK (Sermaye Piyasası Kurulu) veya ilgili kurumlarca yetkilendirilmiş profesyonel kişidir.</p>
-
-<p>Türkiye’de özellikle gayrimenkul değerleme uzmanlığı, SPK lisansına tabi olup; bankalar, finans kuruluşları ve yatırımcılar için <em>bağımsız ekspertiz raporları</em> hazırlanmasını sağlar.</p>
-
-<h2 id="değerleme-uzmanının-görev-ve-sorumlulukları">Değerleme Uzmanının Görev ve Sorumlulukları</h2>
-
-<p>Değerleme uzmanlarının görevleri yalnızca fiyat belirlemekten ibaret değildir. Daha geniş kapsamlı sorumlulukları vardır:</p>
-
-<ul>
-  <li><strong>Piyasa Araştırması Yapmak</strong>: Benzer nitelikteki varlıkların satış, kira ve yatırım değerlerini incelemek.</li>
-  <li><strong>Yerinde İnceleme</strong>: Değerleme yapılacak taşınmaz veya varlığı sahada bizzat görmek, ölçmek ve analiz etmek.</li>
-  <li><strong>Yasal Durumu Kontrol Etmek</strong>: Tapu kayıtları, imar durumu, ruhsat bilgileri gibi hukuki belgeleri incelemek.</li>
-  <li><strong>Finansal Analiz Yapmak</strong>: Taşınmazın ya da varlığın gelecekteki değerini etkileyebilecek ekonomik koşulları değerlendirmek.</li>
-  <li><strong>Rapor Hazırlamak</strong>: Tüm analizlerin sonucunda bağımsız ve tarafsız bir değerleme raporu sunmak.</li>
-</ul>
-
-<h2 id="değerleme-uzmanı-nasıl-çalışır">Değerleme Uzmanı Nasıl Çalışır?</h2>
-
-<p>Değerleme uzmanlarının çalışma süreci belirli aşamalardan oluşur:</p>
-
-<ol>
-  <li><strong>Talep Alınması</strong>: Banka, yatırımcı ya da kurum, belirli bir varlık için değerleme talebinde bulunur.</li>
-  <li><strong>Ön Araştırma</strong>: Varlığın bulunduğu bölge, piyasa koşulları ve benzer satış/kira örnekleri araştırılır.</li>
-  <li><strong>Saha Çalışması</strong>: Uzman, gayrimenkul veya varlığı yerinde inceleyerek ölçüm, fotoğraf ve gözlemler yapar.</li>
-  <li><strong>Yasal İnceleme</strong>: Tapu kayıtları, belediye imar bilgileri, ruhsat durumları kontrol edilir.</li>
-  <li><strong>Değerleme Yöntemleri ile Analiz</strong>:
-    <ul>
-      <li>Emsal Karşılaştırma Yöntemi (benzer satışlarla kıyaslama)</li>
-      <li>Maliyet Yöntemi (yeni inşa maliyeti – yıpranma payı)</li>
-      <li>Gelir Yöntemi (kira veya gelir getirici varlıklarda) uygulanır.</li>
-    </ul>
-  </li>
-  <li><strong>Raporlama</strong>: Tüm süreç objektif bir şekilde yazılı rapora dökülür ve ilgili kurumlara sunulur.</li>
-</ol>
-
-<h2 id="değerleme-uzmanının-çalışma-alanları">Değerleme Uzmanının Çalışma Alanları</h2>
-
-<p>Değerleme uzmanları sadece konut ve arsalarla değil, çok farklı alanlarda da hizmet verir:</p>
-
-<ul>
-  <li>Konut ve Ticari Gayrimenkuller</li>
-  <li>Arsa ve Tarım Arazileri</li>
-  <li>Sanayi Tesisleri ve Fabrikalar</li>
-  <li>Makine ve Ekipmanlar</li>
-  <li>Şirket Değerlemeleri</li>
-</ul>
-
-<p>Bu nedenle uzmanlık alanları geniştir ve her biri özel yöntemler gerektirir.</p>
-
-<h2 id="neden-değerleme-uzmanına-i̇htiyaç-duyulur">Neden Değerleme Uzmanına İhtiyaç Duyulur?</h2>
-
-<ul>
-  <li>Bankaların kredi süreçlerinde güvenilir rapor sunmak</li>
-  <li>Yatırımcıların doğru karar vermesini sağlamak</li>
-  <li>Mahkemelerde ve resmi kurumlarda tarafsız belge olarak kullanmak</li>
-  <li>Şirket birleşme ve devralmalarında doğru değerleme yapmak</li>
-  <li>Vergilendirme ve muhasebe süreçlerinde objektif veri sağlamak</li>
-</ul>
-
-<p>Kısacası, değerleme uzmanı hem bireylerin hem de kurumların finansal güvenliğinde kilit rol oynar.</p>
-
-<h2 id="sonuç">Sonuç</h2>
-
-<p>Değerleme uzmanları, piyasa bilgisi, analitik yetenekleri ve tarafsız yaklaşımlarıyla <strong>ekonomik kararların güvenilirliğini artıran profesyonellerdir</strong>. Özellikle gayrimenkul piyasasında, yatırımcıların ve kurumların doğru karar alabilmesi için hazırladıkları raporlar büyük önem taşır.</p>
-
-<p>Eğer bir varlığın <em>gerçek piyasa değerini öğrenmek</em> istiyorsanız, mutlaka lisanslı ve yetkin bir değerleme uzmanından destek almanız gerekir.</p>]]></content><author><name></name></author><category term="gayrimenkul değerleme" /><summary type="html"><![CDATA[Değerleme uzmanı kimdir, hangi sorumluluklara sahiptir ve nasıl çalışır? Gelin detaylıca inceleyelim.]]></summary></entry><entry><title type="html">Faizsiz Konut Edinmek Mümkün mü?</title><link href="http://localhost:4000/faizsiz-konut-edinmek-mumkun-mu" rel="alternate" type="text/html" title="Faizsiz Konut Edinmek Mümkün mü?" /><published>2025-09-07T00:00:00+03:00</published><updated>2025-09-07T00:00:00+03:00</updated><id>http://localhost:4000/faizsiz-konut-edinmek-mumkun-mu</id><content type="html" xml:base="http://localhost:4000/faizsiz-konut-edinmek-mumkun-mu"><![CDATA[<p>Konut sahibi olmak, çoğu insanın hayatındaki en büyük hedeflerden biridir. Ancak yüksek ev fiyatları ve bankaların uyguladığı faizli kredi sistemleri, birçok kişinin bu hayalini ertelemesine neden oluyor. Özellikle faiz hassasiyeti olan kişiler için “faizsiz konut edinmek” büyük bir ihtiyaç haline gelmiş durumda. Peki, faizsiz konut edinmek gerçekten mümkün mü? Eğer mümkünse hangi yöntemlerle ev sahibi olunabilir? İşte detaylı bir bakış:</p>
-
-<h2 id="faizsiz-konut-nedir">Faizsiz Konut Nedir?</h2>
-
-<p>Faizsiz konut edinme, bankaların sunduğu konut kredilerinden farklı olarak, <em>faiz ödemeden ev sahibi olmayı sağlayan sistemleri ifade eder</em>. Bu yöntemlerde genellikle faiz yerine ortak tasarruf, hizmet bedeli veya vade farkı gibi alternatif ödeme modelleri kullanılır.</p>
-
-<h2 id="faizsiz-konut-edinme-yöntemleri">Faizsiz Konut Edinme Yöntemleri</h2>
-
-<h3 id="1-katılım-bankaları-ile-konut-finansmanı">1. Katılım Bankaları ile Konut Finansmanı</h3>
-
-<p>Katılım bankaları, klasik bankacılıktan farklı olarak faiz yerine kâr-zarar ortaklığı prensibi ile çalışır.</p>
-
-<ul>
-  <li>Banka, almak istediğiniz evi sizinle birlikte satın alır.</li>
-  <li>Daha sonra kendi payını size taksitlerle kâr payı ekleyerek satar.</li>
-  <li>Burada faiz yerine “kâr payı” kavramı kullanılır.</li>
-</ul>
-
-<p><strong>Avantajları</strong>:</p>
-
-<ul>
-  <li>Faizsiz finansman prensibine uygundur.</li>
-  <li>Resmî bankacılık güvencesi altındadır.</li>
-</ul>
-
-<p><strong>Dezavantajları</strong>:</p>
-
-<ul>
-  <li>Katılım bankalarının uyguladığı kâr payı oranları, faiz oranlarıyla benzer seviyelerde olabilir.</li>
-</ul>
-
-<h3 id="2-tasarruf-finansman-şirketleri">2. Tasarruf Finansman Şirketleri</h3>
-
-<p>Son yıllarda oldukça popüler hale gelen faizsiz konut edinme yöntemlerinden biri de <em>tasarruf finansman sistemleridir</em>.</p>
-
-<ul>
-  <li>Bir grup insan, <em>ortak tasarruf havuzunda</em> toplanır.</li>
-  <li>Her ay belirli bir miktar ödeme yapılır.</li>
-  <li>Çekiliş veya sıra yöntemi ile belirlenen kişiler ev sahibi olur.</li>
-  <li>Şirket, bu hizmet karşılığında <em>hizmet bedeli</em> alır.</li>
-</ul>
-
-<p><strong>Avantajları</strong>:</p>
-
-<ul>
-  <li>Faiz yoktur, tamamen tasarrufa dayalıdır.</li>
-  <li>Erken ev sahibi olma şansı vardır (çekiliş yöntemi sayesinde).</li>
-</ul>
-
-<p><strong>Dezavantajları</strong>:</p>
-
-<ul>
-  <li>Şirket seçerken dikkat edilmelidir, güvenilir ve <strong>devlet güvencesi olan firmalar tercih edilmelidir</strong>.</li>
-  <li>Hizmet bedeli toplam maliyeti artırabilir.</li>
-</ul>
-
-<h3 id="3-kooperatif-yöntemi">3. Kooperatif Yöntemi</h3>
-
-<p>Türkiye’de uzun yıllardır kullanılan bir diğer faizsiz ev edinme modeli de konut kooperatifleridir.</p>
-
-<ul>
-  <li>Ortaklar bir araya gelir ve belirli bir proje için ödeme yapar.</li>
-  <li>İnşaat tamamlandığında her ortak evini alır.</li>
-</ul>
-
-<p><strong>Avantajları</strong>:</p>
-
-<ul>
-  <li>Faizsizdir ve toplu güç birliği ile maliyetler düşebilir.</li>
-</ul>
-
-<p><strong>Dezavantajları</strong>:</p>
-
-<ul>
-  <li>Teslim süresi uzun olabilir.</li>
-  <li>Kooperatif yönetiminde yaşanabilecek sorunlar ev sahibi olmayı geciktirebilir.</li>
-</ul>
-
-<h3 id="4-kendi-tasarrufunuz-ile-ev-alma">4. Kendi Tasarrufunuz ile Ev Alma</h3>
-
-<p>En güvenli faizsiz yöntemlerden biri de tamamen kendi birikiminizle ev satın almaktır.</p>
-
-<ul>
-  <li>Düzenli olarak kenara para koyarak veya altın, döviz, yatırım araçları ile tasarruf yaparak ev sahibi olmak mümkündür.</li>
-</ul>
-
-<p><strong>Avantajları</strong>:</p>
-
-<ul>
-  <li>Hiçbir ek maliyet, faiz veya hizmet bedeli yoktur.</li>
-  <li>Eviniz üzerinde tam kontrol sağlarsınız.</li>
-</ul>
-
-<p><strong>Dezavantajları</strong>:</p>
-
-<ul>
-  <li>Yüksek konut fiyatları nedeniyle yıllarca birikim yapmak gerekebilir.</li>
-  <li>Ev fiyatları artarken paranızın değer kaybetme riski vardır.</li>
-</ul>
-
-<h2 id="faizsiz-konut-alırken-nelere-dikkat-edilmeli">Faizsiz Konut Alırken Nelere Dikkat Edilmeli?</h2>
-
-<p>Faizsiz konut edinme yolları cazip görünse de, bazı önemli noktalara dikkat edilmelidir:</p>
-
-<ul>
-  <li>Şirket veya banka güvenilir mi? Lisanslı, denetlenen kurumlarla çalışın.</li>
-  <li>Toplam maliyet nedir? Faiz olmasa bile hizmet bedeli veya kâr payı toplam ödemeyi etkiler.</li>
-  <li>Sözleşme detayları açık ve şeffaf olmalı.</li>
-  <li>Teslim süresi gerçekçi mi? Ev sahibi olma planınızı bu süreye göre yapmalısınız.</li>
-</ul>
-
-<h2 id="sonuç">Sonuç</h2>
-
-<p>Evet, faizsiz konut edinmek mümkündür. Katılım bankaları, tasarruf finansman şirketleri, kooperatifler veya tamamen kendi tasarruflarınızla ev sahibi olabilirsiniz. Ancak bu süreçte önemli olan nokta, <em>doğru yöntemi seçmek</em> ve güvenilir kurumlarla çalışmaktır.</p>
-
-<p>Eğer faiz hassasiyetiniz varsa, faizsiz finansman modelleri sizin için büyük bir avantaj olabilir. Ancak unutmayın: “Faizsiz” kelimesi, hiçbir maliyet olmadığı anlamına gelmez. Seçtiğiniz yöntemin size uzun vadede ne kadar yük getireceğini iyi hesaplamak gerekir.</p>]]></content><author><name></name></author><category term="konut finansmanı" /><summary type="html"><![CDATA[Faizsiz konut edinmek gerçekten mümkün mü? Eğer mümkünse hangi yöntemlerle ev sahibi olunabilir?]]></summary></entry></feed>
+<p>Eğer evinizi satmayı, yatırım yapmayı veya kredi kullanmayı düşünüyorsanız, ilk adımınız mutlaka güvenilir bir <em>gayrimenkul değerleme şirketi</em> ile çalışmak olmalıdır.</p>]]></content><author><name></name></author><category term="gayrimenkul değerleme" /><summary type="html"><![CDATA[Gayrimenkul değerleme şirketi; konut, arsa, işyeri, fabrika, otel gibi taşınmazların veya gayrimenkul projelerinin piyasa değerini bağımsız, tarafsız ve bilimsel yöntemlerle belirleyen kurumsal yapılardır.]]></summary></entry></feed>
