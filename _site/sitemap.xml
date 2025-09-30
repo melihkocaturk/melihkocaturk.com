@@ -537,6 +537,18 @@
 <lastmod>2025-09-29T00:00:00+03:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/al-yenile-sat-yatirimlarinda-nelere-dikkat-edilmelidir</loc>
+<lastmod>2025-09-30T00:00:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/hangi-tur-gayrimenkuller-kira-getirisi-icin-daha-uygundur</loc>
+<lastmod>2025-09-30T00:00:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/yazlik-konutlarda-kiralama-piyasasi-yatirimcilar-icin-firsat</loc>
+<lastmod>2025-09-30T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/ara</loc>
 </url>
 <url>
@@ -628,5 +640,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/sayfa27/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/sayfa28/</loc>
 </url>
 </urlset>
