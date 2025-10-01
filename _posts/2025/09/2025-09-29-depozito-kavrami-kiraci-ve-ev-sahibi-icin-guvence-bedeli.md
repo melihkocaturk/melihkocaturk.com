@@ -58,9 +58,9 @@ depozito kiracıya iade edilmek zorundadır.
 
 ## Sıkça Sorulan Sorular
 
-- **Ev sahibi istediği şekilde depozitoyu tutabilir mi?** Hayır. Depozito keyfi olarak tutulamaz, mutlaka ispatlanabilir bir haklı gerekçeye dayanmalıdır.
-- **Depozito ile kira ödenebilir mi?** Hayır. Depozito, kira bedelinin yerine geçmez. Ancak son ay kiracının talebi ve ev sahibinin onayıyla mahsuplaşma yapılabilir.
-- **Depozito faiz getirir mi?** Evet. Bankaya yatırılan depozito, vadeli hesapta tutulduğu için faiz getirir. Faiziyle birlikte kiracıya iade edilir.
+1. **Ev sahibi istediği şekilde depozitoyu tutabilir mi?** Hayır. Depozito keyfi olarak tutulamaz, mutlaka ispatlanabilir bir haklı gerekçeye dayanmalıdır.
+2. **Depozito ile kira ödenebilir mi?** Hayır. Depozito, kira bedelinin yerine geçmez. Ancak son ay kiracının talebi ve ev sahibinin onayıyla mahsuplaşma yapılabilir.
+3. **Depozito faiz getirir mi?** Evet. Bankaya yatırılan depozito, vadeli hesapta tutulduğu için faiz getirir. Faiziyle birlikte kiracıya iade edilir.
 
 ## Sonuç
 
