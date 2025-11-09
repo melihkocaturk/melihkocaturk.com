@@ -741,6 +741,10 @@
 <lastmod>2025-11-06T00:00:00+03:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/kira-stopaji-nedir-kim-oder</loc>
+<lastmod>2025-11-09T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/ara</loc>
 </url>
 <url>
@@ -862,5 +866,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/sayfa37/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/sayfa38/</loc>
 </url>
 </urlset>
