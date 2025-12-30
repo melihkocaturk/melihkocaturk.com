@@ -2,7 +2,7 @@
 layout: post
 title: "Kat İrtifakı Nasıl Kurulur?"
 description: "Kat irtifakı, inşaatı devam eden projelerde, hak sahiplerinin mülkiyet haklarını güvence altına alması açısından büyük önem taşır."
-tags: ["kat irtifakı"]
+tags: ["kat irtifakı", "iskan"]
 ---
 
 Gayrimenkul yatırımı yaparken ya da yeni bir projeden konut almayı planlarken en sık karşılaşılan kavramlardan biri kat irtifakıdır. Özellikle inşaatı devam eden projelerde, hak sahiplerinin mülkiyet haklarını güvence altına alması açısından büyük önem taşır. Peki, *kat irtifakı nasıl kurulur*? Gelin süreci adım adım inceleyelim.

@@ -2,7 +2,7 @@
 layout: post
 title: "Bir Binaya İskan Verilmesi Ne Anlama Gelmektedir?"
 description: "İskan belgesi nedir, neden önemlidir ve hangi süreçler sonunda alınır?"
-tags: ["kat irtifakı", "kat mülkiyeti"]
+tags: ["kat irtifakı", "kat mülkiyeti", "iskan"]
 ---
 
 Bir binanın tamamlanmasının ardından en çok duyulan terimlerden biri “iskan” ya da diğer adıyla **“yapı kullanım izin belgesi”**dir. Özellikle yeni daire alacak kişilerin sıkça sorduğu sorulardan biri “Bu binada iskan var mı?” olur. Peki, iskan belgesi nedir, neden önemlidir ve hangi süreçler sonunda alınır? Gelin birlikte detaylıca inceleyelim.
