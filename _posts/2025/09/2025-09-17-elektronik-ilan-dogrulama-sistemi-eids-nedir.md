@@ -2,6 +2,7 @@
 layout: post
 title: "Elektronik İlan Doğrulama Sistemi (EİDS) Nedir?"
 description: "EİDS tam olarak nedir, nasıl çalışır ve kimleri ilgilendirir?"
+tags: ["eids"]
 ---
 
 Dijitalleşmenin hızla arttığı günümüzde emlak, ikinci el araç ve benzeri alanlarda verilen ilanların güvenilirliği büyük önem taşıyor. Sahte ya da yanıltıcı ilanların önüne geçmek için Elektronik İlan Doğrulama Sistemi (EİDS) devreye girmiştir. Peki, EİDS tam olarak nedir, nasıl çalışır ve kimleri ilgilendirir? İşte detaylı rehberimiz.
