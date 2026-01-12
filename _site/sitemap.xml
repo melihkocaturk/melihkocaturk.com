@@ -901,6 +901,18 @@
 <lastmod>2026-01-07T00:00:00+03:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/ev-alirken-binanin-yasi-kac-olmali-eski-binalarin-avantaj-ve-riskleri</loc>
+<lastmod>2026-01-12T00:00:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/ev-alirken-komsular-ve-site-yonetimi-neden-onemlidir</loc>
+<lastmod>2026-01-12T00:00:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/evin-cephe-secimi-neden-onemlidir-guney-cephe-gercekten-avantaj-mi</loc>
+<lastmod>2026-01-12T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/ara</loc>
 </url>
 <url>
@@ -1046,5 +1058,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/sayfa45/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/sayfa46/</loc>
 </url>
 </urlset>
