@@ -937,6 +937,18 @@
 <lastmod>2026-01-25T00:00:00+03:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/ev-alirken-gun-isigi-ve-gunes-alma-suresi-nasil-hesaplanir</loc>
+<lastmod>2026-02-01T00:00:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/ev-alirken-manzara-gercekten-fiyati-etkiler-mi</loc>
+<lastmod>2026-02-01T00:00:00+03:00</lastmod>
+</url>
+<url>
+<loc>http://localhost:4000/konut-aliminda-rayic-bedel-dusuk-gosterilirse-ne-olur</loc>
+<lastmod>2026-02-01T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/ara</loc>
 </url>
 <url>
@@ -1088,5 +1100,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/sayfa47/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/sayfa48/</loc>
 </url>
 </urlset>
