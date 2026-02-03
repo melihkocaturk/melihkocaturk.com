@@ -1,180 +1,337 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="tr"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="tr" /><updated>2026-02-02T10:32:41+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>Emlak danışmanından ipuçları ve stratejiler, arsa yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...</subtitle><entry><title type="html">Kira Getirisi Yüksek Ev Nasıl Bulunur?</title><link href="http://localhost:4000/kira-getirisi-yuksek-ev-nasil-bulunur" rel="alternate" type="text/html" title="Kira Getirisi Yüksek Ev Nasıl Bulunur?" /><published>2026-02-02T00:00:00+03:00</published><updated>2026-02-02T00:00:00+03:00</updated><id>http://localhost:4000/kira-getirisi-yuksek-ev-nasil-bulunur</id><content type="html" xml:base="http://localhost:4000/kira-getirisi-yuksek-ev-nasil-bulunur"><![CDATA[<p>Gayrimenkul yatırımında en kritik hedeflerden biri, <strong>düzenli ve yüksek kira geliri</strong> elde etmektir. Ancak her satılık ev iyi bir yatırım değildir. Doğru lokasyon, doğru fiyat ve doğru strateji olmadan yapılan alımlar, beklenen getiriyi sağlamaz. Bu yazıda, kira getirisi yüksek evleri nasıl tespit edebileceğinizi adım adım ve yatırımcı bakış açısıyla ele alıyoruz.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="tr"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="tr" /><updated>2026-02-03T11:02:52+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>Emlak danışmanından ipuçları ve stratejiler, arsa yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...</subtitle><entry><title type="html">“Biraz Daha Bekleyeyim” Diyenler Ne Kaybediyor?</title><link href="http://localhost:4000/biraz-daha-bekleyeyim-diyenler-ne-kaybediyor" rel="alternate" type="text/html" title="“Biraz Daha Bekleyeyim” Diyenler Ne Kaybediyor?" /><published>2026-02-03T00:00:00+03:00</published><updated>2026-02-03T00:00:00+03:00</updated><id>http://localhost:4000/biraz-daha-bekleyeyim-diyenler-ne-kaybediyor</id><content type="html" xml:base="http://localhost:4000/biraz-daha-bekleyeyim-diyenler-ne-kaybediyor"><![CDATA[<p>Emlak sektöründe alıcı ve satıcıların en sık kullandığı cümlelerden biri şudur: <strong>“Biraz daha bekleyeyim”</strong>. Faizler düşsün diye bekleyen alıcılar, fiyatlar artsın diye bekleyen satıcılar, piyasa netleşsin diye kenarda duran yatırımcılar… Peki gerçekten beklemek her zaman doğru bir strateji mi? Yoksa fark edilmeden ciddi fırsat maliyetleri mi oluşuyor?</p>
 
-<h2 id="1-kira-getirisi-rental-yield-nedir">1. Kira Getirisi (Rental Yield) Nedir?</h2>
+<p>Bu yazıda, “biraz daha bekleyeyim” diyenlerin <strong>zamana yayılmış ama birikerek büyüyen kayıplarını</strong> emlak sektörü özelinde detaylı şekilde ele alıyoruz.</p>
 
-<p>Kira getirisi, bir gayrimenkulün yıllık kira gelirinin satın alma fiyatına oranıdır.</p>
+<h2 id="1-beklemenin-görünmeyen-maliyeti-fırsat-maliyeti">1. Beklemenin Görünmeyen Maliyeti: Fırsat Maliyeti</h2>
 
-<p><strong>Basit kira getirisi formülü:</strong></p>
+<p>Emlakta çoğu kişi sadece <strong>fiyatı</strong> düşünür. Oysa asıl mesele çoğu zaman <strong>fiyat değil, zaman</strong>dır.</p>
 
-<blockquote>
-  <p>(Yıllık Kira Geliri / Satın Alma Bedeli) x 100</p>
-</blockquote>
-
-<p>Örnek:</p>
+<h3 id="örnek-senaryo">Örnek Senaryo</h3>
 
 <ul>
-  <li>Satın alma bedeli: 3.000.000 TL</li>
-  <li>Aylık kira: 25.000 TL</li>
-  <li>Yıllık kira: 300.000 TL</li>
+  <li>Bugün 5.000.000 TL’ye alınabilecek bir konut</li>
+  <li>1 yıl sonra 5.750.000 TL oluyor (%15 artış)</li>
+  <li>Aynı sürede kira geliri potansiyeli: yıllık 240.000 TL</li>
 </ul>
 
-<p><strong>Kira getirisi:</strong> %10</p>
-
-<p>Türkiye şartlarında %7–10 arası kabul edilebilir, %10 ve üzeri ise yüksek kira getirisi olarak değerlendirilir.</p>
-
-<h2 id="2-lokasyon-yüksek-kiranın-temel-anahtarı">2. Lokasyon: Yüksek Kiranın Temel Anahtarı</h2>
-
-<p>Kira getirisi yüksek evlerin büyük çoğunluğu doğru lokasyonda yer alır.</p>
-
-<h3 id="yüksek-talep-oluşturan-lokasyon-özellikleri">Yüksek talep oluşturan lokasyon özellikleri:</h3>
+<p>Bekleyen kişi:</p>
 
 <ul>
-  <li>Üniversitelere yakınlık</li>
-  <li>İş merkezleri ve plazalar</li>
-  <li>Metro, metrobüs, tramvay gibi toplu taşıma hatları</li>
-  <li>Hastaneler ve AVM’ler</li>
-  <li>Turistik bölgeler</li>
+  <li>750.000 TL fiyat artışını</li>
+  <li>240.000 TL kira gelirini</li>
 </ul>
 
-<p><strong>İpucu:</strong> Satılık fiyatların hızlı arttığı ama kiraların da aynı hızda yükseldiği bölgeleri hedefleyin. Sadece değer artışı değil, kira talebi de önemlidir.</p>
+<p>kaçırmış olur.</p>
 
-<h2 id="3-metrekare-fiyatı--kira-dengesi-analizi">3. Metrekare Fiyatı – Kira Dengesi Analizi</h2>
+<p>Bu da yaklaşık <strong>1.000.000 TL’lik fırsat maliyeti</strong> anlamına gelir.</p>
 
-<p>Bir evin pahalı olması, kira getirisinin yüksek olacağı anlamına gelmez.</p>
+<p>Bu kayıp genellikle “kağıt üzerinde” olmadığı için fark edilmez, ancak fiilen yaşanır.</p>
+
+<h2 id="2-faiz-düşsün-diye-bekleyenler-ne-kaybediyor">2. Faiz Düşsün Diye Bekleyenler Ne Kaybediyor?</h2>
+
+<p>En yaygın bekleme gerekçesi şudur: <strong>“Faizler düşsün, o zaman alırım.”</strong></p>
+
+<p>Ancak piyasa pratiğinde çoğunlukla şu tablo oluşur:</p>
 
 <ul>
-  <li>Küçük metrekareli daireler (1+0, 1+1)</li>
-  <li>Aynı bölgede daha kolay kiralanır</li>
-  <li>Toplam yatırım maliyeti daha düşüktür</li>
-  <li>Kira getirisi oranı genellikle daha yüksektir</li>
+  <li>Faizler düştüğü anda talep artar</li>
+  <li>Talep artınca fiyatlar yükselir</li>
+  <li>Satıcılar pazarlık payını geri çeker</li>
 </ul>
 
-<p><strong>Altın kural:</strong> Metrekare fiyatı yükseldikçe kira getirisi oranı düşer.</p>
-
-<h2 id="4-hedef-kiracı-profilini-belirleyin">4. Hedef Kiracı Profilini Belirleyin</h2>
-
-<p>Kira getirisi yüksek ev bulmak için önce şu soruyu sorun:</p>
-
-<blockquote>
-  <p>“Bu evi kim kiralayacak?”</p>
-</blockquote>
-
-<h3 id="yaygın-kiracı-profilleri">Yaygın kiracı profilleri:</h3>
+<p>Sonuç olarak:</p>
 
 <ul>
-  <li>Öğrenciler</li>
-  <li>Bekâr çalışanlar</li>
-  <li>Yeni evli çiftler</li>
-  <li>Kurumsal kiracılar</li>
-  <li>Kısa dönem (Airbnb) misafirleri</li>
+  <li>Aylık kredi taksidi düşer</li>
+  <li>Ancak <strong>toplam satın alma maliyeti yükselir</strong></li>
 </ul>
 
-<p>Her profilin beklentisi farklıdır. Örneğin:</p>
+<p>Birçok alıcı, düşük faiz döneminde daha pahalı bir gayrimenkul almak zorunda kalır.</p>
+
+<h2 id="3-satıcılar-i̇çin-beklemenin-bedeli">3. Satıcılar İçin Beklemenin Bedeli</h2>
+
+<p>“Biraz daha bekleyeyim” sadece alıcıların değil, satıcıların da sıkça başvurduğu bir yaklaşımdır.</p>
+
+<h3 id="satıcıların-yaygın-düşünceleri">Satıcıların Yaygın Düşünceleri</h3>
 
 <ul>
-  <li>Öğrenciler için eşyalı, küçük ve merkezi evler</li>
-  <li>Kurumsal kiracılar için site içinde, otoparklı daireler</li>
+  <li>“Fiyatlar daha da artacak”</li>
+  <li>“Acele etmeye gerek yok”</li>
+  <li>“Komşu daha pahalıya sattı”</li>
 </ul>
 
-<h2 id="5-eşyalı-mı-eşyasız-mı">5. Eşyalı mı, Eşyasız mı?</h2>
-
-<p>Birçok bölgede <strong>eşyalı evler</strong>, %20–40 arası daha yüksek kira getirisi sağlar.</p>
-
-<h3 id="eşyalı-evin-avantajları">Eşyalı evin avantajları:</h3>
+<p>Ancak çoğu zaman şu riskler göz ardı edilir:</p>
 
 <ul>
-  <li>Daha yüksek kira bedeli</li>
-  <li>Daha hızlı kiralama</li>
-  <li>Kısa dönem kiraya uygunluk</li>
+  <li>Piyasadaki doygunluk</li>
+  <li>Yeni projelerle artan arz</li>
+  <li>Alıcıların alım gücünün zayıflaması</li>
+  <li>Aynı segmentteki benzer ilanların çoğalması</li>
 </ul>
 
-<h3 id="dezavantajları">Dezavantajları:</h3>
+<p>Bunun sonucunda:</p>
 
 <ul>
-  <li>Başlangıç maliyeti</li>
-  <li>Eşya yıpranma riski</li>
+  <li>İlan süresi uzar</li>
+  <li>Alıcıların pazarlık talebi artar</li>
+  <li>Gayrimenkul “uzun süredir satılamıyor” algısına girer</li>
 </ul>
 
-<p>Özellikle üniversite çevreleri ve merkezi iş bölgelerinde eşyalı evler ciddi avantaj sağlar.</p>
+<p>Uzun süre ilanda kalan konutlar, çoğu zaman ilk istenen fiyattan <strong>daha düşük bir bedelle</strong> satılır.</p>
 
-<h2 id="6-bina-yaşı-ve-aidat-faktörü">6. Bina Yaşı ve Aidat Faktörü</h2>
+<h2 id="4-beklerken-kaybedilen-pazarlık-gücü">4. Beklerken Kaybedilen Pazarlık Gücü</h2>
 
-<p>Yeni bina her zaman daha kârlı değildir.</p>
+<p>Emlakta pazarlık gücü, genellikle <strong>piyasanın durgun olduğu dönemlerde</strong> alıcıdadır.</p>
+
+<p>Bekleyen alıcılar şu avantajları kaçırır:</p>
 
 <ul>
-  <li>Yeni binalar: Yüksek aidat, düşük kira getirisi</li>
-  <li>Eski ama bakımlı binalar: Düşük aidat, daha iyi oran</li>
+  <li>Satmaya istekli, motivasyonu yüksek satıcılar</li>
+  <li>Nakit alım indirimi</li>
+  <li>Esnek ödeme planları</li>
+  <li>Tapu ve masraf paylaşımı gibi ek avantajlar</li>
 </ul>
 
-<p><strong>Kira getirisi hesabı yaparken aidatı mutlaka gider olarak düşünün.</strong></p>
-
-<h2 id="7-satın-alma-fiyatında-pazarlık-gücü">7. Satın Alma Fiyatında Pazarlık Gücü</h2>
-
-<p>Yüksek kira getirisi çoğu zaman <strong>doğru fiyattan alım</strong> ile başlar.</p>
+<p>Piyasa hareketlendiğinde ise:</p>
 
 <ul>
-  <li>Uzun süredir satılıkta olan evler</li>
-  <li>Acil satıcılar</li>
-  <li>Miras veya boş evler</li>
+  <li>Satıcılar seçici hale gelir</li>
+  <li>“Nasıl olsa başkası alır” psikolojisi oluşur</li>
+  <li>Pazarlık neredeyse ortadan kalkar</li>
 </ul>
 
-<p>Bu tür ilanlarda pazarlık payı yüksektir ve doğru alım, kira getirisini doğrudan yükseltir.</p>
+<h2 id="5-psikolojik-tuzak-mükemmel-zaman-yanılgısı">5. Psikolojik Tuzak: Mükemmel Zaman Yanılgısı</h2>
 
-<h2 id="8-bölgesel-kira-araştırması-yapın">8. Bölgesel Kira Araştırması Yapın</h2>
-
-<p>Satın almadan önce mutlaka:</p>
+<p>Birçok kişi farkında olmadan şu beklentiye girer:</p>
 
 <ul>
-  <li>Aynı binadaki kiralık ilanları</li>
-  <li>Aynı sokaktaki emsal daireleri</li>
-  <li>Emlakçılardan güncel kira bilgilerini</li>
+  <li>En düşük fiyat</li>
+  <li>En düşük faiz</li>
+  <li>En iyi konum</li>
+  <li>En ideal koşullar</li>
 </ul>
 
-<p>araştırın.</p>
+<p>Gerçek şudur: <strong>Emlakta mükemmel zaman yoktur.</strong></p>
 
-<p><strong>Sadece ilan fiyatlarına değil, gerçekleşen kiralara odaklanın.</strong></p>
-
-<h2 id="9-kentsel-dönüşüm-ve-gelişim-potansiyeli">9. Kentsel Dönüşüm ve Gelişim Potansiyeli</h2>
-
-<p>Gelişmekte olan bölgeler, orta vadede kira getirisini artırabilir.</p>
+<p>Sadece:</p>
 
 <ul>
-  <li>Yeni metro projeleri</li>
-  <li>Üniversite kampüsleri</li>
-  <li>Sağlık yatırımları</li>
-  <li>Ofis ve AVM projeleri</li>
+  <li>Doğru analiz</li>
+  <li>Doğru gayrimenkul</li>
+  <li>Doğru strateji</li>
 </ul>
 
-<p>Ancak bu tür yatırımlarda kısa vadede değil, <strong>2–5 yıllık perspektif</strong> düşünülmelidir.</p>
+<p>vardır.</p>
 
-<h2 id="10-kısa-dönem-kiralama-airbnb-seçeneği">10. Kısa Dönem Kiralama (Airbnb) Seçeneği</h2>
+<p>Piyasanın tamamen netleşmesini bekleyenler, çoğu zaman yükselen trendin gerisinde kalır.</p>
 
-<p>Bazı bölgelerde kısa dönem kiralama, uzun dönem kiraya göre çok daha yüksek gelir sağlar.</p>
+<h2 id="6-beklemek-yerine-ne-yapılmalı">6. Beklemek Yerine Ne Yapılmalı?</h2>
 
-<h3 id="uygun-bölgeler">Uygun bölgeler:</h3>
+<p>“Bekleyeyim” refleksi yerine şu sorular sorulmalıdır:</p>
 
 <ul>
-  <li>Turistik merkezler</li>
-  <li>Hastane çevreleri</li>
-  <li>İş seyahati yoğun bölgeler</li>
+  <li>Bu gayrimenkul bana ne kazandırır?</li>
+  <li>Kira geliri potansiyeli nedir?</li>
+  <li>Bölgenin orta ve uzun vadeli gelişimi nasıl?</li>
+  <li>Beklemenin bana maliyeti ne olur?</li>
 </ul>
 
-<p>Ancak yasal düzenlemeler, site yönetimi kuralları ve işletme maliyetleri mutlaka hesaba katılmalıdır.</p>
-
-<h2 id="sonuç-yüksek-kira-getirisi-tesadüf-değildir">Sonuç: Yüksek Kira Getirisi Tesadüf Değildir</h2>
-
-<p>Kira getirisi yüksek ev bulmak;</p>
+<p>Doğru analizle alınan bir gayrimenkul:</p>
 
 <ul>
-  <li>Detaylı araştırma</li>
-  <li>Doğru lokasyon</li>
-  <li>Gerçekçi kira analizi</li>
-  <li>Pazarlık gücü</li>
+  <li>Kısa vadede bile değer kaybettirmez</li>
+  <li>Uzun vadede bekleyeni değil, <strong>harekete geçeni</strong> ödüllendirir</li>
 </ul>
 
-<p>gerektirir.</p>
+<h2 id="7-sonuç-en-büyük-kayıp-kaybetmediğini-sanmaktır">7. Sonuç: En Büyük Kayıp, Kaybetmediğini Sanmaktır</h2>
 
-<p>Unutmayın, <strong>iyi yatırım pahalı ev değil, doğru fiyata alınmış ve kolay kiralanan evdir.</strong> Uzun vadede sizi yormayan, düzenli gelir sağlayan gayrimenkuller gerçek kazancı getirir.</p>]]></content><author><name></name></author><category term="kira" /><category term="gayrimenkul yatırımı" /><summary type="html"><![CDATA[Bu yazıda, kira getirisi yüksek evleri nasıl tespit edebileceğinizi adım adım ve yatırımcı bakış açısıyla ele alıyoruz.]]></summary></entry><entry><title type="html">Ev Alırken Sessizlik ve Gürültü Analizi Nasıl Yapılır?</title><link href="http://localhost:4000/ev-alirken-sessizlik-ve-gurultu-analizi-nasil-yapilir" rel="alternate" type="text/html" title="Ev Alırken Sessizlik ve Gürültü Analizi Nasıl Yapılır?" /><published>2026-02-02T00:00:00+03:00</published><updated>2026-02-02T00:00:00+03:00</updated><id>http://localhost:4000/ev-alirken-sessizlik-ve-gurultu-analizi-nasil-yapilir</id><content type="html" xml:base="http://localhost:4000/ev-alirken-sessizlik-ve-gurultu-analizi-nasil-yapilir"><![CDATA[<p>Ev satın alırken genellikle fiyat, konum, metrekare ve manzara gibi kriterler ön planda tutulur. Ancak çoğu alıcının gözden kaçırdığı çok kritik bir konu vardır: <strong>sessizlik ve çevresel gürültü seviyesi</strong>. Gürültülü bir ev, zamanla yaşam kalitesini düşürür, uyku düzenini bozar ve hatta evin yeniden satış değerini olumsuz etkileyebilir.</p>
+<p>“Biraz daha bekleyeyim” diyenlerin en büyük yanılgısı, hiçbir şey kaybetmediklerini düşünmeleridir.</p>
+
+<p>Oysa emlakta:</p>
+
+<ul>
+  <li>Zaman ilerler</li>
+  <li>Fiyatlar değişir</li>
+  <li>Fırsatlar başkalarına geçer</li>
+</ul>
+
+<p>Ve bekleyenlerin çoğu şu cümleyi kurar:</p>
+
+<p>“Keşke o zaman alsaydım.”</p>
+
+<p>Emlak yatırımı cesaret işi değil, <strong>bilgi ve zaman yönetimi</strong> işidir. Beklemek bazen stratejidir, ancak çoğu zaman <strong>kararsızlığın kibar bir adıdır</strong>.</p>]]></content><author><name></name></author><category term="emlak piyasası" /><category term="emlak yatırımı" /><summary type="html"><![CDATA[Bu yazıda, 'biraz daha bekleyeyim' diyenlerin zamana yayılmış ama birikerek büyüyen kayıplarını emlak sektörü özelinde detaylı şekilde ele alıyoruz.]]></summary></entry><entry><title type="html">Evin Satılabilirliği Nasıl Anlaşılır? Likiditesi Yüksek Konut Özellikleri</title><link href="http://localhost:4000/evin-satilabilirligi-nasil-anlasilir" rel="alternate" type="text/html" title="Evin Satılabilirliği Nasıl Anlaşılır? Likiditesi Yüksek Konut Özellikleri" /><published>2026-02-02T00:00:00+03:00</published><updated>2026-02-02T00:00:00+03:00</updated><id>http://localhost:4000/evin-satilabilirligi-nasil-anlasilir</id><content type="html" xml:base="http://localhost:4000/evin-satilabilirligi-nasil-anlasilir"><![CDATA[<p>Bir evin “iyi” olması ile “hızlı satılabilir” olması her zaman aynı şey değildir. Gayrimenkulde asıl kritik konu, <strong>likidite</strong> yani bir mülkün <strong>makul bir sürede ve piyasa değerine yakın bir fiyattan alıcı bulabilme kabiliyeti</strong>dir.</p>
+
+<p>Bu yazıda, bir evin satılabilir olup olmadığını nasıl anlayabileceğini ve <strong>likiditesi yüksek konutların ortak özelliklerini</strong> tüm detaylarıyla ele alıyoruz.</p>
+
+<h2 id="konut-likiditesi-nedir">Konut Likiditesi Nedir?</h2>
+
+<p>Konut likiditesi, bir gayrimenkulün:</p>
+
+<ul>
+  <li>Ne kadar sürede satılabildiğini</li>
+  <li>Satış sürecinde ne kadar pazarlık gerektirdiğini</li>
+  <li>Piyasa ortalamasına göre ne kadar değer kaybı yaşadığını</li>
+</ul>
+
+<p>belirleyen önemli bir göstergedir.</p>
+
+<p><strong>Yüksek likidite:</strong><br />
+Ev kısa sürede, fazla indirim yapılmadan satılır.</p>
+
+<p><strong>Düşük likidite:</strong><br />
+Ev aylarca ilanda kalır, fiyat düşürülür ve yine de alıcı zor bulunur.</p>
+
+<h2 id="evin-satılabilirliği-nasıl-anlaşılır">Evin Satılabilirliği Nasıl Anlaşılır?</h2>
+
+<h3 id="1-bölgesel-talep-analizi-yapılmalı">1. Bölgesel Talep Analizi Yapılmalı</h3>
+
+<p>Bir evin satılabilirliği büyük ölçüde <strong>lokasyona</strong> bağlıdır. Ancak burada yalnızca “merkezde mi?” sorusu yeterli değildir.</p>
+
+<p>Dikkat edilmesi gerekenler:</p>
+
+<ul>
+  <li>Aynı bölgede son 6 ayda benzer evler kaç günde satılmış?</li>
+  <li>Kiralık ve satılık ilan sayısı artıyor mu azalıyor mu?</li>
+  <li>Bölgeye yeni ulaşım, okul, AVM veya kamu yatırımı geliyor mu?</li>
+</ul>
+
+<p>Talebin yüksek olduğu bölgelerde konut likiditesi her zaman daha yüksektir.</p>
+
+<h3 id="2-metrekare-ve-oda-planı-satışı-doğrudan-etkiler">2. Metrekare ve Oda Planı Satışı Doğrudan Etkiler</h3>
+
+<p>Piyasada en hızlı satılan konut tipleri genellikle:</p>
+
+<ul>
+  <li>1+1 daireler (yatırım ve kiralama amaçlı)</li>
+  <li>2+1 daireler (çekirdek aile ve genç çiftler)</li>
+  <li>3+1 daireler (standart aile tipi)</li>
+</ul>
+
+<p>Burada asıl kritik konu <strong>net alanın verimli kullanılmasıdır</strong>.</p>
+
+<p>Olumlu özellikler:</p>
+
+<ul>
+  <li>Geniş ve kullanışlı salon</li>
+  <li>İşlevsel oda dağılımı</li>
+  <li>Gereksiz ve uzun koridorların olmaması</li>
+</ul>
+
+<p>Metrekare olarak büyük ama kullanışsız planlı evler genellikle düşük likiditeye sahiptir.</p>
+
+<h3 id="3-binanın-yaşı-ve-yapı-kalitesi">3. Binanın Yaşı ve Yapı Kalitesi</h3>
+
+<p>Alıcıların büyük bölümü şu özelliklere sahip binalara yönelir:</p>
+
+<ul>
+  <li>0–10 yaş arası</li>
+  <li>Yeni yönetmeliklere uygun</li>
+  <li>Site içinde veya bakımlı apartmanlar</li>
+</ul>
+
+<p>Özellikle deprem bilincinin arttığı günümüzde:</p>
+
+<ul>
+  <li>Yapı denetimli</li>
+  <li>Radye temel</li>
+  <li>Yeni deprem yönetmeliği sonrası inşa edilmiş</li>
+</ul>
+
+<p>binalar çok daha hızlı satılmaktadır.</p>
+
+<h3 id="4-kat-cephe-ve-manzara-faktörü">4. Kat, Cephe ve Manzara Faktörü</h3>
+
+<p>Likiditeyi ciddi şekilde etkileyen ancak çoğu zaman göz ardı edilen detaylar:</p>
+
+<ul>
+  <li>Ara katlar (ne giriş ne en üst kat)</li>
+  <li>Güney veya güney-doğu cephe</li>
+  <li>Ön cephe konum</li>
+  <li>Açık manzara veya ferah görüş alanı</li>
+</ul>
+
+<p>Buna karşılık:</p>
+
+<ul>
+  <li>Bodrum katlar</li>
+  <li>Kuzey cepheli daireler</li>
+  <li>Karanlık ve kapalı planlı evler</li>
+</ul>
+
+<p>satış sürecinde daha fazla zorlanır.</p>
+
+<h3 id="5-fiyat-ile-piyasa-uyumu">5. Fiyat ile Piyasa Uyumu</h3>
+
+<p>Bir ev ne kadar iyi olursa olsun <strong>yanlış fiyatlandırılmışsa satılmaz</strong>.</p>
+
+<p>Satılabilirliği ölçmek için şunlar karşılaştırılmalıdır:</p>
+
+<ul>
+  <li>Aynı binada daha önce satılan daire fiyatları</li>
+  <li>Aynı mahalledeki benzer ilanlar</li>
+  <li>Metrekare birim fiyatları</li>
+</ul>
+
+<p>Piyasa değerinin yaklaşık yüzde 10–15 üzerinde fiyatlanan evler genellikle uzun süre ilanda kalır.</p>
+
+<h3 id="6-krediye-uygunluk-ve-tapu-durumu">6. Krediye Uygunluk ve Tapu Durumu</h3>
+
+<p>Likiditesi yüksek konutların en önemli ortak özelliklerinden biri <strong>hukuki sorunsuzluktur</strong>.</p>
+
+<p>Alıcıların özellikle dikkat ettiği noktalar:</p>
+
+<ul>
+  <li>Kat mülkiyetli tapu</li>
+  <li>İskân belgesi (oturma izni)</li>
+  <li>Banka kredisine uygunluk</li>
+  <li>Haciz, ipotek veya şerh bulunmaması</li>
+</ul>
+
+<p>Bu belgelerdeki eksiklikler satış süresini ciddi şekilde uzatır.</p>
+
+<h3 id="7-sosyal-donatılar-ve-günlük-yaşam-kolaylığı">7. Sosyal Donatılar ve Günlük Yaşam Kolaylığı</h3>
+
+<p>Günümüzde alıcılar için evin içi kadar çevresi de önemlidir.</p>
+
+<p>Likiditeyi artıran çevresel faktörler:</p>
+
+<ul>
+  <li>Otopark</li>
+  <li>Asansör</li>
+  <li>Güvenlik</li>
+  <li>Site içi yaşam</li>
+  <li>Yakın çevrede market, okul ve toplu taşıma</li>
+</ul>
+
+<p>Bu avantajlar, aynı fiyat aralığındaki evler arasında hızlı satış farkı yaratır.</p>
+
+<h2 id="likiditesi-yüksek-konutların-ortak-özellikleri">Likiditesi Yüksek Konutların Ortak Özellikleri</h2>
+
+<ul>
+  <li>Talep gören lokasyon</li>
+  <li>Standart ve kullanışlı oda planı</li>
+  <li>Yeni veya bakımlı bina</li>
+  <li>Doğru kat ve cephe seçimi</li>
+  <li>Piyasa ile uyumlu fiyat</li>
+  <li>Krediye ve tapuya uygunluk</li>
+  <li>Günlük yaşamı kolaylaştıran çevresel olanaklar</li>
+</ul>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Bir evin satılabilirliği yalnızca fiziksel özellikleriyle değil, <strong>piyasa koşulları ve doğru fiyat stratejisiyle</strong> birlikte değerlendirilmelidir.</p>
+
+<p>Eğer bir konut, bulunduğu bölgede benzerlerine göre hızlı alıcı bulabiliyorsa, bu konut <strong>yüksek likiditeli</strong> olarak değerlendirilir.</p>
+
+<p>Bu bakış açısı:</p>
+
+<ul>
+  <li>Satıcılar için daha kısa sürede satış</li>
+  <li>Yatırımcılar için daha düşük risk</li>
+  <li>Alıcılar için daha doğru karar</li>
+</ul>
+
+<p>anlamına gelir.</p>]]></content><author><name></name></author><category term="gayrimenkul yatırımı" /><summary type="html"><![CDATA[Bu yazıda, bir evin satılabilir olup olmadığını nasıl anlayabileceğini ve likiditesi yüksek konutların ortak özelliklerini tüm detaylarıyla ele alıyoruz.]]></summary></entry><entry><title type="html">Ev Alırken Sessizlik ve Gürültü Analizi Nasıl Yapılır?</title><link href="http://localhost:4000/ev-alirken-sessizlik-ve-gurultu-analizi-nasil-yapilir" rel="alternate" type="text/html" title="Ev Alırken Sessizlik ve Gürültü Analizi Nasıl Yapılır?" /><published>2026-02-02T00:00:00+03:00</published><updated>2026-02-02T00:00:00+03:00</updated><id>http://localhost:4000/ev-alirken-sessizlik-ve-gurultu-analizi-nasil-yapilir</id><content type="html" xml:base="http://localhost:4000/ev-alirken-sessizlik-ve-gurultu-analizi-nasil-yapilir"><![CDATA[<p>Ev satın alırken genellikle fiyat, konum, metrekare ve manzara gibi kriterler ön planda tutulur. Ancak çoğu alıcının gözden kaçırdığı çok kritik bir konu vardır: <strong>sessizlik ve çevresel gürültü seviyesi</strong>. Gürültülü bir ev, zamanla yaşam kalitesini düşürür, uyku düzenini bozar ve hatta evin yeniden satış değerini olumsuz etkileyebilir.</p>
 
 <p>Bu yazıda, bir evi satın almadan önce <strong>gürültü analizi nasıl yapılır</strong>, hangi detaylara dikkat edilmelidir ve pratik yöntemlerle sessizlik nasıl ölçülür adım adım ele alıyoruz.</p>
 
@@ -418,179 +575,183 @@ Brüt kira getirisi: %9</p>
   <li><strong>Küçük metrekareli evlerin kira getirisi neden daha yüksektir?</strong> Küçük evlerde metrekare başına kira bedeli genellikle daha yüksektir. Ayrıca öğrenci, bekar çalışan ve kısa süreli kiracı talebi sürekli olduğu için boş kalma süresi kısadır. Bu durum yıllık toplam kira gelirini artırır.</li>
   <li><strong>Küçük metrekareli evler mi büyük metrekareli evler mi daha hızlı satılır?</strong> Genellikle küçük metrekareli evler daha hızlı satılır. Daha geniş bir alıcı kitlesine hitap eder ve yatırımcılar tarafından daha kolay finanse edilebilir. Bu durum likidite açısından önemli bir avantajdır.</li>
   <li><strong>Küçük metrekareli evlerde değer artışı nasıldır?</strong> Doğru lokasyonda bulunan küçük metrekareli evler, zaman içinde güçlü bir değer artışı gösterebilir. Özellikle kentsel dönüşüm bölgelerinde ve gelişen semtlerde küçük daireler yüksek talep gördüğü için fiyat artışı potansiyeli yüksektir.</li>
-</ol>]]></content><author><name></name></author><category term="gayrimenkul yatırımı" /><summary type="html"><![CDATA[Küçük metrekareli evler yatırım için daha mı karlı? Kira getirisi, değer artışı, avantajlar ve riskleriyle küçük daire yatırımını detaylı şekilde inceleyin.]]></summary></entry><entry><title type="html">Evin Satılabilirliği Nasıl Anlaşılır? Likiditesi Yüksek Konut Özellikleri</title><link href="http://localhost:4000/evin-satilabilirligi-nasil-anlasilir" rel="alternate" type="text/html" title="Evin Satılabilirliği Nasıl Anlaşılır? Likiditesi Yüksek Konut Özellikleri" /><published>2026-02-02T00:00:00+03:00</published><updated>2026-02-02T00:00:00+03:00</updated><id>http://localhost:4000/evin-satilabilirligi-nasil-anlasilir</id><content type="html" xml:base="http://localhost:4000/evin-satilabilirligi-nasil-anlasilir"><![CDATA[<p>Bir evin “iyi” olması ile “hızlı satılabilir” olması her zaman aynı şey değildir. Gayrimenkulde asıl kritik konu, <strong>likidite</strong> yani bir mülkün <strong>makul bir sürede ve piyasa değerine yakın bir fiyattan alıcı bulabilme kabiliyeti</strong>dir.</p>
+</ol>]]></content><author><name></name></author><category term="gayrimenkul yatırımı" /><summary type="html"><![CDATA[Küçük metrekareli evler yatırım için daha mı karlı? Kira getirisi, değer artışı, avantajlar ve riskleriyle küçük daire yatırımını detaylı şekilde inceleyin.]]></summary></entry><entry><title type="html">Kira Getirisi Yüksek Ev Nasıl Bulunur?</title><link href="http://localhost:4000/kira-getirisi-yuksek-ev-nasil-bulunur" rel="alternate" type="text/html" title="Kira Getirisi Yüksek Ev Nasıl Bulunur?" /><published>2026-02-02T00:00:00+03:00</published><updated>2026-02-02T00:00:00+03:00</updated><id>http://localhost:4000/kira-getirisi-yuksek-ev-nasil-bulunur</id><content type="html" xml:base="http://localhost:4000/kira-getirisi-yuksek-ev-nasil-bulunur"><![CDATA[<p>Gayrimenkul yatırımında en kritik hedeflerden biri, <strong>düzenli ve yüksek kira geliri</strong> elde etmektir. Ancak her satılık ev iyi bir yatırım değildir. Doğru lokasyon, doğru fiyat ve doğru strateji olmadan yapılan alımlar, beklenen getiriyi sağlamaz. Bu yazıda, kira getirisi yüksek evleri nasıl tespit edebileceğinizi adım adım ve yatırımcı bakış açısıyla ele alıyoruz.</p>
 
-<p>Bu yazıda, bir evin satılabilir olup olmadığını nasıl anlayabileceğini ve <strong>likiditesi yüksek konutların ortak özelliklerini</strong> tüm detaylarıyla ele alıyoruz.</p>
+<h2 id="1-kira-getirisi-rental-yield-nedir">1. Kira Getirisi (Rental Yield) Nedir?</h2>
 
-<h2 id="konut-likiditesi-nedir">Konut Likiditesi Nedir?</h2>
+<p>Kira getirisi, bir gayrimenkulün yıllık kira gelirinin satın alma fiyatına oranıdır.</p>
 
-<p>Konut likiditesi, bir gayrimenkulün:</p>
+<p><strong>Basit kira getirisi formülü:</strong></p>
 
-<ul>
-  <li>Ne kadar sürede satılabildiğini</li>
-  <li>Satış sürecinde ne kadar pazarlık gerektirdiğini</li>
-  <li>Piyasa ortalamasına göre ne kadar değer kaybı yaşadığını</li>
-</ul>
+<blockquote>
+  <p>(Yıllık Kira Geliri / Satın Alma Bedeli) x 100</p>
+</blockquote>
 
-<p>belirleyen önemli bir göstergedir.</p>
-
-<p><strong>Yüksek likidite:</strong><br />
-Ev kısa sürede, fazla indirim yapılmadan satılır.</p>
-
-<p><strong>Düşük likidite:</strong><br />
-Ev aylarca ilanda kalır, fiyat düşürülür ve yine de alıcı zor bulunur.</p>
-
-<h2 id="evin-satılabilirliği-nasıl-anlaşılır">Evin Satılabilirliği Nasıl Anlaşılır?</h2>
-
-<h3 id="1-bölgesel-talep-analizi-yapılmalı">1. Bölgesel Talep Analizi Yapılmalı</h3>
-
-<p>Bir evin satılabilirliği büyük ölçüde <strong>lokasyona</strong> bağlıdır. Ancak burada yalnızca “merkezde mi?” sorusu yeterli değildir.</p>
-
-<p>Dikkat edilmesi gerekenler:</p>
+<p>Örnek:</p>
 
 <ul>
-  <li>Aynı bölgede son 6 ayda benzer evler kaç günde satılmış?</li>
-  <li>Kiralık ve satılık ilan sayısı artıyor mu azalıyor mu?</li>
-  <li>Bölgeye yeni ulaşım, okul, AVM veya kamu yatırımı geliyor mu?</li>
+  <li>Satın alma bedeli: 3.000.000 TL</li>
+  <li>Aylık kira: 25.000 TL</li>
+  <li>Yıllık kira: 300.000 TL</li>
 </ul>
 
-<p>Talebin yüksek olduğu bölgelerde konut likiditesi her zaman daha yüksektir.</p>
+<p><strong>Kira getirisi:</strong> %10</p>
 
-<h3 id="2-metrekare-ve-oda-planı-satışı-doğrudan-etkiler">2. Metrekare ve Oda Planı Satışı Doğrudan Etkiler</h3>
+<p>Türkiye şartlarında %7–10 arası kabul edilebilir, %10 ve üzeri ise yüksek kira getirisi olarak değerlendirilir.</p>
 
-<p>Piyasada en hızlı satılan konut tipleri genellikle:</p>
+<h2 id="2-lokasyon-yüksek-kiranın-temel-anahtarı">2. Lokasyon: Yüksek Kiranın Temel Anahtarı</h2>
+
+<p>Kira getirisi yüksek evlerin büyük çoğunluğu doğru lokasyonda yer alır.</p>
+
+<h3 id="yüksek-talep-oluşturan-lokasyon-özellikleri">Yüksek talep oluşturan lokasyon özellikleri:</h3>
 
 <ul>
-  <li>1+1 daireler (yatırım ve kiralama amaçlı)</li>
-  <li>2+1 daireler (çekirdek aile ve genç çiftler)</li>
-  <li>3+1 daireler (standart aile tipi)</li>
+  <li>Üniversitelere yakınlık</li>
+  <li>İş merkezleri ve plazalar</li>
+  <li>Metro, metrobüs, tramvay gibi toplu taşıma hatları</li>
+  <li>Hastaneler ve AVM’ler</li>
+  <li>Turistik bölgeler</li>
 </ul>
 
-<p>Burada asıl kritik konu <strong>net alanın verimli kullanılmasıdır</strong>.</p>
+<p><strong>İpucu:</strong> Satılık fiyatların hızlı arttığı ama kiraların da aynı hızda yükseldiği bölgeleri hedefleyin. Sadece değer artışı değil, kira talebi de önemlidir.</p>
 
-<p>Olumlu özellikler:</p>
+<h2 id="3-metrekare-fiyatı--kira-dengesi-analizi">3. Metrekare Fiyatı – Kira Dengesi Analizi</h2>
+
+<p>Bir evin pahalı olması, kira getirisinin yüksek olacağı anlamına gelmez.</p>
 
 <ul>
-  <li>Geniş ve kullanışlı salon</li>
-  <li>İşlevsel oda dağılımı</li>
-  <li>Gereksiz ve uzun koridorların olmaması</li>
+  <li>Küçük metrekareli daireler (1+0, 1+1)</li>
+  <li>Aynı bölgede daha kolay kiralanır</li>
+  <li>Toplam yatırım maliyeti daha düşüktür</li>
+  <li>Kira getirisi oranı genellikle daha yüksektir</li>
 </ul>
 
-<p>Metrekare olarak büyük ama kullanışsız planlı evler genellikle düşük likiditeye sahiptir.</p>
+<p><strong>Altın kural:</strong> Metrekare fiyatı yükseldikçe kira getirisi oranı düşer.</p>
 
-<h3 id="3-binanın-yaşı-ve-yapı-kalitesi">3. Binanın Yaşı ve Yapı Kalitesi</h3>
+<h2 id="4-hedef-kiracı-profilini-belirleyin">4. Hedef Kiracı Profilini Belirleyin</h2>
 
-<p>Alıcıların büyük bölümü şu özelliklere sahip binalara yönelir:</p>
+<p>Kira getirisi yüksek ev bulmak için önce şu soruyu sorun:</p>
+
+<blockquote>
+  <p>“Bu evi kim kiralayacak?”</p>
+</blockquote>
+
+<h3 id="yaygın-kiracı-profilleri">Yaygın kiracı profilleri:</h3>
 
 <ul>
-  <li>0–10 yaş arası</li>
-  <li>Yeni yönetmeliklere uygun</li>
-  <li>Site içinde veya bakımlı apartmanlar</li>
+  <li>Öğrenciler</li>
+  <li>Bekâr çalışanlar</li>
+  <li>Yeni evli çiftler</li>
+  <li>Kurumsal kiracılar</li>
+  <li>Kısa dönem (Airbnb) misafirleri</li>
 </ul>
 
-<p>Özellikle deprem bilincinin arttığı günümüzde:</p>
+<p>Her profilin beklentisi farklıdır. Örneğin:</p>
 
 <ul>
-  <li>Yapı denetimli</li>
-  <li>Radye temel</li>
-  <li>Yeni deprem yönetmeliği sonrası inşa edilmiş</li>
+  <li>Öğrenciler için eşyalı, küçük ve merkezi evler</li>
+  <li>Kurumsal kiracılar için site içinde, otoparklı daireler</li>
 </ul>
 
-<p>binalar çok daha hızlı satılmaktadır.</p>
+<h2 id="5-eşyalı-mı-eşyasız-mı">5. Eşyalı mı, Eşyasız mı?</h2>
 
-<h3 id="4-kat-cephe-ve-manzara-faktörü">4. Kat, Cephe ve Manzara Faktörü</h3>
+<p>Birçok bölgede <strong>eşyalı evler</strong>, %20–40 arası daha yüksek kira getirisi sağlar.</p>
 
-<p>Likiditeyi ciddi şekilde etkileyen ancak çoğu zaman göz ardı edilen detaylar:</p>
+<h3 id="eşyalı-evin-avantajları">Eşyalı evin avantajları:</h3>
 
 <ul>
-  <li>Ara katlar (ne giriş ne en üst kat)</li>
-  <li>Güney veya güney-doğu cephe</li>
-  <li>Ön cephe konum</li>
-  <li>Açık manzara veya ferah görüş alanı</li>
+  <li>Daha yüksek kira bedeli</li>
+  <li>Daha hızlı kiralama</li>
+  <li>Kısa dönem kiraya uygunluk</li>
 </ul>
 
-<p>Buna karşılık:</p>
+<h3 id="dezavantajları">Dezavantajları:</h3>
 
 <ul>
-  <li>Bodrum katlar</li>
-  <li>Kuzey cepheli daireler</li>
-  <li>Karanlık ve kapalı planlı evler</li>
+  <li>Başlangıç maliyeti</li>
+  <li>Eşya yıpranma riski</li>
 </ul>
 
-<p>satış sürecinde daha fazla zorlanır.</p>
+<p>Özellikle üniversite çevreleri ve merkezi iş bölgelerinde eşyalı evler ciddi avantaj sağlar.</p>
 
-<h3 id="5-fiyat-ile-piyasa-uyumu">5. Fiyat ile Piyasa Uyumu</h3>
+<h2 id="6-bina-yaşı-ve-aidat-faktörü">6. Bina Yaşı ve Aidat Faktörü</h2>
 
-<p>Bir ev ne kadar iyi olursa olsun <strong>yanlış fiyatlandırılmışsa satılmaz</strong>.</p>
-
-<p>Satılabilirliği ölçmek için şunlar karşılaştırılmalıdır:</p>
+<p>Yeni bina her zaman daha kârlı değildir.</p>
 
 <ul>
-  <li>Aynı binada daha önce satılan daire fiyatları</li>
-  <li>Aynı mahalledeki benzer ilanlar</li>
-  <li>Metrekare birim fiyatları</li>
+  <li>Yeni binalar: Yüksek aidat, düşük kira getirisi</li>
+  <li>Eski ama bakımlı binalar: Düşük aidat, daha iyi oran</li>
 </ul>
 
-<p>Piyasa değerinin yaklaşık yüzde 10–15 üzerinde fiyatlanan evler genellikle uzun süre ilanda kalır.</p>
+<p><strong>Kira getirisi hesabı yaparken aidatı mutlaka gider olarak düşünün.</strong></p>
 
-<h3 id="6-krediye-uygunluk-ve-tapu-durumu">6. Krediye Uygunluk ve Tapu Durumu</h3>
+<h2 id="7-satın-alma-fiyatında-pazarlık-gücü">7. Satın Alma Fiyatında Pazarlık Gücü</h2>
 
-<p>Likiditesi yüksek konutların en önemli ortak özelliklerinden biri <strong>hukuki sorunsuzluktur</strong>.</p>
-
-<p>Alıcıların özellikle dikkat ettiği noktalar:</p>
+<p>Yüksek kira getirisi çoğu zaman <strong>doğru fiyattan alım</strong> ile başlar.</p>
 
 <ul>
-  <li>Kat mülkiyetli tapu</li>
-  <li>İskân belgesi (oturma izni)</li>
-  <li>Banka kredisine uygunluk</li>
-  <li>Haciz, ipotek veya şerh bulunmaması</li>
+  <li>Uzun süredir satılıkta olan evler</li>
+  <li>Acil satıcılar</li>
+  <li>Miras veya boş evler</li>
 </ul>
 
-<p>Bu belgelerdeki eksiklikler satış süresini ciddi şekilde uzatır.</p>
+<p>Bu tür ilanlarda pazarlık payı yüksektir ve doğru alım, kira getirisini doğrudan yükseltir.</p>
 
-<h3 id="7-sosyal-donatılar-ve-günlük-yaşam-kolaylığı">7. Sosyal Donatılar ve Günlük Yaşam Kolaylığı</h3>
+<h2 id="8-bölgesel-kira-araştırması-yapın">8. Bölgesel Kira Araştırması Yapın</h2>
 
-<p>Günümüzde alıcılar için evin içi kadar çevresi de önemlidir.</p>
-
-<p>Likiditeyi artıran çevresel faktörler:</p>
+<p>Satın almadan önce mutlaka:</p>
 
 <ul>
-  <li>Otopark</li>
-  <li>Asansör</li>
-  <li>Güvenlik</li>
-  <li>Site içi yaşam</li>
-  <li>Yakın çevrede market, okul ve toplu taşıma</li>
+  <li>Aynı binadaki kiralık ilanları</li>
+  <li>Aynı sokaktaki emsal daireleri</li>
+  <li>Emlakçılardan güncel kira bilgilerini</li>
 </ul>
 
-<p>Bu avantajlar, aynı fiyat aralığındaki evler arasında hızlı satış farkı yaratır.</p>
+<p>araştırın.</p>
 
-<h2 id="likiditesi-yüksek-konutların-ortak-özellikleri">Likiditesi Yüksek Konutların Ortak Özellikleri</h2>
+<p><strong>Sadece ilan fiyatlarına değil, gerçekleşen kiralara odaklanın.</strong></p>
+
+<h2 id="9-kentsel-dönüşüm-ve-gelişim-potansiyeli">9. Kentsel Dönüşüm ve Gelişim Potansiyeli</h2>
+
+<p>Gelişmekte olan bölgeler, orta vadede kira getirisini artırabilir.</p>
 
 <ul>
-  <li>Talep gören lokasyon</li>
-  <li>Standart ve kullanışlı oda planı</li>
-  <li>Yeni veya bakımlı bina</li>
-  <li>Doğru kat ve cephe seçimi</li>
-  <li>Piyasa ile uyumlu fiyat</li>
-  <li>Krediye ve tapuya uygunluk</li>
-  <li>Günlük yaşamı kolaylaştıran çevresel olanaklar</li>
+  <li>Yeni metro projeleri</li>
+  <li>Üniversite kampüsleri</li>
+  <li>Sağlık yatırımları</li>
+  <li>Ofis ve AVM projeleri</li>
 </ul>
 
-<h2 id="sonuç">Sonuç</h2>
+<p>Ancak bu tür yatırımlarda kısa vadede değil, <strong>2–5 yıllık perspektif</strong> düşünülmelidir.</p>
 
-<p>Bir evin satılabilirliği yalnızca fiziksel özellikleriyle değil, <strong>piyasa koşulları ve doğru fiyat stratejisiyle</strong> birlikte değerlendirilmelidir.</p>
+<h2 id="10-kısa-dönem-kiralama-airbnb-seçeneği">10. Kısa Dönem Kiralama (Airbnb) Seçeneği</h2>
 
-<p>Eğer bir konut, bulunduğu bölgede benzerlerine göre hızlı alıcı bulabiliyorsa, bu konut <strong>yüksek likiditeli</strong> olarak değerlendirilir.</p>
+<p>Bazı bölgelerde kısa dönem kiralama, uzun dönem kiraya göre çok daha yüksek gelir sağlar.</p>
 
-<p>Bu bakış açısı:</p>
+<h3 id="uygun-bölgeler">Uygun bölgeler:</h3>
 
 <ul>
-  <li>Satıcılar için daha kısa sürede satış</li>
-  <li>Yatırımcılar için daha düşük risk</li>
-  <li>Alıcılar için daha doğru karar</li>
+  <li>Turistik merkezler</li>
+  <li>Hastane çevreleri</li>
+  <li>İş seyahati yoğun bölgeler</li>
 </ul>
 
-<p>anlamına gelir.</p>]]></content><author><name></name></author><category term="gayrimenkul yatırımı" /><summary type="html"><![CDATA[Bu yazıda, bir evin satılabilir olup olmadığını nasıl anlayabileceğini ve likiditesi yüksek konutların ortak özelliklerini tüm detaylarıyla ele alıyoruz.]]></summary></entry><entry><title type="html">Konut Alımında Rayiç Bedel Düşük Gösterilirse Ne Olur?</title><link href="http://localhost:4000/konut-aliminda-rayic-bedel-dusuk-gosterilirse-ne-olur" rel="alternate" type="text/html" title="Konut Alımında Rayiç Bedel Düşük Gösterilirse Ne Olur?" /><published>2026-02-01T00:00:00+03:00</published><updated>2026-02-01T00:00:00+03:00</updated><id>http://localhost:4000/konut-aliminda-rayic-bedel-dusuk-gosterilirse-ne-olur</id><content type="html" xml:base="http://localhost:4000/konut-aliminda-rayic-bedel-dusuk-gosterilirse-ne-olur"><![CDATA[<p>Konut alım-satım sürecinde en sık karşılaşılan uygulamalardan biri, <strong>rayiç bedelin (satış bedelinin) tapuda düşük gösterilmesi</strong>dir. Alıcı ve satıcı çoğu zaman daha az vergi ve harç ödemek amacıyla bu yönteme başvurur. Ancak kısa vadede avantaj gibi görünen bu durum, orta ve uzun vadede <strong>ciddi hukuki ve mali riskler</strong> doğurabilir.</p>
+<p>Ancak yasal düzenlemeler, site yönetimi kuralları ve işletme maliyetleri mutlaka hesaba katılmalıdır.</p>
+
+<h2 id="sonuç-yüksek-kira-getirisi-tesadüf-değildir">Sonuç: Yüksek Kira Getirisi Tesadüf Değildir</h2>
+
+<p>Kira getirisi yüksek ev bulmak;</p>
+
+<ul>
+  <li>Detaylı araştırma</li>
+  <li>Doğru lokasyon</li>
+  <li>Gerçekçi kira analizi</li>
+  <li>Pazarlık gücü</li>
+</ul>
+
+<p>gerektirir.</p>
+
+<p>Unutmayın, <strong>iyi yatırım pahalı ev değil, doğru fiyata alınmış ve kolay kiralanan evdir.</strong> Uzun vadede sizi yormayan, düzenli gelir sağlayan gayrimenkuller gerçek kazancı getirir.</p>]]></content><author><name></name></author><category term="kira" /><category term="gayrimenkul yatırımı" /><summary type="html"><![CDATA[Bu yazıda, kira getirisi yüksek evleri nasıl tespit edebileceğinizi adım adım ve yatırımcı bakış açısıyla ele alıyoruz.]]></summary></entry><entry><title type="html">Konut Alımında Rayiç Bedel Düşük Gösterilirse Ne Olur?</title><link href="http://localhost:4000/konut-aliminda-rayic-bedel-dusuk-gosterilirse-ne-olur" rel="alternate" type="text/html" title="Konut Alımında Rayiç Bedel Düşük Gösterilirse Ne Olur?" /><published>2026-02-01T00:00:00+03:00</published><updated>2026-02-01T00:00:00+03:00</updated><id>http://localhost:4000/konut-aliminda-rayic-bedel-dusuk-gosterilirse-ne-olur</id><content type="html" xml:base="http://localhost:4000/konut-aliminda-rayic-bedel-dusuk-gosterilirse-ne-olur"><![CDATA[<p>Konut alım-satım sürecinde en sık karşılaşılan uygulamalardan biri, <strong>rayiç bedelin (satış bedelinin) tapuda düşük gösterilmesi</strong>dir. Alıcı ve satıcı çoğu zaman daha az vergi ve harç ödemek amacıyla bu yönteme başvurur. Ancak kısa vadede avantaj gibi görünen bu durum, orta ve uzun vadede <strong>ciddi hukuki ve mali riskler</strong> doğurabilir.</p>
 
 <p>Bu yazıda, rayiç bedelin ne olduğu, neden düşük gösterildiği ve bunun <strong>alıcı ve satıcı açısından sonuçları</strong> detaylı şekilde ele alınmaktadır.</p>
 
@@ -719,81 +880,7 @@ Ev aylarca ilanda kalır, fiyat düşürülür ve yine de alıcı zor bulunur.</
   <li>Her iki taraf için hukuki sorunlar doğurur</li>
 </ul>
 
-<p>Özellikle yatırım amaçlı konut alanlar için bu konu, <strong>doğru planlama yapılmazsa ciddi maddi kayıplara</strong> yol açabilir.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Bu yazıda, rayiç bedelin ne olduğu, neden düşük gösterildiği ve bunun alıcı ve satıcı açısından sonuçları detaylı şekilde ele alınmaktadır.]]></summary></entry><entry><title type="html">Ev Alırken Manzara Gerçekten Fiyatı Etkiler mi?</title><link href="http://localhost:4000/ev-alirken-manzara-gercekten-fiyati-etkiler-mi" rel="alternate" type="text/html" title="Ev Alırken Manzara Gerçekten Fiyatı Etkiler mi?" /><published>2026-02-01T00:00:00+03:00</published><updated>2026-02-01T00:00:00+03:00</updated><id>http://localhost:4000/ev-alirken-manzara-gercekten-fiyati-etkiler-mi</id><content type="html" xml:base="http://localhost:4000/ev-alirken-manzara-gercekten-fiyati-etkiler-mi"><![CDATA[<p>Ev satın alırken dikkat edilen kriterler; konum, metrekare, bina yaşı, ulaşım imkanları ve sosyal donatılar gibi birçok faktöre dayanır. Ancak bu kriterler arasında çoğu zaman göz ardı edilse de <strong>manzara</strong>, konut fiyatını doğrudan ve ciddi şekilde etkileyen unsurlardan biridir. Peki manzara gerçekten evin değerini artırır mı, yoksa sadece psikolojik bir tercih midir?</p>
-
-<p>Bu yazıda manzaranın konut fiyatlarına etkisini, yatırım açısından avantajlarını ve hangi manzara türlerinin daha değerli olduğunu detaylı şekilde ele alıyoruz.</p>
-
-<h2 id="manzara-konut-değerini-nasıl-etkiler">Manzara Konut Değerini Nasıl Etkiler?</h2>
-
-<p>Gayrimenkul değerlemesinde manzara, nitelik artırıcı unsur olarak kabul edilir. Aynı binada, aynı metrekareye ve plana sahip iki daire arasında yalnızca manzara farkı nedeniyle ciddi fiyat farkları oluşabilir.</p>
-
-<p>Genel olarak manzara:</p>
-<ul>
-  <li>Satış fiyatını artırır</li>
-  <li>Kiralanabilirliği yükseltir</li>
-  <li>Satış süresini kısaltır</li>
-  <li>Talep sürekliliği sağlar</li>
-</ul>
-
-<p>Özellikle büyük şehirlerde manzaralı konut sayısının sınırlı olması, bu tip evleri daha değerli hale getirir.</p>
-
-<h2 id="hangi-manzara-türleri-daha-değerlidir">Hangi Manzara Türleri Daha Değerlidir?</h2>
-
-<p>Manzara türleri arasında değer farkı oldukça nettir. Türkiye’de yapılan satış ve değerleme verileri incelendiğinde genel sıralama şu şekildedir:</p>
-
-<h3 id="deniz-manzarası">Deniz Manzarası</h3>
-
-<p>Deniz manzaralı evler, en yüksek prim yapan konut tipidir. Özellikle kesintisiz ve önü kapanmayacak deniz manzarasına sahip daireler, aynı binadaki manzarasız dairelere kıyasla yüzde 30 ila yüzde 70 arasında daha yüksek fiyatla satılabilir.</p>
-
-<h3 id="boğaz-göl-veya-nehir-manzarası">Boğaz, Göl veya Nehir Manzarası</h3>
-
-<p>Boğaz, göl veya nehir manzarası; prestij algısı ve sınırlı arz nedeniyle yüksek değer yaratır. İstanbul Boğazı, Sapanca Gölü veya Büyükçekmece Gölü gibi lokasyonlarda bu tip konutlar deniz manzarasına yakın seviyelerde fiyatlanır.</p>
-
-<h3 id="orman-ve-doğa-manzarası">Orman ve Doğa Manzarası</h3>
-
-<p>Son yıllarda doğa manzaralı evlere olan ilgi belirgin şekilde artmıştır. Orman, vadi veya geniş yeşil alan manzarasına sahip konutlar, bulunduğu bölgeye göre yüzde 10 ila 30 arasında değer artışı sağlayabilir. Özellikle aileler ve uzun süreli oturum düşünenler tarafından tercih edilir.</p>
-
-<h3 id="şehir-ve-skyline-manzarası">Şehir ve Skyline Manzarası</h3>
-
-<p>Yüksek katlı rezidans projelerinde şehir manzarası önemli bir avantajdır. Finans merkezleri, köprüler ve simge yapılar manzaraya dahilse, bu durum konutun algılanan değerini artırır.</p>
-
-<h2 id="manzara-kat-değeriyle-doğrudan-i̇lişkili-midir">Manzara Kat Değeriyle Doğrudan İlişkili midir?</h2>
-
-<p>Manzara çoğu zaman kat ile birlikte değerlendirilir. Yüksek katlar genellikle daha geniş görüş açısı sunduğu için tercih edilir. Ancak tek başına yüksek kat yeterli değildir. Önü açık olmayan, ileride manzarası kapanabilecek dairelerde bu avantaj kısa sürede ortadan kalkabilir.</p>
-
-<h2 id="yatırım-amaçlı-alımlarda-manzaranın-önemi">Yatırım Amaçlı Alımlarda Manzaranın Önemi</h2>
-
-<p>Yatırımcılar açısından manzara önemli bir kriterdir. Manzaralı konutlar:</p>
-<ul>
-  <li>Daha hızlı kiralanır</li>
-  <li>Daha yüksek kira getirisi sağlar</li>
-  <li>Satış aşamasında pazarlık payını azaltır</li>
-</ul>
-
-<p>Kısa dönem kiralama yapılan bölgelerde manzaralı evler, doluluk oranı açısından ciddi avantaj sağlar. Ancak manzara için ödenen bedelin, bölgenin genel fiyat seviyesini aşmaması gerekir.</p>
-
-<h2 id="manzara-her-zaman-avantaj-sağlar-mı">Manzara Her Zaman Avantaj Sağlar mı?</h2>
-
-<p>Her manzara türü her zaman değer artırıcı olmayabilir. Yoğun trafik, sanayi alanı, inşaat sahası veya gürültüye açık şehir manzaraları bazı durumlarda konut değerini düşürebilir. Bu nedenle manzara kavramı yalnızca estetik değil, çevresel koşullarla birlikte değerlendirilmelidir.</p>
-
-<h2 id="manzaralı-ev-alırken-nelere-dikkat-edilmeli">Manzaralı Ev Alırken Nelere Dikkat Edilmeli?</h2>
-
-<p>Manzara için ekstra bedel ödemeden önce şu unsurlar mutlaka incelenmelidir:</p>
-<ul>
-  <li>İmar durumu ve önünün kapanma riski</li>
-  <li>Yakın çevrede planlanan projeler</li>
-  <li>Balkon ve pencere yönleri</li>
-  <li>Gün ışığı alma durumu</li>
-  <li>Manzaranın sürekliliği</li>
-</ul>
-
-<p>Geçici manzaraya sahip daireler uzun vadede değer kaybı yaşayabilir.</p>
-
-<h2 id="sonuç-manzara-fiyatı-etkiler-mi">Sonuç: Manzara Fiyatı Etkiler mi?</h2>
-
-<p>Manzara, konut fiyatını doğrudan etkileyen önemli bir faktördür. Ancak bu etki; manzaranın türüne, sürekliliğine, lokasyona ve konutun genel özelliklerine göre değişir.</p>
-
-<p>Doğru lokasyonda, önü kapanmayacak manzaraya sahip bir ev; hem yaşam kalitesi hem de yatırım açısından güçlü bir avantaj sunar.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Bu yazıda manzaranın konut fiyatlarına etkisini, yatırım açısından avantajlarını ve hangi manzara türlerinin daha değerli olduğunu detaylı şekilde ele alıyoruz.]]></summary></entry><entry><title type="html">Ev Alırken Gün Işığı ve Güneş Alma Süresi Nasıl Hesaplanır?</title><link href="http://localhost:4000/ev-alirken-gun-isigi-ve-gunes-alma-suresi-nasil-hesaplanir" rel="alternate" type="text/html" title="Ev Alırken Gün Işığı ve Güneş Alma Süresi Nasıl Hesaplanır?" /><published>2026-02-01T00:00:00+03:00</published><updated>2026-02-01T00:00:00+03:00</updated><id>http://localhost:4000/ev-alirken-gun-isigi-ve-gunes-alma-suresi-nasil-hesaplanir</id><content type="html" xml:base="http://localhost:4000/ev-alirken-gun-isigi-ve-gunes-alma-suresi-nasil-hesaplanir"><![CDATA[<p>Ev satın alırken çoğu kişi metrekare, oda sayısı ve fiyat gibi kriterlere odaklanır. Ancak gün ışığı alma durumu ve güneşlenme süresi, hem yaşam kalitesi hem de konutun uzun vadeli değeri açısından en az bu kriterler kadar önemlidir. Yeterli doğal ışık alan bir ev daha sağlıklı, daha konforlu ve çoğu zaman daha değerlidir.</p>
+<p>Özellikle yatırım amaçlı konut alanlar için bu konu, <strong>doğru planlama yapılmazsa ciddi maddi kayıplara</strong> yol açabilir.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Bu yazıda, rayiç bedelin ne olduğu, neden düşük gösterildiği ve bunun alıcı ve satıcı açısından sonuçları detaylı şekilde ele alınmaktadır.]]></summary></entry><entry><title type="html">Ev Alırken Gün Işığı ve Güneş Alma Süresi Nasıl Hesaplanır?</title><link href="http://localhost:4000/ev-alirken-gun-isigi-ve-gunes-alma-suresi-nasil-hesaplanir" rel="alternate" type="text/html" title="Ev Alırken Gün Işığı ve Güneş Alma Süresi Nasıl Hesaplanır?" /><published>2026-02-01T00:00:00+03:00</published><updated>2026-02-01T00:00:00+03:00</updated><id>http://localhost:4000/ev-alirken-gun-isigi-ve-gunes-alma-suresi-nasil-hesaplanir</id><content type="html" xml:base="http://localhost:4000/ev-alirken-gun-isigi-ve-gunes-alma-suresi-nasil-hesaplanir"><![CDATA[<p>Ev satın alırken çoğu kişi metrekare, oda sayısı ve fiyat gibi kriterlere odaklanır. Ancak gün ışığı alma durumu ve güneşlenme süresi, hem yaşam kalitesi hem de konutun uzun vadeli değeri açısından en az bu kriterler kadar önemlidir. Yeterli doğal ışık alan bir ev daha sağlıklı, daha konforlu ve çoğu zaman daha değerlidir.</p>
 
 <p>Bu yazıda, bir evin gün ışığı alma potansiyelinin ve güneş görme süresinin nasıl hesaplanabileceğini, hangi faktörlerin etkili olduğunu ve satın alma öncesi nelere dikkat etmen gerektiğini adım adım ele alıyoruz.</p>
 
@@ -928,7 +1015,81 @@ Doğrudan güneş süresi yok veya çok sınırlıdır</li>
   <li>Mevsimsel güneş açılarını göz önünde bulundur</li>
 </ul>
 
-<p>Unutmayın, dekorasyon değişebilir ama güneşin yönü değişmez.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Bu yazıda, bir evin gün ışığı alma potansiyelinin ve güneş görme süresinin nasıl hesaplanabileceğini, hangi faktörlerin etkili olduğunu ve satın alma öncesi nelere dikkat etmen gerektiğini adım adım ele alıyoruz..]]></summary></entry><entry><title type="html">Göktürk’te Ev Satış Süresi Neden Uzuyor?</title><link href="http://localhost:4000/gokturkte-ev-satis-suresi-neden-uzuyor" rel="alternate" type="text/html" title="Göktürk’te Ev Satış Süresi Neden Uzuyor?" /><published>2026-01-25T00:00:00+03:00</published><updated>2026-01-25T00:00:00+03:00</updated><id>http://localhost:4000/gokturkte-ev-satis-suresi-neden-uzuyor</id><content type="html" xml:base="http://localhost:4000/gokturkte-ev-satis-suresi-neden-uzuyor"><![CDATA[<p>Göktürk, İstanbul’un kuzeyinde doğa ile iç içe konumu, modern site yapıları ve şehir merkezine görece yakınlığıyla uzun yıllardır nitelikli konut talebi gören bir semt. Ancak son dönemde Göktürk’te satılık evlerin ilanda kalma sürelerinin uzadığı açıkça görülüyor. Peki bu durumun arkasında hangi nedenler var?</p>
+<p>Unutmayın, dekorasyon değişebilir ama güneşin yönü değişmez.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Bu yazıda, bir evin gün ışığı alma potansiyelinin ve güneş görme süresinin nasıl hesaplanabileceğini, hangi faktörlerin etkili olduğunu ve satın alma öncesi nelere dikkat etmen gerektiğini adım adım ele alıyoruz..]]></summary></entry><entry><title type="html">Ev Alırken Manzara Gerçekten Fiyatı Etkiler mi?</title><link href="http://localhost:4000/ev-alirken-manzara-gercekten-fiyati-etkiler-mi" rel="alternate" type="text/html" title="Ev Alırken Manzara Gerçekten Fiyatı Etkiler mi?" /><published>2026-02-01T00:00:00+03:00</published><updated>2026-02-01T00:00:00+03:00</updated><id>http://localhost:4000/ev-alirken-manzara-gercekten-fiyati-etkiler-mi</id><content type="html" xml:base="http://localhost:4000/ev-alirken-manzara-gercekten-fiyati-etkiler-mi"><![CDATA[<p>Ev satın alırken dikkat edilen kriterler; konum, metrekare, bina yaşı, ulaşım imkanları ve sosyal donatılar gibi birçok faktöre dayanır. Ancak bu kriterler arasında çoğu zaman göz ardı edilse de <strong>manzara</strong>, konut fiyatını doğrudan ve ciddi şekilde etkileyen unsurlardan biridir. Peki manzara gerçekten evin değerini artırır mı, yoksa sadece psikolojik bir tercih midir?</p>
+
+<p>Bu yazıda manzaranın konut fiyatlarına etkisini, yatırım açısından avantajlarını ve hangi manzara türlerinin daha değerli olduğunu detaylı şekilde ele alıyoruz.</p>
+
+<h2 id="manzara-konut-değerini-nasıl-etkiler">Manzara Konut Değerini Nasıl Etkiler?</h2>
+
+<p>Gayrimenkul değerlemesinde manzara, nitelik artırıcı unsur olarak kabul edilir. Aynı binada, aynı metrekareye ve plana sahip iki daire arasında yalnızca manzara farkı nedeniyle ciddi fiyat farkları oluşabilir.</p>
+
+<p>Genel olarak manzara:</p>
+<ul>
+  <li>Satış fiyatını artırır</li>
+  <li>Kiralanabilirliği yükseltir</li>
+  <li>Satış süresini kısaltır</li>
+  <li>Talep sürekliliği sağlar</li>
+</ul>
+
+<p>Özellikle büyük şehirlerde manzaralı konut sayısının sınırlı olması, bu tip evleri daha değerli hale getirir.</p>
+
+<h2 id="hangi-manzara-türleri-daha-değerlidir">Hangi Manzara Türleri Daha Değerlidir?</h2>
+
+<p>Manzara türleri arasında değer farkı oldukça nettir. Türkiye’de yapılan satış ve değerleme verileri incelendiğinde genel sıralama şu şekildedir:</p>
+
+<h3 id="deniz-manzarası">Deniz Manzarası</h3>
+
+<p>Deniz manzaralı evler, en yüksek prim yapan konut tipidir. Özellikle kesintisiz ve önü kapanmayacak deniz manzarasına sahip daireler, aynı binadaki manzarasız dairelere kıyasla yüzde 30 ila yüzde 70 arasında daha yüksek fiyatla satılabilir.</p>
+
+<h3 id="boğaz-göl-veya-nehir-manzarası">Boğaz, Göl veya Nehir Manzarası</h3>
+
+<p>Boğaz, göl veya nehir manzarası; prestij algısı ve sınırlı arz nedeniyle yüksek değer yaratır. İstanbul Boğazı, Sapanca Gölü veya Büyükçekmece Gölü gibi lokasyonlarda bu tip konutlar deniz manzarasına yakın seviyelerde fiyatlanır.</p>
+
+<h3 id="orman-ve-doğa-manzarası">Orman ve Doğa Manzarası</h3>
+
+<p>Son yıllarda doğa manzaralı evlere olan ilgi belirgin şekilde artmıştır. Orman, vadi veya geniş yeşil alan manzarasına sahip konutlar, bulunduğu bölgeye göre yüzde 10 ila 30 arasında değer artışı sağlayabilir. Özellikle aileler ve uzun süreli oturum düşünenler tarafından tercih edilir.</p>
+
+<h3 id="şehir-ve-skyline-manzarası">Şehir ve Skyline Manzarası</h3>
+
+<p>Yüksek katlı rezidans projelerinde şehir manzarası önemli bir avantajdır. Finans merkezleri, köprüler ve simge yapılar manzaraya dahilse, bu durum konutun algılanan değerini artırır.</p>
+
+<h2 id="manzara-kat-değeriyle-doğrudan-i̇lişkili-midir">Manzara Kat Değeriyle Doğrudan İlişkili midir?</h2>
+
+<p>Manzara çoğu zaman kat ile birlikte değerlendirilir. Yüksek katlar genellikle daha geniş görüş açısı sunduğu için tercih edilir. Ancak tek başına yüksek kat yeterli değildir. Önü açık olmayan, ileride manzarası kapanabilecek dairelerde bu avantaj kısa sürede ortadan kalkabilir.</p>
+
+<h2 id="yatırım-amaçlı-alımlarda-manzaranın-önemi">Yatırım Amaçlı Alımlarda Manzaranın Önemi</h2>
+
+<p>Yatırımcılar açısından manzara önemli bir kriterdir. Manzaralı konutlar:</p>
+<ul>
+  <li>Daha hızlı kiralanır</li>
+  <li>Daha yüksek kira getirisi sağlar</li>
+  <li>Satış aşamasında pazarlık payını azaltır</li>
+</ul>
+
+<p>Kısa dönem kiralama yapılan bölgelerde manzaralı evler, doluluk oranı açısından ciddi avantaj sağlar. Ancak manzara için ödenen bedelin, bölgenin genel fiyat seviyesini aşmaması gerekir.</p>
+
+<h2 id="manzara-her-zaman-avantaj-sağlar-mı">Manzara Her Zaman Avantaj Sağlar mı?</h2>
+
+<p>Her manzara türü her zaman değer artırıcı olmayabilir. Yoğun trafik, sanayi alanı, inşaat sahası veya gürültüye açık şehir manzaraları bazı durumlarda konut değerini düşürebilir. Bu nedenle manzara kavramı yalnızca estetik değil, çevresel koşullarla birlikte değerlendirilmelidir.</p>
+
+<h2 id="manzaralı-ev-alırken-nelere-dikkat-edilmeli">Manzaralı Ev Alırken Nelere Dikkat Edilmeli?</h2>
+
+<p>Manzara için ekstra bedel ödemeden önce şu unsurlar mutlaka incelenmelidir:</p>
+<ul>
+  <li>İmar durumu ve önünün kapanma riski</li>
+  <li>Yakın çevrede planlanan projeler</li>
+  <li>Balkon ve pencere yönleri</li>
+  <li>Gün ışığı alma durumu</li>
+  <li>Manzaranın sürekliliği</li>
+</ul>
+
+<p>Geçici manzaraya sahip daireler uzun vadede değer kaybı yaşayabilir.</p>
+
+<h2 id="sonuç-manzara-fiyatı-etkiler-mi">Sonuç: Manzara Fiyatı Etkiler mi?</h2>
+
+<p>Manzara, konut fiyatını doğrudan etkileyen önemli bir faktördür. Ancak bu etki; manzaranın türüne, sürekliliğine, lokasyona ve konutun genel özelliklerine göre değişir.</p>
+
+<p>Doğru lokasyonda, önü kapanmayacak manzaraya sahip bir ev; hem yaşam kalitesi hem de yatırım açısından güçlü bir avantaj sunar.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Bu yazıda manzaranın konut fiyatlarına etkisini, yatırım açısından avantajlarını ve hangi manzara türlerinin daha değerli olduğunu detaylı şekilde ele alıyoruz.]]></summary></entry><entry><title type="html">Göktürk’te Ev Satış Süresi Neden Uzuyor?</title><link href="http://localhost:4000/gokturkte-ev-satis-suresi-neden-uzuyor" rel="alternate" type="text/html" title="Göktürk’te Ev Satış Süresi Neden Uzuyor?" /><published>2026-01-25T00:00:00+03:00</published><updated>2026-01-25T00:00:00+03:00</updated><id>http://localhost:4000/gokturkte-ev-satis-suresi-neden-uzuyor</id><content type="html" xml:base="http://localhost:4000/gokturkte-ev-satis-suresi-neden-uzuyor"><![CDATA[<p>Göktürk, İstanbul’un kuzeyinde doğa ile iç içe konumu, modern site yapıları ve şehir merkezine görece yakınlığıyla uzun yıllardır nitelikli konut talebi gören bir semt. Ancak son dönemde Göktürk’te satılık evlerin ilanda kalma sürelerinin uzadığı açıkça görülüyor. Peki bu durumun arkasında hangi nedenler var?</p>
 
 <p>Bu yazıda Göktürk özelinde konut satış süresini etkileyen faktörleri, piyasa dinamiklerini ve alıcı–satıcı davranışlarını detaylı şekilde ele alıyoruz.</p>
 
@@ -1135,105 +1296,4 @@ Doğrudan güneş süresi yok veya çok sınırlıdır</li>
 
 <p>Lüks konut vergisi, özellikle büyük şehirlerde yüksek değerli konut sahiplerini doğrudan etkileyen önemli bir vergidir. 2026 yılı için belirlenen <strong>17.711.000 TL muafiyet sınırı</strong> ve <strong>%0,3 – %1,0 aralığındaki kademeli oranlar</strong>, konut yatırımcılarının mali planlamasında mutlaka dikkate alınmalıdır.</p>
 
-<p>Gayrimenkul yatırımı yapmadan önce yalnızca satın alma maliyetleri değil, <strong>uzun vadeli vergi yükümlülükleri</strong> de göz önünde bulundurulmalıdır.</p>]]></content><author><name></name></author><category term="vergi" /><summary type="html"><![CDATA[Bu yazıda lüks konut vergisinin ne olduğu, kimleri kapsadığı, nasıl hesaplandığı ve 2026 yılı güncel lüks konut vergisi oranları detaylı şekilde ele alınmaktadır.]]></summary></entry><entry><title type="html">Ev Alırken Dairenin Brüt ve Net Metrekare Farkı Nasıl Anlaşılır?</title><link href="http://localhost:4000/ev-alirken-dairenin-brut-ve-net-metrekare-farki-nasil-anlasilir" rel="alternate" type="text/html" title="Ev Alırken Dairenin Brüt ve Net Metrekare Farkı Nasıl Anlaşılır?" /><published>2026-01-20T00:00:00+03:00</published><updated>2026-01-20T00:00:00+03:00</updated><id>http://localhost:4000/ev-alirken-dairenin-brut-ve-net-metrekare-farki-nasil-anlasilir</id><content type="html" xml:base="http://localhost:4000/ev-alirken-dairenin-brut-ve-net-metrekare-farki-nasil-anlasilir"><![CDATA[<p>Ev satın alma sürecinde en sık kafa karıştıran konulardan biri, dairenin brüt ve net metrekare farkıdır. İlanlarda büyük metrekarelerle sunulan evlerin, içine girildiğinde beklenenden daha küçük hissedilmesi çoğu zaman bu farktan kaynaklanır. Bu nedenle ev alırken yalnızca ilan metnindeki rakamlara bakmak ciddi bir yanılgıya yol açabilir.</p>
-
-<p>Bu yazıda, brüt ve net metrekare kavramlarını net bir şekilde açıklıyor, aralarındaki farkı nasıl anlayabileceğini ve ev alırken nelere dikkat etmen gerektiğini detaylıca ele alıyoruz.</p>
-
-<h2 id="brüt-metrekare-nedir">Brüt Metrekare Nedir?</h2>
-
-<p>Brüt metrekare, dairenin kendisine ait alanların yanı sıra ortak kullanım alanlarından da pay içeren toplam ölçüsüdür. Genellikle proje tanıtımlarında ve ilanlarda öne çıkarılır.</p>
-
-<p>Brüt metrekareye dahil edilebilen alanlar şunlardır:</p>
-
-<ul>
-  <li>Dairenin içindeki tüm odalar</li>
-  <li>İç ve dış duvar payları</li>
-  <li>Balkonlar</li>
-  <li>Kat koridorları</li>
-  <li>Merdiven boşlukları</li>
-  <li>Asansör alanları</li>
-  <li>Sığınak ve sosyal alanlardan düşen paylar</li>
-</ul>
-
-<p>Bu nedenle brüt metrekare, dairenin gerçek yaşam alanını birebir yansıtmaz. Daha çok pazarlama amacıyla kullanılan bir ölçüdür.</p>
-
-<h2 id="net-metrekare-nedir">Net Metrekare Nedir?</h2>
-
-<p>Net metrekare, evin içerisinde fiilen kullanabildiğin yaşam alanını ifade eder. Günlük hayatını doğrudan etkileyen ölçü budur.</p>
-
-<p>Net metrekareye dahil olan alanlar:</p>
-
-<ul>
-  <li>Salon</li>
-  <li>Odalar</li>
-  <li>Mutfak</li>
-  <li>Banyo ve tuvalet</li>
-  <li>Antre ve hol</li>
-  <li>Balkon (projeye göre değişebilir)</li>
-</ul>
-
-<p>Net metrekareye dahil olmayan alanlar:</p>
-
-<ul>
-  <li>Duvar kalınlıkları</li>
-  <li>Kolonlar</li>
-  <li>Ortak alanlar</li>
-  <li>Merdiven ve asansör boşlukları</li>
-</ul>
-
-<p>Ev alırken esas dikkate alınması gereken metrekare türü net metrekaredir.</p>
-
-<h2 id="brüt-ve-net-metrekare-arasındaki-fark-neden-fazladır">Brüt ve Net Metrekare Arasındaki Fark Neden Fazladır?</h2>
-
-<p>Özellikle yeni konut projelerinde brüt ve net metrekare arasındaki fark yüzde 20 ile yüzde 40 arasında değişebilir. Bunun başlıca nedenleri şunlardır:</p>
-
-<ul>
-  <li>Geniş site içi sosyal alanlar</li>
-  <li>Kalın taşıyıcı kolonlar</li>
-  <li>Uzun ve geniş kat koridorları</li>
-  <li>Büyük merdiven ve asansör boşlukları</li>
-</ul>
-
-<p>Örnek olarak, 120 metrekare brüt olarak satılan bir dairenin net kullanım alanı 85–90 metrekare civarında olabilir.</p>
-
-<h2 id="dairenin-gerçek-net-metrekaresi-nasıl-anlaşılır">Dairenin Gerçek Net Metrekaresi Nasıl Anlaşılır?</h2>
-
-<h3 id="mimari-projeyi-i̇nceleyin">Mimari Projeyi İnceleyin</h3>
-
-<p>Satıcıdan veya müteahhitten mutlaka mimari kat planını isteyin. Kat planlarında net kullanım alanları genellikle ölçüleriyle birlikte gösterilir.</p>
-
-<h3 id="tapu-bilgilerine-tek-başına-güvenmeyin">Tapu Bilgilerine Tek Başına Güvenmeyin</h3>
-
-<p>Tapuda yazan metrekare bilgisi çoğu zaman brüt alanı ifade eder. Tapuda açıkça “net alan” ibaresi yer almıyorsa, bu bilgiye dayanarak karar vermek doğru değildir.</p>
-
-<h3 id="dairenin-i̇çinde-ölçüm-yapın">Dairenin İçinde Ölçüm Yapın</h3>
-
-<p>Evi gezerken bir şerit metre veya lazer metre ile salon ve odaların ölçülerini alabilirsiniz. Bu ölçüleri toplayarak yaklaşık net alanı kendiniz hesaplayabilirsiniz. Özellikle ikinci el dairelerde bu yöntem oldukça faydalıdır.</p>
-
-<h3 id="satış-sözleşmesini-dikkatle-okuyun">Satış Sözleşmesini Dikkatle Okuyun</h3>
-
-<p>Yeni projelerde satış sözleşmesinde net metrekare bilgisi açıkça yer almalıdır. “Net kullanım alanı” veya “bağımsız bölüm net alanı” gibi ifadelerin sözleşmede bulunup bulunmadığını kontrol edin. Gerekirse bu bilgiyi sözleşmeye ekletin.</p>
-
-<h3 id="balkon-ve-teras-detaylarını-sorun">Balkon ve Teras Detaylarını Sorun</h3>
-
-<p>Bazı projelerde balkonlar brüt alana tam olarak dahil edilirken, net alana kısmen veya hiç dahil edilmeyebilir. Balkonun açık mı kapalı mı olduğu ve net alana nasıl hesaplandığı mutlaka sorulmalıdır.</p>
-
-<h2 id="brüt-ve-net-metrekare-farkı-yasal-mı">Brüt ve Net Metrekare Farkı Yasal mı?</h2>
-
-<p>Mevzuata göre tüketiciye net metrekare bilgisinin açık ve doğru şekilde bildirilmesi gerekir. Ancak uygulamada hâlâ brüt metrekare üzerinden pazarlama yapılabilmektedir. Bu nedenle sözlü beyanlara değil, yazılı ve resmi belgelere dayanmak gerekir.</p>
-
-<h2 id="ev-alırken-metrekare-konusunda-dikkat-edilmesi-gerekenler">Ev Alırken Metrekare Konusunda Dikkat Edilmesi Gerekenler</h2>
-
-<ul>
-  <li>“Kaç metrekare?” yerine “kaç metrekare net?” diye sorun</li>
-  <li>Mimari proje görmeden kapora vermeyin</li>
-  <li>Brüt ve net farkı çok yüksekse mutlaka detay isteyin</li>
-  <li>Evin içini ölçmekten çekinmeyin</li>
-  <li>Satış sözleşmesini imzalamadan önce metrekare maddesini okuyun</li>
-</ul>
-
-<h2 id="sonuç">Sonuç</h2>
-
-<p>Ev alırken metrekare bilgisi sadece bir rakam değildir; yaşam alanınızın gerçek büyüklüğünü belirler. Brüt metrekare çoğu zaman yanıltıcı olabilir. Konforu ve kullanım alanını belirleyen asıl ölçü her zaman net metrekaredir.</p>
-
-<p>Bilinçli bir alıcı olarak doğru soruları sormak, belgeleri incelemek ve gerekirse ölçüm yapmak, ileride yaşanabilecek hayal kırıklıklarının önüne geçer.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[Bu yazıda, brüt ve net metrekare kavramlarını net bir şekilde açıklıyor, aralarındaki farkı nasıl anlayabileceğini ve ev alırken nelere dikkat etmen gerektiğini detaylıca ele alıyoruz.]]></summary></entry></feed>
+<p>Gayrimenkul yatırımı yapmadan önce yalnızca satın alma maliyetleri değil, <strong>uzun vadeli vergi yükümlülükleri</strong> de göz önünde bulundurulmalıdır.</p>]]></content><author><name></name></author><category term="vergi" /><summary type="html"><![CDATA[Bu yazıda lüks konut vergisinin ne olduğu, kimleri kapsadığı, nasıl hesaplandığı ve 2026 yılı güncel lüks konut vergisi oranları detaylı şekilde ele alınmaktadır.]]></summary></entry></feed>
