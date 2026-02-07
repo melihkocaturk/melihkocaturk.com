@@ -75,6 +75,12 @@ Ev alım kararı yalnızca faiz oranlarına göre verilmemelidir. Aşağıdaki f
 
 Faizler düşse bile yanlış lokasyonda veya bütçeyi aşan bir alım uzun vadede sorun yaratabilir.
 
+## Konut Kredisi Faiz Oranlarının Son 5 Yıllık Değişimi
+
+<img src="/images/2026/02/2021_2025-konut_kredisi_faiz_oranlari.png" alt="Konut Kredisi Faiz Oranlarının Son 5 Yıllık Değişimi" class="img-fluid">
+
+Bu grafik, Türkiye’de son 5 yılda konut kredisi faiz oranlarının seyrini açık biçimde ortaya koymaktadır. 2021 ve 2022 yıllarında görece düşük seviyelerde seyreden konut kredisi faizleri, 2023 itibarıyla belirgin bir yükseliş trendine girmiş, 2024 yılında ise zirve seviyelere ulaşmıştır. 2025 yılına gelindiğinde faiz oranlarında sınırlı bir gerileme görülse de, oranlar hâlâ tarihsel ortalamaların üzerinde kalmaktadır. Bu eğilim, konut alım talebinin baskılandığını, nakit alımların ve alternatif yatırım modellerinin öne çıktığını ve kentsel dönüşüm projelerinin finansman yapısının giderek daha fazla önem kazandığını göstermektedir.
+
 ## 2026 İçin Genel Değerlendirme
 
 2026 yılında konut kredisi faizlerinde düşüş ihtimali bulunmaktadır, ancak bu düşüşün hızlı ve sert olması beklenmemektedir. Daha çok yılın ortası ve sonuna doğru kademeli bir gevşeme öngörülmektedir.

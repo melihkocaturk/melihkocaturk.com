@@ -981,6 +981,10 @@
 <lastmod>2026-02-04T00:00:00+03:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/kentsel-donusum-yasasi-ev-fiyatlarini-nasil-etkileyecek</loc>
+<lastmod>2026-02-07T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/ara</loc>
 </url>
 <url>
@@ -1138,5 +1142,8 @@
 </url>
 <url>
 <loc>http://localhost:4000/sayfa49/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/sayfa50/</loc>
 </url>
 </urlset>

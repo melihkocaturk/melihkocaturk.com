@@ -9,7 +9,7 @@ Emlak sektöründe alıcı ve satıcıların en sık kullandığı cümlelerden 
 
 Bu yazıda, “biraz daha bekleyeyim” diyenlerin **zamana yayılmış ama birikerek büyüyen kayıplarını** emlak sektörü özelinde detaylı şekilde ele alıyoruz.
 
-## 1. Beklemenin Görünmeyen Maliyeti: Fırsat Maliyeti
+## Beklemenin Görünmeyen Maliyeti: Fırsat Maliyeti
 
 Emlakta çoğu kişi sadece **fiyatı** düşünür. Oysa asıl mesele çoğu zaman **fiyat değil, zaman**dır.
 
@@ -30,7 +30,7 @@ Bu da yaklaşık **1.000.000 TL’lik fırsat maliyeti** anlamına gelir.
 
 Bu kayıp genellikle “kağıt üzerinde” olmadığı için fark edilmez, ancak fiilen yaşanır.
 
-## 2. Faiz Düşsün Diye Bekleyenler Ne Kaybediyor?
+## Faiz Düşsün Diye Bekleyenler Ne Kaybediyor?
 
 En yaygın bekleme gerekçesi şudur: **“Faizler düşsün, o zaman alırım.”**
 
@@ -47,7 +47,7 @@ Sonuç olarak:
 
 Birçok alıcı, düşük faiz döneminde daha pahalı bir gayrimenkul almak zorunda kalır.
 
-## 3. Satıcılar İçin Beklemenin Bedeli
+## Satıcılar İçin Beklemenin Bedeli
 
 “Biraz daha bekleyeyim” sadece alıcıların değil, satıcıların da sıkça başvurduğu bir yaklaşımdır.
 
@@ -72,7 +72,7 @@ Bunun sonucunda:
 
 Uzun süre ilanda kalan konutlar, çoğu zaman ilk istenen fiyattan **daha düşük bir bedelle** satılır.
 
-## 4. Beklerken Kaybedilen Pazarlık Gücü
+## Beklerken Kaybedilen Pazarlık Gücü
 
 Emlakta pazarlık gücü, genellikle **piyasanın durgun olduğu dönemlerde** alıcıdadır.
 
@@ -89,7 +89,7 @@ Piyasa hareketlendiğinde ise:
 - “Nasıl olsa başkası alır” psikolojisi oluşur
 - Pazarlık neredeyse ortadan kalkar
 
-## 5. Psikolojik Tuzak: Mükemmel Zaman Yanılgısı
+## Psikolojik Tuzak: Mükemmel Zaman Yanılgısı
 
 Birçok kişi farkında olmadan şu beklentiye girer:
 
@@ -110,7 +110,7 @@ vardır.
 
 Piyasanın tamamen netleşmesini bekleyenler, çoğu zaman yükselen trendin gerisinde kalır.
 
-## 6. Beklemek Yerine Ne Yapılmalı?
+## Beklemek Yerine Ne Yapılmalı?
 
 “Bekleyeyim” refleksi yerine şu sorular sorulmalıdır:
 
@@ -124,7 +124,15 @@ Doğru analizle alınan bir gayrimenkul:
 - Kısa vadede bile değer kaybettirmez
 - Uzun vadede bekleyeni değil, **harekete geçeni** ödüllendirir
 
-## 7. Sonuç: En Büyük Kayıp, Kaybetmediğini Sanmaktır
+## 2020–2025 Arasında Konut Fiyatları: Beklemenin Gerçek Maliyeti
+
+<img src="/images/2026/02/turkiye_konut_fiyatlarinin_degisimi_2020_2025.png" alt="Türkiye Konut Fiyatlarının Değişimi 2020–2025" class="img-fluid">
+
+2020–2025 döneminde konut fiyatlarında yaşanan artış, “biraz daha bekleyeyim” yaklaşımının çoğu zaman sanıldığından daha yüksek bir maliyet yarattığını gösteriyor. Özellikle pandemi sonrası dönemde hızlanan fiyat artışları, alım kararını erteleyenlerin aynı konuta daha yüksek bedeller ödemek zorunda kalmasına neden oldu. Bu süreçte faiz oranları kadar, konut arzı, talep baskısı ve maliyet artışları da fiyatları yukarı taşıyan temel unsurlar arasında yer aldı.
+
+Grafikte görülen eğilim, konut piyasasında zamanlamanın ne kadar kritik olduğunu açık biçimde ortaya koyuyor. Bekleme süresi uzadıkça sadece fiyat artışı değil, aynı zamanda kaybedilen kira getirisi ve artan finansman ihtiyacı da toplam maliyeti büyütüyor. Bu nedenle konut alım kararları yalnızca kısa vadeli beklentilere değil, uzun vadeli fiyat trendlerine ve piyasa dinamiklerine bakılarak değerlendirilmelidir.
+
+## Sonuç: En Büyük Kayıp, Kaybetmediğini Sanmaktır
 
 “Biraz daha bekleyeyim” diyenlerin en büyük yanılgısı, hiçbir şey kaybetmediklerini düşünmeleridir.
 
