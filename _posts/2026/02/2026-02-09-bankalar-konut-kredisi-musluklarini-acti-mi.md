@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bankalar Konut Kredisi Musluklarını Açtı mı?"
-description: "Bu yazıda Türkiye’de konut kredisi kullanımı, güncel faiz oranları, banka kredi politikaları ve piyasa beklentileri SEO uyumlu ve veri odaklı bir analizle ele alınmaktadır."
+description: "Bu yazıda Türkiye’de konut kredisi kullanımı, güncel faiz oranları, banka kredi politikaları ve piyasa beklentileri veri odaklı bir analizle ele alınmaktadır."
 tags: ["konut kredisi"]
 ---
 
