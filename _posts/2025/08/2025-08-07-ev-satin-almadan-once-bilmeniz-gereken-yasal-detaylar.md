@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Ev Satın Almadan Önce Bilmeniz Gereken Yasal Detaylar"
-description: "Bu yazıda, ev satın almadan önce bilmeniz gereken temel yasal detayları adım adım inceleyeceğiz."
+description: "Ev satın almadan önce bilmeniz gereken tüm yasal detayları öğrenin: tapu ve tescil süreçleri, ipotek ve haciz kontrolü, imar durumu, vergiler, sözleşme maddeleri ve risklerden korunma yöntemleri ile güvenli ve bilinçli bir ev alım süreci sağlayın."
 ---
 
 Ev satın almak, hayatınızdaki en önemli yatırım kararlarından biridir. Ancak iş sadece beğendiğiniz bir evi seçmekle bitmez. Tapu işlemleri, hukuki kontroller ve resmi prosedürler, sürecin en kritik aşamalarıdır. Yanlış veya eksik bilgi, ileride ciddi maddi ve hukuki sorunlara yol açabilir.

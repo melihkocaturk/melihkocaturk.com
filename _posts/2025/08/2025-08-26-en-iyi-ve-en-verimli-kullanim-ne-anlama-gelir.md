@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "En İyi ve En Verimli Kullanım Ne Anlama Gelir?"
-description: "Gayrimenkulde değer neyi ifade eder ve neden bu kadar önemlidir?"
+description: "En iyi ve en verimli kullanım nedir? Gayrimenkul değerlemede bir taşınmazın fiziksel, yasal ve ekonomik açıdan en yüksek değeri sağlayacak kullanım şeklinin nasıl belirlendiğini detaylı ve anlaşılır biçimde açıklıyoruz."
 tags: ["gayrimenkul değerleme"]
 ---
 

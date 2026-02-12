@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tahliye Taahhütnamesi Hakkında Bilmeniz Gerekenler"
-description: "Bu yazıda, tahliye taahhütnamesini net ve anlaşılır şekilde ele alıyoruz."
+description: "Kiracı tarafından verilen tahliye taahhütnamesi nedir, nasıl hazırlanır ve hangi şartlarda geçerlidir? Bu yazıda tahliye taahhütnamesinin tanımını, usulünü ve geçerlilik şartlarını net ve anlaşılır biçimde açıklıyoruz."
 ---
 
 Kira sözleşmeleri hem ev sahipleri hem de kiracılar için belirli hak ve yükümlülükler doğurur. Bu sürecin önemli belgelerinden biri de tahliye taahhütnamesidir. Pek çok kişi bu belgenin ne anlama geldiğini, nasıl hazırlanması gerektiğini ve hangi şartlarda geçerli olduğunu merak eder. Bu yazıda, konuyu net ve anlaşılır şekilde ele alıyoruz.

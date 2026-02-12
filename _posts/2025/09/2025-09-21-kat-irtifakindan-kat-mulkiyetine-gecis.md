@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kat İrtifakından Kat Mülkiyetine Geçiş"
-description: "Kat irtifakından kat mülkiyetine geçiş nasıl yapılır? Bu yazıda adım adım tüm süreci açıklıyoruz."
+description: "Kat irtifakından kat mülkiyetine geçiş nedir? Aradaki farklar, gerekli şartlar ve tapu değişim süreci adım adım anlatılıyor - iskân belgesi, evraklar ve faydalarıyla birlikte basitçe açıklıyoruz."
 tags: ["kat irtifakı", "kat mülkiyeti"]
 ---
 

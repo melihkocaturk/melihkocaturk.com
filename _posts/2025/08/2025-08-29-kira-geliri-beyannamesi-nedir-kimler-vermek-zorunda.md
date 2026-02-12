@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Kira Geliri Beyannamesi Nedir? Kimler Vermek Zorunda?"
-description: "Kira geliri beyannamesi nasıl hazırlanır, kimler verir, hangi istisnalar geçerlidir?"
+description: "Kira geliri beyannamesi nedir, kimler vermek zorundadır ve beyanname süreci nasıl işler? Kapsam, istisnalar, beyanname zamanı ve vergi yükümlülüklerini adım adım açıklayarak gayrimenkul gelirlerinizi doğru şekilde bildirmenizi sağlayın."
 tags: ["kira"]
 ---
 

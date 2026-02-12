@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Bağımsız Bölümlerin Arsa Payı Nasıl Belirlenir?"
-description: "Arsa payı nasıl belirlenir, hangi kriterlere göre hesaplanır ve neden önemlidir?"
+description: "Bağımsız bölümlerin arsa payının nasıl belirlendiğini öğrenin: hesaplama yöntemi, yönetim planı ve projeye göre farklılıklar ile doğru arsa payı belirleme süreçlerini anlaşılır şekilde açıklıyoruz."
 tags: ["arsa payı"]
 ---
 

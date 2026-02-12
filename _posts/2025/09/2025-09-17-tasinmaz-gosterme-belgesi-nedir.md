@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Taşınmaz Gösterme Belgesi Nedir?"
-description: "Taşınmaz gösterme belgesi nedir, neden imzalanır ve taraflara ne gibi haklar sağlar?"
+description: "Taşınmaz gösterme belgesi nedir, gayrimenkul danışmanı ile alıcı/kiracı arasındaki gösterme işlemini nasıl kayıt altına alır? Belgenin ne olduğu, neden imzalandığı ve taraflara sağladığı hukuki güveni basit şekilde açıklıyoruz."
 ---
 
 Emlak sektöründe güvenilirlik ve şeffaflık, hem alıcılar hem de satıcılar için oldukça önemlidir. Gayrimenkul danışmanlarıyla yapılan işlemlerde bu güven ortamını sağlamak amacıyla kullanılan resmi evraklardan biri de “Taşınmaz Gösterme Belgesi”dir. Peki, taşınmaz gösterme belgesi nedir, neden imzalanır ve taraflara ne gibi haklar sağlar? Gelin, tüm detaylarıyla inceleyelim.

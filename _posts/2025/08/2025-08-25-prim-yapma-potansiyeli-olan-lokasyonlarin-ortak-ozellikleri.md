@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Prim Yapma Potansiyeli Olan Lokasyonların Ortak Özellikleri"
-description: "Prim yapma potansiyeli yüksek bölgelerin ortak özellikleri nelerdir?"
+description: "Gayrimenkul yatırımında kısa sürede değer kazanma potansiyeli yüksek lokasyonların ortak özelliklerini öğrenin: ulaşım altyapısı, kentsel dönüşüm, sosyal olanaklar, iş ve yaşam kalitesi, arz-talep dengesi ve devlet projelerinin mülk değerlerine etkisi. Doğru lokasyon seçimiyle yatırım getirinizi artırın."
 ---
 
 Gayrimenkul yatırımında en kritik faktörlerden biri doğru lokasyon seçimidir. Doğru yerde yapılan yatırım, kısa sürede yüksek kazanç sağlayabilirken, yanlış yerde yapılan yatırım uzun vadede değer kaybına bile yol açabilir. Peki, prim yapma potansiyeli yüksek bölgelerin ortak özellikleri nelerdir? İşte dikkat edilmesi gereken unsurlar:

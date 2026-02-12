@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Tek Yetki Belgesi Nedir? Gayrimenkul Danışmanları İçin Önemi ve Detaylar"
-description: "Tek yetki belgesi tam olarak nedir, hangi avantajları sağlar ve nelere dikkat edilmelidir?"
+description: "Tek yetki belgesi nedir, gayrimenkul satış ve kiralama süreçlerinde ne işe yarar? Bu yazıda tek yetki belgesinin tanımını, avantajlarını, süre ve dikkat edilmesi gereken noktaları anlaşılır şekilde açıklıyoruz."
 ---
 
 Gayrimenkul sektöründe alıcı, satıcı ve emlak danışmanı arasındaki güven ilişkisini güçlendirmek için kullanılan en önemli sözleşmelerden biri *Tek Yetki Belgesi*dir. Özellikle satılık ya da kiralık gayrimenkullerde danışmanlık sürecini profesyonelce yürütmek, pazarlama faaliyetlerini daha verimli hale getirmek ve mülk sahibinin haklarını güvence altına almak için tek yetki belgesi büyük bir rol oynar.

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Emlak Danışmanı Hizmet Bedeli Nasıl Belirlenir?"
-description: "Bu yazıda, emlak danışmanı hizmet bedelinin nasıl belirlendiğini tüm detaylarıyla ele alıyoruz."
+description: "Emlak danışmanı hizmet bedeli nasıl belirlenir? Komisyon oranları, yasal çerçeve ve belirleme kriterlerini alım-satım ve kiralama süreçlerinde basit ve anlaşılır şekilde açıklıyoruz."
 tags: ["emlak danışmanı"]
 ---
 

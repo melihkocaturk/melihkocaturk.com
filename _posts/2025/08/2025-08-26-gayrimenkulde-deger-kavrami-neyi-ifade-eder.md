@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Gayrimenkulde Değer Kavramı Neyi İfade Eder?"
-description: "Gayrimenkulde değer neyi ifade eder ve neden bu kadar önemlidir?"
+description: "Gayrimenkulde değer kavramının ne anlama geldiğini, değer türlerini, belirleyici faktörleri ve yatırım kararlarına etkisini açık ve anlaşılır şekilde öğrenin; mülk değerlemesini doğru değerlendirmenizi sağlayacak temel bilgileri keşfedin."
 tags: ["gayrimenkul değerleme"]
 ---
 

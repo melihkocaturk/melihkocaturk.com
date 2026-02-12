@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Emlak Danışmanı Neden Ekspertiz Raporu İster?"
-description: "Bu yazıda, emlak danışmanlarının ekspertiz raporu isteme nedenlerini tüm detaylarıyla ele alıyoruz."
+description: "Emlak danışmanlarının satış sürecinde neden ekspertiz raporu talep ettiğini öğrenin: doğru fiyat belirleme, satıcı-alıcı güveni, banka kredisi uyumu, hukuki ve teknik risklerin önlenmesi ile portföy kalitesini artırma gibi kritik avantajlar."
 tags: ["emlak danışmanı", "ekspertiz raporu"]
 ---
 
