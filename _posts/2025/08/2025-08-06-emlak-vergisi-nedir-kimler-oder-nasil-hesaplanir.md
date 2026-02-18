@@ -2,7 +2,7 @@
 layout: post
 title: "Emlak Vergisi Nedir? Kimler Öder, Nasıl Hesaplanır?"
 description: "Bu yazıda, emlak vergisinin ne olduğunu, kimlerin bu vergiyi ödemekle yükümlü olduğunu, nasıl hesaplandığını ve ödeme yöntemlerini detaylı bir şekilde ele alıyoruz."
-tags: ["vergi"]
+tags: ["vergi", "rayiç değer"]
 ---
 
 Gayrimenkul sahibi olan herkesin karşılaştığı bir konu olan *emlak vergisi*, hem ev sahiplerini hem de yatırımcıları yakından ilgilendirir. Bu yazıda, emlak vergisinin ne olduğunu, kimlerin bu vergiyi ödemekle yükümlü olduğunu, nasıl hesaplandığını ve ödeme yöntemlerini detaylı bir şekilde ele alıyoruz.

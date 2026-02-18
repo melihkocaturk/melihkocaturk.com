@@ -2,6 +2,7 @@
 layout: post
 title: "Emlak Rayiç Değeri Nedir?"
 description: "Emlak rayiç değeri nedir, nasıl hesaplanır ve gayrimenkul piyasasında neden önemlidir? Rayiç değerin belirlenmesi, etkileyen faktörler ve pratik örneklerle net şekilde açıklanıyor."
+tags: ["rayiç değer"]
 ---
 
 Gayrimenkul alım satımında en çok karşılaşılan terimlerden biri “emlak rayiç değeri”dir. Ev, arsa ya da iş yeri satın almak isteyenler veya taşınmazını satmayı planlayanlar için bu kavramı doğru anlamak oldukça önemlidir. Çünkü rayiç değer; tapu işlemlerinden vergi hesaplamalarına kadar birçok resmi süreçte belirleyici rol oynar.
@@ -34,6 +35,20 @@ Bir taşınmazın rayiç değerini öğrenmek için şu yollar kullanılabilir:
 - **Tapu Daireleri**: Satış sırasında işlem yapılacak tapu dairesinden öğrenilebilir.
 - **E-Devlet**: “Web-Tapu” veya “Tapu ve Kadastro Genel Müdürlüğü” hizmetleri üzerinden rayiç değer sorgulaması yapılabilir.
 - **Emlakçılar ve Değerleme Uzmanları**: Güncel piyasa koşullarını bilen emlak danışmanlarından da fikir alınabilir.
+
+## Rayiç Bedeli Belgesi E-Devlet’ten Nasıl Alınır?
+
+Rayiç bedeli belgesi, taşınmazın bağlı bulunduğu belediye tarafından belirlenen emlak rayiç değerini gösteren resmi bir evraktır ve günümüzde e-Devlet üzerinden kolayca alınabilmektedir. *Rayiç bedeli belgesi e-Devlet’ten nasıl alınır?* sorusunun yanıtı oldukça basittir:
+
+1. e-Devlet Kapısı sistemine giriş yapın.
+2. Arama kutusuna taşınmazın bulunduğu belediyeyi yazın ve açılan sayfada “Sicil, Ruhsat, Vergi ve Ödeme” hizmetine tıklayın.
+3. Ardından “Rayiç Bedel Belgesi Sorgulama” linkini seçin.
+4. Gayrimenkulünüzü listeden seçip yanındaki “Belge Oluştur” butonuna tıklayın.
+5. Son olarak belgenin verileceği kurumu seçerek “Barkodlu Belge Oluştur” butonuna basın.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Dy5bfCKeGME?si=eNs46MddmUqxKrrg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+Bu adımların ardından barkodlu rayiç bedel belgesini PDF formatında indirerek tapu işlemleri, satış, miras ve banka süreçlerinde resmi olarak kullanabilirsiniz.
 
 ## Rayiç Değer Hangi Durumlarda Önemlidir?
 
