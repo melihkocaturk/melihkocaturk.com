@@ -29,7 +29,9 @@ EKB sorgulama işlemi, bakanlığın resmi portalı [https://beptr.csb.gov.tr/be
 
 **e-Devlet Kapısı Üzerinden Sorgulama**
 
-Vatandaşlar, [e-Devlet Kapısı](https://www.turkiye.gov.tr/csb-enerji-kimlik-belgesi-sorgulama) üzerinden de EKB sorgulaması yapabilirler. Giriş yapıldıktan sonra “Enerji Kimlik Belgesi Sorgulama” hizmetine erişilir. Burada, “kendi oturduğum bina” ya da “diğer bina” seçeneklerinden uygun olanı seçerek, T.C. kimlik numarası veya bina adresi gibi bilgileri girip belge bilgilerine ulaşabilirsiniz
+Vatandaşlar, [e-Devlet Kapısı](https://www.turkiye.gov.tr/csb-enerji-kimlik-belgesi-sorgulama) üzerinden de EKB sorgulaması yapabilirler. Giriş yapıldıktan sonra “Enerji Kimlik Belgesi Sorgulama” hizmetine erişilir. Burada, “kendi oturduğum bina” ya da “diğer bina” seçeneklerinden uygun olanı seçerek, T.C. kimlik numarası veya bina adresi gibi bilgileri girip belge bilgilerine ulaşabilirsiniz.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/FO-nfDA8DxM?si=noCCkyuWBOFRjoTJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Enerji Kimlik Belgesinin Avantajları
 
