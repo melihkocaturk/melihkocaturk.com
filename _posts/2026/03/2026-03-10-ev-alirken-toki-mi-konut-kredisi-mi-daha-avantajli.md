@@ -2,7 +2,7 @@
 layout: post
 title: "Ev Alırken TOKİ mi Konut Kredisi mi Daha Avantajlı?"
 description: "Bu yazıda TOKİ’den ev almak ile konut kredisi kullanarak ev almak; ödeme planı, aylık taksitler, toplam maliyet, teslim süresi ve esneklik açısından detaylı şekilde karşılaştırılmaktadır."
-tags: ["toki", "konut kredisi"]
+tags: ["toki", "konut kredisi", "konut finansmanı"]
 ---
 
 Türkiye’de ev sahibi olmak isteyenlerin karşısına genellikle iki seçenek çıkar: devlet destekli konut projelerinden ev almak ya da bankadan konut kredisi kullanarak bir ev satın almak. Artan konut fiyatları ve finansman maliyetleri nedeniyle bu iki yöntem arasındaki farkları iyi anlamak oldukça önemlidir.
