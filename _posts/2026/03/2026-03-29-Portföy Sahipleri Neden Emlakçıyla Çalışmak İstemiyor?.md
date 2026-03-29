@@ -5,8 +5,6 @@ description: "Portföy sahipleri neden emlakçılarla çalışmak istemiyor? Kom
 tags: ["emlakçı"]
 ---
 
-# Portföy Sahipleri Neden Emlakçıyla Çalışmak İstemiyor?
-
 Gayrimenkul piyasasında emlakçılar, alıcı ve satıcı arasında köprü görevi görür. Ancak birçok portföy sahibi, gayrimenkulünü satarken ya da kiraya verirken emlakçılarla çalışmayı tercih etmiyor. Peki bunun arkasında ne tür sebepler yatıyor? İşte detaylı bir analiz.
 
 ## 1. Komisyon Ücretleri ve Maliyet Kaygısı
