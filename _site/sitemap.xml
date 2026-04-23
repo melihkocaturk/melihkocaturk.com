@@ -1141,6 +1141,10 @@
 <lastmod>2026-04-16T00:00:00+03:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/ev-satilamiyorsa-ne-yapilmali</loc>
+<lastmod>2026-04-23T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/ara</loc>
 </url>
 <url>
@@ -1325,6 +1329,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/sayfa57/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/sayfa58/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/guide/01/ev-sahipleri-icin-satis-rehberi.pdf</loc>
