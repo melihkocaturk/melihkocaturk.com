@@ -2,7 +2,7 @@
 layout: post
 title: "Web Tapu Üzerinden Tapu Kilitleme Nasıl Yapılır? (Videolu Anlatım)"
 description: "Bu yazıda, Web Tapu sistemi üzerinden tapu kilitleme işlemini adım adım, anlaşılır ve pratik şekilde anlatıyorum."
-tags: ["tapu"]
+tags: ["tapu", "webtapu"]
 ---
 
 Tapu işlemlerinde güvenlik son yıllarda çok daha önemli hale geldi. Özellikle dolandırıcılık vakalarının artmasıyla birlikte, mülk sahiplerinin taşınmazlarını koruma altına alabilecekleri yöntemler de önem kazandı. Bu noktada **Web Tapu üzerinden tapu kilitleme işlemi**, gayrimenkulünüzü izinsiz işlemlere karşı korumanın en etkili yollarından biri olarak öne çıkıyor.
