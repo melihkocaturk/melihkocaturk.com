@@ -2,7 +2,7 @@
 layout: post
 title: "2026’da Taşınmaz Ticareti Yetki Belgesi Harcı: Kimler Öder, Ne Zaman Ödenir?"
 description: "Bu yazıda, yıllık harcın ne olduğu, hangi tarihte tahakkuk ettiği, ne zaman ödenmesi gerektiği ve ödenmemesi halinde doğabilecek sonuçlar detaylı şekilde ele alınmaktadır."
-tags: ["eids"]
+tags: ["taşınmaz ticareti yetki belgesi", "eids"]
 ---
 
 2026 yılı itibarıyla **Taşınmaz Ticareti Yetki Belgesi** için uygulamaya alınan **yıllık harç**, emlak sektöründe faaliyet gösteren işletmeler açısından önemli bir mali ve hukuki yükümlülük haline gelmiştir.   Bu yazıda, yıllık harcın ne olduğu, hangi tarihte tahakkuk ettiği, ne zaman ödenmesi gerektiği ve ödenmemesi halinde doğabilecek sonuçlar detaylı şekilde ele alınmaktadır.
