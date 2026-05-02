@@ -1161,6 +1161,10 @@
 <lastmod>2026-05-01T00:00:00+03:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/ev-fiyatlari-dusuyor-mu-yoksa-manipulasyon-mu-var</loc>
+<lastmod>2026-05-03T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/ara</loc>
 </url>
 <url>
@@ -1348,6 +1352,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/sayfa58/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/sayfa59/</loc>
 </url>
 <url>
 <loc>http://localhost:4000/guide/01/ev-sahipleri-icin-satis-rehberi.pdf</loc>
