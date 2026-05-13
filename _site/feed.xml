@@ -1,4 +1,283 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="tr"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="tr" /><updated>2026-05-10T11:13:19+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>Emlak danışmanından ipuçları ve stratejiler, arsa yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...</subtitle><entry><title type="html">Ekonomide Risk Yönetimi Nedir? Küçük Yatırımcı İçin Hayatta Kalma Rehberi</title><link href="http://localhost:4000/ekonomide-risk-yonetimi-nedir-kucuk-yatirimci-icin-hayatta-kalma-rehberi" rel="alternate" type="text/html" title="Ekonomide Risk Yönetimi Nedir? Küçük Yatırımcı İçin Hayatta Kalma Rehberi" /><published>2026-05-10T00:00:00+03:00</published><updated>2026-05-10T00:00:00+03:00</updated><id>http://localhost:4000/ekonomide-risk-yonetimi-nedir-kucuk-yatirimci-icin-hayatta-kalma-rehberi</id><content type="html" xml:base="http://localhost:4000/ekonomide-risk-yonetimi-nedir-kucuk-yatirimci-icin-hayatta-kalma-rehberi"><![CDATA[<p>Finansal piyasalarda çoğu insan nasıl para kazanacağını araştırıyor. Ancak profesyonel yatırımcıların asıl odak noktası farklıdır: “Nasıl daha az kaybederim?”. Çünkü yatırım dünyasında uzun vadeli başarı yalnızca doğru yatırım yapmakla değil, yanlış zamanda büyük kayıp yaşamamayı başarmakla mümkündür. İşte bu yüzden risk yönetimi, finansal okuryazarlığın en önemli parçalarından biridir.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="tr"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="tr" /><updated>2026-05-13T16:02:04+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>Emlak danışmanından ipuçları ve stratejiler, arsa yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...</subtitle><entry><title type="html">Emlakta Otomasyon: Gelecek Nasıl Olacak?</title><link href="http://localhost:4000/emlakta-otomasyon-gelecek-nasil-olacak" rel="alternate" type="text/html" title="Emlakta Otomasyon: Gelecek Nasıl Olacak?" /><published>2026-05-13T00:00:00+03:00</published><updated>2026-05-13T00:00:00+03:00</updated><id>http://localhost:4000/emlakta-otomasyon-gelecek-nasil-olacak</id><content type="html" xml:base="http://localhost:4000/emlakta-otomasyon-gelecek-nasil-olacak"><![CDATA[<p>Gayrimenkul sektörü uzun yıllar boyunca “insan ilişkileri odaklı” bir alan olarak görüldü. Telefon trafiği, manuel müşteri takibi, ilan girişleri, ev gösterimleri ve sözleşme süreçleri çoğunlukla insan gücüyle yürütüldü. Ancak son birkaç yılda yapay zeka, otomasyon sistemleri ve PropTech girişimlerinin yükselişiyle birlikte emlak sektörü tarihin en büyük dönüşüm dönemlerinden birine girdi.</p>
+
+<p>Bugün artık birçok emlak danışmanı; müşteri takibi, ilan yönetimi, fiyat analizi, sosyal medya içerikleri ve hatta satış görüşmelerinin bir kısmını otomasyon sistemleriyle yönetmeye başladı. Önümüzdeki 5-10 yıl içinde ise emlak sektörünün çalışma biçimi tamamen değişebilir.</p>
+
+<h2 id="proptech-nedir-ve-neden-bu-kadar-önemli">PropTech Nedir ve Neden Bu Kadar Önemli?</h2>
+
+<p>PropTech (Property Technology), gayrimenkul sektörünü dijitalleştiren tüm teknolojileri ifade eder. Yapay zeka destekli CRM sistemleri, akıllı bina teknolojileri, sanal tur çözümleri, otomatik değerleme sistemleri ve dijital tapu süreçleri bu alanın parçalarıdır.</p>
+
+<p>2026 itibarıyla PropTech pazarı küresel ölçekte milyarlarca dolarlık hacme ulaştı ve sektörün en hızlı büyüyen alanlarından biri haline geldi.</p>
+
+<p>Eskiden bir emlak ofisinde:</p>
+<ul>
+  <li>Telefon cevaplamak için personel,</li>
+  <li>Portföy takibi için ayrı çalışan,</li>
+  <li>Müşteri organizasyonu için manuel süreçler,</li>
+  <li>Sosyal medya için ek ekip gerekiyordu.</li>
+</ul>
+
+<p>Şimdi ise bunların büyük bölümü tek bir yazılım paneli üzerinden otomatik hale getirilebiliyor.</p>
+
+<h2 id="yapay-zeka-emlak-danışmanlarını-nasıl-değiştirecek">Yapay Zeka Emlak Danışmanlarını Nasıl Değiştirecek?</h2>
+
+<p>Yapay zeka artık yalnızca “yardımcı araç” değil. Birçok ülkede doğrudan operasyon yöneten sistemlere dönüşmeye başladı. Özellikle 2026 sonrası dönemde “Agentic AI” adı verilen otonom çalışan yapay zeka sistemleri öne çıkıyor.</p>
+
+<p>Bu sistemler:</p>
+<ul>
+  <li>Otomatik müşteri yanıtı verebiliyor,</li>
+  <li>Potansiyel müşteri puanlaması yapabiliyor,</li>
+  <li>Portföy eşleştirmesi gerçekleştirebiliyor,</li>
+  <li>Otomatik fiyat analizi oluşturabiliyor,</li>
+  <li>Takvim planlayabiliyor,</li>
+  <li>Görüşme sonrası rapor hazırlayabiliyor.</li>
+</ul>
+
+<p>Yakın gelecekte bir emlak danışmanının günlük işlerinin önemli bölümü şu şekilde otomatikleşebilir:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>İş Süreci</th>
+      <th>Geleneksel Sistem</th>
+      <th>Gelecekteki Otomasyon</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Müşteri takibi</td>
+      <td>Excel / telefon</td>
+      <td>AI destekli CRM</td>
+    </tr>
+    <tr>
+      <td>İlan açıklaması</td>
+      <td>Manuel yazım</td>
+      <td>Yapay zeka üretimi</td>
+    </tr>
+    <tr>
+      <td>Fotoğraf düzenleme</td>
+      <td>Grafik tasarımcı</td>
+      <td>AI staging sistemleri</td>
+    </tr>
+    <tr>
+      <td>Ev gösterimi</td>
+      <td>Fiziksel tur</td>
+      <td>VR / AR sanal tur</td>
+    </tr>
+    <tr>
+      <td>Fiyat analizi</td>
+      <td>Manuel araştırma</td>
+      <td>Anlık veri analizi</td>
+    </tr>
+    <tr>
+      <td>Sosyal medya</td>
+      <td>Manuel içerik</td>
+      <td>Otomatik içerik üretimi</td>
+    </tr>
+    <tr>
+      <td>Sözleşme</td>
+      <td>Kağıt evrak</td>
+      <td>Dijital akıllı kontratlar</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Özellikle yapay zeka destekli CRM sistemlerinin Türkiye’de de yaygınlaşmaya başladığı görülüyor.</p>
+
+<h2 id="emlak-ofisleri-küçülecek-mi">Emlak Ofisleri Küçülecek mi?</h2>
+
+<p>Büyük ihtimalle evet.</p>
+
+<p>Çünkü otomasyon:</p>
+<ul>
+  <li>Personel ihtiyacını azaltıyor,</li>
+  <li>Operasyon maliyetlerini düşürüyor,</li>
+  <li>Tek danışmanın daha fazla müşteri yönetmesini sağlıyor.</li>
+</ul>
+
+<p>Eskiden 10 kişilik ekibin yaptığı işi gelecekte 2-3 kişilik ekip yönetebilir.</p>
+
+<p>Örneğin:</p>
+<ul>
+  <li>Yapay zeka telefonlara cevap verecek,</li>
+  <li>CRM müşterileri otomatik segmente edecek,</li>
+  <li>Sosyal medya içerikleri otomatik üretilecek,</li>
+  <li>Reklam kampanyaları AI tarafından optimize edilecek.</li>
+</ul>
+
+<p>Bu dönüşüm özellikle bireysel çalışan danışmanların güçlenmesini sağlayabilir. Çünkü teknoloji artık büyük ofislerin sahip olduğu avantajları bireysel danışmanlara da sunuyor.</p>
+
+<h2 id="sanal-turlar-ve-dijital-gösterimler-standart-hale-gelecek">Sanal Turlar ve Dijital Gösterimler Standart Hale Gelecek</h2>
+
+<p>Pandemi sonrası hızlanan sanal tur teknolojileri artık emlak sektörünün temel parçalarından biri haline geliyor.</p>
+
+<p>2026 trend raporlarında:</p>
+<ul>
+  <li>VR (Virtual Reality),</li>
+  <li>AR (Augmented Reality),</li>
+  <li>İnteraktif dijital showroom sistemleri,</li>
+  <li>AI destekli sanal staging çözümleri</li>
+</ul>
+
+<p>en hızlı büyüyen PropTech alanları arasında gösteriliyor.</p>
+
+<p>Yakın gelecekte:</p>
+<ul>
+  <li>Alıcılar evi fiziksel olarak görmeden karar verebilir,</li>
+  <li>Yapay zeka boş evi otomatik dekore edebilir,</li>
+  <li>Müşteri kendi zevkine göre evi dijital olarak değiştirebilir,</li>
+  <li>Ev gösterimleri tamamen online gerçekleşebilir.</li>
+</ul>
+
+<p>Bu durum özellikle:</p>
+<ul>
+  <li>Yabancı yatırımcılar,</li>
+  <li>Şehir dışındaki alıcılar,</li>
+  <li>Lüks konut pazarı,</li>
+  <li>Kısa dönem kiralama sektörü</li>
+</ul>
+
+<p>için devrim niteliğinde olacak.</p>
+
+<h2 id="akıllı-fiyatlama-sistemleri-dönemi-başlıyor">Akıllı Fiyatlama Sistemleri Dönemi Başlıyor</h2>
+
+<p>Eskiden emlak fiyatları büyük ölçüde danışmanın tecrübesine dayanıyordu. Artık ise:</p>
+<ul>
+  <li>bölgesel veriler,</li>
+  <li>ulaşım projeleri,</li>
+  <li>sosyal yaşam verileri,</li>
+  <li>geçmiş satışlar,</li>
+  <li>ekonomik göstergeler,</li>
+  <li>kullanıcı davranışları</li>
+</ul>
+
+<p>yapay zeka tarafından analiz edilerek otomatik fiyat tahmini yapılabiliyor.</p>
+
+<p>Bu sistemler gelecekte:</p>
+<ul>
+  <li>yanlış fiyatlanan ilanları tespit edecek,</li>
+  <li>yatırım fırsatlarını otomatik belirleyecek,</li>
+  <li>piyasa düşüşlerini önceden tahmin etmeye çalışacak.</li>
+</ul>
+
+<p>Özellikle büyük veri kullanan şirketler pazarda ciddi avantaj elde edecek.</p>
+
+<h2 id="blockchain-ve-dijital-tapu-sistemleri">Blockchain ve Dijital Tapu Sistemleri</h2>
+
+<p>Gayrimenkul işlemlerinin en yavaş alanlarından biri resmi süreçlerdir. Ancak blockchain teknolojisiyle birlikte:</p>
+<ul>
+  <li>dijital tapu,</li>
+  <li>akıllı kontratlar,</li>
+  <li>otomatik ödeme sistemleri,</li>
+  <li>tokenizasyon</li>
+</ul>
+
+<p>gibi kavramlar hızla gündeme geliyor.</p>
+
+<p>Özellikle akıllı kontratlar sayesinde:</p>
+<ul>
+  <li>ödeme gerçekleştiğinde tapu otomatik devredilebilir,</li>
+  <li>kira sözleşmeleri otomatik çalışabilir,</li>
+  <li>aidat sistemleri dijitalleşebilir.</li>
+</ul>
+
+<p>Bu dönüşüm gerçekleşirse emlak işlemleri günler yerine dakikalar içinde tamamlanabilir.</p>
+
+<h2 id="emlak-danışmanları-i̇şsiz-mi-kalacak">Emlak Danışmanları İşsiz mi Kalacak?</h2>
+
+<p>Bu soru sektörün en çok tartışılan konusu.</p>
+
+<p>Kısa cevap:
+Hayır, ancak dönüşecekler.</p>
+
+<p>Yapay zeka;</p>
+<ul>
+  <li>veri işleme,</li>
+  <li>içerik üretimi,</li>
+  <li>müşteri sınıflandırması,</li>
+  <li>operasyon yönetimi</li>
+</ul>
+
+<p>konularında insanlardan daha hızlı hale geliyor. Ancak insanlar hâlâ:</p>
+<ul>
+  <li>güven oluşturma,</li>
+  <li>pazarlık,</li>
+  <li>ilişki yönetimi,</li>
+  <li>yatırım danışmanlığı,</li>
+  <li>kriz yönetimi</li>
+</ul>
+
+<p>gibi alanlarda güçlü.</p>
+
+<p>Bu nedenle geleceğin başarılı emlak danışmanları:</p>
+<ul>
+  <li>teknoloji kullanan,</li>
+  <li>kişisel marka oluşturan,</li>
+  <li>içerik üreten,</li>
+  <li>veri okuyan,</li>
+  <li>otomasyon yöneten</li>
+</ul>
+
+<p>kişiler olacak.</p>
+
+<p>Sadece ilan giren danışman modeli ise giderek zayıflayabilir.</p>
+
+<h2 id="türkiyede-emlak-otomasyonu-ne-durumda">Türkiye’de Emlak Otomasyonu Ne Durumda?</h2>
+
+<p>Türkiye’de sektör hâlâ dönüşümün erken aşamalarında. Ancak:</p>
+<ul>
+  <li>AI destekli CRM’ler,</li>
+  <li>otomatik ilan paylaşım sistemleri,</li>
+  <li>WhatsApp botları,</li>
+  <li>AI içerik araçları,</li>
+  <li>sanal staging uygulamaları</li>
+</ul>
+
+<p>giderek yaygınlaşıyor.</p>
+
+<p>Önümüzdeki birkaç yıl içinde özellikle şu alanlarda ciddi büyüme bekleniyor:</p>
+<ul>
+  <li>emlak SaaS sistemleri,</li>
+  <li>AI müşteri yönetimi,</li>
+  <li>kısa dönem kiralama otomasyonu,</li>
+  <li>yatırım analiz platformları,</li>
+  <li>bölgesel veri analiz sistemleri.</li>
+</ul>
+
+<p>Türkiye’de bu alanda erken hareket eden danışmanlar ve girişimler ciddi avantaj sağlayabilir.</p>
+
+<h2 id="geleceğin-emlak-ofisi-nasıl-görünecek">Geleceğin Emlak Ofisi Nasıl Görünecek?</h2>
+
+<p>Muhtemelen şu özelliklere sahip olacak:</p>
+
+<ul>
+  <li>Fiziksel ofis daha küçük olacak,</li>
+  <li>Operasyonun büyük kısmı bulutta çalışacak,</li>
+  <li>AI asistanlar sürekli aktif olacak,</li>
+  <li>Tüm müşteri verileri otomatik analiz edilecek,</li>
+  <li>Sanal turlar standart hale gelecek,</li>
+  <li>İçerik üretimi büyük ölçüde otomatikleşecek,</li>
+  <li>İnsanlar daha çok danışmanlık ve ilişki yönetimine odaklanacak.</li>
+</ul>
+
+<p>Yani gelecekte emlak sektörü:
+“manuel operasyon sektörü” olmaktan çıkıp,
+“veri ve otomasyon sektörü” haline dönüşecek.</p>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Emlakta otomasyon artık geleceğin konusu değil; bugünün gerçeği haline geldi. Yapay zeka, otomasyon ve PropTech sistemleri emlak sektörünü kökten değiştirmeye başladı.</p>
+
+<p>Önümüzdeki yıllarda:</p>
+<ul>
+  <li>teknoloji kullanan danışmanlar büyüyecek,</li>
+  <li>veri odaklı çalışan ofisler öne çıkacak,</li>
+  <li>manuel süreçler azalacak,</li>
+  <li>müşteri deneyimi tamamen dijitalleşecek.</li>
+</ul>
+
+<p>Ancak bu dönüşümün merkezinde hâlâ insan olacak. Çünkü insanlar ev satın alırken yalnızca metrekare değil; güven, duygu ve doğru rehberlik de satın alıyor.</p>
+
+<p>Geleceğin başarılı emlak danışmanı ise teknolojiyi rakip olarak değil, en güçlü yardımcısı olarak kullanan kişi olacak.</p>]]></content><author><name></name></author><category term="yapay zeka" /><category term="proptech" /><category term="gayrimenkul sektörü" /><summary type="html"><![CDATA[Emlakta otomasyon ve yapay zeka sektörün geleceğini nasıl değiştiriyor? AI destekli CRM sistemleri, sanal turlar, akıllı fiyatlama ve dijital emlak ofislerinin geleceğini keşfedin.]]></summary></entry><entry><title type="html">Ekonomide Risk Yönetimi Nedir? Küçük Yatırımcı İçin Hayatta Kalma Rehberi</title><link href="http://localhost:4000/ekonomide-risk-yonetimi-nedir-kucuk-yatirimci-icin-hayatta-kalma-rehberi" rel="alternate" type="text/html" title="Ekonomide Risk Yönetimi Nedir? Küçük Yatırımcı İçin Hayatta Kalma Rehberi" /><published>2026-05-10T00:00:00+03:00</published><updated>2026-05-10T00:00:00+03:00</updated><id>http://localhost:4000/ekonomide-risk-yonetimi-nedir-kucuk-yatirimci-icin-hayatta-kalma-rehberi</id><content type="html" xml:base="http://localhost:4000/ekonomide-risk-yonetimi-nedir-kucuk-yatirimci-icin-hayatta-kalma-rehberi"><![CDATA[<p>Finansal piyasalarda çoğu insan nasıl para kazanacağını araştırıyor. Ancak profesyonel yatırımcıların asıl odak noktası farklıdır: “Nasıl daha az kaybederim?”. Çünkü yatırım dünyasında uzun vadeli başarı yalnızca doğru yatırım yapmakla değil, yanlış zamanda büyük kayıp yaşamamayı başarmakla mümkündür. İşte bu yüzden risk yönetimi, finansal okuryazarlığın en önemli parçalarından biridir.</p>
 
 <p>Özellikle son yıllarda:</p>
 <ul>
@@ -720,7 +999,93 @@
 
 <p>Ev fiyatları düşmüyor… Ama her ev artık aynı değerde değil.</p>
 
-<p>Asıl değişen şey: Piyasa değil, oyunun kuralları.</p>]]></content><author><name></name></author><category term="emlak piyasası" /><category term="konut piyasası" /><summary type="html"><![CDATA[Bu yazıda veriler, uzman görüşleri ve piyasa dinamikleri üzerinden algı ile gerçek arasındaki farkı net şekilde ortaya koyacağız.]]></summary></entry><entry><title type="html">Müşteri Neden “Düşüneceğim” Der?</title><link href="http://localhost:4000/musteri-neden-dusunecegim-der" rel="alternate" type="text/html" title="Müşteri Neden “Düşüneceğim” Der?" /><published>2026-05-01T00:00:00+03:00</published><updated>2026-05-01T00:00:00+03:00</updated><id>http://localhost:4000/musteri-neden-dusunecegim-der</id><content type="html" xml:base="http://localhost:4000/musteri-neden-dusunecegim-der"><![CDATA[<p>Emlak sektöründe (ve aslında satışın olduğu her alanda) en sık duyulan cümlelerden biri: <strong>“Bir düşüneyim, size döneceğim.”</strong> Bu cümle çoğu zaman kibar bir kaçış gibi algılansa da, aslında müşterinin zihninde olan bitene dair çok değerli ipuçları barındırır. Eğer bu ifadeyi doğru analiz edebilirsen, satış sürecini kaybetmek yerine fırsata çevirebilirsin.</p>
+<p>Asıl değişen şey: Piyasa değil, oyunun kuralları.</p>]]></content><author><name></name></author><category term="emlak piyasası" /><category term="konut piyasası" /><summary type="html"><![CDATA[Bu yazıda veriler, uzman görüşleri ve piyasa dinamikleri üzerinden algı ile gerçek arasındaki farkı net şekilde ortaya koyacağız.]]></summary></entry><entry><title type="html">Adres Değişikliğinde Çifte Harç Dönemi Sona Erdi</title><link href="http://localhost:4000/adres-degisikliginde-cifte-harc-donemi-sona-erdi" rel="alternate" type="text/html" title="Adres Değişikliğinde Çifte Harç Dönemi Sona Erdi" /><published>2026-05-01T00:00:00+03:00</published><updated>2026-05-01T00:00:00+03:00</updated><id>http://localhost:4000/adres-degisikliginde-cifte-harc-donemi-sona-erdi</id><content type="html" xml:base="http://localhost:4000/adres-degisikliginde-cifte-harc-donemi-sona-erdi"><![CDATA[<p>Emlak sektöründe faaliyet gösteren işletmeler için yetki belgesi süreçleri, son yıllarda önemli değişikliklere sahne oldu. Özellikle 2026 itibarıyla uygulamaya alınan yıllık harç sistemi, birçok emlak danışmanı ve ofis sahibi için ek maliyet anlamına geliyordu. Ancak son yapılan düzenleme, sektör açısından kritik bir sorunu ortadan kaldırarak önemli bir rahatlama sağladı.</p>
+
+<h2 id="yeni-düzenleme-ne-getiriyor">Yeni Düzenleme Ne Getiriyor?</h2>
+
+<p>Yapılan değişiklikle birlikte emlak ofislerinin yıl içerisinde gerçekleştirdiği adres değişiklikleri artık “yetki belgesi yenileme” kapsamında değerlendirilmeyecek. Bunun yerine bu tür değişiklikler “tadil” olarak kabul edilecek.</p>
+
+<p>Bu ne anlama geliyor?</p>
+
+<ul>
+  <li>Aynı yıl içinde ofisini farklı bir adrese taşıyan emlakçı</li>
+  <li>Lokasyonunu değiştiren ya da daha büyük bir ofise geçen işletme</li>
+  <li>Franchise değişikliği nedeniyle adres güncelleyen danışmanlar</li>
+</ul>
+
+<p>artık ikinci kez yetki belgesi harcı ödemek zorunda kalmayacak.</p>
+
+<h2 id="önceden-sistem-nasıl-i̇şliyordu">Önceden Sistem Nasıl İşliyordu?</h2>
+
+<p>Eski uygulamada süreç oldukça maliyetliydi. Emlak ofisinin adresinde veya bazı temel bilgilerinde değişiklik yapılması durumunda bu işlem “yenileme” olarak kabul ediliyordu. Bu da şu sonucu doğuruyordu:</p>
+
+<ul>
+  <li>Yıl başında ödenen yetki belgesi harcı</li>
+  <li>Aynı yıl içinde adres değişikliği yapılırsa ikinci bir harç</li>
+</ul>
+
+<p>Yani emlakçılar, tek bir yıl içerisinde iki kez ödeme yapmak zorunda kalabiliyordu. Bu durum özellikle büyümek isteyen veya lokasyon değiştirme ihtiyacı duyan işletmeler için ciddi bir yük oluşturuyordu.</p>
+
+<h2 id="yeni-sistem-neyi-değiştiriyor">Yeni Sistem Neyi Değiştiriyor?</h2>
+
+<p>Yeni düzenleme bu sorunu doğrudan ortadan kaldırıyor. Artık:</p>
+
+<ul>
+  <li>Adres değişikliği = yenileme değil</li>
+  <li>Adres değişikliği = tadil işlemi</li>
+</ul>
+
+<p>olarak kabul ediliyor.</p>
+
+<p>Bu sayede emlak ofisleri, operasyonel kararlarını alırken “ek harç çıkar mı?” endişesi yaşamadan hareket edebilecek.</p>
+
+<h2 id="hangi-durumlarda-harç-devam-ediyor">Hangi Durumlarda Harç Devam Ediyor?</h2>
+
+<p>Her ne kadar adres değişikliklerinde önemli bir kolaylık sağlanmış olsa da, bazı durumlarda harç uygulaması devam ediyor.</p>
+
+<p>Özellikle:</p>
+
+<ul>
+  <li>Ticaret unvanı değişikliği</li>
+  <li>Şirket yapısında köklü değişiklikler</li>
+</ul>
+
+<p>hala “yenileme” kapsamında değerlendiriliyor ve bu durumlarda yetki belgesi harcı yeniden alınmaya devam ediyor.</p>
+
+<h2 id="emlakçılar-i̇çin-ne-anlama-geliyor">Emlakçılar İçin Ne Anlama Geliyor?</h2>
+
+<p>Bu düzenleme, ilk bakışta küçük gibi görünse de pratikte oldukça önemli sonuçlar doğuruyor:</p>
+
+<h3 id="1-maliyet-avantajı">1. Maliyet Avantajı</h3>
+<p>Ofisini taşımak isteyen emlakçılar artık ekstra bir harç ödemeyecek. Bu da özellikle küçük ve orta ölçekli işletmeler için ciddi bir tasarruf anlamına geliyor.</p>
+
+<h3 id="2-daha-esnek-i̇ş-modeli">2. Daha Esnek İş Modeli</h3>
+<p>Emlak ofisleri artık lokasyon değişikliği konusunda daha özgür hareket edebilir. Daha iyi bir caddeye çıkmak, daha büyük bir ofise geçmek veya hedef kitleye daha yakın bir noktaya taşınmak kolaylaşıyor.</p>
+
+<h3 id="3-büyümenin-önündeki-engellerden-biri-kalktı">3. Büyümenin Önündeki Engellerden Biri Kalktı</h3>
+<p>Özellikle yeni büyüyen emlak ofisleri için adres değişikliği çoğu zaman kaçınılmazdır. Bu düzenleme, büyüme sürecinde karşılaşılan gereksiz maliyetlerden birini ortadan kaldırıyor.</p>
+
+<h3 id="4-franchise-değişikliklerinde-kolaylık">4. Franchise Değişikliklerinde Kolaylık</h3>
+<p>Farklı bir marka ile çalışmaya başlayan danışmanlar için adres güncellemeleri artık daha az maliyetli hale geliyor.</p>
+
+<h2 id="sektörel-değerlendirme">Sektörel Değerlendirme</h2>
+
+<p>2026 yılında getirilen yıllık yetki belgesi harcı, emlak sektörü için önemli bir sabit gider kalemi oluşturmuştu. Bu nedenle sektörde ciddi eleştiriler gündeme gelmişti.</p>
+
+<p>Son yapılan düzenleme ise bu sistemin tamamen kaldırılması anlamına gelmese de, en çok eleştirilen noktalardan birine çözüm getiriyor. Özellikle “adres değiştirmenin cezalandırılması” olarak görülen uygulamanın kaldırılması, sektör açısından olumlu bir adım.</p>
+
+<p>Ancak şunu net söylemek gerekir:</p>
+
+<ul>
+  <li>Yıllık harç sistemi devam ediyor</li>
+  <li>Yani genel maliyet yükü tamamen ortadan kalkmış değil</li>
+</ul>
+
+<p>Bu nedenle yapılan değişiklik, büyük bir reformdan ziyade yerinde bir düzeltme olarak değerlendirilebilir.</p>
+
+<h2 id="sonuç">Sonuç</h2>
+
+<p>Emlak ofislerinin yıl içinde yaptığı adres değişikliklerinde ikinci kez harç ödenmesini ortadan kaldıran bu yeni düzenleme, sektörde uzun süredir beklenen bir iyileştirme olarak öne çıkıyor. Özellikle büyümek, taşınmak veya lokasyonunu optimize etmek isteyen emlakçılar için önemli bir maliyet avantajı sağlayan bu adım, daha esnek ve sürdürülebilir bir iş yapısının önünü açıyor.</p>]]></content><author><name></name></author><category term="taşınmaz ticareti yetki belgesi" /><category term="eids" /><summary type="html"><![CDATA[Emlak ofisini yıl içinde taşımak artık ikinci bir harç yükü doğurmuyor. Yeni düzenlemenin emlakçılar için maliyet avantajlarını ve iş kararlarına etkisini öğrenin.]]></summary></entry><entry><title type="html">Müşteri Neden “Düşüneceğim” Der?</title><link href="http://localhost:4000/musteri-neden-dusunecegim-der" rel="alternate" type="text/html" title="Müşteri Neden “Düşüneceğim” Der?" /><published>2026-05-01T00:00:00+03:00</published><updated>2026-05-01T00:00:00+03:00</updated><id>http://localhost:4000/musteri-neden-dusunecegim-der</id><content type="html" xml:base="http://localhost:4000/musteri-neden-dusunecegim-der"><![CDATA[<p>Emlak sektöründe (ve aslında satışın olduğu her alanda) en sık duyulan cümlelerden biri: <strong>“Bir düşüneyim, size döneceğim.”</strong> Bu cümle çoğu zaman kibar bir kaçış gibi algılansa da, aslında müşterinin zihninde olan bitene dair çok değerli ipuçları barındırır. Eğer bu ifadeyi doğru analiz edebilirsen, satış sürecini kaybetmek yerine fırsata çevirebilirsin.</p>
 
 <p>Bu yazıda “düşüneceğim” diyen müşterinin gerçek nedenlerini, arka plandaki psikolojiyi ve bu durumları nasıl avantaja çevirebileceğini detaylı şekilde inceleyeceğiz.</p>
 
@@ -924,93 +1289,7 @@
 
 <p><strong>“Gerçek sebep ne?”</strong></p>
 
-<p>Bu sorunun cevabını bulduğun anda, satış sürecinde birkaç adım öne geçersin.</p>]]></content><author><name></name></author><category term="emlak pazarlama" /><summary type="html"><![CDATA[Bu yazıda “düşüneceğim” diyen müşterinin gerçek nedenlerini, arka plandaki psikolojiyi ve bu durumları nasıl avantaja çevirebileceğini detaylı şekilde inceleyeceğiz.]]></summary></entry><entry><title type="html">Adres Değişikliğinde Çifte Harç Dönemi Sona Erdi</title><link href="http://localhost:4000/adres-degisikliginde-cifte-harc-donemi-sona-erdi" rel="alternate" type="text/html" title="Adres Değişikliğinde Çifte Harç Dönemi Sona Erdi" /><published>2026-05-01T00:00:00+03:00</published><updated>2026-05-01T00:00:00+03:00</updated><id>http://localhost:4000/adres-degisikliginde-cifte-harc-donemi-sona-erdi</id><content type="html" xml:base="http://localhost:4000/adres-degisikliginde-cifte-harc-donemi-sona-erdi"><![CDATA[<p>Emlak sektöründe faaliyet gösteren işletmeler için yetki belgesi süreçleri, son yıllarda önemli değişikliklere sahne oldu. Özellikle 2026 itibarıyla uygulamaya alınan yıllık harç sistemi, birçok emlak danışmanı ve ofis sahibi için ek maliyet anlamına geliyordu. Ancak son yapılan düzenleme, sektör açısından kritik bir sorunu ortadan kaldırarak önemli bir rahatlama sağladı.</p>
-
-<h2 id="yeni-düzenleme-ne-getiriyor">Yeni Düzenleme Ne Getiriyor?</h2>
-
-<p>Yapılan değişiklikle birlikte emlak ofislerinin yıl içerisinde gerçekleştirdiği adres değişiklikleri artık “yetki belgesi yenileme” kapsamında değerlendirilmeyecek. Bunun yerine bu tür değişiklikler “tadil” olarak kabul edilecek.</p>
-
-<p>Bu ne anlama geliyor?</p>
-
-<ul>
-  <li>Aynı yıl içinde ofisini farklı bir adrese taşıyan emlakçı</li>
-  <li>Lokasyonunu değiştiren ya da daha büyük bir ofise geçen işletme</li>
-  <li>Franchise değişikliği nedeniyle adres güncelleyen danışmanlar</li>
-</ul>
-
-<p>artık ikinci kez yetki belgesi harcı ödemek zorunda kalmayacak.</p>
-
-<h2 id="önceden-sistem-nasıl-i̇şliyordu">Önceden Sistem Nasıl İşliyordu?</h2>
-
-<p>Eski uygulamada süreç oldukça maliyetliydi. Emlak ofisinin adresinde veya bazı temel bilgilerinde değişiklik yapılması durumunda bu işlem “yenileme” olarak kabul ediliyordu. Bu da şu sonucu doğuruyordu:</p>
-
-<ul>
-  <li>Yıl başında ödenen yetki belgesi harcı</li>
-  <li>Aynı yıl içinde adres değişikliği yapılırsa ikinci bir harç</li>
-</ul>
-
-<p>Yani emlakçılar, tek bir yıl içerisinde iki kez ödeme yapmak zorunda kalabiliyordu. Bu durum özellikle büyümek isteyen veya lokasyon değiştirme ihtiyacı duyan işletmeler için ciddi bir yük oluşturuyordu.</p>
-
-<h2 id="yeni-sistem-neyi-değiştiriyor">Yeni Sistem Neyi Değiştiriyor?</h2>
-
-<p>Yeni düzenleme bu sorunu doğrudan ortadan kaldırıyor. Artık:</p>
-
-<ul>
-  <li>Adres değişikliği = yenileme değil</li>
-  <li>Adres değişikliği = tadil işlemi</li>
-</ul>
-
-<p>olarak kabul ediliyor.</p>
-
-<p>Bu sayede emlak ofisleri, operasyonel kararlarını alırken “ek harç çıkar mı?” endişesi yaşamadan hareket edebilecek.</p>
-
-<h2 id="hangi-durumlarda-harç-devam-ediyor">Hangi Durumlarda Harç Devam Ediyor?</h2>
-
-<p>Her ne kadar adres değişikliklerinde önemli bir kolaylık sağlanmış olsa da, bazı durumlarda harç uygulaması devam ediyor.</p>
-
-<p>Özellikle:</p>
-
-<ul>
-  <li>Ticaret unvanı değişikliği</li>
-  <li>Şirket yapısında köklü değişiklikler</li>
-</ul>
-
-<p>hala “yenileme” kapsamında değerlendiriliyor ve bu durumlarda yetki belgesi harcı yeniden alınmaya devam ediyor.</p>
-
-<h2 id="emlakçılar-i̇çin-ne-anlama-geliyor">Emlakçılar İçin Ne Anlama Geliyor?</h2>
-
-<p>Bu düzenleme, ilk bakışta küçük gibi görünse de pratikte oldukça önemli sonuçlar doğuruyor:</p>
-
-<h3 id="1-maliyet-avantajı">1. Maliyet Avantajı</h3>
-<p>Ofisini taşımak isteyen emlakçılar artık ekstra bir harç ödemeyecek. Bu da özellikle küçük ve orta ölçekli işletmeler için ciddi bir tasarruf anlamına geliyor.</p>
-
-<h3 id="2-daha-esnek-i̇ş-modeli">2. Daha Esnek İş Modeli</h3>
-<p>Emlak ofisleri artık lokasyon değişikliği konusunda daha özgür hareket edebilir. Daha iyi bir caddeye çıkmak, daha büyük bir ofise geçmek veya hedef kitleye daha yakın bir noktaya taşınmak kolaylaşıyor.</p>
-
-<h3 id="3-büyümenin-önündeki-engellerden-biri-kalktı">3. Büyümenin Önündeki Engellerden Biri Kalktı</h3>
-<p>Özellikle yeni büyüyen emlak ofisleri için adres değişikliği çoğu zaman kaçınılmazdır. Bu düzenleme, büyüme sürecinde karşılaşılan gereksiz maliyetlerden birini ortadan kaldırıyor.</p>
-
-<h3 id="4-franchise-değişikliklerinde-kolaylık">4. Franchise Değişikliklerinde Kolaylık</h3>
-<p>Farklı bir marka ile çalışmaya başlayan danışmanlar için adres güncellemeleri artık daha az maliyetli hale geliyor.</p>
-
-<h2 id="sektörel-değerlendirme">Sektörel Değerlendirme</h2>
-
-<p>2026 yılında getirilen yıllık yetki belgesi harcı, emlak sektörü için önemli bir sabit gider kalemi oluşturmuştu. Bu nedenle sektörde ciddi eleştiriler gündeme gelmişti.</p>
-
-<p>Son yapılan düzenleme ise bu sistemin tamamen kaldırılması anlamına gelmese de, en çok eleştirilen noktalardan birine çözüm getiriyor. Özellikle “adres değiştirmenin cezalandırılması” olarak görülen uygulamanın kaldırılması, sektör açısından olumlu bir adım.</p>
-
-<p>Ancak şunu net söylemek gerekir:</p>
-
-<ul>
-  <li>Yıllık harç sistemi devam ediyor</li>
-  <li>Yani genel maliyet yükü tamamen ortadan kalkmış değil</li>
-</ul>
-
-<p>Bu nedenle yapılan değişiklik, büyük bir reformdan ziyade yerinde bir düzeltme olarak değerlendirilebilir.</p>
-
-<h2 id="sonuç">Sonuç</h2>
-
-<p>Emlak ofislerinin yıl içinde yaptığı adres değişikliklerinde ikinci kez harç ödenmesini ortadan kaldıran bu yeni düzenleme, sektörde uzun süredir beklenen bir iyileştirme olarak öne çıkıyor. Özellikle büyümek, taşınmak veya lokasyonunu optimize etmek isteyen emlakçılar için önemli bir maliyet avantajı sağlayan bu adım, daha esnek ve sürdürülebilir bir iş yapısının önünü açıyor.</p>]]></content><author><name></name></author><category term="taşınmaz ticareti yetki belgesi" /><category term="eids" /><summary type="html"><![CDATA[Emlak ofisini yıl içinde taşımak artık ikinci bir harç yükü doğurmuyor. Yeni düzenlemenin emlakçılar için maliyet avantajlarını ve iş kararlarına etkisini öğrenin.]]></summary></entry><entry><title type="html">Tapu Kaybolursa Ne Yapılır?</title><link href="http://localhost:4000/tapu-kaybolursa-ne-yapilir" rel="alternate" type="text/html" title="Tapu Kaybolursa Ne Yapılır?" /><published>2026-04-27T00:00:00+03:00</published><updated>2026-04-27T00:00:00+03:00</updated><id>http://localhost:4000/tapu-kaybolursa-ne-yapilir</id><content type="html" xml:base="http://localhost:4000/tapu-kaybolursa-ne-yapilir"><![CDATA[<p>Tapu senedi, bir taşınmazın sahipliğini resmi olarak kanıtlayan en önemli belgedir. Ancak çeşitli nedenlerle tapunun kaybolması, yıpranması veya çalınması mümkündür. Bu durum çoğu kişide ciddi bir endişe yaratır. Oysa tapu kaybolduğunda mülkiyet hakkı ortadan kalkmaz. Çünkü asıl kayıtlar Tapu ve Kadastro Genel Müdürlüğü’nün sisteminde tutulur.</p>
+<p>Bu sorunun cevabını bulduğun anda, satış sürecinde birkaç adım öne geçersin.</p>]]></content><author><name></name></author><category term="emlak pazarlama" /><summary type="html"><![CDATA[Bu yazıda “düşüneceğim” diyen müşterinin gerçek nedenlerini, arka plandaki psikolojiyi ve bu durumları nasıl avantaja çevirebileceğini detaylı şekilde inceleyeceğiz.]]></summary></entry><entry><title type="html">Tapu Kaybolursa Ne Yapılır?</title><link href="http://localhost:4000/tapu-kaybolursa-ne-yapilir" rel="alternate" type="text/html" title="Tapu Kaybolursa Ne Yapılır?" /><published>2026-04-27T00:00:00+03:00</published><updated>2026-04-27T00:00:00+03:00</updated><id>http://localhost:4000/tapu-kaybolursa-ne-yapilir</id><content type="html" xml:base="http://localhost:4000/tapu-kaybolursa-ne-yapilir"><![CDATA[<p>Tapu senedi, bir taşınmazın sahipliğini resmi olarak kanıtlayan en önemli belgedir. Ancak çeşitli nedenlerle tapunun kaybolması, yıpranması veya çalınması mümkündür. Bu durum çoğu kişide ciddi bir endişe yaratır. Oysa tapu kaybolduğunda mülkiyet hakkı ortadan kalkmaz. Çünkü asıl kayıtlar Tapu ve Kadastro Genel Müdürlüğü’nün sisteminde tutulur.</p>
 
 <p>Bu yazıda, tapu kaybolduğunda ne yapılması gerektiğini, hangi belgelerin gerektiğini ve sürecin nasıl işlediğini tüm detaylarıyla ele alıyoruz.</p>
 
@@ -1568,223 +1847,4 @@
   <li>Faizi değil fırsatı kovalayanlar</li>
   <li>Lokasyon seçimini doğru yapanlar</li>
   <li>Uzun vadeli düşünenler olacak</li>
-</ul>]]></content><author><name></name></author><category term="konut kredisi" /><category term="faiz" /><category term="enflasyon" /><summary type="html"><![CDATA[Bu yazıda 2026 yılında konut kredisi çekmenin mantıklı olup olmadığını; faiz oranları, piyasa beklentileri, riskler ve fırsatlar üzerinden detaylı şekilde analiz edeceğiz.]]></summary></entry><entry><title type="html">Türkiye’de Konut Balonu Var mı?</title><link href="http://localhost:4000/turkiyede-konut-balonu-var-mi" rel="alternate" type="text/html" title="Türkiye’de Konut Balonu Var mı?" /><published>2026-04-16T00:00:00+03:00</published><updated>2026-04-16T00:00:00+03:00</updated><id>http://localhost:4000/turkiyede-konut-balonu-var-mi</id><content type="html" xml:base="http://localhost:4000/turkiyede-konut-balonu-var-mi"><![CDATA[<p>Son yıllarda Türkiye’de konut fiyatlarının hızlı yükselişi, sıkça sorulan bir soruyu gündeme getiriyor: “Konut balonu mu oluştu?” Bu soruya net bir “evet” ya da “hayır” demek kolay değil. Çünkü konut balonu; fiyatların gelir, kira ve ekonomik gerçeklerden koparak sürdürülemez seviyelere çıkmasıyla tanımlanır. Bu yazıda Türkiye’deki mevcut durumu verilerle analiz edecek, ardından ABD ile karşılaştırarak daha net bir çerçeve çizeceğiz.</p>
-
-<h2 id="konut-balonu-nedir">Konut Balonu Nedir?</h2>
-
-<p>Konut balonu, gayrimenkul fiyatlarının:</p>
-
-<ul>
-  <li>Gelir artışından daha hızlı yükselmesi</li>
-  <li>Kira getirileriyle uyumsuz hale gelmesi</li>
-  <li>Spekülatif alımların artması</li>
-  <li>Finansman koşullarının aşırı gevşemesi</li>
-</ul>
-
-<p>gibi faktörlerle şişmesi ve ardından sert bir düzeltme yaşaması durumudur.</p>
-
-<h2 id="türkiyede-konut-fiyatlarının-gerçek-durumu">Türkiye’de Konut Fiyatlarının Gerçek Durumu</h2>
-
-<h3 id="1-nominal-artış-çok-büyük-bir-artış-var">1. Nominal Artış: “Çok Büyük Bir Artış Var”</h3>
-
-<p>Türkiye’de konut fiyatları son 10 yılda olağanüstü arttı:</p>
-
-<ul>
-  <li>2015–2025 arasında fiyatlar yaklaşık <strong>%1.975 artış</strong> gösterdi</li>
-  <li>Türkiye, OECD ülkeleri arasında en hızlı konut fiyat artışına sahip ülke oldu</li>
-</ul>
-
-<p>Bu rakamlar tek başına bakıldığında ciddi bir balon sinyali gibi görünüyor.</p>
-
-<h3 id="2-reel-fiyatlar-aslında-o-kadar-da-artmadı">2. Reel Fiyatlar: “Aslında O Kadar da Artmadı”</h3>
-
-<p>Ancak kritik nokta şu: Türkiye’de yüksek enflasyon var.</p>
-
-<ul>
-  <li>2025 itibarıyla konut fiyatları nominal olarak artsa da</li>
-  <li><strong>Enflasyondan arındırıldığında reel artış neredeyse sıfır</strong></li>
-  <li>Hatta bazı dönemlerde reel fiyatlar düşüş bile gösterdi</li>
-</ul>
-
-<p>Bu şu anlama geliyor:</p>
-
-<blockquote>
-  <p>Türkiye’de fiyat artışının büyük bölümü gerçek değer artışından değil, enflasyondan kaynaklanıyor.</p>
-</blockquote>
-
-<h3 id="3-kira-ve-talep-dinamikleri">3. Kira ve Talep Dinamikleri</h3>
-
-<p>Türkiye’de asıl dikkat çeken nokta kira tarafı:</p>
-
-<ul>
-  <li>Kiralar son yıllarda OECD ortalamasının çok üzerinde arttı</li>
-  <li>2025’te kira artışı yıllık %60–70 seviyelerine ulaştı</li>
-</ul>
-
-<p>Bu durum iki önemli sonucu doğuruyor:</p>
-
-<ul>
-  <li>Konut talebi canlı kalıyor (özellikle yatırım amaçlı alımlar)</li>
-  <li>Fiyatları destekleyen <strong>gerçek bir talep</strong> var</li>
-</ul>
-
-<h3 id="4-fiyat--gelir-uyumsuzluğu">4. Fiyat / Gelir Uyumsuzluğu</h3>
-
-<p>OECD’ye göre konut balonunu anlamanın en önemli göstergesi:</p>
-
-<ul>
-  <li><strong>Fiyat / gelir oranı</strong></li>
-  <li><strong>Fiyat / kira oranı</strong></li>
-</ul>
-
-<p>Türkiye’de:</p>
-
-<ul>
-  <li>Gelir artışı, fiyat artışının çok gerisinde kaldı</li>
-  <li>Bu da konut erişilebilirliğini ciddi şekilde düşürdü</li>
-</ul>
-
-<p>Bu nokta, balon tartışmasının en güçlü tarafını oluşturuyor.</p>
-
-<h2 id="abd-konut-piyasası-ile-karşılaştırma">ABD Konut Piyasası ile Karşılaştırma</h2>
-
-<p>Türkiye’yi daha iyi anlamak için ABD ile karşılaştıralım.</p>
-
-<h3 id="1-abdde-durum-balon-mu-kriz-mi">1. ABD’de Durum: Balon mu, Kriz mi?</h3>
-
-<p>ABD’de:</p>
-
-<ul>
-  <li>2025 itibarıyla konut fiyatları rekor seviyelere ulaştı</li>
-  <li>Mortgage faizleri %6+ seviyesinde kaldı</li>
-  <li>Konut almak için gereken gelir ciddi şekilde arttı</li>
-</ul>
-
-<p>Ancak önemli fark şu:</p>
-
-<ul>
-  <li>ABD’de fiyat artışı <strong>reel (enflasyondan arındırılmış) olarak da yüksek</strong></li>
-  <li>Türkiye’de ise artış büyük ölçüde enflasyon kaynaklı</li>
-</ul>
-
-<h3 id="2-arz--talep-dengesi">2. Arz – Talep Dengesi</h3>
-
-<p>ABD:</p>
-<ul>
-  <li>Konut arzı yetersiz (milyonlarca konut açığı var)</li>
-  <li>Bu yüzden fiyatlar yüksek kalmaya devam ediyor</li>
-</ul>
-
-<p>Türkiye:</p>
-<ul>
-  <li>Arz yüksek ama doğru segmentte değil</li>
-  <li>Talep daha çok yatırım ve enflasyondan korunma amaçlı</li>
-</ul>
-
-<h3 id="3-finansman-sistemi">3. Finansman Sistemi</h3>
-
-<p>ABD:</p>
-<ul>
-  <li>Uzun vadeli sabit faizli mortgage sistemi</li>
-  <li>Kurumsal yatırımcılar güçlü</li>
-</ul>
-
-<p>Türkiye:</p>
-<ul>
-  <li>Yüksek faiz + sınırlı kredi erişimi</li>
-  <li>Peşin veya alternatif finansman yaygın</li>
-</ul>
-
-<p>Bu fark, balon riskinin yapısını tamamen değiştiriyor.</p>
-
-<h2 id="türkiyede-gerçekten-konut-balonu-var-mı">Türkiye’de Gerçekten Konut Balonu Var mı?</h2>
-
-<p>Bu sorunun cevabı gri.</p>
-
-<h3 id="evet-balon-var-diyenler-için-argümanlar">“Evet, balon var” diyenler için argümanlar:</h3>
-
-<ul>
-  <li>Fiyat / gelir oranı aşırı bozuldu</li>
-  <li>Konut erişilebilirliği ciddi şekilde düştü</li>
-  <li>Yatırım amaçlı talep yüksek</li>
-</ul>
-
-<h3 id="hayır-balon-yok-diyenler-için-argümanlar">“Hayır, balon yok” diyenler için argümanlar:</h3>
-
-<ul>
-  <li>Reel fiyat artışı sınırlı</li>
-  <li>Enflasyon fiyatları şişiriyor</li>
-  <li>Kira getirileri güçlü (talep destekliyor)</li>
-</ul>
-
-<h2 id="en-kritik-fark-türkiye-vs-abd">En Kritik Fark: Türkiye vs ABD</h2>
-
-<table>
-  <thead>
-    <tr>
-      <th>Kriter</th>
-      <th>Türkiye</th>
-      <th>ABD</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Fiyat artışı</td>
-      <td>Nominal çok yüksek</td>
-      <td>Reel yüksek</td>
-    </tr>
-    <tr>
-      <td>Enflasyon etkisi</td>
-      <td>Çok yüksek</td>
-      <td>Düşük</td>
-    </tr>
-    <tr>
-      <td>Kira artışı</td>
-      <td>Aşırı yüksek</td>
-      <td>Orta</td>
-    </tr>
-    <tr>
-      <td>Finansman</td>
-      <td>Zor</td>
-      <td>Gelişmiş</td>
-    </tr>
-    <tr>
-      <td>Balon riski</td>
-      <td>Yapısal + enflasyon kaynaklı</td>
-      <td>Döngüsel + faiz kaynaklı</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="sonuç-türkiyede-balon-mu-enflasyon-mu">Sonuç: Türkiye’de Balon mu, Enflasyon mu?</h2>
-
-<p>Türkiye’de klasik anlamda bir “konut balonu”ndan ziyade şu durum söz konusu:</p>
-
-<blockquote>
-  <p><strong>Enflasyon + arz-talep dengesizliği + yatırım davranışı birleşimi</strong></p>
-</blockquote>
-
-<p>Bu nedenle Türkiye’deki piyasa:</p>
-
-<ul>
-  <li>ABD’deki gibi ani bir çöküş riski taşıyan klasik balon yapısından farklı</li>
-  <li>Ancak erişilebilirlik krizi nedeniyle <strong>sosyal ve ekonomik baskı oluşturuyor</strong></li>
-</ul>
-
-<h2 id="son-söz">Son Söz</h2>
-
-<p>Türkiye’de konut piyasası dışarıdan bakıldığında bir balon gibi görünse de, detaylara inildiğinde bunun büyük ölçüde:</p>
-
-<ul>
-  <li>Enflasyon</li>
-  <li>Para birimi değer kaybı</li>
-  <li>Kira krizine bağlı talep</li>
-</ul>
-
-<p>tarafından beslendiği görülüyor.</p>
-
-<p>Bu yüzden doğru soru şu:</p>
-
-<p><strong>“Balon var mı?” değil, “Bu fiyatlar sürdürülebilir mi?”</strong></p>
-
-<p>Ve bu sorunun cevabı hâlâ belirsiz.</p>]]></content><author><name></name></author><category term="konut piyasası" /><summary type="html"><![CDATA[Türkiye’de konut fiyatları neden bu kadar hızlı arttı? Gerçekten bir konut balonunun içinde miyiz, yoksa bu sadece enflasyonun bir sonucu mu?]]></summary></entry></feed>
+</ul>]]></content><author><name></name></author><category term="konut kredisi" /><category term="faiz" /><category term="enflasyon" /><summary type="html"><![CDATA[Bu yazıda 2026 yılında konut kredisi çekmenin mantıklı olup olmadığını; faiz oranları, piyasa beklentileri, riskler ve fırsatlar üzerinden detaylı şekilde analiz edeceğiz.]]></summary></entry></feed>
