@@ -19,3 +19,5 @@ Blogda yer alan içerik başlıklarından bazıları:
 Bu blog, sahada aktif olarak çalışan bir emlak danışmanının deneyimlerine, danışanlardan gelen sık sorulara ve piyasadaki güncel gelişmelere dayanmaktadır. Amaç; sektörel terimlerden uzak, herkesin anlayabileceği bir dil ile bilgi sunmak ve okuyucuların emlak işlemlerini daha güvenli hale getirmektir.
 
 Eğer siz de **doğru emlak yatırımı nasıl yapılır**, **arsa alırken nelere dikkat edilmeli** ya da **gayrimenkul danışmanından ne beklenir** gibi soruların yanıtlarını arıyorsanız, bu blogda aradığınız birçok içeriği bulabilirsiniz.
+
+Profesyonel geçmişim, geliştirdiğim projeler ve uzmanlık alanlarım hakkında daha detaylı bilgi edinmek için [özgeçmişimi](https://www.melihkocaturk.com/docs/resume.pdf) inceleyebilirsiniz.
