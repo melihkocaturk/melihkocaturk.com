@@ -5,6 +5,8 @@ a { text-underline-offset: 3px; }
 
 .navbar-brand { font-size: calc(1vw + 1rem); font-weight: 400; }
 
+.site-logo { max-width: 40px; }
+
 .navbar-toggler { border: none; }
 
 .navbar-toggler:focus { box-shadow: none; }
@@ -24,5 +26,11 @@ a { text-underline-offset: 3px; }
 .post table th, .post table td { border: 1px solid #dee2e6; padding: 10px 15px; }
 
 .read-time::before { content: "\2022"; padding: 0 0.5em; }
+
+@media (min-width: 768px) { .site-logo { max-width: 50px; } }
+
+@media (min-width: 992px) { .site-logo { max-width: 60px; } }
+
+@media (min-width: 1200px) { .site-logo { max-width: 70px; } }
 
 /*# sourceMappingURL=styles.css.map */
