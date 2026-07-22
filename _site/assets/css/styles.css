@@ -5,7 +5,7 @@ a { text-underline-offset: 3px; }
 
 .navbar-brand { font-size: calc(1vw + 1rem); font-weight: 400; }
 
-.site-logo { max-width: 40px; }
+.site-logo { max-width: 60px; }
 
 .navbar-toggler { border: none; }
 
@@ -27,10 +27,10 @@ a { text-underline-offset: 3px; }
 
 .read-time::before { content: "\2022"; padding: 0 0.5em; }
 
-@media (min-width: 768px) { .site-logo { max-width: 50px; } }
+@media (min-width: 768px) { .site-logo { max-width: 70px; } }
 
-@media (min-width: 992px) { .site-logo { max-width: 60px; } }
+@media (min-width: 992px) { .site-logo { max-width: 80px; } }
 
-@media (min-width: 1200px) { .site-logo { max-width: 70px; } }
+@media (min-width: 1200px) { .site-logo { max-width: 90px; } }
 
 /*# sourceMappingURL=styles.css.map */
