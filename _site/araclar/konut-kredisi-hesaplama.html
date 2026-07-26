@@ -6,8 +6,8 @@
   
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Tapu Harcı ve Masraf Hesaplama</title>
-  <meta name="description" content="Gayrimenkul alım satımında ödeyeceğiniz tapu harcı, döner sermaye ve emlakçı masraflarını anında hesaplayın. Sürpriz maliyetler olmadan tapu sürecinizi planl...">
+  <title>Konut Kredisi Hesaplama</title>
+  <meta name="description" content="Konut kredisi aylık taksit ve toplam geri ödeme tutarını anında hesaplayın. Peşinat, faiz ve vade oranlarını girin, bütçenize en uygun evi kolayca bulun!">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
@@ -92,174 +92,200 @@
 
   <main class="container">
   <div class="page mx-auto mt-5">
-    <h1 class="display-5 text-center mb-5">Tapu Harcı ve Masraf Hesaplama</h1>
-    <!-- CSS for Switch Input -->
-<style>
-  /* Change the track background and border color when checked */
-  .custom-switch-success .form-check-input:checked {
-    background-color: #000;
-    border-color: #000;
-  }
-</style>
-
-<div class="container mb-5" style="max-width: 520px;">
+    <h1 class="display-5 text-center mb-5">Konut Kredisi Hesaplama</h1>
+    <div class="container mb-5" style="max-width: 520px;">
   <div class="card border">
     <div class="card-body p-4">
-      <form id="titleDeedCalculatorForm" onsubmit="event.preventDefault(); calculateTitleDeedFees();">
-        <!-- Property Sale Price -->
+      <form id="mortgageCalculatorForm" onsubmit="event.preventDefault(); calculateMortgage();">
+        <!-- Property Price -->
         <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="propertySalePrice" placeholder="5000000" value="5000000"
-            required>
-          <label for="propertySalePrice">Gayrimenkul Satış Bedeli (TL)</label>
+          <input type="number" class="form-control" id="propertyPrice" placeholder="5000000" value="5000000" required>
+          <label for="propertyPrice">Konut Tutarı (TL)</label>
         </div>
 
-        <!-- Fee Payment Distribution Selection -->
-        <div class="mb-3">
-          <label class="form-label text-secondary small fw-semibold">Tapu Harcı Paylaşımı</label>
-          <select class="form-select form-select-lg fs-6" id="feeDistribution">
-            <option value="split" selected>Yarı Yarıya (%2 Alıcı - %2 Satıcı)</option>
-            <option value="buyer">Tamamı Alıcıya Ait (%4 Alıcı)</option>
-            <option value="seller">Tamamı Satıcıya Ait (%4 Satıcı)</option>
-          </select>
+        <!-- Down Payment -->
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control" id="downPayment" placeholder="1500000" value="1500000" required>
+          <label for="downPayment">Peşinat Tutarı (TL)</label>
         </div>
 
-        <!-- Include Agent Fee Checkbox -->
-        <div class="form-check form-switch custom-switch-success mb-3">
-          <input class="form-check-input" type="checkbox" id="includeAgentFee" checked>
-          <label class="form-check-input-label text-dark small" for="includeAgentFee">
-            Emlak Hizmet Bedelini Dahil Et (%2 + KDV)
-          </label>
+        <!-- Interest Rate & Loan Term (Grid System) -->
+        <div class="row g-2 mb-3">
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input type="number" step="0.01" class="form-control" id="interestRate" placeholder="3.05" value="3.05"
+                required>
+              <label for="interestRate">Aylık Faiz (%)</label>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-floating">
+              <input type="number" class="form-control" id="loanTerm" placeholder="120" value="120" required>
+              <label for="loanTerm">Vade (Ay)</label>
+            </div>
+          </div>
         </div>
 
         <!-- Calculate Button -->
         <button type="submit" class="btn btn-dark w-100 py-3 fw-bold rounded-3">
-          Masrafları Hesapla
+          Aylık Taksiti Hesapla
         </button>
       </form>
 
       <!-- Results Section -->
-      <div id="deedResultsContainer" class="mt-4 p-3 bg-body-tertiary rounded-3 border d-none">
-        <h6 class="fw-bold text-dark border-bottom pb-2 mb-3">Hesaplama Detayları</h6>
-
+      <div id="resultsContainer" class="mt-4 p-3 bg-body-tertiary rounded-3 border d-none">
         <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Alıcı Tapu Harcı (%2):</span>
-          <span class="fw-semibold" id="buyerTaxOutput">0 TL</span>
+          <span class="text-secondary small">Kredi Tutarı:</span>
+          <span class="fw-semibold" id="loanAmountOutput">0 TL</span>
         </div>
         <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Satıcı Tapu Harcı (%2):</span>
-          <span class="fw-semibold" id="sellerTaxOutput">0 TL</span>
+          <span class="text-secondary small">Aylık Taksit:</span>
+          <span class="fw-bold fs-4 text-danger" id="monthlyPaymentOutput">0 TL</span>
         </div>
         <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Döner Sermaye Bedeli (Tahmini):</span>
-          <span class="fw-semibold" id="revolvingFundOutput">0 TL</span>
-        </div>
-
-        <div id="agentFeeRow" class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Emlak Hizmet Bedeli (KDV Dahil):</span>
-          <span class="fw-semibold" id="agentFeeOutput">0 TL</span>
-        </div>
-
-        <div class="d-flex justify-content-between align-items-center py-3 my-2 bg-danger-subtle px-3 rounded-3">
-          <span class="fw-bold text-danger-emphasis">Toplam Alıcı Masrafı:</span>
-          <span class="fw-bold fs-5 text-danger" id="totalBuyerCostOutput">0 TL</span>
+          <span class="text-secondary small">Toplam Geri Ödeme:</span>
+          <span class="fw-semibold" id="totalPaymentOutput">0 TL</span>
         </div>
       </div>
 
       <!-- Error Alert Area -->
-      <div id="deedErrorMessage" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
+      <div id="errorMessage" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
     </div>
   </div>
 </div>
+
+<!-- CSS for Fractional Formula Display -->
+<style>
+  .fraction {
+    display: inline-flex;
+    flex-direction: column;
+    vertical-align: middle;
+    text-align: center;
+    padding: 0 4px;
+  }
+
+  .fraction .numerator {
+    border-bottom: 2px solid #212529;
+    padding-bottom: 2px;
+  }
+
+  .fraction .denominator {
+    padding-top: 2px;
+  }
+</style>
 
 <div class="container my-4" style="max-width: 520px;">
   <div class="card border">
     <div class="card-body p-4">
       <h4 class="card-title text-dark fw-bold mb-3 mt-0">
-        Tapu Harcı ve Masraf Kalemleri
+        Konut Kredisi Hesaplama Formülü
       </h4>
       <p class="text-muted small mb-4">
-        Gayrimenkul alım-satım işlemlerinde Resmi Gazete'de yayımlanan Harçlar Kanunu ve ilgili mevzuat hükümleri
-        uygulanır.
+        Aylık taksit tutarı, bankacılık sektöründe standart olarak kullanılan <strong>Eşit Taksitli Kredi Amortisman
+          Formülü</strong> ile hesaplanmaktadır.
       </p>
 
+      <!-- Formül Alanı -->
+      <div class="bg-body-tertiary p-3 rounded-3 text-center mb-4 border fs-5 fw-bold text-dark">
+        <span>M = P &times; </span>
+        <div class="fraction">
+          <span class="numerator">r(1 + r)<sup>n</sup></span>
+          <span class="denominator">(1 + r)<sup>n</sup> &minus; 1</span>
+        </div>
+      </div>
+
+      <!-- Değişkenlerin Anlamları Listesi -->
+      <h6 class="fw-bold text-secondary mb-3">Değişkenlerin Anlamları</h6>
       <ul class="list-group list-group-flush">
         <li class="list-group-item d-flex justify-content-between align-items-start px-0">
           <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Tapu Harcı Oranı (%4)</div>
-            <span class="small text-secondary">Aksi taraflarca kararlaştırılmadıkça %2 Alıcı, %2 Satıcı tarafından
-              ödenir.</span>
+            <div class="fw-bold text-dark">M (Aylık Taksit Tutarı)</div>
+            <span class="small text-secondary">Her ay ödenmesi gereken sabit tutardır.</span>
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start px-0">
           <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Döner Sermaye Bedeli</div>
-            <span class="small text-secondary">Tapu müdürlüğü tarafından her yıl yöresel katsayılara göre belirlenen
-              maktu işlem ücretidir.</span>
+            <div class="fw-bold text-dark">P (Kredi Tutarı (Anapara))</div>
+            <span class="small text-secondary">Konut fiyatından peşinat çıkarıldıktan sonra çekilen net kredi
+              tutarıdır.</span>
           </div>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-start px-0">
           <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Emlak Danışmanlık Ücreti</div>
-            <span class="small text-secondary">Yasal tavan oran Satış Bedelinin %2 + KDV'sidir (Toplam %2,4).</span>
+            <div class="fw-bold text-dark">r (Aylık Faiz Oranı)</div>
+            <span class="small text-secondary">Yüzde olarak girilen aylık faiz oranının ondalık karşılığıdır (Örn: %3,05
+              faiz için 0.0305).</span>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold text-dark">n (Kredi Vadesi)</div>
+            <span class="small text-secondary">Taksitlerin toplam ay sayısıdır (Örn: 10 yıl için 120 ay).</span>
           </div>
         </li>
       </ul>
+
+      <!-- Ek Hesaplamalar -->
+      <div class="mt-4 pt-3 border-top">
+        <h6 class="fw-bold text-secondary mb-2">Yardımcı Formüller</h6>
+        <div class="small text-muted">
+          <p class="mb-1"><strong>Çekilecek Kredi Tutarı (P):</strong> Konut Fiyatı &minus; Peşinat</p>
+          <p class="mb-0"><strong>Toplam Geri Ödeme:</strong> M &times; n (Aylık Taksit &times; Vade)</p>
+        </div>
+      </div>
     </div>
   </div>
 </div>
 
 <script>
-  function calculateTitleDeedFees() {
-    // Get inputs
-    const propertySalePrice = parseFloat(document.getElementById('propertySalePrice').value) || 0;
-    const feeDistribution = document.getElementById('feeDistribution').value;
-    const includeAgentFee = document.getElementById('includeAgentFee').checked;
+  function calculateMortgage() {
+    // Get input values
+    const propertyPrice = parseFloat(document.getElementById('propertyPrice').value) || 0;
+    const downPayment = parseFloat(document.getElementById('downPayment').value) || 0;
+    const interestRate = parseFloat(document.getElementById('interestRate').value) || 0;
+    const loanTerm = parseInt(document.getElementById('loanTerm').value) || 0;
 
-    const deedResultsContainer = document.getElementById('deedResultsContainer');
-    const deedErrorMessage = document.getElementById('deedErrorMessage');
-    const agentFeeRow = document.getElementById('agentFeeRow');
+    const resultsContainer = document.getElementById('resultsContainer');
+    const errorMessage = document.getElementById('errorMessage');
 
     // Reset error state
-    deedErrorMessage.classList.add('d-none');
+    errorMessage.classList.add('d-none');
 
-    if (propertySalePrice <= 0) {
-      deedErrorMessage.innerText = "Lütfen geçerli bir gayrimenkul satış bedeli giriniz.";
-      deedErrorMessage.classList.remove('d-none');
-      deedResultsContainer.classList.add('d-none');
+    // Validation checks
+    if (propertyPrice <= 0 || loanTerm <= 0) {
+      errorMessage.innerText = "Lütfen geçerli bir konut tutarı ve vade giriniz.";
+      errorMessage.classList.remove('d-none');
+      resultsContainer.classList.add('d-none');
       return;
     }
 
-    // Standard Rates
-    const totalTaxRate = 0.04; // Total 4%
-    const revolvingFundFee = 6681; // Fixed Revolving Fund Fee (TL)
-    const agentFeeRate = 0.024; // 2% + 20% KDV = 2.4%
+    const loanAmount = propertyPrice - downPayment;
 
-    let buyerTax = 0;
-    let sellerTax = 0;
-
-    if (feeDistribution === 'split') {
-      buyerTax = propertySalePrice * 0.02;
-      sellerTax = propertySalePrice * 0.02;
-    } else if (feeDistribution === 'buyer') {
-      buyerTax = propertySalePrice * totalTaxRate;
-      sellerTax = 0;
-    } else if (feeDistribution === 'seller') {
-      buyerTax = 0;
-      sellerTax = propertySalePrice * totalTaxRate;
+    if (loanAmount <= 0) {
+      errorMessage.innerText = "Peşinat tutarı konut fiyatından büyük veya eşit olamaz.";
+      errorMessage.classList.remove('d-none');
+      resultsContainer.classList.add('d-none');
+      return;
     }
 
-    let buyerAgentFee = includeAgentFee ? (propertySalePrice * agentFeeRate) : 0;
+    let monthlyPayment = 0;
+    let totalPayment = 0;
 
-    if (includeAgentFee) {
-      agentFeeRow.classList.remove('d-none');
+    if (interestRate > 0) {
+      // Monthly interest rate conversion (e.g. 3.05 -> 0.0305)
+      const monthlyRate = interestRate / 100;
+
+      // Amortization Formula: M = P * [r(1+r)^n] / [(1+r)^n - 1]
+      const rateFactor = Math.pow(1 + monthlyRate, loanTerm);
+      monthlyPayment = loanAmount * (monthlyRate * rateFactor) / (rateFactor - 1);
+      totalPayment = monthlyPayment * loanTerm;
     } else {
-      agentFeeRow.classList.add('d-none');
+      // Zero interest edge case
+      monthlyPayment = loanAmount / loanTerm;
+      totalPayment = loanAmount;
     }
 
-    // Total buyer cost = Buyer Tax + Revolving Fund + Buyer Agent Fee
-    const totalBuyerCost = buyerTax + revolvingFundFee + buyerAgentFee;
-
-    // Currency Formatter (TRY)
+    // Currency Formatter (Turkish Lira)
     const currencyFormatter = new Intl.NumberFormat('tr-TR', {
       style: 'currency',
       currency: 'TRY',
@@ -267,14 +293,12 @@
     });
 
     // Output formatted results
-    document.getElementById('buyerTaxOutput').innerText = currencyFormatter.format(buyerTax);
-    document.getElementById('sellerTaxOutput').innerText = currencyFormatter.format(sellerTax);
-    document.getElementById('revolvingFundOutput').innerText = currencyFormatter.format(revolvingFundFee);
-    document.getElementById('agentFeeOutput').innerText = currencyFormatter.format(buyerAgentFee);
-    document.getElementById('totalBuyerCostOutput').innerText = currencyFormatter.format(totalBuyerCost);
+    document.getElementById('loanAmountOutput').innerText = currencyFormatter.format(loanAmount);
+    document.getElementById('monthlyPaymentOutput').innerText = currencyFormatter.format(monthlyPayment);
+    document.getElementById('totalPaymentOutput').innerText = currencyFormatter.format(totalPayment);
 
     // Display results
-    deedResultsContainer.classList.remove('d-none');
+    resultsContainer.classList.remove('d-none');
   }
 </script>
   </div>
