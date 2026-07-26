@@ -1,7 +1,21 @@
 <footer class="container py-5">
-  <p><a href="{{ site.social.linkedin }}" class="text-black">LinkedIn</a> / <a href="{{ site.social.instagram }}"
-      class="text-black">Instagram</a> / <a href="{{ site.social.youtube }}" class="text-black">Youtube</a> / <a
-      href="{{ site.social.twitter }}" class="text-black">X</a> / <a href="/feed.xml" class="text-black">Feed</a></p>
+  <ul class="list-inline">
+    <li class="list-inline-item"> <a href="{{ site.social.linkedin }}" class="text-dark" target="_blank">
+        <i class="bi bi-linkedin"></i>
+      </a></li>
+    <li class="list-inline-item"> <a href="{{ site.social.instagram }}" class="text-dark" target="_blank">
+        <i class="bi bi-instagram"></i>
+      </a></li>
+    <li class="list-inline-item"> <a href="{{ site.social.youtube }}" class="text-dark" target="_blank">
+        <i class="bi bi-youtube"></i>
+      </a></li>
+    <li class="list-inline-item"> <a href="{{ site.social.twitter }}" class="text-dark" target="_blank">
+        <i class="bi bi-twitter"></i>
+      </a></li>
+    <li class="list-inline-item"> <a href="/feed.xml" class="text-dark" target="_blank">
+        <i class="bi bi-rss"></i>
+      </a></li>
+  </ul>
   <p class="small">© {{ "now" | date: "%Y" }} {{ site.title }}. Tüm hakları saklıdır.</p>
   <p class="small"><a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a> / <a
       href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a></p>
