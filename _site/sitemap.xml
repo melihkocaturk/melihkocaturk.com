@@ -1276,7 +1276,13 @@
 <loc>http://localhost:4000/ara</loc>
 </url>
 <url>
+<loc>http://localhost:4000/araclar</loc>
+</url>
+<url>
 <loc>http://localhost:4000/etiketler</loc>
+</url>
+<url>
+<loc>http://localhost:4000/araclar/gayrimenkul-yatirim-getirisi-amortisman-hesaplama.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/gizlilik-politikasi</loc>
@@ -1291,6 +1297,9 @@
 <loc>http://localhost:4000/</loc>
 </url>
 <url>
+<loc>http://localhost:4000/araclar/konut-kredisi-hesaplama.html</loc>
+</url>
+<url>
 <loc>http://localhost:4000/kvkk-aydinlatma-metni</loc>
 </url>
 <url>
@@ -1298,6 +1307,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/rehber</loc>
+</url>
+<url>
+<loc>http://localhost:4000/araclar/konut-kredisi-hesaplama.html</loc>
 </url>
 <url>
 <loc>http://localhost:4000/sayfa2/</loc>
