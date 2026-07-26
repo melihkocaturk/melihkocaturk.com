@@ -34,6 +34,9 @@ social:
 # Google Analytics
 google_analytics: G-D81YCKRVTX
 
+# Google Adsense
+google_adsense: 1369915303743120
+
 # Plugins
 plugins:
   - jekyll-paginate
