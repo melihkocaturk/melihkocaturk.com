@@ -1269,10 +1269,17 @@
 <lastmod>2026-07-25T00:00:00+03:00</lastmod>
 </url>
 <url>
+<loc>http://localhost:4000/emlakci-mi-gayrimenkul-danismani-mi-aradaki-fark-gercekten-ne</loc>
+<lastmod>2026-07-26T00:00:00+03:00</lastmod>
+</url>
+<url>
 <loc>http://localhost:4000/ara</loc>
 </url>
 <url>
 <loc>http://localhost:4000/etiketler</loc>
+</url>
+<url>
+<loc>http://localhost:4000/gizlilik-politikasi</loc>
 </url>
 <url>
 <loc>http://localhost:4000/hakkinda</loc>
@@ -1282,6 +1289,9 @@
 </url>
 <url>
 <loc>http://localhost:4000/</loc>
+</url>
+<url>
+<loc>http://localhost:4000/kvkk-aydinlatma-metni</loc>
 </url>
 <url>
 <loc>http://localhost:4000/podcast</loc>
