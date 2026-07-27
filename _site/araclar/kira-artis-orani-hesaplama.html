@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="tr">
+
+<head>
+  
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kira Artış Oranı Hesaplama</title>
+  <meta name="description" content="Güncel TÜFE oranına göre resmi kira artış oranını ve yeni kira tutarınızı anında hesaplayın. Yasal sınırlara uygun kira zammını saniyeler içinde öğrenin!">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/styles.css">
+  <link rel="shortcut icon" href="/images/favicon.ico">
+</head>
+
+<body>
+  <div class="container py-3">
+  <nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <div class="container-fluid px-0">
+      <a class="navbar-brand" href="/">
+        <img src="/images/logo.png" alt="Melih Kocatürk" class="site-logo">
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainMenu"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/">
+                Anasayfa
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/hakkinda">
+                Hakkında
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/etiketler">
+                Etiketler
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/araclar">
+                Araçlar
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/rehber">
+                Rehber
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/podcast">
+                Podcast
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/ara">
+                Ara
+              </a>
+            </li>
+          
+            <li class="nav-item">
+              <a class="nav-link " href="/iletisim">
+                İletişim
+              </a>
+            </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+
+  <main class="container">
+  <div class="page mx-auto mt-5">
+    <h1 class="display-5 text-center mb-5">Kira Artış Oranı Hesaplama</h1>
+    <div class="container my-4" style="max-width: 520px;">
+  <div class="card border">
+    <div class="card-body p-4">
+      <form id="rentIncreaseForm" onsubmit="event.preventDefault(); calculateRentIncrease();">
+        <!-- Current Rent Amount -->
+        <div class="form-floating mb-3">
+          <input type="number" class="form-control" id="currentRent" placeholder="20000" value="20000" required>
+          <label for="currentRent">Mevcut Kira Tutarı (TL)</label>
+        </div>
+
+        <!-- Rent Increase Rate (CPI / TÜFE) -->
+        <div class="form-floating mb-3">
+          <input type="number" step="0.01" class="form-control" id="cpiRate" value="" required>
+          <label for="cpiRate">TÜFE 12 Aylık Ortalaması / Artış Oranı (%)</label>
+        </div>
+
+        <!-- Calculate Button -->
+        <button type="submit" class="btn btn-dark w-100 py-3 fw-bold rounded-3">
+          Yeni Kirayı Hesapla
+        </button>
+      </form>
+
+      <!-- Results Section -->
+      <div id="rentResultsContainer" class="mt-4 p-3 bg-body-tertiary rounded-3 border d-none">
+        <h6 class="fw-bold text-dark border-bottom pb-2 mb-3">Hesaplama Sonucu</h6>
+
+        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
+          <span class="text-secondary small">Kira Zam Tutarı:</span>
+          <span class="fw-semibold text-danger" id="increaseAmountOutput">+0 TL</span>
+        </div>
+
+        <div class="d-flex justify-content-between align-items-center py-3 my-2 bg-success-subtle px-3 rounded-3">
+          <span class="fw-bold text-success-emphasis">Yeni Ödenecek Kira Tutarı:</span>
+          <span class="fw-bold fs-4 text-success" id="newRentOutput">0 TL</span>
+        </div>
+      </div>
+
+      <!-- Error Alert Area -->
+      <div id="rentErrorMessage" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container my-4" style="max-width: 520px;">
+  <div class="card border">
+    <div class="card-body p-4">
+      <h4 class="card-title text-dark fw-bold mb-3 mt-0">
+        Kira Artış Oranı Nasıl Hesaplanır?
+      </h4>
+      <p class="text-muted small mb-4">
+        Türk Borçlar Kanunu'nun 344. maddesine göre, yenilenen kira dönemlerinde uygulanacak kira bedeli, bir önceki
+        kira yılında <a href="https://veriportali.tuik.gov.tr/tr" target="_blank" class="text-dark">TÜİK</a> tarafından
+        açıklanan <strong>12 aylık TÜFE ortalamasını</strong> geçemez.
+      </p>
+
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold text-dark">Zam Tutarı Formülü</div>
+            <span class="small text-secondary">Mevcut Kira Bedeli &times; (TÜFE Oranı &divide; 100)</span>
+          </div>
+        </li>
+        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
+          <div class="ms-2 me-auto">
+            <div class="fw-bold text-dark">Yeni Kira Bedeli Formülü</div>
+            <span class="small text-secondary">Mevcut Kira Bedeli + Zam Tutarı</span>
+          </div>
+        </li>
+      </ul>
+
+      <div class="my-3 p-3 bg-body-tertiary rounded-3 border">
+        <span class="small text-muted">
+          <strong>Not:</strong> Yasal oran tavan orandır. Ev sahibi ve kiracı karşılıklı anlaşarak bu oranın altında bir
+          artış belirleyebilir.
+        </span>
+      </div>
+
+      <p class="small">
+        &rarr; Kira artış mevzuatı ve yasal haklar hakkında detaylı bilgi için
+        <a href="https://www.melihkocaturk.com/kira-artisi-neye-gore-hesaplanir" target="_blank"
+          class="fw-semibold text-decoration-underline text-dark">
+          Kira Artışı Neye Göre Hesaplanır?
+        </a>
+        başlıklı rehberimizi inceleyebilirsiniz.
+      </p>
+    </div>
+  </div>
+</div>
+
+<script>
+  function calculateRentIncrease() {
+    // Get inputs
+    const currentRent = parseFloat(document.getElementById('currentRent').value) || 0;
+    const cpiRate = parseFloat(document.getElementById('cpiRate').value) || 0;
+
+    const rentResultsContainer = document.getElementById('rentResultsContainer');
+    const rentErrorMessage = document.getElementById('rentErrorMessage');
+
+    // Reset error state
+    rentErrorMessage.classList.add('d-none');
+
+    if (currentRent <= 0 || cpiRate < 0) {
+      rentErrorMessage.innerText = "Lütfen geçerli bir mevcut kira tutarı ve artış oranı giriniz.";
+      rentErrorMessage.classList.remove('d-none');
+      rentResultsContainer.classList.add('d-none');
+      return;
+    }
+
+    // Mathematical Calculations
+    const increaseAmount = currentRent * (cpiRate / 100);
+    const newRent = currentRent + increaseAmount;
+
+    // Currency Formatter (TRY)
+    const currencyFormatter = new Intl.NumberFormat('tr-TR', {
+      style: 'currency',
+      currency: 'TRY',
+      maximumFractionDigits: 0
+    });
+
+    // Output formatted results
+    document.getElementById('increaseAmountOutput').innerText = "+ " + currencyFormatter.format(increaseAmount);
+    document.getElementById('newRentOutput').innerText = currencyFormatter.format(newRent);
+
+    // Display results
+    rentResultsContainer.classList.remove('d-none');
+  }
+</script>
+  </div>
+</main>
+  <footer class="container py-5">
+  <ul class="list-inline">
+    <li class="list-inline-item"> <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-dark" target="_blank">
+        <i class="bi bi-linkedin"></i>
+      </a></li>
+    <li class="list-inline-item"> <a href="https://www.instagram.com/melih_kocaturk_" class="text-dark" target="_blank">
+        <i class="bi bi-instagram"></i>
+      </a></li>
+    <li class="list-inline-item"> <a href="https://www.youtube.com/@melihkocaturk" class="text-dark" target="_blank">
+        <i class="bi bi-youtube"></i>
+      </a></li>
+    <li class="list-inline-item"> <a href="https://x.com/melih_kocaturk_" class="text-dark" target="_blank">
+        <i class="bi bi-twitter"></i>
+      </a></li>
+    <li class="list-inline-item"> <a href="/feed.xml" class="text-dark" target="_blank">
+        <i class="bi bi-rss"></i>
+      </a></li>
+  </ul>
+  <p class="small">© 2026 Melih Kocatürk. Tüm hakları saklıdır.</p>
+  <p class="small"><a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a> / <a
+      href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a></p>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
