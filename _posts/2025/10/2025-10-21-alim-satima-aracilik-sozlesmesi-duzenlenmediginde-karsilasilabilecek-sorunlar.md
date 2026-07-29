@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Alım Satıma Aracılık Sözleşmesi Düzenlenmediğinde Karşılaşılabilecek Sorunlar"
 description: "Bu yazıda, yazılı bir aracılık sözleşmesi düzenlenmediğinde karşılaşılabilecek hukuki sorunları detaylı bir şekilde ele alıyoruz."
 ---

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Tasarrufun Gelire Oranı Ne Olmalıdır?"
 description: "Bu yazıda hem finans literatüründeki önerilen oranları hem de kişisel durumlara göre nasıl esneklik sağlanabileceğini detaylıca inceleyeceğiz."
-tags: ["yatırım"]
+tags: []
 ---
 
 Tasarruf, yalnızca kenara para koymak değil; geleceğe güvenle bakabilmenin, ani krizlere karşı hazırlıklı olmanın ve uzun vadede mali özgürlüğe ulaşmanın anahtarıdır. Ancak çoğu kişinin aklındaki soru şudur: **Gelirimizin ne kadarlık kısmını tasarrufa ayırmalıyız?**

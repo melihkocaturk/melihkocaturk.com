@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Tapu Kaybolursa Ne Yapılır?"
 description: "Bu yazıda, tapu kaybolduğunda ne yapılması gerektiğini, hangi belgelerin gerektiğini ve sürecin nasıl işlediğini tüm detaylarıyla ele alıyoruz."
 tags: ["tapu", "webtapu"]

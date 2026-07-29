@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Fiyatları Düşüyor mu Yoksa Manipülasyon mu Var?"
 description: "Bu yazıda veriler, uzman görüşleri ve piyasa dinamikleri üzerinden algı ile gerçek arasındaki farkı net şekilde ortaya koyacağız."
-tags: ["emlak piyasası", "konut piyasası"]
+tags: ["gayrimenkul piyasası", "gayrimenkul piyasası"]
 ---
 
 Son dönemde emlak piyasasında en çok sorulan soru şu: “Ev fiyatları gerçekten düşüyor mu, yoksa bize öyle mi hissettiriliyor?” Sosyal medyada “fiyatlar çöktü” diyenler de var, “daha yeni başlıyoruz” diyenler de… Peki gerçek ne?

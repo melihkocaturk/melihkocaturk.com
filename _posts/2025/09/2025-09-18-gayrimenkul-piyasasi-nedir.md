@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Piyasası Nedir?"
 description: "Gayrimenkul piyasası, taşınmaz malların alım, satım ve kiralama işlemlerinin gerçekleştiği ekonomik alan olarak tanımlanabilir."
 tags: ["gayrimenkul piyasası"]

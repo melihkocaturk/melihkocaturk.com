@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Projelerinde Değer Artış Potansiyeli Nasıl Tespit Edilir?"
 description: "Bu yazıda, bir konut projesinde değer artış potansiyelini tespit edebilmek için dikkat edilmesi gereken temel unsurları ele alıyoruz."
-tags: ["konut projesi", "gayrimenkul yatırımı", "geri dönüş süresi"]
+tags: ["konut projeleri", "konut yatırımı"]
 ---
 
 Gayrimenkul yatırımı, doğru analizlerle yapıldığında uzun vadede ciddi kazanç sağlayabilir. Ancak bir konut projesinin gelecekte değer kazanıp kazanmayacağını önceden öngörmek, dikkatli bir araştırma ve analiz gerektirir. Bu yazıda, bir konut projesinde değer artış potansiyelini tespit edebilmek için dikkat edilmesi gereken temel unsurları ele alıyoruz.

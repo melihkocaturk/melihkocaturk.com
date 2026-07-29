@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Tek Yetki Belgesi Nedir? Gayrimenkul Danışmanları İçin Önemi ve Detaylar"
 description: "Tek yetki belgesi nedir, gayrimenkul satış ve kiralama süreçlerinde ne işe yarar? Bu yazıda tek yetki belgesinin tanımını, avantajlarını, süre ve dikkat edilmesi gereken noktaları anlaşılır şekilde açıklıyoruz."
 ---

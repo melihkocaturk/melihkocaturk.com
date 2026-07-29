@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Ekspertiz Raporu Neden Önemlidir?"
 description: "Ev alırken ekspertiz raporu, taşınmazın gerçek değerini ve hukuki-fiziksel durumunu objektif şekilde ortaya koyarak güvenli bir satın alma süreci sağlar."
-tags: ["ekspertiz raporu"]
+tags: ["değerleme"]
 ---
 
 Bir ev satın almak, çoğu insan için hayatlarının en büyük yatırımlarından biridir. Bu süreçte alınacak kararların doğru verilmesi, gelecekte yaşanabilecek maddi ve hukuki sorunların önüne geçmek açısından büyük önem taşır. İşte tam bu noktada ekspertiz raporu devreye girer. Ekspertiz raporu, satın alınacak taşınmazın gerçek değerini ve fiziksel durumunu ortaya koyan, uzman kişiler tarafından hazırlanan bir belgedir.

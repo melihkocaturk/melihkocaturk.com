@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Türkiye'de Ev Almak mı Zor, Ev Satmak mı?"
 description: "Bu yazıda Türkiye'de ev almanın ve ev satmanın neden zorlaştığını, iki tarafın karşılaştığı sorunları ve hangi şartlarda hangisinin daha avantajlı olduğunu detaylı şekilde inceleyeceğiz."
-tags: ["gayrimenkul piyasası", "ekonomi"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Türkiye'de gayrimenkul piyasası son yıllarda büyük değişimler yaşadı. Bir dönem "ev bulmak zor" denilirken, başka bir dönemde "ev satmak imkânsız hale geldi" yorumları gündeme geldi. Peki bugün gerçekten hangisi daha zor? Ev almak mı, yoksa satmak mı?

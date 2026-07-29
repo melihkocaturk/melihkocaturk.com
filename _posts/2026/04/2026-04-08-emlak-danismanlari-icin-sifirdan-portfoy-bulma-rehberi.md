@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Danışmanları İçin Sıfırdan Portföy Bulma Rehberi"
 description: "Bu yazıda, emlak danışmanlarının sürdürülebilir şekilde portföy bulmasını sağlayacak yöntemleri detaylı olarak ele alıyoruz."
-tags: ["emlak sektörü", "emlak danışmanı"]
+tags: []
 ---
 
 Emlak sektöründe başarılı olmanın en kritik unsuru güçlü bir portföy oluşturmaktır. Portföyünüz yoksa satacak ya da kiralayacak bir ürününüz yok demektir. Ancak iyi haber şu: Doğru stratejilerle sıfırdan başlayarak düzenli portföy akışı oluşturmak mümkündür. Bu yazıda, emlak danışmanlarının sürdürülebilir şekilde portföy bulmasını sağlayacak yöntemleri detaylı olarak ele alıyoruz.

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Kredi Çıkmıyorsa Ev Nasıl Alınır? Alternatif Yöntemler"
 description: "Bu yazıda kredi kullanamayanların ev sahibi olabilmek için değerlendirebileceği yöntemleri tüm avantaj ve riskleriyle detaylı şekilde inceleyeceğiz."
-tags: ["konut kredisi", "emlak yatırımı"]
+tags: ["konut kredisi", ]
 ---
 
 Ev sahibi olmak birçok insanın en büyük hedeflerinden biri. Ancak banka kredilerinin zorlaşması, yüksek faiz oranları, düşük kredi notu ya da gelir yetersizliği nedeniyle birçok kişi konut kredisi kullanamıyor. Peki kredi çıkmıyorsa ev alma hayali tamamen biter mi? Kesinlikle hayır.

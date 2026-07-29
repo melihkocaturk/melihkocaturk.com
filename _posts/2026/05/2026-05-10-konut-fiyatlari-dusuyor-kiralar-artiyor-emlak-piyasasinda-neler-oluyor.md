@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Fiyatları Düşüyor, Kiralar Artıyor: Emlak Piyasasında Neler Oluyor?"
 description: "Konut fiyatları neden düşerken kiralar artıyor? Türkiye emlak piyasasındaki değişen dengeleri, kredi faizlerinin etkisini, kiralık konut krizini ve önümüzdeki döneme dair beklentileri detaylı şekilde inceleyin."
-tags: ["emlak piyasası", "konut piyasası"]
+tags: ["gayrimenkul piyasası", "gayrimenkul piyasası"]
 ---
 
 Son dönemde emlak piyasasında dikkat çeken ilginç bir tablo oluştu. Satılık konut ilanlarında fiyat düşüşleri konuşulurken, kiralık daire fiyatları yükselmeye devam ediyor. İlk bakışta bu durum çelişkili gibi görünüyor. Çünkü klasik ekonomik mantığa göre konut fiyatları geriliyorsa kiraların da baskı altında olması beklenir.

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Yatırımı İçin En Az Sermaye ile Başlama Rehberi"
 description: "Bu rehberde, en az sermaye ile nasıl emlak yatırımı yapılır, hangi stratejiler en düşük maliyetle en iyi getiriyi sağlar ve dikkat edilmesi gereken risklerin neler olduğu ele alınmaktadır."
-tags: ["emlak yatırımı"]
+tags: []
 ---
 
 Gayrimenkul yatırımı çoğu insanın aklında büyük sermaye gerektiren bir alan olarak yer alır. Ancak doğru strateji ile *küçük birikimlerle bile emlak yatırımı yapmaya başlamak* mümkündür. Düşük bütçeli yatırım yöntemleri, doğru finansman modelleri ve yaratıcı çözümler sayesinde, yüksek sermayesi olmayan yatırımcılar da gayrimenkul piyasasında yer edinebiliyor.

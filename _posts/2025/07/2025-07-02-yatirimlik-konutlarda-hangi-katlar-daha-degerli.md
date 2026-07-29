@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Yatırımlık Konutlarda Hangi Katlar Daha Değerli?"
 description: "Lokasyon, bina yaşı, ulaşım imkanları kadar, dairenin bulunduğu kat da yatırımın değerini önemli ölçüde etkileyen bir unsurdur."
 tags: ["konut yatırımı"]

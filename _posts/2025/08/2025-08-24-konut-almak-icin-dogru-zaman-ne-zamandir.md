@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Almak İçin Doğru Zaman, Ne Zamandır?"
 description: "Bu yazıda, konut alımında doğru zamanı belirlemek için göz önünde bulundurulması gereken faktörleri adım adım inceliyoruz."
 ---

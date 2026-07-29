@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Danışmanlığında İşletme Türleri ve Aralarındaki Farklar"
 description: "Gayrimenkul danışmanı olarak kendi markanızı mı kurmalısınız, yoksa bir markayla mı çalışmalısınız? İşletme ve sözleşmeli işletme farklarını inceleyin."
 tags: ["gayrimenkul danışmanı"]

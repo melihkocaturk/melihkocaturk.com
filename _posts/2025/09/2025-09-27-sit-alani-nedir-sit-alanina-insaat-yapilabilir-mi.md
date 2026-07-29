@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Sit Alanı Nedir? Sit Alanına İnşaat Yapılabilir mi?"
 description: "Bu yazıda, sit alanı ilan edilen bölgelerde hangi hakların mevcut olduğunu, bu alanlarda inşaat yapılıp yapılamayacağını detaylıca inceliyoruz."
 ---

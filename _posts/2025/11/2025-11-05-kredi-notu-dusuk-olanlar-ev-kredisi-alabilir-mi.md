@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kredi Notu Düşük Olanlar Ev Kredisi Alabilir mi?"
 description: "Bu yazıda, kredi notunun kredi sürecine etkisini, bankaların değerlendirme kriterlerini ve düşük kredi notuna rağmen konut kredisi almanın yollarını detaylıca inceleyeceğiz."
 tags: ["konut kredisi"]

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk’te Ev Almak Mantıklı mı? Yatırım Getirisi ve Bölge Analizi"
 description: "Bu yazıda Göktürk’ü konum, demografi, konut fiyatları, kira getirisi, yatırım potansiyeli ve riskler başlıkları altında detaylı şekilde inceliyoruz."
-tags: ["göktürk", "yatırım"]
+tags: ["göktürk", "konut yatırımı"]
 ---
 
 İstanbul’da hem yaşam kalitesi yüksek hem de uzun vadede değer kazanmaya devam eden bölgeler sınırlıdır. Bu bölgelerden biri olan Göktürk, son yıllarda hem oturum hem de yatırım amaçlı konut arayışında olanların radarına güçlü şekilde girmiştir.

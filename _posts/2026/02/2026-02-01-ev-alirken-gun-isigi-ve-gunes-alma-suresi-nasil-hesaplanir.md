@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Gün Işığı ve Güneş Alma Süresi Nasıl Hesaplanır?"
 description: "Bu yazıda, bir evin gün ışığı alma potansiyelinin ve güneş görme süresinin nasıl hesaplanabileceğini, hangi faktörlerin etkili olduğunu ve satın alma öncesi nelere dikkat etmen gerektiğini adım adım ele alıyoruz.."
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Balonu Nedir? Ekonomik Etkileri, Nedenleri ve Belirtileri"
 description: "Bu yazıda, konut balonunun ne olduğunu, nasıl oluştuğunu, belirtilerini ve sonuçlarını detaylı şekilde inceleyeceğiz."
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk’te Site Yaşamı: Güvenlik, Sosyal Alanlar ve Avantajlar"
 description: "Göktürk’te site yaşamı neden bu kadar cazip? İşte detaylı bir inceleme."
 tags: ["göktürk"]

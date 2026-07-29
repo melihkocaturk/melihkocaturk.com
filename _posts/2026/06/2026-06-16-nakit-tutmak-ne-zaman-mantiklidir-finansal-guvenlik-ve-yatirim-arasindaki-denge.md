@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Nakit Tutmak Ne Zaman Mantıklıdır? Finansal Güvenlik ve Yatırım Arasındaki Denge"
 description: "Bu yazıda nakit tutmanın ne zaman mantıklı olduğunu, hangi durumlarda avantaj sağladığını ve yatırım ile nakit arasındaki dengeyi nasıl kurabileceğinizi detaylı şekilde inceleyeceğiz."
-tags: ["finansal okuryazarlık", "yatırım"]
+tags: []
 ---
 
 Finansal okuryazarlık denildiğinde sıkça karşılaşılan tavsiyelerden biri, eldeki paranın yatırım araçlarında değerlendirilmesi gerektiğidir. Gerçekten de uzun vadede enflasyonun etkisi nedeniyle nakit para genellikle satın alma gücü kaybeder. Ancak bu durum, her zaman ve her koşulda tüm birikimlerin yatırıma yönlendirilmesi gerektiği anlamına gelmez.

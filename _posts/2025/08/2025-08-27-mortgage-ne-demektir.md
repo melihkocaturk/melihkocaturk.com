@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Mortgage Ne Demektir?"
 description: "Mortgage tam olarak ne demektir, nasıl işler ve kimler için avantajlıdır?"
-tags: ["konut finansmanı"]
+tags: ["konut kredisi"]
 ---
 
 Günümüzde ev sahibi olmanın en yaygın yollarından biri, uzun vadeli konut kredisi olarak da bilinen *mortgage* sistemidir. Özellikle yüksek konut fiyatları karşısında nakit ödeme yapmak çoğu kişi için zorlayıcı olduğundan, mortgage hem bireyler hem de bankalar için önemli bir finansal araç haline gelmiştir. Peki mortgage tam olarak ne demektir, nasıl işler ve kimler için avantajlıdır?

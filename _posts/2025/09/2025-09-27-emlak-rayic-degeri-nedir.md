@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Rayiç Değeri Nedir?"
 description: "Emlak rayiç değeri nedir, nasıl hesaplanır ve gayrimenkul piyasasında neden önemlidir? Rayiç değerin belirlenmesi, etkileyen faktörler ve pratik örneklerle net şekilde açıklanıyor."
-tags: ["rayiç değer"]
+tags: ["değerleme"]
 ---
 
 Gayrimenkul alım satımında en çok karşılaşılan terimlerden biri “emlak rayiç değeri”dir. Ev, arsa ya da iş yeri satın almak isteyenler veya taşınmazını satmayı planlayanlar için bu kavramı doğru anlamak oldukça önemlidir. Çünkü rayiç değer; tapu işlemlerinden vergi hesaplamalarına kadar birçok resmi süreçte belirleyici rol oynar.

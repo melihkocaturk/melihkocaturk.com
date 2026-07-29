@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Faizsiz Konut Edinmek Mümkün mü?"
 description: "Faizsiz konut edinmek gerçekten mümkün mü? Eğer mümkünse hangi yöntemlerle ev sahibi olunabilir?"
-tags: ["konut finansmanı"]
+tags: ["konut kredisi"]
 ---
 
 Konut sahibi olmak, çoğu insanın hayatındaki en büyük hedeflerden biridir. Ancak yüksek ev fiyatları ve bankaların uyguladığı faizli kredi sistemleri, birçok kişinin bu hayalini ertelemesine neden oluyor. Özellikle faiz hassasiyeti olan kişiler için “faizsiz konut edinmek” büyük bir ihtiyaç haline gelmiş durumda. Peki, faizsiz konut edinmek gerçekten mümkün mü? Eğer mümkünse hangi yöntemlerle ev sahibi olunabilir? İşte detaylı bir bakış:

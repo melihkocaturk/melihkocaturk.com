@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Evin Satılabilirliği Nasıl Anlaşılır? Likiditesi Yüksek Konut Özellikleri"
 description: "Bu yazıda, bir evin satılabilir olup olmadığını nasıl anlayabileceğini ve likiditesi yüksek konutların ortak özelliklerini tüm detaylarıyla ele alıyoruz."
-tags: ["gayrimenkul yatırımı"]
+tags: []
 ---
 
 Bir evin “iyi” olması ile “hızlı satılabilir” olması her zaman aynı şey değildir. Gayrimenkulde asıl kritik konu, **likidite** yani bir mülkün **makul bir sürede ve piyasa değerine yakın bir fiyattan alıcı bulabilme kabiliyeti**dir.

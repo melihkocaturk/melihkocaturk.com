@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Tek Yetki Sözleşmesi Nedir?"
 description: "Tek yetki sözleşmesi nedir, gayrimenkul satış ve kiralama sürecinde neden önemlidir? Bu yazı, emlak danışmanı ile mülk sahibi arasındaki tek yetkili sözleşmenin amacını, avantajlarını, sürelerini ve taraflara sağladığı faydaları basit ve net şekilde açıklıyor."
 ---

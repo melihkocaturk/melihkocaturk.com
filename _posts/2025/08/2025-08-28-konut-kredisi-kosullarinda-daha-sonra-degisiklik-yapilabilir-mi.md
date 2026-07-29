@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Kredisi Koşullarında Daha Sonra Değişiklik Yapılabilir mi?"
 description: "Ekonomik gelişmeler, faiz oranlarındaki dalgalanmalar veya kişisel gelir durumundaki değişiklikler, kredi şartlarının gözden geçirilmesini gerektirebilir."
 tags: ["konut kredisi"]

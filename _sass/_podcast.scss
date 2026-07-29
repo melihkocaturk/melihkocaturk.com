@@ -1,0 +1,42 @@
+:root {
+  --spotify-green: #1DB954;
+  --spotify-green-hover: #1aa34a;
+}
+
+main {
+  flex: 1;
+}
+
+/* Spotify Özel Butonu */
+.btn-spotify {
+  background-color: var(--spotify-green);
+  color: #ffffff;
+  border: none;
+  transition: all 0.2s ease;
+}
+
+.btn-spotify:hover {
+  background-color: var(--spotify-green-hover);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(29, 185, 84, 0.25);
+}
+
+/* Podcast Kartı */
+.podcast-card {
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 20px;
+}
+
+.podcast-icon-bg {
+  width: 80px;
+  height: 80px;
+  background-color: #ffffff;
+  color: var(--kw-red);
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}

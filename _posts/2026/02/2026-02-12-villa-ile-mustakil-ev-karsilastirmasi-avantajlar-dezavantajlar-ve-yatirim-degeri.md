@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Villa mı Müstakil Ev mi? Tüm Yönleriyle Karşılaştırma Rehberi"
 description: "Bu yazıda villa ve müstakil ev arasındaki farkları detaylı biçimde inceleyerek karar sürecinizi kolaylaştıracak kapsamlı bir rehber sunuyoruz."
 tags: ["lüks konut"]

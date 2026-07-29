@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Finansmanı Kuruluşları Hangileridir?"
 description: "Konut finansmanı kuruluşları, tüketicilere uzun vadeli ödeme imkânı sağlayarak konut edinmelerini kolaylaştırır."
-tags: ["konut finansmanı"]
+tags: ["konut kredisi"]
 ---
 
 Ev sahibi olmak, çoğu insan için hayatın en önemli hedeflerinden biridir. Ancak yüksek konut fiyatları nedeniyle birçok kişi, nakit birikimiyle ev almak yerine konut finansmanı desteğine ihtiyaç duyar. İşte tam da bu noktada *konut finansmanı kuruluşları* devreye girer. Bu kuruluşlar, tüketicilere uzun vadeli ödeme imkânı sağlayarak konut edinmelerini kolaylaştırır. Peki, konut finansmanı kuruluşları hangileridir ve nasıl çalışırlar?

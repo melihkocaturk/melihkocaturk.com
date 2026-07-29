@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Arsa ve Arazi Almak Ne Zaman Avantajlıdır?"
 description: "Arsa almak için en uygun zamanı mı merak ediyorsunuz? Faiz oranları, ekonomik dönemler ve imar planlarıyla yatırımınızı en karlı hale getirin."
 tags: ["arsa yatırımı", "arazi yatırımı"]

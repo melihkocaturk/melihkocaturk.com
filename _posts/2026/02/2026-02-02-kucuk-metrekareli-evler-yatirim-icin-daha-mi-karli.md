@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Küçük Metrekareli Evler Yatırım İçin Daha mı Karlı?"
 description: "Küçük metrekareli evler yatırım için daha mı karlı? Kira getirisi, değer artışı, avantajlar ve riskleriyle küçük daire yatırımını detaylı şekilde inceleyin."
-tags: ["gayrimenkul yatırımı"]
+tags: []
 ---
 
 Gayrimenkule yatırım yaparken konutun metrekaresi, konumu, kira getirisi, talep durumu ve değer artışı potansiyeli birlikte değerlendirilir. Son yıllarda özellikle büyük şehirlerde küçük metrekareli dairelere olan ilginin arttığı görülmektedir. Peki küçük metrekareli evler yatırım açısından gerçekten daha mı karlıdır? Bu yazıda konuyu tüm yönleriyle ele alıyoruz.

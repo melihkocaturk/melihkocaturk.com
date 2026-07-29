@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Alım Satıma Aracılık Sözleşmesi Nedir?"
 description: "Gayrimenkul alım satımında aracılık sözleşmesi nedir, neden yapılmalıdır ve hangi unsurları içermelidir? Emlak işlemlerinde tarafları koruyan bu sözleşmenin önemi ve hukuki dayanaklarını öğrenin."
 ---

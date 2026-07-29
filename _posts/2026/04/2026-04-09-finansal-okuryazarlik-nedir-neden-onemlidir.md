@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Finansal Okuryazarlık Nedir? Neden Önemlidir?"
 description: "Bugün birçok insan yeterince para kazanamadığı için değil, kazandığı parayı doğru yönetemediği için finansal zorluklar yaşar. İşte tam bu noktada finansal okuryazarlık devreye girer."
-tags: ["finansal okuryazarlık"]
+tags: []
 ---
 
 Finansal okuryazarlık, en basit tanımıyla parayı yönetme becerisidir. Ancak bu tanım, konunun derinliğini anlatmak için oldukça yetersiz kalır. Çünkü finansal okuryazarlık; gelir elde etmekten harcamaya, birikim yapmaktan yatırım kararları almaya kadar hayatın neredeyse her alanını doğrudan etkileyen kritik bir yetkinliktir.

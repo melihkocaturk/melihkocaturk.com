@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "guides.css",
+	"sources": [
+		"guides.scss",
+		"_sass/_guides.scss"
+	],
+	"sourcesContent": [
+		"@import \"guides\";",
+		"/* Page Header */\n.page-header {\n  background-color: var(--kw-light-bg);\n  padding: 3.5rem 0;\n  border-bottom: 1px solid #e9ecef;\n}\n\n/* Rehber / PDF Kartı Stilleri */\n.guide-card {\n  transition: transform 0.2s ease, box-shadow 0.2s ease;\n  border: 1px solid #e9ecef;\n  background-color: #ffffff;\n}\n\n.guide-card:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;\n}\n\n/* PDF Kapak Mockup Alanı */\n.pdf-cover-placeholder {\n  height: 200px;\n  background: linear-gradient(135deg, #212529 0%, #343a40 100%);\n  border-top-left-radius: calc(0.5rem - 1px);\n  border-top-right-radius: calc(0.5rem - 1px);\n  display: flex;\n  flex-column: column;\n  align-items: center;\n  justify-content: center;\n  position: relative;\n}\n\n/* Minimalist WhatsApp Button */\n.whatsapp-btn {\n  background-color: #25D366;\n  color: white;\n  font-weight: 600;\n  border: none;\n  transition: background-color 0.2s ease;\n}\n\n.whatsapp-btn:hover {\n  background-color: #1DA851;\n  color: white;\n}"
+	],
+	"names": [],
+	"mappings": ";ACAA,iBAAiB;AACjB,AAAA,YAAY,CAAC,EACX,gBAAgB,EAAE,kBAAkB,EACpC,OAAO,EAAE,QAAQ,EACjB,aAAa,EAAE,iBAAiB,GACjC;;AAED,iCAAiC;AACjC,AAAA,WAAW,CAAC,EACV,UAAU,EAAE,yCAAyC,EACrD,MAAM,EAAE,iBAAiB,EACzB,gBAAgB,EAAE,OAAO,GAC1B;;AAED,AAAA,WAAW,CAAC,KAAK,CAAC,EAChB,SAAS,EAAE,gBAAgB,EAC3B,UAAU,EAAE,CAAC,CAAC,OAAO,CAAC,MAAM,CAAC,mBAAmB,CAAC,UAAU,GAC5D;;AAED,4BAA4B;AAC5B,AAAA,sBAAsB,CAAC,EACrB,MAAM,EAAE,KAAK,EACb,UAAU,EAAE,iDAAiD,EAC7D,sBAAsB,EAAE,kBAAkB,EAC1C,uBAAuB,EAAE,kBAAkB,EAC3C,OAAO,EAAE,IAAI,EACb,WAAW,EAAE,MAAM,EACnB,WAAW,EAAE,MAAM,EACnB,eAAe,EAAE,MAAM,EACvB,QAAQ,EAAE,QAAQ,GACnB;;AAED,gCAAgC;AAChC,AAAA,aAAa,CAAC,EACZ,gBAAgB,EAAE,OAAO,EACzB,KAAK,EAAE,KAAK,EACZ,WAAW,EAAE,GAAG,EAChB,MAAM,EAAE,IAAI,EACZ,UAAU,EAAE,0BAA0B,GACvC;;AAED,AAAA,aAAa,CAAC,KAAK,CAAC,EAClB,gBAAgB,EAAE,OAAO,EACzB,KAAK,EAAE,KAAK,GACb"
+}

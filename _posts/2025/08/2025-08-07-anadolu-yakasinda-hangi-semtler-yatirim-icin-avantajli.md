@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Anadolu Yakası’nda Hangi Semtler Yatırım İçin Avantajlı?"
 description: "Eğer siz de Anadolu Yakası’nda yatırım yapılacak semtler arıyorsanız, bu rehberde hem potansiyel kazanç fırsatlarını hem de dikkat etmeniz gereken noktaları bulabilirsiniz."
 ---

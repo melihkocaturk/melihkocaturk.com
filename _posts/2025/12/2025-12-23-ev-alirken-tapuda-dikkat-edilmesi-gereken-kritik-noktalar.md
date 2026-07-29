@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Tapuda Dikkat Edilmesi Gereken Kritik Noktalar"
 description: "Ev alırken tapuda dikkat edilmesi gereken kritik noktaları öğrenin. Tapu türü, ipotek, haciz, rayiç bedel ve tapu harcı gibi tüm detayları bu rehberde keşfedin."
 tags: ["tapu"]

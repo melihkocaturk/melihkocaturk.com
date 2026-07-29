@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Profesyonel Emlak Danışmanı Nasıl Seçilir?"
 description: "Profesyonel emlak danışmanı seçimi için bilmeniz gereken tüm kriterler. Doğru emlak danışmanını seçmenin püf noktaları."
-tags: ["emlak danışmanı"]
+tags: ["gayrimenkul danışmanı"]
 ---
 
 Emlak alım satım süreci; yüksek bütçelerin, kritik kararların ve uzun vadeli etkilerin olduğu bir yolculuktur. Bu nedenle çalışacağınız emlak danışmanının profesyonel, güvenilir ve yetkin olması büyük önem taşır. Doğru danışman, sürecinizi hızlandırır, riskleri azaltır ve en doğru kararı vermenize yardımcı olur. Peki profesyonel bir emlak danışmanı nasıl seçilir? İşte tüm detaylarıyla kapsamlı bir rehber.

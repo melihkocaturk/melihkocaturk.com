@@ -1,0 +1,72 @@
+---
+layout: page
+title: Site İçinde Ara
+permalink: /ara
+custom_css: search
+---
+
+<!-- Arama Başlığı ve Arama Formu -->
+<section class="search-header">
+  <div class="container text-center">
+    <h1 class="h3 fw-bold text-dark mb-3">Site İçinde Arayın</h1>
+
+    <!-- Arama Formu -->
+    <form action="https://www.google.com/search" method="GET" class="search-input-group" target="_blank">
+      <input type="hidden" name="q" value="site:{{ site.url }}">
+      <div class="input-group input-group-lg shadow-sm">
+        <input type="text" name="q" class="form-control fs-6"
+          placeholder="Örn: Konut kredisi, Gayrimenkul yatırımı, Tapu harcı..." aria-label="Arama">
+        <button class="btn btn-kw-red fw-bold fs-6" type="submit">
+          <i class="bi bi-search me-1"></i> Ara
+        </button>
+      </div>
+    </form>
+
+  </div>
+</section>
+
+<!-- KULLANICI DOSTU BOŞ DURUM (EMPTY STATE) -->
+<section class="py-5">
+  <div class="container py-4 max-w-900">
+
+    <!-- Henüz arama yapılmadığında bu alan görünür -->
+    <div class="text-center py-4">
+      <div class="mb-3">
+        <i class="bi bi-search text-secondary opacity-25" style="font-size: 3.5rem;"></i>
+      </div>
+      <h5 class="fw-bold text-dark mb-2">Arama Yapmak İçin Yukarıdaki Kutuyu Kullanabilirsiniz</h5>
+      <p class="text-secondary small mb-0" style="max-width: 480px; margin: 0 auto;">
+        Gayrimenkul piyasası, konut kredileri veya bölge analizleri hakkında merak ettiğiniz anahtar kelimeleri yazıp
+        aratabilirsiniz.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+<!-- Minimalist WhatsApp CTA -->
+<section class="py-5 bg-light" id="iletisim-cta">
+  <div class="container py-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="p-4 p-md-5 bg-white rounded-4 border-start border-5 border-danger shadow-sm">
+          <div class="row align-items-center g-4">
+            <div class="col-lg-8">
+              <h3 class="fw-bold text-dark mb-2">Aradığınız Konuyu Bulamadınız mı?</h3>
+              <p class="text-secondary mb-0">
+                Merak ettiğiniz gayrimenkul konuları veya özel bölge analizleri ile ilgili sorularınızı doğrudan
+                WhatsApp üzerinden sorabilirsiniz.
+              </p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+              <a href="https://wa.me/{{ site.contact.gsm | remove: " " }}?text=Merhaba%20Melih%20Bey,%20arama%20sayfanızdan%20ulaşıyorum.%20Bir%20konuda%20size%20danışmak%20istiyorum."
+                target="_blank" class="btn whatsapp-btn btn-lg px-4 rounded-pill shadow-sm">
+                <i class="bi bi-whatsapp me-2"></i>Doğrudan Sohbet Başlat
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

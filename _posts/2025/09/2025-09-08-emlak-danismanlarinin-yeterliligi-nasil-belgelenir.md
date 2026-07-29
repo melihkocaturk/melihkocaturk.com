@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Danışmanlarının Yeterliliği Nasıl Belgelenir?"
 description: "Emlak danışmanlarının yeterliliği nasıl belgelenir? Mesleki Yeterlilik Kurumu (MYK) tarafından verilen Seviye 4 ve Seviye 5 belgeleri, belge alma süreci ve yasal gerekliliklerle birlikte basit ve anlaşılır şekilde açıklanıyor."
-tags: ["emlak danışmanı"]
+tags: ["gayrimenkul danışmanı"]
 ---
 
 Emlak sektörü, doğrudan insanların yaşam alanlarına ve yatırım tercihlerine dokunan kritik bir alandır. Bir emlak danışmanı; yalnızca bir evi alıp satmaz, aynı zamanda müşterisine güven, bilgi ve yol göstericilik sunar. Bu nedenle danışmanların yetkinliğinin resmi şekilde belgelenmesi hem *yasal zorunluluk* hem de müşteri güveni açısından büyük önem taşır. Peki, emlak danışmanlarının yeterliliği nasıl belgelenir?

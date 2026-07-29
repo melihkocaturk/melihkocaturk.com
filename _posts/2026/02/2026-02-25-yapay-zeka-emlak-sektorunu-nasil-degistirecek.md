@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Yapay Zekâ Emlak Sektörünü Nasıl Değiştirecek?"
 description: "Bu yazıda, yapay zekânın emlak sektörünü nasıl, hangi alanlarda ve ne ölçüde değiştireceğini detaylı şekilde ele alıyoruz."
-tags: ["yapay zeka", "emlak sektörü"]
+tags: ["yapay zeka", "gayrimenkul piyasası"]
 ---
 
 Emlak sektörü, uzun yıllar boyunca yüz yüze iletişim, manuel değerleme ve geleneksel pazarlama yöntemleriyle ilerledi. Ancak son yıllarda yapay zekâ (AI) teknolojilerinin hızla gelişmesiyle birlikte bu tablo köklü bir dönüşüm sürecine girdi. Yapay zekâ; konut alım-satımından kiralamaya, fiyat analizinden müşteri deneyimine kadar emlak sektörünün hemen her alanını yeniden şekillendiriyor.

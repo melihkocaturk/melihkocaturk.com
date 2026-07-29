@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Tapu Harcı ve Masraflar Arttı mı? 2026 Güncel Hesaplama"
 description: "Bu yazıda 2026 yılı için tapu harcı oranları, tapu masrafları, güncel hesaplama örnekleri ve dikkat edilmesi gereken noktaları detaylı şekilde ele alıyoruz."
 tags: ["tapu"]

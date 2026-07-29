@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Lüks Konut Tipleri Nelerdir? Özellikleri ve Farklarıyla Detaylı Rehber"
 description: "Bu yazıda, lüks konut tipleri nelerdir, hangi özelliklere sahiptir ve kimler için uygundur sorularını detaylı şekilde ele alıyoruz."
 tags: ["lüks konut"]

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Danışmanından Ne Beklenir?"
 description: "Gerçek bir gayrimenkul danışmanının sunduğu değer çok daha fazlasıdır. Peki, bir gayrimenkul danışmanından neler beklenmelidir?"
 tags: ["gayrimenkul danışmanı"]

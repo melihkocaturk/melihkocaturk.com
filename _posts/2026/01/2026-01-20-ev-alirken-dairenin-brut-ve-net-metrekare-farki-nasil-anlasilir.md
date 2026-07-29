@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Dairenin Brüt ve Net Metrekare Farkı Nasıl Anlaşılır?"
 description: "Bu yazıda, brüt ve net metrekare kavramlarını net bir şekilde açıklıyor, aralarındaki farkı nasıl anlayabileceğini ve ev alırken nelere dikkat etmen gerektiğini detaylıca ele alıyoruz."
 ---

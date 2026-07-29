@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Satılık Ev İlanı Nasıl Hazırlanır? Daha Hızlı Satış Getiren İlan Taktikleri"
 description: "Satılık ev ilanı nasıl hazırlanır? Daha hızlı satış getiren başlık, açıklama, fotoğraf ve fiyatlandırma taktiklerini adım adım öğrenin."
 ---

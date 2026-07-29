@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Tapuda En Çok Yapılan Hatalar ve Büyük Maddi Kayıplar"
 description: "Bu yazıda tapuda en sık yapılan hataları, bu hataların doğurabileceği maddi sonuçları ve güvenli işlem için dikkat edilmesi gerekenleri detaylı şekilde ele alıyoruz."
 tags: ["tapu"]

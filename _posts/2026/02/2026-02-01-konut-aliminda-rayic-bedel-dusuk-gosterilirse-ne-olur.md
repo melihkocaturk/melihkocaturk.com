@@ -1,9 +1,10 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Alımında Rayiç Bedel Düşük Gösterilirse Ne Olur?"
 description: "Bu yazıda, rayiç bedelin ne olduğu, neden düşük gösterildiği ve bunun alıcı ve satıcı açısından sonuçları detaylı şekilde ele alınmaktadır.
 "
-tags: ["rayiç değer"]
+tags: ["konut yatırımı"]
 ---
 
 Konut alım-satım sürecinde en sık karşılaşılan uygulamalardan biri, **rayiç bedelin (satış bedelinin) tapuda düşük gösterilmesi**dir. Alıcı ve satıcı çoğu zaman daha az vergi ve harç ödemek amacıyla bu yönteme başvurur. Ancak kısa vadede avantaj gibi görünen bu durum, orta ve uzun vadede **ciddi hukuki ve mali riskler** doğurabilir.

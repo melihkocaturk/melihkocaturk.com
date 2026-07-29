@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Döviz ile Fiyatlanan Konutların Değerlemesinde Hangi Para Birimi Kullanılır?"
 description: "Bu yazıda, dövizle fiyatlanan konutlarda değerleme sürecini, kullanılan para birimlerini ve bu durumun hukuki, finansal ve pratik yönlerini detaylıca ele alacağız."
-tags: ["değerleme", "gayrimenkul değerleme", "döviz kuru"]
+tags: ["değerleme"]
 ---
 
 Gayrimenkul piyasasında özellikle yabancı yatırımcıların ilgisinin artmasıyla birlikte *döviz ile fiyatlanan konutlar* son yıllarda daha sık karşımıza çıkıyor. Bir konutun satış bedelinin dolar, euro veya başka bir yabancı para birimiyle belirlenmesi, alıcı ve satıcı açısından farklı avantajlar ve riskler doğurabiliyor. Ancak bu noktada önemli bir soru gündeme geliyor: Döviz üzerinden fiyatlanan bir konutun değerlemesi hangi para birimi üzerinden yapılır?

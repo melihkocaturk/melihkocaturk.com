@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Arsa ve Arazi Yatırımlarında Nelere Dikkat Edilmelidir?"
 description: "Bu yazıda, arsa ve arazi yatırımı yapmadan önce dikkat edilmesi gereken temel noktaları adım adım ele alıyoruz."
 tags: ["arsa yatırımı", "arazi yatırımı"]

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Satın Alınan Evde Sonradan Çıkan Ayıplar: Alıcının Yasal Hakları Nelerdir?"
 description: "Satın alınan evde sonradan çıkabilecek ayıplar nelerdir? Alıcının yasal hakları, dava ve tazminat seçenekleri bu rehberde detaylı anlatılıyor."
 ---

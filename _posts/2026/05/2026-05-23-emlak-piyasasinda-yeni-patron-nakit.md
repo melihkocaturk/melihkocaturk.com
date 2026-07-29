@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Piyasasında Yeni Patron: Nakit"
 description: "Konut piyasasında yeni dönem başladı. Nakit alıcıların yükselişi, emlak fiyatlarını, yatırım stratejilerini ve emlak danışmanlığını nasıl değiştiriyor? Bu yazıda yeni güç dengesini detaylı analiz ediyoruz."
-tags: ["emlak piyasası", "konut piyasası", "emlak yatırımı"]
+tags: ["gayrimenkul piyasası", "gayrimenkul piyasası", ]
 ---
 
 Bir dönem konut piyasasının ana oyuncusu mortgage kredileri ve banka finansmanıydı. Faiz oranları düştüğünde piyasa hareketleniyor, krediler sıkılaştığında işlemler yavaşlıyordu. Ancak son birkaç yılda tablo dramatik şekilde değişmeye başladı. Artık birçok bölgede piyasayı yönlendiren taraf bankadan kredi çıkan alıcılar değil, cebinde nakit taşıyan yatırımcılar.

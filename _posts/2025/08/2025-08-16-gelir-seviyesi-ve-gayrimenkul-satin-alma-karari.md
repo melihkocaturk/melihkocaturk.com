@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gelir Seviyesi ve Gayrimenkul Satın Alma Kararı"
 description: "Bu yazıda, gelir düzeyinin gayrimenkul satın alma sürecine nasıl yön verdiğini, hangi gelir seviyelerinde nasıl kararlar alındığını ve geleceğe yönelik stratejilerin nasıl şekillendiğini detaylı olarak inceleyeceğiz."
-tags: ["yatırım"]
+tags: []
 ---
 
 Gayrimenkul satın almak, insanların yaşamında verdiği en büyük finansal kararlardan biridir. Bu karar; yaşam tarzını, geleceğe dair planları ve ekonomik güvenliği doğrudan etkiler. Ancak satın alma sürecinin en önemli belirleyicisi gelir seviyesidir. Gelir ile gayrimenkul satın alma kararı arasındaki ilişki, yalnızca “paran var mı yok mu?” sorusuyla sınırlı değildir. İşin içinde ekonomik imkânlar, psikolojik beklentiler, yatırım stratejileri ve sosyal faktörler de vardır.

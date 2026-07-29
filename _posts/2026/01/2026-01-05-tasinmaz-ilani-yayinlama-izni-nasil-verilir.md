@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Taşınmaz İlanı Yayınlama İzni Nasıl Verilir? (Videolu Anlatım)"
 description: "Taşınmaz ilanı yayınlama izni nedir, nasıl verilir? Mülk sahipleri ve emlak danışmanları için ilan yayınlama izni sürecini adım adım öğrenin."
 tags: ["eids"]

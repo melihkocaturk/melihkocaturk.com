@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Maaş Döngüsünden Kurtulmak Mümkün mü?"
 description: "Robert Kiyosaki’nin 'Zengin Baba Yoksul Baba' kitabından ilhamla maaş döngüsünden nasıl çıkılabileceğini, finansal özgürlük, varlık-yükümlülük farkı ve pasif gelir kavramları üzerinden açıklayan detaylı bir özet."
-tags: ["finansal okuryazarlık", "finansal özgürlük"]
+tags: []
 ---
 
 Robert Kiyosaki’nin “Zengin Baba Yoksul Baba” kitabı, kişisel finans alanında dünyada en çok konuşulan kitaplardan biri haline geldi. Kitap yalnızca para kazanmayı değil, paraya bakış açısını değiştirmeyi hedefliyor. Birçok insanın okul, kariyer ve maaş düzeni içerisinde neden finansal özgürlüğe ulaşamadığını sorgulayan Kiyosaki, okuyucuya alışılmış düşünce sisteminin dışına çıkmayı öneriyor.

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Uzun Dönemli Kiralamalarda Nelere Dikkat Edilmelidir?"
 description: "Bu yazıda, uzun dönemli kiralamalarda nelere dikkat edilmesi gerektiğini detaylı şekilde ele alıyoruz."
 tags: ["kira"]

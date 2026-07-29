@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Kaçırma Korkusu Neden Bu Kadar Güçlü? FOMO'nun Psikolojisi ve Hayatımıza Etkileri"
 description: "Bu yazıda FOMO'nun ne olduğunu, neden ortaya çıktığını, hayatımızı nasıl etkilediğini ve bu duyguyu yönetmenin yollarını detaylı şekilde inceleyeceğiz."
-tags: ["yatırım", "finansal okuryazarlık"]
+tags: []
 ---
 
 Her gün telefonumuza onlarca bildirim geliyor. Sosyal medyada arkadaşlarımızın tatilleri, yeni aldıkları evler, yatırım başarıları, kariyer gelişmeleri ve mutlu anları peş peşe karşımıza çıkıyor. Aynı anda haber siteleri "Son Fırsat", "Bu Treni Kaçırmayın", "Fiyatlar Bir Daha Bu Seviyeye Gelmeyecek" gibi başlıklarla dikkatimizi çekmeye çalışıyor.

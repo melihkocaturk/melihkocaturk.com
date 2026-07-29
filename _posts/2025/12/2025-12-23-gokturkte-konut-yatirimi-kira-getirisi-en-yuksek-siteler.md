@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk’te Konut Yatırımı: Kira Getirisi En Yüksek Siteler"
 description: "Göktürk’te konut yatırımı yapmayı mı düşünüyorsunuz? Kira getirisi en yüksek siteler, daire tipleri ve yatırımcılar için detaylı analiz bu rehberde."
 tags: ["göktürk", "kira", "konut yatırımı"]

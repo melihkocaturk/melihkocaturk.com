@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "podcast.css",
+	"sources": [
+		"podcast.scss",
+		"_sass/_podcast.scss"
+	],
+	"sourcesContent": [
+		"@import \"podcast\";",
+		":root {\n  --spotify-green: #1DB954;\n  --spotify-green-hover: #1aa34a;\n}\n\nmain {\n  flex: 1;\n}\n\n/* Spotify Özel Butonu */\n.btn-spotify {\n  background-color: var(--spotify-green);\n  color: #ffffff;\n  border: none;\n  transition: all 0.2s ease;\n}\n\n.btn-spotify:hover {\n  background-color: var(--spotify-green-hover);\n  color: #ffffff;\n  transform: translateY(-2px);\n  box-shadow: 0 6px 15px rgba(29, 185, 84, 0.25);\n}\n\n/* Podcast Kartı */\n.podcast-card {\n  background-color: #f8f9fa;\n  border: 1px solid #e9ecef;\n  border-radius: 20px;\n}\n\n.podcast-icon-bg {\n  width: 80px;\n  height: 80px;\n  background-color: #ffffff;\n  color: var(--kw-red);\n  border-radius: 50%;\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);\n}"
+	],
+	"names": [],
+	"mappings": ";CCAC,AAAD,IAAK,CAAC,EACJ,eAAe,CAAA,QAAC,EAChB,qBAAqB,CAAA,QAAC,GACvB;;AAED,AAAA,IAAI,CAAC,EACH,IAAI,EAAE,CAAC,GACR;;AAED,yBAAyB;AACzB,AAAA,YAAY,CAAC,EACX,gBAAgB,EAAE,oBAAoB,EACtC,KAAK,EAAE,OAAO,EACd,MAAM,EAAE,IAAI,EACZ,UAAU,EAAE,aAAa,GAC1B;;AAED,AAAA,YAAY,CAAC,KAAK,CAAC,EACjB,gBAAgB,EAAE,0BAA0B,EAC5C,KAAK,EAAE,OAAO,EACd,SAAS,EAAE,gBAAgB,EAC3B,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,IAAI,CAAC,uBAAuB,GAC/C;;AAED,mBAAmB;AACnB,AAAA,aAAa,CAAC,EACZ,gBAAgB,EAAE,OAAO,EACzB,MAAM,EAAE,iBAAiB,EACzB,aAAa,EAAE,IAAI,GACpB;;AAED,AAAA,gBAAgB,CAAC,EACf,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,IAAI,EACZ,gBAAgB,EAAE,OAAO,EACzB,KAAK,EAAE,aAAa,EACpB,aAAa,EAAE,GAAG,EAClB,OAAO,EAAE,WAAW,EACpB,WAAW,EAAE,MAAM,EACnB,eAAe,EAAE,MAAM,EACvB,UAAU,EAAE,CAAC,CAAC,GAAG,CAAC,IAAI,CAAC,mBAAmB,GAC3C"
+}

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kira Gelir Vergisi Nasıl Hesaplanır?"
 description: "Kira gelir vergisi nasıl hesaplanır? Yıllık kira gelirinden istisna ve giderlerin düşülmesi, vergi matrahının belirlenmesi ve artan oranlı vergi tarifesi ile ödenecek verginin adım adım nasıl hesaplandığını basitçe açıklıyoruz."
 tags: ["kira"]

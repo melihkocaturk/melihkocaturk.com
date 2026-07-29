@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Projesi Seçerken Dikkat Edilmesi Gereken Mimari Detaylar"
 description: "Yeni bir konut projesi satın alırken fiyat, lokasyon ve sosyal olanaklar kadar mimari detaylar da hayati önem taşır."
-tags: ["konut projesi"]
+tags: ["konut projeleri"]
 ---
 
 Yeni bir konut projesi satın alırken fiyat, lokasyon ve sosyal olanaklar kadar mimari detaylar da hayati önem taşır. Göz ardı edilen mimari unsurlar, yaşam kalitesini doğrudan etkileyebilir. Estetik görünümün ötesine geçen bu detaylar, aynı zamanda evin değerini ve kullanım konforunu da belirler.

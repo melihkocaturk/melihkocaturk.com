@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "En İyi ve En Verimli Kullanım Ne Anlama Gelir?"
 description: "En iyi ve en verimli kullanım nedir? Gayrimenkul değerlemede bir taşınmazın fiziksel, yasal ve ekonomik açıdan en yüksek değeri sağlayacak kullanım şeklinin nasıl belirlendiğini detaylı ve anlaşılır biçimde açıklıyoruz."
-tags: ["gayrimenkul değerleme"]
+tags: ["değerleme"]
 ---
 
 Gayrimenkul değerleme süreçlerinde sıkça karşılaşılan kavramlardan biri “En İyi ve En Verimli Kullanım” (EİEVK) ilkesidir. Bir taşınmazın gerçek değerinin belirlenebilmesi için, yalnızca mevcut durumuna bakmak yeterli değildir. O taşınmazın gelecekte nasıl kullanılabileceği, hangi koşullarda en yüksek ekonomik faydayı sağlayacağı da dikkate alınmalıdır. İşte bu noktada EİEVK ilkesi devreye girer.

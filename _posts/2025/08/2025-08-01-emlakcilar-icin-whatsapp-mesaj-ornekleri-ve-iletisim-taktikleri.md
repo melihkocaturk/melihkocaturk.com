@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Emlakçılar İçin WhatsApp Mesaj Örnekleri ve İletişim Taktikleri"
 description: "Bu yazımızda, emlakçı WhatsApp mesaj örnekleri üzerinden hem profesyonel iletişim dilini nasıl kuracağınızı hem de satış sürecinde nasıl ilerleyeceğinizi adım adım anlatıyoruz."
 ---

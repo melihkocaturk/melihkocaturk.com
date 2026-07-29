@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Neden Sözleşmeler Bu Kadar Önemlidir?"
 description: "Gayrimenkul sektöründe sözleşmeler neden bu kadar önemlidir? Hak, yükümlülük ve hukuki güvence açısından sözleşmelerin rolünü keşfedin."
 ---

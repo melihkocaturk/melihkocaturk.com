@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "home.css",
+	"sources": [
+		"home.scss",
+		"_sass/_home.scss"
+	],
+	"sourcesContent": [
+		"@import \"home\";",
+		"/* Hero */\n.hero-section {\n  background-color: var(--kw-light-bg);\n  padding: 4rem 0;\n}\n\n.whatsapp-btn {\n  background-color: #25D366;\n  color: white;\n  font-weight: 600;\n  border: none;\n}\n\n.whatsapp-btn:hover {\n  background-color: #1DA851;\n  color: white;\n}\n\n/* Metin Bazlı Blog Listesi */\n.blog-item {\n  transition: background-color 0.2s ease;\n}\n\n.blog-item:hover {\n  background-color: var(--kw-light-bg);\n}\n\n.blog-title {\n  color: var(--kw-dark);\n  text-decoration: none;\n}\n\n.blog-title:hover {\n  color: var(--kw-red);\n}\n\n/* Etiket Stilleri */\n.tag-badge {\n  font-weight: 500;\n  font-size: 0.75rem;\n  background-color: #f1f3f5;\n  color: #495057;\n  text-decoration: none;\n  transition: all 0.2s ease;\n}\n\n.tag-badge:hover {\n  background-color: var(--kw-red);\n  color: #ffffff;\n}\n\n/* Pagination Özel Stili */\n.pagination .page-link {\n  color: var(--kw-dark);\n  border-color: #dee2e6;\n}\n\n.pagination .page-item.active .page-link {\n  background-color: var(--kw-red);\n  border-color: var(--kw-red);\n  color: #ffffff;\n}\n\n.pagination .page-link:hover {\n  color: var(--kw-red);\n}"
+	],
+	"names": [],
+	"mappings": ";ACAA,UAAU;AACV,AAAA,aAAa,CAAC,EACZ,gBAAgB,EAAE,kBAAkB,EACpC,OAAO,EAAE,MAAM,GAChB;;AAED,AAAA,aAAa,CAAC,EACZ,gBAAgB,EAAE,OAAO,EACzB,KAAK,EAAE,KAAK,EACZ,WAAW,EAAE,GAAG,EAChB,MAAM,EAAE,IAAI,GACb;;AAED,AAAA,aAAa,CAAC,KAAK,CAAC,EAClB,gBAAgB,EAAE,OAAO,EACzB,KAAK,EAAE,KAAK,GACb;;AAED,8BAA8B;AAC9B,AAAA,UAAU,CAAC,EACT,UAAU,EAAE,0BAA0B,GACvC;;AAED,AAAA,UAAU,CAAC,KAAK,CAAC,EACf,gBAAgB,EAAE,kBAAkB,GACrC;;AAED,AAAA,WAAW,CAAC,EACV,KAAK,EAAE,cAAc,EACrB,eAAe,EAAE,IAAI,GACtB;;AAED,AAAA,WAAW,CAAC,KAAK,CAAC,EAChB,KAAK,EAAE,aAAa,GACrB;;AAED,qBAAqB;AACrB,AAAA,UAAU,CAAC,EACT,WAAW,EAAE,GAAG,EAChB,SAAS,EAAE,OAAO,EAClB,gBAAgB,EAAE,OAAO,EACzB,KAAK,EAAE,OAAO,EACd,eAAe,EAAE,IAAI,EACrB,UAAU,EAAE,aAAa,GAC1B;;AAED,AAAA,UAAU,CAAC,KAAK,CAAC,EACf,gBAAgB,EAAE,aAAa,EAC/B,KAAK,EAAE,OAAO,GACf;;AAED,2BAA2B;AAC3B,AAAA,WAAW,CAAC,UAAU,CAAC,EACrB,KAAK,EAAE,cAAc,EACrB,YAAY,EAAE,OAAO,GACtB;;AAED,AAAA,WAAW,CAAC,UAAU,AAAA,OAAO,CAAC,UAAU,CAAC,EACvC,gBAAgB,EAAE,aAAa,EAC/B,YAAY,EAAE,aAAa,EAC3B,KAAK,EAAE,OAAO,GACf;;AAED,AAAA,WAAW,CAAC,UAAU,CAAC,KAAK,CAAC,EAC3B,KAAK,EAAE,aAAa,GACrB"
+}

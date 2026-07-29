@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gelir, Gider ve Nakit Akışı Nedir? Finansal Kontrolün Temel Taşları"
 description: "Bu yazıda, bu üç temel kavramı sade ama derinlemesine şekilde ele alacak ve günlük hayatınıza nasıl uygulayabileceğinizi göstereceğim."
-tags: ["finansal okuryazarlık"]
+tags: []
 ---
 
 Finansal özgürlüğe giden yolun ilk adımı, paranın nasıl hareket ettiğini anlamaktan geçer. Çoğu insan “para kazanıyorum ama nereye gidiyor anlamıyorum” der. Bunun temel nedeni ise gelir, gider ve nakit akışı kavramlarının net bir şekilde bilinmemesidir.

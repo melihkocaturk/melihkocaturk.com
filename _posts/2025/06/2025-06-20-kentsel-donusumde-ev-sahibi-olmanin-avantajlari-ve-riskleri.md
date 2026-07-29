@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kentsel Dönüşümde Ev Sahibi Olmanın Avantajları ve Riskleri"
 description: "Bu yazıda, kentsel dönüşüm sürecinde ev sahibi olmanın avantajlarını ve karşılaşılabilecek olası riskleri ayrıntılı olarak ele alıyoruz."
 tags: ["kentsel dönüşüm"]

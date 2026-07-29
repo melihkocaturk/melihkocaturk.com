@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk Gayrimenkul Yatırımı: Hangi Bölgeler Öne Çıkıyor?"
 description: "Bu rehberde, öne çıkan bölgeleri, hangi tip mülkte hangi stratejinin çalıştığını, riskleri ve pratik bir satın alma kontrol listesini bulacaksınız."
 tags: ["göktürk"]

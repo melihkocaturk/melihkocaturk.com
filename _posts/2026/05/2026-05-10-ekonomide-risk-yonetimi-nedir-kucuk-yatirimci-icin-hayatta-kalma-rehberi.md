@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ekonomide Risk Yönetimi Nedir? Küçük Yatırımcı İçin Hayatta Kalma Rehberi"
 description: "Bu yazıda risk yönetiminin ne olduğunu, küçük yatırımcıların neden mutlaka öğrenmesi gerektiğini ve günlük hayatta nasıl uygulanabileceğini sade ve anlaşılır şekilde inceleyeceğiz."
-tags: ["finansal okuryazarlık"]
+tags: []
 --- 
 
 Finansal piyasalarda çoğu insan nasıl para kazanacağını araştırıyor. Ancak profesyonel yatırımcıların asıl odak noktası farklıdır: “Nasıl daha az kaybederim?”. Çünkü yatırım dünyasında uzun vadeli başarı yalnızca doğru yatırım yapmakla değil, yanlış zamanda büyük kayıp yaşamamayı başarmakla mümkündür. İşte bu yüzden risk yönetimi, finansal okuryazarlığın en önemli parçalarından biridir.

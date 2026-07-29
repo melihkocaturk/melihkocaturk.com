@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Türkiye’de Gayrimenkulde Sürdürülebilirlik ve Akıllı Ev Trendleri (2025)"
 description: "2025 yılı itibarıyla Türkiye’de gayrimenkul sektörü, sürdürülebilirlik ve akıllı teknolojiler etrafında yeniden şekilleniyor."
-tags: ["sürdürülebilirlik", "akıllı ev", "enerji verimliliği", "yapay zekâ"]
+tags: ["yapay zeka"]
 ---
 
 2025 yılı itibarıyla Türkiye’de gayrimenkul sektörü, sürdürülebilirlik ve akıllı teknolojiler etrafında yeniden şekilleniyor. Artık yalnızca estetik ve konum değil; *enerji verimliliği*, *çevre dostu malzemeler* ve *yapay zekâ destekli sistemler* yatırım kararlarında belirleyici oluyor. Özellikle **sürdürülebilir konut projeleri**, hem yatırımcıların hem de çevre bilinci yüksek kullanıcıların ilgisini çekiyor.

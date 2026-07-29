@@ -1,159 +1,206 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-bs-theme="light">
+  <head>
+    
 
-<head>
-  
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Podcast</title>
-  <meta name="description" content="Emlak danışmanından ipuçları ve stratejiler, arsa yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="shortcut icon" href="/images/favicon.ico">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Podcast</title>
+    <meta
+      name="description"
+      content="Gayrimenkul danışmanından ipuçları ve stratejiler, emlak yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler..."
+    >
 
-<body>
-  <div class="container py-3">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container-fluid px-0">
-      <a class="navbar-brand" href="/">
-        <img src="/images/logo.png" alt="Melih Kocatürk" class="site-logo">
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainMenu"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/">
-                Anasayfa
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/hakkinda">
-                Hakkında
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/etiketler">
-                Etiketler
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/araclar">
-                Araçlar
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/rehber">
-                Rehber
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link active" href="/podcast">
-                Podcast
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/ara">
-                Ara
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/iletisim">
-                İletişim
-              </a>
-            </li>
-          
-        </ul>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+      <link rel="stylesheet" href="/assets/css/podcast.css">
+    
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  </head>
+
+  <body>
+    <!-- Header / Navigasyon -->
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4 text-dark text-uppercase" href="/">
+      Melih Kocatürk
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold align-items-lg-center gap-2">
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/"
+            >Anasayfa</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/hakkinda"
+            >Hakkında</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/araclar"
+            >Araçlar</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/rehberler"
+            >Rehberler</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark active text-kw-red"
+              href="/podcast"
+            >Podcast</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/ara"
+            >Ara</a>
+          </li>
+        
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-kw-red px-3 rounded-pill fw-bold btn-sm" href="/iletisim">İletişime Geç</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Ana İçerik -->
+<main class="d-flex align-items-center py-5">
+  <div class="container py-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-8 col-xl-7 text-center">
+
+        <div class="podcast-card p-4 p-md-5">
+          <!-- Podcast İkonu -->
+          <div class="podcast-icon-bg mb-4">
+            <i class="bi bi-mic-fill fs-2"></i>
+          </div>
+
+          <!-- Başlık ve Tanıtım Metni -->
+          <h1 class="fw-bold text-dark mb-3">Gayrimenkul & Yatırım Sohbetleri</h1>
+          <p class="text-secondary lead fs-6 mb-4 mx-auto" style="max-width: 540px;">
+            Gayrimenkul piyasasına dair güncel analizler, yatırım stratejileri ve sektördeki en son gelişmeleri
+            konuştuğumuz bölümleri dilediğiniz an dinleyebilirsiniz.
+          </p>
+
+          <!-- Spotify Yönlendirme Butonu -->
+          <div class="pt-2">
+            <a href="https://open.spotify.com/show/033eqd3I0jnO1WMkE99FDr" target="_blank"
+              class="btn btn-spotify btn-lg rounded-pill px-4 py-3 fw-bold fs-6 d-inline-flex align-items-center gap-2">
+              <i class="bi bi-spotify fs-4"></i>
+              <span>Spotify'da Dinleyin</span>
+            </a>
+          </div>
+
+          <p class="text-muted small mt-3 mb-0">
+            <i class="bi bi-broadcast me-1 text-kw-red"></i> Tüm yeni bölümler eşzamanlı olarak <a
+              href="https://www.youtube.com/@melihkocaturk" class="text-kw-red text-decoration-none"
+              target="_blank">Youtube</a>
+            üzerinde yayınlanmaktadır.
+          </p>
+        </div>
+
       </div>
     </div>
-  </nav>
-</div>
-
-  <main class="container">
-  <div class="page mx-auto mt-5">
-    <h1 class="display-5 text-center mb-5">Podcast</h1>
-    <div class="row">
-  <div class="col-sm-4">
-    <a href="https://open.spotify.com/show/033eqd3I0jnO1WMkE99FDr" target="_blank">
-      <img src="/images/podcast/emlak-sektoru-podcast.png" alt="Emlak Sektörü" class="img-fluid mb-4"></a>
-  </div>
-  <div class="col-sm-8">
-    <h2 class="mt-0">Emlak Sektörü</h2>
-    <p>Emlak Sektörü programında; emlak danışmanlığı, gayrimenkul yatırımı, konut piyasası, yapay zeka, otomasyon ve
-      dijital emlak sistemleri üzerine hazırlanan içerikleri bulabilirsiniz. Sektördeki güncel gelişmeleri takip etmek,
-      yeni nesil emlak teknolojilerini keşfetmek ve gayrimenkul dünyasını daha yakından analiz etmek isteyenler için
-      düzenli olarak yeni podcast'ler paylaşılmaktadır.</p>
-    <p><strong>Emlak Sektörü</strong> podcast kanalını dinlemek için <a
-        href="https://open.spotify.com/show/033eqd3I0jnO1WMkE99FDr" target="_blank">buraya tıklayın.</a></p>
-  </div>
-</div>
-
-<hr class="py-3">
-
-<div class="row">
-  <div class="col-sm-4">
-    <a href="https://open.spotify.com/show/033eC2jOzRAdlswoIMH5PZ" target="_blank">
-      <img src="/images/podcast/finansal-okuryazar-podcast.png" alt="Finansal Okuryazar" class="img-fluid mb-4"></a>
-  </div>
-  <div class="col-sm-8">
-    <h2 class="mt-0">Finansal Okuryazar</h2>
-    <p>Finansal Okuryazar programında; yatırım, bütçe yönetimi, tasarruf, ekonomi, para yönetimi ve finansal farkındalık
-      üzerine hazırlanan içerikleri bulabilirsiniz. Finansal kararlarını daha bilinçli almak, ekonomik gelişmeleri daha
-      iyi anlamak ve uzun vadeli finansal bakış açısı kazanmak isteyenler için düzenli olarak yeni podcast'ler
-      paylaşılmaktadır.</p>
-    <p><strong>Finansal Okuryazar</strong> podcast kanalını dinlemek için <a
-        href="https://open.spotify.com/show/033eC2jOzRAdlswoIMH5PZ" target="_blank">buraya tıklayın.</a></p>
-  </div>
-</div>
   </div>
 </main>
-  <footer class="container py-5">
-  <ul class="list-inline">
-    <li class="list-inline-item"> <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-dark" target="_blank">
-        <i class="bi bi-linkedin"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://www.instagram.com/melih_kocaturk_" class="text-dark" target="_blank">
-        <i class="bi bi-instagram"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://www.youtube.com/@melihkocaturk" class="text-dark" target="_blank">
-        <i class="bi bi-youtube"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://x.com/melih_kocaturk_" class="text-dark" target="_blank">
-        <i class="bi bi-twitter-x"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="/feed.xml" class="text-dark" target="_blank">
-        <i class="bi bi-rss"></i>
-      </a></li>
-  </ul>
-  <p class="small">© 2026 Melih Kocatürk. Tüm hakları saklıdır.</p>
-  <p class="small"><a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a> / <a
-      href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a></p>
+    <!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4 align-items-center mb-4">
+      <!-- Sol Kolon: İsim ve Ünvan -->
+      <div class="col-lg-5">
+        <h4 class="fw-bold text-white mb-2 text-uppercase">Melih Kocatürk</h4>
+        <p class="text-secondary small mb-0">Gayrimenkul Yatırım, Değerleme ve Pazarlama Danışmanlığı</p>
+      </div>
+
+      <!-- Orta Kolon: Keller Williams Logosu -->
+      <div class="col-lg-3 text-lg-center">
+        <div class="d-inline-flex align-items-center">
+          <a href="https://www.kwforessisli.com.tr/tr/" rel="nofollow">
+            <img
+              src="/images/kw-fores-logo.png"
+              alt="KW Fores Şişli"
+              width="160"
+            >
+          </a>
+        </div>
+      </div>
+
+      <!-- Sağ Kolon: Sosyal Bağlantılar -->
+      <div class="col-lg-4 text-lg-end">
+        <div class="d-flex gap-3 justify-content-lg-end fs-5 text-secondary">
+          
+            <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-secondary text-white-hover"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          
+            <a href="https://www.instagram.com/melih_kocaturk_" class="text-secondary text-white-hover"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          
+            <a href="https://www.youtube.com/@melihkocaturk" class="text-secondary text-white-hover"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          
+            <a href="https://x.com/melih_kocaturk_" class="text-secondary text-white-hover"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          
+            <a href="/feed.xml" class="text-secondary text-white-hover"
+              ><i class="bi bi-rss"></i
+            ></a>
+          
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary opacity-25">
+
+    <!-- Alt Bilgi ve Yasal Metin Linkleri -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-secondary small">
+      <div>
+        © 2026
+        Melih Kocatürk. Tüm hakları saklıdır.
+      </div>
+      <div class="d-flex gap-3">
+        
+          <a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a>
+          <span>•</span>
+        
+          <a href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a>
+          
+        
+      </div>
+    </div>
+  </div>
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-</body>
 
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

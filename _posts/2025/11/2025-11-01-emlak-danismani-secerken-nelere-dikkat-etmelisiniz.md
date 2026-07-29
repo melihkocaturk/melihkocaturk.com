@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Danışmanı Seçerken Nelere Dikkat Etmelisiniz?"
 description: "Doğru emlak danışmanını nasıl seçeceğinizi öğrenin. Yetki belgesi, deneyim, iletişim ve güven unsurlarına dikkat etmeniz gereken noktalar bu rehberde."
-tags: ["emlak danışmanı"]
+tags: ["gayrimenkul danışmanı"]
 ---
 
 Ev, arsa ya da ticari bir mülk alım satımı; hem maddi hem de duygusal açıdan önemli bir süreçtir. Bu nedenle doğru *emlak danışmanını seçmek*, sürecin sorunsuz ilerlemesi ve doğru kararların alınması açısından büyük önem taşır. Peki güvenilir ve profesyonel bir emlak danışmanı seçerken nelere dikkat etmelisiniz? İşte adım adım rehber.

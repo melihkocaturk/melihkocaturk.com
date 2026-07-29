@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Binanın Yaşı Kaç Olmalı? Eski Binaların Avantaj ve Riskleri"
 description: "Bu yazıda, binanın yaşı ile ilgili doğru bilinen yanlışları ele alacak, eski binaların avantaj ve risklerini detaylı şekilde inceleyeceğiz."
 ---

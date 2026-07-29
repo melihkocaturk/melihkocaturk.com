@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Yatırımcılar Neden Artık Bu Semtlere Yöneliyor?"
 description: "Bu yazıda, yatırımcıların neden belirli semtlere yöneldiğini ve bu bölgelerin sunduğu fırsatları detaylı şekilde ele alacağız."
-tags: ["gayrimenkul yatırımı", "gayrimenkul piyasası"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Alıcı Piyasası Nedir ve Bu Piyasada Satıcılar Nasıl Hareket Etmelidir?"
 description: "Bu yazıda alıcı piyasasının ne olduğunu, hangi koşullarda oluştuğunu ve satıcıların bu dönemde nasıl hareket etmesi gerektiğini kapsamlı şekilde inceleyeceğiz."
-tags: ["emlak piyasası"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Emlak piyasası ekonominin genel durumuna, arz-talep dengesine ve bölgesel dinamiklere göre sürekli değişir. Zaman zaman *satıcı piyasası*, zaman zaman ise *alıcı piyasası* ortaya çıkar. Bir emlak danışmanı veya satıcı olarak bu döngüyü doğru okumak, satış stratejilerinizi buna göre şekillendirmek satış hızınızı ve kazancınızı doğrudan etkiler.

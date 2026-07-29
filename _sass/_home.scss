@@ -1,0 +1,66 @@
+/* Hero */
+.hero-section {
+  background-color: var(--kw-light-bg);
+  padding: 4rem 0;
+}
+
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  font-weight: 600;
+  border: none;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1DA851;
+  color: white;
+}
+
+/* Metin Bazlı Blog Listesi */
+.blog-item {
+  transition: background-color 0.2s ease;
+}
+
+.blog-item:hover {
+  background-color: var(--kw-light-bg);
+}
+
+.blog-title {
+  color: var(--kw-dark);
+  text-decoration: none;
+}
+
+.blog-title:hover {
+  color: var(--kw-red);
+}
+
+/* Etiket Stilleri */
+.tag-badge {
+  font-weight: 500;
+  font-size: 0.75rem;
+  background-color: #f1f3f5;
+  color: #495057;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.tag-badge:hover {
+  background-color: var(--kw-red);
+  color: #ffffff;
+}
+
+/* Pagination Özel Stili */
+.pagination .page-link {
+  color: var(--kw-dark);
+  border-color: #dee2e6;
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--kw-red);
+  border-color: var(--kw-red);
+  color: #ffffff;
+}
+
+.pagination .page-link:hover {
+  color: var(--kw-red);
+}

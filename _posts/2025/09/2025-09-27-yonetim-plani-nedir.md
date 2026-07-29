@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Yönetim Planı Nedir?"
 description: "Yönetim planı; bir apartman, site ya da toplu yapı içerisinde yaşamın nasıl düzenleneceğini, ortak alanların kullanımını, yöneticilerin yetki ve sorumluluklarını belirleyen resmi bir belgedir."
-tags: ["bina ve site yönetimi"]
+tags: []
 ---
 
 Apartman veya site yaşamında düzeni sağlamak, ortak alanların kullanımını belirlemek ve kat maliklerinin haklarını korumak için belirli kuralların olması gerekir. İşte bu kuralları resmi olarak düzenleyen belgenin adı yönetim planıdır. Türk hukuk sisteminde *Kat Mülkiyeti Kanunu* ile tanımlanan **yönetim planı**, apartman ve site yönetiminin temelini oluşturur.

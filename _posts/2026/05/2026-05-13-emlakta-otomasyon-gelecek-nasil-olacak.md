@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlakta Otomasyon: Gelecek Nasıl Olacak?"
 description: "Emlakta otomasyon ve yapay zeka sektörün geleceğini nasıl değiştiriyor? AI destekli CRM sistemleri, sanal turlar, akıllı fiyatlama ve dijital emlak ofislerinin geleceğini keşfedin."
-tags: ["yapay zeka", "proptech", "gayrimenkul sektörü"]
+tags: ["yapay zeka", "gayrimenkul piyasası"]
 ---
 
 Gayrimenkul sektörü uzun yıllar boyunca “insan ilişkileri odaklı” bir alan olarak görüldü. Telefon trafiği, manuel müşteri takibi, ilan girişleri, ev gösterimleri ve sözleşme süreçleri çoğunlukla insan gücüyle yürütüldü. Ancak son birkaç yılda yapay zeka, otomasyon sistemleri ve PropTech girişimlerinin yükselişiyle birlikte emlak sektörü tarihin en büyük dönüşüm dönemlerinden birine girdi.

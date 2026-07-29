@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kira Artışı Neye Göre Hesaplanır?"
 description: "Bu yazımızda, kira artışının nasıl belirlendiğini, hangi yasal dayanaklara göre hesaplandığını ve tarafların hangi haklara sahip olduğunu kapsamlı bir şekilde ele alacağız."
 tags: ["kira"]

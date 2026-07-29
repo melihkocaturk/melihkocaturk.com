@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Adres Değişikliğinde Çifte Harç Dönemi Sona Erdi"
 description: "Emlak ofisini yıl içinde taşımak artık ikinci bir harç yükü doğurmuyor. Yeni düzenlemenin emlakçılar için maliyet avantajlarını ve iş kararlarına etkisini öğrenin."
-tags: ["taşınmaz ticareti yetki belgesi", "eids"]
+tags: ["eids"]
 ---
 
 Emlak sektöründe faaliyet gösteren işletmeler için yetki belgesi süreçleri, son yıllarda önemli değişikliklere sahne oldu. Özellikle 2026 itibarıyla uygulamaya alınan yıllık harç sistemi, birçok emlak danışmanı ve ofis sahibi için ek maliyet anlamına geliyordu. Ancak son yapılan düzenleme, sektör açısından kritik bir sorunu ortadan kaldırarak önemli bir rahatlama sağladı.

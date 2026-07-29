@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "e-Devlet Üzerinden Kira Kontratı Yapmak Zorunlu mu?"
 description: "e-Devlet üzerinden kira kontratı yapmak zorunlu mu? Güncel mevzuat, yasal durum, avantajlar ve merak edilen tüm detaylar bu yazıda."
 tags: ["kira"]

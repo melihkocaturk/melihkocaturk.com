@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Müşteri Neden “Düşüneceğim” Der?"
 description: "Bu yazıda “düşüneceğim” diyen müşterinin gerçek nedenlerini, arka plandaki psikolojiyi ve bu durumları nasıl avantaja çevirebileceğini detaylı şekilde inceleyeceğiz."
-tags: ["emlak pazarlama"]
+tags: []
 ---
 
 Emlak sektöründe (ve aslında satışın olduğu her alanda) en sık duyulan cümlelerden biri: **“Bir düşüneyim, size döneceğim.”** Bu cümle çoğu zaman kibar bir kaçış gibi algılansa da, aslında müşterinin zihninde olan bitene dair çok değerli ipuçları barındırır. Eğer bu ifadeyi doğru analiz edebilirsen, satış sürecini kaybetmek yerine fırsata çevirebilirsin.

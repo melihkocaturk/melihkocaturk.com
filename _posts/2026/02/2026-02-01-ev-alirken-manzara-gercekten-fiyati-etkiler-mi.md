@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Manzara Gerçekten Fiyatı Etkiler mi?"
 description: "Bu yazıda manzaranın konut fiyatlarına etkisini, yatırım açısından avantajlarını ve hangi manzara türlerinin daha değerli olduğunu detaylı şekilde ele alıyoruz."
 ---

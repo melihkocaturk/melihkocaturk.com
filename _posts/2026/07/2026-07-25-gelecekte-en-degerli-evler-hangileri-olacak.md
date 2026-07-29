@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gelecekte En Değerli Evler Hangileri Olacak?"
 description: "Gelecekte hangi evler daha değerli olacak? Deprem güvenliği, enerji verimliliği, ulaşım, akıllı ev teknolojileri ve iklim risklerinin konut değerine etkisini keşfedin."
-tags: ["konut yatırımı", "konut piyasası"]
+tags: ["konut yatırımı", "gayrimenkul piyasası"]
 ---
 
 Günümüzde bir ev satın alırken en sık sorulan soru **"Bugün değeri ne kadar?"** olsa da, aslında yatırımcıların sorması gereken asıl soru şudur: **"Bu ev 10 yıl sonra ne kadar değerli olacak?"** Gayrimenkul piyasası artık sadece metrekare fiyatlarıyla şekillenmiyor. Teknoloji, iklim değişikliği, ulaşım projeleri, demografik dönüşüm ve yaşam alışkanlıkları geleceğin en değerli konutlarını belirliyor.

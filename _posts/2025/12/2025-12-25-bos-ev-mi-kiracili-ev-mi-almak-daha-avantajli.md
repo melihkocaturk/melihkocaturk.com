@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Boş Ev mi Kiracılı Ev mi Almak Daha Avantajlı?"
 description: "Boş ev mi kiracılı ev mi almak daha avantajlı? Yatırım, kira geliri, hukuki riskler ve getiri açısından detaylı karşılaştırma bu rehberde."
-tags: ["kira", "gayrimenkul yatırımı"]
+tags: ["kira", ]
 ---
 
 Gayrimenkul yatırımı yaparken en kritik kararlardan biri, **boş bir ev mi yoksa kiracılı bir ev mi satın alınmalı?** sorusudur. Bu tercih; nakit akışı, hukuki süreçler, yatırımın geri dönüş süresi ve risk yönetimi gibi birçok faktörü doğrudan etkiler. Bu yazıda, her iki seçeneği tüm yönleriyle ele alarak hangi yatırımcı profili için hangisinin daha avantajlı olduğunu açıklıyoruz.

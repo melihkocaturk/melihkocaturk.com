@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Lüks Konut Vergisi Nedir? 2026 Güncel Oranlar ve Detaylar"
 description: "Bu yazıda lüks konut vergisinin ne olduğu, kimleri kapsadığı, nasıl hesaplandığı ve 2026 yılı güncel lüks konut vergisi oranları detaylı şekilde ele alınmaktadır."
-tags: ["vergi"]
+tags: ["konut yatırımı"]
 ---
 
 Türkiye’de gayrimenkul yatırımcılarını ilgilendiren vergiler yalnızca tapu harcı ve emlak vergisi ile sınırlı değildir. Son yıllarda artan konut fiyatlarıyla birlikte **lüks konut vergisi** (resmî adıyla *Değerli Konut Vergisi*), yüksek değerli konut sahipleri için önemli bir mali yükümlülük haline gelmiştir.

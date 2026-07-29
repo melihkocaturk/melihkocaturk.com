@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kat İrtifakı Nasıl Kurulur?"
 description: "Kat irtifakı, inşaatı devam eden projelerde, hak sahiplerinin mülkiyet haklarını güvence altına alması açısından büyük önem taşır."
 tags: ["kat irtifakı", "iskan"]

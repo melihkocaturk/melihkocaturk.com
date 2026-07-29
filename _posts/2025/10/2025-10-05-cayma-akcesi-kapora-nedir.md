@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Cayma Akçesi (Kapora) Nedir?"
 description: "Cayma akçesi (kapora) nedir, hangi durumlarda yanar ya da geri alınabilir? Emlak alım-satımında kapora sürecini detaylıca öğrenin."
 ---

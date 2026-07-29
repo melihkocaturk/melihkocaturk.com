@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Değerleme Raporu Nedir?"
 description: "Gayrimenkul değerleme raporu tam olarak nedir, ne işe yarar ve kimler tarafından hazırlanır?"
-tags: ["gayrimenkul değerleme"]
+tags: ["değerleme"]
 ---
 
 Gayrimenkul alım satım süreçlerinde en çok merak edilen konulardan biri de değerleme raporlarıdır. Özellikle son yıllarda konut kredisi, yabancılara satış ve yatırım amaçlı işlemlerle birlikte bu raporların önemi daha da artmıştır. Peki, gayrimenkul değerleme raporu tam olarak nedir, ne işe yarar ve kimler tarafından hazırlanır?

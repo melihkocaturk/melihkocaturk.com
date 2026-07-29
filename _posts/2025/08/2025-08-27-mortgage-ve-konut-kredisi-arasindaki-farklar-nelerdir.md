@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Mortgage ve Konut Kredisi Arasındaki Farklar Nelerdir?"
 description: "Bu yazıda, mortgage ve konut kredisi arasındaki temel farklılıkları, avantajlarını ve hangi durumda hangisinin tercih edilebileceğini ele alacağız."
-tags: ["konut finansmanı"]
+tags: ["konut kredisi"]
 ---
 
 Ev sahibi olma hayali kuranların en çok karşılaştığı kavramlardan ikisi mortgage ve konut kredisidir. Çoğu zaman birbirine karıştırılan bu iki finansman yöntemi aslında benzer yanlar taşısa da önemli farklara sahiptir. Bu yazıda, mortgage ve konut kredisi arasındaki temel farklılıkları, avantajlarını ve hangi durumda hangisinin tercih edilebileceğini ele alacağız.

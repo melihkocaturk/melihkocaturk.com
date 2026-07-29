@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk’te Konut Fiyatları: Satılık ve Kiralık Ev Trendleri (2025)"
 description: "İstanbul’un kuzeybatısında, doğayla iç içe yaşam alanı sunan Göktürk, son yıllarda gayrimenkul piyasasında dikkatleri üzerine çeken bölgelerden biri haline geldi."
 tags: ["göktürk"]

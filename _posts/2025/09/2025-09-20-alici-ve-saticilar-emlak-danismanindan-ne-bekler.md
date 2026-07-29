@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Alıcı ve Satıcılar Emlak Danışmanından Ne Bekler?"
 description: "Emlak danışmanının başarısı, yalnızca satış sayılarıyla değil, alıcı ve satıcıların ihtiyaçlarını ne kadar anlayıp karşılayabildiğiyle ölçülür."
-tags: ["emlak danışmanı"]
+tags: ["gayrimenkul danışmanı"]
 ---
 
 Gayrimenkul sektöründe güven, bilgi ve iletişim en değerli unsurlar arasında yer alır. Bir emlak danışmanının başarısı, yalnızca satış sayılarıyla değil, alıcı ve satıcıların ihtiyaçlarını ne kadar anlayıp karşılayabildiğiyle ölçülür. Çünkü her iki tarafın da beklentileri farklıdır, ancak ortak noktaları vardır: güvenilirlik, profesyonellik ve şeffaflık.

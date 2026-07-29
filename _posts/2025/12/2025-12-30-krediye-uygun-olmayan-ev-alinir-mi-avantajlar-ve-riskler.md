@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Krediye Uygun Olmayan Ev Alınır mı? Avantajlar ve Riskler"
 description: "Krediye uygun olmayan ev alınır mı? Avantajları, riskleri ve dikkat edilmesi gerekenleri öğrenin. Bilinçli konut yatırımı için rehber yazı."
 tags: ["konut kredisi"]

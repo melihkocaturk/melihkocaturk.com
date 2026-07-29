@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ekonomik Koşulların Gayrimenkul Piyasasına Etkileri Nelerdir?"
 description: "Bu yazıda, ekonomik koşulların gayrimenkul piyasasına olan etkilerini farklı açılardan detaylı olarak inceleyeceğiz."
 ---

@@ -1,0 +1,154 @@
+/* Blog Tipografisi */
+.article-content {
+  font-size: 1.05rem;
+}
+
+.article-content h2 {
+  font-weight: 700;
+  color: #111111;
+  margin-top: 2.25rem;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.article-content h3, h4 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #212529;
+  margin-top: 1.75rem;
+  margin-bottom: 0.85rem;
+  padding-left: 0.75rem;
+  border-left: 3px solid #CE011F; /* KW Kırmızısı Sol Vurgu Çizgisi */
+  line-height: 1.4;
+}
+
+.article-content p {
+  margin-bottom: 1.25rem;
+  color: #333333;
+}
+
+/* Vurgu / Callout Kutusu */
+.blog-callout {
+  background-color: #fcf8f8;
+  border-left: 4px solid var(--kw-red);
+  padding: 1.25rem 1.5rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.75rem 0;
+}
+
+/* Tıklanabilir Etiket Stili */
+.tag-badge {
+  display: inline-block;
+  background-color: #f1f3f5;
+  color: #495057;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.tag-badge:hover {
+  background-color: var(--kw-red);
+  color: #ffffff;
+}
+
+/* Sosyal Paylaşım Butonları */
+.share-btn {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1f3f5;
+  color: #495057;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.share-btn:hover {
+  background-color: var(--kw-red);
+  color: #ffffff;
+}
+
+/* Sticky Sidebar Alignment */
+.sticky-sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 90px;
+}
+
+/* Klasik Liste Link Stili */
+.useful-tools-list a {
+  color: #495057;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.useful-tools-list a:hover {
+  color: var(--kw-red);
+  text-decoration: underline;
+}
+
+/* 1. Tabloyu saran div veya doğrudan tablo için responsive kaydırma ve gölge */
+table {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+  color: #2b2b2b;
+  background-color: #ffffff;
+  text-align: left;
+  border-radius: 8px;
+  overflow: hidden; /* Köşe yuvarlamalarının düzgün görünmesi için */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* 2. Tablo Başlık Alanı (thead & th) */
+table thead th {
+  background-color: #f8f9fa;
+  color: #212529;
+  font-weight: 700;
+  padding: 14px 16px;
+  border-bottom: 2px solid #CE011F; /* KW Kırmızısı Çizgi */
+  white-space: nowrap;
+}
+
+/* 3. Tablo Gövdesi ve Hücreler (tbody & td) */
+table tbody td {
+  padding: 12px 16px;
+  border-bottom: 1px solid #e9ecef;
+  vertical-align: middle;
+}
+
+/* 4. Satır Üzerine Gelince (Hover) Renk Değişimi */
+table tbody tr {
+  transition: background-color 0.15s ease-in-out;
+}
+
+table tbody tr:hover {
+  background-color: #fcf8f8; /* KW Kırmızısının hafif arka plan tonu */
+}
+
+/* 5. Otomatik Taşma Önleyici (Mobil Uyum) */
+/* WordPress veya HTML içinde tablo bir konteyner içindeyse mobilde yatay kaydırma sağlar */
+figure.wp-block-table,
+.entry-content table {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* 6. Mobil Ekran İnce Ayarları */
+@media (max-width: 576px) {
+  table {
+    font-size: 0.875rem;
+  }
+  table thead th,
+  table tbody td {
+    padding: 10px 12px;
+  }
+}

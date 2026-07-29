@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlakçılıkta Gizli Gider: Çöp Portföyün Gerçek Maliyeti"
 description: "Bu yazıda çöp portföyün ne olduğunu, emlakçıya gerçek maliyetini ve bu tuzaktan nasıl kurtulabileceğinizi detaylı şekilde ele alıyoruz."
-tags: ["emlak sektörü", "emlak danışmanlığı"]
+tags: ["gayrimenkul piyasası", "gayrimenkul danışmanı"]
 ---
 
 Emlak sektöründe başarı çoğu zaman portföy sayısıyla ölçülür. Ancak her portföy kazanç değildir. Aksine, satılması neredeyse imkânsız, fiyatı gerçekçi olmayan veya hukuki sorunlar barındıran ilanlar zamanla “çöp portföy”e dönüşür. Bu tür portföyler yalnızca zaman kaybettirmez; aynı zamanda emlak danışmanının marka değerini, motivasyonunu ve gelirini doğrudan etkiler.

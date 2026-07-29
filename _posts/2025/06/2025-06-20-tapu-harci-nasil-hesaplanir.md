@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Tapu Harcı Nasıl Hesaplanır?"
 description: "Tapu harcı nedir, ne kadardır ve nasıl hesaplanır? Bu yazıda tapu harcına dair tüm detayları sade bir dille ele aldık."
 tags: ["tapu"]

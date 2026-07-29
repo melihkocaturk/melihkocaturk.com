@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Hane Oluşumu Ne Anlama Gelir?"
 description: "Hane oluşumu tam olarak neyi ifade eder, neden önemlidir ve hangi faktörlerden etkilenir?"
 ---

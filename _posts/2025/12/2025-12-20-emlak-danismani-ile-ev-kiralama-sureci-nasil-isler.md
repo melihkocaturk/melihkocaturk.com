@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Danışmanı ile Ev Kiralama Süreci Nasıl İşler?"
 description: "Bu yazıda, emlak danışmanı ile ev kiralama sürecinin tüm aşamalarını detaylı ve anlaşılır şekilde ele alıyoruz."
-tags: ["emlak danışmanı", "kira"]
+tags: ["gayrimenkul danışmanı", "kira"]
 ---
 
 Ev kiralama süreci; ilan araştırması, ev gezme, sözleşme hazırlığı ve teslim aşamalarından oluşan çok adımlı bir süreçtir. Bu süreci bir **emlak danışmanı** ile yürütmek, hem zaman kaybını azaltır hem de hukuki ve ticari riskleri minimuma indirir. Özellikle büyük şehirlerde ve talebin yoğun olduğu bölgelerde, profesyonel destek almak kiracılar için önemli bir avantaj sağlar.

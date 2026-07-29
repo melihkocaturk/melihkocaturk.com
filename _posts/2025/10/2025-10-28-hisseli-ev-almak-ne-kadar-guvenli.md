@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Hisseli Ev Almak Ne Kadar Güvenli?"
 description: "Bu yazıda, hisseli tapu nedir, avantajları ve riskleri nelerdir, nelere dikkat etmek gerekir gibi soruların cevaplarını detaylıca ele alıyoruz."
 tags: ["tapu"]

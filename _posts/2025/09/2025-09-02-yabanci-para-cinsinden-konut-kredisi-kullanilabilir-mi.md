@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Yabancı Para Cinsinden Konut Kredisi Kullanılabilir mi?"
 description: "Yabancı para (dolar, euro vb.) cinsinden konut kredisi almak mümkün mü?"
-tags: ["konut kredisi", "döviz kuru"]
+tags: ["konut kredisi"]
 ---
 
 Konut kredisi, ev sahibi olmak isteyenler için en çok tercih edilen finansman yöntemlerinden biridir. Türkiye’de bankalar uzun yıllardır Türk Lirası üzerinden kredi kullandırırken, geçmişte dövizle kredi seçenekleri de gündemdeydi. Peki bugün yabancı para (dolar, euro vb.) cinsinden konut kredisi almak mümkün mü? Gelin bu konuyu detaylıca inceleyelim.

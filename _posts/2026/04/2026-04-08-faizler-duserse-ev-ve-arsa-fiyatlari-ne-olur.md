@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Faizler Düşerse Ev ve Arsa Fiyatları Ne Olur?"
 description: "Bu yazıda, faiz düşüşünün gayrimenkul piyasasına etkisini net, veri odaklı ve yatırım perspektifiyle analiz ediyoruz."
-tags: ["gayrimenkul piyasası", "gayrimenkul yatırımı", "faiz"]
+tags: ["gayrimenkul piyasası", ]
 ---
 
 Gayrimenkul piyasasında en çok sorulan sorulardan biri şu: **“Faizler düşerse ev fiyatları artar mı, düşer mi?”** Bu sorunun cevabı sanıldığı kadar basit değil. Çünkü konut ve arsa fiyatları yalnızca faizle değil; **talep, enflasyon, arz, kredi erişimi ve yatırım davranışı** gibi birçok faktörle birlikte hareket eder.

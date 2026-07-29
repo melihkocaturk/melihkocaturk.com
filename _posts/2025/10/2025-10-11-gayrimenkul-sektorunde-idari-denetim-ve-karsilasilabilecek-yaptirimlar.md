@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Sektöründe İdari Denetim ve Karşılaşılabilecek Yaptırımlar"
 description: "Bu yazıda, taşınmaz ticaretinde idari denetim mekanizmaları, denetim süreçleri ve karşılaşılabilecek yaptırımlar hakkında kapsamlı bilgiler bulabilirsiniz."
-tags: ["gayrimenkul sektörü"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Gayrimenkul sektörü, yüksek ekonomik hacmi ve toplumun geniş kesimlerini ilgilendiren yapısı nedeniyle sıkı bir yasal denetime tabidir. Bu denetimler, hem sektörün güvenilirliğini korumak hem de tüketicilerin haklarını güvence altına almak amacıyla yürütülür. Bu yazıda, taşınmaz ticaretinde *idari denetim mekanizmaları, denetim süreçleri ve karşılaşılabilecek yaptırımlar* hakkında kapsamlı bilgiler bulabilirsiniz.

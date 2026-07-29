@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Fizbo Nedir? Emlak Danışmanları İçin Portföy Kazanma Rehberi"
 description: "Bu rehberde Fizbo’nun ne olduğunu, neden bu kadar etkili olduğunu ve sistemli şekilde nasıl yapılması gerektiğini tüm detaylarıyla öğreneceksiniz."
-tags: ["fizbo", "fsbo"]
+tags: []
 ---
 
 Emlak sektöründe sürdürülebilir başarı, güçlü ve sürekli büyüyen bir portföy ile mümkündür. Ancak özellikle rekabetin yoğun olduğu bölgelerde portföy bulmak, danışmanların en büyük problemlerinden biridir. İşte bu noktada profesyonellerin en çok kullandığı yöntemlerden biri devreye girer: **Fizbo**.

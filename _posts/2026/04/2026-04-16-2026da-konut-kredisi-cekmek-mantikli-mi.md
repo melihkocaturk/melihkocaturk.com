@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "2026'da Konut Kredisi Çekmek Mantıklı mı?"
 description: "Bu yazıda 2026 yılında konut kredisi çekmenin mantıklı olup olmadığını; faiz oranları, piyasa beklentileri, riskler ve fırsatlar üzerinden detaylı şekilde analiz edeceğiz."
-tags: ["konut kredisi", "faiz", "enflasyon"]
+tags: ["konut kredisi"]
 ---
 
 2026 yılında konut kredisi kullanarak ev almak, Türkiye’de en çok tartışılan finansal kararlardan biri haline geldi. Yüksek faiz ortamı, enflasyon, konut fiyatlarındaki hareketlilik ve ekonomik beklentiler bu kararı doğrudan etkiliyor.

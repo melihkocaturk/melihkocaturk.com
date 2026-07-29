@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Zorunlu Geçit Hakkı Nedir?"
 description: "Zorunlu geçit hakkı nedir, kimler talep edebilir ve nasıl kurulur? Geçit hakkının şartlarını, bedel hesaplamasını ve tapu sürecini adım adım öğrenin."
 ---

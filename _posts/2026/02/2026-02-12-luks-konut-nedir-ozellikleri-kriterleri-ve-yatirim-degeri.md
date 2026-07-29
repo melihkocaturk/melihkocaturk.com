@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Lüks Konut Nedir? Özellikleri, Kriterleri ve Yatırım Değeri"
 description: "Lüks konut nedir, hangi özelliklere sahiptir ve yatırım açısından neden değerlidir? Lüks konut kriterleri, mimari özellikler, lokasyon avantajı ve yatırım potansiyeli hakkında detaylı bilgi alın."
 tags: ["lüks konut"]

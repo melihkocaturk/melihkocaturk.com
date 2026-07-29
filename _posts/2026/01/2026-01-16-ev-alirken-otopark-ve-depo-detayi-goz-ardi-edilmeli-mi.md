@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Otopark ve Depo Detayı Göz Ardı Edilmeli mi?"
 description: "Ev alırken otopark ve depo detayı neden önemli? Yaşam konforu, yatırım değeri ve dikkat edilmesi gereken tüm noktaları bu yazıda keşfedin."
 ---

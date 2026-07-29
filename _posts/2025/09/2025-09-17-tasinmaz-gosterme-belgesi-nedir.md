@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Taşınmaz Gösterme Belgesi Nedir?"
 description: "Taşınmaz gösterme belgesi nedir, gayrimenkul danışmanı ile alıcı/kiracı arasındaki gösterme işlemini nasıl kayıt altına alır? Belgenin ne olduğu, neden imzalandığı ve taraflara sağladığı hukuki güveni basit şekilde açıklıyoruz."
 ---

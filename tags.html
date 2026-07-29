@@ -1,0 +1,67 @@
+---
+layout: page
+title: Etiketler
+permalink: /etiketler
+custom_css: tags
+---
+
+<!-- Sayfa Başlığı (Page Header) -->
+<section class="page-header">
+  <div class="container text-center">
+    <h6 class="text-kw-red fw-bold text-uppercase tracking-wider">İçerik Dizini</h6>
+    <h1 class="display-5 fw-bold text-dark mb-2">Konularına Göre Etiketler</h1>
+    <p class="lead text-secondary max-w-700 mx-auto mb-0">
+      Gayrimenkul, ekonomi, mevzuat ve yatırım dünyasına dair kaleme aldığım tüm içerikleri etiketlere göre filtreleyin.
+    </p>
+  </div>
+</section>
+
+<!-- Etiket Bulutu Bölümü -->
+<section class="py-5">
+  <div class="container py-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-10">
+        <div class="d-flex flex-wrap gap-2 justify-content-center mb-5">
+          {% for tag in site.tags %}
+            <a href="#{{ tag[0] }}" class="tag-cloud-btn">
+              #{{ tag[0] }}
+              <span class="tag-count">{{ tag[1].size }}</span>
+            </a>
+          {% endfor %}
+        </div>
+
+        <!-- Gruplanmış Etiketler ve Yazılar Bölümü -->
+        <div class="row g-4 justify-content-center">
+          <div class="col-lg-10">
+            {% for tag in site.tags %}
+              <!-- ETİKET GRUBU -->
+              <div class="card border-0 shadow-sm rounded-4 mb-4 overflow-hidden" id="{{ tag[0] }}">
+                <div class="card-header bg-light border-0 p-3 p-md-4 d-flex align-items-center justify-content-between">
+                  <h5 class="fw-bold text-dark m-0 d-flex align-items-center gap-2">
+                    <i class="bi bi-tag-fill text-kw-red fs-5"></i> #{{ tag[0] }}
+                  </h5>
+                  <span class="badge bg-danger-subtle text-kw-red fw-bold rounded-pill px-3 py-2">
+                    {{- tag[1].size }} Yazı</span
+                  >
+                </div>
+                <div class="list-group list-group-flush">
+                  {% for post in tag[1] %}
+                    <a
+                      href="{{ post.url }}"
+                      class="list-group-item list-group-item-action p-3 p-md-4 d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2"
+                    >
+                      <span class="fw-semibold text-dark blog-title">{{ post.title }}</span>
+                      <small class="text-muted text-nowrap"
+                        ><i class="bi bi-calendar3 me-1"></i> {{ post.date | date: '%d.%m.%Y' -}}
+                      </small>
+                    </a>
+                  {% endfor %}
+                </div>
+              </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

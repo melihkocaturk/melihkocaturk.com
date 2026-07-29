@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Değerleme Aşamaları Nelerdir?"
 description: "Bu yazıda, gayrimenkul değerleme sürecinin nasıl işlediğini inceliyoruz."
-tags: ["gayrimenkul değerleme"]
+tags: ["değerleme"]
 ---
 
 Gayrimenkul, hem bireysel yatırımcılar hem de profesyonel yatırımcılar için en güvenilir yatırım araçlarından biridir. Ancak bir taşınmazın gerçek değerini belirlemek, sanıldığı kadar basit değildir. Doğru fiyatlama, hem satıcı hem alıcı hem de yatırımcı açısından büyük önem taşır. İşte bu noktada **gayrimenkul değerleme** devreye girer.

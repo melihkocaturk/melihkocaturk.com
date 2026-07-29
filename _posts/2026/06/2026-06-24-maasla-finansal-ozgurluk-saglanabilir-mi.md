@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Maaşla Finansal Özgürlük Sağlanabilir mi?"
 description: "Maaşla finansal özgürlük mümkün mü? Tasarruf, yatırım, bileşik getiri ve pasif gelir stratejileriyle maaşlı çalışanların finansal bağımsızlığa nasıl ulaşabileceğini keşfedin."
-tags: ["finansal okuryazarlık", "finansal özgürlük", "yatırım"]
+tags: []
 ---
 
 Birçok insanın aklındaki en önemli sorulardan biri şudur: Maaşla çalışarak finansal özgürlük elde etmek mümkün mü? Özellikle sosyal medyada ve kişisel gelişim dünyasında sıkça karşılaşılan "Maaşlı çalışanlar asla zengin olamaz" söylemi, bu konuyu daha da tartışmalı hale getiriyor.

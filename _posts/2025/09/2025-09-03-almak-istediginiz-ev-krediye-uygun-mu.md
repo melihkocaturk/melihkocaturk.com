@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Almak İstediğiniz Ev Krediye Uygun mu?"
 description: "Bankalar, kredi tahsisi yaparken yalnızca sizin gelir durumunuza değil, aynı zamanda almak istediğiniz evin de belli kriterleri karşılayıp karşılamadığına bakar."
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Şehir Değiştirirken Ev Satış ve Alım Süreci Nasıl Yönetilir?"
 description: "Bu yazıda, şehir değiştirirken ev satış ve alım sürecini adım adım nasıl yönetebileceğinizi anlattım."
 ---

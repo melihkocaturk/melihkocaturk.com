@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Finansmanı Ne Demektir?"
 description: "Bu yazıda konut finansmanının ne olduğunu, nasıl işlediğini, avantajlarını ve dikkat edilmesi gereken noktaları detaylı bir şekilde ele alacağız."
-tags: ["konut finansmanı"]
+tags: ["konut kredisi"]
 ---
 
 Konut sahibi olmak, birçok kişi için hayatın en önemli hedeflerinden biridir. Ancak yüksek maliyetler nedeniyle peşin ödeme yapmak çoğu zaman mümkün olmaz. İşte tam bu noktada konut finansmanı devreye girer. Konut finansmanı, kişilerin ev sahibi olabilmesi için bankalar veya finans kuruluşları tarafından sağlanan uzun vadeli kredi desteklerini ifade eder.

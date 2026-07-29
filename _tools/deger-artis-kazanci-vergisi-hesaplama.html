@@ -1,0 +1,268 @@
+---
+layout: page
+title: "Değer Artış Kazancı Vergisi Hesaplama"
+description: "Alış/satış tutarları, Yİ-ÜFE oranları ve istisna muafiyet tutarını girerek taşınmaz satışından doğan
+vergilendirilebilir kazancınızı anında hesaplayın."
+permalink: /araclar/deger-artis-kazanci-vergisi-hesaplama.html
+tag: "Vergi & Hukuk"
+icon: shield-exclamation
+---
+
+<style>
+  main {
+    flex: 1;
+  }
+
+  /* Kartlar & Form Stilleri */
+  .calc-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
+
+  .info-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    border-color: var(--kw-red);
+    box-shadow: 0 0 0 0.25rem rgba(206, 1, 31, 0.15);
+  }
+
+  .result-box {
+    background-color: #ffffff;
+    border-left: 4px solid var(--kw-red);
+    border-radius: 8px;
+  }
+
+  /* Adım Rakamları */
+  .step-badge {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 50%;
+    background-color: rgba(206, 1, 31, 0.1);
+    color: var(--kw-red);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+</style>
+
+<!-- Ana İçerik -->
+<main class="py-5">
+  <div class="container py-3">
+
+    <!-- Başlık Bölümü -->
+    <div class="text-center mb-5">
+      <span class="badge bg-danger-subtle text-danger px-3 py-2 rounded-pill fw-semibold mb-2">
+        <i class="bi bi-calculator me-1"></i> {{ page.tag }}
+      </span>
+      <h1 class="fw-bold text-dark mb-2">{{ page.title }}</h1>
+      <p class="text-secondary mx-auto" style="max-width: 680px;">
+        {{ page.description }}
+      </p>
+    </div>
+
+    <div class="row g-4 align-items-start">
+
+      <!-- SOL KOLON: Form Alanı -->
+      <div class="col-lg-6">
+        <div class="calc-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-sliders me-2 text-kw-red"></i>Hesaplama Bilgileri
+          </h4>
+
+          <form id="calcForm">
+
+            <!-- Alış Fiyatı -->
+            <div class="mb-3">
+              <label for="buyPrice" class="form-label fw-semibold text-dark">Gayrimenkul Alış Tutarı (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="buyPrice"
+                  placeholder="Örn: 2000000" required>
+              </div>
+            </div>
+
+            <!-- Satış Fiyatı -->
+            <div class="mb-3">
+              <label for="sellPrice" class="form-label fw-semibold text-dark">Gayrimenkul Satış Tutarı (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="sellPrice"
+                  placeholder="Örn: 5000000" required>
+              </div>
+            </div>
+
+            <!-- ÜFE Değerleri Satırı -->
+            <div class="row g-3 mb-3">
+              <div class="col-md-6">
+                <label for="buyUfe" class="form-label fw-semibold text-dark">Alış Ayı Yİ-ÜFE</label>
+                <input type="number" step="0.01" class="form-control form-control-lg" id="buyUfe"
+                  placeholder="Örn: 1000.50" required>
+                <div class="form-text small">Alış tarihinden önceki ayın ÜFE'si.</div>
+              </div>
+              <div class="col-md-6">
+                <label for="sellUfe" class="form-label fw-semibold text-dark">Satış Ayı Yİ-ÜFE</label>
+                <input type="number" step="0.01" class="form-control form-control-lg" id="sellUfe"
+                  placeholder="Örn: 1500.75" required>
+                <div class="form-text small">Satış tarihinden önceki ayın ÜFE'si.</div>
+              </div>
+            </div>
+
+            <!-- Muafiyet İstisna Tutarı -->
+            <div class="mb-4">
+              <label for="exemption" class="form-label fw-semibold text-dark">Yıllık İstisna / Muafiyet Tutarı
+                (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="exemption" value="87000"
+                  placeholder="Örn: 87000" required>
+              </div>
+              <div class="form-text small">İlgili satış yılı için belirlenen yasal istisna tutarı.</div>
+            </div>
+
+            <!-- Buton -->
+            <button type="submit" class="btn btn-kw-red btn-lg w-100 rounded-pill fw-bold fs-6">
+              <i class="bi bi-calculator-fill me-2"></i>Hesapla
+            </button>
+
+          </form>
+
+          <!-- Sonuç Kutusu (Gizli Başlar) -->
+          <div id="resultContainer" class="mt-4 pt-3 border-top" style="display: none;">
+            <h5 class="fw-bold text-dark mb-3">Hesaplama Sonucu</h5>
+
+            <div class="result-box p-3 mb-3">
+              <div class="text-secondary small">Endekslenmiş Alış Bedeli:</div>
+              <div id="indexedBuyPrice" class="fs-5 fw-bold text-dark">₺0</div>
+            </div>
+
+            <div class="result-box p-3 mb-3">
+              <div class="text-secondary small">Safi Değer Artışı (İstisna Düşülmüş):</div>
+              <div id="taxableAmount" class="fs-4 fw-bold text-kw-red">₺0</div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SAĞ KOLON: Hesaplama Mantığı ve Açıklamalar -->
+      <div class="col-lg-6">
+        <div class="info-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-book me-2 text-kw-red"></i>Hesaplama Mantığı
+          </h4>
+
+          <p class="text-secondary">
+            Değer artış kazancı, gayrimenkulün iktisap (edinme) tarihinden itibaren <strong>5 yıl içinde</strong> bedel
+            karşılığı devredilmesi durumunda elde edilen gelirin vergilendirilmesi esasına dayanır.
+          </p>
+
+          <div class="vstack gap-3 my-4">
+
+            <!-- Adım 1 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">1</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Endeksleme (ÜFE Artış Oranı)</h6>
+                <p class="text-secondary small mb-0">
+                  Alış bedeli, enflasyon karşısında güncellenir. Ancak endeksleme yapılabilmesi için iki tarih
+                  arasındaki Yİ-ÜFE artış oranının <strong>%10 veya üzerinde</strong> olması gerekir.
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 2 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">2</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Güncellenmiş Alış Bedeli Formülü</h6>
+                <p class="text-secondary small mb-0">
+                  <code>Güncellenmiş Alış = Alış Fiyatı × (Satış Ayı ÜFE / Alış Ayı ÜFE)</code>
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 3 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">3</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">İstisna / Muafiyet Düşülmesi</h6>
+                <p class="text-secondary small mb-0">
+                  Elde edilen brüt kazançtan (Satış Fiyatı - Güncellenmiş Alış Fiyatı) ilgili yıla ait yasal istisna
+                  tutarı düşülerek vergilendirilecek matrah bulunur.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="p-3 bg-light rounded-3 border mt-4">
+            <small class="text-muted d-block">
+              <i class="bi bi-info-circle-fill text-kw-red me-1"></i>
+              <strong>Not:</strong> İktisap tarihinden itibaren 5 tam yıl geçtikten sonra yapılan satışlar değer artış
+              kazancı vergisinden tamamen muaftır.
+            </small>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- Hesaplama Scripti -->
+<script>
+  document.getElementById('calcForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const buyPrice = parseFloat(document.getElementById('buyPrice').value) || 0;
+    const sellPrice = parseFloat(document.getElementById('sellPrice').value) || 0;
+    const buyUfe = parseFloat(document.getElementById('buyUfe').value) || 0;
+    const sellUfe = parseFloat(document.getElementById('sellUfe').value) || 0;
+    const exemption = parseFloat(document.getElementById('exemption').value) || 0;
+
+    if (buyUfe <= 0 || sellUfe <= 0) {
+      alert("Lütfen geçerli ÜFE değerleri giriniz.");
+      return;
+    }
+
+    // ÜFE Artış Oranı Hesaplama (%10 şartı kontrolü için)
+    const ufeIncreaseRatio = (sellUfe - buyUfe) / buyUfe;
+
+    let indexedBuyPrice = buyPrice;
+
+    // Artış %10 veya üzerindeyse endeksleme yapılır
+    if (ufeIncreaseRatio >= 0.10) {
+      indexedBuyPrice = buyPrice * (sellUfe / buyUfe);
+    }
+
+    // Brüt Kazanç
+    const grossGain = sellPrice - indexedBuyPrice;
+
+    // İstisna Düşülmüş Vergilendirilebilir Matrah
+    let taxableAmount = 0;
+    if (grossGain > exemption) {
+      taxableAmount = grossGain - exemption;
+    }
+
+    // Para Birimi Biçimlendirme
+    const formatter = new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY' });
+
+    document.getElementById('indexedBuyPrice').innerText = formatter.format(indexedBuyPrice);
+    document.getElementById('taxableAmount').innerText = taxableAmount > 0 ? formatter.format(taxableAmount) : "Vergiye Tabi Kazanç Oluşmadı (Muaf)";
+
+    // Sonuç Kutusunu Göster
+    document.getElementById('resultContainer').style.display = 'block';
+  });
+</script>

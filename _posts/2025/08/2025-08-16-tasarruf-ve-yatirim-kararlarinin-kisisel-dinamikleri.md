@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Tasarruf ve Yatırım Kararlarının Kişisel Dinamikleri"
 description: "Finansal gelecek, herkes için ortak bir hedef gibi görünse de ona ulaşma yolları kişiden kişiye büyük farklılıklar gösterebilir."
-tags: ["yatırım"]
+tags: []
 ---
 
 Finansal gelecek, herkes için ortak bir hedef gibi görünse de ona ulaşma yolları kişiden kişiye büyük farklılıklar gösterebilir. Kimileri gelirinin önemli bir kısmını kenara ayırmayı tercih ederken, kimileri risk alarak yatırımlar üzerinden büyümeyi hedefler. Bu noktada **tasarruf ve yatırım kararları**, yalnızca gelir düzeyiyle değil; kişisel değerler, yaşam tarzı, risk algısı ve hayattan beklentilerle de şekillenir.

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Başlıca Yatırım Araçlarının Artı ve Eksileri"
 description: "Bu yazıda, Türkiye’de en çok tercih edilen yatırım araçlarını avantaj–dezavantaj karşılaştırmaları, yatırımcı profilleri ve pratik örneklerle inceleyeceğiz."
-tags: ["yatırım"]
+tags: []
 ---
 
 Yatırım, sadece para kazanmanın değil, aynı zamanda gelecekte *finansal güvence* oluşturmanın da en önemli yollarından biridir. Ancak yatırım dünyası oldukça geniştir ve her aracın kendine özgü riskleri, getirileri ve koşulları vardır. Hangi yatırım aracının size uygun olduğunu anlamak için, öncelikle temel seçenekleri iyi tanımak gerekir.

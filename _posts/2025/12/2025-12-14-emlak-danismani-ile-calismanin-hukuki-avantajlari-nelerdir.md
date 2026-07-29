@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Danışmanı ile Çalışmanın Hukuki Avantajları Nelerdir?"
 description: "Emlak alım-satım veya kiralama sürecinde hukuki riskleri nasıl azaltırsınız? Emlak danışmanının sunduğu sözleşme, tescil, yetki ve uyum avantajlarını adım adım açıklıyoruz."
-tags: ["emlak danışmanı"]
+tags: ["gayrimenkul danışmanı"]
 ---
 
 Emlak işlemleri hem finansal hem de hukuki açıdan karmaşık süreçlerdir. Eksik bir belge, hatalı bir devir veya yanlış yapılmış bir yetkilendirme yıllar sonra hak kaybına ya da devasa maliyetlere yol açabilir. Bu yazıda *alıcı, satıcı ve kiracı açısından* emlak danışmanı ile çalışmanın sağladığı başlıca hukuki avantajları, somut örnekleri ve uygulanabilir kontrol listelerini ele alıyorum. (Bu yazı genel bilgilendirme amaçlıdır; spesifik hukuki sorular için avukat veya noter danışmanlığı alın.)

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Satışı İçin İlan Hazırlarken Dikkat Edilmesi Gerekenler"
 description: "Bu yazıda, ev satış ilanı hazırlarken dikkat etmeniz gereken temel noktaları adım adım ele alıyoruz."
 ---

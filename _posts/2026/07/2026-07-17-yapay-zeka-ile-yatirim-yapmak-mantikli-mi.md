@@ -1,9 +1,10 @@
 ---
 layout: post
+custom_css: post
 title: "Yapay Zekâ ile Yatırım Yapmak Mantıklı mı?"
 description: "Yapay zekâ geleceği tahmin edebilir mi? Yapay zekânın yatırım kararlarındaki rolünü, avantajlarını, sınırlamalarını ve finansal okuryazarlık açısından nasıl doğru kullanılması gerektiğini detaylı şekilde öğrenin.
 "
-tags: ["yatırım", "yapay zeka", "finansal okuryazarlık"]
+tags: ["yapay zeka"]
 ---
 
 Son birkaç yılda yapay zekâ, hayatın birçok alanında olduğu gibi finans dünyasında da büyük bir dönüşüm başlattı. Artık yalnızca büyük yatırım fonları değil, bireysel yatırımcılar da yapay zekâ destekli analiz araçlarını kullanabiliyor. Hatta sosyal medyada sıkça "Yapay zekâ bana hangi hisseyi alacağımı söyledi.", "ChatGPT ile portföy yaptım." veya "Yapay zekâ sayesinde kazandım." gibi paylaşımlarla karşılaşmak mümkün.

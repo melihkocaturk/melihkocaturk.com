@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kira Şerhi Ne Anlama Gelmektedir?"
 description: "Kira şerhi tam olarak nedir, nasıl konulur ve hangi hakları sağlar?"
 tags: ["kira"]

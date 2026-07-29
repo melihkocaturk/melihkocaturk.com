@@ -1,0 +1,45 @@
+/* Page Header */
+.page-header {
+  background-color: var(--kw-light-bg);
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Rehber / PDF Kartı Stilleri */
+.guide-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e9ecef;
+  background-color: #ffffff;
+}
+
+.guide-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+/* PDF Kapak Mockup Alanı */
+.pdf-cover-placeholder {
+  height: 200px;
+  background: linear-gradient(135deg, #212529 0%, #343a40 100%);
+  border-top-left-radius: calc(0.5rem - 1px);
+  border-top-right-radius: calc(0.5rem - 1px);
+  display: flex;
+  flex-column: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Minimalist WhatsApp Button */
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1DA851;
+  color: white;
+}

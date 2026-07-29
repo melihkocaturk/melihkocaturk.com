@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlakçı mı, Gayrimenkul Danışmanı mı? Aynı Meslek Gibi Görünen İki Farklı Yaklaşım"
 description: "Emlakçı ile gayrimenkul danışmanı arasındaki farklar nelerdir? Emlakçılık ve gayrimenkul danışmanlığı arasındaki hizmet anlayışını, görevleri ve temel farklılıkları keşfedin."
-tags: ["emlak danışmanı", "emlak danışmanlığı", "emlakçı"]
+tags: ["gayrimenkul danışmanı"]
 ---
 
 Gayrimenkul sektöründe günlük konuşmalarda **emlakçı**, **emlak komisyoncusu** ve **gayrimenkul danışmanı** ifadeleri çoğu zaman birbirinin yerine kullanılıyor. Bir evini satmak veya kiraya vermek isteyen kişi için bu kavramlar arasında belirgin bir fark olmayabilir. Ancak gayrimenkul sektörünün gelişmesiyle birlikte mesleğin kapsamı, hizmet anlayışı ve müşteriye sunulan değer de önemli ölçüde değişti.

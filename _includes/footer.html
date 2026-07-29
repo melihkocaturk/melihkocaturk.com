@@ -1,22 +1,54 @@
-<footer class="container py-5">
-  <ul class="list-inline">
-    <li class="list-inline-item"> <a href="{{ site.social.linkedin }}" class="text-dark" target="_blank">
-        <i class="bi bi-linkedin"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="{{ site.social.instagram }}" class="text-dark" target="_blank">
-        <i class="bi bi-instagram"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="{{ site.social.youtube }}" class="text-dark" target="_blank">
-        <i class="bi bi-youtube"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="{{ site.social.twitter }}" class="text-dark" target="_blank">
-        <i class="bi bi-twitter-x"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="/feed.xml" class="text-dark" target="_blank">
-        <i class="bi bi-rss"></i>
-      </a></li>
-  </ul>
-  <p class="small">© {{ "now" | date: "%Y" }} {{ site.title }}. Tüm hakları saklıdır.</p>
-  <p class="small"><a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a> / <a
-      href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a></p>
+<!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4 align-items-center mb-4">
+      <!-- Sol Kolon: İsim ve Ünvan -->
+      <div class="col-lg-5">
+        <h4 class="fw-bold text-white mb-2 text-uppercase">{{ site.title }}</h4>
+        <p class="text-secondary small mb-0">{{ site.subtitle }}</p>
+      </div>
+
+      <!-- Orta Kolon: Keller Williams Logosu -->
+      <div class="col-lg-3 text-lg-center">
+        <div class="d-inline-flex align-items-center">
+          <a href="https://www.kwforessisli.com.tr/tr/" rel="nofollow">
+            <img
+              src="/images/kw-fores-logo.png"
+              alt="KW Fores Şişli"
+              width="160"
+            >
+          </a>
+        </div>
+      </div>
+
+      <!-- Sağ Kolon: Sosyal Bağlantılar -->
+      <div class="col-lg-4 text-lg-end">
+        <div class="d-flex gap-3 justify-content-lg-end fs-5 text-secondary">
+          {% for item in site.data.social %}
+            <a href="{{ item.link }}" class="text-secondary text-white-hover"
+              ><i class="bi bi-{{- item.name -}}"></i
+            ></a>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary opacity-25">
+
+    <!-- Alt Bilgi ve Yasal Metin Linkleri -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-secondary small">
+      <div>
+        © {{ 'now' | date: '%Y' }}
+        {{ site.title }}. Tüm hakları saklıdır.
+      </div>
+      <div class="d-flex gap-3">
+        {% for item in site.data.sub_nav %}
+          <a href="{{ item.link }}" class="text-secondary">{{- item.name -}}</a>
+          {% unless forloop.last -%}
+            <span>•</span>
+          {%- endunless %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 </footer>

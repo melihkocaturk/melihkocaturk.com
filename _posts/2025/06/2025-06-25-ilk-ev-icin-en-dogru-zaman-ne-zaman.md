@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "İlk Ev İçin En Doğru Zaman Ne Zaman?"
 description: "Bu yazıda, ilk evinizi almak için en uygun zamanı belirlerken göz önünde bulundurmanız gereken tüm önemli faktörleri detaylıca ele alıyoruz."
 ---

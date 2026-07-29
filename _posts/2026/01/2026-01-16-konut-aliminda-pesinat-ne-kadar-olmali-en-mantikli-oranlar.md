@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Alımında Peşinat Ne Kadar Olmalı? En Mantıklı Oranlar"
 description: "Bu yazıda, hem yasal çerçeveyi hem de bütçeni koruyacak ideal peşinat stratejilerini detaylı şekilde ele alıyoruz."
 ---

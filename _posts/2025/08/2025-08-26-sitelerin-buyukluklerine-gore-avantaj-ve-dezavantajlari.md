@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Sitelerin Büyüklüklerine Göre Avantaj ve Dezavantajları"
 description: "Bu yazıda, küçük, orta ve büyük sitelerin özelliklerini detaylı bir şekilde ele alacağız."
 ---

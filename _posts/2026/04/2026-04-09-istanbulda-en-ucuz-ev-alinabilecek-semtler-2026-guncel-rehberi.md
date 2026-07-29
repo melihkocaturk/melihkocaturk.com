@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "İstanbul’da En Ucuz Ev Alınabilecek Semtler (2026 Güncel Rehberi)"
 description: "Bu yazıda, 2026 yılı itibarıyla İstanbul’da en ucuz ev alınabilecek semtleri, fiyat seviyeleriyle birlikte detaylı şekilde inceleyeceğiz. Ayrıca bu bölgelerin avantajlarını, risklerini ve yatırım potansiyelini de analiz edeceğiz."
-tags: ["konut piyasası", "konut yatırımı"]
+tags: ["gayrimenkul piyasası", "konut yatırımı"]
 ---
 
 İstanbul’da ev sahibi olmak her geçen yıl zorlaşıyor. Artan maliyetler, yüksek talep ve sınırlı arsa üretimi nedeniyle fiyatlar sürekli yükseliyor. Ancak hâlâ doğru bölgeleri seçersen uygun fiyatlı konut bulmak mümkün.

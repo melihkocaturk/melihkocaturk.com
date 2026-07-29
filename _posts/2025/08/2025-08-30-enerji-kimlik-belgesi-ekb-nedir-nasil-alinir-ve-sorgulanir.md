@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Enerji Kimlik Belgesi (EKB) Nedir? Nasıl Alınır ve Sorgulanır?"
 description: "Özellikle gayrimenkul alım-satım ve kiralama işlemlerinde yasal olarak zorunlu hale gelen bu belge, hem bina sahiplerini hem de alıcı ve kiracıları doğrudan ilgilendiriyor."
-tags: ["enerji verimliliği"]
+tags: ["konut yatırımı"]
 ---
 
 Enerji verimliliği günümüzde hem çevresel hem de ekonomik açıdan büyük önem taşımaktadır. Bu noktada binaların enerji performansını ölçmek ve standart hale getirmek amacıyla *Enerji Kimlik Belgesi (EKB)* uygulamaya konulmuştur. Özellikle gayrimenkul alım-satım ve kiralama işlemlerinde yasal olarak zorunlu hale gelen bu belge, hem bina sahiplerini hem de alıcı ve kiracıları doğrudan ilgilendiriyor.

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Döviz Kurunun Yükselmesi Konut Fiyatlarını Nasıl Etkiler?"
 description: "Döviz kurunun yükselmesi konut fiyatlarını nasıl etkiler? Bu yazıda, bu ilişkinin tüm boyutlarını ele alacağız."
-tags: ["gayrimenkul sektörü", "döviz kuru"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Türkiye’de döviz kuru ile gayrimenkul sektörü arasında çok güçlü bir bağ vardır. Çünkü konut üretiminde kullanılan malzemelerden yabancı yatırımcı talebine, kredi faizlerinden kiralara kadar birçok unsur doğrudan döviz hareketlerinden etkilenir. Özellikle son yıllarda döviz kurlarındaki dalgalanmalar, konut piyasasının yönünü belirleyen en önemli faktörlerden biri haline gelmiştir.

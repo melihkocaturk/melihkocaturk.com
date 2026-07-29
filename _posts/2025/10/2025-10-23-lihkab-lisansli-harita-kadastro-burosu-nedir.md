@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "LİHKAB (Lisanslı Harita Kadastro Bürosu) Nedir?"
 description: "Lisanslı Harita Kadastro Bürolarının görevleri, yetkileri ve gayrimenkul işlemlerindeki rolü hakkında detaylı rehber."
 ---

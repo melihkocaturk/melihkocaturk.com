@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "İnsanlar Hayatlarının Hangi Döneminde Gayrimenkul Satın Alma Kararı Verirler?"
 description: "Gayrimenkul satın almak, çoğu insanın hayatında verdiği en önemli finansal kararlardan biridir. Ancak bu karar, herkes için aynı dönemde gerçekleşmez."
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kentsel Dönüşümde Arsa Payı Neden Önemlidir?"
 description: "Bu yazıda, kentsel dönüşümde arsa payının ne anlama geldiğini, nasıl belirlendiğini ve hak kayıplarının nasıl önlenebileceğini detaylı olarak ele alacağız."
 tags: ["arsa payı", "kentsel dönüşüm"]

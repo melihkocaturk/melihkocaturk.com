@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Danışmanlığı Gerçekten Karlı mı? 2026’da Bu Mesleğin Gerçek Kazanç Potansiyeli"
 description: "Bu yazıda emlak danışmanlığının gelir potansiyelini, avantajlarını, zorluklarını ve bu meslekte gerçekten para kazanmanın yollarını detaylı şekilde ele alacağız."
-tags: ["emlak danışmanlığı", "emlak danışmanı", "emlak komisyonu"]
+tags: ["gayrimenkul danışmanı"]
 ---
 
 Gayrimenkul sektörü yıllardır girişimcilerin, satış yeteneği olan profesyonellerin ve yatırım dünyasına yakın olmak isteyenlerin ilgisini çeken bir alan. Özellikle son yıllarda birçok kişi kariyer değişikliği yaparak emlak danışmanlığına yöneliyor. Peki herkesin merak ettiği o soru: **Emlak danışmanlığı gerçekten karlı mı?**

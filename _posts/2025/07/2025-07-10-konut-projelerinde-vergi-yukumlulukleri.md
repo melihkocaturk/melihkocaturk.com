@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Projelerinde Vergi Yükümlülükleri"
 description: "Bu yazımızda, konut projelerine yatırım yapmayı planlayan ya da yatırım yapmış olan kişiler için Türkiye’de geçerli temel vergi yükümlülüklerini sade ve anlaşılır şekilde özetledik."
-tags: ["vergi"]
+tags: ["konut projeleri"]
 ---
 
 Konut projelerine yatırım yapmak, uzun vadede yüksek kazanç sağlayabilecek stratejik bir hamledir. Ancak bu sürecin önemli bir parçası da *vergi yükümlülükleridir*. Gerek yatırım öncesi gerekse sonrasında, vergi mevzuatına uygun hareket etmek hem cezai durumlardan kaçınmak hem de yatırımın sürdürülebilirliği açısından büyük önem taşır.

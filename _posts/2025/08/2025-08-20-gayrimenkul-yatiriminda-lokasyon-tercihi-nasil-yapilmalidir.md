@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Yatırımında Lokasyon Tercihi Nasıl Yapılmalıdır?"
 description: "Doğru lokasyonu seçmek, yatırımınızın kira getirisi, değer artışı ve satış kolaylığı açısından belirleyici olacaktır. Peki, gayrimenkul yatırımında lokasyon tercihi nasıl yapılmalıdır?"
-tags: ["gayrimenkul yatırımı"]
+tags: []
 ---
 
 Gayrimenkul yatırımı, hem güvenli hem de uzun vadede kazançlı bir yatırım aracı olarak görülür. Ancak yatırımın kârlı olup olmayacağını belirleyen en önemli faktör lokasyondur. Aynı şehirde, hatta aynı mahallede bile iki farklı konutun getirisi, sadece bulunduğu sokaktan ötürü ciddi farklar gösterebilir.

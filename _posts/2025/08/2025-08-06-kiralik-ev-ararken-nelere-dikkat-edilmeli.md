@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kiralık Ev Ararken Nelere Dikkat Edilmeli?"
 description: "Bu yazıda, kiralık ev ararken dikkat etmeniz gereken en önemli konuları ele alıyoruz."
 tags: ["kira"]

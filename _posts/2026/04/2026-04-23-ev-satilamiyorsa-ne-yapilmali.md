@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Satılamıyorsa Ne Yapılmalı?"
 description: "Bu yazıda, eviniz satılmıyorsa nerede hata yapıyor olabileceğinizi ve süreci nasıl tersine çevirebileceğinizi detaylı şekilde ele alıyoruz."
-tags: ["emlak pazarlama"]
+tags: []
 ---
 
 Bir evi satışa koyup aylarca alıcı bulamamak, hem maddi hem de psikolojik olarak yıpratıcı olabilir. Özellikle 2026 gibi dalgalı piyasa koşullarında, “ilanı verdim bekliyorum” yaklaşımı artık yeterli değil. Bu yazıda, eviniz satılmıyorsa nerede hata yapıyor olabileceğinizi ve süreci nasıl tersine çevirebileceğinizi detaylı şekilde ele alıyoruz.

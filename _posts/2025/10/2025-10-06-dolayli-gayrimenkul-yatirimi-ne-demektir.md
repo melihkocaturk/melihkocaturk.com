@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Dolaylı Gayrimenkul Yatırımı Ne Demektir?"
 description: "Dolaylı gayrimenkul yatırımı tam olarak nedir, nasıl yapılır ve doğrudan yatırımlardan farkı nedir?"
-tags: ["gayrimenkul yatırımı", "gyo", "gayrimenkul sertifikası"]
+tags: []
 ---
 
 Gayrimenkul yatırımı denildiğinde çoğu kişinin aklına ilk olarak arsa, daire veya ticari mülk satın almak gelir. Ancak günümüzde teknolojinin, finansal araçların ve yatırım modellerinin gelişmesiyle birlikte gayrimenkulden kazanç elde etmenin farklı yolları da ortaya çıktı. Bunlardan biri de *dolaylı gayrimenkul yatırımı*dır.

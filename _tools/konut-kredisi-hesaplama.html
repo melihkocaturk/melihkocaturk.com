@@ -1,216 +1,262 @@
 ---
 layout: page
 title: "Konut Kredisi Hesaplama"
-description: "Konut kredisi aylık taksit ve toplam geri ödeme tutarını anında hesaplayın. Peşinat, faiz ve vade
-oranlarını girin, bütçenize en uygun evi kolayca bulun!"
+description: "Çekmeyi planladığınız kredi tutarı, aylık faiz oranı ve vade süresini girerek aylık taksitlerinizi ve
+toplam geri ödeme tutarınızı hesaplayın."
 permalink: /araclar/konut-kredisi-hesaplama.html
+tag: "Kredi & Finans"
+icon: bank
 ---
 
-<div class="container mb-5" style="max-width: 520px;">
-  <div class="card border">
-    <div class="card-body p-4">
-      <form id="mortgageCalculatorForm" onsubmit="event.preventDefault(); calculateMortgage();">
-        <!-- Property Price -->
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="propertyPrice" placeholder="5000000" value="5000000" required>
-          <label for="propertyPrice">Konut Tutarı (TL)</label>
-        </div>
-
-        <!-- Down Payment -->
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="downPayment" placeholder="1500000" value="1500000" required>
-          <label for="downPayment">Peşinat Tutarı (TL)</label>
-        </div>
-
-        <!-- Interest Rate & Loan Term (Grid System) -->
-        <div class="row g-2 mb-3">
-          <div class="col-md-6">
-            <div class="form-floating">
-              <input type="number" step="0.01" class="form-control" id="interestRate" placeholder="3.05" value="3.05"
-                required>
-              <label for="interestRate">Aylık Faiz (%)</label>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-floating">
-              <input type="number" class="form-control" id="loanTerm" placeholder="120" value="120" required>
-              <label for="loanTerm">Vade (Ay)</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Calculate Button -->
-        <button type="submit" class="btn btn-dark w-100 py-3 fw-bold rounded-3">
-          Aylık Taksiti Hesapla
-        </button>
-      </form>
-
-      <!-- Results Section -->
-      <div id="resultsContainer" class="mt-4 p-3 bg-body-tertiary rounded-3 border d-none">
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Kredi Tutarı:</span>
-          <span class="fw-semibold" id="loanAmountOutput">0 TL</span>
-        </div>
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Aylık Taksit:</span>
-          <span class="fw-bold fs-4 text-danger" id="monthlyPaymentOutput">0 TL</span>
-        </div>
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Toplam Geri Ödeme:</span>
-          <span class="fw-semibold" id="totalPaymentOutput">0 TL</span>
-        </div>
-      </div>
-
-      <!-- Error Alert Area -->
-      <div id="errorMessage" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
-    </div>
-  </div>
-</div>
-
-<!-- CSS for Fractional Formula Display -->
 <style>
-  .fraction {
+  main {
+    flex: 1;
+  }
+
+  /* Kartlar & Form Stilleri */
+  .calc-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
+
+  .info-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    border-color: var(--kw-red);
+    box-shadow: 0 0 0 0.25rem rgba(206, 1, 31, 0.15);
+  }
+
+  .result-box {
+    background-color: #ffffff;
+    border-left: 4px solid var(--kw-red);
+    border-radius: 8px;
+  }
+
+  /* Adım Rakamları (Sabit Boyut) */
+  .step-badge {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 50%;
+    background-color: rgba(206, 1, 31, 0.1);
+    color: var(--kw-red);
     display: inline-flex;
-    flex-direction: column;
-    vertical-align: middle;
-    text-align: center;
-    padding: 0 4px;
-  }
-
-  .fraction .numerator {
-    border-bottom: 2px solid #212529;
-    padding-bottom: 2px;
-  }
-
-  .fraction .denominator {
-    padding-top: 2px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
   }
 </style>
 
-<div class="container my-4" style="max-width: 520px;">
-  <div class="card border">
-    <div class="card-body p-4">
-      <h4 class="card-title text-dark fw-bold mb-3 mt-0">
-        Konut Kredisi Hesaplama Formülü
-      </h4>
-      <p class="text-muted small mb-4">
-        Aylık taksit tutarı, bankacılık sektöründe standart olarak kullanılan <strong>Eşit Taksitli Kredi Amortisman
-          Formülü</strong> ile hesaplanmaktadır.
+<!-- Ana İçerik -->
+<main class="py-5">
+  <div class="container py-3">
+
+    <!-- Başlık Bölümü -->
+    <div class="text-center mb-5">
+      <span class="badge bg-danger-subtle text-danger px-3 py-2 rounded-pill fw-semibold mb-2">
+        <i class="bi bi-calculator me-1"></i> {{ page.tag }}
+      </span>
+      <h1 class="fw-bold text-dark mb-2">{{ page.title }}</h1>
+      <p class="text-secondary mx-auto" style="max-width: 680px;">
+        {{ page.description }}
       </p>
-
-      <!-- Formül Alanı -->
-      <div class="bg-body-tertiary p-3 rounded-3 text-center mb-4 border fs-5 fw-bold text-dark">
-        <span>M = P &times; </span>
-        <div class="fraction">
-          <span class="numerator">r(1 + r)<sup>n</sup></span>
-          <span class="denominator">(1 + r)<sup>n</sup> &minus; 1</span>
-        </div>
-      </div>
-
-      <!-- Değişkenlerin Anlamları Listesi -->
-      <h6 class="fw-bold text-secondary mb-3">Değişkenlerin Anlamları</h6>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">M (Aylık Taksit Tutarı)</div>
-            <span class="small text-secondary">Her ay ödenmesi gereken sabit tutardır.</span>
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">P (Kredi Tutarı (Anapara))</div>
-            <span class="small text-secondary">Konut fiyatından peşinat çıkarıldıktan sonra çekilen net kredi
-              tutarıdır.</span>
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">r (Aylık Faiz Oranı)</div>
-            <span class="small text-secondary">Yüzde olarak girilen aylık faiz oranının ondalık karşılığıdır (Örn: %3,05
-              faiz için 0.0305).</span>
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">n (Kredi Vadesi)</div>
-            <span class="small text-secondary">Taksitlerin toplam ay sayısıdır (Örn: 10 yıl için 120 ay).</span>
-          </div>
-        </li>
-      </ul>
-
-      <!-- Ek Hesaplamalar -->
-      <div class="mt-4 pt-3 border-top">
-        <h6 class="fw-bold text-secondary mb-2">Yardımcı Formüller</h6>
-        <div class="small text-muted">
-          <p class="mb-1"><strong>Çekilecek Kredi Tutarı (P):</strong> Konut Fiyatı &minus; Peşinat</p>
-          <p class="mb-0"><strong>Toplam Geri Ödeme:</strong> M &times; n (Aylık Taksit &times; Vade)</p>
-        </div>
-      </div>
     </div>
+
+    <div class="row g-4 align-items-start">
+
+      <!-- SOL KOLON: Form Alanı -->
+      <div class="col-lg-6">
+        <div class="calc-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-sliders me-2 text-kw-red"></i>Kredi Bilgileri
+          </h4>
+
+          <form id="loanForm">
+
+            <!-- Kredi Tutarı -->
+            <div class="mb-3">
+              <label for="loanAmount" class="form-label fw-semibold text-dark">Kredi Tutarı (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="loanAmount"
+                  placeholder="Örn: 2000000" required>
+              </div>
+            </div>
+
+            <!-- Aylık Faiz Oranı -->
+            <div class="mb-3">
+              <label for="interestRate" class="form-label fw-semibold text-dark">Aylık Faiz Oranı (%)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">%</span>
+                <input type="number" step="0.01" class="form-control form-control-lg border-start-0" id="interestRate"
+                  placeholder="Örn: 2.79" required>
+              </div>
+              <div class="form-text small">Banka tarafından sunulan aylık akdi faiz oranını giriniz.</div>
+            </div>
+
+            <!-- Vade (Ay / Yıl Seçimi) -->
+            <div class="mb-4">
+              <label for="loanTerm" class="form-label fw-semibold text-dark">Vade Süresi (Ay)</label>
+              <select class="form-select form-select-lg border-0 shadow-sm" id="loanTerm" required>
+                <option value="12">12 Ay (1 Yıl)</option>
+                <option value="24">24 Ay (2 Yıl)</option>
+                <option value="36">36 Ay (3 Yıl)</option>
+                <option value="48">48 Ay (4 Yıl)</option>
+                <option value="60">60 Ay (5 Yıl)</option>
+                <option value="84">84 Ay (7 Yıl)</option>
+                <option value="120" selected>120 Ay (10 Yıl)</option>
+                <option value="144">144 Ay (12 Yıl)</option>
+                <option value="180">180 Ay (15 Yıl)</option>
+              </select>
+            </div>
+
+            <!-- Buton -->
+            <button type="submit" class="btn btn-kw-red btn-lg w-100 rounded-pill fw-bold fs-6">
+              <i class="bi bi-calculator-fill me-2"></i>Taksitleri Hesapla
+            </button>
+
+          </form>
+
+          <!-- Sonuç Kutusu (Gizli Başlar) -->
+          <div id="resultContainer" class="mt-4 pt-3 border-top" style="display: none;">
+            <h5 class="fw-bold text-dark mb-3">Hesaplama Sonucu</h5>
+
+            <div class="result-box p-3 mb-3">
+              <div class="text-secondary small">Aylık Taksit Tutarı:</div>
+              <div id="monthlyPayment" class="fs-4 fw-bold text-kw-red">₺0</div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="result-box p-3 h-100">
+                  <div class="text-secondary small">Toplam Geri Ödeme:</div>
+                  <div id="totalPayment" class="fs-5 fw-bold text-dark">₺0</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="result-box p-3 h-100">
+                  <div class="text-secondary small">Toplam Ödenecek Faiz:</div>
+                  <div id="totalInterest" class="fs-5 fw-bold text-dark">₺0</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SAĞ KOLON: Hesaplama Mantığı -->
+      <div class="col-lg-6">
+        <div class="info-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-book me-2 text-kw-red"></i>Hesaplama Mantığı
+          </h4>
+
+          <p class="text-secondary">
+            Konut kredisi taksitleri, bankacılık sektöründe standart kabul edilen <strong>sabit taksitli
+              (annuite)</strong> kredi geri ödeme formülü kullanılarak hesaplanır.
+          </p>
+
+          <div class="vstack gap-3 my-4">
+
+            <!-- Adım 1 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">1</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Aylık Taksit Formülü</h6>
+                <p class="text-secondary small mb-0">
+                  <code>Taksit = Kredi Tutarı × [ (i × (1 + i)ⁿ) / ((1 + i)ⁿ - 1) ]</code>
+                  <br><span class="text-muted">(i: Aylık faiz oranı, n: Toplam ay / vade)</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 2 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">2</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Toplam Geri Ödeme Hesabı</h6>
+                <p class="text-secondary small mb-0">
+                  Hesaplanan aylık taksit tutarı, seçilen vade süresi (ay) ile çarpılarak bankaya ödenecek olan toplam
+                  tutar bulunur.
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 3 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">3</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Maliyet / Faiz Yükü</h6>
+                <p class="text-secondary small mb-0">
+                  Toplam geri ödeme tutarından çekilen anapara kredi miktarı çıkarılarak kredi süresince katlanılan faiz
+                  maliyeti elde edilir.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="p-3 bg-light rounded-3 border mt-4">
+            <small class="text-muted d-block">
+              <i class="bi bi-info-circle-fill text-kw-red me-1"></i>
+              <strong>Not:</strong> Hesaplamalara sigorta, dosya masrafı veya ipotek tesis ücretleri dahil edilmemiştir.
+              Bireysel konut kredilerinde KKDF ve BSMV vergileri muaf tutulmaktadır.
+            </small>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
   </div>
-</div>
+</main>
 
+<!-- Hesaplama Scripti -->
 <script>
-  function calculateMortgage() {
-    // Get input values
-    const propertyPrice = parseFloat(document.getElementById('propertyPrice').value) || 0;
-    const downPayment = parseFloat(document.getElementById('downPayment').value) || 0;
-    const interestRate = parseFloat(document.getElementById('interestRate').value) || 0;
-    const loanTerm = parseInt(document.getElementById('loanTerm').value) || 0;
+  document.getElementById('loanForm').addEventListener('submit', function (e) {
+    e.preventDefault();
 
-    const resultsContainer = document.getElementById('resultsContainer');
-    const errorMessage = document.getElementById('errorMessage');
+    const amount = parseFloat(document.getElementById('loanAmount').value) || 0;
+    const rateInput = parseFloat(document.getElementById('interestRate').value) || 0;
+    const months = parseInt(document.getElementById('loanTerm').value) || 0;
 
-    // Reset error state
-    errorMessage.classList.add('d-none');
-
-    // Validation checks
-    if (propertyPrice <= 0 || loanTerm <= 0) {
-      errorMessage.innerText = "Lütfen geçerli bir konut tutarı ve vade giriniz.";
-      errorMessage.classList.remove('d-none');
-      resultsContainer.classList.add('d-none');
+    if (amount <= 0 || rateInput <= 0 || months <= 0) {
+      alert("Lütfen tüm alanları geçerli değerlerle doldurunuz.");
       return;
     }
 
-    const loanAmount = propertyPrice - downPayment;
+    // Aylık Faiz Oranı (Yüzdelik değeri ondalığa çevirme)
+    const monthlyRate = rateInput / 100;
 
-    if (loanAmount <= 0) {
-      errorMessage.innerText = "Peşinat tutarı konut fiyatından büyük veya eşit olamaz.";
-      errorMessage.classList.remove('d-none');
-      resultsContainer.classList.add('d-none');
-      return;
-    }
+    // Sabit Taksit Formülü (Annuite)
+    // T = P * [ (i * (1+i)^n) / ((1+i)^n - 1) ]
+    const factor = Math.pow(1 + monthlyRate, months);
+    const monthlyPayment = amount * ((monthlyRate * factor) / (factor - 1));
 
-    let monthlyPayment = 0;
-    let totalPayment = 0;
+    const totalPayment = monthlyPayment * months;
+    const totalInterest = totalPayment - amount;
 
-    if (interestRate > 0) {
-      // Monthly interest rate conversion (e.g. 3.05 -> 0.0305)
-      const monthlyRate = interestRate / 100;
+    // Para Birimi Biçimlendirme
+    const formatter = new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY' });
 
-      // Amortization Formula: M = P * [r(1+r)^n] / [(1+r)^n - 1]
-      const rateFactor = Math.pow(1 + monthlyRate, loanTerm);
-      monthlyPayment = loanAmount * (monthlyRate * rateFactor) / (rateFactor - 1);
-      totalPayment = monthlyPayment * loanTerm;
-    } else {
-      // Zero interest edge case
-      monthlyPayment = loanAmount / loanTerm;
-      totalPayment = loanAmount;
-    }
+    // Sonuçları Ekran Alanlarına Yazdır
+    document.getElementById('monthlyPayment').innerText = formatter.format(monthlyPayment);
+    document.getElementById('totalPayment').innerText = formatter.format(totalPayment);
+    document.getElementById('totalInterest').innerText = formatter.format(totalInterest);
 
-    // Currency Formatter (Turkish Lira)
-    const currencyFormatter = new Intl.NumberFormat('tr-TR', {
-      style: 'currency',
-      currency: 'TRY',
-      maximumFractionDigits: 0
-    });
-
-    // Output formatted results
-    document.getElementById('loanAmountOutput').innerText = currencyFormatter.format(loanAmount);
-    document.getElementById('monthlyPaymentOutput').innerText = currencyFormatter.format(monthlyPayment);
-    document.getElementById('totalPaymentOutput').innerText = currencyFormatter.format(totalPayment);
-
-    // Display results
-    resultsContainer.classList.remove('d-none');
-  }
+    // Sonuç Kutusunu Görünür Yap
+    document.getElementById('resultContainer').style.display = 'block';
+  });
 </script>

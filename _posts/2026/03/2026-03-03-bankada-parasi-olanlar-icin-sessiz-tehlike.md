@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Bankada Parası Olanlar İçin Sessiz Tehlike: Görünmeyen Riskler ve Korunma Yolları"
 description: "Bu yazıda, bankada parası olanların çoğu zaman fark etmediği sessiz riskleri ve bu risklere karşı alınabilecek akıllı önlemleri detaylı şekilde ele alıyoruz."
-tags: ["faiz", "enflasyon"]
+tags: []
 ---
 
 Bankada para tutmak çoğu kişi için güvenli liman olarak görülür. Özellikle belirsiz ekonomik dönemlerde, “param bankada dursun, kafam rahat olsun” düşüncesi oldukça yaygındır. Ancak finans dünyasının değişen dinamikleri, bankada bekleyen paranın her zaman sandığımız kadar güvende ve değerini korur durumda olmadığını gösteriyor.

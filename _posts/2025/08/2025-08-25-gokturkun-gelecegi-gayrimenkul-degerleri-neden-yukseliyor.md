@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk’ün Geleceği: Gayrimenkul Değerleri Neden Yükseliyor?"
 description: "Doğa ile iç içe yaşamı, ulaşım kolaylıkları ve modern konut projeleri sayesinde bölgedeki gayrimenkul değerleri her geçen gün yükseliyor."
-tags: ["göktürk", "gayrimenkul yatırımı"]
+tags: ["göktürk", ]
 ---
 
 İstanbul’un hızla gelişen bölgelerinden biri olan Göktürk, son yıllarda gayrimenkul yatırımcılarının ve ailelerin en çok tercih ettiği lokasyonlardan biri haline geldi. Doğa ile iç içe yaşamı, ulaşım kolaylıkları ve *modern konut projeleri* sayesinde bölgedeki gayrimenkul değerleri her geçen gün yükseliyor. Peki, Göktürk’te konut fiyatları neden bu kadar artıyor?

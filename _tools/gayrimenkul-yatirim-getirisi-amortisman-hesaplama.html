@@ -1,137 +1,259 @@
 ---
 layout: page
 title: "Gayrimenkul Yatırım Getirisi (Amortisman) Hesaplama"
-description: "Gayrimenkulünüzün amortisman süresini ve yıllık brüt getiri oranını saniyeler içinde hesaplayın. Doğru
-kira geliri analiziyle yatırım kararınızı güvenle verin!"
+description: "Gayrimenkulün satış bedeli, aylık kira geliri ve olası giderlerini girerek yatırımınızın geri dönüş
+süresini ve yıllık net getiri oranını hesaplayın."
 permalink: /araclar/gayrimenkul-yatirim-getirisi-amortisman-hesaplama.html
+tag: "Yatırım Analizi"
+icon: graph-up-arrow
 ---
 
-<div class="container mb-5" style="max-width: 520px;">
-  <div class="card border">
-    <div class="card-body p-4">
-      <form id="roiCalculatorForm" onsubmit="event.preventDefault(); calculateROI();">
-        <!-- Property Price -->
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="propertyValue" placeholder="5000000" value="5000000" required>
-          <label for="propertyValue">Gayrimenkul Satış Bedeli (TL)</label>
-        </div>
+<style>
+  main {
+    flex: 1;
+  }
 
-        <!-- Monthly Rental Income -->
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="monthlyRent" placeholder="25000" value="25000" required>
-          <label for="monthlyRent">Tahmini Aylık Kira Getirisi (TL)</label>
-        </div>
+  /* Kartlar & Form Stilleri */
+  .calc-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
 
-        <!-- Calculate Button -->
-        <button type="submit" class="btn btn-dark w-100 py-3 fw-bold rounded-3">
-          Amortisman Süresini Hesapla
-        </button>
-      </form>
+  .info-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
 
-      <!-- Results Section -->
-      <div id="roiResultsContainer" class="mt-4 p-3 bg-body-tertiary rounded-3 border d-none">
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Yıllık Toplam Kira Geliri:</span>
-          <span class="fw-semibold" id="annualRentOutput">0 TL</span>
-        </div>
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Amortisman Süresi:</span>
-          <span class="fw-bold fs-4 text-danger" id="paybackPeriodOutput">0 Yıl</span>
-        </div>
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Yıllık Brüt Getiri Oranı:</span>
-          <span class="fw-bold text-dark" id="grossRoiOutput">%0</span>
-        </div>
-      </div>
+  .form-control:focus,
+  .form-select:focus {
+    border-color: var(--kw-red);
+    box-shadow: 0 0 0 0.25rem rgba(206, 1, 31, 0.15);
+  }
 
-      <!-- Error Alert Area -->
-      <div id="roiErrorMessage" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
-    </div>
-  </div>
-</div>
+  .result-box {
+    background-color: #ffffff;
+    border-left: 4px solid var(--kw-red);
+    border-radius: 8px;
+  }
 
-<div class="container my-4" style="max-width: 520px;">
-  <div class="card border">
-    <div class="card-body p-4">
-      <h4 class="card-title text-dark fw-bold mb-3 mt-0">
-        Amortisman ve Yatırım Getirisi Mantığı
-      </h4>
-      <p class="text-muted small mb-4">
-        Gayrimenkul yatırımında amortisman süresi, bir mülkün satın alma bedelinin elde edilen kira gelirleri ile kaç
-        yılda geri karşılanacağını gösterir.
+  /* Adım Rakamları (Sabit Boyut) */
+  .step-badge {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 50%;
+    background-color: rgba(206, 1, 31, 0.1);
+    color: var(--kw-red);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+</style>
+
+<!-- Ana İçerik -->
+<main class="py-5">
+  <div class="container py-3">
+
+    <!-- Başlık Bölümü -->
+    <div class="text-center mb-5">
+      <span class="badge bg-danger-subtle text-danger px-3 py-2 rounded-pill fw-semibold mb-2">
+        <i class="bi bi-calculator me-1"></i> {{ page.tag }}
+      </span>
+      <h1 class="fw-bold text-dark mb-2">{{ page.title }}</h1>
+      <p class="text-secondary mx-auto" style="max-width: 680px;">
+        {{ page.description }}
       </p>
-
-      <!-- Değişkenlerin Anlamları Listesi -->
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Yıllık Kira Geliri</div>
-            <span class="small text-secondary">Aylık Tahmini Kira &times; 12 Ay</span>
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Amortisman Süresi (Yıl)</div>
-            <span class="small text-secondary">Gayrimenkul Satış Bedeli &divide; Yıllık Kira Geliri</span>
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Yıllık Brüt Getiri Oranı (%)</div>
-            <span class="small text-secondary">(Yıllık Kira Geliri &divide; Gayrimenkul Satış Bedeli) &times; 100</span>
-          </div>
-        </li>
-      </ul>
-
-      <!-- Bilgilendirme Notu -->
-      <div class="mt-3 p-3 bg-body-tertiary rounded-3 border">
-        <span class="small text-muted">
-          <strong>İpucu:</strong> Türkiye ortalamasında 15-18 yıl arası amortisman süreleri yatırım açısından oldukça
-          cazip kabul edilir.
-        </span>
-      </div>
     </div>
+
+    <div class="row g-4 align-items-start">
+
+      <!-- SOL KOLON: Form Alanı -->
+      <div class="col-lg-6">
+        <div class="calc-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-sliders me-2 text-kw-red"></i>Yatırım Bilgileri
+          </h4>
+
+          <form id="amortizationForm">
+
+            <!-- Gayrimenkul Fiyatı -->
+            <div class="mb-3">
+              <label for="propertyPrice" class="form-label fw-semibold text-dark">Gayrimenkul Değeri / Alış Fiyatı
+                (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="propertyPrice"
+                  placeholder="Örn: 6000000" required>
+              </div>
+            </div>
+
+            <!-- Aylık Kira Geliri -->
+            <div class="mb-3">
+              <label for="monthlyRent" class="form-label fw-semibold text-dark">Tahmini Aylık Kira Geliri (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="monthlyRent"
+                  placeholder="Örn: 25000" required>
+              </div>
+            </div>
+
+            <!-- Ek Gider Oranı / Tutar -->
+            <div class="mb-4">
+              <label for="annualExpenses" class="form-label fw-semibold text-dark">Yıllık Tahmini Gider & Vergiler
+                (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="annualExpenses" value="0"
+                  placeholder="Emlak vergisi, tadilat, boş kalma maliyeti vb.">
+              </div>
+              <div class="form-text small">Emlak vergisi, sigorta ve olası boş kalma süreleri için yıllık maliyet
+                tahmini.</div>
+            </div>
+
+            <!-- Buton -->
+            <button type="submit" class="btn btn-kw-red btn-lg w-100 rounded-pill fw-bold fs-6">
+              <i class="bi bi-calculator-fill me-2"></i>Amortismanı Hesapla
+            </button>
+
+          </form>
+
+          <!-- Sonuç Kutusu (Gizli Başlar) -->
+          <div id="resultContainer" class="mt-4 pt-3 border-top" style="display: none;">
+            <h5 class="fw-bold text-dark mb-3">Yatırım Analiz Sonucu</h5>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="result-box p-3 h-100">
+                  <div class="text-secondary small">Amortisman Süresi:</div>
+                  <div id="paybackYears" class="fs-4 fw-bold text-kw-red">0 Yıl</div>
+                  <div id="paybackMonths" class="text-muted small">0 Ay</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="result-box p-3 h-100">
+                  <div class="text-secondary small">Yıllık Net Getiri (ROI):</div>
+                  <div id="netYield" class="fs-4 fw-bold text-dark">%0.0</div>
+                  <div id="grossYield" class="text-muted small">Brüt Getiri: %0.0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SAĞ KOLON: Hesaplama Mantığı -->
+      <div class="col-lg-6">
+        <div class="info-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-book me-2 text-kw-red"></i>Hesaplama Mantığı
+          </h4>
+
+          <p class="text-secondary">
+            Amortisman (kira çarpanı) süresi, satın alınan bir gayrimenkulün sağladığı kira gelirleri ile kendi alış
+            bedelini kaç yılda amorti edebileceğini gösteren temel yatırım göstergesidir.
+          </p>
+
+          <div class="vstack gap-3 my-4">
+
+            <!-- Adım 1 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">1</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Yıllık Gelir Hesabı</h6>
+                <p class="text-secondary small mb-0">
+                  Aylık tahmini kira geliri 12 ay ile çarpılarak brüt yıllık gelir bulunur.
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 2 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">2</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Amortisman Süresi (Yıl) Formülü</h6>
+                <p class="text-secondary small mb-0">
+                  <code>Geri Dönüş Süresi = Gayrimenkul Bedeli / Yıllık Net Kira Geliri</code>
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 3 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">3</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Yıllık Getiri Oranı (%)</h6>
+                <p class="text-secondary small mb-0">
+                  Kira verimi, mülk değerine göre yıllık kazanç oranını gösterir:
+                  <br><code>Net Getiri = (Yıllık Net Gelir / Mülk Değeri) × 100</code>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="p-3 bg-light rounded-3 border mt-4">
+            <small class="text-muted d-block">
+              <i class="bi bi-info-circle-fill text-kw-red me-1"></i>
+              <strong>Piyasa Notu:</strong> Türkiye ortalamasında 15-20 yıl arası amortisman süreleri makul/ideal kabul
+              edilir. Konum, bölgedeki prim potansiyeli ve ticari/konut durumu bu süreyi etkiler.
+            </small>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
   </div>
-</div>
+</main>
 
+<!-- Hesaplama Scripti -->
 <script>
-  function calculateROI() {
-    // Get input values
-    const propertyValue = parseFloat(document.getElementById('propertyValue').value) || 0;
+  document.getElementById('amortizationForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const price = parseFloat(document.getElementById('propertyPrice').value) || 0;
     const monthlyRent = parseFloat(document.getElementById('monthlyRent').value) || 0;
+    const annualExpenses = parseFloat(document.getElementById('annualExpenses').value) || 0;
 
-    const roiResultsContainer = document.getElementById('roiResultsContainer');
-    const roiErrorMessage = document.getElementById('roiErrorMessage');
-
-    // Reset error state
-    roiErrorMessage.classList.add('d-none');
-
-    // Validation checks
-    if (propertyValue <= 0 || monthlyRent <= 0) {
-      roiErrorMessage.innerText = "Lütfen geçerli bir gayrimenkul bedeli ve aylık kira tutarı giriniz.";
-      roiErrorMessage.classList.remove('d-none');
-      roiResultsContainer.classList.add('d-none');
+    if (price <= 0 || monthlyRent <= 0) {
+      alert("Lütfen geçerli bir gayrimenkul değeri ve aylık kira tutarı giriniz.");
       return;
     }
 
-    // Mathematical Calculations
-    const annualRent = monthlyRent * 12;
-    const paybackPeriodYears = propertyValue / annualRent; // Amortization in years
-    const grossRoiPercentage = (annualRent / propertyValue) * 100; // Annual Yield %
+    // Gelir ve Getiri Hesapları
+    const grossAnnualIncome = monthlyRent * 12;
+    const netAnnualIncome = grossAnnualIncome - annualExpenses;
 
-    // Currency Formatter (Turkish Lira)
-    const currencyFormatter = new Intl.NumberFormat('tr-TR', {
-      style: 'currency',
-      currency: 'TRY',
-      maximumFractionDigits: 0
-    });
+    if (netAnnualIncome <= 0) {
+      alert("Yıllık gider tutarı toplam kira gelirinden yüksek veya eşit olamaz.");
+      return;
+    }
 
-    // Output formatted results
-    document.getElementById('annualRentOutput').innerText = currencyFormatter.format(annualRent);
-    document.getElementById('paybackPeriodOutput').innerText = paybackPeriodYears.toFixed(1) + " Yıl (" + Math.round(paybackPeriodYears * 12) + " Ay)";
-    document.getElementById('grossRoiOutput').innerText = "% " + grossRoiPercentage.toFixed(2);
+    // Amortisman Süresi (Yıl ve Ay)
+    const yearsExact = price / netAnnualIncome;
+    const years = Math.floor(yearsExact);
+    const remainingMonths = Math.round((yearsExact - years) * 12);
 
-    // Display results
-    roiResultsContainer.classList.remove('d-none');
-  }
+    // Getiri Oranları (%)
+    const grossYieldRatio = (grossAnnualIncome / price) * 100;
+    const netYieldRatio = (netAnnualIncome / price) * 100;
+
+    // Sonuçları Ekran Alanlarına Yazdır
+    document.getElementById('paybackYears').innerText = `${years} Yıl ${remainingMonths > 0 ? remainingMonths + ' Ay' : ''}`;
+    document.getElementById('paybackMonths').innerText = `Toplam: ${Math.round(yearsExact * 12)} Ay`;
+
+    document.getElementById('netYield').innerText = `%${netYieldRatio.toFixed(2)}`;
+    document.getElementById('grossYield').innerText = `Brüt Getiri: %${grossYieldRatio.toFixed(2)}`;
+
+    // Sonuç Kutusunu Göster
+    document.getElementById('resultContainer').style.display = 'block';
+  });
 </script>

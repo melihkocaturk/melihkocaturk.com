@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Piyasasında Ekonomik Faktörler ve Etkileri"
 description: "Gayrimenkul piyasasını doğrudan etkileyen ekonomik faktörler nelerdir ve bu faktörler hangi sonuçları doğurur?"
 tags: ["gayrimenkul piyasası"]

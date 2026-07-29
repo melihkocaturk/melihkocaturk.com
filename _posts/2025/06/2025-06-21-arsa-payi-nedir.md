@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Arsa Payı Nedir? Neden Önemlidir?"
 description: "Bu yazıda, arsa payının ne anlama geldiğini, nasıl belirlendiğini, hukuki boyutlarını ve alım-satım süreçlerindeki önemini detaylı şekilde ele alacağız."
 tags: ["arsa payı"]

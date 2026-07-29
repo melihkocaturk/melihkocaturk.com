@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Projelerinde 'Erken Çıkış' Stratejisi"
 description: "Erken çıkış, yani konutun henüz teslim edilmeden önce satılması gerçekten mantıklı mı?"
-tags: ["konut projesi"]
+tags: ["konut projeleri"]
 ---
 
 Konut projelerine yatırım yapan birçok kişi için temel hedef, projenin tesliminden sonra yüksek bir kazanç elde etmektir. Ancak son yıllarda yatırımcılar arasında farklı bir strateji öne çıkmaya başladı: Erken çıkış, yani konutun henüz teslim edilmeden önce satılması. Peki bu strateji gerçekten mantıklı mı? Gelin birlikte inceleyelim.

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kira Stopajı Nedir, Kim Öder?"
 description: "Bu yazıda, kira stopajı nedir, kim öder, nasıl hesaplanır ve ne zaman ödenir gibi merak edilen tüm soruları adım adım açıklıyoruz."
 tags: ["kira"]

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Deprem Riski Nasıl Anlaşılır? Binanın Güvenliği Nasıl Sorgulanır?"
 description: "Bu yazıda, ev satın almadan önce deprem riskinin nasıl anlaşılacağını, binanın güvenliğinin hangi yollarla sorgulanabileceğini ve nelere dikkat edilmesi gerektiğini adım adım ele alıyoruz."
-tags: ["deprem"]
+tags: []
 ---
 
 Türkiye, aktif fay hatları üzerinde yer alan bir ülke olduğu için ev alırken deprem riski mutlaka değerlendirilmesi gereken en önemli kriterlerden biridir. Sadece evin manzarası, fiyatı veya konumu değil; binanın depreme dayanıklılığı da uzun vadede can ve mal güvenliği açısından hayati öneme sahiptir.

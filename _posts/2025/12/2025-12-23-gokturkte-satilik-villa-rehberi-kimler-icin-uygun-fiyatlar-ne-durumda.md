@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk’te Satılık Villa Rehberi: Kimler İçin Uygun, Fiyatlar Ne Durumda?"
 description: "Bu rehberde Göktürk’te satılık villa piyasasını; kimler için uygun, fiyatlar hangi aralıkta, hangi faktörler fiyatları belirliyor gibi başlıklar altında detaylı şekilde inceliyoruz."
 tags: ["göktürk"]

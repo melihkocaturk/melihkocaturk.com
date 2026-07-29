@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Piyasasında Mevsimsel Dalgalanmalar"
 description: "Bu yazıda, gayrimenkul piyasasında mevsimsel dalgalanmaların nedenlerini, etkilerini ve yatırımcılar için fırsat noktalarını inceleyeceğiz."
 ---

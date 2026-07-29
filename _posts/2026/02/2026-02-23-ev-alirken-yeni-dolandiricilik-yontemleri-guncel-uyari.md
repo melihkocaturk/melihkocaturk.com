@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Yeni Dolandırıcılık Yöntemleri (Güncel Uyarı)"
 description: "Bu yazıda 2025–2026 döneminde öne çıkan güncel dolandırıcılık yöntemlerini, gerçek örnekleri ve korunma yollarıyla birlikte detaylı şekilde bulacaksınız."
-tags: ["konut piyasası"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Konut piyasasında hareketlilik arttıkça dolandırıcıların yöntemleri de hızla değişiyor. Özellikle dijitalleşme, sosyal medya ve yapay zekâ teknolojileri, klasik emlak dolandırıcılıklarını çok daha sofistike hale getirdi. Son dönemde Türkiye’de yaşanan vakalar, ev almayı planlayanların artık çok daha dikkatli olması gerektiğini gösteriyor.

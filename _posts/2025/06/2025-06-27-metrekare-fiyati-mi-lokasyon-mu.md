@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Metrekare Fiyatı mı Lokasyon mu?"
 description: "Bu yazıda, bu iki faktörü detaylı şekilde karşılaştırarak hangi durumda hangisinin tercih edilmesi gerektiğini örneklerle ele alacağız."
-tags: ["gayrimenkul yatırımı"]
+tags: []
 ---
 
 Gayrimenkul yatırımı söz konusu olduğunda en sık karşılaşılan sorulardan biri şudur: Metrekare fiyatı mı daha önemli, yoksa lokasyon mu? Bu iki kriter, yatırımcının getiri beklentisine, yatırım süresine ve risk toleransına göre farklı önceliklere sahip olabilir. Bu yazıda, bu iki faktörü detaylı şekilde karşılaştırarak hangi durumda hangisinin tercih edilmesi gerektiğini örneklerle ele alacağız.

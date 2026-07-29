@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Bu Evleri Sakın Almayın: 2026’da Riskli Konut Tipleri"
 description: "Bu yazıda, 2026 yılında alırken iki kere düşünmeniz gereken konut tiplerini net ve yatırımcı gözüyle ele alıyoruz."
-tags: ["konut piyasası"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 2026’ya girerken konut piyasasında en kritik soru artık şu: **Hangi evler gerçekten riskli?** Faizler, deprem gerçeği, kentsel dönüşüm baskısı ve değişen tüketici beklentileri nedeniyle bazı konut tipleri yatırımcı için ciddi tuzaklara dönüşmüş durumda.

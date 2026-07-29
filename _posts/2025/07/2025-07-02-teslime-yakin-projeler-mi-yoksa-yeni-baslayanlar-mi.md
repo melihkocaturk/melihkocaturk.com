@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Teslime Yakın Projeler mi Yoksa Yeni Başlayanlar mı?"
 description: "Bu yazımızda, hem kısa vadeli kazanç hem de uzun vadeli getiri açısından hangi yatırımın daha karlı olduğunu detaylı bir şekilde inceliyoruz."
 ---

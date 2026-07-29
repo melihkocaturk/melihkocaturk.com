@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Projelerinde Metrekare Oyunu Nedir, Nasıl Anlaşılır?"
 description: "Bu yazıda metrekare oyununun ne olduğu, nasıl uygulandığı, alıcıların bunu nasıl anlayabileceği ve nelere dikkat ederek kendilerini koruyabilecekleri adım adım ele alınmaktadır."
 ---

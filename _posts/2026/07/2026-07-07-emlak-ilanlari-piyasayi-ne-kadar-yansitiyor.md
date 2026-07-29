@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak İlanları Piyasayı Ne Kadar Yansıtıyor?"
 description: "İlan sitelerinde gördüğümüz fiyatlar, piyasadaki gerçek değerleri mi gösteriyor? Yoksa yalnızca satıcıların beklentilerini mi yansıtıyor?"
-tags: ["emlak", "gayrimenkul", "emlak piyasası"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Gayrimenkul satın almak ya da satmak isteyen hemen herkesin ilk yaptığı şey, ilan sitelerine girerek benzer özellikteki taşınmazların fiyatlarını incelemek oluyor. Çünkü binlerce ilanın tek bir platformda toplanması, piyasayı anlamanın en kolay yolu gibi görünüyor.

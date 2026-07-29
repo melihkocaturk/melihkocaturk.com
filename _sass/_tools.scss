@@ -1,0 +1,42 @@
+/* Page Header */
+.page-header {
+  background-color: var(--kw-light-bg);
+  padding: 3.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+/* Kart Stilleri */
+.tool-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e9ecef;
+  background-color: #ffffff;
+}
+
+.tool-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;
+}
+
+.tool-icon-wrapper {
+  width: 52px;
+  height: 52px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+}
+
+/* Minimalist WhatsApp Button */
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1DA851;
+  color: white;
+}

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Kira Getirisi Yüksek Yazlık Bölgeler (2025)"
 description: "Bu yazımızda, Türkiye'nin farklı bölgelerinde yatırımcılara yüksek kira getirisi sağlayan popüler yazlık destinasyonları detaylı şekilde inceliyoruz."
-tags: ["yazlık konut", "airbnb", "kira"]
+tags: ["airbnb", "kira"]
 ---
 
 Yaz aylarında tatil cennetlerine olan ilgi arttıkça, yazlık konutlar da hem tatilcilerin hem de yatırımcıların gözdesi haline geliyor. Özellikle kısa süreli kiralama modeliyle yüksek kira geliri elde etmek isteyenler için doğru bölge seçimi büyük önem taşıyor. Peki 2025 yılında kira getirisi en yüksek yazlık bölgeler hangileri? Bu yazımızda, Türkiye'nin farklı bölgelerinde yatırımcılara yüksek kira getirisi sağlayan popüler yazlık destinasyonları detaylı şekilde inceliyoruz.

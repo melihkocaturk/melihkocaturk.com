@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Satışı İçin Evin Değerini Artıran Küçük Dokunuşlar"
 description: "Ev satışı öncesinde küçük dokunuşlarla evinizin değerini artırın. Boya, aydınlatma, dekorasyon ve bakım ipuçlarıyla alıcıların ilgisini çekin, satış fiyatınızı yükseltin."
 ---

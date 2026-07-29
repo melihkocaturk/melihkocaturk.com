@@ -1,255 +1,413 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-bs-theme="light">
+  <head>
+    
 
-<head>
-  
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gayrimenkul Yatırım Getirisi (Amortisman) Hesaplama</title>
-  <meta name="description" content="Gayrimenkulünüzün amortisman süresini ve yıllık brüt getiri oranını saniyeler içinde hesaplayın. Doğru kira geliri analiziyle yatırım kararınızı güvenle verin!">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="shortcut icon" href="/images/favicon.ico">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gayrimenkul Yatırım Getirisi (Amortisman) Hesaplama</title>
+    <meta
+      name="description"
+      content="Gayrimenkulün satış bedeli, aylık kira geliri ve olası giderlerini girerek yatırımınızın geri dönüş süresini ve yıllık net getiri oranını hesaplayın."
+    >
 
-<body>
-  <div class="container py-3">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container-fluid px-0">
-      <a class="navbar-brand" href="/">
-        <img src="/images/logo.png" alt="Melih Kocatürk" class="site-logo">
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainMenu"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/">
-                Anasayfa
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/hakkinda">
-                Hakkında
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/etiketler">
-                Etiketler
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/araclar">
-                Araçlar
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/rehber">
-                Rehber
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/podcast">
-                Podcast
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/ara">
-                Ara
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/iletisim">
-                İletişim
-              </a>
-            </li>
-          
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <main class="container">
-  <div class="page mx-auto mt-5">
-    <h1 class="display-5 text-center mb-5">Gayrimenkul Yatırım Getirisi (Amortisman) Hesaplama</h1>
-    <div class="container mb-5" style="max-width: 520px;">
-  <div class="card border">
-    <div class="card-body p-4">
-      <form id="roiCalculatorForm" onsubmit="event.preventDefault(); calculateROI();">
-        <!-- Property Price -->
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="propertyValue" placeholder="5000000" value="5000000" required>
-          <label for="propertyValue">Gayrimenkul Satış Bedeli (TL)</label>
-        </div>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
 
-        <!-- Monthly Rental Income -->
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="monthlyRent" placeholder="25000" value="25000" required>
-          <label for="monthlyRent">Tahmini Aylık Kira Getirisi (TL)</label>
-        </div>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  </head>
 
-        <!-- Calculate Button -->
-        <button type="submit" class="btn btn-dark w-100 py-3 fw-bold rounded-3">
-          Amortisman Süresini Hesapla
-        </button>
-      </form>
-
-      <!-- Results Section -->
-      <div id="roiResultsContainer" class="mt-4 p-3 bg-body-tertiary rounded-3 border d-none">
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Yıllık Toplam Kira Geliri:</span>
-          <span class="fw-semibold" id="annualRentOutput">0 TL</span>
-        </div>
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Amortisman Süresi:</span>
-          <span class="fw-bold fs-4 text-danger" id="paybackPeriodOutput">0 Yıl</span>
-        </div>
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Yıllık Brüt Getiri Oranı:</span>
-          <span class="fw-bold text-dark" id="grossRoiOutput">%0</span>
-        </div>
-      </div>
-
-      <!-- Error Alert Area -->
-      <div id="roiErrorMessage" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
-    </div>
-  </div>
-</div>
-
-<div class="container my-4" style="max-width: 520px;">
-  <div class="card border">
-    <div class="card-body p-4">
-      <h4 class="card-title text-dark fw-bold mb-3 mt-0">
-        Amortisman ve Yatırım Getirisi Mantığı
-      </h4>
-      <p class="text-muted small mb-4">
-        Gayrimenkul yatırımında amortisman süresi, bir mülkün satın alma bedelinin elde edilen kira gelirleri ile kaç
-        yılda geri karşılanacağını gösterir.
-      </p>
-
-      <!-- Değişkenlerin Anlamları Listesi -->
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Yıllık Kira Geliri</div>
-            <span class="small text-secondary">Aylık Tahmini Kira &times; 12 Ay</span>
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Amortisman Süresi (Yıl)</div>
-            <span class="small text-secondary">Gayrimenkul Satış Bedeli &divide; Yıllık Kira Geliri</span>
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Yıllık Brüt Getiri Oranı (%)</div>
-            <span class="small text-secondary">(Yıllık Kira Geliri &divide; Gayrimenkul Satış Bedeli) &times; 100</span>
-          </div>
+  <body>
+    <!-- Header / Navigasyon -->
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4 text-dark text-uppercase" href="/">
+      Melih Kocatürk
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold align-items-lg-center gap-2">
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/"
+            >Anasayfa</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/hakkinda"
+            >Hakkında</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/araclar"
+            >Araçlar</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/rehberler"
+            >Rehberler</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/podcast"
+            >Podcast</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/ara"
+            >Ara</a>
+          </li>
+        
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-kw-red px-3 rounded-pill fw-bold btn-sm" href="/iletisim">İletişime Geç</a>
         </li>
       </ul>
-
-      <!-- Bilgilendirme Notu -->
-      <div class="mt-3 p-3 bg-body-tertiary rounded-3 border">
-        <span class="small text-muted">
-          <strong>İpucu:</strong> Türkiye ortalamasında 15-18 yıl arası amortisman süreleri yatırım açısından oldukça
-          cazip kabul edilir.
-        </span>
-      </div>
     </div>
   </div>
-</div>
+</nav>
 
+    <style>
+  main {
+    flex: 1;
+  }
+
+  /* Kartlar & Form Stilleri */
+  .calc-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
+
+  .info-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    border-color: var(--kw-red);
+    box-shadow: 0 0 0 0.25rem rgba(206, 1, 31, 0.15);
+  }
+
+  .result-box {
+    background-color: #ffffff;
+    border-left: 4px solid var(--kw-red);
+    border-radius: 8px;
+  }
+
+  /* Adım Rakamları (Sabit Boyut) */
+  .step-badge {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 50%;
+    background-color: rgba(206, 1, 31, 0.1);
+    color: var(--kw-red);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+</style>
+
+<!-- Ana İçerik -->
+<main class="py-5">
+  <div class="container py-3">
+
+    <!-- Başlık Bölümü -->
+    <div class="text-center mb-5">
+      <span class="badge bg-danger-subtle text-danger px-3 py-2 rounded-pill fw-semibold mb-2">
+        <i class="bi bi-calculator me-1"></i> Yatırım Analizi
+      </span>
+      <h1 class="fw-bold text-dark mb-2">Gayrimenkul Yatırım Getirisi (Amortisman) Hesaplama</h1>
+      <p class="text-secondary mx-auto" style="max-width: 680px;">
+        Gayrimenkulün satış bedeli, aylık kira geliri ve olası giderlerini girerek yatırımınızın geri dönüş süresini ve yıllık net getiri oranını hesaplayın.
+      </p>
+    </div>
+
+    <div class="row g-4 align-items-start">
+
+      <!-- SOL KOLON: Form Alanı -->
+      <div class="col-lg-6">
+        <div class="calc-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-sliders me-2 text-kw-red"></i>Yatırım Bilgileri
+          </h4>
+
+          <form id="amortizationForm">
+
+            <!-- Gayrimenkul Fiyatı -->
+            <div class="mb-3">
+              <label for="propertyPrice" class="form-label fw-semibold text-dark">Gayrimenkul Değeri / Alış Fiyatı
+                (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="propertyPrice"
+                  placeholder="Örn: 6000000" required>
+              </div>
+            </div>
+
+            <!-- Aylık Kira Geliri -->
+            <div class="mb-3">
+              <label for="monthlyRent" class="form-label fw-semibold text-dark">Tahmini Aylık Kira Geliri (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="monthlyRent"
+                  placeholder="Örn: 25000" required>
+              </div>
+            </div>
+
+            <!-- Ek Gider Oranı / Tutar -->
+            <div class="mb-4">
+              <label for="annualExpenses" class="form-label fw-semibold text-dark">Yıllık Tahmini Gider & Vergiler
+                (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="annualExpenses" value="0"
+                  placeholder="Emlak vergisi, tadilat, boş kalma maliyeti vb.">
+              </div>
+              <div class="form-text small">Emlak vergisi, sigorta ve olası boş kalma süreleri için yıllık maliyet
+                tahmini.</div>
+            </div>
+
+            <!-- Buton -->
+            <button type="submit" class="btn btn-kw-red btn-lg w-100 rounded-pill fw-bold fs-6">
+              <i class="bi bi-calculator-fill me-2"></i>Amortismanı Hesapla
+            </button>
+
+          </form>
+
+          <!-- Sonuç Kutusu (Gizli Başlar) -->
+          <div id="resultContainer" class="mt-4 pt-3 border-top" style="display: none;">
+            <h5 class="fw-bold text-dark mb-3">Yatırım Analiz Sonucu</h5>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="result-box p-3 h-100">
+                  <div class="text-secondary small">Amortisman Süresi:</div>
+                  <div id="paybackYears" class="fs-4 fw-bold text-kw-red">0 Yıl</div>
+                  <div id="paybackMonths" class="text-muted small">0 Ay</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="result-box p-3 h-100">
+                  <div class="text-secondary small">Yıllık Net Getiri (ROI):</div>
+                  <div id="netYield" class="fs-4 fw-bold text-dark">%0.0</div>
+                  <div id="grossYield" class="text-muted small">Brüt Getiri: %0.0</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SAĞ KOLON: Hesaplama Mantığı -->
+      <div class="col-lg-6">
+        <div class="info-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-book me-2 text-kw-red"></i>Hesaplama Mantığı
+          </h4>
+
+          <p class="text-secondary">
+            Amortisman (kira çarpanı) süresi, satın alınan bir gayrimenkulün sağladığı kira gelirleri ile kendi alış
+            bedelini kaç yılda amorti edebileceğini gösteren temel yatırım göstergesidir.
+          </p>
+
+          <div class="vstack gap-3 my-4">
+
+            <!-- Adım 1 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">1</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Yıllık Gelir Hesabı</h6>
+                <p class="text-secondary small mb-0">
+                  Aylık tahmini kira geliri 12 ay ile çarpılarak brüt yıllık gelir bulunur.
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 2 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">2</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Amortisman Süresi (Yıl) Formülü</h6>
+                <p class="text-secondary small mb-0">
+                  <code>Geri Dönüş Süresi = Gayrimenkul Bedeli / Yıllık Net Kira Geliri</code>
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 3 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">3</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Yıllık Getiri Oranı (%)</h6>
+                <p class="text-secondary small mb-0">
+                  Kira verimi, mülk değerine göre yıllık kazanç oranını gösterir:
+                  <br><code>Net Getiri = (Yıllık Net Gelir / Mülk Değeri) × 100</code>
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="p-3 bg-light rounded-3 border mt-4">
+            <small class="text-muted d-block">
+              <i class="bi bi-info-circle-fill text-kw-red me-1"></i>
+              <strong>Piyasa Notu:</strong> Türkiye ortalamasında 15-20 yıl arası amortisman süreleri makul/ideal kabul
+              edilir. Konum, bölgedeki prim potansiyeli ve ticari/konut durumu bu süreyi etkiler.
+            </small>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- Hesaplama Scripti -->
 <script>
-  function calculateROI() {
-    // Get input values
-    const propertyValue = parseFloat(document.getElementById('propertyValue').value) || 0;
+  document.getElementById('amortizationForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const price = parseFloat(document.getElementById('propertyPrice').value) || 0;
     const monthlyRent = parseFloat(document.getElementById('monthlyRent').value) || 0;
+    const annualExpenses = parseFloat(document.getElementById('annualExpenses').value) || 0;
 
-    const roiResultsContainer = document.getElementById('roiResultsContainer');
-    const roiErrorMessage = document.getElementById('roiErrorMessage');
-
-    // Reset error state
-    roiErrorMessage.classList.add('d-none');
-
-    // Validation checks
-    if (propertyValue <= 0 || monthlyRent <= 0) {
-      roiErrorMessage.innerText = "Lütfen geçerli bir gayrimenkul bedeli ve aylık kira tutarı giriniz.";
-      roiErrorMessage.classList.remove('d-none');
-      roiResultsContainer.classList.add('d-none');
+    if (price <= 0 || monthlyRent <= 0) {
+      alert("Lütfen geçerli bir gayrimenkul değeri ve aylık kira tutarı giriniz.");
       return;
     }
 
-    // Mathematical Calculations
-    const annualRent = monthlyRent * 12;
-    const paybackPeriodYears = propertyValue / annualRent; // Amortization in years
-    const grossRoiPercentage = (annualRent / propertyValue) * 100; // Annual Yield %
+    // Gelir ve Getiri Hesapları
+    const grossAnnualIncome = monthlyRent * 12;
+    const netAnnualIncome = grossAnnualIncome - annualExpenses;
 
-    // Currency Formatter (Turkish Lira)
-    const currencyFormatter = new Intl.NumberFormat('tr-TR', {
-      style: 'currency',
-      currency: 'TRY',
-      maximumFractionDigits: 0
-    });
+    if (netAnnualIncome <= 0) {
+      alert("Yıllık gider tutarı toplam kira gelirinden yüksek veya eşit olamaz.");
+      return;
+    }
 
-    // Output formatted results
-    document.getElementById('annualRentOutput').innerText = currencyFormatter.format(annualRent);
-    document.getElementById('paybackPeriodOutput').innerText = paybackPeriodYears.toFixed(1) + " Yıl (" + Math.round(paybackPeriodYears * 12) + " Ay)";
-    document.getElementById('grossRoiOutput').innerText = "% " + grossRoiPercentage.toFixed(2);
+    // Amortisman Süresi (Yıl ve Ay)
+    const yearsExact = price / netAnnualIncome;
+    const years = Math.floor(yearsExact);
+    const remainingMonths = Math.round((yearsExact - years) * 12);
 
-    // Display results
-    roiResultsContainer.classList.remove('d-none');
-  }
+    // Getiri Oranları (%)
+    const grossYieldRatio = (grossAnnualIncome / price) * 100;
+    const netYieldRatio = (netAnnualIncome / price) * 100;
+
+    // Sonuçları Ekran Alanlarına Yazdır
+    document.getElementById('paybackYears').innerText = `${years} Yıl ${remainingMonths > 0 ? remainingMonths + ' Ay' : ''}`;
+    document.getElementById('paybackMonths').innerText = `Toplam: ${Math.round(yearsExact * 12)} Ay`;
+
+    document.getElementById('netYield').innerText = `%${netYieldRatio.toFixed(2)}`;
+    document.getElementById('grossYield').innerText = `Brüt Getiri: %${grossYieldRatio.toFixed(2)}`;
+
+    // Sonuç Kutusunu Göster
+    document.getElementById('resultContainer').style.display = 'block';
+  });
 </script>
+    <!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4 align-items-center mb-4">
+      <!-- Sol Kolon: İsim ve Ünvan -->
+      <div class="col-lg-5">
+        <h4 class="fw-bold text-white mb-2 text-uppercase">Melih Kocatürk</h4>
+        <p class="text-secondary small mb-0">Gayrimenkul Yatırım, Değerleme ve Pazarlama Danışmanlığı</p>
+      </div>
+
+      <!-- Orta Kolon: Keller Williams Logosu -->
+      <div class="col-lg-3 text-lg-center">
+        <div class="d-inline-flex align-items-center">
+          <a href="https://www.kwforessisli.com.tr/tr/" rel="nofollow">
+            <img
+              src="/images/kw-fores-logo.png"
+              alt="KW Fores Şişli"
+              width="160"
+            >
+          </a>
+        </div>
+      </div>
+
+      <!-- Sağ Kolon: Sosyal Bağlantılar -->
+      <div class="col-lg-4 text-lg-end">
+        <div class="d-flex gap-3 justify-content-lg-end fs-5 text-secondary">
+          
+            <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-secondary text-white-hover"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          
+            <a href="https://www.instagram.com/melih_kocaturk_" class="text-secondary text-white-hover"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          
+            <a href="https://www.youtube.com/@melihkocaturk" class="text-secondary text-white-hover"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          
+            <a href="https://x.com/melih_kocaturk_" class="text-secondary text-white-hover"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          
+            <a href="/feed.xml" class="text-secondary text-white-hover"
+              ><i class="bi bi-rss"></i
+            ></a>
+          
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary opacity-25">
+
+    <!-- Alt Bilgi ve Yasal Metin Linkleri -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-secondary small">
+      <div>
+        © 2026
+        Melih Kocatürk. Tüm hakları saklıdır.
+      </div>
+      <div class="d-flex gap-3">
+        
+          <a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a>
+          <span>•</span>
+        
+          <a href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a>
+          
+        
+      </div>
+    </div>
   </div>
-</main>
-  <footer class="container py-5">
-  <ul class="list-inline">
-    <li class="list-inline-item"> <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-dark" target="_blank">
-        <i class="bi bi-linkedin"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://www.instagram.com/melih_kocaturk_" class="text-dark" target="_blank">
-        <i class="bi bi-instagram"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://www.youtube.com/@melihkocaturk" class="text-dark" target="_blank">
-        <i class="bi bi-youtube"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://x.com/melih_kocaturk_" class="text-dark" target="_blank">
-        <i class="bi bi-twitter-x"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="/feed.xml" class="text-dark" target="_blank">
-        <i class="bi bi-rss"></i>
-      </a></li>
-  </ul>
-  <p class="small">© 2026 Melih Kocatürk. Tüm hakları saklıdır.</p>
-  <p class="small"><a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a> / <a
-      href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a></p>
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-</body>
 
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

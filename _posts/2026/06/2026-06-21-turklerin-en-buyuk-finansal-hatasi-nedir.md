@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Türklerin En Büyük Finansal Hatası Nedir?"
 description: "Neden birçok insan yüksek gelir elde etmesine rağmen finansal özgürlüğe ulaşamıyor? Türklerin en yaygın para yönetimi hatalarını, tasarruf alışkanlıklarını ve uzun vadeli servet oluşturmanın temel prensiplerini detaylı şekilde inceleyin."
-tags: ["finansal okuryazarlık", "ekonomi", "finans"]
+tags: []
 ---
 
 Türkiye'de para kazanmak her geçen yıl daha zor hale gelirken, finansal hataların maliyeti de giderek büyüyor. Yüksek enflasyon, artan yaşam maliyetleri ve ekonomik belirsizlikler nedeniyle insanlar paralarını korumak ve büyütmek konusunda daha fazla çaba harcamak zorunda kalıyor.

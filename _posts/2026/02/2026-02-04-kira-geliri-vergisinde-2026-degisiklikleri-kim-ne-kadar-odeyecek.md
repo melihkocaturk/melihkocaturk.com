@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Kira Geliri Vergisinde 2026 Değişiklikleri: Kim Ne Kadar Ödeyecek?"
 description: "Bu yazıda 2026 kira geliri vergisiyle ilgili tüm güncel detayları, kimlerin ne kadar vergi ödeyeceğini ve örnek hesaplamaları adım adım ele alıyoruz."
-tags: ["kira", "vergi"]
+tags: ["kira"]
 ---
 
 2026 yılı itibarıyla kira geliri elde eden mülk sahiplerini yakından ilgilendiren önemli vergi değişiklikleri yürürlüğe girdi. Gelir vergisi dilimleri, istisna tutarları ve gider indirimlerinde yapılan düzenlemeler, özellikle konut ve ticari gayrimenkul yatırımcılarının vergi yükünü doğrudan etkiliyor.

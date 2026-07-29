@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "“Biraz Daha Bekleyeyim” Diyenler Ne Kaybediyor?"
 description: "Bu yazıda, 'biraz daha bekleyeyim' diyenlerin zamana yayılmış ama birikerek büyüyen kayıplarını emlak sektörü özelinde detaylı şekilde ele alıyoruz."
-tags: ["emlak piyasası", "emlak yatırımı"]
+tags: ["gayrimenkul piyasası", ]
 ---
 
 Emlak sektöründe alıcı ve satıcıların en sık kullandığı cümlelerden biri şudur: **“Biraz daha bekleyeyim”**. Faizler düşsün diye bekleyen alıcılar, fiyatlar artsın diye bekleyen satıcılar, piyasa netleşsin diye kenarda duran yatırımcılar... Peki gerçekten beklemek her zaman doğru bir strateji mi? Yoksa fark edilmeden ciddi fırsat maliyetleri mi oluşuyor?

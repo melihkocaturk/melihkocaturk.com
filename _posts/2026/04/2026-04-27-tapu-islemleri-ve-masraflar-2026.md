@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Tapu İşlemleri ve Masraflar (2026)"
 description: "Bu rehberde tapu işlemlerinin nasıl yapıldığını, hangi belgelerin gerektiğini ve en önemlisi 2026 yılına ait güncel masrafları detaylı şekilde bulabilirsiniz."
 tags: ["tapu", "webtapu"]

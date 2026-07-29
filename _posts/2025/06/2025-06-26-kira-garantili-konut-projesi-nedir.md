@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Kira Garantili Konut Projesi Nedir? Gerçekten Güvenli mi?"
 description: "Kira garantili konut projeleri tam olarak ne anlama geliyor, nasıl işliyor ve gerçekten güvenli bir yatırım modeli mi?"
-tags: ["kira", "konut projesi"]
+tags: ["kira", "konut projeleri"]
 ---
 
 Gayrimenkul yatırımcıları için son yıllarda dikkat çeken seçeneklerden biri “kira garantili konut projeleri”. Peki bu projeler tam olarak ne anlama geliyor, nasıl işliyor ve gerçekten güvenli bir yatırım modeli mi? Gelin birlikte inceleyelim.

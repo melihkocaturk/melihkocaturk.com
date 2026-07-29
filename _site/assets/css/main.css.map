@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss",
+		"_sass/_default.scss"
+	],
+	"sourcesContent": [
+		"@import \"default\";",
+		":root {\n  --kw-red: #CE011F;\n  --kw-red-hover: #A80119;\n  --kw-dark: #212529;\n  --kw-light-bg: #F8F9FA;\n}\n\nbody {\n  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;\n  color: #333333;\n  background-color: #ffffff;\n}\n\n/* Navbar */\n.custom-navbar {\n  background-color: #ffffff;\n  border-bottom: 3px solid var(--kw-red);\n}\n\n/* KW Vurguları */\n.text-kw-red {\n  color: var(--kw-red) !important;\n}\n\n.btn-kw-red {\n  background-color: var(--kw-red);\n  color: #ffffff;\n  border: none;\n  transition: background-color 0.2s ease;\n}\n\n.btn-kw-red:hover {\n  background-color: var(--kw-red-hover);\n  color: #ffffff;\n}\n\n.bg-kw-red {\n  background-color: var(--kw-red) !important;\n}\n\n.btn-outline-kw {\n  border: 1px solid var(--kw-red);\n  color: var(--kw-red);\n}\n\n.btn-outline-kw:hover {\n  background-color: var(--kw-red);\n  color: #ffffff;\n}\n\n/* Sayfa Numarası */\n.error-code {\n  font-size: 6rem;\n  font-weight: 900;\n  line-height: 1;\n  color: var(--kw-red);\n}"
+	],
+	"names": [],
+	"mappings": ";CCAC,AAAD,IAAK,CAAC,EACJ,QAAQ,CAAA,QAAC,EACT,cAAc,CAAA,QAAC,EACf,SAAS,CAAA,QAAC,EACV,aAAa,CAAA,QAAC,GACf;;AAED,AAAA,IAAI,CAAC,EACH,WAAW,EAAE,gDAAgD,EAC7D,KAAK,EAAE,OAAO,EACd,gBAAgB,EAAE,OAAO,GAC1B;;AAED,YAAY;AACZ,AAAA,cAAc,CAAC,EACb,gBAAgB,EAAE,OAAO,EACzB,aAAa,EAAE,GAAG,CAAC,KAAK,CAAC,aAAa,GACvC;;AAED,kBAAkB;AAClB,AAAA,YAAY,CAAC,EACX,KAAK,EAAE,aAAa,CAAC,UAAU,GAChC;;AAED,AAAA,WAAW,CAAC,EACV,gBAAgB,EAAE,aAAa,EAC/B,KAAK,EAAE,OAAO,EACd,MAAM,EAAE,IAAI,EACZ,UAAU,EAAE,0BAA0B,GACvC;;AAED,AAAA,WAAW,CAAC,KAAK,CAAC,EAChB,gBAAgB,EAAE,mBAAmB,EACrC,KAAK,EAAE,OAAO,GACf;;AAED,AAAA,UAAU,CAAC,EACT,gBAAgB,EAAE,aAAa,CAAC,UAAU,GAC3C;;AAED,AAAA,eAAe,CAAC,EACd,MAAM,EAAE,GAAG,CAAC,KAAK,CAAC,aAAa,EAC/B,KAAK,EAAE,aAAa,GACrB;;AAED,AAAA,eAAe,CAAC,KAAK,CAAC,EACpB,gBAAgB,EAAE,aAAa,EAC/B,KAAK,EAAE,OAAO,GACf;;AAED,oBAAoB;AACpB,AAAA,WAAW,CAAC,EACV,SAAS,EAAE,IAAI,EACf,WAAW,EAAE,GAAG,EAChB,WAAW,EAAE,CAAC,EACd,KAAK,EAAE,aAAa,GACrB"
+}

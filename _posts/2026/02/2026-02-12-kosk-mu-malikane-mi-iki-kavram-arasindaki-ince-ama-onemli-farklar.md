@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Köşk mü Malikane mi? İki Kavram Arasındaki İnce Ama Önemli Farklar"
 description: "Köşk ve malikane arasındaki farklar nelerdir? Mimari özellikler, ölçek, konum, kullanım amacı ve tarihsel arka plan açısından köşk ile malikane kavramlarını detaylı şekilde keşfedin."
 tags: ["lüks konut"]

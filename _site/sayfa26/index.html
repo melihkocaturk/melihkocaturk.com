@@ -1,253 +1,499 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-bs-theme="light">
+  <head>
+    
 
-<head>
-  
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Melih Kocatürk</title>
-  <meta name="description" content="Emlak danışmanından ipuçları ve stratejiler, arsa yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="shortcut icon" href="/images/favicon.ico">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Melih Kocatürk</title>
+    <meta
+      name="description"
+      content="Gayrimenkul danışmanından ipuçları ve stratejiler, emlak yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler..."
+    >
 
-<body>
-  <div class="container py-3">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container-fluid px-0">
-      <a class="navbar-brand" href="/">
-        <img src="/images/logo.png" alt="Melih Kocatürk" class="site-logo">
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainMenu"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/">
-                Anasayfa
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/hakkinda">
-                Hakkında
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/etiketler">
-                Etiketler
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/araclar">
-                Araçlar
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/rehber">
-                Rehber
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/podcast">
-                Podcast
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/ara">
-                Ara
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/iletisim">
-                İletişim
-              </a>
-            </li>
-          
-        </ul>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+      <link rel="stylesheet" href="/assets/css/home.css">
+    
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  </head>
+
+  <body>
+    <!-- Header / Navigasyon -->
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4 text-dark text-uppercase" href="/">
+      Melih Kocatürk
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold align-items-lg-center gap-2">
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/"
+            >Anasayfa</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/hakkinda"
+            >Hakkında</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/araclar"
+            >Araçlar</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/rehberler"
+            >Rehberler</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/podcast"
+            >Podcast</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/ara"
+            >Ara</a>
+          </li>
+        
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-kw-red px-3 rounded-pill fw-bold btn-sm" href="/iletisim">İletişime Geç</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <!-- Hero & WhatsApp Lead Formu -->
+<section class="hero-section">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <!-- Sol Kolon: Tanıtım -->
+      <div class="col-lg-7">
+        <span class="badge bg-kw-red px-3 py-2 mb-3 rounded-pill fw-bold text-uppercase">Gayrimenkul Danışmanlığı</span>
+        <h1 class="display-5 fw-bold text-dark mb-3">Veriye Dayalı, Şeffaf ve Profesyonel Emlak Danışmanlığı</h1>
+        <p class="lead text-secondary mb-4">
+          Mülkünüzü doğru fiyattan pazarlamak, gayrimenkul yatırımlarınızda güvenle ilerlemek ve yasal/vergisel
+          süreçleri hatasız yönetmek için uzman stratejiler sunuyorum.
+        </p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="/araclar" class="btn btn-outline-kw btn-lg px-4 fw-semibold">
+            <i class="bi bi-calculator me-2"></i>Hesaplama Araçları
+          </a>
+          <a href="#blog" class="btn btn-kw-red btn-lg px-4 fw-semibold">
+            <i class="bi bi-journal-text me-2"></i>Sektörel Yazılar
+          </a>
+        </div>
+      </div>
+
+      <!-- Sağ Kolon: WhatsApp Lead Formu -->
+      <div class="col-lg-5" id="lead-form">
+        <div class="card bg-white shadow-lg border-0 rounded-4 p-4 border-top border-4 border-danger">
+          <div class="card-body">
+            <h3 class="fw-bold mb-1 text-dark">Birlikte Çalışalım</h3>
+            <p class="text-muted small mb-4">
+              Talep ve sorularınızı iletin, WhatsApp üzerinden doğrudan iletişim kuralım.
+            </p>
+
+            <form id="whatsappLeadForm">
+              <div class="mb-3">
+                <label class="form-label small fw-bold text-secondary">ADINIZ SOYADINIZ</label>
+                <input
+                  type="text"
+                  id="leadName"
+                  class="form-control form-control-lg bg-light fs-6"
+                  placeholder="Örn: Ahmet Yılmaz"
+                  required
+                >
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label small fw-bold text-secondary">HİZMET ALANI</label>
+                <select id="leadService" class="form-select form-select-lg bg-light fs-6" required>
+                  <option value="" selected disabled>Seçiniz...</option>
+                  <option value="Mülkümü Satmak / Kiralamak İstiyorum">Mülkümü Satmak / Kiralamak İstiyorum</option>
+                  <option value="Yatırım Fırsatları / Arsa / Konut Arayışı">
+                    Yatırım Fırsatları / Arsa / Konut Arayışı
+                  </option>
+                  <option value="Tapu, Vergi ve Mevzuat Danışmanlığı">Tapu, Vergi ve Mevzuat Danışmanlığı</option>
+                  <option value="Genel Sorular / Danışmanlık">Genel Sorular / Danışmanlık</option>
+                </select>
+              </div>
+
+              <div class="mb-3">
+                <label class="form-label small fw-bold text-secondary">MESAJINIZ VEYA NOTUNUZ</label>
+                <textarea
+                  id="leadMessage"
+                  class="form-control bg-light fs-6"
+                  rows="3"
+                  placeholder="Görüşmek istediğiniz mülk veya konu hakkında kısa bilgi..."
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn whatsapp-btn btn-lg w-100 mt-2 shadow-sm">
+                <i class="bi bi-whatsapp me-2 fs-5"></i>WhatsApp ile Mesaj Gönder
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
-  </nav>
-</div>
+  </div>
+</section>
 
-  <main class="container">
-  <div class="home">
-    <div class="jumbotron">
-      <h1 class="display-5 mb-5">
-        Emlak danışmanından ipuçları ve stratejiler, arsa yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...
-      </h1>
-      <p class="fs-4">
-        Bu blog, gayrimenkul danışmanlığı alanında bilgi arayan bireyler için güvenilir, sade ve anlaşılır içerikler sunmak amacıyla hazırlanmıştır. Emlak sektörüne dair güncel bilgiler, yatırım ve işlem süreçleri hakkında rehberlik sağlayarak, okuyucuların daha bilinçli kararlar almasına katkı sağlamayı hedeflemektedir.
+<!-- Gayrimenkul Araçları Modülü -->
+<section class="py-5">
+  <div class="container py-3">
+    <div class="text-center max-w-700 mx-auto mb-5">
+      <h6 class="text-kw-red fw-bold text-uppercase">Pratik Analizler</h6>
+      <h2 class="fw-bold text-dark">Gayrimenkul Hesaplama Araçları</h2>
+      <p class="text-muted">
+        Karar alma süreçlerinizi kolaylaştıracak finansal hesaplama araçlarımı kullanabilirsiniz.
       </p>
     </div>
 
-    
-      
-      <article class="row mb-5">
-        <div class="col-sm-6">
-          <h2 class="fw-light mb-3">Konut Sigortası mı DASK mı? Aralarındaki Farklar Nelerdir?</h2>
-          <div class="mb-3">
-            <time>01/12/2025</time>
-            <span class="read-time fst-italic">2 dakikalık okuma</span>
+    <div class="row g-4">
+      <!-- Araç 1 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm p-3 rounded-3">
+          <div class="card-body">
+            <div
+              class="d-inline-flex align-items-center justify-content-center bg-danger-subtle text-kw-red rounded-3 p-3 mb-3"
+            >
+              <i class="bi bi-receipt fs-3"></i>
+            </div>
+            <h5 class="fw-bold">Değer Artış Kazancı Vergisi</h5>
+            <p class="text-muted small">Mülkünüzü 5 yıl doldurmadan satarken çıkacak vergi yükümlülüğünü hesaplayın.</p>
+            <a href="/araclar/deger-artis-kazanci-vergisi-hesaplama.html" class="text-kw-red fw-bold text-decoration-none"
+              >Hesaplamaya Git
+              <i
+                class="bi bi-arrow-right"
+              ></i
+            ></a>
           </div>
         </div>
-        <div class="col-sm-6">
-          <p>Türkiye’de bir ev sahibi olmanın en önemli unsurlarından biri, olası afet ve risklere karşı doğru türde sigorta ile kendinizi güvence altına almaktır. Bu noktada en çok karıştırılan iki kavram Konut Sigortası ve <strong>DASK (Zorunlu Deprem Sigortası)</strong>dır. Birçok kişi bu iki sigortanın aynı olduğunu düşünse de kapsamları, zorunluluğu ve sağladığı teminatlar tamamen farklıdır. Bu yazıda Konut Sigortası ile DASK arasındaki farkları, hangi durumlarda gerekli olduklarını ve neden her ikisine birden ihtiyaç duyulabileceğini tüm ayrıntılarıyla ele alıyoruz.</p>
+      </div>
 
-          <p><a href="/konut-sigortasi-mi-dask-mi-aralarindaki-farklar-nelerdir" class="text-black">Devamını Oku</a></p>
-        </div>
-      </article>
-    
-      
-      <article class="row mb-5">
-        <div class="col-sm-6">
-          <h2 class="fw-light mb-3">Ev Satışında Zamanlama Neden Önemlidir? En Uygun Dönem Nasıl Belirlenir?</h2>
-          <div class="mb-3">
-            <time>29/11/2025</time>
-            <span class="read-time fst-italic">3 dakikalık okuma</span>
+      <!-- Araç 2 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm p-3 rounded-3">
+          <div class="card-body">
+            <div
+              class="d-inline-flex align-items-center justify-content-center bg-danger-subtle text-kw-red rounded-3 p-3 mb-3"
+            >
+              <i class="bi bi-graph-up-arrow fs-3"></i>
+            </div>
+            <h5 class="fw-bold">Yatırım Getirisi (Amortisman)</h5>
+            <p class="text-muted small">
+              Satın almayı düşündüğünüz mülkün kaç yılda kendini geri ödeyeceğini analiz edin.
+            </p>
+            <a href="/araclar/gayrimenkul-yatirim-getirisi-amortisman-hesaplama.html" class="text-kw-red fw-bold text-decoration-none"
+              >Hesaplamaya Git
+              <i
+                class="bi bi-arrow-right"
+              ></i
+            ></a>
           </div>
         </div>
-        <div class="col-sm-6">
-          <p>Ev satışı, yalnızca doğru fiyatlandırma ve doğru pazarlama stratejileri ile değil, aynı zamanda <strong>doğru zamanlama</strong> ile başarıya ulaşan bir süreçtir. Gayrimenkul piyasasında dönemsel dalgalanmalar, alıcı davranışları, ekonomik koşullar ve rekabet düzeyi gibi birçok faktör vardır. Bu nedenle, satış kararınızı verirken “Ne zaman satışa çıkmalıyım?” sorusu en az fiyat stratejisi kadar kritik bir öneme sahiptir.</p>
+      </div>
 
-          <p><a href="/ev-satisinda-zamanlama-neden-onemlidir" class="text-black">Devamını Oku</a></p>
-        </div>
-      </article>
-    
-      
-      <article class="row mb-5">
-        <div class="col-sm-6">
-          <h2 class="fw-light mb-3">Emlak Yatırımı İçin En Az Sermaye ile Başlama Rehberi</h2>
-          <div class="mb-3">
-            <time>29/11/2025</time>
-            <span class="read-time fst-italic">4 dakikalık okuma</span>
+      <!-- Araç 3 -->
+      <div class="col-md-6 col-lg-4">
+        <div class="card h-100 border-0 shadow-sm p-3 rounded-3">
+          <div class="card-body">
+            <div
+              class="d-inline-flex align-items-center justify-content-center bg-danger-subtle text-kw-red rounded-3 p-3 mb-3"
+            >
+              <i class="bi bi-building-check fs-3"></i>
+            </div>
+            <h5 class="fw-bold">Tapu Harcı ve Masraf Hesaplama</h5>
+            <p class="text-muted small">Alım-satım işleminde alıcı ve satıcıya düşen tapu harçlarını anında öğrenin.</p>
+            <a href="/araclar/tapu-harci-ve-masraf-hesaplama.html" class="text-kw-red fw-bold text-decoration-none"
+              >Hesaplamaya Git
+              <i
+                class="bi bi-arrow-right"
+              ></i
+            ></a>
           </div>
         </div>
-        <div class="col-sm-6">
-          <p>Gayrimenkul yatırımı çoğu insanın aklında büyük sermaye gerektiren bir alan olarak yer alır. Ancak doğru strateji ile <em>küçük birikimlerle bile emlak yatırımı yapmaya başlamak</em> mümkündür. Düşük bütçeli yatırım yöntemleri, doğru finansman modelleri ve yaratıcı çözümler sayesinde, yüksek sermayesi olmayan yatırımcılar da gayrimenkul piyasasında yer edinebiliyor.</p>
+      </div>
+    </div>
 
-          <p><a href="/emlak-yatirimi-icin-en-az-sermaye-ile-baslama-rehberi" class="text-black">Devamını Oku</a></p>
-        </div>
-      </article>
-    
+    <div class="text-center mt-4">
+      <a href="/araclar" class="btn btn-outline-kw px-4 rounded-pill fw-semibold">Tüm Araçları İncele</a>
+    </div>
+  </div>
+</section>
+
+<!-- Blog & Etiketler Bölümü -->
+<section id="blog" class="py-5 bg-light">
+  <div class="container py-3">
+    <div class="d-flex justify-content-between align-items-end mb-4 border-bottom pb-3">
+      <div>
+        <h6 class="text-kw-red fw-bold text-uppercase">Sektörel Analizler</h6>
+        <h2 class="fw-bold text-dark m-0">Son Yazılar</h2>
+      </div>
+      <!-- "Tüm Yazılar" Kaldırıldı, Yerine Etiketler Eklendi -->
+      <a href="/etiketler" class="btn btn-outline-kw btn-sm fw-semibold">
+        <i class="bi bi-tags me-1"></i>Tüm Etiketler
+      </a>
+    </div>
+
+    <!-- Liste -->
+    <div class="list-group list-group-flush bg-white rounded-3 shadow-sm overflow-hidden mb-4">
       
-      <article class="row mb-5">
-        <div class="col-sm-6">
-          <h2 class="fw-light mb-3">Konut Projelerinde Metrekare Oyunu Nedir, Nasıl Anlaşılır?</h2>
-          <div class="mb-3">
-            <time>25/11/2025</time>
-            <span class="read-time fst-italic">3 dakikalık okuma</span>
+        <!-- Yazı -->
+        <div class="list-group-item p-4 blog-item border-bottom">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+            <a href="/konut-sigortasi-mi-dask-mi-aralarindaki-farklar-nelerdir" class="h5 fw-bold blog-title mb-1 mb-md-0"
+              >Konut Sigortası mı DASK mı? Aralarındaki Farklar Nelerdir?</a
+            >
+            <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 01.12.2025</small>
+          </div>
+          <p class="text-secondary small mb-3">
+            <p>Türkiye’de bir ev sahibi olmanın en önemli unsurlarından biri, olası afet ve risklere karşı doğru türde sigorta ile kendinizi güvence altına almaktır. Bu noktada en çok karıştırılan iki kavram Konut Sigortası ve <strong>DASK (Zorunlu Deprem Sigortası)</strong>dır. Birçok kişi bu iki sigortanın aynı olduğunu düşünse de kapsamları, zorunluluğu ve sağladığı teminatlar tamamen farklıdır. Bu yazıda Konut Sigortası ile DASK arasındaki farkları, hangi durumlarda gerekli olduklarını ve neden her ikisine birden ihtiyaç duyulabileceğini tüm ayrıntılarıyla ele alıyoruz.</p>
+
+          </p>
+          <!-- Etiketler -->
+          <div class="d-flex flex-wrap gap-1">
+            
+              <p>
+                <b>Etiketler</b>:
+                
+                  <a href="/etiketler#dask" class="badge tag-badge rounded-pill px-2 py-1">dask</a>
+                
+              </p>
+            
           </div>
         </div>
-        <div class="col-sm-6">
-          <p>Konut projelerinde dairelerin metrekareleri, fiyatlandırmanın en kritik unsurlarından biridir. Ancak birçok projede “brüt metrekare”, “net metrekare”, “kullanım alanı”, “satışa esas alan” gibi farklı kavramlar kullanıldığı için, alıcılar gerçek daire büyüklüğünü çoğu zaman tam olarak anlayamaz. Bu durum, sektörde sıkça tartışılan <strong>metrekare oyunu</strong> kavramını ortaya çıkarır.</p>
-
-          <p><a href="/konut-projelerinde-metrekare-oyunu-nedir-nasil-anlasilir" class="text-black">Devamını Oku</a></p>
-        </div>
-      </article>
-    
       
-      <article class="row mb-5">
-        <div class="col-sm-6">
-          <h2 class="fw-light mb-3">Ev Alırken Ekspertiz Raporu Neden Önemlidir?</h2>
-          <div class="mb-3">
-            <time>20/11/2025</time>
-            <span class="read-time fst-italic">2 dakikalık okuma</span>
+        <!-- Yazı -->
+        <div class="list-group-item p-4 blog-item border-bottom">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+            <a href="/ev-satisinda-zamanlama-neden-onemlidir" class="h5 fw-bold blog-title mb-1 mb-md-0"
+              >Ev Satışında Zamanlama Neden Önemlidir? En Uygun Dönem Nasıl Belirlenir?</a
+            >
+            <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 29.11.2025</small>
+          </div>
+          <p class="text-secondary small mb-3">
+            <p>Ev satışı, yalnızca doğru fiyatlandırma ve doğru pazarlama stratejileri ile değil, aynı zamanda <strong>doğru zamanlama</strong> ile başarıya ulaşan bir süreçtir. Gayrimenkul piyasasında dönemsel dalgalanmalar, alıcı davranışları, ekonomik koşullar ve rekabet düzeyi gibi birçok faktör vardır. Bu nedenle, satış kararınızı verirken “Ne zaman satışa çıkmalıyım?” sorusu en az fiyat stratejisi kadar kritik bir öneme sahiptir.</p>
+
+          </p>
+          <!-- Etiketler -->
+          <div class="d-flex flex-wrap gap-1">
+            
           </div>
         </div>
-        <div class="col-sm-6">
-          <p>Bir ev satın almak, çoğu insan için hayatlarının en büyük yatırımlarından biridir. Bu süreçte alınacak kararların doğru verilmesi, gelecekte yaşanabilecek maddi ve hukuki sorunların önüne geçmek açısından büyük önem taşır. İşte tam bu noktada ekspertiz raporu devreye girer. Ekspertiz raporu, satın alınacak taşınmazın gerçek değerini ve fiziksel durumunu ortaya koyan, uzman kişiler tarafından hazırlanan bir belgedir.</p>
+      
+        <!-- Yazı -->
+        <div class="list-group-item p-4 blog-item border-bottom">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+            <a href="/emlak-yatirimi-icin-en-az-sermaye-ile-baslama-rehberi" class="h5 fw-bold blog-title mb-1 mb-md-0"
+              >Emlak Yatırımı İçin En Az Sermaye ile Başlama Rehberi</a
+            >
+            <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 29.11.2025</small>
+          </div>
+          <p class="text-secondary small mb-3">
+            <p>Gayrimenkul yatırımı çoğu insanın aklında büyük sermaye gerektiren bir alan olarak yer alır. Ancak doğru strateji ile <em>küçük birikimlerle bile emlak yatırımı yapmaya başlamak</em> mümkündür. Düşük bütçeli yatırım yöntemleri, doğru finansman modelleri ve yaratıcı çözümler sayesinde, yüksek sermayesi olmayan yatırımcılar da gayrimenkul piyasasında yer edinebiliyor.</p>
 
-          <p><a href="/ev-alirken-ekspertiz-raporu-neden-onemlidir" class="text-black">Devamını Oku</a></p>
+          </p>
+          <!-- Etiketler -->
+          <div class="d-flex flex-wrap gap-1">
+            
+          </div>
         </div>
-      </article>
-    
+      
+        <!-- Yazı -->
+        <div class="list-group-item p-4 blog-item border-bottom">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+            <a href="/konut-projelerinde-metrekare-oyunu-nedir-nasil-anlasilir" class="h5 fw-bold blog-title mb-1 mb-md-0"
+              >Konut Projelerinde Metrekare Oyunu Nedir, Nasıl Anlaşılır?</a
+            >
+            <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 25.11.2025</small>
+          </div>
+          <p class="text-secondary small mb-3">
+            <p>Konut projelerinde dairelerin metrekareleri, fiyatlandırmanın en kritik unsurlarından biridir. Ancak birçok projede “brüt metrekare”, “net metrekare”, “kullanım alanı”, “satışa esas alan” gibi farklı kavramlar kullanıldığı için, alıcılar gerçek daire büyüklüğünü çoğu zaman tam olarak anlayamaz. Bu durum, sektörde sıkça tartışılan <strong>metrekare oyunu</strong> kavramını ortaya çıkarır.</p>
+
+          </p>
+          <!-- Etiketler -->
+          <div class="d-flex flex-wrap gap-1">
+            
+          </div>
+        </div>
+      
+        <!-- Yazı -->
+        <div class="list-group-item p-4 blog-item border-bottom">
+          <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-2">
+            <a href="/ev-alirken-ekspertiz-raporu-neden-onemlidir" class="h5 fw-bold blog-title mb-1 mb-md-0"
+              >Ev Alırken Ekspertiz Raporu Neden Önemlidir?</a
+            >
+            <small class="text-muted"><i class="bi bi-calendar3 me-1"></i> 20.11.2025</small>
+          </div>
+          <p class="text-secondary small mb-3">
+            <p>Bir ev satın almak, çoğu insan için hayatlarının en büyük yatırımlarından biridir. Bu süreçte alınacak kararların doğru verilmesi, gelecekte yaşanabilecek maddi ve hukuki sorunların önüne geçmek açısından büyük önem taşır. İşte tam bu noktada ekspertiz raporu devreye girer. Ekspertiz raporu, satın alınacak taşınmazın gerçek değerini ve fiziksel durumunu ortaya koyan, uzman kişiler tarafından hazırlanan bir belgedir.</p>
+
+          </p>
+          <!-- Etiketler -->
+          <div class="d-flex flex-wrap gap-1">
+            
+              <p>
+                <b>Etiketler</b>:
+                
+                  <a href="/etiketler#değerleme" class="badge tag-badge rounded-pill px-2 py-1">değerleme</a>
+                
+              </p>
+            
+          </div>
+        </div>
+      
+    </div>
 
     
-      <nav>
-        <ul class="pagination justify-content-center">
+      <!-- Pagination (Sayfalama) -->
+      <nav aria-label="Blog Sayfalaması" class="d-flex justify-content-center">
+        <ul class="pagination pagination-md m-0">
           
             <li class="page-item">
-              <a class="page-link text-black-50" href="/sayfa25/">&laquo;</a>
+              <a
+                class="page-link"
+                href="/sayfa25/"
+                tabindex="-1"
+                >« Önceki</a
+              >
             </li>
             <li class="page-item">
-              <a class="page-link text-black-50" href="/sayfa25/">
-                25
-              </a>
+              <a class="page-link" href="/sayfa25/">25</a>
             </li>
           
-          <li class="page-item">
-            <a class="page-link text-black" href="#">26</a>
+          <li class="page-item active" aria-current="page">
+            <a class="page-link" href="#">26</a>
           </li>
           
             <li class="page-item">
-              <a class="page-link text-black-50" href="/sayfa27/">
-                27
-              </a>
+              <a class="page-link" href="/sayfa27/">27</a>
             </li>
             <li class="page-item">
-              <a class="page-link text-black-50" href="/sayfa27/">&raquo;</a>
+              <a class="page-link" href="/sayfa27/">Sonraki »</a>
             </li>
           
         </ul>
       </nav>
     
+  </div>
+</section>
 
-    <div class="get-in-touch">
-      <p class="fs-4 mb-5">
-        Gayrimenkul ile ilgili her türlü soru, öneri ya da iş birliği talebiniz için benimle iletişime geçebilirsiniz. Evinizi satmak, yeni bir yaşam alanı bulmak ya da yatırım fırsatlarını değerlendirmek istiyorsanız, doğru yerdesiniz.
-      </p>
-      <a href="/iletisim" class="fs-1 text-black text-decoration-none">İletişime Geç →</a>
+<!-- WhatsApp Form JS -->
+<script>
+  document.getElementById('whatsappLeadForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const phone = ('+90 546 566 55 09').replaceAll(' ', '');
+    const name = document.getElementById('leadName').value;
+    const service = document.getElementById('leadService').value;
+    const message = document.getElementById('leadMessage').value;
+
+    const formattedText = `Merhaba Melih Bey,%0A%0ASiteniz üzerinden ulaşıyorum.%0A*Ad Soyad:* ${encodeURIComponent(name)}%0A*Konu:* ${encodeURIComponent(service)}%0A*Not:* ${encodeURIComponent(message)}`;
+    window.open(`https://wa.me/${phone}?text=${formattedText}`, '_blank').focus();
+  });
+</script>
+
+    <!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4 align-items-center mb-4">
+      <!-- Sol Kolon: İsim ve Ünvan -->
+      <div class="col-lg-5">
+        <h4 class="fw-bold text-white mb-2 text-uppercase">Melih Kocatürk</h4>
+        <p class="text-secondary small mb-0">Gayrimenkul Yatırım, Değerleme ve Pazarlama Danışmanlığı</p>
+      </div>
+
+      <!-- Orta Kolon: Keller Williams Logosu -->
+      <div class="col-lg-3 text-lg-center">
+        <div class="d-inline-flex align-items-center">
+          <a href="https://www.kwforessisli.com.tr/tr/" rel="nofollow">
+            <img
+              src="/images/kw-fores-logo.png"
+              alt="KW Fores Şişli"
+              width="160"
+            >
+          </a>
+        </div>
+      </div>
+
+      <!-- Sağ Kolon: Sosyal Bağlantılar -->
+      <div class="col-lg-4 text-lg-end">
+        <div class="d-flex gap-3 justify-content-lg-end fs-5 text-secondary">
+          
+            <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-secondary text-white-hover"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          
+            <a href="https://www.instagram.com/melih_kocaturk_" class="text-secondary text-white-hover"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          
+            <a href="https://www.youtube.com/@melihkocaturk" class="text-secondary text-white-hover"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          
+            <a href="https://x.com/melih_kocaturk_" class="text-secondary text-white-hover"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          
+            <a href="/feed.xml" class="text-secondary text-white-hover"
+              ><i class="bi bi-rss"></i
+            ></a>
+          
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary opacity-25">
+
+    <!-- Alt Bilgi ve Yasal Metin Linkleri -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-secondary small">
+      <div>
+        © 2026
+        Melih Kocatürk. Tüm hakları saklıdır.
+      </div>
+      <div class="d-flex gap-3">
+        
+          <a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a>
+          <span>•</span>
+        
+          <a href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a>
+          
+        
+      </div>
     </div>
   </div>
-</main>
-
-  <footer class="container py-5">
-  <ul class="list-inline">
-    <li class="list-inline-item"> <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-dark" target="_blank">
-        <i class="bi bi-linkedin"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://www.instagram.com/melih_kocaturk_" class="text-dark" target="_blank">
-        <i class="bi bi-instagram"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://www.youtube.com/@melihkocaturk" class="text-dark" target="_blank">
-        <i class="bi bi-youtube"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://x.com/melih_kocaturk_" class="text-dark" target="_blank">
-        <i class="bi bi-twitter-x"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="/feed.xml" class="text-dark" target="_blank">
-        <i class="bi bi-rss"></i>
-      </a></li>
-  </ul>
-  <p class="small">© 2026 Melih Kocatürk. Tüm hakları saklıdır.</p>
-  <p class="small"><a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a> / <a
-      href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a></p>
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-</body>
 
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

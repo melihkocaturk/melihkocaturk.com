@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ön Satıştan Konut Almak Mantıklı mı?"
 description: "Ön satıştan konut almak gerçekten mantıklı bir yatırım yöntemi mi? Avantajları kadar riskleri de olan bu yöntemi tüm yönleriyle inceliyoruz."
-tags: ["gayrimenkul yatırımı", "ön satış"]
+tags: ["konut yatırımı"]
 ---
 
 Türkiye’de son yıllarda gayrimenkul yatırımı yapmak isteyen birçok kişi, tamamlanmamış projelerden yani *ön satıştan konut alma* yolunu tercih ediyor. Peki bu gerçekten mantıklı bir yatırım yöntemi mi? Avantajları kadar riskleri de olan bu yöntemi gelin birlikte tüm yönleriyle inceleyelim.

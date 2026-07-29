@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Yatırım Türleri Nelerdir?"
 description: "Bu yazıda, gayrimenkul yatırım türlerini, avantajlarını ve hangi yatırımcı profiline daha uygun olduklarını inceleyeceğiz."
-tags: ["gayrimenkul yatırımı"]
+tags: []
 ---
 
 Gayrimenkul yatırımı, hem düzenli kira geliri elde etmek hem de uzun vadeli değer artışından faydalanmak isteyen yatırımcılar için en güvenilir yöntemlerden biridir. Ancak gayrimenkul yatırımı dendiğinde sadece “ev almak ve kiraya vermek” düşünülmemelidir. Farklı gayrimenkul yatırım türleri, yatırımcının hedeflerine, sermaye gücüne ve risk iştahına göre değişkenlik gösterir.

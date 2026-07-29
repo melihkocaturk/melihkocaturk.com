@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kentsel Dönüşüm Yasası Ev Fiyatlarını Nasıl Etkileyecek?"
 description: "Kentsel dönüşüm yasası ve salt çoğunluk düzenlemesi ev fiyatlarını nasıl etkileyecek? Yeni yönetmelik, konut piyasası ve yatırımcılar için detaylı analiz."
 tags: ["kentsel dönüşüm"]

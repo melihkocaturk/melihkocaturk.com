@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk’te Emlak Danışmanı mı Arıyorsunuz? Hemen Tanışalım"
 description: "Göktürk’te ev alım-satım veya kiralama süreçlerinde bölge uzmanlığı. Ücretsiz ön keşif ve gerçekçi piyasa analizi için şimdi iletişime geçin."
 tags: ["göktürk"]

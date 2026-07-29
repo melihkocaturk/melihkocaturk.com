@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Hangi Tür Gayrimenkuller Kira Getirisi İçin Daha Uygundur?"
 description: "Hangi tür gayrimenkuller düzenli ve yüksek kira getirisi sağlamak için daha uygundur?"
 tags: ["kira"]

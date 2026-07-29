@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Satın Almadan Önce Bilmeniz Gereken Yasal Detaylar"
 description: "Ev satın almadan önce bilmeniz gereken tüm yasal detayları öğrenin: tapu ve tescil süreçleri, ipotek ve haciz kontrolü, imar durumu, vergiler, sözleşme maddeleri ve risklerden korunma yöntemleri ile güvenli ve bilinçli bir ev alım süreci sağlayın."
 ---

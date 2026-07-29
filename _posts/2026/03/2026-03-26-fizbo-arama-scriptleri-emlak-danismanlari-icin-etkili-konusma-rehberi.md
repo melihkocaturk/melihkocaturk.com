@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Fizbo Arama Scriptleri: Emlak Danışmanları İçin Etkili Konuşma Rehberi"
 description: "Bu rehberde, Fizbo aramalarında kullanabileceğiniz detaylı scriptler, psikolojik yaklaşımlar, itiraz yönetimi teknikleri ve profesyonel iletişim stratejileri yer almaktadır."
-tags: ["fizbo", "fsbo"]
+tags: []
 ---
 
 Emlak sektöründe sürdürülebilir başarı, güçlü ve sürekli yenilenen bir portföy ile mümkündür. Portföy üretmenin en etkili yollarından biri ise Fizbo (For Sale By Owner) ilanlarıdır. Ancak bu ilanlardan portföy kazanmak, yalnızca telefon açmakla değil, doğru iletişim stratejisini uygulamakla mümkündür.

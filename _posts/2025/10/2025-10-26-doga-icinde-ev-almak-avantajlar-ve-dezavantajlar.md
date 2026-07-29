@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Doğa İçinde Ev Almak: Avantajlar ve Dezavantajlar"
 description: "Doğa içinde ev almanın avantajlarını ve dezavantajlarını keşfedin. Huzurlu yaşam, yatırım potansiyeli ve dikkat edilmesi gereken noktalar bu yazıda."
 ---

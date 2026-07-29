@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Nelere Dikkat Edilmelidir?"
 description: "Ev alırken nelere dikkat etmeliyiz? İşte adım adım bir ev alım rehberi..."
 ---

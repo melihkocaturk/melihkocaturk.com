@@ -1,0 +1,32 @@
+@charset "UTF-8";
+/* Dikey Vesikalık / Portre Özel Çerçeve Stilleri */
+.profile-card-container { position: relative; }
+
+.profile-card-container::before { content: ''; position: absolute; top: -10px; left: -10px; width: 50%; height: 50%; border-top: 4px solid var(--kw-red); border-left: 4px solid var(--kw-red); border-radius: 16px 0 0 0; z-index: 0; }
+
+.profile-image-wrapper { position: relative; z-index: 1; border-radius: 16px; overflow: hidden; box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1); border: 4px solid #ffffff; background-color: #f8f9fa; /* Dikey vesikalık oranı (3:4) */ aspect-ratio: 3 / 4; width: 100%; max-width: 320px; /* Çok geniş ekranlarda aşırı büyümesini engeller */ margin: 0 auto; }
+
+.profile-image-wrapper img { width: 100%; height: 100%; object-fit: cover; /* Fotoğrafın oranını bozmadan çerçeveye tam oturtur */ object-position: center top; /* Vesikalık fotoğraflarda yüzü merkeze alır */ display: block; }
+
+/* Page Header */
+.page-header { background-color: var(--kw-light-bg); padding: 3.5rem 0; border-bottom: 1px solid #e9ecef; }
+
+/* Timeline (Zaman Tüneli) Stilleri */
+.timeline { position: relative; padding-left: 1.5rem; border-left: 2px solid #e9ecef; }
+
+.timeline-item { position: relative; margin-bottom: 2rem; }
+
+.timeline-item:last-child { margin-bottom: 0; }
+
+.timeline-dot { position: absolute; left: -2.05rem; top: 0.25rem; width: 1rem; height: 1rem; border-radius: 50%; background-color: var(--kw-red); border: 3px solid #ffffff; box-shadow: 0 0 0 2px rgba(206, 1, 31, 0.2); }
+
+/* Sertifika Kartı Stili */
+.cert-card { transition: transform 0.2s ease, box-shadow 0.2s ease; background-color: #ffffff; border: 1px solid #e9ecef; }
+
+.cert-card:hover { transform: translateY(-3px); box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08) !important; }
+
+.whatsapp-btn { background-color: #25D366; color: white; font-weight: 600; border: none; }
+
+.whatsapp-btn:hover { background-color: #1DA851; color: white; }
+
+/*# sourceMappingURL=about.css.map */

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Satılık Ev İlanlarında Fotoğrafın Satışa Etkisi"
 description: "Emlak ilanlarında doğru fotoğraf seçimi satış süresini kısaltır. Profesyonel ev fotoğraflarının alıcı psikolojisine etkisini öğrenin."
 ---

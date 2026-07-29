@@ -1,106 +1,141 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-bs-theme="light">
+  <head>
+    
 
-<head>
-  
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Ev Alırken Yeni Dolandırıcılık Yöntemleri (Güncel Uyarı)</title>
-  <meta name="description" content="Bu yazıda 2025–2026 döneminde öne çıkan güncel dolandırıcılık yöntemlerini, gerçek örnekleri ve korunma yollarıyla birlikte detaylı şekilde bulacaksınız.">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="shortcut icon" href="/images/favicon.ico">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ev Alırken Yeni Dolandırıcılık Yöntemleri (Güncel Uyarı)</title>
+    <meta
+      name="description"
+      content="Bu yazıda 2025–2026 döneminde öne çıkan güncel dolandırıcılık yöntemlerini, gerçek örnekleri ve korunma yollarıyla birlikte detaylı şekilde bulacaksınız."
+    >
 
-<body>
-  <div class="container py-3">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container-fluid px-0">
-      <a class="navbar-brand" href="/">
-        <img src="/images/logo.png" alt="Melih Kocatürk" class="site-logo">
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainMenu"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/">
-                Anasayfa
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/hakkinda">
-                Hakkında
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/etiketler">
-                Etiketler
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/araclar">
-                Araçlar
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/rehber">
-                Rehber
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/podcast">
-                Podcast
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/ara">
-                Ara
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/iletisim">
-                İletişim
-              </a>
-            </li>
-          
-        </ul>
-      </div>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+      <link rel="stylesheet" href="/assets/css/post.css">
+    
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  </head>
+
+  <body>
+    <!-- Header / Navigasyon -->
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4 text-dark text-uppercase" href="/">
+      Melih Kocatürk
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold align-items-lg-center gap-2">
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/"
+            >Anasayfa</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/hakkinda"
+            >Hakkında</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/araclar"
+            >Araçlar</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/rehberler"
+            >Rehberler</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/podcast"
+            >Podcast</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/ara"
+            >Ara</a>
+          </li>
+        
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-kw-red px-3 rounded-pill fw-bold btn-sm" href="/iletisim">İletişime Geç</a>
+        </li>
+      </ul>
     </div>
-  </nav>
-</div>
+  </div>
+</nav>
 
-  
+    
 
-<main class="container">
-  <article class="post mx-auto mt-5">
-    <h1 class="display-5 mb-5">Ev Alırken Yeni Dolandırıcılık Yöntemleri (Güncel Uyarı)</h1>
-    <div class="mb-5">
-      <time>23/02/2026</time>
-      <span class="read-time fst-italic">2 dakikalık okuma</span>
-    </div>
+<!-- Makale Gövdesi & Sidebar -->
+<main class="pt-5 pb-4">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Sol Kolon: Başlık ve Makale İçeriği -->
+      <div class="col-lg-8 article-content">
+        <!-- Başlık Alanı -->
+        <h1 class="display-6 fw-bold text-dark mb-3">
+          Ev Alırken Yeni Dolandırıcılık Yöntemleri (Güncel Uyarı)
+        </h1>
 
-    <p>Konut piyasasında hareketlilik arttıkça dolandırıcıların yöntemleri de hızla değişiyor. Özellikle dijitalleşme, sosyal medya ve yapay zekâ teknolojileri, klasik emlak dolandırıcılıklarını çok daha sofistike hale getirdi. Son dönemde Türkiye’de yaşanan vakalar, ev almayı planlayanların artık çok daha dikkatli olması gerektiğini gösteriyor.</p>
+        <!-- Meta Bilgiler & Paylaşım -->
+        <div class="border-bottom pb-3 mb-4">
+          <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 text-muted small">
+            <div class="d-flex align-items-center gap-3">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-person-circle fs-6"></i>
+                <span class="fw-semibold text-dark">Melih Kocatürk</span>
+              </div>
+              <span>•</span>
+              <div class="d-flex align-items-center gap-1">
+                <i class="bi bi-clock"></i>
+                <span>2 dk okuma</span>
+              </div>
+            </div>
+
+            <!-- Sosyal Paylaşım -->
+            <div class="d-flex align-items-center gap-2">
+              <span class="me-1 small">Paylaş:</span>
+              <a href="https://twitter.com/intent/tweet?url=/ev-alirken-yeni-dolandiricilik-yontemleri-guncel-uyari" target="_blank" class="share-btn"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/sharing/share-offsite/?url=/ev-alirken-yeni-dolandiricilik-yontemleri-guncel-uyari"
+                target="_blank"
+                class="share-btn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://api.whatsapp.com/send?text=/ev-alirken-yeni-dolandiricilik-yontemleri-guncel-uyari" target="_blank" class="share-btn"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Makale Metni -->
+        <p>Konut piyasasında hareketlilik arttıkça dolandırıcıların yöntemleri de hızla değişiyor. Özellikle dijitalleşme, sosyal medya ve yapay zekâ teknolojileri, klasik emlak dolandırıcılıklarını çok daha sofistike hale getirdi. Son dönemde Türkiye’de yaşanan vakalar, ev almayı planlayanların artık çok daha dikkatli olması gerektiğini gösteriyor.</p>
 
 <p>Bu yazıda 2025–2026 döneminde öne çıkan güncel dolandırıcılık yöntemlerini, gerçek örnekleri ve korunma yollarıyla birlikte detaylı şekilde bulacaksınız.</p>
 
@@ -319,70 +354,203 @@
 <p>Ev almak hayatın en büyük finansal kararlarından biridir. Bu süreçte yavaş hareket eden kazanır, acele eden kaybeder.</p>
 
 
-    
-      <p>
-        <b>Etiketler</b>:
         
-          <a href="/etiketler#konut piyasası" class="text-black">konut piyasası</a>
+          <!-- Makale Sonu Etiket Listesi -->
+          <div class="pt-4 mt-4 border-top">
+            <div class="d-flex align-items-center gap-2 flex-wrap">
+              <span class="fw-semibold text-dark small me-1"><i class="bi bi-tags me-1"></i> Etiketler:</span>
+              
+                <a href="/etiketler#gayrimenkul piyasası" class="tag-badge">gayrimenkul piyasası</a>
+              
+            </div>
+          </div>
         
-      </p>
-    
 
-    
-      <h3>İlgili Yazılar</h3>
-      <ul>
-        
-          <li>
-            <a href="/gelecekte-en-degerli-evler-hangileri-olacak" class="text-black">Gelecekte En Değerli Evler Hangileri Olacak?</a>
-          </li>
-        
-          <li>
-            <a href="/buyuk-sehirlerde-yasamak-mantikli-mi" class="text-black">Büyük Şehirlerde Yaşamak Mantıklı mı?</a>
-          </li>
-        
-          <li>
-            <a href="/gelecekte-ev-sahibi-olmak-bir-ayricalik-mi-olacak" class="text-black">Gelecekte Ev Sahibi Olmak Bir Ayrıcalık mı Olacak?</a>
-          </li>
-        
-          <li>
-            <a href="/emlak-piyasasinda-yeni-patron-nakit" class="text-black">Emlak Piyasasında Yeni Patron: Nakit</a>
-          </li>
-        
-          <li>
-            <a href="/konut-fiyatlari-dusuyor-kiralar-artiyor-emlak-piyasasinda-neler-oluyor" class="text-black">Konut Fiyatları Düşüyor, Kiralar Artıyor: Emlak Piyasasında Neler Oluyor?</a>
-          </li>
-        
-      </ul>
-    
-  </article>
+        <!-- Yazar İmza / Kapanış Kutusu -->
+        <div class="p-4 bg-light rounded-3 mt-4 border border-light-subtle">
+          <div class="d-flex align-items-center gap-3">
+            <div>
+              <h6 class="fw-bold text-dark mb-1">Melih Kocatürk</h6>
+              <p class="text-muted small mb-0">Gayrimenkul Yatırım, Değerleme ve Pazarlama Danışmanlığı</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sağ Kolon -->
+      <div class="col-lg-4">
+        <div class="sticky-sidebar">
+          <!-- Danışman Kartı -->
+          <div class="p-4 rounded-3 border border-light-subtle bg-white shadow-sm mb-4">
+            <h6 class="fw-bold text-dark mb-2">Gayrimenkul Danışmanlığı</h6>
+            <p class="text-muted small mb-3">
+              Mülkünüzün gerçek pazar değerini öğrenmek veya doğru yatırım fırsatlarını değerlendirmek için ulaşın.
+            </p>
+            <a href="/iletisim" class="btn btn-kw-red w-100 btn-sm fw-bold rounded-2 py-2">
+              <i class="bi bi-envelope me-1"></i> İletişime Geçin
+            </a>
+          </div>
+
+          <!-- Son Yazılar -->
+          <div class="p-4 rounded-3 border border-light-subtle bg-white shadow-sm mb-4">
+            <h6 class="fw-bold text-dark mb-3 pb-2 border-bottom">Son Yazılar</h6>
+            <div class="recent-posts-list">
+              
+                
+                  <div class="mb-3 pb-3 border-bottom border-light">
+                    <div class="text-muted small mb-1">
+                      <i class="bi bi-calendar3 me-1"></i> 23.05.2026
+                    </div>
+                    <h6 class="mb-0 fw-semibold fs-6">
+                      <a
+                        href="/emlak-piyasasinda-yeni-patron-nakit"
+                        class="text-dark text-decoration-none recent-post-link"
+                      >
+                        Emlak Piyasasında Yeni Patron: Nakit
+                      </a>
+                    </h6>
+                  </div>
+                
+                  <div class="mb-3 pb-3 border-bottom border-light">
+                    <div class="text-muted small mb-1">
+                      <i class="bi bi-calendar3 me-1"></i> 10.05.2026
+                    </div>
+                    <h6 class="mb-0 fw-semibold fs-6">
+                      <a
+                        href="/konut-fiyatlari-dusuyor-kiralar-artiyor-emlak-piyasasinda-neler-oluyor"
+                        class="text-dark text-decoration-none recent-post-link"
+                      >
+                        Konut Fiyatları Düşüyor, Kiralar Artıyor: Emlak Piyasasında Neler Oluyor?
+                      </a>
+                    </h6>
+                  </div>
+                
+                  <div class="mb-3 pb-3 border-bottom border-light">
+                    <div class="text-muted small mb-1">
+                      <i class="bi bi-calendar3 me-1"></i> 02.05.2026
+                    </div>
+                    <h6 class="mb-0 fw-semibold fs-6">
+                      <a
+                        href="/ev-fiyatlari-dusuyor-mu-yoksa-manipulasyon-mu-var"
+                        class="text-dark text-decoration-none recent-post-link"
+                      >
+                        Ev Fiyatları Düşüyor mu Yoksa Manipülasyon mu Var?
+                      </a>
+                    </h6>
+                  </div>
+                
+                  <div class="mb-3 pb-3 border-bottom border-light">
+                    <div class="text-muted small mb-1">
+                      <i class="bi bi-calendar3 me-1"></i> 25.07.2026
+                    </div>
+                    <h6 class="mb-0 fw-semibold fs-6">
+                      <a
+                        href="/gelecekte-en-degerli-evler-hangileri-olacak"
+                        class="text-dark text-decoration-none recent-post-link"
+                      >
+                        Gelecekte En Değerli Evler Hangileri Olacak?
+                      </a>
+                    </h6>
+                  </div>
+                
+                  <div class="mb-3 pb-3 border-bottom border-light">
+                    <div class="text-muted small mb-1">
+                      <i class="bi bi-calendar3 me-1"></i> 18.07.2026
+                    </div>
+                    <h6 class="mb-0 fw-semibold fs-6">
+                      <a
+                        href="/turkiyede-konut-krizi-mi-var-gelir-krizi-mi"
+                        class="text-dark text-decoration-none recent-post-link"
+                      >
+                        Türkiye'de Konut Krizi mi Var, Gelir Krizi mi?
+                      </a>
+                    </h6>
+                  </div>
+                
+              
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </main>
 
-  <footer class="container py-5">
-  <ul class="list-inline">
-    <li class="list-inline-item"> <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-dark" target="_blank">
-        <i class="bi bi-linkedin"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://www.instagram.com/melih_kocaturk_" class="text-dark" target="_blank">
-        <i class="bi bi-instagram"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://www.youtube.com/@melihkocaturk" class="text-dark" target="_blank">
-        <i class="bi bi-youtube"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://x.com/melih_kocaturk_" class="text-dark" target="_blank">
-        <i class="bi bi-twitter-x"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="/feed.xml" class="text-dark" target="_blank">
-        <i class="bi bi-rss"></i>
-      </a></li>
-  </ul>
-  <p class="small">© 2026 Melih Kocatürk. Tüm hakları saklıdır.</p>
-  <p class="small"><a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a> / <a
-      href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a></p>
+    <!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4 align-items-center mb-4">
+      <!-- Sol Kolon: İsim ve Ünvan -->
+      <div class="col-lg-5">
+        <h4 class="fw-bold text-white mb-2 text-uppercase">Melih Kocatürk</h4>
+        <p class="text-secondary small mb-0">Gayrimenkul Yatırım, Değerleme ve Pazarlama Danışmanlığı</p>
+      </div>
+
+      <!-- Orta Kolon: Keller Williams Logosu -->
+      <div class="col-lg-3 text-lg-center">
+        <div class="d-inline-flex align-items-center">
+          <a href="https://www.kwforessisli.com.tr/tr/" rel="nofollow">
+            <img
+              src="/images/kw-fores-logo.png"
+              alt="KW Fores Şişli"
+              width="160"
+            >
+          </a>
+        </div>
+      </div>
+
+      <!-- Sağ Kolon: Sosyal Bağlantılar -->
+      <div class="col-lg-4 text-lg-end">
+        <div class="d-flex gap-3 justify-content-lg-end fs-5 text-secondary">
+          
+            <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-secondary text-white-hover"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          
+            <a href="https://www.instagram.com/melih_kocaturk_" class="text-secondary text-white-hover"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          
+            <a href="https://www.youtube.com/@melihkocaturk" class="text-secondary text-white-hover"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          
+            <a href="https://x.com/melih_kocaturk_" class="text-secondary text-white-hover"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          
+            <a href="/feed.xml" class="text-secondary text-white-hover"
+              ><i class="bi bi-rss"></i
+            ></a>
+          
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary opacity-25">
+
+    <!-- Alt Bilgi ve Yasal Metin Linkleri -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-secondary small">
+      <div>
+        © 2026
+        Melih Kocatürk. Tüm hakları saklıdır.
+      </div>
+      <div class="d-flex gap-3">
+        
+          <a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a>
+          <span>•</span>
+        
+          <a href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a>
+          
+        
+      </div>
+    </div>
+  </div>
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-</body>
 
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

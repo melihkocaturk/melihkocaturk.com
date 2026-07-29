@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Türkiye'de Konut Balonu Var mı?"
 description: "Türkiye’de konut fiyatları neden bu kadar hızlı arttı? Gerçekten bir konut balonunun içinde miyiz, yoksa bu sadece enflasyonun bir sonucu mu?"
-tags: ["konut piyasası"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Son yıllarda Türkiye’de konut fiyatlarının hızlı yükselişi, sıkça sorulan bir soruyu gündeme getiriyor: “Konut balonu mu oluştu?” Bu soruya net bir “evet” ya da “hayır” demek kolay değil. Çünkü konut balonu; fiyatların gelir, kira ve ekonomik gerçeklerden koparak sürdürülemez seviyelere çıkmasıyla tanımlanır. Bu yazıda Türkiye’deki mevcut durumu verilerle analiz edecek, ardından ABD ile karşılaştırarak daha net bir çerçeve çizeceğiz.

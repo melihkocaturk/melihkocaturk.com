@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kira Sözleşmesi Feshi Nasıl Yapılır?"
 description: "Kira sözleşmesi feshi nasıl yapılır? Kiracı ve ev sahiplerinin hakları, fesih süreleri, yasal süreçler ve dikkat edilmesi gereken tüm noktaları adım adım anlatan kapsamlı rehber."
 tags: ["kira"]

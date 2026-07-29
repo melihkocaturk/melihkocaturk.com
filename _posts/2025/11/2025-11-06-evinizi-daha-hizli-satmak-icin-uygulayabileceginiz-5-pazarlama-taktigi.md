@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Evinizi Daha Hızlı Satmak İçin Uygulayabileceğiniz 5 Pazarlama Taktiği"
 description: "Evinizi hızlı satmak için 5 etkili pazarlama taktiğiyle satış sürecinizi hızlandırın."
 ---

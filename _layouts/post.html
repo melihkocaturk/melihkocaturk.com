@@ -1,37 +1,120 @@
 ---
 layout: default
 ---
+
 {% assign words = content | strip_html | number_of_words %}
 
-<main class="container">
-  <article class="post mx-auto mt-5">
-    <h1 class="display-5 mb-5">{{ page.title | escape }}</h1>
-    <div class="mb-5">
-      <time>{{ page.date | date: '%d/%m/%Y' }}</time>
-      <span class="read-time fst-italic">{{ words | divided_by: site.words_per_minute }} dakikalık okuma</span>
+<!-- Makale Gövdesi & Sidebar -->
+<main class="pt-5 pb-4">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Sol Kolon: Başlık ve Makale İçeriği -->
+      <div class="col-lg-8 article-content">
+        <!-- Başlık Alanı -->
+        <h1 class="display-6 fw-bold text-dark mb-3">
+          {{ page.title | escape }}
+        </h1>
+
+        <!-- Meta Bilgiler & Paylaşım -->
+        <div class="border-bottom pb-3 mb-4">
+          <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 text-muted small">
+            <div class="d-flex align-items-center gap-3">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-person-circle fs-6"></i>
+                <span class="fw-semibold text-dark">{{ site.title }}</span>
+              </div>
+              <span>•</span>
+              <div class="d-flex align-items-center gap-1">
+                <i class="bi bi-clock"></i>
+                <span>{{ words | divided_by: site.words_per_minute }} dk okuma</span>
+              </div>
+            </div>
+
+            <!-- Sosyal Paylaşım -->
+            <div class="d-flex align-items-center gap-2">
+              <span class="me-1 small">Paylaş:</span>
+              <a href="https://twitter.com/intent/tweet?url={{ page.url }}" target="_blank" class="share-btn"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/sharing/share-offsite/?url={{ page.url }}"
+                target="_blank"
+                class="share-btn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://api.whatsapp.com/send?text={{ page.url }}" target="_blank" class="share-btn"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Makale Metni -->
+        {{ content }}
+
+        {% if page.tags.size > 0 %}
+          <!-- Makale Sonu Etiket Listesi -->
+          <div class="pt-4 mt-4 border-top">
+            <div class="d-flex align-items-center gap-2 flex-wrap">
+              <span class="fw-semibold text-dark small me-1"><i class="bi bi-tags me-1"></i> Etiketler:</span>
+              {% for tag in page.tags %}
+                <a href="{{ site.baseurl }}/etiketler#{{ tag }}" class="tag-badge">{{ tag }}</a>
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+
+        <!-- Yazar İmza / Kapanış Kutusu -->
+        <div class="p-4 bg-light rounded-3 mt-4 border border-light-subtle">
+          <div class="d-flex align-items-center gap-3">
+            <div>
+              <h6 class="fw-bold text-dark mb-1">{{ site.title }}</h6>
+              <p class="text-muted small mb-0">{{ site.subtitle }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sağ Kolon -->
+      <div class="col-lg-4">
+        <div class="sticky-sidebar">
+          <!-- Danışman Kartı -->
+          <div class="p-4 rounded-3 border border-light-subtle bg-white shadow-sm mb-4">
+            <h6 class="fw-bold text-dark mb-2">Gayrimenkul Danışmanlığı</h6>
+            <p class="text-muted small mb-3">
+              Mülkünüzün gerçek pazar değerini öğrenmek veya doğru yatırım fırsatlarını değerlendirmek için ulaşın.
+            </p>
+            <a href="/iletisim" class="btn btn-kw-red w-100 btn-sm fw-bold rounded-2 py-2">
+              <i class="bi bi-envelope me-1"></i> İletişime Geçin
+            </a>
+          </div>
+
+          <!-- Son Yazılar -->
+          <div class="p-4 rounded-3 border border-light-subtle bg-white shadow-sm mb-4">
+            <h6 class="fw-bold text-dark mb-3 pb-2 border-bottom">Son Yazılar</h6>
+            <div class="recent-posts-list">
+              {% if site.related_posts.size >= 1 %}
+                {% for related_post in site.related_posts limit: 5 %}
+                  <div class="mb-3 pb-3 border-bottom border-light">
+                    <div class="text-muted small mb-1">
+                      <i class="bi bi-calendar3 me-1"></i> {{ related_post.date | date: '%d.%m.%Y' }}
+                    </div>
+                    <h6 class="mb-0 fw-semibold fs-6">
+                      <a
+                        href="{{ related_post.url }}"
+                        class="text-dark text-decoration-none recent-post-link"
+                      >
+                        {{ related_post.title }}
+                      </a>
+                    </h6>
+                  </div>
+                {% endfor %}
+              {% endif %}
+            </div>
+          </div>
+
+        </div>
+      </div>
     </div>
-
-    {{ content }}
-
-    {% if page.tags.size > 0 %}
-      <p>
-        <b>Etiketler</b>:
-        {% for tag in page.tags %}
-          <a href="{{ site.baseurl }}/etiketler#{{ tag }}" class="text-black">{{ tag }}</a>
-          {%- unless forloop.last %}, {% endunless %}
-        {% endfor %}
-      </p>
-    {% endif %}
-
-    {% if site.related_posts.size >= 1 %}
-      <h3>İlgili Yazılar</h3>
-      <ul>
-        {% for related_post in site.related_posts limit: 5 %}
-          <li>
-            <a href="{{ related_post.url }}" class="text-black">{{ related_post.title }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    {% endif %}
-  </article>
+  </div>
 </main>

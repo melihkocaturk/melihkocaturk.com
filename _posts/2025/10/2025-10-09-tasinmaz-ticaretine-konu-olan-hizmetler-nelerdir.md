@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Taşınmaz Ticaretine Konu Olan Hizmetler Nelerdir?"
 description: "Gayrimenkul danışmanından alabileceğiniz hizmetler, yalnızca aracılık faaliyetinden ibaret olmayıp; yasal süreçlerin yönetimi, pazar analizi, yatırım danışmanlığı ve portföy yönetimi gibi çok yönlü uzmanlık alanlarını kapsar."
 tags: ["gayrimenkul danışmanı"]

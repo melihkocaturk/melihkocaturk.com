@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Sigortası mı DASK mı? Aralarındaki Farklar Nelerdir?"
 description: "DASK ve Konut Sigortası arasındaki farklar nelerdir? Teminat kapsamları, zorunluluk durumu ve hangi sigortanın hangi riskleri karşıladığına dair tüm detayları bu rehberde bulabilirsiniz."
-tags: ["konut sigortası", "dask"]
+tags: ["dask"]
 ---
 
 Türkiye’de bir ev sahibi olmanın en önemli unsurlarından biri, olası afet ve risklere karşı doğru türde sigorta ile kendinizi güvence altına almaktır. Bu noktada en çok karıştırılan iki kavram Konut Sigortası ve **DASK (Zorunlu Deprem Sigortası)**dır. Birçok kişi bu iki sigortanın aynı olduğunu düşünse de kapsamları, zorunluluğu ve sağladığı teminatlar tamamen farklıdır. Bu yazıda Konut Sigortası ile DASK arasındaki farkları, hangi durumlarda gerekli olduklarını ve neden her ikisine birden ihtiyaç duyulabileceğini tüm ayrıntılarıyla ele alıyoruz.

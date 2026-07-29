@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ofis Yatırımı mı, Konut Yatırımı mı Daha Karlı?"
 description: "Bu yazıda her iki yatırım türünü avantaj ve dezavantajlarıyla karşılaştırarak doğru kararı vermenize yardımcı olacağız."
-tags: ["gayrimenkul yatırımı"]
+tags: []
 ---
 
 Gayrimenkul yatırımı, Türkiye’de en güvenilir yatırım araçlarından biri olarak görülmeye devam ediyor. Ancak yatırımcıların aklındaki temel soru genellikle aynı: “Ofis yatırımı mı yoksa konut yatırımı mı daha karlı?” Bu sorunun cevabı, piyasa koşullarına, bölgeye, kiralama potansiyeline ve yatırımcının hedeflerine göre değişir.

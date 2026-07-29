@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Taşınmaz Ticareti Faaliyetinde Uyulması Gereken İlke ve Kurallar"
 description: "Bu yazıda, taşınmaz ticareti yönetmeliğinde yer alan temel ilke ve kuralları detaylı biçimde ele alacağız."
-tags: ["emlak danışmanı"]
+tags: ["gayrimenkul danışmanı"]
 ---
 
 Taşınmaz ticareti, yani emlak alım satım ve kiralama faaliyetleri, ülkemizde **“Taşınmaz Ticareti Hakkında Yönetmelik”** ile belirli ilke ve kurallara bağlanmıştır. Bu yönetmelik, hem hizmet kalitesini yükseltmeyi hem de alıcı, satıcı, kiracı ve emlak işletmeleri arasındaki güveni sağlamayı amaçlar. Bu yazıda, yönetmelikte yer alan temel ilke ve kuralları detaylı biçimde ele alacağız.

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Al Yenile Sat Yatırımlarında Nelere Dikkat Edilmelidir?"
 description: "Doğru planlandığında oldukça kârlı olan al yenile sat yöntemi, yanlış adımlarla ise ciddi zararlara yol açabilir."
-tags: ["gayrimenkul yatırımı"]
+tags: []
 ---
 
 Gayrimenkul yatırım stratejileri arasında “al, yenile, sat” (flipping) modeli son yıllarda oldukça popüler hale geldi. Bu stratejide yatırımcı, değerinin altında bir mülk satın alır, gerekli tadilatları yapar ve daha yüksek fiyata satar. Doğru planlandığında oldukça kârlı olan bu yöntem, yanlış adımlarla ise ciddi zararlara yol açabilir. Peki, al yenile sat yatırımlarında nelere dikkat etmek gerekir?

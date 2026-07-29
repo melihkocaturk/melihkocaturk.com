@@ -1,135 +1,243 @@
 ---
 layout: page
 title: "Kira Artış Oranı Hesaplama"
-description: "Güncel TÜFE oranına göre resmi kira artış oranını ve yeni kira tutarınızı anında hesaplayın. Yasal
-sınırlara uygun kira zammını saniyeler içinde öğrenin!"
+description: "Mevcut kira bedeliniz ve güncel TÜFE (12 aylık ortalamalara göre) oranını girerek yeni dönem kira tutarını
+anında hesaplayın."
 permalink: /araclar/kira-artis-orani-hesaplama.html
+tag: "Kira & Mevzuat"
+icon: percent
 ---
 
-<div class="container my-4" style="max-width: 520px;">
-  <div class="card border">
-    <div class="card-body p-4">
-      <form id="rentIncreaseForm" onsubmit="event.preventDefault(); calculateRentIncrease();">
-        <!-- Current Rent Amount -->
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="currentRent" placeholder="20000" value="20000" required>
-          <label for="currentRent">Mevcut Kira Tutarı (TL)</label>
-        </div>
+<style>
+  main {
+    flex: 1;
+  }
 
-        <!-- Rent Increase Rate (CPI / TÜFE) -->
-        <div class="form-floating mb-3">
-          <input type="number" step="0.01" class="form-control" id="cpiRate" placeholder="33.01" value="33.01" required>
-          <label for="cpiRate">TÜFE 12 Aylık Ortalaması / Artış Oranı % (Tahmini)</label>
-        </div>
+  .calc-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
 
-        <!-- Calculate Button -->
-        <button type="submit" class="btn btn-dark w-100 py-3 fw-bold rounded-3">
-          Yeni Kirayı Hesapla
-        </button>
-      </form>
+  .info-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
 
-      <!-- Results Section -->
-      <div id="rentResultsContainer" class="mt-4 p-3 bg-body-tertiary rounded-3 border d-none">
-        <h6 class="fw-bold text-dark border-bottom pb-2 mb-3">Hesaplama Sonucu</h6>
+  .form-control:focus,
+  .form-select:focus {
+    border-color: var(--kw-red);
+    box-shadow: 0 0 0 0.25rem rgba(206, 1, 31, 0.15);
+  }
 
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Kira Zam Tutarı:</span>
-          <span class="fw-semibold text-danger" id="increaseAmountOutput">+0 TL</span>
-        </div>
+  .result-box {
+    background-color: #ffffff;
+    border-left: 4px solid var(--kw-red);
+    border-radius: 8px;
+  }
 
-        <div class="d-flex justify-content-between align-items-center py-3 my-2 bg-success-subtle px-3 rounded-3">
-          <span class="fw-bold text-success-emphasis">Yeni Ödenecek Kira Tutarı:</span>
-          <span class="fw-bold fs-4 text-success" id="newRentOutput">0 TL</span>
+  .step-badge {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 50%;
+    background-color: rgba(206, 1, 31, 0.1);
+    color: var(--kw-red);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
+  }
+</style>
+
+<!-- Ana İçerik -->
+<main class="py-5">
+  <div class="container py-3">
+
+    <!-- Başlık Bölümü -->
+    <div class="text-center mb-5">
+      <span class="badge bg-danger-subtle text-danger px-3 py-2 rounded-pill fw-semibold mb-2">
+        <i class="bi bi-calculator me-1"></i> {{ page.tag }}
+      </span>
+      <h1 class="fw-bold text-dark mb-2">{{ page.title }}</h1>
+      <p class="text-secondary mx-auto" style="max-width: 680px;">
+        {{ page.description }}
+      </p>
+    </div>
+
+    <div class="row g-4 align-items-start">
+
+      <!-- SOL KOLON: Form Alanı -->
+      <div class="col-lg-6">
+        <div class="calc-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-sliders me-2 text-kw-red"></i>Kira Bilgileri
+          </h4>
+
+          <form id="rentIncreaseForm">
+
+            <!-- Mevcut Kira Bedeli -->
+            <div class="mb-3">
+              <label for="currentRent" class="form-label fw-semibold text-dark">Mevcut Aylık Kira Bedeli (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="currentRent"
+                  placeholder="Örn: 25000" required>
+              </div>
+            </div>
+
+            <!-- TÜFE Artış Oranı (ZORUNLU DİNAMİK INPUT) -->
+            <div class="mb-4">
+              <label for="tufeRate" class="form-label fw-semibold text-dark">
+                12 Aylık Ortalamalara Göre TÜFE Oranı (%) <span class="text-danger">*</span>
+              </label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">%</span>
+                <input type="number" step="0.01" class="form-control form-control-lg border-start-0" id="tufeRate"
+                  placeholder="Örn: 65.40" required>
+              </div>
+              <div id="tufeHelperText" class="form-text small text-muted">
+                Kiranın yenileneceği aya ait TÜİK tarafından açıklanan son 12 aylık TÜFE ortalamasını giriniz.
+              </div>
+            </div>
+
+            <!-- Buton -->
+            <button type="submit" class="btn btn-kw-red btn-lg w-100 rounded-pill fw-bold fs-6">
+              <i class="bi bi-calculator-fill me-2"></i>Yeni Kirayı Hesapla
+            </button>
+
+          </form>
+
+          <!-- Sonuç Kutusu (Gizli Başlar) -->
+          <div id="resultContainer" class="mt-4 pt-3 border-top" style="display: none;">
+            <h5 class="fw-bold text-dark mb-3">Hesaplama Sonucu</h5>
+
+            <div class="result-box p-3 mb-3">
+              <div class="text-secondary small">Yeni Aylık Kira Bedeli:</div>
+              <div id="newRent" class="fs-4 fw-bold text-kw-red">₺0</div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="result-box p-3 h-100">
+                  <div class="text-secondary small">Aylık Zam Tutarı:</div>
+                  <div id="increaseAmount" class="fs-5 fw-bold text-dark">₺0</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="result-box p-3 h-100">
+                  <div class="text-secondary small">Uygulanan TÜFE Oranı:</div>
+                  <div id="appliedRate" class="fs-5 fw-bold text-dark">%0</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
 
-      <!-- Error Alert Area -->
-      <div id="rentErrorMessage" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
-    </div>
-  </div>
-</div>
+      <!-- SAĞ KOLON: Hesaplama Mantığı ve Yasal Çerçeve -->
+      <div class="col-lg-6">
+        <div class="info-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-book me-2 text-kw-red"></i>Hesaplama Mantığı
+          </h4>
 
-<div class="container my-4" style="max-width: 520px;">
-  <div class="card border">
-    <div class="card-body p-4">
-      <h4 class="card-title text-dark fw-bold mb-3 mt-0">
-        Kira Artış Oranı Nasıl Hesaplanır?
-      </h4>
-      <p class="text-muted small mb-4">
-        Türk Borçlar Kanunu'nun 344. maddesine göre, yenilenen kira dönemlerinde uygulanacak kira bedeli, bir önceki
-        kira yılında <a href="https://veriportali.tuik.gov.tr/tr" target="_blank" class="text-dark">TÜİK</a> tarafından
-        açıklanan <strong>12 aylık TÜFE ortalamasını</strong> geçemez.
-      </p>
+          <p class="text-secondary">
+            Türk Borçlar Kanunu'nun (TBK) 344. maddesi uyarınca, yenilenen kira dönemlerinde uygulanacak artış oranı
+            yasal tavan sınırlamasına tabidir.
+          </p>
 
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Zam Tutarı Formülü</div>
-            <span class="small text-secondary">Mevcut Kira Bedeli &times; (TÜFE Oranı &divide; 100)</span>
+          <div class="vstack gap-3 my-4">
+
+            <!-- Adım 1 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">1</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Yasal Üst Sınır (12 Aylık TÜFE)</h6>
+                <p class="text-secondary small mb-0">
+                  Kira artışında uygulanabilecek yasal tavan oran, TÜİK tarafından açıklanan <strong>12 aylık TÜFE
+                    ortalamasıdır</strong>.
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 2 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">2</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Aylık Zam Miktarı Formülü</h6>
+                <p class="text-secondary small mb-0">
+                  <code>Aylık Zam Miktarı = Mevcut Kira Bedeli × (Girilen TÜFE Oranı / 100)</code>
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 3 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">3</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Yeni Kira Bedeli Formülü</h6>
+                <p class="text-secondary small mb-0">
+                  <code>Yeni Kira Bedeli = Mevcut Kira Bedeli + Aylık Zam Miktarı</code>
+                </p>
+              </div>
+            </div>
+
           </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Yeni Kira Bedeli Formülü</div>
-            <span class="small text-secondary">Mevcut Kira Bedeli + Zam Tutarı</span>
-          </div>
-        </li>
-      </ul>
 
-      <div class="my-3 p-3 bg-body-tertiary rounded-3 border">
-        <span class="small text-muted">
-          <strong>Not:</strong> Yasal oran tavan orandır. Ev sahibi ve kiracı karşılıklı anlaşarak bu oranın altında bir
-          artış belirleyebilir.
-        </span>
+          <div class="p-3 bg-light rounded-3 border mt-4">
+            <small class="text-muted d-block">
+              <i class="bi bi-info-circle-fill text-kw-red me-1"></i>
+              <strong>Yasal Bilgi:</strong> Ev sahibi, girilen yasal tavan TÜFE oranının üzerinde tek taraflı zam talep
+              edemez. Taraflar anlaşarak bu oranın altında bir artış belirleyebilir.
+            </small>
+          </div>
+
+        </div>
       </div>
 
-      <p class="small">
-        &rarr; Kira artış mevzuatı ve yasal haklar hakkında detaylı bilgi için
-        <a href="https://www.melihkocaturk.com/kira-artisi-neye-gore-hesaplanir" target="_blank"
-          class="fw-semibold text-decoration-underline text-dark">
-          Kira Artışı Neye Göre Hesaplanır?
-        </a>
-        başlıklı rehberimizi inceleyebilirsiniz.
-      </p>
     </div>
-  </div>
-</div>
 
+  </div>
+</main>
+
+<!-- Hesaplama Scripti -->
 <script>
-  function calculateRentIncrease() {
-    // Get inputs
+  document.getElementById('rentIncreaseForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
     const currentRent = parseFloat(document.getElementById('currentRent').value) || 0;
-    const cpiRate = parseFloat(document.getElementById('cpiRate').value) || 0;
+    const tufeRate = parseFloat(document.getElementById('tufeRate').value) || 0;
 
-    const rentResultsContainer = document.getElementById('rentResultsContainer');
-    const rentErrorMessage = document.getElementById('rentErrorMessage');
-
-    // Reset error state
-    rentErrorMessage.classList.add('d-none');
-
-    if (currentRent <= 0 || cpiRate < 0) {
-      rentErrorMessage.innerText = "Lütfen geçerli bir mevcut kira tutarı ve artış oranı giriniz.";
-      rentErrorMessage.classList.remove('d-none');
-      rentResultsContainer.classList.add('d-none');
+    if (currentRent <= 0) {
+      alert("Lütfen geçerli bir mevcut kira bedeli giriniz.");
       return;
     }
 
-    // Mathematical Calculations
-    const increaseAmount = currentRent * (cpiRate / 100);
+    if (tufeRate <= 0) {
+      alert("Lütfen geçerli bir 12 aylık ortalama TÜFE oranı giriniz.");
+      return;
+    }
+
+    // Hesaplama İşlemleri
+    const increaseAmount = currentRent * (tufeRate / 100);
     const newRent = currentRent + increaseAmount;
 
-    // Currency Formatter (TRY)
-    const currencyFormatter = new Intl.NumberFormat('tr-TR', {
-      style: 'currency',
-      currency: 'TRY',
-      maximumFractionDigits: 0
-    });
+    // Para Birimi Formatlayıcı
+    const formatter = new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY' });
 
-    // Output formatted results
-    document.getElementById('increaseAmountOutput').innerText = "+ " + currencyFormatter.format(increaseAmount);
-    document.getElementById('newRentOutput').innerText = currencyFormatter.format(newRent);
+    // Sonuçları Ekrana Basma
+    document.getElementById('newRent').innerText = formatter.format(newRent);
+    document.getElementById('increaseAmount').innerText = formatter.format(increaseAmount);
+    document.getElementById('appliedRate').innerText = `%${tufeRate.toFixed(2)}`;
 
-    // Display results
-    rentResultsContainer.classList.remove('d-none');
-  }
+    // Sonuç Kutusunu Görünür Yapma
+    document.getElementById('resultContainer').style.display = 'block';
+  });
 </script>

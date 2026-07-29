@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Bir Binaya İskan Verilmesi Ne Anlama Gelmektedir?"
 description: "Bir binaya iskan verilmesi ne demektir? Yapı Kullanma İzin Belgesi (iskan) nedir, neden önemlidir ve binanın oturmaya uygun olduğunun resmi olarak nasıl belgelendiğini basitçe ve anlaşılır biçimde açıklıyoruz."
 tags: ["kat irtifakı", "kat mülkiyeti", "iskan"]

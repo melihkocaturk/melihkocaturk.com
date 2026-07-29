@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Yatırım Ortaklığı (GYO) Nedir?"
 description: "GYO tam olarak nedir, nasıl çalışır, avantajları ve riskleri nelerdir?"
-tags: ["gyo", "gayrimenkul yatırımı"]
+tags: []
 ---
 
 Gayrimenkul, uzun yıllardır yatırımcıların güvenli limanı olarak görülür. Ancak doğrudan mülk satın almak hem yüksek sermaye ister hem de çeşitli operasyonel yükümlülükler doğurur. İşte bu noktada *Gayrimenkul Yatırım Ortaklıkları* (GYO’lar) devreye girer.

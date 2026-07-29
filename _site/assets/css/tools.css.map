@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "tools.css",
+	"sources": [
+		"tools.scss",
+		"_sass/_tools.scss"
+	],
+	"sourcesContent": [
+		"@import \"tools\";",
+		"/* Page Header */\n.page-header {\n  background-color: var(--kw-light-bg);\n  padding: 3.5rem 0;\n  border-bottom: 1px solid #e9ecef;\n}\n\n/* Kart Stilleri */\n.tool-card {\n  transition: transform 0.2s ease, box-shadow 0.2s ease;\n  border: 1px solid #e9ecef;\n  background-color: #ffffff;\n}\n\n.tool-card:hover {\n  transform: translateY(-4px);\n  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.08) !important;\n}\n\n.tool-icon-wrapper {\n  width: 52px;\n  height: 52px;\n  border-radius: 12px;\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  font-size: 1.4rem;\n}\n\n/* Minimalist WhatsApp Button */\n.whatsapp-btn {\n  background-color: #25D366;\n  color: white;\n  font-weight: 600;\n  border: none;\n  transition: background-color 0.2s ease;\n}\n\n.whatsapp-btn:hover {\n  background-color: #1DA851;\n  color: white;\n}"
+	],
+	"names": [],
+	"mappings": "ACAA,iBAAiB;AACjB,AAAA,YAAY,CAAC,EACX,gBAAgB,EAAE,kBAAkB,EACpC,OAAO,EAAE,QAAQ,EACjB,aAAa,EAAE,iBAAiB,GACjC;;AAED,mBAAmB;AACnB,AAAA,UAAU,CAAC,EACT,UAAU,EAAE,yCAAyC,EACrD,MAAM,EAAE,iBAAiB,EACzB,gBAAgB,EAAE,OAAO,GAC1B;;AAED,AAAA,UAAU,CAAC,KAAK,CAAC,EACf,SAAS,EAAE,gBAAgB,EAC3B,UAAU,EAAE,CAAC,CAAC,OAAO,CAAC,MAAM,CAAC,mBAAmB,CAAC,UAAU,GAC5D;;AAED,AAAA,kBAAkB,CAAC,EACjB,KAAK,EAAE,IAAI,EACX,MAAM,EAAE,IAAI,EACZ,aAAa,EAAE,IAAI,EACnB,OAAO,EAAE,IAAI,EACb,WAAW,EAAE,MAAM,EACnB,eAAe,EAAE,MAAM,EACvB,SAAS,EAAE,MAAM,GAClB;;AAED,gCAAgC;AAChC,AAAA,aAAa,CAAC,EACZ,gBAAgB,EAAE,OAAO,EACzB,KAAK,EAAE,KAAK,EACZ,WAAW,EAAE,GAAG,EAChB,MAAM,EAAE,IAAI,EACZ,UAAU,EAAE,0BAA0B,GACvC;;AAED,AAAA,aAAa,CAAC,KAAK,CAAC,EAClB,gBAAgB,EAAE,OAAO,EACzB,KAAK,EAAE,KAAK,GACb"
+}

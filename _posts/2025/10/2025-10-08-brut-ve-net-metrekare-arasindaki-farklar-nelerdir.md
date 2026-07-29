@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Brüt ve Net Metrekare Arasındaki Farklar Nelerdir"
 description: "Gayrimenkul alırken dairenin gerçek kullanım alanını nasıl hesaplayacağınızı, hangi ölçümün ne anlama geldiğini ve dikkat etmeniz gereken detayları bu yazıda keşfedin."
 ---

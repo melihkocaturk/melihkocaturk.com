@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Yapı Kayıt Belgesi İptal Edilebilir mi?"
 description: "Yapı Kayıt Belgesi iptal edilebilir mi? Hangi durumlarda geçersiz sayılır, iptal süreci nasıl işler ve iptal sonrası ne gibi sonuçlar doğurur?"
-tags: ["yapı kayıt belgesi", "tapu"]
+tags: ["tapu"]
 ---
 
 İmar Barışı süreciyle birlikte milyonlarca yapı için alınan Yapı Kayıt Belgesi, birçok taşınmaz sahibine önemli avantajlar sağladı. Ancak son yıllarda en çok merak edilen konulardan biri şu oldu: “Yapı Kayıt Belgesi sonradan iptal edilebilir mi?”

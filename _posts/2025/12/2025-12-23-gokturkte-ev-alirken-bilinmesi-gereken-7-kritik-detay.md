@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk’te Ev Alırken Bilinmesi Gereken 7 Kritik Detay"
 description: "Bu rehberde, Göktürk’te ev alırken mutlaka dikkate almanız gereken 7 kritik detayı; yüzeysel bilgilerden uzak, pratik ve gerçek piyasa dinamiklerine dayalı olarak ele alıyoruz."
 tags: ["göktürk"]

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Neden Para Yönetimini Beceremiyoruz? Görünmeyen Tuzaklar ve Çıkış Yolları"
 description: "Bu yazıda, para yönetimini neden beceremediğimizi psikolojik, kültürel ve davranışsal boyutlarıyla ele alacak ve bu döngüyü kırmak için uygulanabilir çözümler sunacağız."
-tags: ["finansal okuryazarlık"]
+tags: []
 ---
 
 Para kazanmak zor, ama onu yönetmek çoğu zaman daha da zor. Pek çok insan iyi bir gelire sahip olmasına rağmen ay sonunu getirmekte zorlanıyor, birikim yapamıyor ve finansal stres yaşıyor. Peki sorun gerçekten “yetersiz kazanç” mı, yoksa daha derinde yatan başka sebepler mi var?

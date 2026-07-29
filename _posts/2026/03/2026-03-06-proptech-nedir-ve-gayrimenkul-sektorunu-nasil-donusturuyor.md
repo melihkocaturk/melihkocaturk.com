@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "PropTech Nedir ve Gayrimenkul Sektörünü Nasıl Dönüştürüyor?"
 description: "Bu yazıda PropTech kavramını, günümüzdeki gelişmeleri ve gelecekte ortaya çıkabilecek dönüşümleri detaylı şekilde ele alacağız."
-tags: ["proptech", "gayrimenkul teknolojileri"]
+tags: ["gayrimenkul teknolojileri"]
 ---
 
 Gayrimenkul sektörü uzun yıllar boyunca yavaş değişen ve geleneksel yöntemlerin hâkim olduğu bir alan olarak görülüyordu. Ancak son yıllarda teknoloji ile birlikte bu algı kökten değişmeye başladı. Artık ev aramaktan yatırım analizine, kiralama süreçlerinden bina yönetimine kadar pek çok aşama dijitalleşmiş durumda. Bu dönüşümün merkezinde ise **PropTech** kavramı yer alıyor.

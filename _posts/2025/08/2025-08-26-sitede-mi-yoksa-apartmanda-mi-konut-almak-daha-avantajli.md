@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Sitede mi Yoksa Apartmanda mı Konut Almak Daha Avantajlı?"
 description: "Bu yazıda, hem yatırım hem de yaşam açısından hangi seçeneğin daha avantajlı olduğunu mercek altına alıyoruz."
 tags: ["konut yatırımı"]

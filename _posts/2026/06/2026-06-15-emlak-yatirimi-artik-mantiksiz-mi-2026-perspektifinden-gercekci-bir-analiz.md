@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Yatırımı Artık Mantıksız mı? 2026 Perspektifinden Gerçekçi Bir Analiz"
 description: "Bu yazıda emlak yatırımının avantajlarını, dezavantajlarını, güncel piyasa koşullarını ve yatırımcıların dikkat etmesi gereken noktaları detaylı şekilde ele alacağız."
-tags: ["emlak yatırımı", "emlak piyasası"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Son yıllarda emlak piyasasında yaşanan hızlı fiyat artışları, yükselen faiz oranları, değişen ekonomik koşullar ve alternatif yatırım araçlarının öne çıkması, yatırımcıların aklına aynı soruyu getiriyor: **"Emlak yatırımı artık mantıksız mı?"**

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "İstanbul’da Yatırımlık Daire Nereden Alınır? (2025)"
 description: "Bu yazıda, 2025 yılı itibarıyla İstanbul'da yatırım amaçlı daire alırken dikkat edilmesi gereken bölgeleri, neden bu bölgelerin öne çıktığını ve yatırım potansiyeli yüksek semtleri sizin için derledik."
 ---

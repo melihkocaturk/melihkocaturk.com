@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Kira Getirisine Yönelik Konut Alma Kararı Nasıl Verilir?"
 description: "Gayrimenkul yatırımı, yalnızca değer artışına odaklanılan bir birikim yöntemi değildir. Düzenli kira getirisi elde etmek isteyen yatırımcılar için de en güvenilir yollardan biridir."
-tags: ["kira", "gayrimenkul yatırımı"]
+tags: ["kira", ]
 ---
 
 Gayrimenkul yatırımı, yalnızca değer artışına odaklanılan bir birikim yöntemi değildir. Düzenli kira getirisi elde etmek isteyen yatırımcılar için de en güvenilir yollardan biridir. Ancak kira getirisine yönelik konut satın almak, sıradan bir ev alımından çok daha fazla analiz gerektirir. Yanlış bir tercih, yatırımın geri dönüş süresini uzatabilir veya kira potansiyelini düşürebilir. Bu nedenle yatırım yapmadan önce ayrıntılı bir yol haritasına ihtiyaç vardır.

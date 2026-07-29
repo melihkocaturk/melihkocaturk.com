@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Topraktan Konut Almak Ne Demektir?"
 description: "Topraktan konut almak tam olarak ne anlama geliyor, hangi avantajları ve riskleri barındırıyor?"
 ---

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Müteahhit ile Kat Karşılığı Anlaşma Yaparken Dikkat Edilecekler"
 description: "Bu yazıda, arsa sahiplerinin kat karşılığı anlaşma sürecinde gözden kaçırmaması gereken kritik detayları adım adım ele alıyoruz."
 ---

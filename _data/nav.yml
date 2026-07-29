@@ -1,0 +1,12 @@
+- name: Anasayfa
+  link: /
+- name: Hakkında
+  link: /hakkinda
+- name: Araçlar
+  link: /araclar
+- name: Rehberler
+  link: /rehberler
+- name: Podcast
+  link: /podcast
+- name: Ara
+  link: /ara

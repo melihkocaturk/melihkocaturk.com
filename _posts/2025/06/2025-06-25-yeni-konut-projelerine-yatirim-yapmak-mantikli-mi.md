@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Yeni Konut Projelerine Yatırım Yapmak Mantıklı mı?"
 description: "Bu yazıda, yeni konut projelerine yatırım yapmanın avantajlarını, risklerini ve karar verirken nelere dikkat edilmesi gerektiğini detaylıca ele alıyoruz."
 tags: ["konut projeleri"]

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "İnternet Ortamındaki İlanlara İlişkin Yükümlülükler Nelerdir?"
 description: "Bu yazıda, internet ortamındaki ilanlara ilişkin yükümlülükleri hem gayrimenkul danışmanları hem de ilan platformları açısından detaylı biçimde ele alıyoruz."
 tags: ["gayrimenkul danışmanı"]

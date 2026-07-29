@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Tapuda Düşük Bedel Göstermenin Riskleri Nelerdir?"
 description: "Bu yazıda tapuda taşınmaz değerini düşük göstermenin sonuçlarını, doğurabileceği riskleri ve neden kaçınılması gerektiğini detaylı şekilde ele alacağız."
-tags: ["tapu", "vergi", "gayrimenkul hukuku"]
+tags: ["tapu"]
 ---
 
 Gayrimenkul alım satım işlemlerinde tarafların en çok dikkat ettiği konulardan biri tapu harcıdır. Türkiye’de taşınmaz alım satımlarında hem alıcı hem de satıcı belirli oranlarda tapu harcı ödemek zorundadır. Bu harç, taşınmazın tapuda beyan edilen satış değeri üzerinden hesaplanır. 

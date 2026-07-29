@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "İlk Konut Alımında Kredi Teşviği Var mıdır?"
 description: "Bu yazımızda, mevcut uygulamaları, devlet desteklerini ve bankaların sunduğu avantajları detaylı şekilde inceleyeceğiz."
 tags: ["konut kredisi"]

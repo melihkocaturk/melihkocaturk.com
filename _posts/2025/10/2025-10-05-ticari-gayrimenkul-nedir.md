@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ticari Gayrimenkul Nedir?"
 description: "Ticari gayrimenkul nedir, hangi türleri vardır ve neden yatırım için önemlidir? Ticari mülk yatırımlarına dair kapsamlı bir rehber."
 tags: ["ticari gayrimenkul"]

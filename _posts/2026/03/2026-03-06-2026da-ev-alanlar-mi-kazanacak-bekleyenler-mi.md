@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "2026’da Ev Alanlar mı Kazanacak, Bekleyenler mi?"
 description: "2026’da ev almak mı yoksa beklemek mi daha mantıklı? Faizler, enflasyon, kira getirisi ve konut piyasası beklentileriyle detaylı analiz."
-tags: ["konut piyasası", "konut yatırımı"]
+tags: ["gayrimenkul piyasası", "konut yatırımı"]
 ---
 
 Konut piyasasında en çok sorulan sorulardan biri şu: **“Şimdi mi almalı, yoksa biraz daha beklemeli mi?”** 2026 yılına girerken bu soru hem yatırımcıların hem de ilk kez ev alacakların gündeminde. Yüksek faizler, enflasyon, kira fiyatlarındaki artış ve konut üretimindeki değişimler bu kararı daha da zorlaştırıyor.

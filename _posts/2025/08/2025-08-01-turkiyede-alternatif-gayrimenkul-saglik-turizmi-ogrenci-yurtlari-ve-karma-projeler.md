@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Türkiye’de Alternatif Gayrimenkul: Sağlık Turizmi, Öğrenci Yurtları ve Karma Projeler"
 description: "Bu yazımızda, konut dışında öne çıkan bu alternatif yatırım alanlarını mercek altına alacağız."
 ---

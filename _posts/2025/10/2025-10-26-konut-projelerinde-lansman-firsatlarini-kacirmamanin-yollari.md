@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Projelerinde Lansman Fırsatlarını Kaçırmamanın Yolları"
 description: "Bu yazıda, konut projelerinde lansman fırsatlarını kaçırmamak için uygulayabileceğiniz etkili yöntemleri adım adım ele alacağız."
 tags: ["konut projeleri"]

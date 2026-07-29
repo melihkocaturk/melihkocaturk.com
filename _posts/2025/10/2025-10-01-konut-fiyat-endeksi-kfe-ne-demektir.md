@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Fiyat Endeksi (KFE) Ne Demektir?"
 description: "Konut Fiyat Endeksi (KFE) nedir, nasıl hesaplanır ve neden önemlidir? Türkiye’de konut piyasasının nabzını tutan KFE hakkında detaylı bilgiler bu yazıda."
 ---

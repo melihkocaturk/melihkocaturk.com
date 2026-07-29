@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Taşınmaz Ticareti Yönetmeliğinde Yer Alan Sözleşme ve Belgeler Nelerdir?"
 description: "Bu yazıda, Taşınmaz Ticareti Yönetmeliğindeki temel sözleşme ve belgeleri, yasal kapsamlarıyla birlikte paylaşıyoruz."
 ---

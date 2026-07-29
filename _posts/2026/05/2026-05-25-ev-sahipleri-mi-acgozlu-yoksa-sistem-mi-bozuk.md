@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Sahipleri mi Açgözlü, Yoksa Sistem mi Bozuk?"
 description: "Türkiye’de kiralar neden kontrolden çıktı? Ev sahipleri gerçekten açgözlü mü, yoksa ekonomik sistem mi insanları buna zorluyor?"
-tags: ["ekonomi", "kira", "enflasyon"]
+tags: ["kira"]
 ---
 
 Son yıllarda Türkiye’de en çok tartışılan konuların başında kira fiyatları geliyor. Özellikle büyük şehirlerde yaşayan milyonlarca insan için barınma artık sadece temel bir ihtiyaç değil, ciddi bir ekonomik mücadeleye dönüşmüş durumda.

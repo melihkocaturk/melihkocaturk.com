@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Kredisi Vadelerinin Uzamasının Etkileri Nelerdir?"
 description: "Konut kredisi vadelerin uzaması borçlular, bankalar ve genel ekonomi üzerinde nasıl etkiler yaratır?"
 tags: ["konut kredisi"]

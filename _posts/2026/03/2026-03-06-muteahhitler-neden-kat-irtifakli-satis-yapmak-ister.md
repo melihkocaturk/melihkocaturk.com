@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Müteahhitler Neden Kat İrtifaklı Satış Yapmak İster?"
 description: "Bu yazıda müteahhitlerin kat irtifaklı satış yapma nedenlerini, bu modelin arkasındaki ekonomik gerçekleri ve alıcıların dikkat etmesi gereken önemli noktaları detaylı şekilde ele alıyoruz."
 tags: ["kat irtifakı", "kat mülkiyeti", "iskan"]

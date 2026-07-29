@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Yatırımını, Hangi Yatırım Araçları ile Karşılaştırabiliriz?"
 description: "Gayrimenkul yatırımı, diğer yatırım araçlarına göre hangi avantaj ve dezavantajları barındırıyor?"
-tags: ["gayrimenkul yatırımı", "yatırım"]
+tags: []
 ---
 
 Gayrimenkul yatırımı, Türkiye’de geleneksel olarak en güvenilir yatırım yöntemlerinden biri olarak görülüyor. Ancak yatırım dünyası yalnızca taşınmaz alım-satımından ibaret değil. Borsa, altın, döviz, kripto paralar, vadeli mevduat ve devlet tahvilleri gibi farklı yatırım araçları da yatırımcıların portföyünde önemli yer tutuyor.

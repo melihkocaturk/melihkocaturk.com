@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Yatırımı Her Zaman Kazandırır mı?"
 description: "Bu yazıda, konut yatırımlarının avantajlarını, risklerini ve dikkat edilmesi gereken noktaları ele alacağız."
 tags: ["konut yatırımı"]

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Takyidat Belgesi Nedir? Ne İşe Yarar?"
 description: "Gayrimenkul alım satımında tapu güvenliği için neden takyidat belgesini kontrol etmeniz gerektiğini öğrenin."
 ---

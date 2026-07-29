@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Kiralarken Dikkat Edilmesi Gereken Gizli Maliyetler"
 description: "Ev kiralarken karşılaşabileceğiniz gizli maliyetleri keşfedin. Depozito, aidat, emlakçı ücreti, abonelik ve taşınma giderleri gibi detayları öğrenerek bütçenizi doğru planlayın."
 tags: ["kira"]

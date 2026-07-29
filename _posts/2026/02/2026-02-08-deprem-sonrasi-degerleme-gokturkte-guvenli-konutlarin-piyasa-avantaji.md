@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Deprem Sonrası Değerleme: Göktürk’te Güvenli Konutların Piyasa Avantajı"
 description: "Kentsel dönüşüm yasası ve salt çoğunluk düzenlemesi ev fiyatlarını nasıl etkileyecek? Yeni yönetmelik, konut piyasası ve yatırımcılar için detaylı analiz."
 tags: ["göktürk"]

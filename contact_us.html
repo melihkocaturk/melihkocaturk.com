@@ -1,0 +1,132 @@
+---
+layout: page
+title: İletişim
+permalink: /iletisim
+custom_css: contact_us
+---
+
+<!-- Ana İletişim Alanı -->
+<section class="py-5">
+  <div class="container py-lg-3">
+
+    <!-- Sayfa Başlığı -->
+    <div class="mb-5">
+      <h1 class="fw-bold text-dark display-6 mb-2">İletişime Geçin</h1>
+      <p class="text-muted fs-5 mb-0">Gayrimenkul danışmanlığı veya mülk değerleme talepleriniz için bana ulaşın.</p>
+    </div>
+
+    <div class="row g-5">
+
+      <!-- Sol Kolon: İletişim Formu -->
+      <div class="col-lg-7">
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="87d28f54-8e1f-413e-bf75-2057f977ccdb">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="name" class="form-label text-secondary small fw-semibold">Ad Soyad *</label>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Ahmet Yılmaz" required>
+            </div>
+            <div class="col-md-6">
+              <label for="phone" class="form-label text-secondary small fw-semibold">Telefon *</label>
+              <input type="tel" name="phone" class="form-control" id="phone" placeholder="05XX XXX XX XX" required>
+            </div>
+            <div class="col-12">
+              <label for="email" class="form-label text-secondary small fw-semibold">E-posta</label>
+              <input type="email" name="email" class="form-control" id="email" placeholder="ahmet@example.com">
+            </div>
+            <div class="col-12">
+              <label for="subject" class="form-label text-secondary small fw-semibold">Konu</label>
+              <select class="form-select" name="subject" id="subject">
+                <option selected>Talebinizi seçin...</option>
+                <option value="satilik-kiralik">Mülkümü Satmak / Kiralamak İstiyorum</option>
+                <option value="alici-arama">Gayrimenkul Arıyorum</option>
+                <option value="ekspertiz">Ücretsiz Değerleme (Ekspertiz)</option>
+                <option value="diger">Diğer</option>
+              </select>
+            </div>
+            <div class="col-12">
+              <label for="message" class="form-label text-secondary small fw-semibold">Mesajınız *</label>
+              <textarea class="form-control" name="message" id="message" rows="4" placeholder="Mesajınızı buraya yazabilirsiniz..."
+                required></textarea>
+            </div>
+            <div class="col-12 pt-2">
+              <button type="submit" class="btn btn-kw-red">
+                Mesajı Gönder
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Sağ Kolon: İletişim Detayları (Temiz ve Düz Metin) -->
+      <div class="col-lg-5 ps-lg-5">
+
+        <!-- Hızlı İletişim Bilgileri -->
+        <div class="mb-4">
+          <h6 class="text-uppercase text-muted fw-bold small mb-3">Doğrudan İletişim</h6>
+          <div class="mb-3">
+            <span class="text-secondary small d-block">Telefon / GSM</span>
+            <a href="tel:+905465665509" class="fs-5 fw-bold text-dark text-decoration-none link-hover-red">{{
+              site.contact.gsm }}</a>
+            <span class="text-muted small d-block mt-1">Ofis: {{ site.contact.phone }}</span>
+          </div>
+          <div class="mb-3">
+            <span class="text-secondary small d-block">E-posta</span>
+            <a href="mailto:{{ site.contact.email }}" class="fw-bold text-dark text-decoration-none link-hover-red">{{
+              site.contact.email }}</a>
+          </div>
+        </div>
+
+        <hr class="my-4 text-secondary opacity-25">
+
+        <!-- WhatsApp Aksiyonu -->
+        <div class="mb-4">
+          <h6 class="text-uppercase text-muted fw-bold small mb-2">Hızlı Mesaj</h6>
+          <p class="text-secondary small mb-3">WhatsApp üzerinden hemen sohbet başlatabilirsiniz.</p>
+          <a href="https://wa.me/{{ site.contact.gsm | remove: " " }}?text=Merhaba%20Melih%20Bey,%20web%20siteniz%20üzerinden%20ulaşıyorum."
+            target="_blank" class="btn btn-whatsapp d-inline-flex align-items-center">
+            <i class="bi bi-whatsapp me-2 fs-5"></i> WhatsApp İle Yazın
+          </a>
+        </div>
+
+        <hr class="my-4 text-secondary opacity-25">
+
+        <!-- Adres & Çalışma Saatleri -->
+        <div class="mb-4">
+          <h6 class="text-uppercase text-muted fw-bold small mb-2">Ofis Adresi</h6>
+          <p class="text-dark small mb-2">
+            {{ site.contact.address }}
+          </p>
+          <span class="text-muted small d-block">Hafta İçi: 09:00 - 18:00</span>
+          <span class="text-muted small d-block">Cumartesi: 09:00 - 12:00</span>
+        </div>
+
+        <hr class="my-4 text-secondary opacity-25">
+
+        <!-- PDF Dijital Kartvizit İndir -->
+        <div>
+          <h6 class="text-uppercase text-muted fw-bold small mb-2">Dijital Kartvizit</h6>
+          <a href="/images/business-card.png" download
+            class="btn btn-outline-dark btn-sm rounded-2 fw-semibold px-3 py-2">
+            <i class="bi bi-filetype-png me-2 text-kw-red"></i> Kartviziti İndir (.PNG)
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Harita Alanı -->
+<section class="pb-5">
+  <div class="container">
+    <div class="map-wrapper">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3008.286185859942!2d28.9781893!3d41.0627768!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cab6d9a18d1a1b%3A0x6b8256a47a16f2d2!2sHalide%20Edip%20Ad%C4%B1var%2C%20Akar%20Cd.%20No%3A22%20D%3AA%2C%2034382%20%C5%9Ei%C5%9Fli%2F%C4%B0stanbul!5e0!3m2!1str!2str!4v1700000000000!5m2!1str!2str"
+        width="100%" height="320" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>

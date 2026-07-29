@@ -1,0 +1,25 @@
+@charset "UTF-8";
+:root { --kw-red: #CE011F; --kw-red-hover: #A80119; --kw-dark: #212529; --kw-light-bg: #F8F9FA; }
+
+body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; color: #333333; background-color: #ffffff; }
+
+/* Navbar */
+.custom-navbar { background-color: #ffffff; border-bottom: 3px solid var(--kw-red); }
+
+/* KW Vurguları */
+.text-kw-red { color: var(--kw-red) !important; }
+
+.btn-kw-red { background-color: var(--kw-red); color: #ffffff; border: none; transition: background-color 0.2s ease; }
+
+.btn-kw-red:hover { background-color: var(--kw-red-hover); color: #ffffff; }
+
+.bg-kw-red { background-color: var(--kw-red) !important; }
+
+.btn-outline-kw { border: 1px solid var(--kw-red); color: var(--kw-red); }
+
+.btn-outline-kw:hover { background-color: var(--kw-red); color: #ffffff; }
+
+/* Sayfa Numarası */
+.error-code { font-size: 6rem; font-weight: 900; line-height: 1; color: var(--kw-red); }
+
+/*# sourceMappingURL=main.css.map */

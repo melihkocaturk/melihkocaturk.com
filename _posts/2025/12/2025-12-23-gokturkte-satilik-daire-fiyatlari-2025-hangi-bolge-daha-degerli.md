@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk’te Satılık Daire Fiyatları 2025: Hangi Bölge Daha Değerli?"
 description: "Bu yazıda 2025 yılı itibarıyla Göktürk satılık daire fiyatlarını, bölge bazlı değer farklarını ve hangi bölgelerin daha yüksek yatırım potansiyeli sunduğunu detaylı şekilde ele alıyoruz."
 tags: ["göktürk"]

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Yatırımında En Sık Yapılan Hatalar"
 description: "Bu yazıda, gayrimenkul yatırımında en sık yapılan hataları ele alacak ve bu hatalardan nasıl kaçınılabileceğine dair öneriler sunacağız."
-tags: ["gayrimenkul yatırımı"]
+tags: []
 ---
 
 Gayrimenkul yatırımı, doğru yapıldığında yüksek kazanç sağlayan, düşük riskli bir yatırım aracıdır. Ancak her yatırım gibi *gayrimenkul yatırımı* da bazı riskleri ve tuzakları barındırır. Ne yazık ki birçok yatırımcı, aceleci kararlar vererek veya yeterli araştırma yapmadan ciddi maddi kayıplar yaşayabiliyor. Bu yazıda, gayrimenkul yatırımında en sık yapılan hataları ele alacak ve bu hatalardan nasıl kaçınılabileceğine dair öneriler sunacağız.

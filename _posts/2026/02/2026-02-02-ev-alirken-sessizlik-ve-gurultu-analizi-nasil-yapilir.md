@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Sessizlik ve Gürültü Analizi Nasıl Yapılır?"
 description: "Bu yazıda, bir evi satın almadan önce gürültü analizi nasıl yapılır, hangi detaylara dikkat edilmelidir ve pratik yöntemlerle sessizlik nasıl ölçülür adım adım ele alıyoruz."
 ---

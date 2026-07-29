@@ -1,31 +1,28 @@
-<div class="container py-3">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container-fluid px-0">
-      <a class="navbar-brand" href="/">
-        <img src="/images/logo.png" alt="{{ site.title }}" class="site-logo">
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainMenu"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          {% for item in site.data.navigation %}
-            <li class="nav-item">
-              <a class="nav-link {% if page.url == item.link %}active{% endif %}" href="{{ item.link }}">
-                {{ item.name }}
-              </a>
-            </li>
-          {% endfor %}
-        </ul>
-      </div>
+<!-- Header / Navigasyon -->
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4 text-dark text-uppercase" href="/">
+      {{ site.title }}
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold align-items-lg-center gap-2">
+        {% for item in site.data.nav %}
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark {% if page.url == item.link %}active text-kw-red{% endif %}"
+              href="{{ item.link }}"
+            >
+              {{- item.name -}}
+            </a>
+          </li>
+        {% endfor %}
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-kw-red px-3 rounded-pill fw-bold btn-sm" href="/iletisim">İletişime Geç</a>
+        </li>
+      </ul>
     </div>
-  </nav>
-</div>
+  </div>
+</nav>

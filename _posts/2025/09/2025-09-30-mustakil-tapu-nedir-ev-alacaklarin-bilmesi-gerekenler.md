@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Müstakil Tapu Nedir? Ev Alacakların Bilmesi Gerekenler"
 description: "Müstakil tapu tam olarak nedir, hangi özelliklere sahiptir ve alıcılar için ne anlama gelir?"
 tags: ["tapu"]

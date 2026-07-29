@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Hayalinizdeki Eve Ulaşmak: Konut Kredisi Rehberi"
 description: "Bu rehberde, konut kredisiyle ev alırken dikkat etmen gereken tüm aşamaları ve püf noktaları detaylı biçimde ele alacağız."
 tags: ["konut kredisi"]

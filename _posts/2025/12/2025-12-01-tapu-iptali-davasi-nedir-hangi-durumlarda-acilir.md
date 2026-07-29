@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Tapu İptali Davası Nedir, Hangi Durumlarda Açılır?"
 description: "Tapu iptali davasının ne olduğu, hangi durumlarda açıldığı, kimlerin dava açabileceği ve dava sürecinin nasıl işlediğine dair detaylı rehber."
 tags: ["tapu"]

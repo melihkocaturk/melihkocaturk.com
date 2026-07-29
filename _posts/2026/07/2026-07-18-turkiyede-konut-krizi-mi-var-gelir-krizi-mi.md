@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Türkiye'de Konut Krizi mi Var, Gelir Krizi mi?"
 description: "Türkiye'de konut fiyatları rekor seviyelere ulaştı. Peki sorun gerçekten konut eksikliği mi, yoksa düşen satın alma gücü mü? İşte konut piyasasının perde arkası."
-tags: ["konut krizi", "ekonomi"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Türkiye'de konut fiyatları her yükseldiğinde aynı tartışma yeniden alevleniyor. Bir kesim sorunun yeterince konut üretilmemesi olduğunu savunurken, diğer kesim asıl problemin vatandaşların alım gücünün erimesi olduğunu düşünüyor. Özellikle son birkaç yılda hem satılık hem de kiralık konut fiyatlarında yaşanan hızlı artış, bu tartışmayı yalnızca ekonomi gündeminin değil, günlük hayatın da en önemli konularından biri haline getirdi. Peki yaşanan tabloyu gerçekten "konut krizi" olarak mı tanımlamak gerekiyor, yoksa daha derinde yatan bir gelir krizinin sonuçlarını mı görüyoruz?

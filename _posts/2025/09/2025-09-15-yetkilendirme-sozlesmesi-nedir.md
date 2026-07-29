@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Yetkilendirme Sözleşmesi Nedir?"
 description: "Yetkilendirme sözleşmesi nedir, ne işe yarar ve taraflara hangi sorumlulukları yükler?"
 ---

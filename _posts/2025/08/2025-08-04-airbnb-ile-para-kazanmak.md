@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Airbnb ile Para Kazanmak"
 description: "Bu yazıda, Airbnb ile nasıl sürdürülebilir ve yasal bir şekilde para kazanabileceğinizi adım adım anlatıyoruz."
 tags: ["airbnb", "kira"]

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Komşular ve Site Yönetimi Neden Önemlidir?"
 description: "Bu yazıda, ev alırken komşuların ve site yönetiminin neden kritik öneme sahip olduğunu tüm yönleriyle ele alıyoruz."
-tags: ["bina ve site yönetimi"]
+tags: []
 ---
 
 Ev satın almak, çoğu insan için hayatındaki en büyük yatırımlardan biridir. Ancak bu süreçte genellikle metrekare, konum, fiyat ve bina yaşı gibi kriterlere odaklanılır. Oysa uzun vadede yaşam kaliteni belirleyen en önemli unsurlardan ikisi **komşular** ve **site yönetimidir**. Bu iki faktör göz ardı edildiğinde, hayal edilen ev kısa sürede bir stres kaynağına dönüşebilir.

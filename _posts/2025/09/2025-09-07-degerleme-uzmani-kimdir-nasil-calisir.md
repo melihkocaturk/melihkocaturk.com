@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Değerleme Uzmanı Kimdir, Nasıl Çalışır?"
 description: "Değerleme uzmanı kimdir, hangi sorumluluklara sahiptir ve nasıl çalışır? Gelin detaylıca inceleyelim."
-tags: ["gayrimenkul değerleme"]
+tags: ["değerleme"]
 ---
 
 Gayrimenkul, makine, araç veya şirket gibi bir varlığın gerçek piyasa değerini belirlemek oldukça hassas ve uzmanlık gerektiren bir süreçtir. Bu noktada *değerleme uzmanları* devreye girer. Tarafsız, bağımsız ve bilimsel yöntemlerle çalışan değerleme uzmanları, yatırımcılardan bankalara, kamu kurumlarından bireylere kadar birçok kişi ve kuruluş için güvenilir raporlar hazırlar.

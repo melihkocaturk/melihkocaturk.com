@@ -1,9 +1,10 @@
 ---
 layout: post
+custom_css: post
 title: "Kira Çarpanı Nedir? Hangi Bölge Daha Karlı?"
 description: "Bu yazıda kira çarpanını tüm yönleriyle ele alacak, Türkiye'de öne çıkan bölgeleri birlikte inceleyeceğiz.
 "
-tags: ["kira", "geri dönüş süresi"]
+tags: ["kira"]
 ---
 
 Gayrimenkul yatırımında kazançlı bir karar verebilmek için dikkat edilmesi gereken birçok kriter vardır. Bu kriterlerden en önemlilerinden biri ise “kira çarpanı”dır. Peki, kira çarpanı tam olarak nedir? Bu çarpan nasıl hesaplanır ve hangi bölgelerde yatırım yapmak daha kârlıdır? Bu yazımızda kira çarpanını tüm yönleriyle ele alacak, Türkiye'de öne çıkan bölgeleri birlikte inceleyeceğiz.

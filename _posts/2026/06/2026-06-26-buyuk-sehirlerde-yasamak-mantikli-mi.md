@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Büyük Şehirlerde Yaşamak Mantıklı mı?"
 description: "İstanbul, Ankara ve İzmir'de artan yaşam maliyetlerinin emlak piyasasına etkisini, konut fiyatlarını, kiraları ve büyük şehirlerde yaşamanın avantajlarını keşfedin."
-tags: ["emlak piyasası", "konut piyasası", "ekonomi"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Türkiye'de milyonlarca insanın aklındaki en önemli sorulardan biri şu: Büyük şehirlerde yaşamak hâlâ mantıklı mı? İstanbul, Ankara ve İzmir gibi metropoller uzun yıllardır daha fazla iş fırsatı, daha yüksek gelir potansiyeli, gelişmiş sosyal yaşam ve eğitim olanakları nedeniyle insanların ilk tercihi oldu. Ancak son yıllarda hızla yükselen kira fiyatları, artan konut maliyetleri ve yaşam giderleri bu tercihin yeniden sorgulanmasına neden oluyor.

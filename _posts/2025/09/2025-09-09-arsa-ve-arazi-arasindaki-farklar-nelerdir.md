@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Arsa ve Arazi Arasındaki Farklar Nelerdir?"
 description: "Arsa ile arazi arasındaki temel farklar nelerdir? İmar durumu, kullanım amacı, yatırım potansiyeli ve hukuki yönleriyle arsa ve arazi kavramlarını örneklerle ve net bir şekilde açıklıyoruz."
 tags: ["arsa yatırımı", "arazi yatırımı"]

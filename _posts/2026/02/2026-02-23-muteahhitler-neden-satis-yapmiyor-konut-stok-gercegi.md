@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Müteahhitler Neden Satış Yapmıyor? Konut Stok Gerçeği"
 description: "Bu yazıda, satışların neden düştüğünü, stokların nasıl biriktiğini ve sektörün önündeki yapısal sorunları detaylı bir şekilde irdeleyeceğiz."
-tags: ["konut piyasası", "konut sektörü"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Konut sektörü, ekonominin nabzını tutan dinamik bir yapı. İnşaat firmaları yani müteahhitler, arz ve talep dengesiyle gelir, finansman koşullarıyla nefes alır. Ancak son dönemde satışlarda yaşanan yavaşlama pek çok kişi tarafından “Talep yok” şeklinde basitçe açıklansa da gerçek nedenler bundan çok daha derin.

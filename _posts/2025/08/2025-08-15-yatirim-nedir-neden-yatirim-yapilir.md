@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Yatırım Nedir, Neden Yatırım Yapılır?"
 description: "Yatırım, bugünkü kaynakların (para, zaman, emek) gelecekte daha fazla değer elde etme amacıyla değerlendirilmesidir."
-tags: ["yatırım"]
+tags: []
 ---
 
 Yatırım, bugünkü kaynakların (para, zaman, emek) gelecekte daha fazla değer elde etme amacıyla değerlendirilmesidir. Bir başka deyişle, bugünden bir şeylerden fedakârlık yaparak yarın için daha güçlü bir pozisyon yaratmaktır. Bu kaynaklar sadece maddi olmak zorunda değildir; bilgiye yatırım yapmak, sağlığa yatırım yapmak veya sosyal çevreye yatırım yapmak da uzun vadede önemli getiriler sağlar.

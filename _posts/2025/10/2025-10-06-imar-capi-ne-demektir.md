@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "İmar Çapı Nedir?"
 description: "Bu yazıda imar çapının tanımını, nasıl alınacağını ve yatırımcılar için neden kritik olduğunu adım adım açıklayacağız."
-tags: ["gayrimenkul yatırımı"]
+tags: []
 ---
 
 Gayrimenkul yatırımı yaparken veya arsa almayı düşünürken sıkça karşılaşılan kavramlardan biri **“imar çapı”**dır. Ancak birçok kişi bu terimin ne anlama geldiğini, ne işe yaradığını ve neden önemli olduğunu tam olarak bilmez. Bu yazıda imar çapının tanımını, nasıl alınacağını ve yatırımcılar için neden kritik olduğunu adım adım açıklayacağız.

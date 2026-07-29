@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "İstanbul’da Konut Balonu Var mı?"
 description: "Bu yazıda konut balonunun ne olduğunu, İstanbul’daki durumu ve yatırımcıların dikkat etmesi gereken noktaları detaylı şekilde ele alacağız."
-tags: ["konut piyasası"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 İstanbul, Türkiye’nin en büyük ve en hızlı gelişen şehirlerinden biri olarak gayrimenkul yatırımcılarının her zaman ilgisini çekmiştir. Son yıllarda özellikle konut fiyatlarındaki hızlı artış, “İstanbul’da konut balonu oluşuyor mu?” sorusunu gündeme getirdi. Bu yazıda konut balonunun ne olduğunu, İstanbul’daki durumu ve yatırımcıların dikkat etmesi gereken noktaları detaylı şekilde ele alacağız.

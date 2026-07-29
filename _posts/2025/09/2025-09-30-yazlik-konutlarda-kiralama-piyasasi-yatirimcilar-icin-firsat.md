@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Yazlık Konutlarda Kiralama Piyasası: Yatırımcılar İçin Fırsat"
 description: "Yazlık konutlarda kiralama piyasası nasıl işliyor ve nelere dikkat etmek gerekiyor?"
 tags: ["kira"]

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kat Mülkiyeti Nedir? Tapu Türleri Arasındaki Farklar"
 description: "Bu yazıda kat mülkiyeti nedir, neden önemlidir ve tapular arasındaki farklar nelerdir sorularını detaylıca ele alıyoruz."
 tags: ["kat mülkiyeti", "kat irtifakı", "tapu", "iskan"]

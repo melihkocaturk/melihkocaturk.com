@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Danışmanı ile Tek Yetkili Satış Sözleşmesi Mantıklı mı?"
 description: "Bu yazıda, tek yetkili satış sözleşmesinin ne olduğunu, avantajlarını, dezavantajlarını ve hangi durumlarda tercih edilmesi gerektiğini detaylıca ele alıyoruz."
-tags: ["emlak danışmanı"]
+tags: ["gayrimenkul danışmanı"]
 ---
 
 Gayrimenkul satışı sürecinde en çok tartışılan konulardan biri tek yetkili satış sözleşmesidir. Mülk sahipleri genellikle “Evi tek bir emlakçıya verirsem zarar eder miyim?” sorusunu sorarken, emlak danışmanları ise bu modelin neden daha verimli olduğunu anlatmaya çalışır. Peki gerçekten tek yetkili satış sözleşmesi mantıklı mı?

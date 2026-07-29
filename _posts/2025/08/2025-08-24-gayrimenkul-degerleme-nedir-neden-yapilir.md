@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Değerleme Nedir? Neden Yapılır?"
 description: "Gayrimenkul değerleme, bir taşınmazın mevcut piyasa koşullarında sahip olduğu değerin belirlenmesi işlemidir."
-tags: ["gayrimenkul değerleme"]
+tags: ["değerleme"]
 ---
 
 Gayrimenkul, yani arsa, konut, iş yeri veya herhangi bir taşınmazın piyasa değerini bilmek hem alıcılar hem de satıcılar için kritik öneme sahiptir. Bu noktada devreye **gayrimenkul değerleme** girer. Peki, gayrimenkul değerleme tam olarak nedir ve neden yapılır?

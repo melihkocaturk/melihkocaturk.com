@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk’e Taşınmayı Düşünenler İçin Rehber"
 description: "İstanbul’un kalabalığından uzak, doğayla iç içe bir yaşam arayanlar için Göktürk, son yıllarda en çok tercih edilen bölgelerden biri haline geldi."
 tags: ["göktürk"]

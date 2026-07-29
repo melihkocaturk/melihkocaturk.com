@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Danışmanı Neden Ekspertiz Raporu İster?"
 description: "Emlak danışmanlarının satış sürecinde neden ekspertiz raporu talep ettiğini öğrenin: doğru fiyat belirleme, satıcı-alıcı güveni, banka kredisi uyumu, hukuki ve teknik risklerin önlenmesi ile portföy kalitesini artırma gibi kritik avantajlar."
-tags: ["emlak danışmanı", "ekspertiz raporu"]
+tags: ["gayrimenkul danışmanı", "ekspertiz raporu"]
 ---
 
 Gayrimenkul alım–satım sürecinde en çok karşılaşılan belgelerden biri **ekspertiz raporu**dur. Özellikle profesyonel çalışan bir emlak danışmanı, bir mülkü pazara sunmadan veya alıcıyla süreci ilerletmeden önce ekspertiz raporu talep eder. Peki emlak danışmanları neden bu rapora ihtiyaç duyar? Ekspertiz raporu sadece bir formalite midir, yoksa satış sürecinin temel taşlarından biri midir?

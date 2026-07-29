@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Danışmanına Neler Sormalısınız?"
 description: "Bu yazıda, bir emlak danışmanına mutlaka sormanız gereken soruları başlıklar halinde inceleyeceğiz."
-tags: ["emlak danışmanı"]
+tags: ["gayrimenkul danışmanı"]
 ---
 
 Ev alırken ya da kiralarken doğru kararı verebilmek için yalnızca ilanlara bakmak yeterli değildir. Profesyonel bir emlak danışmanından destek almak, süreci hem kolaylaştırır hem de daha güvenli hale getirir. Ancak bu süreçte doğru soruları sormak büyük önem taşır. Bu yazıda, bir emlak danışmanına mutlaka sormanız gereken soruları başlıklar halinde inceleyeceğiz.

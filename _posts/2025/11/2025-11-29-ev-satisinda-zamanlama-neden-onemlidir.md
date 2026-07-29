@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Satışında Zamanlama Neden Önemlidir? En Uygun Dönem Nasıl Belirlenir?"
 description: "Bu yazıda, ev satışında zamanlamanın neden bu kadar önemli olduğunu ve en uygun satış dönemini nasıl belirleyebileceğinizi detaylı olarak inceleyeceğiz."
 ---

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkulde Değer Kavramı Neyi İfade Eder?"
 description: "Gayrimenkulde değer kavramının ne anlama geldiğini, değer türlerini, belirleyici faktörleri ve yatırım kararlarına etkisini açık ve anlaşılır şekilde öğrenin; mülk değerlemesini doğru değerlendirmenizi sağlayacak temel bilgileri keşfedin."
-tags: ["gayrimenkul değerleme"]
+tags: ["değerleme"]
 ---
 
 Gayrimenkul sektörü, yalnızca alım satım sürecinden ibaret olmayan; ekonomik, sosyal ve psikolojik faktörlerin iç içe geçtiği bir alandır. Bu noktada en çok merak edilen kavramlardan biri **“değer”**dir. Peki, gayrimenkulde değer neyi ifade eder ve neden bu kadar önemlidir?

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Kredisi Alırken Bankaların Dikkat Ettiği 7 Kriter"
 description: "Bu yazıda, konut kredisi başvurularında bankaların dikkat ettiği 7 temel kriteri ayrıntılı şekilde inceleyeceğiz."
 tags: ["konut kredisi"]

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Küçük Yatırımcıların En Çok Yaptığı Finansal Hatalar"
 description: "Bu yazıda küçük yatırımcıların en sık yaptığı finansal hataları ve bu hatalardan nasıl kaçınılabileceğini detaylı şekilde ele alıyoruz."
-tags: ["yatırım psikolojisi", "finansal okuryazarlık", "risk yönetimi"]
+tags: []
 ---
 
 Finansal piyasalarda yatırım yapmak, doğru strateji uygulandığında uzun vadede ciddi bir servet oluşturma aracı olabilir. Ancak özellikle küçük yatırımcılar, deneyim eksikliği ve psikolojik faktörler nedeniyle sık sık aynı hataları tekrar eder. Bu hatalar çoğu zaman kazanç fırsatlarını kaçırmaya veya ciddi kayıplara yol açabilir.

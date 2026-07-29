@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "İlk Kez Ev Alacaklar İçin Adım Adım Satın Alma Rehberi (2025)"
 description: "Bu rehberde, ilk defa ev alacaklar için tüm süreci adım adım, anlaşılır ve güncel bilgilerle açıklıyoruz."
 ---

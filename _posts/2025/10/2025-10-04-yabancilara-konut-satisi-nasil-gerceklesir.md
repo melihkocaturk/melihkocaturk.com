@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Yabancılara Konut Satışı Nasıl Gerçekleşir?"
 description: "Bu yazıda, yabancılara konut satışının nasıl gerçekleştiğini adım adım inceleyeceğiz."
 ---

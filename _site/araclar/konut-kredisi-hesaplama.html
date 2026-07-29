@@ -1,334 +1,416 @@
 <!doctype html>
-<html lang="tr">
+<html lang="tr" data-bs-theme="light">
+  <head>
+    
 
-<head>
-  
-  
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Konut Kredisi Hesaplama</title>
-  <meta name="description" content="Konut kredisi aylık taksit ve toplam geri ödeme tutarını anında hesaplayın. Peşinat, faiz ve vade oranlarını girin, bütçenize en uygun evi kolayca bulun!">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
-  <link rel="stylesheet" href="/assets/css/styles.css">
-  <link rel="shortcut icon" href="/images/favicon.ico">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konut Kredisi Hesaplama</title>
+    <meta
+      name="description"
+      content="Çekmeyi planladığınız kredi tutarı, aylık faiz oranı ve vade süresini girerek aylık taksitlerinizi ve toplam geri ödeme tutarınızı hesaplayın."
+    >
 
-<body>
-  <div class="container py-3">
-  <nav class="navbar navbar-expand-lg navbar-light bg-white">
-    <div class="container-fluid px-0">
-      <a class="navbar-brand" href="/">
-        <img src="/images/logo.png" alt="Melih Kocatürk" class="site-logo">
-      </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainMenu"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-end" id="mainMenu">
-        <ul class="navbar-nav mb-2 mb-lg-0">
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/">
-                Anasayfa
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/hakkinda">
-                Hakkında
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/etiketler">
-                Etiketler
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/araclar">
-                Araçlar
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/rehber">
-                Rehber
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/podcast">
-                Podcast
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/ara">
-                Ara
-              </a>
-            </li>
-          
-            <li class="nav-item">
-              <a class="nav-link " href="/iletisim">
-                İletişim
-              </a>
-            </li>
-          
-        </ul>
-      </div>
-    </div>
-  </nav>
-</div>
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <main class="container">
-  <div class="page mx-auto mt-5">
-    <h1 class="display-5 text-center mb-5">Konut Kredisi Hesaplama</h1>
-    <div class="container mb-5" style="max-width: 520px;">
-  <div class="card border">
-    <div class="card-body p-4">
-      <form id="mortgageCalculatorForm" onsubmit="event.preventDefault(); calculateMortgage();">
-        <!-- Property Price -->
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="propertyPrice" placeholder="5000000" value="5000000" required>
-          <label for="propertyPrice">Konut Tutarı (TL)</label>
-        </div>
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
 
-        <!-- Down Payment -->
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="downPayment" placeholder="1500000" value="1500000" required>
-          <label for="downPayment">Peşinat Tutarı (TL)</label>
-        </div>
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  </head>
 
-        <!-- Interest Rate & Loan Term (Grid System) -->
-        <div class="row g-2 mb-3">
-          <div class="col-md-6">
-            <div class="form-floating">
-              <input type="number" step="0.01" class="form-control" id="interestRate" placeholder="3.05" value="3.05"
-                required>
-              <label for="interestRate">Aylık Faiz (%)</label>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="form-floating">
-              <input type="number" class="form-control" id="loanTerm" placeholder="120" value="120" required>
-              <label for="loanTerm">Vade (Ay)</label>
-            </div>
-          </div>
-        </div>
-
-        <!-- Calculate Button -->
-        <button type="submit" class="btn btn-dark w-100 py-3 fw-bold rounded-3">
-          Aylık Taksiti Hesapla
-        </button>
-      </form>
-
-      <!-- Results Section -->
-      <div id="resultsContainer" class="mt-4 p-3 bg-body-tertiary rounded-3 border d-none">
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Kredi Tutarı:</span>
-          <span class="fw-semibold" id="loanAmountOutput">0 TL</span>
-        </div>
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Aylık Taksit:</span>
-          <span class="fw-bold fs-4 text-danger" id="monthlyPaymentOutput">0 TL</span>
-        </div>
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Toplam Geri Ödeme:</span>
-          <span class="fw-semibold" id="totalPaymentOutput">0 TL</span>
-        </div>
-      </div>
-
-      <!-- Error Alert Area -->
-      <div id="errorMessage" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
+  <body>
+    <!-- Header / Navigasyon -->
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4 text-dark text-uppercase" href="/">
+      Melih Kocatürk
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold align-items-lg-center gap-2">
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/"
+            >Anasayfa</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/hakkinda"
+            >Hakkında</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/araclar"
+            >Araçlar</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/rehberler"
+            >Rehberler</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/podcast"
+            >Podcast</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/ara"
+            >Ara</a>
+          </li>
+        
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-kw-red px-3 rounded-pill fw-bold btn-sm" href="/iletisim">İletişime Geç</a>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
+</nav>
 
-<!-- CSS for Fractional Formula Display -->
-<style>
-  .fraction {
+    <style>
+  main {
+    flex: 1;
+  }
+
+  /* Kartlar & Form Stilleri */
+  .calc-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
+
+  .info-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    border-color: var(--kw-red);
+    box-shadow: 0 0 0 0.25rem rgba(206, 1, 31, 0.15);
+  }
+
+  .result-box {
+    background-color: #ffffff;
+    border-left: 4px solid var(--kw-red);
+    border-radius: 8px;
+  }
+
+  /* Adım Rakamları (Sabit Boyut) */
+  .step-badge {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 50%;
+    background-color: rgba(206, 1, 31, 0.1);
+    color: var(--kw-red);
     display: inline-flex;
-    flex-direction: column;
-    vertical-align: middle;
-    text-align: center;
-    padding: 0 4px;
-  }
-
-  .fraction .numerator {
-    border-bottom: 2px solid #212529;
-    padding-bottom: 2px;
-  }
-
-  .fraction .denominator {
-    padding-top: 2px;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
   }
 </style>
 
-<div class="container my-4" style="max-width: 520px;">
-  <div class="card border">
-    <div class="card-body p-4">
-      <h4 class="card-title text-dark fw-bold mb-3 mt-0">
-        Konut Kredisi Hesaplama Formülü
-      </h4>
-      <p class="text-muted small mb-4">
-        Aylık taksit tutarı, bankacılık sektöründe standart olarak kullanılan <strong>Eşit Taksitli Kredi Amortisman
-          Formülü</strong> ile hesaplanmaktadır.
-      </p>
+<!-- Ana İçerik -->
+<main class="py-5">
+  <div class="container py-3">
 
-      <!-- Formül Alanı -->
-      <div class="bg-body-tertiary p-3 rounded-3 text-center mb-4 border fs-5 fw-bold text-dark">
-        <span>M = P &times; </span>
-        <div class="fraction">
-          <span class="numerator">r(1 + r)<sup>n</sup></span>
-          <span class="denominator">(1 + r)<sup>n</sup> &minus; 1</span>
+    <!-- Başlık Bölümü -->
+    <div class="text-center mb-5">
+      <span class="badge bg-danger-subtle text-danger px-3 py-2 rounded-pill fw-semibold mb-2">
+        <i class="bi bi-calculator me-1"></i> Kredi & Finans
+      </span>
+      <h1 class="fw-bold text-dark mb-2">Konut Kredisi Hesaplama</h1>
+      <p class="text-secondary mx-auto" style="max-width: 680px;">
+        Çekmeyi planladığınız kredi tutarı, aylık faiz oranı ve vade süresini girerek aylık taksitlerinizi ve toplam geri ödeme tutarınızı hesaplayın.
+      </p>
+    </div>
+
+    <div class="row g-4 align-items-start">
+
+      <!-- SOL KOLON: Form Alanı -->
+      <div class="col-lg-6">
+        <div class="calc-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-sliders me-2 text-kw-red"></i>Kredi Bilgileri
+          </h4>
+
+          <form id="loanForm">
+
+            <!-- Kredi Tutarı -->
+            <div class="mb-3">
+              <label for="loanAmount" class="form-label fw-semibold text-dark">Kredi Tutarı (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="loanAmount"
+                  placeholder="Örn: 2000000" required>
+              </div>
+            </div>
+
+            <!-- Aylık Faiz Oranı -->
+            <div class="mb-3">
+              <label for="interestRate" class="form-label fw-semibold text-dark">Aylık Faiz Oranı (%)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">%</span>
+                <input type="number" step="0.01" class="form-control form-control-lg border-start-0" id="interestRate"
+                  placeholder="Örn: 2.79" required>
+              </div>
+              <div class="form-text small">Banka tarafından sunulan aylık akdi faiz oranını giriniz.</div>
+            </div>
+
+            <!-- Vade (Ay / Yıl Seçimi) -->
+            <div class="mb-4">
+              <label for="loanTerm" class="form-label fw-semibold text-dark">Vade Süresi (Ay)</label>
+              <select class="form-select form-select-lg border-0 shadow-sm" id="loanTerm" required>
+                <option value="12">12 Ay (1 Yıl)</option>
+                <option value="24">24 Ay (2 Yıl)</option>
+                <option value="36">36 Ay (3 Yıl)</option>
+                <option value="48">48 Ay (4 Yıl)</option>
+                <option value="60">60 Ay (5 Yıl)</option>
+                <option value="84">84 Ay (7 Yıl)</option>
+                <option value="120" selected>120 Ay (10 Yıl)</option>
+                <option value="144">144 Ay (12 Yıl)</option>
+                <option value="180">180 Ay (15 Yıl)</option>
+              </select>
+            </div>
+
+            <!-- Buton -->
+            <button type="submit" class="btn btn-kw-red btn-lg w-100 rounded-pill fw-bold fs-6">
+              <i class="bi bi-calculator-fill me-2"></i>Taksitleri Hesapla
+            </button>
+
+          </form>
+
+          <!-- Sonuç Kutusu (Gizli Başlar) -->
+          <div id="resultContainer" class="mt-4 pt-3 border-top" style="display: none;">
+            <h5 class="fw-bold text-dark mb-3">Hesaplama Sonucu</h5>
+
+            <div class="result-box p-3 mb-3">
+              <div class="text-secondary small">Aylık Taksit Tutarı:</div>
+              <div id="monthlyPayment" class="fs-4 fw-bold text-kw-red">₺0</div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="result-box p-3 h-100">
+                  <div class="text-secondary small">Toplam Geri Ödeme:</div>
+                  <div id="totalPayment" class="fs-5 fw-bold text-dark">₺0</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="result-box p-3 h-100">
+                  <div class="text-secondary small">Toplam Ödenecek Faiz:</div>
+                  <div id="totalInterest" class="fs-5 fw-bold text-dark">₺0</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
 
-      <!-- Değişkenlerin Anlamları Listesi -->
-      <h6 class="fw-bold text-secondary mb-3">Değişkenlerin Anlamları</h6>
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">M (Aylık Taksit Tutarı)</div>
-            <span class="small text-secondary">Her ay ödenmesi gereken sabit tutardır.</span>
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">P (Kredi Tutarı (Anapara))</div>
-            <span class="small text-secondary">Konut fiyatından peşinat çıkarıldıktan sonra çekilen net kredi
-              tutarıdır.</span>
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">r (Aylık Faiz Oranı)</div>
-            <span class="small text-secondary">Yüzde olarak girilen aylık faiz oranının ondalık karşılığıdır (Örn: %3,05
-              faiz için 0.0305).</span>
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">n (Kredi Vadesi)</div>
-            <span class="small text-secondary">Taksitlerin toplam ay sayısıdır (Örn: 10 yıl için 120 ay).</span>
-          </div>
-        </li>
-      </ul>
+      <!-- SAĞ KOLON: Hesaplama Mantığı -->
+      <div class="col-lg-6">
+        <div class="info-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-book me-2 text-kw-red"></i>Hesaplama Mantığı
+          </h4>
 
-      <!-- Ek Hesaplamalar -->
-      <div class="mt-4 pt-3 border-top">
-        <h6 class="fw-bold text-secondary mb-2">Yardımcı Formüller</h6>
-        <div class="small text-muted">
-          <p class="mb-1"><strong>Çekilecek Kredi Tutarı (P):</strong> Konut Fiyatı &minus; Peşinat</p>
-          <p class="mb-0"><strong>Toplam Geri Ödeme:</strong> M &times; n (Aylık Taksit &times; Vade)</p>
+          <p class="text-secondary">
+            Konut kredisi taksitleri, bankacılık sektöründe standart kabul edilen <strong>sabit taksitli
+              (annuite)</strong> kredi geri ödeme formülü kullanılarak hesaplanır.
+          </p>
+
+          <div class="vstack gap-3 my-4">
+
+            <!-- Adım 1 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">1</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Aylık Taksit Formülü</h6>
+                <p class="text-secondary small mb-0">
+                  <code>Taksit = Kredi Tutarı × [ (i × (1 + i)ⁿ) / ((1 + i)ⁿ - 1) ]</code>
+                  <br><span class="text-muted">(i: Aylık faiz oranı, n: Toplam ay / vade)</span>
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 2 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">2</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Toplam Geri Ödeme Hesabı</h6>
+                <p class="text-secondary small mb-0">
+                  Hesaplanan aylık taksit tutarı, seçilen vade süresi (ay) ile çarpılarak bankaya ödenecek olan toplam
+                  tutar bulunur.
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 3 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">3</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Maliyet / Faiz Yükü</h6>
+                <p class="text-secondary small mb-0">
+                  Toplam geri ödeme tutarından çekilen anapara kredi miktarı çıkarılarak kredi süresince katlanılan faiz
+                  maliyeti elde edilir.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="p-3 bg-light rounded-3 border mt-4">
+            <small class="text-muted d-block">
+              <i class="bi bi-info-circle-fill text-kw-red me-1"></i>
+              <strong>Not:</strong> Hesaplamalara sigorta, dosya masrafı veya ipotek tesis ücretleri dahil edilmemiştir.
+              Bireysel konut kredilerinde KKDF ve BSMV vergileri muaf tutulmaktadır.
+            </small>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+</main>
+
+<!-- Hesaplama Scripti -->
+<script>
+  document.getElementById('loanForm').addEventListener('submit', function (e) {
+    e.preventDefault();
+
+    const amount = parseFloat(document.getElementById('loanAmount').value) || 0;
+    const rateInput = parseFloat(document.getElementById('interestRate').value) || 0;
+    const months = parseInt(document.getElementById('loanTerm').value) || 0;
+
+    if (amount <= 0 || rateInput <= 0 || months <= 0) {
+      alert("Lütfen tüm alanları geçerli değerlerle doldurunuz.");
+      return;
+    }
+
+    // Aylık Faiz Oranı (Yüzdelik değeri ondalığa çevirme)
+    const monthlyRate = rateInput / 100;
+
+    // Sabit Taksit Formülü (Annuite)
+    // T = P * [ (i * (1+i)^n) / ((1+i)^n - 1) ]
+    const factor = Math.pow(1 + monthlyRate, months);
+    const monthlyPayment = amount * ((monthlyRate * factor) / (factor - 1));
+
+    const totalPayment = monthlyPayment * months;
+    const totalInterest = totalPayment - amount;
+
+    // Para Birimi Biçimlendirme
+    const formatter = new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY' });
+
+    // Sonuçları Ekran Alanlarına Yazdır
+    document.getElementById('monthlyPayment').innerText = formatter.format(monthlyPayment);
+    document.getElementById('totalPayment').innerText = formatter.format(totalPayment);
+    document.getElementById('totalInterest').innerText = formatter.format(totalInterest);
+
+    // Sonuç Kutusunu Görünür Yap
+    document.getElementById('resultContainer').style.display = 'block';
+  });
+</script>
+    <!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4 align-items-center mb-4">
+      <!-- Sol Kolon: İsim ve Ünvan -->
+      <div class="col-lg-5">
+        <h4 class="fw-bold text-white mb-2 text-uppercase">Melih Kocatürk</h4>
+        <p class="text-secondary small mb-0">Gayrimenkul Yatırım, Değerleme ve Pazarlama Danışmanlığı</p>
+      </div>
+
+      <!-- Orta Kolon: Keller Williams Logosu -->
+      <div class="col-lg-3 text-lg-center">
+        <div class="d-inline-flex align-items-center">
+          <a href="https://www.kwforessisli.com.tr/tr/" rel="nofollow">
+            <img
+              src="/images/kw-fores-logo.png"
+              alt="KW Fores Şişli"
+              width="160"
+            >
+          </a>
+        </div>
+      </div>
+
+      <!-- Sağ Kolon: Sosyal Bağlantılar -->
+      <div class="col-lg-4 text-lg-end">
+        <div class="d-flex gap-3 justify-content-lg-end fs-5 text-secondary">
+          
+            <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-secondary text-white-hover"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          
+            <a href="https://www.instagram.com/melih_kocaturk_" class="text-secondary text-white-hover"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          
+            <a href="https://www.youtube.com/@melihkocaturk" class="text-secondary text-white-hover"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          
+            <a href="https://x.com/melih_kocaturk_" class="text-secondary text-white-hover"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          
+            <a href="/feed.xml" class="text-secondary text-white-hover"
+              ><i class="bi bi-rss"></i
+            ></a>
+          
         </div>
       </div>
     </div>
+
+    <hr class="border-secondary opacity-25">
+
+    <!-- Alt Bilgi ve Yasal Metin Linkleri -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-secondary small">
+      <div>
+        © 2026
+        Melih Kocatürk. Tüm hakları saklıdır.
+      </div>
+      <div class="d-flex gap-3">
+        
+          <a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a>
+          <span>•</span>
+        
+          <a href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a>
+          
+        
+      </div>
+    </div>
   </div>
-</div>
-
-<script>
-  function calculateMortgage() {
-    // Get input values
-    const propertyPrice = parseFloat(document.getElementById('propertyPrice').value) || 0;
-    const downPayment = parseFloat(document.getElementById('downPayment').value) || 0;
-    const interestRate = parseFloat(document.getElementById('interestRate').value) || 0;
-    const loanTerm = parseInt(document.getElementById('loanTerm').value) || 0;
-
-    const resultsContainer = document.getElementById('resultsContainer');
-    const errorMessage = document.getElementById('errorMessage');
-
-    // Reset error state
-    errorMessage.classList.add('d-none');
-
-    // Validation checks
-    if (propertyPrice <= 0 || loanTerm <= 0) {
-      errorMessage.innerText = "Lütfen geçerli bir konut tutarı ve vade giriniz.";
-      errorMessage.classList.remove('d-none');
-      resultsContainer.classList.add('d-none');
-      return;
-    }
-
-    const loanAmount = propertyPrice - downPayment;
-
-    if (loanAmount <= 0) {
-      errorMessage.innerText = "Peşinat tutarı konut fiyatından büyük veya eşit olamaz.";
-      errorMessage.classList.remove('d-none');
-      resultsContainer.classList.add('d-none');
-      return;
-    }
-
-    let monthlyPayment = 0;
-    let totalPayment = 0;
-
-    if (interestRate > 0) {
-      // Monthly interest rate conversion (e.g. 3.05 -> 0.0305)
-      const monthlyRate = interestRate / 100;
-
-      // Amortization Formula: M = P * [r(1+r)^n] / [(1+r)^n - 1]
-      const rateFactor = Math.pow(1 + monthlyRate, loanTerm);
-      monthlyPayment = loanAmount * (monthlyRate * rateFactor) / (rateFactor - 1);
-      totalPayment = monthlyPayment * loanTerm;
-    } else {
-      // Zero interest edge case
-      monthlyPayment = loanAmount / loanTerm;
-      totalPayment = loanAmount;
-    }
-
-    // Currency Formatter (Turkish Lira)
-    const currencyFormatter = new Intl.NumberFormat('tr-TR', {
-      style: 'currency',
-      currency: 'TRY',
-      maximumFractionDigits: 0
-    });
-
-    // Output formatted results
-    document.getElementById('loanAmountOutput').innerText = currencyFormatter.format(loanAmount);
-    document.getElementById('monthlyPaymentOutput').innerText = currencyFormatter.format(monthlyPayment);
-    document.getElementById('totalPaymentOutput').innerText = currencyFormatter.format(totalPayment);
-
-    // Display results
-    resultsContainer.classList.remove('d-none');
-  }
-</script>
-  </div>
-</main>
-  <footer class="container py-5">
-  <ul class="list-inline">
-    <li class="list-inline-item"> <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-dark" target="_blank">
-        <i class="bi bi-linkedin"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://www.instagram.com/melih_kocaturk_" class="text-dark" target="_blank">
-        <i class="bi bi-instagram"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://www.youtube.com/@melihkocaturk" class="text-dark" target="_blank">
-        <i class="bi bi-youtube"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="https://x.com/melih_kocaturk_" class="text-dark" target="_blank">
-        <i class="bi bi-twitter-x"></i>
-      </a></li>
-    <li class="list-inline-item"> <a href="/feed.xml" class="text-dark" target="_blank">
-        <i class="bi bi-rss"></i>
-      </a></li>
-  </ul>
-  <p class="small">© 2026 Melih Kocatürk. Tüm hakları saklıdır.</p>
-  <p class="small"><a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a> / <a
-      href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a></p>
 </footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
-    crossorigin="anonymous"></script>
-</body>
 
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

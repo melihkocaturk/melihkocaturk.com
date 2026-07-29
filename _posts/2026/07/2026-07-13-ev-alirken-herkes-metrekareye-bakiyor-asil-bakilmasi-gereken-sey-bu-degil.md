@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Herkes Metrekareye Bakıyor. Asıl Bakılması Gereken Şey Bu Değil."
 description: "Ev alırken sadece metrekareye odaklanmak doğru karar vermek için yeterli değildir. Konum, net kullanım alanı, bina kalitesi, deprem güvenliği ve yatırım potansiyeli gibi dikkat edilmesi gereken en önemli konular bu yazıda."
-tags: ["konut yatırımı", "gayrimenkul değerleme"]
+tags: ["konut yatırımı", "değerleme"]
 ---
 
 Bir konut satın almayı düşünen insanların büyük bölümü aynı soruyla başlar: "Kaç metrekare?" Emlak ilanlarında en büyük puntolarla yazılan bilgiler de genellikle budur. 2+1, 120 metrekare, geniş balkon, büyük salon... Oysa yıllar içinde hem yatırımcıların hem de ev sahiplerinin yaşadığı deneyimler gösteriyor ki, metrekare tek başına bir evin değerini belirlemez.

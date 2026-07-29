@@ -1,0 +1,27 @@
+@charset "UTF-8";
+/* Page Header */
+.page-header { background-color: var(--kw-light-bg); padding: 3.5rem 0; border-bottom: 1px solid #e9ecef; }
+
+/* Etiket Rozetleri Stili */
+.tag-cloud-btn { font-size: 0.95rem; font-weight: 500; padding: 0.5rem 1rem; background-color: #ffffff; color: var(--kw-dark); border: 1px solid #dee2e6; border-radius: 50rem; text-decoration: none; transition: all 0.2s ease; display: inline-flex; align-items: center; gap: 0.5rem; }
+
+.tag-cloud-btn:hover, .tag-cloud-btn.active { background-color: var(--kw-red); color: #ffffff; border-color: var(--kw-red); }
+
+.tag-count { font-size: 0.75rem; background-color: #e9ecef; color: #495057; padding: 0.15rem 0.5rem; border-radius: 50rem; transition: all 0.2s ease; }
+
+.tag-cloud-btn:hover .tag-count, .tag-cloud-btn.active .tag-count { background-color: rgba(255, 255, 255, 0.25); color: #ffffff; }
+
+/* Metin Bazlı Blog Kartları */
+.blog-item { transition: background-color 0.2s ease; }
+
+.blog-item:hover { background-color: var(--kw-light-bg); }
+
+.blog-title { color: var(--kw-dark); text-decoration: none; }
+
+.blog-title:hover { color: var(--kw-red); }
+
+.tag-badge { font-weight: 500; font-size: 0.75rem; background-color: #f1f3f5; color: #495057; text-decoration: none; transition: all 0.2s ease; }
+
+.tag-badge:hover { background-color: var(--kw-red); color: #ffffff; }
+
+/*# sourceMappingURL=tags.css.map */

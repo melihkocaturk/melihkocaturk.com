@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken Vergi Avantajlarından Nasıl Yararlanılır?"
 description: "Ev alırken sunulan vergi avantajlarıyla maliyetinizi nasıl düşürebileceğinizi öğrenin. Kredi faizi indirimi, tapu ve KDV avantajlarını keşfedin."
-tags: ["vergi"]
+tags: ["konut yatırımı"]
 ---
 
 Ev almak, çoğu insan için hayatlarındaki en büyük yatırımlardan biridir. Ancak birçok kişi, bu süreçte mevcut **vergi avantajlarını** yeterince değerlendiremeyebilir. Doğru planlama ve bilgi ile hem maliyetleri düşürmek hem de uzun vadede ekonomik avantaj sağlamak mümkündür. Bu yazıda, ev alırken hangi vergi avantajlarından yararlanabileceğinizi ve nasıl faydalanabileceğinizi detaylı şekilde ele alacağız.

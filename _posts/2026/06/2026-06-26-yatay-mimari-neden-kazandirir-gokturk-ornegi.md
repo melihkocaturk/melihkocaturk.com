@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Yatay Mimari Neden Kazandırır? Göktürk Örneği"
 description: "Göktürk örneğiyle yatay mimarinin gayrimenkul yatırımlarına etkisini keşfedin. Düşük katlı yapılaşmanın yaşam kalitesi ve değer artışına katkısını inceleyin."
-tags: ["göktürk", "yatay mimari", "emlak yatırımı"]
+tags: ["göktürk", ]
 ---
 
 Türkiye'de gayrimenkul denildiğinde çoğu kişinin aklına önce yüksek katlı rezidanslar geliyor. Oysa son yıllarda yatırımcıların ve konut alıcılarının ilgisini çeken farklı bir trend yükseliyor: **yatay mimari**. Özellikle İstanbul'un kuzey aksında bulunan Göktürk, yatay mimarinin değer yarattığını gösteren en dikkat çekici bölgelerden biri olarak öne çıkıyor.

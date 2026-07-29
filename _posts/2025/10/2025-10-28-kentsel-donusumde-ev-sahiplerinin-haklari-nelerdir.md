@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kentsel Dönüşümde Ev Sahiplerinin Hakları Nelerdir?"
 description: "Bu yazıda, kentsel dönüşümde ev sahiplerinin sahip olduğu yasal hakları, dikkat edilmesi gereken noktaları ve sürecin nasıl ilerlediğini detaylı şekilde ele alacağız."
 tags: ["kentsel dönüşüm"]

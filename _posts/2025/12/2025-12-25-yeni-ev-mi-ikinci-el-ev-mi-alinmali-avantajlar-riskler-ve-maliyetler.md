@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Yeni Ev mi İkinci El Ev mi Alınmalı? Avantajlar, Riskler ve Maliyetler"
 description: "Yeni ev mi ikinci el ev mi alınmalı? Avantajlar, riskler, maliyetler ve yatırım açısından detaylı karşılaştırma ile doğru konut seçimini yapın."
-tags: ["yatırım"]
+tags: ["konut yatırımı"]
 ---
 
 Ev satın almak, hem finansal hem de yaşam kalitesi açısından uzun vadeli sonuçlar doğuran önemli bir karardır. Bu süreçte en çok karşılaşılan sorulardan biri **yeni ev mi yoksa ikinci el ev mi alınmalı?** sorusudur. Her iki seçeneğin de kendine özgü avantajları, riskleri ve maliyet kalemleri bulunur. Bu yazıda, karar sürecini kolaylaştırmak için tüm yönleriyle karşılaştırmalı bir analiz sunuyoruz.

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "İnsanlar Neden Gayrimenkul Satın Almak İster?"
 description: "Günümüzde ev, arsa ya da ticari mülk satın almak; yalnızca barınma ihtiyacını karşılamakla sınırlı değil. Aynı zamanda yatırım aracı, prestij göstergesi, gelecek güvencesi ve yaşam tarzı tercihi haline gelmiş durumda."
 ---

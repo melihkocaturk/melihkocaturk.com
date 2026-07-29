@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alırken İskan (Yapı Kullanma İzni) Yoksa Ne Olur?"
 description: "Bu yazıda iskan nedir, iskan olmayan ev alınır mı, iskan yoksa ne olur, riskleri nelerdir ve nasıl kontrol edilir gibi tüm soruların cevaplarını detaylı şekilde ele alıyoruz."
 tags: ["iskan", "kat mülkiyeti", "kat irtifakı"]

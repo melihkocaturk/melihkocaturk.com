@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Yeni Yapı mı, Eski Bina mı?"
 description: "Bu yazımızda, ev almayı düşünenler için yeni ve eski binaları tüm yönleriyle karşılaştırıyor; doğru tercihi yapmanıza yardımcı olacak ipuçlarını sunuyoruz."
 ---

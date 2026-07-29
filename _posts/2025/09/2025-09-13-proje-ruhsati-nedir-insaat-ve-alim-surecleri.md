@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Proje Ruhsatı Nedir? İnşaat ve Alım Süreçleri"
 description: "Proje ruhsatı, bir yapının inşa edilmeden önce, ilgili idareler tarafından teknik ve hukuki yönden onaylanmasını sağlayan en kritik belgedir."
-tags: ["proje ruhsatı"]
+tags: []
 ---
 
 Kentsel dönüşümden yeni konut projelerine kadar her inşaat faaliyetinin yasal bir çerçevede ilerlemesi gerekir. Bu noktada devreye *proje ruhsatı* girer. Proje ruhsatı, bir yapının inşa edilmeden önce, ilgili idareler tarafından teknik ve hukuki yönden onaylanmasını sağlayan en kritik belgedir. Hem müteahhitler hem de arsa sahipleri için büyük önem taşıyan bu belge, inşaatın sorunsuz başlaması ve ilerlemesi açısından olmazsa olmazdır.

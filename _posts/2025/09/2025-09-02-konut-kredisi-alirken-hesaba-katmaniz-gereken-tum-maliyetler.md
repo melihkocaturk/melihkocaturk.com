@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Kredisi Alırken Hesaba Katmanız Gereken Tüm Maliyetler"
 description: "Bu yazıda, konut kredisi alırken hesaba katmanız gereken tüm maliyetleri detaylı şekilde inceliyoruz."
 tags: ["konut kredisi"]

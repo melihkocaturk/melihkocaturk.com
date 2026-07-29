@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Kira Getirisi Yüksek Ev Nasıl Bulunur?"
 description: "Bu yazıda, kira getirisi yüksek evleri nasıl tespit edebileceğinizi adım adım ve yatırımcı bakış açısıyla ele alıyoruz."
-tags: ["kira", "gayrimenkul yatırımı"]
+tags: ["kira", ]
 ---
 
 Gayrimenkul yatırımında en kritik hedeflerden biri, **düzenli ve yüksek kira geliri** elde etmektir. Ancak her satılık ev iyi bir yatırım değildir. Doğru lokasyon, doğru fiyat ve doğru strateji olmadan yapılan alımlar, beklenen getiriyi sağlamaz. Bu yazıda, kira getirisi yüksek evleri nasıl tespit edebileceğinizi adım adım ve yatırımcı bakış açısıyla ele alıyoruz.

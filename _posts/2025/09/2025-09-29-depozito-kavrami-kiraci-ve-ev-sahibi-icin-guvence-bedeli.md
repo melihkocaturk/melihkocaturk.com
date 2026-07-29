@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Depozito Kavramı: Kiracı ve Ev Sahibi İçin Güvence Bedeli"
 description: "Depozito nedir, nasıl hesaplanır ve hangi durumlarda iade edilir?"
-tags: ["kira", "depozito"]
+tags: ["kira"]
 ---
 
 Ev veya iş yeri kiralamalarında sıkça duyduğumuz kavramlardan biri depozitodur. Hem kiracılar hem de ev sahipleri için önemli bir güvence niteliği taşıyan bu bedel, yanlış anlaşıldığında taraflar arasında sorunlara yol açabilir. Peki, *depozito nedir, nasıl hesaplanır ve hangi durumlarda iade edilir?* İşte detaylı bir rehber:

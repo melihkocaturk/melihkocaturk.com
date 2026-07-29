@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Elektronik İlan Doğrulama Sistemi (EİDS) Nedir?"
 description: "EİDS tam olarak nedir, nasıl çalışır ve kimleri ilgilendirir?"
 tags: ["eids"]

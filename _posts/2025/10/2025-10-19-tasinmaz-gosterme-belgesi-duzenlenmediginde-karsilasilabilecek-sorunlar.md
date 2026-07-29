@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Taşınmaz Gösterme Belgesi Düzenlenmediğinde Karşılaşılabilecek Sorunlar"
 description: "Bu yazıda, taşınmaz gösterme belgesinin önemini ve düzenlenmediği durumlarda doğabilecek riskleri detaylı bir şekilde ele alacağız."
 ---

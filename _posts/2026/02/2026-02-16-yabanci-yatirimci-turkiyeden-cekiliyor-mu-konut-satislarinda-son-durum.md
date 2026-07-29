@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Yabancı Yatırımcı Türkiye’den Çekiliyor mu? Konut Satışlarında Son Durum"
 description: "2025 yılında yabancılara konut satışları azaldı mı? Güncel TÜİK verileri, ülkelere göre satış dağılımı, düşüş nedenleri ve toplam konut piyasasına etkileri bu analizde."
 tags: ["konut yatırımı"]

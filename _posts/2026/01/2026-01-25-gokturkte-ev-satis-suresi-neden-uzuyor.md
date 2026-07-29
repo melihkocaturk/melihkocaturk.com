@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk’te Ev Satış Süresi Neden Uzuyor?"
 description: "Bu yazıda Göktürk özelinde konut satış süresini etkileyen faktörleri, piyasa dinamiklerini ve alıcı–satıcı davranışlarını detaylı şekilde ele alıyoruz."
 tags: ["göktürk"]

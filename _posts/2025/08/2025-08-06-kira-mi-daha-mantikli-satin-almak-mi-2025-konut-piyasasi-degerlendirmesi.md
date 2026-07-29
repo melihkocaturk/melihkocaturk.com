@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Kira mı Daha Mantıklı, Satın Almak mı? 2025 Konut Piyasası Değerlendirmesi"
 description: "Bu yazıda, güncel veriler ışığında 2025 Türkiye konut piyasasını kapsamlı biçimde değerlendiriyor; ev satın almanın mı, yoksa kiralamanın mı daha avantajlı olduğunu tarafsız biçimde analiz ediyoruz."
-tags: ["kira", "konut piyasası"]
+tags: ["kira", "gayrimenkul piyasası"]
 ---
 
 2025 yılı itibarıyla Türkiye'de konut piyasası, hem yatırımcılar hem de bireysel kullanıcılar için her zamankinden daha fazla merak konusu hâline geldi. Artan enflasyon, dalgalı döviz kurları, faiz oranlarındaki değişimler ve ülke genelinde süregelen arz-talep dengesizlikleri; “Kira mı daha mantıklı, yoksa satın almak mı?” sorusunu daha da karmaşık hâle getirdi.

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Türkiye’de Konut Kredisi Kullanım Oranları (2025)"
 description: "Bu yazıda, yılın gidişatını, faiz görünümünü ve piyasa oyuncuları için pratik çıkarımları özetledim."
-tags: ["konut finansmanı", "konut kredisi"]
+tags: ["konut kredisi"]
 ---
 
 2025’te konut finansmanında “kredili satışların payı” (ipotekli konut satışlarının toplam satışlara oranı) yeniden artış eğiliminde. Aşağıda yılın gidişatını, faiz görünümünü ve piyasa oyuncuları için pratik çıkarımları özetledim.

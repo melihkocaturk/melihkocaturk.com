@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "İnşaat Maliyetleri Konut Fiyatlarını Nasıl Belirliyor?"
 description: "İnşaat maliyetleri konut fiyatlarını nasıl etkiliyor? Bu yazıda, malzeme, işçilik ve ekonomik faktörlerin fiyatlara yansımasını detaylıca inceliyoruz."
 ---

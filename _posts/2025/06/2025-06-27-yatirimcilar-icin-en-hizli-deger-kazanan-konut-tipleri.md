@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Yatırımcılar İçin En Hızlı Değer Kazanan Konut Tipleri"
 description: "Yatırımcılar için en hızlı değer kazanan konut tiplerini keşfedin: 1+1 ve 2+1 dairelerden markalı projelere, rezidans ve loftlardan kentsel dönüşüm bölgelerine kadar hangi konutlar yatırım getirinizi hızla artırır öğrenin."
-tags: ["konut yatırımı", "geri dönüş süresi"]
+tags: ["konut yatırımı"]
 ---
 
 Konut yatırımı, uzun vadeli getiri ve güvenli liman arayan yatırımcılar için her zaman cazip bir seçenek olmuştur. Ancak her konut tipi aynı hızda değer kazanmaz. Lokasyon kadar konutun tipi, yapısı ve hitap ettiği hedef kitle de değer artışında önemli rol oynar. Bu yazıda, son yıllarda Türkiye’de en hızlı değer kazanan konut tiplerini detaylarıyla inceliyoruz.

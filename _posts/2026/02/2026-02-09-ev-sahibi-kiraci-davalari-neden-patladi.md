@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Sahibi - Kiracı Davaları Neden Patladı? Piyasaya Etkileri ve Gelecek Öngörüleri"
 description: "Ev sahibi – kiracı davaları neden arttı? Kira artışları, tahliye davaları ve hukuki belirsizliklerin konut piyasasına etkilerini tüm yönleriyle inceleyen detaylı analiz."
-tags: ["kira", "konut piyasası", "ekonomi"]
+tags: ["kira", "gayrimenkul piyasası"]
 ---
 
 Türkiye’de son yıllarda **ev sahibi – kiracı uyuşmazlıkları olağan bir hukuki mesele olmaktan çıkıp sistematik bir toplumsal soruna** dönüşmüş durumda. Sulh Hukuk Mahkemeleri’nin iş yükünün önemli bir kısmını artık kira tespit, tahliye ve alacak davaları oluşturuyor.

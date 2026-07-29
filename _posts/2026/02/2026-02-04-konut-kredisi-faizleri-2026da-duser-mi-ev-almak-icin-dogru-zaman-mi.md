@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Kredisi Faizleri 2026’da Düşer mi? Ev Almak İçin Doğru Zaman mı?"
 description: "Bu yazıda, 2026 yılında konut kredisi faizlerinin düşüp düşmeyeceğini, olası senaryoları ve ev almak için doğru zamanın nasıl değerlendirilmesi gerektiğini detaylı şekilde ele alıyoruz."
 tags: ["konut kredisi"]

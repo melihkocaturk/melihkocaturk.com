@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Keos Kent Otomasyon Sistemi Nedir, Ne İşe Yarar?"
 description: "Keos Kent Otomasyon Sistemi, coğrafi bilgi sistemleri (CBS) entegrasyonu, e-belediye modülleri ve mobil çözümleriyle şehir yönetiminde verimliliği artıran bir dijital altyapıdır."
 ---

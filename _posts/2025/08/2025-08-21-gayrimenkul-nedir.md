@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Nedir?"
 description: "Bu yazıda, gayrimenkulün tanımı, çeşitleri, hukuki yönleri, yatırım boyutu ve toplumsal önemi üzerine kapsamlı bir rehber bulacaksınız."
-tags: ["gayrimenkul"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Gayrimenkul kavramı, hayatımızın birçok alanında karşımıza çıkar. Ev sahibi olmak, arsa yatırımı yapmak, iş yeri açmak veya kira geliri elde etmek… Tüm bu süreçlerin ortak noktası gayrimenkuldür. Ancak günlük hayatta çok sık kullanmamıza rağmen, gayrimenkulün tam anlamıyla ne olduğu, hangi türleri kapsadığı ve neden bu kadar önemli olduğu çoğu zaman yeterince bilinmez.

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Taşınma Sonrası Yapılması Gereken Resmi İşlemler Listesi"
 description: "Bu yazıda taşınma sonrası yapmanız gereken tüm resmi işlemleri adım adım ele aldık."
 ---

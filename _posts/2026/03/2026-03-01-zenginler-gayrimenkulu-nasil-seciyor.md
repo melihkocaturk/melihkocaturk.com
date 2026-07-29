@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Zenginler Gayrimenkulü Nasıl Seçiyor?"
 description: "Zenginler gayrimenkulü nasıl seçiyor? Varlıklı yatırımcıların lokasyon, kira getirisi, risk yönetimi ve portföy stratejilerine dayalı 12 kritik kriterini keşfedin."
-tags: ["gayrimenkul yatırımı", "risk yönetimi", "nakit akışı"]
+tags: []
 ---
 
 Gayrimenkul yatırımı herkes için önemli olabilir, ancak büyük servet sahibi yatırımcılar bu sürece tamamen farklı bir bakış açısıyla yaklaşır. Onlar için bir mülk sadece “ev” değildir; **risk yönetimi, nakit akışı, değer artışı ve prestij** gibi çok katmanlı bir yatırım aracıdır.

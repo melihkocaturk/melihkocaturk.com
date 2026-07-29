@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Bireysel Konut Yatırımcısının Karşılaşabileceği Riskler"
 description: "Bu yazıda, konut yatırımında dikkat edilmesi gereken başlıca riskleri detaylı şekilde ele aldık."
 tags: ["konut yatırımı"]

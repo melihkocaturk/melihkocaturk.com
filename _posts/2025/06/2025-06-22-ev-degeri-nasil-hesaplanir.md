@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Değeri Nasıl Hesaplanır?"
 description: "Bu yazıda hem profesyonel yöntemleri hem de ev sahiplerinin kendi başlarına uygulayabileceği teknikleri ele alıyoruz."
-tags: ["değerleme", "geri dönüş süresi"]
+tags: ["değerleme"]
 ---
 
 Bir evi satmadan ya da satın almadan önce en kritik adımlardan biri, doğru değer tespiti yapmaktır. Yanlış bir fiyatlandırma, hem maddi kayıplara hem de zaman kaybına neden olabilir. Özellikle değişken piyasa koşullarında, bir evin güncel piyasa değerini hesaplamak artık sadece basit bir kıyaslama değil, çok boyutlu bir analiz süreci gerektiriyor. Peki **ev değeri nasıl hesaplanır?** Bu yazıda hem profesyonel yöntemleri hem de ev sahiplerinin kendi başlarına uygulayabileceği teknikleri ele alıyoruz.

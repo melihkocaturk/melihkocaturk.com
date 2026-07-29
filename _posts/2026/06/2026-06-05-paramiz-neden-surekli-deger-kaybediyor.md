@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Paramız Neden Sürekli Değer Kaybediyor?"
 description: "Bu yazıda enflasyonun ne olduğunu, neden ortaya çıktığını, paramızın neden sürekli değer kaybettiğini ve enflasyona karşı nasıl korunabileceğimizi detaylı olarak inceleyeceğiz."
-tags: ["enflasyon", "finansal okuryazarlık"]
+tags: []
 ---
 
 Günlük hayatımızda market alışverişinden kira ödemelerine, akaryakıttan eğitim giderlerine kadar hemen her alanda fiyatların arttığını görüyoruz. Birçok kişi maaşına zam alsa bile alım gücünün neden yükselmediğini merak ediyor. Bunun temel nedeni enflasyondur.

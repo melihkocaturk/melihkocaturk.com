@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Dünyada ve Türkiye’de Gayrimenkul Satın Alma Kararı"
 description: "Bu yazıda, Dünyada ve Türkiye’de gayrimenkul satın alma kararlarını karşılaştırmalı bir şekilde inceliyoruz.
 "

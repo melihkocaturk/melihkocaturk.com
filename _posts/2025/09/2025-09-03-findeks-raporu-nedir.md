@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Findeks Raporu Nedir?"
 description: "Bu yazımızda, Findeks raporunu detaylı şekilde açıklayacak ve finansal hayatınızı yönetmenizde nasıl bir rol oynadığını anlatacağız."
 ---

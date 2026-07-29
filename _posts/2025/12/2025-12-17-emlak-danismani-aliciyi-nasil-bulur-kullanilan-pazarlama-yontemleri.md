@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Emlak Danışmanı Alıcıyı Nasıl Bulur? Kullanılan Pazarlama Yöntemleri"
 description: "Emlak danışmanı alıcıyı nasıl bulur? Dijital pazarlama, sosyal medya, ilan siteleri, referans ve reklam yöntemleriyle alıcı bulmanın en etkili yollarını keşfedin."
-tags: ["emlak danışmanı"]
+tags: ["gayrimenkul danışmanı"]
 ---
 
 Gayrimenkul sektöründe başarının anahtarı yalnızca portföy sahibi olmak değildir. Asıl kritik nokta, *doğru alıcıyı doğru mülkle buluşturabilmektir*. Günümüzde emlak danışmanları, klasik yöntemlerin yanı sıra dijital pazarlama, veri analizi ve kişisel marka stratejileriyle alıcıya ulaşmaktadır. Bu yazıda, bir emlak danışmanının alıcıyı nasıl bulduğunu ve en etkili pazarlama yöntemlerini tüm detaylarıyla ele alıyoruz.

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kat İrtifakı mı Kat Mülkiyeti mi?"
 description: "Kat irtifakı ile kat mülkiyeti arasındaki fark nedir? Hangi durumda hangi tapu tercih edilmelidir?"
 tags: ["kat mülkiyeti", "kat irtifakı", "tapu", "iskan"]

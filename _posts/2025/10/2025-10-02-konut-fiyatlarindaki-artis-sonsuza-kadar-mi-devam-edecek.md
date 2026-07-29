@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Konut Fiyatlarındaki Artış Sonsuza Kadar mı Devam Edecek?"
 description: "Bu yazımızda konut piyasasının dinamiklerini, fiyat artışının sebeplerini ve gelecekte ne olabileceğini detaylı şekilde inceleyeceğiz."
 ---

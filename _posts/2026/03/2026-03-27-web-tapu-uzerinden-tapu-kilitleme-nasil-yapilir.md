@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Web Tapu Üzerinden Tapu Kilitleme Nasıl Yapılır? (Videolu Anlatım)"
 description: "Bu yazıda, Web Tapu sistemi üzerinden tapu kilitleme işlemini adım adım, anlaşılır ve pratik şekilde anlatıyorum."
 tags: ["tapu", "webtapu"]

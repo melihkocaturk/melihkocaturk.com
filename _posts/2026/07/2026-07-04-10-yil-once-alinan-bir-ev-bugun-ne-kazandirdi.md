@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "10 Yıl Önce Alınan Bir Ev Bugün Ne Kazandırdı?"
 description: "10 yıl önce alınan bir ev bugün gerçekten ne kazandırdı? Konut fiyat artışlarını, enflasyonun etkisini, kira gelirlerini, döviz bazlı getiriyi ve yatırımın gerçek performansını detaylı analiz ediyoruz."
-tags: ["emlak yatırımı", "gayrimenkul yatırımı", "finansal okuryazarlık"]
+tags: ["konut yatırımı"]
 ---
 
 Türkiye'de yıllardır en çok duyulan yatırım tavsiyelerinden biri "Ev al, mutlaka kazandırır." cümlesidir. Özellikle son yıllarda yaşanan yüksek enflasyon ve hızlı konut fiyat artışları, bu düşünceyi daha da güçlendirdi. Peki gerçekten öyle mi? 10 yıl önce satın alınan bir ev bugün yatırımcısına ne kadar kazandırdı? Bu kazanç sadece satış fiyatındaki artıştan mı ibaret, yoksa görünmeyen maliyetler de var mı?

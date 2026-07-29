@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Tapuda Hatalı Ada/Parsel Yazımı Nasıl Düzeltilir?"
 description: "Hatalı ada/parsel kaydı nasıl tespit edilir ve tapuda nasıl düzeltilir? Kadastro onayı, mahkeme süreci ve resmi başvuru adımlarını içeren detaylı açıklama."
 tags: ["tapu"]

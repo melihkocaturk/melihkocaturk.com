@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Evin Cephe Seçimi Neden Önemlidir? Güney Cephe Gerçekten Avantaj mı?"
 description: "Güney cephe evlerin avantajları ve dezavantajları nelerdir? Isınma, gün ışığı, enerji tasarrufu ve ev değeri üzerindeki etkilerini detaylıca öğrenin."
 ---

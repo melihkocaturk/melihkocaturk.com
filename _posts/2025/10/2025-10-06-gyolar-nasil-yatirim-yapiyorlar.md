@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "GYO’lar Nasıl Yatırım Yapıyorlar?"
 description: "Gayrimenkul Yatırım Ortaklıkları (GYO) hangi alanlara yatırım yapar? Kira geliri, sermaye kazancı ve portföy çeşitlendirmesi gibi stratejileri bu yazıda keşfedin."
-tags: ["gyo", "gayrimenkul yatırımı"]
+tags: []
 ---
 
 **Gayrimenkul Yatırım Ortaklıkları (GYO)**, yatırımcıların bir araya gelerek büyük ölçekli gayrimenkul projelerine ortak olmasını sağlayan sermaye piyasası araçlarıdır. Türkiye’de Sermaye Piyasası Kurulu (SPK) tarafından düzenlenen GYO’lar, yatırımcılara dolaylı gayrimenkul yatırımı yapma imkânı sunar.

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Yetkilendirme Sözleşmesi Yapılmadığında Karşılaşılabilecek Sorunlar"
 description: "Bu yazıda, yetki sözleşmesi yapılmadığında ortaya çıkabilecek hukuki, mali ve güven sorunlarını ele alıyoruz."
 ---

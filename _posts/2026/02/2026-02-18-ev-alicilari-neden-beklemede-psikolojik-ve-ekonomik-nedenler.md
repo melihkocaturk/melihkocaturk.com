@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Ev Alıcıları Neden Beklemede? Psikolojik ve Ekonomik Nedenler"
 description: "Ev alıcıları neden beklemede? Yüksek faiz, fiyat beklentisi, gelir belirsizliği ve kayıp korkusu gibi ekonomik ve psikolojik faktörlerin konut piyasasına etkisini detaylı analiz ediyoruz."
-tags: ["emlak piyasası"]
+tags: ["gayrimenkul piyasası"]
 ---
 
 Konut piyasasında son dönemde en sık duyulan cümle şu: “Alıcı var ama bekliyor.” Peki gerçekten ev almak isteyenler neden karar vermekte zorlanıyor? Bu durum sadece faiz oranlarıyla mı ilgili, yoksa işin içinde daha derin psikolojik faktörler mi var?

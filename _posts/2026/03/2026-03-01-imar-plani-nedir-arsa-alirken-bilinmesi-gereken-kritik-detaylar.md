@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "İmar Planı Nedir? Arsa Alırken Bilinmesi Gereken Kritik Detaylar"
 description: "Bu yazıda imar planının ne olduğunu, türlerini ve arsa alırken mutlaka kontrol etmeniz gereken kritik detayları adım adım ele alıyoruz."
-tags: ["arsa yatırımı", "imar planı"]
+tags: ["arsa yatırımı"]
 ---
 
 Arsa yatırımı, doğru yapıldığında yüksek kazanç potansiyeli sunan bir gayrimenkul türüdür. Ancak arsa alımında yapılan küçük bir hata bile ciddi maddi kayıplara yol açabilir. Bu nedenle özellikle **imar planı** kavramını doğru anlamak, yatırımın güvenliği açısından hayati önem taşır.

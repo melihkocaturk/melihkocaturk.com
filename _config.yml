@@ -2,13 +2,9 @@
 url: "https://www.melihkocaturk.com"
 lang: tr
 title: Melih Kocatürk
-description: Emlak danışmanından ipuçları ve stratejiler, arsa yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...
+subtitle: Gayrimenkul Yatırım, Değerleme ve Pazarlama Danışmanlığı
+description: Gayrimenkul danışmanından ipuçları ve stratejiler, emlak yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...
 words_per_minute: 190
-
-## Home
-home: 
-  info: Bu blog, gayrimenkul danışmanlığı alanında bilgi arayan bireyler için güvenilir, sade ve anlaşılır içerikler sunmak amacıyla hazırlanmıştır. Emlak sektörüne dair güncel bilgiler, yatırım ve işlem süreçleri hakkında rehberlik sağlayarak, okuyucuların daha bilinçli kararlar almasına katkı sağlamayı hedeflemektedir.
-  get-in-touch: Gayrimenkul ile ilgili her türlü soru, öneri ya da iş birliği talebiniz için benimle iletişime geçebilirsiniz. Evinizi satmak, yeni bir yaşam alanı bulmak ya da yatırım fırsatlarını değerlendirmek istiyorsanız, doğru yerdesiniz.
 
 # Contact
 contact:
@@ -24,13 +20,6 @@ permalink: /:title
 paginate: 5
 paginate_path: /sayfa:num/
 
-# Social
-social: 
-  linkedin: https://www.linkedin.com/in/melihkocaturk/
-  instagram: https://www.instagram.com/melih_kocaturk_
-  youtube: https://www.youtube.com/@melihkocaturk
-  twitter: https://x.com/melih_kocaturk_
-
 # Google Analytics
 google_analytics: G-D81YCKRVTX
 
@@ -44,4 +33,4 @@ plugins:
   - jekyll-feed
 
 # Include Directories
-include: ['_tools']
+include: ['_tools', '_pages']

@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Tahliye Taahhütnamesi Hakkında Bilmeniz Gerekenler"
 description: "Kiracı tarafından verilen tahliye taahhütnamesi nedir, nasıl hazırlanır ve hangi şartlarda geçerlidir? Bu yazıda tahliye taahhütnamesinin tanımını, usulünü ve geçerlilik şartlarını net ve anlaşılır biçimde açıklıyoruz."
 ---

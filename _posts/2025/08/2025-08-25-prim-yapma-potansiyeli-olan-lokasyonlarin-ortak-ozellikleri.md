@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Prim Yapma Potansiyeli Olan Lokasyonların Ortak Özellikleri"
 description: "Gayrimenkul yatırımında kısa sürede değer kazanma potansiyeli yüksek lokasyonların ortak özelliklerini öğrenin: ulaşım altyapısı, kentsel dönüşüm, sosyal olanaklar, iş ve yaşam kalitesi, arz-talep dengesi ve devlet projelerinin mülk değerlerine etkisi. Doğru lokasyon seçimiyle yatırım getirinizi artırın."
 ---

@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Gayrimenkul Değerleme Şirketi Nedir?"
 description: "Gayrimenkul değerleme şirketi; konut, arsa, işyeri, fabrika, otel gibi taşınmazların veya gayrimenkul projelerinin piyasa değerini bağımsız, tarafsız ve bilimsel yöntemlerle belirleyen kurumsal yapılardır."
-tags: ["gayrimenkul değerleme"]
+tags: ["değerleme"]
 ---
 
 Gayrimenkul sektörü; konut, arsa, ticari gayrimenkul veya yatırım amaçlı taşınmazların alım-satımı, kiralanması ve projelendirilmesi gibi pek çok dinamik süreci barındırır. Bu süreçlerin en kritik aşamalarından biri ise değerlemedir. Bir taşınmazın gerçek piyasa değerinin belirlenmesi, hem yatırımcılar hem de kurumlar için güvenilir karar almayı mümkün kılar. İşte bu noktada *gayrimenkul değerleme şirketleri* devreye girer.

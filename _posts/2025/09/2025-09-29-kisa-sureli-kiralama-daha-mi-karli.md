@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Kısa Süreli Kiralama Daha mı Karlı?"
 description: "Evimden kısa süreli kiralama (Airbnb, Booking vb.) ile mi, yoksa uzun dönemli kiralama ile mi daha fazla gelir elde ederim?"
 tags: ["kira", "airbnb"]

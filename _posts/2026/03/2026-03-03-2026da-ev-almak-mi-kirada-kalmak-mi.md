@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "2026’da Ev Almak mı, Kirada Kalmak mı? Karar Vermeden Önce Bilmeniz Gerekenler"
 description: "Bu yazıda 2026 şartlarında iki seçeneği de objektif şekilde analiz ederek hangi durumda hangisinin daha avantajlı olacağını netleştireceğiz."
-tags: ["konut piyasası", "konut yatırımı"]
+tags: ["gayrimenkul piyasası", "konut yatırımı"]
 ---
 
 2026 yılına girerken konut piyasasında en çok sorulan sorulardan biri şu: **“Ev almak mı daha mantıklı, yoksa kirada kalmaya devam etmek mi?”**  Faiz oranları, konut fiyatları, kira artışları ve ekonomik beklentiler bu kararı doğrudan etkiliyor.

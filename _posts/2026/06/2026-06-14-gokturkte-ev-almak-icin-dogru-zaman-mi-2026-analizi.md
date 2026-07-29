@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Göktürk'te Ev Almak İçin Doğru Zaman mı? 2026 Analizi"
 description: "Göktürk'te ev almak için doğru zaman mı? 2026 konut piyasası analizi, fiyat beklentileri, yatırım fırsatları, kira getirileri ve bölgenin gelecekteki değer potansiyelini detaylı inceleyin."
-tags: ["göktürk", "emlak yatırımı"]
+tags: ["göktürk", ]
 ---
 
 İstanbul'un son yıllarda en çok değer kazanan bölgelerinden biri olan Göktürk, hem yaşam kalitesi hem de yatırım potansiyeli nedeniyle konut alıcılarının radarında olmaya devam ediyor. Özellikle pandemi sonrası değişen yaşam alışkanlıkları, insanların daha yeşil, daha sakin ve şehir merkezine ulaşımı kolay bölgeleri tercih etmesine neden oldu. Bu değişimin en büyük kazananlarından biri de Göktürk oldu.

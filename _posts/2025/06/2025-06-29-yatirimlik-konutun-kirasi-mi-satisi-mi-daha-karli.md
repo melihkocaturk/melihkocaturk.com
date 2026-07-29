@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Yatırımlık Konutun Kirası mı Satışı mı Daha Karlı?"
 description: "Bu yazımızda kira ve satış arasındaki kârlılık farkını örneklerle inceleyerek hangisinin daha avantajlı olabileceğini ortaya koyacağız."
-tags: ["konut yatırımı", "kira", "geri dönüş süresi"]
+tags: ["konut yatırımı", "kira"]
 ---
 
 Konut yatırımı yapan herkesin aklındaki temel sorulardan biri şudur: “Bu evi kiraya mı versem yoksa satarak kâr mı etsem?” Doğru karar; bölge, piyasa durumu, maliyetler ve yatırımcının hedeflerine göre değişir. Bu yazımızda kira ve satış arasındaki kârlılık farkını örneklerle inceleyerek hangisinin daha avantajlı olabileceğini ortaya koyacağız.

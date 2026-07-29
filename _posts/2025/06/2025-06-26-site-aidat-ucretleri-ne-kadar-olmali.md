@@ -1,5 +1,6 @@
 ---
 layout: post
+custom_css: post
 title: "Site Aidat Ücretleri Ne Kadar Olmalı?"
 description: "Bu yazıda aidatların nasıl belirlendiğini, neye göre değiştiğini ve ideal bir aidat politikasının nasıl olması gerektiğini detaylarıyla ele alıyoruz."
 tags: ["site aidatı", "arsa payı"]

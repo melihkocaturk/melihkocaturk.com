@@ -1,8 +1,9 @@
 ---
 layout: post
+custom_css: post
 title: "Yetkili Emlak Danışmanı Ne Demektir?"
 description: "Yetkili emlak danışmanı nedir? Yetki belgesi, yetki sözleşmesi ve yetkili emlak danışmanı ile çalışmanın avantajlarını detaylı şekilde öğrenin."
-tags: ["emlak danışmanı"]
+tags: ["gayrimenkul danışmanı"]
 ---
 
 Gayrimenkul alım, satım ve kiralama süreçleri; yüksek maddi değerler, hukuki sorumluluklar ve ciddi zaman yönetimi gerektiren işlemlerdir. Bu nedenle işlemlerin *yetkili emlak danışmanları* aracılığıyla yürütülmesi, hem alıcılar hem de satıcılar için büyük önem taşır. Peki, yetkili emlak danışmanı ne demektir ve neden bu kadar önemlidir?

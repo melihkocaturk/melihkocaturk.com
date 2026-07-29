@@ -1,0 +1,44 @@
+/* Page Header / Arama Alanı */
+.search-header {
+  background-color: var(--kw-light-bg);
+  padding: 3.5rem 0 2.5rem 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.search-input-group {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+.search-input-group .form-control {
+  border-top-left-radius: 50rem;
+  border-bottom-left-radius: 50rem;
+  padding-left: 1.5rem;
+  border-color: #dee2e6;
+}
+
+.search-input-group .form-control:focus {
+  border-color: var(--kw-red);
+  box-shadow: 0 0 0 0.25rem rgba(206, 1, 31, 0.15);
+}
+
+.search-input-group .btn {
+  border-top-right-radius: 50rem;
+  border-bottom-right-radius: 50rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Minimalist WhatsApp Button */
+.whatsapp-btn {
+  background-color: #25D366;
+  color: white;
+  font-weight: 600;
+  border: none;
+  transition: background-color 0.2s ease;
+}
+
+.whatsapp-btn:hover {
+  background-color: #1DA851;
+  color: white;
+}

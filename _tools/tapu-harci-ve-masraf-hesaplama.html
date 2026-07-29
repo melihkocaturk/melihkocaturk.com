@@ -1,192 +1,292 @@
 ---
 layout: page
 title: "Tapu Harcı ve Masraf Hesaplama"
-description: "Gayrimenkul alım satımında ödeyeceğiniz tapu harcı, döner sermaye ve emlakçı masraflarını anında
-hesaplayın. Sürpriz maliyetler olmadan tapu sürecinizi planlayın!"
+description: "Beyan edilen gayrimenkul satış bedeli ve bölgenize ait döner sermaye hizmet bedelini girerek alıcı, satıcı
+ve toplam harç masraflarını anında hesaplayın."
 permalink: /araclar/tapu-harci-ve-masraf-hesaplama.html
+tag: "Alım-Satım"
+icon: receipt
 ---
 
-<!-- CSS for Switch Input -->
 <style>
-  /* Change the track background and border color when checked */
-  .custom-switch-success .form-check-input:checked {
-    background-color: #000;
-    border-color: #000;
+  main {
+    flex: 1;
+  }
+
+  /* Kartlar & Form Stilleri */
+  .calc-card {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
+
+  .info-card {
+    background-color: #ffffff;
+    border: 1px solid #e9ecef;
+    border-radius: 16px;
+  }
+
+  .form-control:focus,
+  .form-select:focus {
+    border-color: var(--kw-red);
+    box-shadow: 0 0 0 0.25rem rgba(206, 1, 31, 0.15);
+  }
+
+  .result-box {
+    background-color: #ffffff;
+    border-left: 4px solid var(--kw-red);
+    border-radius: 8px;
+  }
+
+  /* Adım Rakamları (Sabit Boyut) */
+  .step-badge {
+    width: 36px;
+    height: 36px;
+    min-width: 36px;
+    min-height: 36px;
+    border-radius: 50%;
+    background-color: rgba(206, 1, 31, 0.1);
+    color: var(--kw-red);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.95rem;
   }
 </style>
 
-<div class="container mb-5" style="max-width: 520px;">
-  <div class="card border">
-    <div class="card-body p-4">
-      <form id="titleDeedCalculatorForm" onsubmit="event.preventDefault(); calculateTitleDeedFees();">
-        <!-- Property Sale Price -->
-        <div class="form-floating mb-3">
-          <input type="number" class="form-control" id="propertySalePrice" placeholder="5000000" value="5000000"
-            required>
-          <label for="propertySalePrice">Gayrimenkul Satış Bedeli (TL)</label>
-        </div>
+<!-- Ana İçerik -->
+<main class="py-5">
+  <div class="container py-3">
 
-        <!-- Fee Payment Distribution Selection -->
-        <div class="mb-3">
-          <label class="form-label text-secondary small fw-semibold">Tapu Harcı Paylaşımı</label>
-          <select class="form-select form-select-lg fs-6" id="feeDistribution">
-            <option value="split" selected>Yarı Yarıya (%2 Alıcı - %2 Satıcı)</option>
-            <option value="buyer">Tamamı Alıcıya Ait (%4 Alıcı)</option>
-            <option value="seller">Tamamı Satıcıya Ait (%4 Satıcı)</option>
-          </select>
-        </div>
+    <!-- Başlık Bölümü -->
+    <div class="text-center mb-5">
+      <span class="badge bg-danger-subtle text-danger px-3 py-2 rounded-pill fw-semibold mb-2">
+        <i class="bi bi-calculator me-1"></i> {{ page.tag }}
+      </span>
+      <h1 class="fw-bold text-dark mb-2">{{ page.title }}</h1>
+      <p class="text-secondary mx-auto" style="max-width: 680px;">
+        {{ page.description }}
+      </p>
+    </div>
 
-        <!-- Include Agent Fee Checkbox -->
-        <div class="form-check form-switch custom-switch-success mb-3">
-          <input class="form-check-input" type="checkbox" id="includeAgentFee" checked>
-          <label class="form-check-input-label text-dark small" for="includeAgentFee">
-            Emlak Hizmet Bedelini Dahil Et (%2 + KDV)
-          </label>
-        </div>
+    <div class="row g-4 align-items-start">
 
-        <!-- Calculate Button -->
-        <button type="submit" class="btn btn-dark w-100 py-3 fw-bold rounded-3">
-          Masrafları Hesapla
-        </button>
-      </form>
+      <!-- SOL KOLON: Form Alanı -->
+      <div class="col-lg-6">
+        <div class="calc-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-sliders me-2 text-kw-red"></i>Devir ve Harç Bilgileri
+          </h4>
 
-      <!-- Results Section -->
-      <div id="deedResultsContainer" class="mt-4 p-3 bg-body-tertiary rounded-3 border d-none">
-        <h6 class="fw-bold text-dark border-bottom pb-2 mb-3">Hesaplama Detayları</h6>
+          <form id="titleFeeForm">
 
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Alıcı Tapu Harcı (%2):</span>
-          <span class="fw-semibold" id="buyerTaxOutput">0 TL</span>
-        </div>
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Satıcı Tapu Harcı (%2):</span>
-          <span class="fw-semibold" id="sellerTaxOutput">0 TL</span>
-        </div>
-        <div class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Döner Sermaye Bedeli (Tahmini):</span>
-          <span class="fw-semibold" id="revolvingFundOutput">0 TL</span>
-        </div>
+            <!-- Beyan Edilen Satış Bedeli -->
+            <div class="mb-3">
+              <label for="salePrice" class="form-label fw-semibold text-dark">Beyan Edilen Satış Bedeli (₺)</label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="salePrice"
+                  placeholder="Örn: 5000000" required>
+              </div>
+              <div class="form-text small">Tapuda beyan edilecek devir bedelini giriniz.</div>
+            </div>
 
-        <div id="agentFeeRow" class="d-flex justify-content-between align-items-center py-2 border-bottom">
-          <span class="text-secondary small">Emlak Hizmet Bedeli (KDV Dahil):</span>
-          <span class="fw-semibold" id="agentFeeOutput">0 TL</span>
-        </div>
+            <!-- Döner Sermaye Bedeli (ZORUNLU DINAMIK INPUT) -->
+            <div class="mb-3">
+              <label for="revolvingFund" class="form-label fw-semibold text-dark">
+                Döner Sermaye Bedeli (₺) <span class="text-danger">*</span>
+              </label>
+              <div class="input-group">
+                <span class="input-group-text bg-white border-end-0">₺</span>
+                <input type="number" class="form-control form-control-lg border-start-0" id="revolvingFund"
+                  placeholder="Örn: 3500" required>
+              </div>
+              <div class="form-text small">İlgili tapu müdürlüğü ve ilçe yöresel katsayısına göre belirlenen hizmet
+                bedeli.</div>
+            </div>
 
-        <div class="d-flex justify-content-between align-items-center py-3 my-2 bg-danger-subtle px-3 rounded-3">
-          <span class="fw-bold text-danger-emphasis">Toplam Alıcı Masrafı:</span>
-          <span class="fw-bold fs-5 text-danger" id="totalBuyerCostOutput">0 TL</span>
+            <!-- Harç Ödeme Paylaşımı -->
+            <div class="mb-4">
+              <label for="paymentShare" class="form-label fw-semibold text-dark">Harç Paylaşım Durumu</label>
+              <select class="form-select form-select-lg border-0 shadow-sm" id="paymentShare" required>
+                <option value="legal" selected>Yasal Olarak (%2 Alıcı + %2 Satıcı)</option>
+                <option value="buyer">Tüm Harcı Alıcı Öder (%4 Alıcı)</option>
+                <option value="seller">Tüm Harcı Satıcı Öder (%4 Satıcı)</option>
+              </select>
+            </div>
+
+            <!-- Buton -->
+            <button type="submit" class="btn btn-kw-red btn-lg w-100 rounded-pill fw-bold fs-6">
+              <i class="bi bi-calculator-fill me-2"></i>Tapu Masrafını Hesapla
+            </button>
+
+          </form>
+
+          <!-- Sonuç Kutusu (Gizli Başlar) -->
+          <div id="resultContainer" class="mt-4 pt-3 border-top" style="display: none;">
+            <h5 class="fw-bold text-dark mb-3">Hesaplama Sonucu</h5>
+
+            <div class="result-box p-3 mb-3">
+              <div class="text-secondary small">Toplam Tapu Masrafı (Harçlar + Döner Sermaye):</div>
+              <div id="totalCost" class="fs-4 fw-bold text-kw-red">₺0</div>
+            </div>
+
+            <div class="row g-3">
+              <div class="col-md-6">
+                <div class="result-box p-3 h-100">
+                  <div class="text-secondary small">Alıcının Ödeyeceği Tutar:</div>
+                  <div id="buyerFee" class="fs-5 fw-bold text-dark">₺0</div>
+                  <div id="buyerDetail" class="text-muted small">Harç + Döner Sermaye</div>
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <div class="result-box p-3 h-100">
+                  <div class="text-secondary small">Satıcının Ödeyeceği Tutar:</div>
+                  <div id="sellerFee" class="fs-5 fw-bold text-dark">₺0</div>
+                  <div id="sellerDetail" class="text-muted small">Sadece Tapu Harcı</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
         </div>
       </div>
 
-      <!-- Error Alert Area -->
-      <div id="deedErrorMessage" class="alert alert-danger mt-3 mb-0 d-none" role="alert"></div>
+      <!-- SAĞ KOLON: Hesaplama Mantığı -->
+      <div class="col-lg-6">
+        <div class="info-card p-4 p-md-5 shadow-sm">
+          <h4 class="fw-bold text-dark mb-4 pb-2 border-bottom">
+            <i class="bi bi-book me-2 text-kw-red"></i>Hesaplama Mantığı
+          </h4>
+
+          <p class="text-secondary">
+            Tapu devir işlemlerinde 492 Sayılı Harçlar Kanunu uyarınca satışı yapılan gayrimenkulün beyan edilen bedeli
+            üzerinden nispi tapu harcı ve maktu döner sermaye bedeli tahsil edilir.
+          </p>
+
+          <div class="vstack gap-3 my-4">
+
+            <!-- Adım 1 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">1</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Nispi Tapu Harcı Oranı (%4)</h6>
+                <p class="text-secondary small mb-0">
+                  Kanuni olarak beyan edilen satış bedelinin <strong>%2'si alıcıdan</strong>, <strong>%2'si
+                    satıcıdan</strong> olmak üzere toplam %4 oranında tapu harcı alınır.
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 2 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">2</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Döner Sermaye Hizmet Bedeli</h6>
+                <p class="text-secondary small mb-0">
+                  Tapu ve Kadastro Genel Müdürlüğü tarafından her yıl yeniden belirlenen maktu işlem bedelidir. Yöresel
+                  katsayılara göre il ve ilçelerde farklılık gösterir ve genellikle <strong>alıcı tarafça</strong>
+                  ödenir.
+                </p>
+              </div>
+            </div>
+
+            <!-- Adım 3 -->
+            <div class="d-flex align-items-start gap-3">
+              <div class="step-badge">3</div>
+              <div>
+                <h6 class="fw-bold text-dark mb-1">Anlaşmaya Göre Paylaşım</h6>
+                <p class="text-secondary small mb-0">
+                  Taraflar kendi aralarında yapacakları gayrimenkul satış sözleşmesi ile tapu harcının ve masraflarının
+                  tamamının alıcı veya satıcı tarafından ödenmesini kararlaştırabilirler.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="p-3 bg-light rounded-3 border mt-4">
+            <small class="text-muted d-block">
+              <i class="bi bi-info-circle-fill text-kw-red me-1"></i>
+              <strong>Yasal Uyarı:</strong> Beyan edilen satış bedeli, gayrimenkulün belediye tarafından belirlenen
+              emlak vergisi değerinden (rayiç bedel) düşük olamaz. Eksik beyan durumunda cezalı harç tarhiyatı
+              uygulanabilir.
+            </small>
+          </div>
+
+        </div>
+      </div>
+
     </div>
+
   </div>
-</div>
+</main>
 
-<div class="container my-4" style="max-width: 520px;">
-  <div class="card border">
-    <div class="card-body p-4">
-      <h4 class="card-title text-dark fw-bold mb-3 mt-0">
-        Tapu Harcı ve Masraf Kalemleri
-      </h4>
-      <p class="text-muted small mb-4">
-        Gayrimenkul alım-satım işlemlerinde Resmi Gazete'de yayımlanan Harçlar Kanunu ve ilgili mevzuat hükümleri
-        uygulanır.
-      </p>
-
-      <ul class="list-group list-group-flush">
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Tapu Harcı Oranı (%4)</div>
-            <span class="small text-secondary">Aksi taraflarca kararlaştırılmadıkça %2 Alıcı, %2 Satıcı tarafından
-              ödenir.</span>
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Döner Sermaye Bedeli</div>
-            <span class="small text-secondary">Tapu müdürlüğü tarafından her yıl yöresel katsayılara göre belirlenen
-              maktu işlem ücretidir.</span>
-          </div>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-start px-0">
-          <div class="ms-2 me-auto">
-            <div class="fw-bold text-dark">Emlak Danışmanlık Ücreti</div>
-            <span class="small text-secondary">Yasal tavan oran Satış Bedelinin %2 + KDV'sidir (Toplam %2,4).</span>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-</div>
-
+<!-- Hesaplama Scripti -->
 <script>
-  function calculateTitleDeedFees() {
-    // Get inputs
-    const propertySalePrice = parseFloat(document.getElementById('propertySalePrice').value) || 0;
-    const feeDistribution = document.getElementById('feeDistribution').value;
-    const includeAgentFee = document.getElementById('includeAgentFee').checked;
+  document.getElementById('titleFeeForm').addEventListener('submit', function (e) {
+    e.preventDefault();
 
-    const deedResultsContainer = document.getElementById('deedResultsContainer');
-    const deedErrorMessage = document.getElementById('deedErrorMessage');
-    const agentFeeRow = document.getElementById('agentFeeRow');
+    const price = parseFloat(document.getElementById('salePrice').value) || 0;
+    const revolvingFund = parseFloat(document.getElementById('revolvingFund').value) || 0;
+    const shareType = document.getElementById('paymentShare').value;
 
-    // Reset error state
-    deedErrorMessage.classList.add('d-none');
-
-    if (propertySalePrice <= 0) {
-      deedErrorMessage.innerText = "Lütfen geçerli bir gayrimenkul satış bedeli giriniz.";
-      deedErrorMessage.classList.remove('d-none');
-      deedResultsContainer.classList.add('d-none');
+    if (price <= 0) {
+      alert("Lütfen geçerli bir satış bedeli giriniz.");
       return;
     }
 
-    // Standard Rates
-    const totalTaxRate = 0.04; // Total 4%
-    const revolvingFundFee = 6681; // Fixed Revolving Fund Fee (TL)
-    const agentFeeRate = 0.024; // 2% + 20% KDV = 2.4%
-
-    let buyerTax = 0;
-    let sellerTax = 0;
-
-    if (feeDistribution === 'split') {
-      buyerTax = propertySalePrice * 0.02;
-      sellerTax = propertySalePrice * 0.02;
-    } else if (feeDistribution === 'buyer') {
-      buyerTax = propertySalePrice * totalTaxRate;
-      sellerTax = 0;
-    } else if (feeDistribution === 'seller') {
-      buyerTax = 0;
-      sellerTax = propertySalePrice * totalTaxRate;
+    if (revolvingFund < 0) {
+      alert("Lütfen geçerli bir döner sermaye bedeli giriniz.");
+      return;
     }
 
-    let buyerAgentFee = includeAgentFee ? (propertySalePrice * agentFeeRate) : 0;
+    // Harç Hesaplamaları (%2 + %2 = %4)
+    const baseBuyerFee = price * 0.02;
+    const baseSellerFee = price * 0.02;
+    const totalFee = price * 0.04;
 
-    if (includeAgentFee) {
-      agentFeeRow.classList.remove('d-none');
-    } else {
-      agentFeeRow.classList.add('d-none');
+    let finalBuyerPay = 0;
+    let finalSellerPay = 0;
+
+    // Paylaşım Senaryolarına Göre Hesaplama (Döner sermaye alıcıya yazılır)
+    if (shareType === 'legal') {
+      finalBuyerPay = baseBuyerFee + revolvingFund;
+      finalSellerPay = baseSellerFee;
+    } else if (shareType === 'buyer') {
+      finalBuyerPay = totalFee + revolvingFund;
+      finalSellerPay = 0;
+    } else if (shareType === 'seller') {
+      finalBuyerPay = revolvingFund;
+      finalSellerPay = totalFee;
     }
 
-    // Total buyer cost = Buyer Tax + Revolving Fund + Buyer Agent Fee
-    const totalBuyerCost = buyerTax + revolvingFundFee + buyerAgentFee;
+    const grandTotalCost = totalFee + revolvingFund;
 
-    // Currency Formatter (TRY)
-    const currencyFormatter = new Intl.NumberFormat('tr-TR', {
-      style: 'currency',
-      currency: 'TRY',
-      maximumFractionDigits: 0
-    });
+    // Para Birimi Biçimlendirme
+    const formatter = new Intl.NumberFormat('tr-TR', { style: 'currency', currency: 'TRY' });
 
-    // Output formatted results
-    document.getElementById('buyerTaxOutput').innerText = currencyFormatter.format(buyerTax);
-    document.getElementById('sellerTaxOutput').innerText = currencyFormatter.format(sellerTax);
-    document.getElementById('revolvingFundOutput').innerText = currencyFormatter.format(revolvingFundFee);
-    document.getElementById('agentFeeOutput').innerText = currencyFormatter.format(buyerAgentFee);
-    document.getElementById('totalBuyerCostOutput').innerText = currencyFormatter.format(totalBuyerCost);
+    // Sonuçları Ekran Alanlarına Yazdır
+    document.getElementById('totalCost').innerText = formatter.format(grandTotalCost);
+    document.getElementById('buyerFee').innerText = formatter.format(finalBuyerPay);
+    document.getElementById('sellerFee').innerText = formatter.format(finalSellerPay);
 
-    // Display results
-    deedResultsContainer.classList.remove('d-none');
-  }
+    // Detay Açıklamaları
+    if (shareType === 'legal') {
+      document.getElementById('buyerDetail').innerText = `%2 Harç (${formatter.format(baseBuyerFee)}) + Döner Sermaye`;
+      document.getElementById('sellerDetail').innerText = `%2 Harç (${formatter.format(baseSellerFee)})`;
+    } else if (shareType === 'buyer') {
+      document.getElementById('buyerDetail').innerText = `%4 Tüm Harç + Döner Sermaye`;
+      document.getElementById('sellerDetail').innerText = `Satıcı Tarafı Muaf`;
+    } else if (shareType === 'seller') {
+      document.getElementById('buyerDetail').innerText = `Sadece Döner Sermaye`;
+      document.getElementById('sellerDetail').innerText = `%4 Tüm Harç`;
+    }
+
+    // Sonuç Kutusunu Görünür Yap
+    document.getElementById('resultContainer').style.display = 'block';
+  });
 </script>
