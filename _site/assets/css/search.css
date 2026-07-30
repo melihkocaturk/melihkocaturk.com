@@ -1,18 +1,14 @@
 @charset "UTF-8";
-/* Page Header / Arama Alanı */
-.search-header { background-color: var(--kw-light-bg); padding: 3.5rem 0 2.5rem 0; border-bottom: 1px solid #e9ecef; }
+main { flex: 1; }
 
-.search-input-group { max-width: 650px; margin: 0 auto; }
+/* Arama Kart Stili */
+.search-card { background-color: #f8f9fa; border: 1px solid #e9ecef; border-radius: 20px; }
 
-.search-input-group .form-control { border-top-left-radius: 50rem; border-bottom-left-radius: 50rem; padding-left: 1.5rem; border-color: #dee2e6; }
+.form-control:focus { border-color: var(--kw-red); box-shadow: 0 0 0 0.25rem rgba(206, 1, 31, 0.15); }
 
-.search-input-group .form-control:focus { border-color: var(--kw-red); box-shadow: 0 0 0 0.25rem rgba(206, 1, 31, 0.15); }
+/* Popüler Etiket Butonları */
+.popular-tag { background-color: #ffffff; border: 1px solid #dee2e6; color: var(--kw-dark); transition: all 0.2s ease; text-decoration: none; display: inline-flex; align-items: center; }
 
-.search-input-group .btn { border-top-right-radius: 50rem; border-bottom-right-radius: 50rem; padding-left: 1.5rem; padding-right: 1.5rem; }
-
-/* Minimalist WhatsApp Button */
-.whatsapp-btn { background-color: #25D366; color: white; font-weight: 600; border: none; transition: background-color 0.2s ease; }
-
-.whatsapp-btn:hover { background-color: #1DA851; color: white; }
+.popular-tag:hover { border-color: var(--kw-red); color: var(--kw-red); background-color: #fff; transform: translateY(-2px); box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05); }
 
 /*# sourceMappingURL=search.css.map */

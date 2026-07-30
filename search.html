@@ -5,68 +5,97 @@ permalink: /ara
 custom_css: search
 ---
 
-<!-- Arama Başlığı ve Arama Formu -->
-<section class="search-header">
-  <div class="container text-center">
-    <h1 class="h3 fw-bold text-dark mb-3">Site İçinde Arayın</h1>
-
-    <!-- Arama Formu -->
-    <form action="https://www.google.com/search" method="GET" class="search-input-group" target="_blank">
-      <input type="hidden" name="q" value="site:{{ site.url }}">
-      <div class="input-group input-group-lg shadow-sm">
-        <input type="text" name="q" class="form-control fs-6"
-          placeholder="Örn: Konut kredisi, Gayrimenkul yatırımı, Tapu harcı..." aria-label="Arama">
-        <button class="btn btn-kw-red fw-bold fs-6" type="submit">
-          <i class="bi bi-search me-1"></i> Ara
-        </button>
-      </div>
-    </form>
-
-  </div>
-</section>
-
-<!-- KULLANICI DOSTU BOŞ DURUM (EMPTY STATE) -->
-<section class="py-5">
-  <div class="container py-4 max-w-900">
-
-    <!-- Henüz arama yapılmadığında bu alan görünür -->
-    <div class="text-center py-4">
-      <div class="mb-3">
-        <i class="bi bi-search text-secondary opacity-25" style="font-size: 3.5rem;"></i>
-      </div>
-      <h5 class="fw-bold text-dark mb-2">Arama Yapmak İçin Yukarıdaki Kutuyu Kullanabilirsiniz</h5>
-      <p class="text-secondary small mb-0" style="max-width: 480px; margin: 0 auto;">
-        Gayrimenkul piyasası, konut kredileri veya bölge analizleri hakkında merak ettiğiniz anahtar kelimeleri yazıp
-        aratabilirsiniz.
-      </p>
-    </div>
-
-  </div>
-</section>
-
-<!-- Minimalist WhatsApp CTA -->
-<section class="py-5 bg-light" id="iletisim-cta">
-  <div class="container py-2">
+<!-- Ana İçerik -->
+<main class="py-5 d-flex align-items-center">
+  <div class="container py-md-4">
     <div class="row justify-content-center">
-      <div class="col-lg-10">
-        <div class="p-4 p-md-5 bg-white rounded-4 border-start border-5 border-danger shadow-sm">
-          <div class="row align-items-center g-4">
-            <div class="col-lg-8">
-              <h3 class="fw-bold text-dark mb-2">Aradığınız Konuyu Bulamadınız mı?</h3>
-              <p class="text-secondary mb-0">
-                Merak ettiğiniz gayrimenkul konuları veya özel bölge analizleri ile ilgili sorularınızı doğrudan
-                WhatsApp üzerinden sorabilirsiniz.
-              </p>
+      <div class="col-lg-8 col-xl-7">
+
+        <!-- Başlık Bölümü -->
+        <div class="text-center mb-4">
+          <span class="badge bg-danger-subtle text-danger px-3 py-2 rounded-pill fw-semibold mb-3">
+            <i class="bi bi-search me-1"></i> {{ page.title }}
+          </span>
+          <h1 class="fw-bold text-dark mb-3">Ne Aramıştınız?</h1>
+          <p class="text-secondary mx-auto mb-0" style="max-width: 580px;">
+            Gayrimenkul rehberleri, mevzuat bilgileri veya piyasa analizleri arasında Google ile arama yapın.
+          </p>
+        </div>
+
+        <!-- Ortalanmış Arama Kartı -->
+        <div class="search-card p-4 p-md-5 shadow-sm">
+
+          <!-- Google Search Yönlendirme Formu -->
+          <form action="https://www.google.com/search" method="get" target="_blank">
+
+            <!-- Hidden input: Aramayı melihkocaturk.com adresiyle sınırlandırır -->
+            <input type="hidden" name="as_sitesearch" value="melihkocaturk.com">
+
+            <div class="mb-4">
+              <div class="input-group input-group-lg shadow-sm rounded-pill overflow-hidden border">
+                <span class="input-group-text bg-white border-0 ps-4 text-muted">
+                  <i class="bi bi-search fs-5"></i>
+                </span>
+                <input type="text" name="q" id="searchQuery" class="form-control border-0 py-3 pe-3 fs-6"
+                  placeholder="Örn: Kira artış oranı, tapu harcı..." required autocomplete="off">
+                <button type="submit" class="btn btn-kw-red px-4 fw-bold d-flex align-items-center gap-2">
+                  <span>Ara</span>
+                  <i class="bi bi-google"></i>
+                </button>
+              </div>
             </div>
-            <div class="col-lg-4 text-lg-end">
-              <a href="https://wa.me/{{ site.contact.gsm | remove: " " }}?text=Merhaba%20Melih%20Bey,%20arama%20sayfanızdan%20ulaşıyorum.%20Bir%20konuda%20size%20danışmak%20istiyorum."
-                target="_blank" class="btn whatsapp-btn btn-lg px-4 rounded-pill shadow-sm">
-                <i class="bi bi-whatsapp me-2"></i>Doğrudan Sohbet Başlat
+
+          </form>
+
+          <!-- Google Trends Odaklı Popüler Aramalar -->
+          <div class="mt-4 pt-4 border-top text-center">
+            <h6 class="fw-bold text-dark mb-3">
+              <i class="bi bi-graph-up-arrow me-1 text-kw-red"></i> Sık Aranan Konular
+            </h6>
+
+            <div class="d-flex flex-wrap justify-content-center gap-2">
+              <a href="https://www.google.com/search?q=site:melihkocaturk.com+kira+art%C4%B1%C5%9F+oran%C4%B1"
+                target="_blank" class="popular-tag px-3 py-2 rounded-pill text-dark small fw-medium">
+                Kira Artış Oranı
+              </a>
+              <a href="https://www.google.com/search?q=site:melihkocaturk.com+tapu+harc%C4%B1+hesaplama" target="_blank"
+                class="popular-tag px-3 py-2 rounded-pill text-dark small fw-medium">
+                Tapu Harcı Hesaplama
+              </a>
+              <a href="https://www.google.com/search?q=site:melihkocaturk.com+konut+kredisi+taksit" target="_blank"
+                class="popular-tag px-3 py-2 rounded-pill text-dark small fw-medium">
+                Konut Kredisi Taksitleri
+              </a>
+              <a href="https://www.google.com/search?q=site:melihkocaturk.com+de%C4%9Fer+art%C4%B1%C5%9F+kazanc%C4%B1+vergisi"
+                target="_blank" class="popular-tag px-3 py-2 rounded-pill text-dark small fw-medium">
+                Değer Artış Kazancı
+              </a>
+              <a href="https://www.google.com/search?q=site:melihkocaturk.com+kira+gelir+vergisi" target="_blank"
+                class="popular-tag px-3 py-2 rounded-pill text-dark small fw-medium">
+                Kira Gelir Vergisi
+              </a>
+              <a href="https://www.google.com/search?q=site:melihkocaturk.com+emlak+vergisi+sorgulama" target="_blank"
+                class="popular-tag px-3 py-2 rounded-pill text-dark small fw-medium">
+                Emlak Vergisi
+              </a>
+              <a href="https://www.google.com/search?q=site:melihkocaturk.com+amortisman+s%C3%BCresi" target="_blank"
+                class="popular-tag px-3 py-2 rounded-pill text-dark small fw-medium">
+                Amortisman Süresi
               </a>
             </div>
           </div>
+
         </div>
+
+        <!-- Alt Destek Notu -->
+        <div class="text-center mt-4">
+          <p class="text-muted small mb-0">
+            Aradığınız konuyu bulamadıysanız <a href="/iletisim"
+              class="text-kw-red fw-bold text-decoration-none">İletişim</a> sayfasından doğrudan danışabilirsiniz.
+          </p>
+        </div>
+
       </div>
     </div>
   </div>
-</section>
+</main>
