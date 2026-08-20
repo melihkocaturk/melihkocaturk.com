@@ -6,9 +6,7 @@ description: "Emsal dışı alan nedir, nasıl hesaplanır ve arsa değerini nas
 tags: ["arsa yatırımı"]
 ---
 
-Bir konut satın alırken çoğu kişinin baktığı ilk bilgiler bellidir: Dairenin brüt metrekaresi, net kullanım alanı, oda sayısı ve satış fiyatı.
-
-Ancak gayrimenkulde metrekare hesabı bundan çok daha karmaşık olabilir.
+Bir konut satın alırken çoğu kişinin baktığı ilk bilgiler bellidir: Dairenin brüt metrekaresi, net kullanım alanı, oda sayısı ve satış fiyatı. Ancak gayrimenkulde metrekare hesabı bundan çok daha karmaşık olabilir.
 
 Özellikle yeni bir proje, arsa veya bina hakkında araştırma yaparken karşınıza **“emsal dışı alan”** ifadesi çıkabilir. İlk bakışta bu kavram, “hesaba katılmayan alan” gibi anlaşılabilir. Fakat emsal dışı alanın ne olduğu, hangi alanların bu kapsamda değerlendirilebildiği ve toplam yapılaşma hakkını nasıl etkilediği konusunda ciddi bir kafa karışıklığı vardır.
 

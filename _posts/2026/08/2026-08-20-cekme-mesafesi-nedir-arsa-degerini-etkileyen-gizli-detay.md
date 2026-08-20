@@ -6,9 +6,7 @@ description: "Çekme mesafesi nedir? Ön, yan ve arka bahçe çekme mesafelerini
 tags: ["tapu", "arsa yatırımı"]
 ---
 
-Bir arsa satın alırken çoğu kişinin ilk baktığı bilgilerden biri metrekaredir. Ancak arsanın büyüklüğü, üzerine yapılabilecek yapının büyüklüğünü tek başına belirlemez.
-
-İmar planı, emsal, TAKS, kat yüksekliği ve yapı nizamının yanında oldukça önemli bir başka kavram daha vardır: **çekme mesafesi**.
+Bir arsa satın alırken çoğu kişinin ilk baktığı bilgilerden biri metrekaredir. Ancak arsanın büyüklüğü, üzerine yapılabilecek yapının büyüklüğünü tek başına belirlemez. İmar planı, emsal, TAKS, kat yüksekliği ve yapı nizamının yanında oldukça önemli bir başka kavram daha vardır: **çekme mesafesi**.
 
 Çekme mesafesi, yapılacak binanın parsel sınırlarına ne kadar yaklaşabileceğini belirleyen kurallardan biridir. Bu nedenle özellikle arsa satın almadan, proje hazırlamadan veya mevcut bir taşınmazın yapılaşma potansiyelini değerlendirirken mutlaka dikkate alınmalıdır.
 
