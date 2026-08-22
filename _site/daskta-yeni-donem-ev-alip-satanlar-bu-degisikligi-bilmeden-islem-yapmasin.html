@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="tr" data-bs-theme="light">
+  <head>
+    
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASK’ta Yeni Dönem: Ev Alıp Satanlar Bu Değişikliği Bilmeden İşlem Yapmasın</title>
+    <meta
+      name="description"
+      content="DASK’ta yeni dönem başlıyor. Konut satışında poliçe devri kaldırılıyor. 2026 DASK teminat tutarı, yeni kurallar, primler ve bilinmesi gerekenler."
+    >
+
+    <!-- Bootstrap 5.3.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="stylesheet" href="/assets/css/main.css">
+    
+      <link rel="stylesheet" href="/assets/css/post.css">
+    
+
+    <link rel="shortcut icon" href="/images/favicon.ico">
+  </head>
+
+  <body>
+    <!-- Header / Navigasyon -->
+<nav class="navbar navbar-expand-lg custom-navbar sticky-top py-3 shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-4 text-dark text-uppercase" href="/">
+      Melih Kocatürk
+    </a>
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold align-items-lg-center gap-2">
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/"
+            >Anasayfa</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/hakkinda"
+            >Hakkında</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/araclar"
+            >Araçlar</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/rehberler"
+            >Rehberler</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/podcast"
+            >Podcast</a>
+          </li>
+        
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark "
+              href="/ara"
+            >Ara</a>
+          </li>
+        
+        <li class="nav-item ms-lg-2">
+          <a class="btn btn-kw-red px-3 rounded-pill fw-bold btn-sm" href="/iletisim">İletişime Geç</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    
+
+<!-- Makale Gövdesi & Sidebar -->
+<main class="pt-5 pb-4">
+  <div class="container">
+    <div class="row g-5">
+      <!-- Sol Kolon: Başlık ve Makale İçeriği -->
+      <div class="col-lg-8 article-content">
+        <!-- Başlık Alanı -->
+        <h1 class="display-6 fw-bold text-dark mb-3">
+          DASK’ta Yeni Dönem: Ev Alıp Satanlar Bu Değişikliği Bilmeden İşlem Yapmasın
+        </h1>
+
+        <!-- Meta Bilgiler & Paylaşım -->
+        <div class="border-bottom pb-3 mb-4">
+          <div class="d-flex flex-wrap align-items-center justify-content-between gap-3 text-muted small">
+            <div class="d-flex align-items-center gap-3">
+              <div class="d-flex align-items-center gap-2">
+                <i class="bi bi-person-circle fs-6"></i>
+                <span class="fw-semibold text-dark">Melih Kocatürk</span>
+              </div>
+              <span>•</span>
+              <div class="d-flex align-items-center gap-1">
+                <i class="bi bi-clock"></i>
+                <span>7 dk okuma</span>
+              </div>
+            </div>
+
+            <!-- Sosyal Paylaşım -->
+            <div class="d-flex align-items-center gap-2">
+              <span class="me-1 small">Paylaş:</span>
+              <a href="https://twitter.com/intent/tweet?url=/daskta-yeni-donem-ev-alip-satanlar-bu-degisikligi-bilmeden-islem-yapmasin" target="_blank" class="share-btn"
+                ><i class="bi bi-twitter-x"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/sharing/share-offsite/?url=/daskta-yeni-donem-ev-alip-satanlar-bu-degisikligi-bilmeden-islem-yapmasin"
+                target="_blank"
+                class="share-btn"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="https://api.whatsapp.com/send?text=/daskta-yeni-donem-ev-alip-satanlar-bu-degisikligi-bilmeden-islem-yapmasin" target="_blank" class="share-btn"
+                ><i class="bi bi-whatsapp"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Makale Metni -->
+        <p>Türkiye’de bir ev satın alırken çoğu kişinin kontrol ettiği ilk belgeler tapu, iskan, kredi ve ekspertiz raporudur. DASK ise çoğu zaman işlemin sonunda hatırlanır. Oysa 21 Ağustos 2026 itibarıyla Zorunlu Deprem Sigortası konusunda önemli bir değişiklik gündeme geldi. Artık bir konutun satılması halinde mevcut DASK poliçesinin yeni ev sahibine devredilmesi uygulaması sona eriyor.</p>
+
+<p>Bu değişiklik özellikle <strong>ev alacakları, ev satacakları ve gayrimenkul danışmanlarını</strong> yakından ilgilendiriyor. Daha da önemlisi, DASK’ın yalnızca “zorunlu bir poliçe” olarak görülmesi de giderek daha büyük bir problem haline geliyor. Çünkü bugün bir evin piyasa değeri ile DASK’ın sağlayabileceği maksimum teminat arasında ciddi fark oluşabiliyor.</p>
+
+<h2 id="daskta-neden-yeni-bir-dönem-başlıyor">DASK’ta neden yeni bir dönem başlıyor?</h2>
+
+<p>Bugüne kadar konutun satılması durumunda mevcut DASK poliçesi belirli şartlarla yeni malik üzerinden devam edebiliyordu.</p>
+
+<p>Yeni düzenlemeyle bu sistem değişiyor.</p>
+
+<p>Satış veya benzeri bir işlem sonucunda taşınmazın menfaat sahibinin değişmesi halinde mevcut DASK sözleşmesi, taşınmazın tapuda yeni malik adına tescil edildiği tarihte sona erecek.</p>
+
+<p>Yani evin eski sahibinin poliçesi artık yeni sahibine otomatik olarak taşınmayacak.</p>
+
+<p>Eski poliçenin kullanılmayan günlerine ait ödenmiş primlerin ise belirli şartlarla eski sigorta ettirene iade edilmesi öngörülüyor.</p>
+
+<p>Bu değişiklik henüz bugün itibarıyla uygulanmaya başlamış değil.</p>
+
+<p>21 Ağustos 2026 tarihinde yayımlanan düzenlemenin 15 gün sonra yürürlüğe girmesi öngörülüyor.</p>
+
+<h2 id="ev-satın-alanlar-için-en-önemli-değişiklik-ne">Ev satın alanlar için en önemli değişiklik ne?</h2>
+
+<p>Yeni dönemde ev satın alan kişinin DASK konusunu daha fazla önemsemesi gerekecek.</p>
+
+<p>Çünkü satış tamamlandığında eski malikin DASK poliçesi sona erecek.</p>
+
+<p>Dolayısıyla yeni malik açısından “Bu evin DASK’ı zaten var” yaklaşımı yeterli olmayacak.</p>
+
+<p>Yeni sahip adına geçerli bir Zorunlu Deprem Sigortası poliçesinin bulunması gerekecek.</p>
+
+<p>Düzenlemeyle birlikte tapu müdürlükleri veya devir işlemini gerçekleştiren yetkili idarelerin, yeni malik adına geçerli bir DASK sözleşmesi bulunup bulunmadığını kontrol etmesi de sistemin önemli parçalarından biri haline geliyor.</p>
+
+<p>Bu nedenle konut alım sürecinde DASK artık sadece sigorta şirketinin veya acentenin konusu olmaktan çıkıp, <strong>gayrimenkul işlem sürecinin önemli bir kontrol noktası</strong> haline geliyor.</p>
+
+<h2 id="peki-ev-miras-kaldığında-ne-olacak">Peki ev miras kaldığında ne olacak?</h2>
+
+<p>Burada önemli bir ayrım var.</p>
+
+<p>Yeni düzenleme her türlü mülkiyet değişikliğini aynı şekilde değerlendirmiyor.</p>
+
+<p>Satış dışındaki bazı mülkiyet değişikliklerinde, örneğin miras yoluyla gerçekleşen hak sahipliği değişikliğinde, mevcut DASK sözleşmesinin yeni hak sahibiyle devam etmesi öngörülüyor.</p>
+
+<p>Ancak yeni hak sahibinin değişikliği öğrendiği tarihten itibaren <strong>15 gün içerisinde</strong> sigorta şirketine bildirim yapması gerekiyor.</p>
+
+<p>Sigorta şirketi veya acente de bildirimin alınmasından itibaren <strong>24 saat içinde</strong> menfaat değişikliğini içeren zeyilnameyi düzenlemekle yükümlü olacak.</p>
+
+<p>Bu ayrım özellikle miras yoluyla taşınmaz edinen kişiler açısından önemli.</p>
+
+<p>Çünkü “tapuda isim değişti, sigorta da otomatik olarak halledilir” düşüncesi risk yaratabilir.</p>
+
+<h2 id="2026da-dask-teminatı-ne-kadar">2026’da DASK teminatı ne kadar?</h2>
+
+<p>DASK konusunda en fazla yanlış anlaşılan konulardan biri teminat tutarı.</p>
+
+<p>Bir evin satış fiyatı 5 milyon TL ise DASK’ın da 5 milyon TL ödeme yapacağı düşünülmemeli.</p>
+
+<p>DASK’ın hesabı piyasa değerinden farklı bir mantığa dayanıyor.</p>
+
+<p>Sigorta bedelinin belirlenmesinde esas olarak yapının yapı tarzı ve brüt yüzölçümü üzerinden belirlenen metrekare bedeli kullanılıyor.</p>
+
+<p>Ayrıca DASK kapsamında bir mesken için verilebilecek maksimum teminat tutarı bulunuyor.</p>
+
+<p><strong>Ağustos 2026 itibarıyla azami DASK teminatı 2.451.062 TL.</strong></p>
+
+<p>DASK’ın resmi tarifesinde betonarme yapılar için Ağustos 2026 metrekare bedeli <strong>11.562 TL</strong>, diğer yapılar için ise <strong>7.708 TL</strong> olarak yer alıyor.</p>
+
+<p>Üstelik bu rakam sabit değil.</p>
+
+<p>DASK tarifesinde 2026 yılı boyunca teminat tutarının;</p>
+
+<ul>
+  <li>Ocak ayında 2.095.462 TL,</li>
+  <li>Mart ayında 2.167.547 TL,</li>
+  <li>Mayıs ayında 2.271.283 TL,</li>
+  <li>Temmuz ayında 2.407.723 TL,</li>
+  <li>Ağustos ayında ise 2.451.062 TL</li>
+</ul>
+
+<p>seviyesine yükseldiği görülüyor.</p>
+
+<p>Bu durum bize önemli bir şey söylüyor:</p>
+
+<p><strong>DASK’ın teminat yapısı artık sadece “poliçeyi yaptırdım” mantığıyla takip edilebilecek kadar basit değil.</strong></p>
+
+<h2 id="dask-neden-her-şeyi-karşılamıyor">DASK neden her şeyi karşılamıyor?</h2>
+
+<p>DASK’ın adına bakıp kapsamını geniş düşünmek de sık yapılan hatalardan biri.</p>
+
+<p>Zorunlu Deprem Sigortası esas olarak binanın deprem ve deprem kaynaklı belirli riskler nedeniyle oluşan maddi zararlarını güvence altına alıyor.</p>
+
+<p>Ancak evin içindeki eşyalar, bazı dolaylı zararlar, kira mahrumiyeti, alternatif konut masrafları ve bedeni zararlar DASK’ın standart teminatı kapsamında bulunmuyor.</p>
+
+<p>Örneğin deprem nedeniyle binanız ağır hasar gördü.</p>
+
+<p>Ancak evin içinde 1 milyon TL değerinde mobilya, elektronik eşya ve kişisel eşya bulunuyor.</p>
+
+<p>DASK’ın amacı bu eşyaların tamamını karşılamak değil.</p>
+
+<p>Bu nedenle <strong>DASK ile konut sigortasını birbirinin alternatifi olarak görmek doğru değil.</strong></p>
+
+<p>DASK zorunlu temel güvenceyi oluştururken, daha geniş riskler için ihtiyari sigorta ürünleri değerlendirilebilir.</p>
+
+<h2 id="asıl-sorun-dask-teminatı-evin-gerçek-değerinden-düşük-olabilir">Asıl sorun: DASK teminatı evin gerçek değerinden düşük olabilir</h2>
+
+<p>Burada gayrimenkul sahipleri açısından daha önemli bir konu ortaya çıkıyor.</p>
+
+<p>Bir konutun piyasa fiyatı ile yeniden inşa maliyeti aynı şey değildir.</p>
+
+<p>Örneğin 6 milyon TL’ye satılan bir dairenin fiyatının önemli bir bölümünü arsa payı, lokasyon ve piyasa koşulları oluşturabilir.</p>
+
+<p>DASK ise esas olarak yapının yeniden inşa maliyetine odaklanan bir hesaplama sistemi kullanır.</p>
+
+<p>Bu nedenle “Evimin değeri 6 milyon TL, DASK da 6 milyon TL güvence veriyor” şeklinde düşünmek doğru değildir. DASK’ta sigorta bedeli yapı tarzı, metrekare ve belirlenen azami teminat üzerinden hesaplanır.</p>
+
+<p>Daha yüksek bir deprem güvencesine ihtiyaç duyan konutlarda, DASK’ın üzerindeki risk için ihtiyari deprem teminatlarının değerlendirilmesi gündeme gelebilir.</p>
+
+<h2 id="dask-fiyatı-nasıl-belirleniyor">DASK fiyatı nasıl belirleniyor?</h2>
+
+<p>DASK primi tek bir sabit rakam değildir.</p>
+
+<p>Prim hesaplamasında konutun bulunduğu deprem risk grubu, yapı tarzı, metrekare ve binanın bazı özellikleri dikkate alınır.</p>
+
+<p>2026 tarifesinde <strong>7 farklı risk grubu</strong> ve <strong>2 farklı yapı tarzı</strong> üzerinden tarife fiyatları bulunuyor.</p>
+
+<p>Bina yaşı ve kat sayısı gibi bazı özellikler de prim üzerinde etkili olabiliyor.</p>
+
+<p>Örneğin resmi tarifeye göre 2000 yılından önce inşa edilmiş binalarda tarife fiyatına yüzde 10 artış uygulanırken, zemin üstü toplam kat sayısı 3 veya daha az olan binalarda yüzde 10 indirim; 8 ve üzeri katlı binalarda ise yüzde 10 artış uygulanıyor.</p>
+
+<p>Poliçenin zamanında yenilenmesi de avantaj sağlayabiliyor.</p>
+
+<p>Poliçe süresinin bitiminden itibaren 30 gün içerisinde yenileme yapılması halinde yenilenen poliçeye yüzde 20 yenileme indirimi uygulanıyor.</p>
+
+<p>Bu nedenle DASK fiyatını yalnızca “kaç TL?” sorusuyla değerlendirmek yerine, <strong>hangi risk grubunda, hangi yapı tipinde ve hangi metrekare üzerinden hesaplandığına</strong> bakmak gerekiyor.</p>
+
+<h2 id="dask-her-yıl-yenilenmeli-mi">DASK her yıl yenilenmeli mi?</h2>
+
+<p>Evet.</p>
+
+<p>Zorunlu Deprem Sigortası poliçesinin süresi bir yıl.</p>
+
+<p>Dolayısıyla poliçenin her yıl yenilenmesi gerekiyor.</p>
+
+<p>Burada önemli bir ayrıntı var:</p>
+
+<p>DASK yaptırmak ile DASK’ın sürekli geçerli olması aynı şey değil.</p>
+
+<p>Poliçenizin süresi bittiyse ve yenilemediyseniz, poliçenin bitiş tarihi itibarıyla DASK’ın teminat sorumluluğu sona eriyor.</p>
+
+<p>Bu nedenle özellikle konut sahiplerinin poliçe bitiş tarihini takip etmesi önemli.</p>
+
+<h2 id="ev-alırken-dask-konusunda-nelere-dikkat-edilmeli">Ev alırken DASK konusunda nelere dikkat edilmeli?</h2>
+
+<p>Konut satın alırken DASK’ı son dakikaya bırakmamak gerekiyor.</p>
+
+<p>Özellikle yeni düzenlemenin yürürlüğe girmesiyle birlikte şu kontrol listesi daha önemli hale gelecek:</p>
+
+<p><strong>1. Poliçenin geçerlilik tarihini kontrol edin.</strong></p>
+
+<p>Sadece “DASK var” denilmesi yeterli değil.</p>
+
+<p>Poliçenin gerçekten geçerli olup olmadığına bakılmalı.</p>
+
+<p><strong>2. Poliçedeki adres bilgilerini kontrol edin.</strong></p>
+
+<p>DASK açısından taşınmazın doğru tanımlanması kritik.</p>
+
+<p><strong>3. Brüt metrekare bilgisini kontrol edin.</strong></p>
+
+<p>Sigorta bedelinin hesaplanmasında bu bilgi doğrudan etkili.</p>
+
+<p><strong>4. Yapı tarzını kontrol edin.</strong></p>
+
+<p>Betonarme ve diğer yapı grupları farklı tarifelere tabi.</p>
+
+<p><strong>5. Satış sonrasında yeni poliçeyi unutmayın.</strong></p>
+
+<p>Yeni düzenlemenin en kritik noktalarından biri bu.</p>
+
+<p>Satışla birlikte eski poliçenin sona erecek olması nedeniyle yeni malik açısından yeni DASK süreci önem kazanacak.</p>
+
+<h2 id="gayrimenkul-danışmanları-için-de-yeni-bir-kontrol-noktası-geliyor">Gayrimenkul danışmanları için de yeni bir kontrol noktası geliyor</h2>
+
+<p>DASK’taki değişiklik yalnızca ev sahiplerini ilgilendirmiyor.</p>
+
+<p>Gayrimenkul danışmanları açısından da işlem süreçlerinin yeniden gözden geçirilmesini gerektirebilir.</p>
+
+<p>Özellikle satış işlemlerinde;</p>
+
+<p><strong>Tapu → DASK → poliçe kontrolü</strong></p>
+
+<p>şeklindeki süreç daha sistematik takip edilmek zorunda kalabilir.</p>
+
+<p>Çünkü eski malikin poliçesinin yeni malike otomatik olarak devam edeceği varsayımı artık geçerli olmayacak.</p>
+
+<p>Bu da gayrimenkul ofislerinin satış öncesi kontrol listelerinde DASK’ı daha görünür bir noktaya taşıyabilir.</p>
+
+<h2 id="daskta-bundan-sonra-neye-dikkat-etmek-gerekiyor">DASK’ta bundan sonra neye dikkat etmek gerekiyor?</h2>
+
+<p>DASK’taki son değişiklik aslında daha büyük bir dönüşümün küçük bir parçası olarak okunabilir.</p>
+
+<p>Türkiye’de deprem riski gündemde kaldıkça yalnızca “DASK zorunlu mu?” sorusu yeterli olmayacak.</p>
+
+<p>Daha önemli sorular şunlar:</p>
+
+<p><strong>Poliçenin teminatı yeterli mi?</strong></p>
+
+<p><strong>Bina gerçek riskini yansıtıyor mu?</strong></p>
+
+<p><strong>Yeniden yapım maliyeti ile sigorta bedeli arasında ne kadar fark var?</strong></p>
+
+<p><strong>DASK’ın dışında hangi riskler açıkta kalıyor?</strong></p>
+
+<p><strong>Konutun satışından sonra sigorta süreci nasıl devam edecek?</strong></p>
+
+<p>Bu soruların önümüzdeki dönemde daha fazla gündeme gelmesi beklenebilir.</p>
+
+<p>Çünkü konut fiyatlarının yükselmesi, inşaat maliyetlerindeki değişim ve deprem riskinin Türkiye’nin gayrimenkul piyasasındaki ağırlığı, sigortayı artık yalnızca yasal bir zorunluluk olmaktan çıkarıp <strong>gayrimenkul yatırımının önemli bir parçası</strong> haline getiriyor.</p>
+
+<h2 id="sonuç-daskı-sadece-bir-zorunluluk-olarak-görmeyin">Sonuç: DASK’ı sadece bir zorunluluk olarak görmeyin</h2>
+
+<p>DASK çoğu ev sahibi için yıllık olarak yapılması gereken sıradan bir işlem gibi görünüyor.</p>
+
+<p>Ancak deprem gerçeği düşünüldüğünde konu bundan çok daha büyük.</p>
+
+<p>Üstelik 2026 yılında hem teminat tutarları hem de uygulama kuralları değişiyor.</p>
+
+<p>21 Ağustos 2026’da duyurulan yeni düzenlemeyle birlikte konut satışlarında eski DASK poliçesinin yeni malike devredilmesi uygulamasının sona ermesi, ev alım-satım süreçlerinde dikkat edilmesi gereken yeni bir başlık oluşturuyor.</p>
+
+<p>Bugün için en doğru yaklaşım şu:</p>
+
+<p><strong>DASK’ı yaptırmakla yetinmeyin.</strong></p>
+
+<p>Poliçenin geçerliliğini, teminat tutarını, bina bilgilerini ve konutunuzun gerçek riskini düzenli olarak değerlendirin.</p>
+
+<p>Çünkü deprem sigortasında asıl soru artık yalnızca <strong>“DASK’ım var mı?”</strong> değil.</p>
+
+<p>Asıl soru:</p>
+
+<p><strong>“DASK’ım, başıma gelebilecek zararın ne kadarını gerçekten karşılıyor?”</strong></p>
+
+<p>Bu sorunun cevabı, bir deprem meydana geldikten sonra değil, <strong>deprem olmadan önce</strong> verilmesi gereken bir cevap.</p>
+
+
+        
+          <!-- Makale Sonu Etiket Listesi -->
+          <div class="pt-4 mt-4 border-top">
+            <div class="d-flex align-items-center gap-2 flex-wrap">
+              <span class="fw-semibold text-dark small me-1"><i class="bi bi-tags me-1"></i> Etiketler:</span>
+              
+                <a href="/etiketler#dask" class="tag-badge">dask</a>
+              
+            </div>
+          </div>
+        
+
+        <!-- Yazar İmza / Kapanış Kutusu -->
+        <div class="p-4 bg-light rounded-3 mt-4 border border-light-subtle">
+          <div class="d-flex align-items-center gap-3">
+            <div>
+              <h6 class="fw-bold text-dark mb-1">Melih Kocatürk</h6>
+              <p class="text-muted small mb-0">Gayrimenkul Yatırım, Değerleme ve Pazarlama Danışmanlığı</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sağ Kolon -->
+      <div class="col-lg-4">
+        <div class="sticky-sidebar">
+          <!-- Danışman Kartı -->
+          <div class="p-4 rounded-3 border border-light-subtle bg-white shadow-sm mb-4">
+            <h6 class="fw-bold text-dark mb-2">Gayrimenkul Danışmanlığı</h6>
+            <p class="text-muted small mb-3">
+              Mülkünüzün gerçek pazar değerini öğrenmek veya doğru yatırım fırsatlarını değerlendirmek için ulaşın.
+            </p>
+            <a href="/iletisim" class="btn btn-kw-red w-100 btn-sm fw-bold rounded-2 py-2">
+              <i class="bi bi-envelope me-1"></i> İletişime Geçin
+            </a>
+          </div>
+
+          
+            <!-- Son Yazılar -->
+            <div class="p-4 rounded-3 border border-light-subtle bg-white shadow-sm mb-4">
+              <h6 class="fw-bold text-dark mb-3 pb-2 border-bottom">Son Yazılar</h6>
+              <div class="recent-posts-list">
+                
+                  <div class="mb-3 pb-3 border-bottom border-light">
+                    <div class="text-muted small mb-1">
+                      <i class="bi bi-calendar3 me-1"></i> 01.12.2025
+                    </div>
+                    <h6 class="mb-0 fw-semibold fs-6">
+                      <a
+                        href="/konut-sigortasi-mi-dask-mi-aralarindaki-farklar-nelerdir"
+                        class="text-dark text-decoration-none recent-post-link"
+                      >
+                        Konut Sigortası mı DASK mı? Aralarındaki Farklar Nelerdir?
+                      </a>
+                    </h6>
+                  </div>
+                
+              </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+    <!-- Footer -->
+<footer class="bg-dark text-white pt-5 pb-4">
+  <div class="container">
+    <div class="row g-4 align-items-center mb-4">
+      <!-- Sol Kolon: İsim ve Ünvan -->
+      <div class="col-lg-5">
+        <h4 class="fw-bold text-white mb-2 text-uppercase">Melih Kocatürk</h4>
+        <p class="text-secondary small mb-0">Gayrimenkul Yatırım, Değerleme ve Pazarlama Danışmanlığı</p>
+      </div>
+
+      <!-- Orta Kolon: Keller Williams Logosu -->
+      <div class="col-lg-3 text-lg-center">
+        <div class="d-inline-flex align-items-center">
+          <a href="https://www.kwforessisli.com.tr/tr/" rel="nofollow">
+            <img
+              src="/images/kw-fores-logo.png"
+              alt="KW Fores Şişli"
+              width="160"
+            >
+          </a>
+        </div>
+      </div>
+
+      <!-- Sağ Kolon: Sosyal Bağlantılar -->
+      <div class="col-lg-4 text-lg-end">
+        <div class="d-flex gap-3 justify-content-lg-end fs-5 text-secondary">
+          
+            <a href="https://www.linkedin.com/in/melihkocaturk/" class="text-secondary text-white-hover"
+              ><i class="bi bi-linkedin"></i
+            ></a>
+          
+            <a href="https://www.instagram.com/melih_kocaturk_" class="text-secondary text-white-hover"
+              ><i class="bi bi-instagram"></i
+            ></a>
+          
+            <a href="https://www.youtube.com/@melihkocaturk" class="text-secondary text-white-hover"
+              ><i class="bi bi-youtube"></i
+            ></a>
+          
+            <a href="https://x.com/melih_kocaturk_" class="text-secondary text-white-hover"
+              ><i class="bi bi-twitter-x"></i
+            ></a>
+          
+            <a href="/feed.xml" class="text-secondary text-white-hover"
+              ><i class="bi bi-rss"></i
+            ></a>
+          
+        </div>
+      </div>
+    </div>
+
+    <hr class="border-secondary opacity-25">
+
+    <!-- Alt Bilgi ve Yasal Metin Linkleri -->
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3 text-secondary small">
+      <div>
+        © 2026
+        Melih Kocatürk. Tüm hakları saklıdır.
+      </div>
+      <div class="d-flex gap-3">
+        
+          <a href="/gizlilik-politikasi" class="text-secondary">Gizlilik Politikası</a>
+          <span>•</span>
+        
+          <a href="/kvkk-aydinlatma-metni" class="text-secondary">KVKK Aydınlatma Metni</a>
+          
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- Bootstrap 5.3 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
