@@ -31,7 +31,7 @@ Elbette gayrimenkul yatırımı her koşulda kazanç getirecek diye bir garanti 
 - **Doğru zamanlama**: Piyasadaki arz-talep dengesi ve faiz oranları da yatırım kararınızı etkileyebilir.
 - **Likidite**: Gayrimenkul, nakde çevrilmesi zaman alabilen bir yatırım aracıdır. Acil ihtiyaçlar için bu faktör göz önünde bulundurulmalıdır.
 
-# Alternatif Olarak Gayrimenkul Yatırım Fonları
+## Alternatif Olarak Gayrimenkul Yatırım Fonları
 
 Geleneksel gayrimenkul yatırımı yerine daha likit bir alternatif arayanlar için *Gayrimenkul Yatırım Ortaklıkları (GYO)* ve *gayrimenkul yatırım fonları* da değerlendirilebilir. Bu araçlar, daha düşük tutarlarla gayrimenkule yatırım yapma ve portföy çeşitlendirmesi imkânı sunar.
 
