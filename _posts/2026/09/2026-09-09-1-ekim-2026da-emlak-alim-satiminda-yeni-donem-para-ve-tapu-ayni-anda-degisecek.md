@@ -3,7 +3,7 @@ layout: post
 custom_css: post
 title: "1 Ekim 2026’da Emlak Alım Satımında Yeni Dönem: Para ve Tapu Aynı Anda Değişecek"
 description: "1 Ekim 2026’da zorunlu olacak Güvenli Ödeme Sistemi emlak alım satımını nasıl değiştirecek? Alıcı, satıcı ve emlakçılar için detaylı rehber."
-tags: []
+tags: ["gayrimenkul danışmanı"]
 ---
 
 1 Ekim 2026 itibarıyla taşınmaz alım satımlarında önemli bir dönem başlıyor. Ev, arsa, iş yeri ve diğer taşınmazların satışında, satış bedelinin nakit, havale veya elektronik fon transferi yoluyla ödenmesi halinde **Güvenli Ödeme Sistemi** kullanılacak. Düzenlemenin temel amacı oldukça basit: **Alıcının parasını gönderip tapuyu alamaması veya satıcının tapuyu devredip parasını alamaması riskini azaltmak.**
