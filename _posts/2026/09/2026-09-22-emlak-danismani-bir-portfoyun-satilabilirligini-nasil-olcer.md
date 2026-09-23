@@ -8,7 +8,6 @@ tags: ["gayrimenkul danışmanı"]
 
 Bir emlak portföyünü almak kolaydır. Asıl önemli olan, **o portföyün gerçekten satılabilir olup olmadığını doğru analiz edebilmektir.** Bir gayrimenkulün satılık olması, kısa sürede satılabileceği anlamına gelmez. Fiyatı piyasanın üzerinde olan, yanlış konumlandırılan, hedef müşteri kitlesi dar olan veya pazarlama açısından dezavantajlı özelliklere sahip bir taşınmaz haftalarca hatta aylarca ilanda kalabilir.
 
-
 Profesyonel bir **emlak danışmanı**, portföyü yalnızca "güzel ev", "iyi lokasyon" veya "uygun fiyat" gibi subjektif kriterlerle değerlendirmez. Satılabilirliği; **fiyat, talep, rekabet, lokasyon, mülk özellikleri, hedef müşteri ve pazarlama performansı** gibi birçok değişken üzerinden ölçer.
 
 Bu nedenle portföy alma aşamasında sorulması gereken temel soru şudur:
