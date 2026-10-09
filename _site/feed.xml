@@ -1,4 +1,991 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="tr"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="tr" /><updated>2026-10-08T18:27:12+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>Gayrimenkul danışmanından ipuçları ve stratejiler, emlak yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...</subtitle><entry><title type="html">Bir Emlak Ofisi Neden Çok İlan Verip Az Satış Yapıyor?</title><link href="http://localhost:4000/bir-emlak-ofisi-neden-cok-ilan-verip-az-satis-yapiyor" rel="alternate" type="text/html" title="Bir Emlak Ofisi Neden Çok İlan Verip Az Satış Yapıyor?" /><published>2026-10-08T00:00:00+03:00</published><updated>2026-10-08T00:00:00+03:00</updated><id>http://localhost:4000/bir-emlak-ofisi-neden-cok-ilan-verip-az-satis-yapiyor</id><content type="html" xml:base="http://localhost:4000/bir-emlak-ofisi-neden-cok-ilan-verip-az-satis-yapiyor"><![CDATA[<p>Bir emlak ofisinin portföyünde yüzlerce ilan bulunması, o ofisin başarılı olduğu anlamına gelmez. Hatta bazı durumlarda bunun tam tersi bile söz konusu olabilir. Çok sayıda portföy, dışarıdan bakıldığında güçlü bir emlak ofisi görüntüsü oluştururken; düşük satış sayısı, bu portföylerin <strong>doğru fiyatlandırılmadığını, doğru müşterilerle eşleştirilmediğini, yeterince pazarlanmadığını veya satış sürecinin doğru yönetilmediğini</strong> gösterebilir.</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="tr"><generator uri="https://jekyllrb.com/" version="4.4.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="tr" /><updated>2026-10-09T11:03:52+03:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Melih Kocatürk</title><subtitle>Gayrimenkul danışmanından ipuçları ve stratejiler, emlak yatırımı, konut alım-satımı ve emlak sektörü hakkında güvenilir bilgiler...</subtitle><entry><title type="html">1+1 Evler Gerçekten Daha mı Karlı? Kira Analizi ve Yatırım Rehberi</title><link href="http://localhost:4000/11-evler-gercekten-daha-mi-karli-kira-analizi-ve-yatirim-rehberi" rel="alternate" type="text/html" title="1+1 Evler Gerçekten Daha mı Karlı? Kira Analizi ve Yatırım Rehberi" /><published>2026-10-09T00:00:00+03:00</published><updated>2026-10-09T00:00:00+03:00</updated><id>http://localhost:4000/11-evler-gercekten-daha-mi-karli-kira-analizi-ve-yatirim-rehberi</id><content type="html" xml:base="http://localhost:4000/11-evler-gercekten-daha-mi-karli-kira-analizi-ve-yatirim-rehberi"><![CDATA[<p>1+1 evler, özellikle son yıllarda gayrimenkul yatırımcılarının dikkatini çeken konut tiplerinden biri haline geldi. Daha düşük satın alma maliyeti, merkezi lokasyonlarda bulunabilme avantajı ve belirli bölgelerde güçlü kiracı talebi, 1+1 daireleri yatırım açısından cazip hale getirebiliyor.</p>
+
+<p>Ancak yatırımcıların sık yaptığı bir hata var:</p>
+
+<blockquote>
+  <p>“1+1 ev daha küçük olduğu için kira getirisi daha yüksektir.”</p>
+</blockquote>
+
+<p>Bu yaklaşım her zaman doğru değildir.</p>
+
+<p>Bir gayrimenkul yatırımının kârlılığını yalnızca aylık kira belirlemez. Satın alma fiyatı, kira geliri, boş kalma süresi, aidat, bakım giderleri, vergiler, konutun gelecekteki değer artışı ve yeniden satış potansiyeli birlikte değerlendirilmelidir.</p>
+
+<p>Peki <strong>1+1 ev almak gerçekten 2+1 veya 3+1 ev almaktan daha mı kârlı?</strong></p>
+
+<p>Bu rehberde 1+1 evlerin kira performansını, kira getirisi hesaplamasını, amortisman süresini, kiracı profilini ve yatırım açısından avantajlarını ve dezavantajlarını detaylı şekilde inceleyeceğiz.</p>
+
+<h2 id="11-ev-neden-yatırımcıların-i̇lgisini-çekiyor">1+1 Ev Neden Yatırımcıların İlgisini Çekiyor?</h2>
+
+<p>1+1 dairelerin yatırım açısından popüler olmasının birkaç önemli nedeni bulunuyor.</p>
+
+<p>İlk neden, satın alma fiyatlarının aynı bölgedeki daha büyük konutlara göre genellikle daha düşük olmasıdır.</p>
+
+<p>Örneğin aynı bölgede şu şekilde bir fiyatlandırma olduğunu düşünelim:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Konut Tipi</th>
+      <th style="text-align: right">Satış Fiyatı</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1+1</td>
+      <td style="text-align: right">3.000.000 TL</td>
+    </tr>
+    <tr>
+      <td>2+1</td>
+      <td style="text-align: right">4.500.000 TL</td>
+    </tr>
+    <tr>
+      <td>3+1</td>
+      <td style="text-align: right">6.000.000 TL</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Bu durumda yatırımcının 1+1 satın alabilmesi için daha düşük bir sermayeye ihtiyacı vardır.</p>
+
+<p>Fakat yatırım açısından asıl önemli soru şudur:</p>
+
+<blockquote>
+  <p><strong>Daha ucuz bir konut, satın alma fiyatına oranla daha yüksek kira geliri sağlayabiliyor mu?</strong></p>
+</blockquote>
+
+<p>Çünkü 1+1 dairenin aylık kirası 2+1 daireden daha düşük olsa bile, satın alma fiyatına oranlandığında daha yüksek kira getirisi sağlayabilir.</p>
+
+<p>İşte 1+1 konutların yatırım açısından cazibesi büyük ölçüde buradan kaynaklanır.</p>
+
+<h2 id="kira-getirisi-nasıl-hesaplanır">Kira Getirisi Nasıl Hesaplanır?</h2>
+
+<p>Bir konutun brüt kira getirisini hesaplamak oldukça kolaydır.</p>
+
+<h3 id="brüt-kira-getirisi-formülü">Brüt kira getirisi formülü</h3>
+
+<p><strong>Yıllık kira geliri ÷ Satın alma fiyatı × 100</strong></p>
+
+<p>Örneğin:</p>
+
+<ul>
+  <li>Ev fiyatı: 3.000.000 TL</li>
+  <li>Aylık kira: 20.000 TL</li>
+</ul>
+
+<p>Yıllık kira geliri:</p>
+
+<p><strong>20.000 × 12 = 240.000 TL</strong></p>
+
+<p>Brüt kira getirisi:</p>
+
+<p><strong>240.000 ÷ 3.000.000 × 100 = %8</strong></p>
+
+<p>Bu durumda konutun yıllık brüt kira getirisi yaklaşık %8 olur.</p>
+
+<p>Ancak bu oran yatırımın gerçek kârlılığını tek başına göstermez.</p>
+
+<p>Çünkü gayrimenkul yatırımında kira gelirinden düşülebilecek çeşitli giderler bulunur.</p>
+
+<h2 id="brüt-kira-getirisi-ile-net-kira-getirisi-aynı-değildir">Brüt Kira Getirisi ile Net Kira Getirisi Aynı Değildir</h2>
+
+<p>Gayrimenkul yatırımlarında yalnızca brüt kira getirisine bakmak sık yapılan hatalardan biridir.</p>
+
+<p>Bir evin yıllık kira geliri 240.000 TL olabilir.</p>
+
+<p>Ancak bu tutarın tamamı yatırımcının net kazancı değildir.</p>
+
+<p>Örneğin aşağıdaki giderler yatırımın gerçek getirisini azaltabilir:</p>
+
+<ul>
+  <li>Aidat</li>
+  <li>Bakım ve onarım</li>
+  <li>Boya masrafları</li>
+  <li>Emlak vergisi</li>
+  <li>Sigorta</li>
+  <li>Boş kalma süresi</li>
+  <li>Kiracı değişim masrafları</li>
+  <li>Eşya yenileme giderleri</li>
+  <li>Vergisel yükümlülükler</li>
+</ul>
+
+<p>Bu nedenle daha gerçekçi bir hesaplama yapmak gerekir.</p>
+
+<h3 id="basit-net-kira-getirisi-hesaplama">Basit net kira getirisi hesaplama</h3>
+
+<p><strong>Yıllık kira geliri - Yıllık giderler = Net yıllık kira geliri</strong></p>
+
+<p>Daha sonra:</p>
+
+<p><strong>Net yıllık kira geliri ÷ Toplam yatırım maliyeti × 100</strong></p>
+
+<p>formülü kullanılabilir.</p>
+
+<p>Burada toplam yatırım maliyetine yalnızca evin satış fiyatını değil, satın alma sırasında ortaya çıkan diğer maliyetleri de dahil etmek daha doğru bir yaklaşım olacaktır.</p>
+
+<h2 id="11-evlerde-kira-çarpanı-daha-mı-i̇yi">1+1 Evlerde Kira Çarpanı Daha mı İyi?</h2>
+
+<p>Kira çarpanı, gayrimenkul yatırımında kullanılan önemli göstergelerden biridir.</p>
+
+<p>Basit hesaplama şu şekilde yapılabilir:</p>
+
+<p><strong>Satın alma fiyatı ÷ Aylık kira = Kira çarpanı</strong></p>
+
+<p>Örneğin:</p>
+
+<ul>
+  <li>Satın alma fiyatı: 3.000.000 TL</li>
+  <li>Aylık kira: 20.000 TL</li>
+</ul>
+
+<p>Hesaplama:</p>
+
+<p><strong>3.000.000 ÷ 20.000 = 150 ay</strong></p>
+
+<p>Bu durumda evin kira çarpanı yaklaşık 150 aydır.</p>
+
+<p>Başka bir ifadeyle, mevcut kira değişmeden devam ettiği varsayımıyla satın alma fiyatı yaklaşık 150 aylık brüt kira gelirine denk gelir.</p>
+
+<p>Ancak kira çarpanını da tek başına yatırım kararı vermek için kullanmamak gerekir.</p>
+
+<p>Çünkü yüksek kira getirisi sunan bir bölgenin gelecekteki değer artışı daha düşük olabilir.</p>
+
+<p>Buna karşılık kira getirisi daha düşük olan bir bölge, güçlü değer artışı potansiyeline sahip olabilir.</p>
+
+<h2 id="11-ile-21-kira-getirisini-karşılaştıralım">1+1 ile 2+1 Kira Getirisini Karşılaştıralım</h2>
+
+<p>Örnek bir karşılaştırma yapalım.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Özellik</th>
+      <th style="text-align: right">1+1 Daire</th>
+      <th style="text-align: right">2+1 Daire</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Satın alma fiyatı</td>
+      <td style="text-align: right">3.000.000 TL</td>
+      <td style="text-align: right">4.500.000 TL</td>
+    </tr>
+    <tr>
+      <td>Aylık kira</td>
+      <td style="text-align: right">20.000 TL</td>
+      <td style="text-align: right">27.000 TL</td>
+    </tr>
+    <tr>
+      <td>Yıllık kira</td>
+      <td style="text-align: right">240.000 TL</td>
+      <td style="text-align: right">324.000 TL</td>
+    </tr>
+    <tr>
+      <td>Brüt kira getirisi</td>
+      <td style="text-align: right">%8</td>
+      <td style="text-align: right">%7,2</td>
+    </tr>
+    <tr>
+      <td>Kira çarpanı</td>
+      <td style="text-align: right">150 ay</td>
+      <td style="text-align: right">167 ay</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Bu örnekte 2+1 dairenin aylık kira geliri daha yüksek olmasına rağmen, satın alma fiyatına oranlandığında 1+1 daire daha yüksek brüt kira getirisi sağlamaktadır.</p>
+
+<p>İşte yatırımcı açısından önemli olan fark budur.</p>
+
+<p>Gayrimenkulde yalnızca “aylık kaç TL kira getiriyor?” sorusuna değil, “yatırdığım her 1 TL bana ne kadar kira getiriyor?” sorusuna da bakmak gerekir.</p>
+
+<h2 id="11-evlerin-en-büyük-avantajı-kiracı-talebi">1+1 Evlerin En Büyük Avantajı: Kiracı Talebi</h2>
+
+<p>1+1 daireler belirli kiracı grupları açısından oldukça cazip olabilir.</p>
+
+<p>Özellikle:</p>
+
+<ul>
+  <li>Bekâr çalışanlar</li>
+  <li>Üniversite öğrencileri</li>
+  <li>Yeni mezunlar</li>
+  <li>Şehir değiştiren profesyoneller</li>
+  <li>Tek yaşayan kişiler</li>
+  <li>Çocuksuz çiftler</li>
+  <li>Geçici görevle başka bir şehre gelen çalışanlar</li>
+</ul>
+
+<p>1+1 konutları tercih edebilir.</p>
+
+<p>Özellikle iş merkezlerine, üniversitelere, toplu taşıma hatlarına ve sosyal yaşam alanlarına yakın bölgelerde bu talep daha güçlü olabilir.</p>
+
+<p>Bu durum yatırımcı açısından önemli bir avantaj yaratabilir:</p>
+
+<blockquote>
+  <p><strong>Kiracı bulma süresi kısalabilir.</strong></p>
+</blockquote>
+
+<p>Ancak bunun garanti olmadığını unutmamak gerekir.</p>
+
+<p>Bir konutun kolay kiralanabilmesi için öncelikle doğru lokasyonda ve doğru fiyatla piyasaya sunulması gerekir.</p>
+
+<h2 id="11-evlerin-kiracı-riski-de-farklıdır">1+1 Evlerin Kiracı Riski de Farklıdır</h2>
+
+<p>1+1 konutların avantajları kadar bazı riskleri de bulunur.</p>
+
+<p>Bu konutların kiracı profili bazı bölgelerde daha hareketli olabilir.</p>
+
+<p>Örneğin:</p>
+
+<ul>
+  <li>Öğrenci mezun olabilir.</li>
+  <li>Çalışan başka bir şehre taşınabilir.</li>
+  <li>Yeni evlenen bir çift daha büyük bir eve geçebilir.</li>
+  <li>Kiracı iş değişikliği nedeniyle taşınabilir.</li>
+</ul>
+
+<p>Bu durum kiracının daha sık değişmesine neden olabilir.</p>
+
+<p>Her kiracı değişiminde yatırımcının karşısına şu maliyetler çıkabilir:</p>
+
+<ul>
+  <li>İlan verme</li>
+  <li>Evi gösterme</li>
+  <li>Temizlik</li>
+  <li>Boya</li>
+  <li>Küçük tadilatlar</li>
+  <li>Eşya yenileme</li>
+  <li>Boş kalma süresi</li>
+</ul>
+
+<p>Dolayısıyla kağıt üzerinde yüksek görünen kira getirisi, gerçek hayatta daha düşük olabilir.</p>
+
+<h2 id="11-evlerde-boş-kalma-süresi-neden-önemli">1+1 Evlerde Boş Kalma Süresi Neden Önemli?</h2>
+
+<p>Gayrimenkul yatırımında boşluk oranı çoğu zaman göz ardı edilir.</p>
+
+<p>Örneğin:</p>
+
+<ul>
+  <li>Aylık kira: 20.000 TL</li>
+  <li>Yıllık teorik kira: 240.000 TL</li>
+</ul>
+
+<p>Ev yılın tamamında kirada kalırsa yatırımcı 240.000 TL brüt kira geliri elde eder.</p>
+
+<p>Ancak ev bir ay boş kalırsa:</p>
+
+<p><strong>20.000 × 11 = 220.000 TL</strong></p>
+
+<p>gelir elde edilir.</p>
+
+<p>Bir aylık boşluk yatırımcının yıllık gelirinden 20.000 TL götürür.</p>
+
+<p>Bu nedenle yatırım hesabında şu soruya mutlaka yer verilmelidir:</p>
+
+<blockquote>
+  <p><strong>Bu konut yılın kaç ayında gerçekten kira üretecek?</strong></p>
+</blockquote>
+
+<p>Yalnızca ilan fiyatındaki kira üzerinden yapılan hesaplama yatırımın gerçek performansını olduğundan yüksek gösterebilir.</p>
+
+<h2 id="lokasyon-11-i̇çin-metrekareden-daha-önemli-olabilir">Lokasyon, 1+1 İçin Metrekareden Daha Önemli Olabilir</h2>
+
+<p>1+1 yatırımlarında lokasyon faktörü oldukça önemlidir.</p>
+
+<p>Çünkü 1+1 dairelerin hedef kitlesi çoğu zaman geniş ailelerden farklıdır.</p>
+
+<p>Kiracının günlük yaşam ihtiyaçlarına ve ulaşım noktalarına yakınlık önemli hale gelir.</p>
+
+<p>Özellikle aşağıdaki bölgelerde 1+1 talebi güçlü olabilir:</p>
+
+<h3 id="üniversite-çevreleri">Üniversite Çevreleri</h3>
+
+<p>Öğrenciler, akademik personel ve üniversite çalışanları nedeniyle sürekli bir kiracı talebi oluşabilir.</p>
+
+<h3 id="i̇ş-merkezleri">İş Merkezleri</h3>
+
+<p>Çalışanların işe yakın yaşama isteği, merkezi bölgelerdeki küçük dairelere yönelik talebi destekleyebilir.</p>
+
+<h3 id="metro-ve-toplu-taşıma-hatları">Metro ve Toplu Taşıma Hatları</h3>
+
+<p>Ulaşım kolaylığı, özellikle otomobil kullanmayan kiracılar için önemli bir tercih sebebidir.</p>
+
+<h3 id="hastane-çevreleri">Hastane Çevreleri</h3>
+
+<p>Sağlık çalışanları, hasta yakınları ve geçici konaklama ihtiyacı olan kişiler nedeniyle talep oluşabilir.</p>
+
+<h3 id="merkezi-ve-sosyal-bölgeler">Merkezi ve Sosyal Bölgeler</h3>
+
+<p>Restoran, kafe, alışveriş merkezi, spor salonu ve sosyal yaşam alanlarına yakınlık, özellikle genç kiracılar açısından önemlidir.</p>
+
+<h2 id="11-evlerde-aidat-neden-önemli">1+1 Evlerde Aidat Neden Önemli?</h2>
+
+<p>Özellikle rezidans ve yeni konut projelerinde aidat yatırımın kârlılığını ciddi şekilde etkileyebilir.</p>
+
+<p>Örneğin:</p>
+
+<ul>
+  <li>Aylık kira: 25.000 TL</li>
+  <li>Aylık aidat: 5.000 TL</li>
+</ul>
+
+<p>Kiracının aidatı ödediği bir senaryoda yatırımcı açısından doğrudan kira gelirinden düşüş olmayabilir.</p>
+
+<p>Ancak kiracının toplam konut maliyeti:</p>
+
+<p><strong>25.000 + 5.000 = 30.000 TL</strong></p>
+
+<p>olacaktır.</p>
+
+<p>Kiracı aynı bölgede 25.000 TL kira ve 1.500 TL aidat ödenen alternatif bir daire bulabiliyorsa, yüksek aidatlı konutun kiralanması zorlaşabilir.</p>
+
+<p>Bu nedenle yatırımcı sadece:</p>
+
+<blockquote>
+  <p>“Bu ev kaç TL’ye kiralanıyor?”</p>
+</blockquote>
+
+<p>diye sormamalıdır.</p>
+
+<p>Şu soruyu da sormalıdır:</p>
+
+<blockquote>
+  <p><strong>“Kiracının bu ev için toplam aylık maliyeti ne kadar?”</strong></p>
+</blockquote>
+
+<h2 id="eşyalı-11-ev-daha-fazla-kazandırır-mı">Eşyalı 1+1 Ev Daha Fazla Kazandırır mı?</h2>
+
+<p>1+1 dairelerde eşyalı kiralama modeli de yatırımcıların sık değerlendirdiği seçeneklerden biridir.</p>
+
+<p>Özellikle:</p>
+
+<ul>
+  <li>Üniversite öğrencileri</li>
+  <li>Şehir dışından gelen çalışanlar</li>
+  <li>Yeni işe başlayan profesyoneller</li>
+  <li>Geçici görevle gelenler</li>
+  <li>Kısa veya orta vadeli konut ihtiyacı olanlar</li>
+</ul>
+
+<p>eşyalı konutları tercih edebilir.</p>
+
+<p>Eşyalı kiralama bazı bölgelerde daha yüksek kira geliri sağlayabilir.</p>
+
+<p>Ancak bunun karşılığında ek maliyetler ortaya çıkar:</p>
+
+<ul>
+  <li>Mobilya</li>
+  <li>Beyaz eşya</li>
+  <li>Elektronik eşyalar</li>
+  <li>Eşya bakımı</li>
+  <li>Eşya yenileme</li>
+  <li>Daha sık kiracı değişimi</li>
+  <li>Temizlik ve bakım</li>
+</ul>
+
+<p>Bu nedenle:</p>
+
+<blockquote>
+  <p><strong>Eşyalı ev = otomatik olarak daha kârlı yatırım</strong></p>
+</blockquote>
+
+<p>şeklinde düşünülmemelidir.</p>
+
+<p>Önemli olan, ek kira gelirinin ek maliyetleri karşılayıp karşılamadığıdır.</p>
+
+<h2 id="11-ev-alırken-metrekare-fiyatına-dikkat-edin">1+1 Ev Alırken Metrekare Fiyatına Dikkat Edin</h2>
+
+<p>1+1 dairelerde yatırımcıların yaptığı hatalardan biri yalnızca toplam satış fiyatına bakmaktır.</p>
+
+<p>Örneğin iki farklı daire düşünelim.</p>
+
+<h3 id="daire-a">Daire A</h3>
+
+<ul>
+  <li>50 m²</li>
+  <li>3.000.000 TL</li>
+</ul>
+
+<p>Metrekare fiyatı:</p>
+
+<p><strong>3.000.000 ÷ 50 = 60.000 TL/m²</strong></p>
+
+<h3 id="daire-b">Daire B</h3>
+
+<ul>
+  <li>35 m²</li>
+  <li>2.500.000 TL</li>
+</ul>
+
+<p>Metrekare fiyatı:</p>
+
+<p><strong>2.500.000 ÷ 35 ≈ 71.429 TL/m²</strong></p>
+
+<p>Daire B toplamda daha ucuz görünmesine rağmen metrekare bazında daha pahalıdır.</p>
+
+<p>Bu nedenle yatırım değerlendirmesinde:</p>
+
+<p><strong>Toplam fiyat + Metrekare fiyatı + Kira geliri</strong></p>
+
+<p>birlikte incelenmelidir.</p>
+
+<h2 id="11-ev-alırken-kira-değeri-nasıl-araştırılır">1+1 Ev Alırken Kira Değeri Nasıl Araştırılır?</h2>
+
+<p>Yatırımcının yalnızca satış ilanlarını incelemesi yeterli değildir.</p>
+
+<p>Aynı bölgede bulunan benzer konutların hem satış hem de kira fiyatları karşılaştırılmalıdır.</p>
+
+<p>Örneğin:</p>
+
+<ul>
+  <li>Benzer 1+1 satış ilanları</li>
+  <li>Benzer 1+1 kiralık ilanları</li>
+  <li>Aynı bina içerisindeki kiralık daireler</li>
+  <li>Aynı site içerisindeki alternatifler</li>
+  <li>Yeni projelerdeki satış fiyatları</li>
+  <li>Eski binalardaki satış fiyatları</li>
+</ul>
+
+<p>incelenebilir.</p>
+
+<p>Özellikle benzer özelliklere sahip mümkün olduğunca fazla konut karşılaştırıldığında daha gerçekçi bir piyasa değeri ortaya çıkar.</p>
+
+<h2 id="i̇lanlardaki-kira-fiyatına-dikkat-edin">İlanlardaki Kira Fiyatına Dikkat Edin</h2>
+
+<p>İnternette gördüğünüz kira fiyatı her zaman gerçekleşen kira değildir.</p>
+
+<p>Örneğin aynı bölgede şu ilanlar bulunabilir:</p>
+
+<ul>
+  <li>18.000 TL</li>
+  <li>20.000 TL</li>
+  <li>22.000 TL</li>
+  <li>25.000 TL</li>
+</ul>
+
+<p>Ancak bu konutların özellikleri farklı olabilir.</p>
+
+<p>Aralarında:</p>
+
+<ul>
+  <li>Bina yaşı</li>
+  <li>Kat</li>
+  <li>Cephe</li>
+  <li>Manzara</li>
+  <li>Eşyalı olup olmaması</li>
+  <li>Otopark</li>
+  <li>Site özellikleri</li>
+  <li>Ulaşım mesafesi</li>
+  <li>Dairenin fiziksel durumu</li>
+</ul>
+
+<p>gibi önemli farklılıklar bulunabilir.</p>
+
+<p>Bu nedenle yatırım hesabında en yüksek kira ilanını baz almak yerine gerçekçi bir kira tahmini yapmak daha sağlıklı olacaktır.</p>
+
+<h2 id="11-evlerin-amortisman-süresi-nasıl-hesaplanır">1+1 Evlerin Amortisman Süresi Nasıl Hesaplanır?</h2>
+
+<p>Amortisman süresi, gayrimenkul yatırımlarında sık kullanılan göstergelerden biridir.</p>
+
+<p>Basit amortisman hesabı:</p>
+
+<p><strong>Satın alma fiyatı ÷ Yıllık kira geliri</strong></p>
+
+<p>şeklinde yapılabilir.</p>
+
+<p>Örneğin:</p>
+
+<ul>
+  <li>Satın alma fiyatı: 3.000.000 TL</li>
+  <li>Aylık kira: 20.000 TL</li>
+  <li>Yıllık kira: 240.000 TL</li>
+</ul>
+
+<p>Hesaplama:</p>
+
+<p><strong>3.000.000 ÷ 240.000 = 12,5 yıl</strong></p>
+
+<p>Bu durumda konutun basit brüt amortisman süresi yaklaşık 12,5 yıldır.</p>
+
+<p>Ancak bu yalnızca teorik bir hesaplamadır.</p>
+
+<p>Gerçek geri dönüş süresinde:</p>
+
+<ul>
+  <li>Boş kalma süresi</li>
+  <li>Bakım masrafları</li>
+  <li>Vergiler</li>
+  <li>Aidat</li>
+  <li>Satın alma maliyetleri</li>
+  <li>Kira değişimleri</li>
+  <li>Konut değerindeki değişimler</li>
+</ul>
+
+<p>gibi faktörler dikkate alınmalıdır.</p>
+
+<h2 id="sadece-amortisman-süresine-bakmak-doğru-mu">Sadece Amortisman Süresine Bakmak Doğru mu?</h2>
+
+<p>Hayır.</p>
+
+<p>İki farklı konut düşünelim.</p>
+
+<h3 id="ev-a">Ev A</h3>
+
+<ul>
+  <li>Fiyat: 3.000.000 TL</li>
+  <li>Kira: 20.000 TL</li>
+  <li>Brüt amortisman: 12,5 yıl</li>
+</ul>
+
+<h3 id="ev-b">Ev B</h3>
+
+<ul>
+  <li>Fiyat: 4.000.000 TL</li>
+  <li>Kira: 22.000 TL</li>
+  <li>Brüt amortisman: yaklaşık 15,2 yıl</li>
+</ul>
+
+<p>İlk bakışta Ev A daha cazip görünebilir.</p>
+
+<p>Ancak Ev B’nin bulunduğu bölgede:</p>
+
+<ul>
+  <li>Yeni ulaşım yatırımları</li>
+  <li>Kentsel dönüşüm</li>
+  <li>Artan nüfus</li>
+  <li>Yeni iş merkezleri</li>
+  <li>Sınırlı konut arzı</li>
+</ul>
+
+<p>gibi faktörler bulunuyorsa, gelecekteki değer artışı daha yüksek olabilir.</p>
+
+<p>Bu nedenle gayrimenkul yatırımında yalnızca kira geliri değil, konutun değer artışı potansiyeli de değerlendirilmelidir.</p>
+
+<h2 id="gayrimenkul-yatırımında-i̇ki-farklı-kazanç-vardır">Gayrimenkul Yatırımında İki Farklı Kazanç Vardır</h2>
+
+<p>Bir konut yatırımından iki temel şekilde kazanç sağlanabilir.</p>
+
+<h3 id="1-kira-geliri">1. Kira Geliri</h3>
+
+<p>Yatırımcıya düzenli nakit akışı sağlar.</p>
+
+<h3 id="2-değer-artışı">2. Değer Artışı</h3>
+
+<p>Konutun gelecekte daha yüksek fiyata satılabilmesi yatırımcının sermaye kazancı elde etmesini sağlayabilir.</p>
+
+<p>Bu nedenle ideal yatırım yalnızca yüksek kira getiren değil, aynı zamanda gelecekte değer kazanma potansiyeli bulunan bir konut olabilir.</p>
+
+<h2 id="11-evlerin-değer-artışı-daha-mı-yüksek">1+1 Evlerin Değer Artışı Daha mı Yüksek?</h2>
+
+<p>Bunun kesin bir cevabı yoktur.</p>
+
+<p>Bir konutun gelecekteki değerini yalnızca oda sayısı belirlemez.</p>
+
+<p>Değer artışında şu faktörler önemli olabilir:</p>
+
+<ul>
+  <li>Lokasyon</li>
+  <li>Arsa değeri</li>
+  <li>Ulaşım yatırımları</li>
+  <li>Bölgedeki yeni projeler</li>
+  <li>Nüfus artışı</li>
+  <li>İstihdam</li>
+  <li>Kentsel dönüşüm</li>
+  <li>Konut arzı</li>
+  <li>Kiracı talebi</li>
+  <li>Bölgedeki ticari gelişim</li>
+</ul>
+
+<p>Bu nedenle 1+1 daireyi sadece yüksek kira getirisi nedeniyle satın almak doğru olmayabilir.</p>
+
+<p>Gelecekte bu konutu kimlerin satın alabileceği de düşünülmelidir.</p>
+
+<h2 id="11-evlerin-satışı-daha-kolay-mı">1+1 Evlerin Satışı Daha Kolay mı?</h2>
+
+<p>Bazı bölgelerde küçük konutların daha geniş bir yatırımcı kitlesine hitap etmesi önemli bir avantaj olabilir.</p>
+
+<p>Daha düşük bütçeli yatırımcılar, ilk gayrimenkulünü almak isteyenler veya kira geliri hedefleyen kişiler 1+1 konutlara yönelebilir.</p>
+
+<p>Ancak bu durum her bölgede geçerli değildir.</p>
+
+<p>Özellikle aynı bölgede çok fazla 1+1 konut bulunuyorsa arz fazlası oluşabilir.</p>
+
+<p>Bu durumda:</p>
+
+<p><strong>Yüksek arz → Daha fazla rekabet → Kira baskısı → Satışta rekabet</strong></p>
+
+<p>oluşabilir.</p>
+
+<p>Bu nedenle yatırım yaparken yalnızca mevcut konut arzına değil, gelecekte piyasaya çıkacak yeni konutlara da bakılmalıdır.</p>
+
+<h2 id="yeni-projelerde-11-yatırım-riski">Yeni Projelerde 1+1 Yatırım Riski</h2>
+
+<p>Yeni konut projeleri yatırımcılara birçok avantaj sunabilir.</p>
+
+<p>Bunlar arasında:</p>
+
+<ul>
+  <li>Yeni bina</li>
+  <li>Modern tasarım</li>
+  <li>Güvenlik</li>
+  <li>Otopark</li>
+  <li>Sosyal tesisler</li>
+  <li>Daha düşük başlangıç bakım ihtiyacı</li>
+  <li>Yeni mutfak ve banyo</li>
+</ul>
+
+<p>sayılabilir.</p>
+
+<p>Ancak aynı bölgede çok sayıda yeni proje bulunması yatırımcı açısından risk oluşturabilir.</p>
+
+<p>Örneğin aynı bölgede kısa süre içerisinde yüzlerce yeni 1+1 daire piyasaya çıkarsa, kiralık konut arzı önemli ölçüde artabilir.</p>
+
+<p>Bu durum kiracıların daha fazla seçenek sahibi olmasına neden olur.</p>
+
+<p>Dolayısıyla yatırım öncesinde şu soru mutlaka sorulmalıdır:</p>
+
+<blockquote>
+  <p><strong>“Bu bölgede önümüzdeki birkaç yıl içinde kaç yeni 1+1 konut piyasaya çıkacak?”</strong></p>
+</blockquote>
+
+<p>Bu soru mevcut kira fiyatı kadar önemlidir.</p>
+
+<h2 id="11-ev-kimler-i̇çin-daha-mantıklı">1+1 Ev Kimler İçin Daha Mantıklı?</h2>
+
+<p>1+1 konut yatırımı özellikle şu yatırımcı profilleri için değerlendirilebilir:</p>
+
+<h3 id="düşük-bütçeyle-gayrimenkul-yatırımı-yapmak-isteyenler">Düşük bütçeyle gayrimenkul yatırımı yapmak isteyenler</h3>
+
+<p>Daha düşük satın alma maliyeti nedeniyle başlangıç sermayesi daha düşük olabilir.</p>
+
+<h3 id="kira-gelirini-önceliklendirenler">Kira gelirini önceliklendirenler</h3>
+
+<p>Doğru lokasyonda kira/fiyat oranı daha yüksek olabilir.</p>
+
+<h3 id="merkezi-lokasyon-hedefleyenler">Merkezi lokasyon hedefleyenler</h3>
+
+<p>Aynı bütçeyle daha büyük bir konut yerine daha merkezi bir bölgede 1+1 satın almak mümkün olabilir.</p>
+
+<h3 id="öğrenci-ve-genç-profesyonel-talebinden-yararlanmak-isteyenler">Öğrenci ve genç profesyonel talebinden yararlanmak isteyenler</h3>
+
+<p>Üniversite ve iş merkezlerinin bulunduğu bölgelerde 1+1 konutlara yönelik talep güçlü olabilir.</p>
+
+<h3 id="küçük-ve-erişilebilir-bir-yatırım-arayanlar">Küçük ve erişilebilir bir yatırım arayanlar</h3>
+
+<p>Daha düşük fiyatlı konutlar bazı piyasalarda daha geniş bir alıcı kitlesine ulaşabilir.</p>
+
+<h2 id="kimler-i̇çin-11-mantıklı-olmayabilir">Kimler İçin 1+1 Mantıklı Olmayabilir?</h2>
+
+<p>1+1 her yatırımcı için doğru seçenek değildir.</p>
+
+<p>Örneğin yatırımcı:</p>
+
+<ul>
+  <li>Uzun vadeli aile kiracısı hedefliyorsa</li>
+  <li>Bölgede 1+1 arzı çok yüksekse</li>
+  <li>Aidatlar yüksekse</li>
+  <li>Kira getirisi düşükse</li>
+  <li>Satış fiyatı bölge ortalamasının üzerindeyse</li>
+  <li>Yeniden satış potansiyeli sınırlıysa</li>
+</ul>
+
+<p>2+1 veya 3+1 gibi alternatifleri değerlendirebilir.</p>
+
+<p>Özellikle:</p>
+
+<blockquote>
+  <p>“1+1 olduğu için kolay kiralanır.”</p>
+</blockquote>
+
+<p>düşüncesiyle yatırım yapılmamalıdır.</p>
+
+<p>Öncelikle bölgedeki gerçek talep araştırılmalıdır.</p>
+
+<h2 id="11-ev-yatırımında-en-büyük-hata-sadece-kira-getirisine-bakmak">1+1 Ev Yatırımında En Büyük Hata: Sadece Kira Getirisine Bakmak</h2>
+
+<p>Bir yatırımcının:</p>
+
+<blockquote>
+  <p>“Bu ev 20.000 TL kira getiriyor.”</p>
+</blockquote>
+
+<p>demesi yatırımın kârlı olduğunu kanıtlamaz.</p>
+
+<p>Daha doğru soru şudur:</p>
+
+<blockquote>
+  <p><strong>“Bu ev için toplam ne kadar sermaye bağlıyorum ve bu sermaye bana yılda net ne kadar gelir üretiyor?”</strong></p>
+</blockquote>
+
+<p>Örneğin 3 milyon TL’lik bir evin 20.000 TL kira getirmesi tek başına yeterli bir bilgi değildir.</p>
+
+<p>Aynı ev:</p>
+
+<ul>
+  <li>2,7 milyon TL’ye alınabiliyorsa</li>
+  <li>22.000 TL’ye kiralanabiliyorsa</li>
+  <li>Yıl boyunca yüksek doluluk oranına sahipse</li>
+  <li>Aidatı düşükse</li>
+  <li>Bölgedeki konut arzı sınırlıysa</li>
+</ul>
+
+<p>çok daha cazip hale gelebilir.</p>
+
+<p>Tam tersine 3 milyon TL’ye alınan bir ev:</p>
+
+<ul>
+  <li>18.000 TL kira getiriyorsa</li>
+  <li>Yılda 2 ay boş kalıyorsa</li>
+  <li>Aidatı yüksekse</li>
+  <li>Sürekli bakım gerektiriyorsa</li>
+  <li>Yakınında çok sayıda yeni proje varsa</li>
+</ul>
+
+<p>ilk bakışta göründüğünden daha düşük bir yatırım performansına sahip olabilir.</p>
+
+<h2 id="11-evlerde-kira--fiyat-oranını-hesaplayın">1+1 Evlerde Kira / Fiyat Oranını Hesaplayın</h2>
+
+<p>Yatırımcıların kullanabileceği pratik göstergelerden biri kira/fiyat oranıdır.</p>
+
+<h3 id="formül">Formül</h3>
+
+<p><strong>Aylık kira ÷ Satın alma fiyatı × 100</strong></p>
+
+<p>Örneğin:</p>
+
+<ul>
+  <li>Aylık kira: 20.000 TL</li>
+  <li>Satın alma fiyatı: 3.000.000 TL</li>
+</ul>
+
+<p>Hesaplama:</p>
+
+<p><strong>20.000 ÷ 3.000.000 × 100 = %0,67</strong></p>
+
+<p>Bu oran aylık kira getirisini gösterir.</p>
+
+<p>Yıllık bazda yaklaşık:</p>
+
+<p><strong>%8</strong></p>
+
+<p>brüt kira getirisine denk gelir.</p>
+
+<p>Bu oran farklı konutları karşılaştırırken oldukça faydalı olabilir.</p>
+
+<h2 id="aynı-bütçeyle-11-mi-21-mi">Aynı Bütçeyle 1+1 mi, 2+1 mi?</h2>
+
+<p>Bu sorunun tek bir doğru cevabı yoktur.</p>
+
+<p>Ancak yatırım hedeflerine göre genel bir karşılaştırma yapılabilir:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Yatırım Önceliği</th>
+      <th>Daha Avantajlı Olabilecek Konut</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Düşük başlangıç sermayesi</td>
+      <td>1+1</td>
+    </tr>
+    <tr>
+      <td>Yüksek kira/fiyat oranı</td>
+      <td>1+1</td>
+    </tr>
+    <tr>
+      <td>Merkezi lokasyon</td>
+      <td>1+1</td>
+    </tr>
+    <tr>
+      <td>Öğrenci kiracısı</td>
+      <td>1+1</td>
+    </tr>
+    <tr>
+      <td>Genç profesyonel kiracı</td>
+      <td>1+1</td>
+    </tr>
+    <tr>
+      <td>Aile kiracısı</td>
+      <td>2+1 / 3+1</td>
+    </tr>
+    <tr>
+      <td>Daha uzun süreli kiracılık</td>
+      <td>2+1</td>
+    </tr>
+    <tr>
+      <td>Geniş kullanım alanı</td>
+      <td>2+1 / 3+1</td>
+    </tr>
+    <tr>
+      <td>Büyük aile hedefi</td>
+      <td>3+1</td>
+    </tr>
+    <tr>
+      <td>Daha düşük kiracı değişimi hedefi</td>
+      <td>2+1 / 3+1</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Bu tablo genel bir değerlendirme çerçevesidir.</p>
+
+<p>Gerçek yatırım sonucu lokasyon, fiyat, kira seviyesi ve arz-talep koşullarına göre değişir.</p>
+
+<h2 id="11-ev-alırken-kullanabileceğiniz-kontrol-listesi">1+1 Ev Alırken Kullanabileceğiniz Kontrol Listesi</h2>
+
+<p>Bir 1+1 konut satın almadan önce aşağıdaki soruları cevaplamak yatırım kararınızı daha sağlıklı hale getirebilir.</p>
+
+<h3 id="lokasyon">Lokasyon</h3>
+
+<ul>
+  <li>Metro veya toplu taşımaya yakın mı?</li>
+  <li>Üniversitelere yakın mı?</li>
+  <li>İş merkezlerine ulaşım kolay mı?</li>
+  <li>Market, hastane ve günlük ihtiyaçlara erişim kolay mı?</li>
+  <li>Sosyal yaşam alanlarına yakın mı?</li>
+</ul>
+
+<h3 id="finansal-durum">Finansal Durum</h3>
+
+<ul>
+  <li>Satış fiyatı bölge ortalamasında mı?</li>
+  <li>Gerçekçi kira değeri ne kadar?</li>
+  <li>Brüt kira getirisi kaç?</li>
+  <li>Net kira getirisi kaç?</li>
+  <li>Kira çarpanı kaç?</li>
+  <li>Amortisman süresi ne kadar?</li>
+  <li>Satın alma maliyetleri ne kadar?</li>
+</ul>
+
+<h3 id="konut-özellikleri">Konut Özellikleri</h3>
+
+<ul>
+  <li>Bina yaşı kaç?</li>
+  <li>Binanın teknik durumu nasıl?</li>
+  <li>Dairenin kullanılabilir alanı yeterli mi?</li>
+  <li>Aidat ne kadar?</li>
+  <li>Otopark var mı?</li>
+  <li>Isıtma sistemi nasıl?</li>
+  <li>Cephe ve kat avantajlı mı?</li>
+</ul>
+
+<h3 id="piyasa">Piyasa</h3>
+
+<ul>
+  <li>Bölgede kaç adet 1+1 konut var?</li>
+  <li>Kiralık ilanlar ne kadar sürede kiralanıyor?</li>
+  <li>Benzer konutlar hangi fiyatlardan kiralanıyor?</li>
+  <li>Bölgede yeni projeler geliyor mu?</li>
+  <li>Gelecekte konut arzı artacak mı?</li>
+</ul>
+
+<h3 id="kiracı-profili">Kiracı Profili</h3>
+
+<ul>
+  <li>Bölgede ağırlıklı kiracı kim?</li>
+  <li>Öğrenciler mi?</li>
+  <li>Genç profesyoneller mi?</li>
+  <li>Bekâr çalışanlar mı?</li>
+  <li>Çiftler mi?</li>
+  <li>Aileler mi?</li>
+</ul>
+
+<p>Bu soruların cevapları yatırımın gerçek potansiyelini anlamaya yardımcı olur.</p>
+
+<h2 id="11-ev-yatırımında-en-önemli-5-gösterge">1+1 Ev Yatırımında En Önemli 5 Gösterge</h2>
+
+<p>Bir 1+1 konut değerlendirilirken özellikle şu beş göstergeye odaklanılabilir:</p>
+
+<h3 id="1-kira--satış-fiyatı-oranı">1. Kira / Satış Fiyatı Oranı</h3>
+
+<p>Konutun yatırılan sermayeye göre ne kadar kira ürettiğini gösterir.</p>
+
+<h3 id="2-kira-çarpanı">2. Kira Çarpanı</h3>
+
+<p>Konut fiyatının kaç aylık kira gelirine denk geldiğini gösterir.</p>
+
+<h3 id="3-boşluk-oranı">3. Boşluk Oranı</h3>
+
+<p>Konutun yıl içerisinde ne kadar süre kiracısız kalabileceğini anlamaya yardımcı olur.</p>
+
+<h3 id="4-aidat-ve-i̇şletme-giderleri">4. Aidat ve İşletme Giderleri</h3>
+
+<p>Yüksek giderler yatırımın net getirisini azaltabilir.</p>
+
+<h3 id="5-gelecekteki-değer-artışı-potansiyeli">5. Gelecekteki Değer Artışı Potansiyeli</h3>
+
+<p>Yatırımın yalnızca kira değil, sermaye kazancı açısından da değerlendirilmesini sağlar.</p>
+
+<h2 id="sonuç-11-ev-gerçekten-daha-mı-karlı">Sonuç: 1+1 Ev Gerçekten Daha mı Karlı?</h2>
+
+<p><strong>Bazı durumlarda evet. Ancak 1+1 evlerin her zaman diğer konut tiplerinden daha kârlı olduğunu söylemek mümkün değildir.</strong></p>
+
+<p>1+1 konutların yatırım açısından avantajları genellikle şunlardır:</p>
+
+<ul>
+  <li>Daha düşük satın alma maliyeti</li>
+  <li>Merkezi lokasyonlarda yatırım yapabilme imkânı</li>
+  <li>Belirli bölgelerde güçlü kiracı talebi</li>
+  <li>Kira/fiyat oranının yüksek olabilmesi</li>
+  <li>Daha düşük başlangıç sermayesi</li>
+  <li>Bazı bölgelerde geniş yatırımcı kitlesi</li>
+</ul>
+
+<p>Buna karşılık bazı dezavantajları da vardır:</p>
+
+<ul>
+  <li>Kiracının daha sık değişebilmesi</li>
+  <li>Boş kalma riski</li>
+  <li>Yüksek aidat</li>
+  <li>Aşırı 1+1 arzı</li>
+  <li>Eşya ve bakım maliyetleri</li>
+  <li>Bazı bölgelerde sınırlı değer artışı</li>
+  <li>Yeni projeler nedeniyle oluşabilecek kira rekabeti</li>
+</ul>
+
+<p>Bu nedenle:</p>
+
+<blockquote>
+  <p><strong>“1+1 ev daha kârlıdır.”</strong></p>
+</blockquote>
+
+<p>yerine:</p>
+
+<blockquote>
+  <p><strong>“Doğru lokasyonda, doğru fiyata alınmış 1+1 ev kârlı olabilir.”</strong></p>
+</blockquote>
+
+<p>demek daha doğrudur.</p>
+
+<p>Bir gayrimenkul yatırımını değerlendirirken yalnızca aylık kira gelirine bakmak yerine <strong>satın alma fiyatı, brüt kira getirisi, net kira getirisi, kira çarpanı, boş kalma riski, aidat, bakım maliyetleri ve gelecekteki değer artışı potansiyelini birlikte değerlendirmek</strong> gerekir.</p>
+
+<h3 id="son-söz">Son söz</h3>
+
+<p>Gayrimenkul yatırımında en yüksek kirayı getiren evi bulmak her zaman en doğru yatırım anlamına gelmez.</p>
+
+<p>Asıl hedef:</p>
+
+<blockquote>
+  <p><strong>Yatırılan sermayeye göre en iyi toplam getiriyi sağlayan konutu bulmaktır.</strong></p>
+</blockquote>
+
+<p>Bu nedenle 1+1 ev satın almadan önce kendinize şu beş soruyu sorun:</p>
+
+<ol>
+  <li><strong>Bu ev gerçekçi olarak kaç TL’ye kiralanabilir?</strong></li>
+  <li><strong>Yıllık net kira getirisi ne kadar?</strong></li>
+  <li><strong>Kira çarpanı kaç ay?</strong></li>
+  <li><strong>Bu bölgede gelecekte 1+1 arzı artacak mı?</strong></li>
+  <li><strong>Bu evi 5-10 yıl sonra satmak kolay olacak mı?</strong></li>
+</ol>
+
+<p>Bu soruların cevapları olumluysa, 1+1 konut güçlü bir yatırım alternatifi olabilir.</p>
+
+<p>Ancak unutulmaması gereken temel kural şudur:</p>
+
+<p><strong>Gayrimenkulde kârlılığı oda sayısı değil, doğru satın alma fiyatı ve doğru lokasyon belirler.</strong></p>]]></content><author><name></name></author><category term="konut yatırımı" /><summary type="html"><![CDATA[Bu rehberde 1+1 evlerin kira performansını, kira getirisi hesaplamasını, amortisman süresini, kiracı profilini ve yatırım açısından avantajlarını ve dezavantajlarını detaylı şekilde inceleyeceğiz.]]></summary></entry><entry><title type="html">Bir Emlak Ofisi Neden Çok İlan Verip Az Satış Yapıyor?</title><link href="http://localhost:4000/bir-emlak-ofisi-neden-cok-ilan-verip-az-satis-yapiyor" rel="alternate" type="text/html" title="Bir Emlak Ofisi Neden Çok İlan Verip Az Satış Yapıyor?" /><published>2026-10-08T00:00:00+03:00</published><updated>2026-10-08T00:00:00+03:00</updated><id>http://localhost:4000/bir-emlak-ofisi-neden-cok-ilan-verip-az-satis-yapiyor</id><content type="html" xml:base="http://localhost:4000/bir-emlak-ofisi-neden-cok-ilan-verip-az-satis-yapiyor"><![CDATA[<p>Bir emlak ofisinin portföyünde yüzlerce ilan bulunması, o ofisin başarılı olduğu anlamına gelmez. Hatta bazı durumlarda bunun tam tersi bile söz konusu olabilir. Çok sayıda portföy, dışarıdan bakıldığında güçlü bir emlak ofisi görüntüsü oluştururken; düşük satış sayısı, bu portföylerin <strong>doğru fiyatlandırılmadığını, doğru müşterilerle eşleştirilmediğini, yeterince pazarlanmadığını veya satış sürecinin doğru yönetilmediğini</strong> gösterebilir.</p>
 
 <p>Emlak sektöründe önemli olan yalnızca “kaç ilanınız olduğu” değildir. Asıl önemli olan, bu ilanların ne kadarının <strong>nitelikli alıcıya ulaştığı, ne kadarının görüşmeye dönüştüğü ve ne kadarının satışla sonuçlandığıdır.</strong></p>
 
@@ -6426,771 +7413,4 @@ Göktürk Bölge Uzmanı</p>
 
 <blockquote>
   <p><em>Not: Bu yazı genel bilgilendirme amacıyla hazırlanmıştır. Gayrimenkul yatırımı öncesinde tapu, imar, yapı güvenliği, finansman ve vergisel konuların ilgili uzmanlar ve resmi kurumlar üzerinden ayrıca doğrulanması gerekir.</em></p>
-</blockquote>]]></content><author><name></name></author><category term="arsa yatırımı" /><category term="konut yatırımı" /><summary type="html"><![CDATA[2026'da ev almak mı arsa almak mı daha mantıklı? Kira getirisi, değer artışı, riskler, yatırım süresi ve maliyetleri karşılaştırarak doğru gayrimenkul yatırımını keşfedin.]]></summary></entry><entry><title type="html">İstanbul’da Kira Getirisi En Yüksek Semtler: 2026 Yatırım Rehberi</title><link href="http://localhost:4000/istanbulda-kira-getirisi-en-yuksek-semtler-2026-yatirim-rehberi" rel="alternate" type="text/html" title="İstanbul’da Kira Getirisi En Yüksek Semtler: 2026 Yatırım Rehberi" /><published>2026-08-22T00:00:00+03:00</published><updated>2026-08-22T00:00:00+03:00</updated><id>http://localhost:4000/istanbulda-kira-getirisi-en-yuksek-semtler-2026-yatirim-rehberi</id><content type="html" xml:base="http://localhost:4000/istanbulda-kira-getirisi-en-yuksek-semtler-2026-yatirim-rehberi"><![CDATA[<p>İstanbul’da konut yatırımı yapmak isteyenlerin en çok sorduğu sorulardan biri şu: <strong>“Hangi semtten ev alırsam daha yüksek kira getirisi elde ederim?”</strong> Bu sorunun cevabı yalnızca “kirası en yüksek semt hangisi?” sorusuyla bulunamaz. Çünkü yüksek kira ile yüksek kira getirisi aynı şey değildir.</p>
-
-<p>Örneğin Kadıköy’de bir daire çok yüksek kira bedeliyle kiraya verilebilir. Ancak aynı dairenin satın alma fiyatı da oldukça yüksek olduğu için yatırımın yıllık kira getirisi, daha uygun fiyatlı bir ilçedeki konuttan düşük kalabilir.</p>
-
-<p>2026 yılı verilerine bakıldığında İstanbul’da özellikle <strong>Esenyurt, Beylikdüzü, Avcılar, Pendik ve bazı Kartal mahalleleri</strong> kira getirisi açısından dikkat çekiyor. Buna karşılık Kadıköy, Beşiktaş ve Sarıyer gibi yüksek kira seviyelerine sahip merkezi bölgelerde konut fiyatlarının da yüksek olması, kira çarpanını artırıyor.</p>
-
-<p>Bu yazıda İstanbul’un farklı bölgelerini <strong>kira getirisi, konut fiyatı, amortisman süresi, kiracı talebi ve yatırım riski</strong> açısından değerlendireceğiz.</p>
-
-<h2 id="kira-getirisi-nedir">Kira Getirisi Nedir?</h2>
-
-<p>Kira getirisi, bir gayrimenkulün satın alma maliyetine kıyasla yıllık ne kadar kira geliri ürettiğini gösterir.</p>
-
-<p>Basit brüt kira getirisi şu formülle hesaplanabilir:</p>
-
-<p><strong>Brüt kira getirisi = Yıllık kira geliri / Konut satın alma fiyatı × 100</strong></p>
-
-<p>Örneğin:</p>
-
-<ul>
-  <li>Konut fiyatı: 4.000.000 TL</li>
-  <li>Aylık kira: 25.000 TL</li>
-  <li>Yıllık kira: 300.000 TL</li>
-</ul>
-
-<p>Bu durumda:</p>
-
-<p><strong>300.000 / 4.000.000 × 100 = %7,5</strong></p>
-
-<p>Yani konutun yaklaşık brüt kira getirisi yüzde 7,5’tir.</p>
-
-<p>Ancak bu oran yatırımcının cebine kalan gerçek kazancı göstermez.</p>
-
-<p>Aidat, bakım-onarım, boş kalma süresi, vergi ve diğer giderler hesaba katıldığında <strong>net kira getirisi daha düşük olacaktır.</strong></p>
-
-<p>Bu nedenle yalnızca ilan sitelerinde görülen “getiri” oranlarına bakarak yatırım kararı vermek doğru değildir.</p>
-
-<h2 id="i̇stanbulda-kira-getirisi-neden-i̇lçeden-i̇lçeye-değişiyor">İstanbul’da Kira Getirisi Neden İlçeden İlçeye Değişiyor?</h2>
-
-<p>İstanbul’un gayrimenkul piyasası tek bir piyasadan oluşmuyor.</p>
-
-<p>Birbirinden tamamen farklı yatırım dinamiklerine sahip çok sayıda alt bölge bulunuyor.</p>
-
-<p>Örneğin:</p>
-
-<ul>
-  <li>Merkezi ilçelerde konut fiyatları yüksek.</li>
-  <li>Gelişmekte olan ilçelerde satın alma maliyeti daha düşük.</li>
-  <li>Ulaşım akslarına yakın bölgelerde kiracı talebi daha güçlü.</li>
-  <li>Yeni konut stokunun yoğun olduğu bölgelerde yatırım amaçlı küçük dairelerin payı yüksek.</li>
-  <li>Üniversite ve iş merkezlerine yakın bölgelerde 1+1 ve 2+1 dairelere talep artabiliyor.</li>
-</ul>
-
-<p>Bu nedenle İstanbul’da yatırım yapılacak semti seçerken <strong>“kira kaç TL?” yerine “bu kira için konut kaç TL?”</strong> sorusunu sormak gerekiyor.</p>
-
-<h2 id="2026da-i̇stanbul-genelinde-konut-piyasası">2026’da İstanbul Genelinde Konut Piyasası</h2>
-
-<p>2026 Temmuz verilerine göre İstanbul genelinde satılık konutların ortalama metrekare fiyatı yaklaşık <strong>65.078 TL</strong> seviyesinde bulunuyor. Aynı dönemde İstanbul genelinde konut fiyatlarının son 12 aylık artışı yaklaşık yüzde 26,5 olarak hesaplanıyor.</p>
-
-<p>Bu tablo yatırım açısından önemli bir noktaya işaret ediyor.</p>
-
-<p>İstanbul’da konut fiyatları yüksek olduğu için merkezi bölgelerde yüksek kira elde etmek her zaman yüksek kira getirisi anlamına gelmiyor.</p>
-
-<p>Örneğin Beşiktaş ve Kadıköy gibi bölgelerde kira bedelleri oldukça yüksek olsa da konut satın alma maliyetleri de çok yüksek.</p>
-
-<p>Buna karşılık Esenyurt, Beylikdüzü veya Avcılar gibi bölgelerde daha düşük satın alma maliyeti ile daha yüksek kira oranı yakalamak mümkün olabiliyor.</p>
-
-<h2 id="i̇stanbulda-kira-getirisi-en-yüksek-bölgeler">İstanbul’da Kira Getirisi En Yüksek Bölgeler</h2>
-
-<h3 id="1-esenyurt">1. Esenyurt</h3>
-
-<p>İstanbul’da kira getirisi denildiğinde ilk akla gelen bölgelerden biri <strong>Esenyurt</strong>.</p>
-
-<p>Bunun temel nedeni oldukça basit:</p>
-
-<p><strong>Konut fiyatları İstanbul ortalamasının altında kalırken kiracı talebi güçlü.</strong></p>
-
-<p>2026 Ağustos verilerinde Esenyurt’taki satılık konutlarda ortalama metrekare fiyatı yaklaşık 33.202 TL, ortalama kira ise 24.663 TL olarak veriliyor. Aynı veri setinde geri dönüş süresi yaklaşık 10 yıl ve brüt getiri yüzde 9,9 seviyesinde hesaplanıyor.</p>
-
-<p>Bu oran İstanbul’un birçok merkezi ilçesine kıyasla oldukça yüksek.</p>
-
-<p>Esenyurt’un yatırım açısından öne çıkmasının birkaç nedeni bulunuyor:</p>
-
-<ul>
-  <li>Görece düşük konut fiyatları</li>
-  <li>Yüksek konut stoku</li>
-  <li>Yoğun nüfus</li>
-  <li>Yeni konut projeleri</li>
-  <li>Kiralık konut talebi</li>
-  <li>Küçük metrekareli dairelerin yaygın olması</li>
-  <li>Beylikdüzü ve ana ulaşım akslarına yakın bölgeler</li>
-</ul>
-
-<p>Ancak Esenyurt’ta yatırım yaparken ilçe geneline bakmak ciddi bir hata olabilir.</p>
-
-<p>Çünkü <strong>mahalleler arasında büyük fiyat ve kira farklılıkları bulunuyor.</strong></p>
-
-<p>Örneğin Emlakjet verilerinde Esenyurt’un Aşık Veysel, Esenkent, Koza, Ardıçlı ve Barbaros Hayrettin Paşa gibi bölgelerinde metrekare satış fiyatlarının ilçe ortalamasından önemli ölçüde farklılaştığı görülüyor.</p>
-
-<p>Dolayısıyla “Esenyurt’tan ev alayım” demek yerine:</p>
-
-<p><strong>“Esenyurt’ta hangi mahallede, hangi projeden, hangi daire tipini almalıyım?”</strong></p>
-
-<p>sorusuna cevap vermek gerekiyor.</p>
-
-<h4 id="esenyurtta-en-çok-dikkat-edilmesi-gereken-konular">Esenyurt’ta En Çok Dikkat Edilmesi Gereken Konular</h4>
-
-<p>Esenyurt’un yüksek kira getirisi bazı riskleri de beraberinde getiriyor.</p>
-
-<p>Özellikle:</p>
-
-<ul>
-  <li>Tapu niteliği</li>
-  <li>Kat mülkiyeti</li>
-  <li>İskan</li>
-  <li>Yapı kalitesi</li>
-  <li>Bina yaşı</li>
-  <li>Site aidatı</li>
-  <li>Kiracı profili</li>
-  <li>Ulaşım bağlantısı</li>
-  <li>Bölgedeki arz fazlası</li>
-</ul>
-
-<p>mutlaka incelenmeli.</p>
-
-<p>Yani <strong>yüksek kira getirisi tek başına yeterli değildir.</strong></p>
-
-<p>Ucuz olduğu için alınan ancak kiracının ilgisini çekmeyen bir daire, kağıt üzerinde yüksek getirili görünse bile gerçek hayatta yatırımcıya beklenen getiriyi sağlamayabilir.</p>
-
-<h3 id="2-beylikdüzü">2. Beylikdüzü</h3>
-
-<p>Beylikdüzü, İstanbul’da kira getirisi ile yaşam kalitesini bir arada değerlendirmek isteyen yatırımcıların dikkat ettiği bölgelerden biri.</p>
-
-<p>2026 verilerinde Beylikdüzü’nde ortalama konut metrekare fiyatı yaklaşık <strong>48.635 TL</strong>, ortalama metrekare kira değeri ise <strong>341 TL</strong> seviyesinde. Ortalama kira yaklaşık 41.121 TL, geri dönüş süresi 12 yıl ve hesaplanan getiri yüzde 8,41 seviyesinde.</p>
-
-<p>Bu tablo Beylikdüzü’nü özellikle uzun vadeli yatırım açısından ilginç hale getiriyor.</p>
-
-<p>Beylikdüzü’nün avantajları arasında:</p>
-
-<ul>
-  <li>Yeni ve nispeten modern yapı stoğu</li>
-  <li>Planlı yerleşim</li>
-  <li>Metrobüs bağlantısı</li>
-  <li>E-5’e yakınlık</li>
-  <li>Site yaşamının yaygın olması</li>
-  <li>Aile tipi kiracı talebi</li>
-  <li>Sosyal donatıların fazla olması</li>
-</ul>
-
-<p>sayılabilir.</p>
-
-<p>Beylikdüzü’nde yatırım yapılırken özellikle <strong>Yakuplu, Barış, Adnan Kahveci, Kavaklı, Gürpınar ve Cumhuriyet</strong> gibi bölgelerin birbirinden ayrılması gerekiyor.</p>
-
-<p>Örneğin 2026 verilerinde Cumhuriyet Mahallesi’nin metrekare satış fiyatı yaklaşık 58.800 TL seviyesindeyken Yakuplu’da yaklaşık 37.600 TL seviyesinde görülüyor.</p>
-
-<p>Bu farklılık kira çarpanını da değiştirebilir.</p>
-
-<h3 id="3-avcılar">3. Avcılar</h3>
-
-<p>Avcılar, kira getirisi açısından İstanbul’un dikkat çeken ilçelerinden biri.</p>
-
-<p>2026 verilerinde Avcılar genelinde ortalama konut metrekare fiyatı yaklaşık <strong>54.802 TL</strong>, ortalama metrekare kira değeri ise <strong>370 TL</strong> seviyesinde. Ortalama kira 36.988 TL ve hesaplanan brüt getiri yaklaşık yüzde 8,1.</p>
-
-<p>Ancak Avcılar’ın asıl dikkat çekici tarafı bazı mahallelerde getirinin ilçe ortalamasının üzerine çıkabilmesi.</p>
-
-<p>Örneğin <strong>Cihangir Mahallesi</strong> için güncel veriler yaklaşık yüzde 10,14 getiri ve 10 yıllık geri dönüş süresi gösteriyor.</p>
-
-<p>Avcılar Merkez Mahallesi’nde ise hesaplanan getiri yaklaşık yüzde 9,16 seviyesinde.</p>
-
-<p>Bu nedenle Avcılar, “yüksek kira + nispeten ulaşılabilir konut fiyatı” dengesini arayan yatırımcılar için önemli bir alternatif.</p>
-
-<p>Özellikle:</p>
-
-<ul>
-  <li>Metrobüse yakınlık</li>
-  <li>Üniversitelere yakınlık</li>
-  <li>E-5 bağlantısı</li>
-  <li>Toplu ulaşım</li>
-  <li>Sahil bölgesine yakınlık</li>
-  <li>Küçük ve orta büyüklükte daireler</li>
-</ul>
-
-<p>kira talebini destekleyen unsurlar arasında.</p>
-
-<h3 id="4-pendik">4. Pendik</h3>
-
-<p>Anadolu Yakası’nda kira getirisi açısından dikkat çeken bölgelerden biri Pendik.</p>
-
-<p>2026 verilerinde Pendik’te ortalama konut metrekare fiyatı yaklaşık <strong>69.760 TL</strong>, ortalama metrekare kira değeri ise <strong>385 TL</strong>. Ortalama kira 36.541 TL ve hesaplanan getiri yaklaşık yüzde 6,62 seviyesinde.</p>
-
-<p>İlçe ortalaması Esenyurt veya Avcılar kadar yüksek görünmese de Pendik’in önemli bir avantajı var:</p>
-
-<p><strong>Mahalle bazında ciddi farklılıklar bulunuyor.</strong></p>
-
-<p>Örneğin Pendik Sanayi Mahallesi’nde yaklaşık yüzde 8,37 getiri ve 12 yıllık geri dönüş süresi hesaplanıyor.</p>
-
-<p>Pendik’in yatırım açısından önemli olmasının nedenleri arasında:</p>
-
-<ul>
-  <li>Sabiha Gökçen Havalimanı</li>
-  <li>Marmaray</li>
-  <li>Metro bağlantıları</li>
-  <li>D-100</li>
-  <li>E-5 ulaşımı</li>
-  <li>Yeni konut projeleri</li>
-  <li>İş merkezleri</li>
-  <li>Gelişen ulaşım altyapısı</li>
-</ul>
-
-<p>sayılabilir.</p>
-
-<p>Ancak Pendik’te de semt seçimi kritik.</p>
-
-<p>Örneğin Doğu Mahallesi’nde konut fiyatlarının yükselmesi nedeniyle getiri yaklaşık yüzde 5,64 seviyesine düşerken, daha uygun fiyatlı bazı bölgelerde daha yüksek oranlar görülebiliyor.</p>
-
-<p>Bu nedenle Pendik’te yatırımcı için asıl fırsat <strong>“en pahalı bölgeyi” değil, kira talebinin güçlü olduğu uygun fiyatlı bölgeyi bulmak.</strong></p>
-
-<h3 id="5-kartal">5. Kartal</h3>
-
-<p>Kartal, Anadolu Yakası’nda hem kira talebi hem de değer artışı beklentisi açısından dikkat çeken ilçelerden biri.</p>
-
-<p>İlçe genelinde güncel veriler yaklaşık yüzde 7,1 seviyesinde getiri ve 14 yıllık geri dönüş süresi gösteriyor.</p>
-
-<p>Fakat Kartal’da mahalleler arasındaki fark yine çok önemli.</p>
-
-<p>Örneğin:</p>
-
-<ul>
-  <li>Yukarı Mahallesi: yaklaşık yüzde 8,62 getiri</li>
-  <li>Orta Mahallesi: yaklaşık yüzde 8,38 getiri</li>
-  <li>Yalı Mahallesi: yaklaşık yüzde 7,8 getiri</li>
-  <li>Karlıktepe: yaklaşık yüzde 7,43 getiri</li>
-</ul>
-
-<p>seviyelerinde hesaplamalar bulunuyor.</p>
-
-<p>Buna karşılık denize yakın ve daha pahalı bölgelerde kira yüksek olmasına rağmen satın alma maliyeti de yükseldiği için getiri oranı düşebiliyor.</p>
-
-<p>Örneğin Kordonboyu Mahallesi’nde ortalama kira yaklaşık 69.561 TL olmasına rağmen hesaplanan getiri yüzde 6,28 seviyesinde.</p>
-
-<p>Bu durum gayrimenkul yatırımının temel kuralını bir kez daha gösteriyor:</p>
-
-<p><strong>En yüksek kira, her zaman en yüksek kira getirisi değildir.</strong></p>
-
-<h3 id="6-tuzla">6. Tuzla</h3>
-
-<p>Tuzla, İstanbul’un doğu ucunda olmasına rağmen yatırım açısından giderek daha fazla dikkat çekiyor.</p>
-
-<p>2026 verilerinde Tuzla genelinde ortalama konut metrekare fiyatı yaklaşık <strong>69.677 TL</strong>, ortalama metrekare kira değeri ise <strong>381 TL</strong> seviyesinde. Ortalama kira 38.110 TL ve hesaplanan getiri yaklaşık yüzde 6,56.</p>
-
-<p>Tuzla’nın yatırım hikâyesini yalnızca kira üzerinden değerlendirmek doğru olmaz.</p>
-
-<p>Bölgedeki:</p>
-
-<ul>
-  <li>Sanayi alanları</li>
-  <li>Organize sanayi bölgeleri</li>
-  <li>Ulaşım bağlantıları</li>
-  <li>İstanbul-Kocaeli aksı</li>
-  <li>Yeni konut projeleri</li>
-  <li>Çalışan nüfusu</li>
-</ul>
-
-<p>kiracı talebinin oluşmasında etkili.</p>
-
-<p>Ancak Tuzla’da da konut fiyatlarının bazı mahallelerde ciddi şekilde yükseldiği görülüyor.</p>
-
-<p>Örneğin İstasyon Mahallesi’nde ortalama metrekare satış fiyatı yaklaşık 85.413 TL’ye çıkarken ortalama kira yaklaşık 55.817 TL seviyesinde. Buna rağmen getiri yaklaşık yüzde 6,32.</p>
-
-<p>Dolayısıyla Tuzla’da da “kira yüksek” demek yerine <strong>kira/fiyat oranına</strong> bakmak gerekiyor.</p>
-
-<h3 id="7-başakşehir">7. Başakşehir</h3>
-
-<p>Başakşehir, klasik anlamda “en yüksek kira getirili” bölgelerden biri olmayabilir.</p>
-
-<p>Ancak yatırım açısından farklı bir profile sahip.</p>
-
-<p>Bölgenin güçlü tarafları:</p>
-
-<ul>
-  <li>Yeni konut stoğu</li>
-  <li>Büyük siteler</li>
-  <li>Aile tipi konut talebi</li>
-  <li>Sağlık ve eğitim yatırımları</li>
-  <li>Ulaşım altyapısı</li>
-  <li>Düzenli şehirleşme</li>
-</ul>
-
-<p>olarak öne çıkıyor.</p>
-
-<p>Bazı 2026 bölgesel analizlerde Başakşehir için kira getirisi yaklaşık yüzde 4,2-5,2 bandında hesaplanıyor.</p>
-
-<p>Bu nedenle Başakşehir’i değerlendirirken yalnızca kira gelirine değil, <strong>sermaye değerinin korunması ve uzun vadeli talebe</strong> de bakmak gerekiyor.</p>
-
-<h3 id="8-bağcılar-ve-güneşli">8. Bağcılar ve Güneşli</h3>
-
-<p>Bağcılar, İstanbul’da kira getirisi açısından gözden kaçırılmaması gereken bölgelerden biri.</p>
-
-<p>Özellikle merkezi ulaşım akslarına yakın ve yeni yapılaşmanın bulunduğu bölgelerde kira talebi güçlü olabiliyor.</p>
-
-<p>KiraMetre’nin 2026 ilçe verilerinde Bağcılar için ortalama kira yaklaşık 28.850 TL, kira metrekare değeri 327 TL ve tahmini amortisman süresi 17 yıl olarak veriliyor.</p>
-
-<p>Bağcılar’ın avantajı, İstanbul’un önemli iş ve ulaşım merkezlerine görece yakın olması.</p>
-
-<p>Ancak ilçe içinde:</p>
-
-<ul>
-  <li>Bina yaşı</li>
-  <li>Deprem riski</li>
-  <li>Sokak bazında yapı kalitesi</li>
-  <li>Ulaşım</li>
-  <li>Mahalle profili</li>
-</ul>
-
-<p>çok ciddi fark yaratabilir.</p>
-
-<p>Bu nedenle Bağcılar’da yatırım kararı <strong>ilçe bazında değil, bina ve mahalle bazında</strong> verilmelidir.</p>
-
-<h3 id="9-sancaktepe">9. Sancaktepe</h3>
-
-<p>Sancaktepe, Anadolu Yakası’nda daha ulaşılabilir konut fiyatlarıyla dikkat çeken bölgelerden biri.</p>
-
-<p>KiraMetre’nin 2026 verilerinde Sancaktepe için ortalama kira yaklaşık 24.500 TL, metrekare kira değeri yaklaşık 293 TL ve tahmini amortisman süresi 18 yıl seviyesinde.</p>
-
-<p>Sancaktepe’nin yatırım hikâyesinde özellikle yeni konut projeleri ve ulaşım yatırımları önemli.</p>
-
-<p>Buradaki yatırım stratejisi merkezi bölgelerde olduğu gibi yüksek kira elde etmekten ziyade:</p>
-
-<p><strong>uygun satın alma fiyatı + düzenli kiracı talebi + uzun vadeli değer artışı</strong></p>
-
-<p>üçlüsüne dayanıyor.</p>
-
-<h2 id="10-kadıköy-kirası-çok-yüksek-getirisi-neden-her-zaman-en-yüksek-değil">10. Kadıköy: Kirası Çok Yüksek, Getirisi Neden Her Zaman En Yüksek Değil?</h2>
-
-<p>Kadıköy, İstanbul’da kira bedellerinin en yüksek olduğu bölgelerden biri.</p>
-
-<p>2026 verilerinde Kadıköy’ün ortalama kira seviyesi yaklaşık 56.000 TL olarak gösteriliyor.</p>
-
-<p>Ancak Kadıköy’deki konut satın alma fiyatları da son derece yüksek.</p>
-
-<p>İstanbul genelinde Temmuz 2026 verilerinde Kadıköy’ün ortalama konut metrekare satış fiyatı yaklaşık 169.123 TL seviyesinde.</p>
-
-<p>Dolayısıyla Kadıköy’de yatırım yapan kişi:</p>
-
-<p><strong>yüksek kira geliri elde ederken daha düşük kira oranıyla karşılaşabilir.</strong></p>
-
-<p>Bu durum Kadıköy’ü kötü bir yatırım yapmaz.</p>
-
-<p>Tam tersine Kadıköy;</p>
-
-<ul>
-  <li>Güçlü kiracı talebi</li>
-  <li>Merkezi konum</li>
-  <li>Toplu taşıma</li>
-  <li>Üniversiteler</li>
-  <li>Sosyal yaşam</li>
-  <li>İş merkezlerine erişim</li>
-  <li>Yüksek likidite</li>
-</ul>
-
-<p>gibi önemli avantajlara sahip.</p>
-
-<p>Ancak Kadıköy yatırımının hikâyesi daha çok <strong>“yüksek kaliteli lokasyonda sermayeyi koruma ve değer artışı”</strong> üzerine kuruludur.</p>
-
-<h2 id="i̇stanbulda-kira-getirisi-açısından-öne-çıkan-bölgeler">İstanbul’da Kira Getirisi Açısından Öne Çıkan Bölgeler</h2>
-
-<p>2026 verilerini birlikte değerlendirdiğimizde genel tabloyu şöyle özetleyebiliriz:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th>Bölge</th>
-      <th>Kira Getirisi Potansiyeli</th>
-      <th>Konut Fiyatı</th>
-      <th>Yatırım Profili</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Esenyurt</td>
-      <td>Çok yüksek</td>
-      <td>Görece düşük</td>
-      <td>Kira odaklı</td>
-    </tr>
-    <tr>
-      <td>Avcılar</td>
-      <td>Yüksek</td>
-      <td>Orta</td>
-      <td>Kira + değer artışı</td>
-    </tr>
-    <tr>
-      <td>Beylikdüzü</td>
-      <td>Yüksek</td>
-      <td>Orta</td>
-      <td>Dengeli</td>
-    </tr>
-    <tr>
-      <td>Pendik</td>
-      <td>Orta-yüksek</td>
-      <td>Orta/yüksek</td>
-      <td>Uzun vadeli</td>
-    </tr>
-    <tr>
-      <td>Kartal</td>
-      <td>Orta-yüksek</td>
-      <td>Orta/yüksek</td>
-      <td>Kira + değer artışı</td>
-    </tr>
-    <tr>
-      <td>Tuzla</td>
-      <td>Orta</td>
-      <td>Orta/yüksek</td>
-      <td>Uzun vadeli</td>
-    </tr>
-    <tr>
-      <td>Bağcılar</td>
-      <td>Orta-yüksek</td>
-      <td>Orta</td>
-      <td>Kira odaklı</td>
-    </tr>
-    <tr>
-      <td>Sancaktepe</td>
-      <td>Orta</td>
-      <td>Görece uygun</td>
-      <td>Gelişim odaklı</td>
-    </tr>
-    <tr>
-      <td>Başakşehir</td>
-      <td>Orta</td>
-      <td>Orta/yüksek</td>
-      <td>Aile + uzun vadeli</td>
-    </tr>
-    <tr>
-      <td>Kadıköy</td>
-      <td>Orta</td>
-      <td>Çok yüksek</td>
-      <td>Prestij + sermaye koruma</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Buradaki oranlar <strong>ilçe veya mahalle ortalamalarından türetilen piyasa göstergeleridir; belirli bir dairenin garanti edilmiş getirisi değildir.</strong></p>
-
-<h2 id="kira-getirisi-yüksek-ev-nasıl-bulunur">Kira Getirisi Yüksek Ev Nasıl Bulunur?</h2>
-
-<p>Asıl önemli soru aslında “hangi semt?” değil.</p>
-
-<p><strong>“Hangi ev?”</strong></p>
-
-<p>Aynı mahallede iki daire arasında kira getirisi açısından çok büyük fark olabilir.</p>
-
-<p>Örneğin aynı binada:</p>
-
-<ul>
-  <li>1+1 daire</li>
-  <li>2+1 daire</li>
-  <li>3+1 daire</li>
-</ul>
-
-<p>aynı oranda getiri sağlamayabilir.</p>
-
-<p>Yatırımcıların çoğu yalnızca metrekare fiyatına bakıyor.</p>
-
-<p>Oysa aşağıdaki kriterler birlikte değerlendirilmelidir.</p>
-
-<h3 id="1-satın-alma-fiyatı">1. Satın Alma Fiyatı</h3>
-
-<p>İlk kriter doğal olarak satın alma fiyatıdır.</p>
-
-<p>Bir daire piyasanın yüzde 10-15 altında alınabiliyorsa kira getirisi bir anda yükselir.</p>
-
-<p>Bu nedenle yatırımcının gerçek avantajı bazen “doğru semti bulmak” değil, <strong>doğru fiyatı bulmaktır.</strong></p>
-
-<h3 id="2-aylık-kira">2. Aylık Kira</h3>
-
-<p>Kira tahmini yapılırken yalnızca internetteki ilanlara bakılmamalı.</p>
-
-<p>Aynı:</p>
-
-<ul>
-  <li>bina yaşı</li>
-  <li>oda sayısı</li>
-  <li>net metrekare</li>
-  <li>kat</li>
-  <li>cephe</li>
-  <li>site özellikleri</li>
-  <li>ulaşım mesafesi</li>
-</ul>
-
-<p>özelliklerine sahip kiralık daireler karşılaştırılmalı.</p>
-
-<h3 id="3-boş-kalma-süresi">3. Boş Kalma Süresi</h3>
-
-<p>Bir konutun yılda 12 ay kiraya verilmesi ile 10 ay kiraya verilmesi arasında ciddi fark vardır.</p>
-
-<p>Örneğin aylık 30.000 TL kira alan bir daire yılda 360.000 TL brüt gelir üretir.</p>
-
-<p>Ancak iki ay boş kalırsa gelir:</p>
-
-<p><strong>30.000 × 10 = 300.000 TL</strong></p>
-
-<p>olur.</p>
-
-<p>Bu nedenle kiracı bulma hızı, kira miktarı kadar önemlidir.</p>
-
-<h3 id="4-aidat">4. Aidat</h3>
-
-<p>Özellikle rezidans ve büyük sitelerde yüksek aidat kira getirisini ciddi şekilde azaltabilir.</p>
-
-<p>Örneğin:</p>
-
-<ul>
-  <li>Aylık kira: 35.000 TL</li>
-  <li>Aylık aidat: 5.000 TL</li>
-</ul>
-
-<p>ise yatırımcının elde ettiği brüt kira geliri ile gerçek nakit akışı aynı değildir.</p>
-
-<p>Bu nedenle yüksek aidatlı konutlarda <strong>net kira getirisi</strong> mutlaka hesaplanmalıdır.</p>
-
-<h3 id="5-kiracı-profili">5. Kiracı Profili</h3>
-
-<p>Kira getirisi yüksek görünen bir bölgenin kiracı profili de araştırılmalı.</p>
-
-<p>Yatırımcı şu soruları sormalı:</p>
-
-<ul>
-  <li>Kiracılar kim?</li>
-  <li>Bölgede çalışan nüfus nerede?</li>
-  <li>Aile kiracılar mı daha fazla?</li>
-  <li>Öğrenciler mi?</li>
-  <li>Tek yaşayan profesyoneller mi?</li>
-  <li>Kiracıların gelir seviyesi nedir?</li>
-  <li>Kiralık daireler ne kadar sürede kiralanıyor?</li>
-</ul>
-
-<p>Bunlar kira gelirinin sürdürülebilirliği açısından önemlidir.</p>
-
-<h2 id="brüt-getiri-mi-net-getiri-mi">Brüt Getiri mi, Net Getiri mi?</h2>
-
-<p>Gayrimenkul yatırımında en sık yapılan hatalardan biri brüt kira getirisini net kazanç olarak kabul etmek.</p>
-
-<p>Örneğin:</p>
-
-<p><strong>5.000.000 TL’lik konut</strong></p>
-
-<p>aylık:</p>
-
-<p><strong>35.000 TL kira</strong></p>
-
-<p>getiriyorsa yıllık kira:</p>
-
-<p><strong>420.000 TL</strong></p>
-
-<p>olur.</p>
-
-<p>Brüt getiri:</p>
-
-<p><strong>420.000 / 5.000.000 × 100 = %8,4</strong></p>
-
-<p>Ancak yatırımcının gerçek getirisi bundan daha düşük olacaktır.</p>
-
-<p>Çünkü:</p>
-
-<ul>
-  <li>Boş kalma süresi</li>
-  <li>Bakım giderleri</li>
-  <li>Tadilat</li>
-  <li>Aidatın ev sahibine düşen kısmı</li>
-  <li>Sigorta</li>
-  <li>Vergiler</li>
-  <li>Diğer işletme giderleri</li>
-</ul>
-
-<p>hesaba katılmalıdır.</p>
-
-<p>Bu nedenle yatırım kararında <strong>%8,4 brüt getiri</strong> yerine “masraflardan sonra bana kaç TL kalıyor?” sorusu sorulmalıdır.</p>
-
-<h2 id="amortisman-süresi-neden-önemli">Amortisman Süresi Neden Önemli?</h2>
-
-<p>Amortisman, konutun kira geliriyle kendisini yaklaşık kaç yılda geri ödeyeceğini gösteren önemli bir göstergedir.</p>
-
-<p>Basit şekilde:</p>
-
-<p><strong>Amortisman süresi = Konut fiyatı / Yıllık kira</strong></p>
-
-<p>Örneğin:</p>
-
-<p>5.000.000 TL konut
-35.000 TL aylık kira</p>
-
-<p>Yıllık kira:</p>
-
-<p>420.000 TL</p>
-
-<p>Amortisman:</p>
-
-<p><strong>5.000.000 / 420.000 = 11,9 yıl</strong></p>
-
-<p>Yani yaklaşık 12 yıl.</p>
-
-<p>Ancak bu da <strong>brüt amortisman</strong> hesabıdır.</p>
-
-<p>Giderler ve boş kalma süresi hesaba katıldığında gerçek süre uzar.</p>
-
-<h2 id="i̇stanbulda-en-yüksek-kira-getirisi-i̇çin-hangi-daire-tipi-daha-mantıklı">İstanbul’da En Yüksek Kira Getirisi İçin Hangi Daire Tipi Daha Mantıklı?</h2>
-
-<p>Her bölgede aynı daire tipi ideal değildir.</p>
-
-<p>Ancak kira getirisi odaklı yatırımlarda genellikle küçük ve orta büyüklükte konutlar daha fazla dikkat çeker.</p>
-
-<p>Özellikle:</p>
-
-<ul>
-  <li>1+1</li>
-  <li>2+1</li>
-  <li>Kompakt 2+1</li>
-</ul>
-
-<p>daireler yatırımcıların radarında olabilir.</p>
-
-<p>Bunun nedeni satın alma fiyatının daha düşük olması ve kiracı havuzunun daha geniş olabilmesidir.</p>
-
-<p>Ancak bu bir kural değildir.</p>
-
-<p>Örneğin ailelerin yoğun olduğu bir bölgede 3+1 daire daha hızlı kiralanabilir.</p>
-
-<p>Bu nedenle doğru daire tipi <strong>bölgedeki gerçek kiracı talebiyle</strong> belirlenmelidir.</p>
-
-<h2 id="yüksek-kira-getirisi-her-zaman-i̇yi-yatırım-mı">Yüksek Kira Getirisi Her Zaman İyi Yatırım mı?</h2>
-
-<p>Hayır.</p>
-
-<p>Bu, gayrimenkul yatırımında en önemli ayrımlardan biridir.</p>
-
-<p>Bir konut yüzde 10 kira getirisi sağlayabilir.</p>
-
-<p>Başka bir konut yüzde 6 kira getirisi sağlayabilir.</p>
-
-<p>Ancak yüzde 6 getiri sağlayan konut:</p>
-
-<ul>
-  <li>Daha güvenli lokasyondaysa</li>
-  <li>Daha likitse</li>
-  <li>Daha kolay satılıyorsa</li>
-  <li>Daha kaliteli kiracı profiline sahipse</li>
-  <li>Daha az boş kalıyorsa</li>
-  <li>Daha düşük bakım maliyetine sahipse</li>
-</ul>
-
-<p>yatırımcı için daha iyi bir seçenek olabilir.</p>
-
-<p>Dolayısıyla <strong>kira getirisi tek başına yatırım kararının kriteri olmamalıdır.</strong></p>
-
-<h2 id="i̇stanbulda-kira-getirisi-i̇çin-en-mantıklı-strateji">İstanbul’da Kira Getirisi İçin En Mantıklı Strateji</h2>
-
-<p>2026 piyasasında yatırımcılar için üç farklı strateji öne çıkıyor.</p>
-
-<h3 id="strateji-1-maksimum-kira-getirisi">Strateji 1: Maksimum Kira Getirisi</h3>
-
-<p>Amaç mümkün olan en yüksek kira oranını elde etmekse:</p>
-
-<p><strong>Esenyurt, Avcılar ve bazı uygun fiyatlı Pendik/Kartal mahalleleri</strong> daha fazla incelenebilir.</p>
-
-<p>Burada hedef:</p>
-
-<p><strong>düşük satın alma fiyatı + yüksek kira</strong></p>
-
-<p>kombinasyonudur.</p>
-
-<h3 id="strateji-2-dengeli-getiri">Strateji 2: Dengeli Getiri</h3>
-
-<p>Hem kira geliri hem de konutun uzun vadeli değerini önemseyen yatırımcı için:</p>
-
-<p><strong>Beylikdüzü, Avcılar, Pendik ve Kartal</strong></p>
-
-<p>daha dengeli alternatifler sunabilir.</p>
-
-<p>Burada yalnızca kira değil, ulaşım ve bölgesel gelişim de önemlidir.</p>
-
-<h3 id="strateji-3-sermaye-koruma-ve-prestij">Strateji 3: Sermaye Koruma ve Prestij</h3>
-
-<p>Yatırımcının önceliği yüksek kira oranından çok güçlü lokasyon ve uzun vadeli sermaye korumasıysa:</p>
-
-<p><strong>Kadıköy, Beşiktaş, Şişli ve benzeri merkezi bölgeler</strong> değerlendirilebilir.</p>
-
-<p>Bu bölgelerde kira getirisi oranı daha düşük olabilir.</p>
-
-<p>Ancak kiracı talebi ve lokasyon kalitesi farklı bir yatırım profili oluşturur.</p>
-
-<h2 id="i̇stanbulda-yatırımlık-ev-alırken-yapılan-7-büyük-hata">İstanbul’da Yatırımlık Ev Alırken Yapılan 7 Büyük Hata</h2>
-
-<h3 id="1-sadece-kira-bedeline-bakmak">1. Sadece kira bedeline bakmak</h3>
-
-<p>50.000 TL kira alan bir ev, 10 milyon TL’ye satılıyorsa getirisi düşük olabilir.</p>
-
-<h3 id="2-i̇lçe-ortalamasına-güvenmek">2. İlçe ortalamasına güvenmek</h3>
-
-<p>Bir ilçenin ortalama getirisi sizin alacağınız dairenin getirisi değildir.</p>
-
-<p>Mahalle, sokak ve hatta bina bazında analiz yapılmalıdır.</p>
-
-<h3 id="3-i̇lan-fiyatını-gerçek-piyasa-fiyatı-sanmak">3. İlan fiyatını gerçek piyasa fiyatı sanmak</h3>
-
-<p>Satılık ilan fiyatı ile gerçekleşen satış fiyatı aynı olmayabilir.</p>
-
-<h3 id="4-boş-kalma-riskini-hesaba-katmamak">4. Boş kalma riskini hesaba katmamak</h3>
-
-<p>12 ay kira varsayımı yerine gerçekçi doluluk oranı kullanılmalıdır.</p>
-
-<h3 id="5-aidatı-göz-ardı-etmek">5. Aidatı göz ardı etmek</h3>
-
-<p>Özellikle site ve rezidans yatırımlarında yüksek aidat net getiriyi azaltabilir.</p>
-
-<h3 id="6-tapu-ve-yapı-durumunu-kontrol-etmemek">6. Tapu ve yapı durumunu kontrol etmemek</h3>
-
-<p>Yüksek kira getirisi uğruna hukuki ve teknik sorunlu bir konut satın almak büyük risk yaratabilir.</p>
-
-<h3 id="7-sadece-bugünkü-kiraya-bakmak">7. Sadece bugünkü kiraya bakmak</h3>
-
-<p>Yatırımcı gelecekte kiracı talebinin devam edip etmeyeceğini de araştırmalıdır.</p>
-
-<h2 id="i̇stanbulda-kira-getirisi-açısından-sonuç">İstanbul’da Kira Getirisi Açısından Sonuç</h2>
-
-<p>İstanbul’da <strong>“kira getirisi en yüksek semt”</strong> sorusunun tek bir cevabı yok.</p>
-
-<p>Ancak 2026 verileri bize önemli bir tablo sunuyor.</p>
-
-<p><strong>Esenyurt</strong>, düşük satın alma maliyeti ve yüksek kira oranı sayesinde kira getirisi odaklı yatırımcıların en dikkat çekici bölgelerinden biri.</p>
-
-<p><strong>Avcılar</strong>, özellikle bazı mahallelerinde yüksek kira getirisiyle öne çıkıyor.</p>
-
-<p><strong>Beylikdüzü</strong>, kira getirisi ile yaşam kalitesi ve konut niteliği arasında daha dengeli bir profil sunuyor.</p>
-
-<p><strong>Pendik ve Kartal</strong>, Anadolu Yakası’nda ulaşım, gelişim ve kira talebini bir araya getiren alternatifler olarak dikkat çekiyor.</p>
-
-<p><strong>Tuzla</strong>, daha uzun vadeli yatırım perspektifinde değerlendirilebilecek bölgelerden biri.</p>
-
-<p><strong>Kadıköy gibi merkezi ilçeler</strong> ise yüksek kira bedellerine rağmen yüksek satın alma fiyatları nedeniyle farklı bir yatırım stratejisi gerektiriyor.</p>
-
-<p>Burada en önemli sonuç şu:</p>
-
-<blockquote>
-  <p><strong>Gayrimenkul yatırımında en yüksek kira, en yüksek getiri anlamına gelmez.</strong></p>
-</blockquote>
-
-<p>Doğru yatırım;</p>
-
-<p><strong>doğru semt + doğru mahalle + doğru bina + doğru daire + doğru satın alma fiyatı</strong></p>
-
-<p>kombinasyonundan oluşur.</p>
-
-<p>Bu nedenle İstanbul’da yatırımlık bir konut ararken yalnızca “Bu ev kaç TL kira getirir?” diye sormak yerine şu dört soruyu birlikte sormak gerekir:</p>
-
-<p><strong>Bu ev kaça alınır?</strong></p>
-
-<p><strong>Kaça kiralanır?</strong></p>
-
-<p><strong>Ne kadar süre boş kalır?</strong></p>
-
-<p><strong>Masraflardan sonra yatırımcıya ne kadar para bırakır?</strong></p>
-
-<p>Bu dört sorunun cevabı olumluysa, konutun gerçekten yüksek kira getirili bir yatırım olup olmadığı daha sağlıklı biçimde anlaşılabilir.</p>
-
-<h3 id="2026-verileri-i̇çin-önemli-not">2026 Verileri İçin Önemli Not</h3>
-
-<p>Bu yazıda kullanılan kira, satış fiyatı, amortisman ve getiri verileri Ağustos 2026 itibarıyla erişilebilen piyasa ve ilan verilerine dayanmaktadır. Özellikle Emlakjet gibi platformlardaki değerler <strong>ilan ve piyasa ortalamalarını</strong> yansıtır; gerçekleşmiş satış fiyatı veya gelecekte garanti edilmiş kira geliri olarak değerlendirilmemelidir. Nitekim aynı ilçe içerisindeki mahalleler arasında dahi ciddi fiyat ve getiri farklılıkları görülebilmektedir.</p>
-
-<p>Gayrimenkul yatırımında karar verilmeden önce konutun emsal satışları, gerçek kira emsalleri, tapu ve yapı durumu, aidat, boş kalma riski ve bölgesel arz-talep koşulları ayrıca incelenmelidir.</p>]]></content><author><name></name></author><category term="kira" /><category term="konut yatırımı" /><summary type="html"><![CDATA[Bu yazıda İstanbul’un farklı bölgelerini kira getirisi, konut fiyatı, amortisman süresi, kiracı talebi ve yatırım riski açısından değerlendireceğiz.]]></summary></entry></feed>
+</blockquote>]]></content><author><name></name></author><category term="arsa yatırımı" /><category term="konut yatırımı" /><summary type="html"><![CDATA[2026'da ev almak mı arsa almak mı daha mantıklı? Kira getirisi, değer artışı, riskler, yatırım süresi ve maliyetleri karşılaştırarak doğru gayrimenkul yatırımını keşfedin.]]></summary></entry></feed>
