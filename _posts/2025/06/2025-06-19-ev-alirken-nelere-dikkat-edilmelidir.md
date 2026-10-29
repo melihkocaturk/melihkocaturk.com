@@ -3,6 +3,7 @@ layout: post
 custom_css: post
 title: "Ev Alırken Nelere Dikkat Edilmelidir?"
 description: "Bu rehberde, Türkiye'de konut satın alma sürecini ilk araştırmadan tapu devrine ve anahtar teslimine kadar adım adım ele alacağız."
+tags: ["konut yatırımı"]
 ---
 
 Ev satın almak, hayatımız boyunca vereceğimiz en önemli finansal kararlardan biridir. Yıllarca biriktirdiğimiz parayı değerlendirmek, ailemiz için güvenli bir yaşam alanı oluşturmak veya geleceğe yönelik bir yatırım yapmak isteyebiliriz. Ancak doğru evi bulmak yalnızca beğendiğimiz bir daireyi satın almaktan ibaret değildir.
