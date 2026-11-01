@@ -2,67 +2,261 @@
 layout: post
 custom_css: post
 title: "Tapu Harcı Nasıl Hesaplanır?"
-description: "Tapu harcı nedir, ne kadardır ve nasıl hesaplanır? Bu yazıda tapu harcına dair tüm detayları sade bir dille ele aldık."
+description: "Bu yazıda tapu harcı hesaplama yöntemini, örnek hesaplamaları ve gayrimenkul alım satımında dikkat edilmesi gereken önemli detayları ele alıyoruz."
 tags: ["tapu"]
 ---
 
-Gayrimenkul alım-satım sürecinde karşımıza çıkan en önemli kalemlerden biri de tapu harcıdır. Peki tapu harcı nedir, ne kadardır ve nasıl hesaplanır? Bu yazıda tapu harcına dair tüm detayları sade bir dille ele aldık.
+Gayrimenkul satın alırken veya satarken karşılaşılan önemli giderlerden biri tapu harcıdır. Ev, arsa, arazi veya iş yeri gibi taşınmazların mülkiyet devri sırasında ödenen bu harç, gayrimenkulün satış bedeli üzerinden hesaplanır.
+
+Özellikle ilk kez ev satın alacak kişiler için tapu harcının nasıl hesaplandığı, hangi tarafın ne kadar ödeme yapacağı ve tapu işlemleri sırasında başka hangi masrafların ortaya çıkacağı merak edilen konuların başında gelir.
+
+Peki, tapu harcı nasıl hesaplanır? Alıcı ve satıcı ne kadar tapu harcı öder? Tapu harcı hangi bedel üzerinden hesaplanır? Tapu harcı dışında hangi masraflar bulunur?
+
+Bu yazıda tapu harcı hesaplama yöntemini, örnek hesaplamaları ve gayrimenkul alım satımında dikkat edilmesi gereken önemli detayları ele alıyoruz.
 
 ## Tapu Harcı Nedir?
 
-Tapu harcı, taşınmazın (konut, arsa, iş yeri vb.) alım-satım işlemleri sırasında devletten alınan bir vergi türüdür. Tapu dairesinde gerçekleşen satış işlemlerinin resmiyet kazanması için bu harç ödenmek zorundadır.
+Tapu harcı, gayrimenkulün mülkiyetinin bir kişiden başka bir kişiye devredilmesi sırasında devlet tarafından tahsil edilen resmi bir harçtır.
 
-## Tapu Harcını Kim Öder?
+Konut, arsa, arazi, iş yeri ve diğer taşınmazların satış yoluyla devredilmesi durumunda tapu harcı ödenmesi gerekir.
 
-Normal şartlarda tapu harcı hem alıcı hem de satıcı tarafından eşit şekilde (%2 + %2) ödenir. Ancak tarafların kendi aralarında yaptığı anlaşmaya göre bu ödeme farklı şekillerde de bölünebilir. Uygulamada genellikle alıcı tüm harcı ödemektedir.
+Türkiye'de tapu harcı, 492 sayılı Harçlar Kanunu kapsamında düzenlenmiştir. Gayrimenkul satışlarında harç, taşınmazın beyan edilen gerçek satış bedeli üzerinden hesaplanır. Ancak bu bedel, ilgili belediyede kayıtlı emlak vergisi değerinden düşük olamaz.
 
-##  2025 Yılı İçin Tapu Harcı Oranı
+Tapu harcı, gayrimenkulün satış fiyatına bağlı olarak değişir. Dolayısıyla satış bedeli yükseldikçe ödenecek harç miktarı da artar.
 
-2025 yılı itibarıyla tapu harcı oranı;
+## Tapu Harcı Oranı Ne Kadardır?
 
-- Alıcı için %2
-- Satıcı için %2
+Gayrimenkul satışlarında tapu harcı, alıcı ve satıcı için ayrı ayrı yüzde 2 olarak uygulanır.
 
-olmak üzere toplamda %4’tür.
+Buna göre:
 
-Bu oran, satış bedeli üzerinden hesaplanır.
+- **Alıcı:** Gayrimenkulün satış bedelinin yüzde 2'sini öder.
+- **Satıcı:** Gayrimenkulün satış bedelinin yüzde 2'sini öder.
+- **Toplam:** Gayrimenkulün satış bedelinin yüzde 4'ü oranında tapu harcı ödenir.
+
+Örneğin, 5.000.000 TL bedelle satılan bir konut için:
+
+- Alıcının tapu harcı: 100.000 TL
+- Satıcının tapu harcı: 100.000 TL
+- Toplam tapu harcı: 200.000 TL
+
+Bu oranlar gayrimenkul satış işlemlerinde genel olarak uygulanan yasal harç oranlarıdır.
 
 ## Tapu Harcı Nasıl Hesaplanır?
 
-Tapu harcı, satış bedeli ya da rayiç bedel üzerinden (hangisi yüksekse) hesaplanır. Hesaplama formülü oldukça basittir:
+Tapu harcı hesaplaması oldukça basittir. Öncelikle gayrimenkulün gerçek satış bedeli belirlenir. Daha sonra bu bedelin yüzde 2'si alıcı, yüzde 2'si satıcı için hesaplanır.
 
-**Tapu Harcı = Satış Bedeli x %4**
+**Tapu harcı hesaplama formülü:**
 
-Bu harç ikiye bölünerek alıcı ve satıcıya paylaştırılır.
+- Alıcı tapu harcı = Satış bedeli × 0,02
+- Satıcı tapu harcı = Satış bedeli × 0,02
+- Toplam tapu harcı = Satış bedeli × 0,04
 
-### Örnek Hesaplama
+Örneğin, 3.000.000 TL değerindeki bir gayrimenkulün satışında:
 
-Bir konutun satış bedeli 2.000.000 TL ise:
+3.000.000 × 0,02 = 60.000 TL
 
-**Toplam tapu harcı**: 2.000.000 TL x 0,04 = 80.000 TL
+Bu durumda alıcı 60.000 TL, satıcı ise 60.000 TL tapu harcı öder. İki tarafın toplam ödemesi gereken tapu harcı 120.000 TL olur.
 
-**Alıcının ödeyeceği**: 2.000.000 TL x 0,02 = 40.000 TL
+## Farklı Satış Bedellerine Göre Tapu Harcı Hesaplama
 
-**Satıcının ödeyeceği**: 2.000.000 TL x 0,02 = 40.000 TL
+Gayrimenkulün satış fiyatına göre ödenmesi gereken tapu harçlarını aşağıdaki tabloda inceleyebilirsiniz.
 
-## Düşük Gösterilen Bedeller ve Cezai Yaptırımlar
+| Satış Bedeli | Alıcı (%2) | Satıcı (%2) | Toplam (%4) |
+|---:|---:|---:|---:|
+| 1.000.000 TL | 20.000 TL | 20.000 TL | 40.000 TL |
+| 2.000.000 TL | 40.000 TL | 40.000 TL | 80.000 TL |
+| 3.000.000 TL | 60.000 TL | 60.000 TL | 120.000 TL |
+| 4.000.000 TL | 80.000 TL | 80.000 TL | 160.000 TL |
+| 5.000.000 TL | 100.000 TL | 100.000 TL | 200.000 TL |
+| 6.000.000 TL | 120.000 TL | 120.000 TL | 240.000 TL |
+| 7.000.000 TL | 140.000 TL | 140.000 TL | 280.000 TL |
+| 8.000.000 TL | 160.000 TL | 160.000 TL | 320.000 TL |
+| 10.000.000 TL | 200.000 TL | 200.000 TL | 400.000 TL |
 
-Tapu harcı, satış bedeli ya da **emlak vergisine esas rayiç bedel** üzerinden hesaplanır. Bazı durumlarda harçtan kaçınmak için bedel düşük gösterilmeye çalışılsa da bu, **vergi kaçırmak** anlamına gelir ve cezai yaptırımı vardır. Tapu müdürlükleri ve Gelir İdaresi Başkanlığı, bu konuda denetim yapabilmektedir.
+Tablodaki tutarlar yalnızca tapu harcını göstermektedir. Döner sermaye hizmet bedeli ve varsa diğer işlem masrafları bu tutarlara dahil değildir.
 
-## Tapu Harcı İndirimi Var mı?
+## Tapu Harcını Alıcı mı, Satıcı mı Öder?
 
-Zaman zaman hükümet, gayrimenkul piyasasını canlandırmak için tapu harcı oranlarında geçici indirimler uygulamaktadır. Bu indirimler genellikle Resmî Gazete’de yayımlanarak yürürlüğe girer. 2025 itibarıyla güncel oran %4’tür; ancak indirim açıklamaları için Gelir İdaresi Başkanlığı’nın duyuruları takip edilmelidir.
+Gayrimenkul alım satımında en çok merak edilen konulardan biri tapu harcının hangi taraf tarafından ödeneceğidir.
+
+Yasal düzenlemeye göre tapu harcı hem alıcı hem de satıcı tarafından ayrı ayrı ödenir. Her iki tarafın da sorumluluğu satış bedelinin yüzde 2'sidir.
+
+Ancak uygulamada taraflar kendi aralarında farklı bir ödeme şekli üzerinde anlaşabilir.
+
+Örneğin:
+
+- Alıcı kendi yüzde 2'lik payını ödeyebilir.
+- Satıcı kendi yüzde 2'lik payını ödeyebilir.
+- Tarafların anlaşmasıyla tapu harcının tamamını alıcı üstlenebilir.
+- Tarafların anlaşmasıyla tapu harcının tamamını satıcı karşılayabilir.
+
+Burada önemli olan, taraflar arasında yapılan anlaşmanın ödeme yükünün paylaşımını belirlemesidir. Bu anlaşma, kanundan doğan harç yükümlülüğünü ortadan kaldırmaz.
+
+Özellikle yüksek bedelli gayrimenkul satışlarında tapu harcının kim tarafından karşılanacağı, satış görüşmeleri sırasında açıkça kararlaştırılmalıdır.
+
+## Tapu Harcı Hangi Bedel Üzerinden Hesaplanır?
+
+Tapu harcı, gayrimenkulün tapuda beyan edilen gerçek satış bedeli üzerinden hesaplanır.
+
+Ancak burada dikkat edilmesi gereken önemli bir kural vardır: Tapuda beyan edilen satış bedeli, taşınmazın ilgili belediyede kayıtlı emlak vergisi değerinden düşük olamaz.
+
+Örneğin:
+
+Bir konutun belediyedeki emlak vergisi değeri 2.000.000 TL olsun.
+
+Aynı konutun gerçek satış fiyatı ise 5.000.000 TL olsun.
+
+Bu durumda tapu harcı 2.000.000 TL üzerinden değil, gerçek satış bedeli olan 5.000.000 TL üzerinden hesaplanmalıdır.
+
+Çünkü emlak vergisi değeri, tapuda beyan edilebilecek asgari tutarı belirler. Gerçek satış bedeli daha yüksekse bu bedelin beyan edilmesi gerekir.
+
+### Tapuda Satış Bedelini Düşük Göstermek Ne Gibi Sonuçlar Doğurur?
+
+Bazı gayrimenkul satışlarında tapu harcını azaltmak amacıyla gerçek satış bedelinden daha düşük bir tutar beyan edildiği görülebilir.
+
+Örneğin, 6.000.000 TL'ye satılan bir konutun tapuda 3.000.000 TL olarak gösterilmesi, eksik tapu harcı ödenmesine neden olur.
+
+Ancak bu durumun sonradan tespit edilmesi halinde ciddi mali sonuçlar ortaya çıkabilir.
+
+Bunlar arasında:
+
+- Eksik ödenen tapu harcının tahsil edilmesi,
+- Vergi ziyaı cezası uygulanması,
+- Gecikmeye bağlı mali yükümlülüklerin ortaya çıkması
+
+bulunur.
+
+Bu nedenle tapu işlemlerinde gerçek satış bedelinin beyan edilmesi hem alıcı hem de satıcı açısından önemlidir.
+
+## Tapu Harcı Dışında Hangi Masraflar Ödenir?
+
+Gayrimenkul satın alırken yalnızca tapu harcını hesaplamak yeterli değildir. Tapu işlemi sırasında harç dışında bazı ek masraflar da ortaya çıkabilir.
+
+### 1. Döner Sermaye Hizmet Bedeli
+
+Tapu müdürlüklerinde gerçekleştirilen işlemler için döner sermaye hizmet bedeli tahsil edilir.
+
+Bu ücret, tapu harcından farklıdır. İşlem türüne ve taşınmazın bulunduğu bölgeye uygulanan yöresel katsayıya göre değişebilir.
+
+Dolayısıyla tapu harcına ek olarak döner sermaye ücretinin de hesaba katılması gerekir.
+
+### 2. Konut Kredisi ve İpotek Masrafları
+
+Gayrimenkulün banka kredisi kullanılarak satın alınması durumunda kredi işlemleriyle bağlantılı ek masraflar ortaya çıkabilir.
+
+Bunlar arasında:
+
+- İpotek tesisine ilişkin masraflar,
+- Bankanın kredi tahsis ücreti,
+- Ekspertiz ücreti,
+- Zorunlu deprem sigortası (DASK),
+- Banka tarafından talep edilen diğer sigortalar ve masraflar
+
+bulunabilir.
+
+Bu giderlerin tamamı doğrudan tapu harcı değildir. Kredi kullanılan işlemlerde toplam satın alma bütçesi hazırlanırken ayrıca değerlendirilmelidir.
+
+### 3. Emlak Danışmanlığı Hizmet Bedeli
+
+Gayrimenkul alım satımında yetkili bir emlak işletmesinden hizmet alınması halinde, emlak danışmanlığı hizmet bedeli de gündeme gelir.
+
+Bu bedel tapu harcından bağımsızdır.
+
+Gayrimenkul alım satımında alıcı ve satıcıdan ayrı ayrı alınabilecek hizmet bedellerinin toplamı, KDV hariç satış bedelinin yüzde 4'ünü aşamaz. Taraflar arasında farklı bir paylaşım kararlaştırılabilir.
+
+Bu nedenle alıcıların ve satıcıların tapu harcı, döner sermaye ve emlak danışmanlığı hizmet bedelini birbirinden ayrı değerlendirmesi önemlidir.
+
+## 5 Milyon TL Değerindeki Bir Evin Tapu Masrafı Ne Kadar?
+
+Konuyu daha anlaşılır hale getirmek için 5.000.000 TL satış bedeline sahip bir konut üzerinden örnek hesaplama yapalım.
+
+**Gayrimenkul satış bedeli:** 5.000.000 TL
+
+| Masraf Kalemi | Tutar |
+|---|---:|
+| Alıcı tapu harcı (%2) | 100.000 TL |
+| Satıcı tapu harcı (%2) | 100.000 TL |
+| Toplam tapu harcı | 200.000 TL |
+| Döner sermaye | Ayrıca hesaplanır |
+
+Bu örnekte alıcı ve satıcı kendi harç paylarını ayrı ayrı öderse alıcının tapu harcı gideri 100.000 TL olur.
+
+Alıcı, satıcının payını da üstlenmeyi kabul ederse toplam 200.000 TL tapu harcı ödemesi gerekir.
+
+Burada döner sermaye ve varsa diğer masrafların ayrıca değerlendirilmesi gerektiğini unutmamak gerekir.
 
 ## Tapu Harcı Nasıl ve Nereden Ödenir?
 
-Tapu harcı;
+Tapu harcı ödemeleri, tapu devir işlemi başlatıldıktan ve ilgili tutarlar hesaplandıktan sonra gerçekleştirilir.
 
-- Bankalar aracılığıyla
-- Gelir İdaresi’nin [gib.gov.tr](https://gib.gov.tr/) adresinden
-- Tapu Dairesi'nden verilen ödeme referans numarası ile
+Genel olarak ödeme süreci şu şekilde ilerler:
 
-ödenebilir. Ödeme yapılmadan tapu işlemi tamamlanamaz.
+1. Alıcı ve satıcı tapu işlemi için başvuruda bulunur.
+2. Tapu müdürlüğü tarafından işlem bilgileri kontrol edilir.
+3. Ödenecek tapu harcı ve döner sermaye tutarları hesaplanır.
+4. Taraflara ödeme bilgileri ve gerekli referans numaraları iletilir.
+5. Ödemeler ilgili dijital kanallar veya anlaşmalı bankalar aracılığıyla gerçekleştirilir.
+6. Ödeme işlemlerinin tamamlanmasının ardından tapu devri için gerekli işlemler sonuçlandırılır.
 
-## Sonuç
+Tapu harcı ödemeleri için Gelir İdaresi Başkanlığının Dijital Vergi Dairesi ve Tapu ve Kadastro Genel Müdürlüğünün e-Tahsilat hizmetlerinden yararlanılabilir.
 
-Tapu harcı, gayrimenkul alım-satım sürecinin yasal ve finansal boyutunda büyük önem taşır. Doğru hesaplama yapmak ve güncel oranları takip etmek, sürpriz masraflardan kaçınmanızı sağlar. Tapu harcıyla ilgili daha fazla bilgi almak veya danışmanlık hizmeti almak isterseniz bizimle iletişime geçebilirsiniz.
+Resmî işlem ve ödeme bilgilerine şu adreslerden ulaşabilirsiniz:
+
+- [Gelir İdaresi Başkanlığı](https://gib.gov.tr/)
+- [Tapu ve Kadastro Genel Müdürlüğü](https://www.tkgm.gov.tr/)
+- [TKGM e-Tahsilat](https://www.tkgm.gov.tr/e-hizmetler/sik-kullanilanlar/e-tahsilat)
+
+## Tapu Harcı Hakkında Sık Sorulan Sorular
+
+### Tapu harcı yüzde kaçtır?
+
+Gayrimenkul satışlarında tapu harcı alıcı ve satıcı için ayrı ayrı yüzde 2 olarak uygulanır. Toplam tapu harcı satış bedelinin yüzde 4'üne karşılık gelir.
+
+### 3 milyon TL'lik evin tapu harcı ne kadar?
+
+3.000.000 TL satış bedeli üzerinden alıcı 60.000 TL, satıcı 60.000 TL tapu harcı öder. Toplam harç 120.000 TL'dir.
+
+### Tapu harcını sadece alıcı ödeyebilir mi?
+
+Evet. Alıcı ve satıcı kendi aralarında anlaşarak tapu harcının tamamının alıcı tarafından karşılanmasını kararlaştırabilir. Ancak yasal harç sorumlulukları mevzuata göre devam eder.
+
+### Tapu harcı emlak vergisi değerinden mi hesaplanır?
+
+Tapu harcı, emlak vergisi değerinden az olmamak üzere gerçek satış bedeli üzerinden hesaplanır. Gerçek satış bedeli belediyedeki emlak vergisi değerinden yüksekse gerçek satış bedeli esas alınır.
+
+### İlk evini alanlar tapu harcından muaf mı?
+
+İlk kez ev satın almak, tek başına genel bir tapu harcı muafiyeti sağlamaz. Tapu harcı muafiyetleri ancak ilgili mevzuatta belirtilen özel durumlarda uygulanır.
+
+### Tapu harcı kredi kullanıldığında değişir mi?
+
+Konut kredisi kullanılması, normal satış işlemindeki alıcı ve satıcı için uygulanan yüzde 2'lik tapu harcı oranını değiştirmez. Ancak kredi ve ipotek işlemleri nedeniyle ilave masraflar ortaya çıkabilir.
+
+### Tapu harcı ne zaman ödenir?
+
+Tapu harcı, tapu devir işlemi sırasında ilgili müdürlük tarafından tahakkuk ettirildikten sonra ödenir. Ödeme tamamlanmadan tapu devir işlemi sonuçlandırılmaz.
+
+### Tapu harcı hesaplamasında emlakçı komisyonu dahil midir?
+
+Hayır. Tapu harcı ile emlak danışmanlığı hizmet bedeli birbirinden farklı giderlerdir. Tapu harcı devlete, emlak danışmanlığı hizmet bedeli ise hizmet alınan işletmeye ödenir.
+
+## Tapu Harcını Önceden Hesaplamak Önemlidir
+
+Gayrimenkul alım satımında tapu harcı, göz ardı edilmemesi gereken önemli maliyetlerden biridir.
+
+Alıcı ve satıcı için ayrı ayrı yüzde 2 olarak uygulanan tapu harcı, toplamda satış bedelinin yüzde 4'üne karşılık gelmektedir.
+
+Satın alma veya satış kararı vermeden önce tapu harcının yanı sıra döner sermaye, kredi giderleri ve varsa emlak danışmanlığı hizmet bedelini de hesaba katmak gerekir.
+
+Doğru bir maliyet planlaması yapmak, tapu işlemleri sırasında beklenmedik giderlerle karşılaşmanızı önler ve gayrimenkul alım satım sürecini daha sağlıklı yönetmenize yardımcı olur.
+
+**Göktürk ve çevresinde gayrimenkul alım satımı hakkında bilgi almak, doğru fiyat analizi yapmak veya satın alma sürecinizi planlamak için profesyonel gayrimenkul danışmanlığı desteğinden yararlanabilirsiniz.**
+
+**Kaynaklar ve mevzuat:**
+
+- [492 Sayılı Harçlar Kanunu – Gelir İdaresi Başkanlığı](https://gib.gov.tr/mevzuat/kanun/439)
+- [Tapu ve Kadastro Genel Müdürlüğü](https://www.tkgm.gov.tr/)
+- [Gelir İdaresi Başkanlığı](https://gib.gov.tr/)
+
+*Bilgilendirme: Bu yazı genel bilgilendirme amacıyla hazırlanmıştır. Tapu işlemlerinde uygulanacak harç ve diğer masraflar, işlemin niteliğine ve yürürlükteki mevzuata göre değişiklik gösterebilir.*
