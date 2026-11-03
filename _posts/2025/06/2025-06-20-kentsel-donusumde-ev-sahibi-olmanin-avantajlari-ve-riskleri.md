@@ -536,6 +536,7 @@ Evet, küçülebilir. Yeni imar koşulları, mimari proje, ortak alanlar ve payl
 
 Doğru fiyat, uygun arsa payı, avantajlı imar koşulları ve gerçekçi dönüşüm planı varsa mantıklı olabilir. Ancak satın alma kararı verilmeden önce ek maliyetler, inşaat süresi, hukuki durum ve gelecekteki piyasa değeri birlikte hesaplanmalıdır.
 
+---
 
 ## Kaynaklar ve Mevzuat
 

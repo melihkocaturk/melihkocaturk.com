@@ -253,6 +253,8 @@ Doğru bir maliyet planlaması yapmak, tapu işlemleri sırasında beklenmedik g
 
 **Göktürk ve çevresinde gayrimenkul alım satımı hakkında bilgi almak, doğru fiyat analizi yapmak veya satın alma sürecinizi planlamak için profesyonel gayrimenkul danışmanlığı desteğinden yararlanabilirsiniz.**
 
+---
+
 **Kaynaklar ve mevzuat:**
 
 - [492 Sayılı Harçlar Kanunu – Gelir İdaresi Başkanlığı](https://gib.gov.tr/mevzuat/kanun/439)

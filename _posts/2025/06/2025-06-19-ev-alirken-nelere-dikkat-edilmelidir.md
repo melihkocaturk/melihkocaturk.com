@@ -577,6 +577,8 @@ Unutmayın, iyi bir konut alımı yalnızca uygun fiyata ev bulmak değildir. Ö
 
 Acele etmeden araştırma yapın, sorularınızı sormaktan çekinmeyin ve önemli kararlarınızı doğrulanabilir bilgilere dayandırın. Böylece ev sahibi olma sürecinizi daha güvenli ve bilinçli bir şekilde yönetebilirsiniz.
 
+---
+
 ## Kaynaklar ve Faydalı Bağlantılar
 
 1. [Invest in Türkiye – Gayrimenkul Edinimi](https://f.invest.gov.tr/tr/investmentguide/sayfalar/acquiring-property-and-citizenship.aspx): Taşınmaz mülkiyetinin devri ve tapu üzerindeki kısıtlamalar hakkında genel bilgiler.
